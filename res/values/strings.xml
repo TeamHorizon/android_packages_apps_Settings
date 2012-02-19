@@ -28,7 +28,7 @@
     <!-- Settings main menu category heading. Wireless and networks (Wi-Fi, Bluetooth, data usage...). [CHAR LIMIT=40] -->
     <string name="header_category_wireless_networks">WIRELESS &amp; NETWORKS</string>
     <!-- Settings main menu category heading. CyanogenMod (Launcher, cmsettings). [CHAR LIMIT=40] -->
-    <string name="header_category_cyanogenmod">CYANOGENMOD</string>
+    <string name="header_category_cyanogenmod">XENON-HD</string>
     <!-- Settings main menu category heading. Device (Sound, display, battery, applications...). [CHAR LIMIT=40] -->
     <string name="header_category_device">DEVICE</string>
     <!-- Settings main menu category heading. Personal (Accounts, security, language, backup...). [CHAR LIMIT=40] -->
