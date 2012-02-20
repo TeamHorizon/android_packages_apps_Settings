@@ -70,8 +70,27 @@
             android:targetPackage="com.cyanogenmod.trebuchet"
             android:targetClass="com.cyanogenmod.trebuchet.preference.Preferences" />
     </header>
-
-
+    
+    <!-- Toggle Settings -->
+    <header android:title="@string/toggles_settings_title" />
+    
+    <header
+        android:id="@+id/statusbar_toggles"
+        android:fragment="com.android.settings.bb.fragments.StatusBarToggles"
+        android:title="@string/toggles_layout"
+        android:icon="@drawable/ic_toggles_settings"/>
+        
+     <!-- Processor Settings -->
+        
+    <header android:title="@string/performance_settings_title" />
+    
+    <header	
+        android:key="processor"
+        android:fragment="com.android.settings.bb.fragments.Processor"
+        android:title="@string/processor_title"
+        android:summary="@string/processor_summary"
+        android:icon="@drawable/ic_processor_settings"/>
+        
     <!-- DEVICE -->
     <header android:title="@string/header_category_device" />
 

@@ -28,7 +28,7 @@
     <!-- Settings main menu category heading. Wireless and networks (Wi-Fi, Bluetooth, data usage...). [CHAR LIMIT=40] -->
     <string name="header_category_wireless_networks">WIRELESS &amp; NETWORKS</string>
     <!-- Settings main menu category heading. CyanogenMod (Launcher, cmsettings). [CHAR LIMIT=40] -->
-    <string name="header_category_cyanogenmod">XENON-HD</string>
+    <string name="header_category_cyanogenmod">XENON HD SETTINGS</string>
     <!-- Settings main menu category heading. Device (Sound, display, battery, applications...). [CHAR LIMIT=40] -->
     <string name="header_category_device">DEVICE</string>
     <!-- Settings main menu category heading. Personal (Accounts, security, language, backup...). [CHAR LIMIT=40] -->
@@ -3788,6 +3788,7 @@ found in the list of installed apps.</string>
     <string name="additional_system_update_settings_list_item_title">Additional system updates</string>
 
     <!-- Status bar toggles settings -->
+    <string name="toggles_settings_title">Status bar</string>
     <string name="toggles_layout">Status bar toggles</string>
     <string name="alternate_button_layout_title">Toggle style</string>
     <string name="alternate_button_layout_summary">Use buttons instead of switches</string>
