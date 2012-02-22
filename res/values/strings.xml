@@ -3791,7 +3791,6 @@ found in the list of installed apps.</string>
     <string name="additional_system_update_settings_list_item_title">Additional system updates</string>
 
     <!-- Status bar toggles settings -->
-    <string name="toggles_settings_title">Status bar</string>
     <string name="toggles_layout">Status bar toggles</string>
     <string name="alternate_button_layout_title">Toggle style</string>
     <string name="alternate_button_layout_summary">Use buttons instead of switches</string>
@@ -3804,7 +3803,6 @@ found in the list of installed apps.</string>
     <string name="default_title">Reset toggle defaults</string>
 
     <!-- Performance Settings -->
-    <string name="performance_settings_title">Performance</string>
     <string name="processor_title">Processor</string>
     <string name="processor_summary">Change CPU governor and clock speed</string>
     <string name="cpu_cur_freq_title">Current CPU frequency</string>

@@ -72,8 +72,6 @@
     </header>
     
     <!-- Toggle Settings -->
-    <header android:title="@string/toggles_settings_title" />
-    
     <header
         android:id="@+id/statusbar_toggles"
         android:fragment="com.android.settings.bb.fragments.StatusBarToggles"
@@ -81,9 +79,6 @@
         android:icon="@drawable/ic_toggles_settings"/>
         
      <!-- Processor Settings -->
-        
-    <header android:title="@string/performance_settings_title" />
-    
     <header	
         android:key="processor"
         android:fragment="com.android.settings.bb.fragments.Processor"

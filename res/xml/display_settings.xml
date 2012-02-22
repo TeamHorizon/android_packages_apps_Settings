@@ -53,6 +53,4 @@
             android:title="@string/notification_pulse_title"
             android:persistent="false" />
 
-
-
 </PreferenceScreen>
