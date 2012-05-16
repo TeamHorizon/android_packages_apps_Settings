@@ -52,12 +52,14 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
     private static final String KEY_ACCELEROMETER = "accelerometer";
     private static final String KEY_BATTERY_PERCENTAGE = "battery_percentage";
     private static final String KEY_VOLUME_WAKE = "pref_volume_wake";
+    private static final String KEY_VOLBTN_MUSIC_CTRL = "volbtn_music_controls";
     private static final String KEY_FONT_SIZE = "font_size";
     private static final String KEY_NOTIFICATION_PULSE = "notification_pulse";
 
     private CheckBoxPreference mAccelerometer;
     private CheckBoxPreference mBatteryPercentage;
     private CheckBoxPreference mVolumeWake;
+    private CheckBoxPreference mVolBtnMusicCtrl;
     private ListPreference mFontSizePref;
     private CheckBoxPreference mNotificationPulse;
 
@@ -85,6 +87,10 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
 	mBatteryPercentage = (CheckBoxPreference) findPreference(KEY_BATTERY_PERCENTAGE);
 	mBatteryPercentage.setChecked((Settings.System.getInt(getContentResolver(),
 		Settings.System.STATUS_BAR_BATTERY, 0) == 1));
+
+        mVolBtnMusicCtrl = (CheckBoxPreference) findPreference(KEY_VOLBTN_MUSIC_CTRL);
+        mVolBtnMusicCtrl.setChecked(Settings.System.getInt(resolver,
+                Settings.System.VOLBTN_MUSIC_CONTROLS, 0) != 0);
 
         mScreenTimeoutPreference = (ListPreference) findPreference(KEY_SCREEN_TIMEOUT);
         final long currentTimeout = Settings.System.getLong(resolver, SCREEN_OFF_TIMEOUT,
@@ -270,6 +276,9 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
             Settings.System.putInt(getContentResolver(), Settings.System.VOLUME_WAKE_SCREEN,
                     mVolumeWake.isChecked() ? 1 : 0);
             return true;
+        } else if (preference == mVolBtnMusicCtrl) {
+            Settings.System.putInt(getContentResolver(), Settings.System.VOLBTN_MUSIC_CONTROLS,
+                    mVolBtnMusicCtrl.isChecked() ? 1 : 0);
            }
          return super.onPreferenceTreeClick(preferenceScreen, preference);
     }
