@@ -3815,7 +3815,7 @@ found in the list of installed apps.</string>
     <string name="cpu_set_on_boot">Set on boot</string>
     <string name="cpu_set_on_boot_summary">Restore the processor settings on boot</string>
 
-    <!-- BUILD TWEAKS. Battery Percentage -->
+    <!-- Battery Percentage -->
     <string name="title_battery_percentage">Battery percentage</string>
 
     <!-- Performance Settings | Processor Voltage -->
@@ -3872,5 +3872,10 @@ found in the list of installed apps.</string>
     <string name="use_custom_app_summary">Use custom application instead of the recent applications dialog</string>
     <string name="select_custom_app_title">Select custom application</string>
     <string name="group_applications">Applications</string>
+
+    <!-- Volume rocker wake -->
+    <string name="pref_volume_wake_title">Volume rocker wake</string>
+    <string name="pref_volume_wake_summary">Pressing the volume up/down wakes the Nexus</string>
+
 
 </resources>
