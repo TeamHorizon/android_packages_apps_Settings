@@ -3815,6 +3815,9 @@ found in the list of installed apps.</string>
     <string name="cpu_set_on_boot">Set on boot</string>
     <string name="cpu_set_on_boot_summary">Restore the processor settings on boot</string>
 
+    <!-- BUILD TWEAKS. Battery Percentage -->
+    <string name="title_battery_percentage">Battery percentage</string>
+
     <!-- Performance Settings | Processor Voltage -->
     <string name="cpu_voltage">Processor voltage</string>
     <string name="cpu_voltage_summary">Change CPU voltage of each frequency</string>
