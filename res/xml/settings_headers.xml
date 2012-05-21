@@ -87,14 +87,16 @@
         android:icon="@drawable/ic_processor_settings"/>
     
      <!-- Theme chooser -->
-    <header 
-	android:icon="@drawable/ic_settings_themes"
-	android:title="@string/theme_manager_title">
+    <header
+	android:id="@+id/themes_settings"	
+	android:title="@string/theme_manager_title"
+	android:icon="@drawable/ic_settings_themes">
  	<intent
-		android:action="android.intent.action.MAIN"
-		android:targetPackage="com.tmobile.themechooser"
-		android:targetClass="com.tmobile.themechooser.ThemeChooser" />
-    
+	android:action="android.intent.action.MAIN"
+	android:targetPackage="com.tmobile.themechooser"
+	android:targetClass="com.tmobile.themechooser.ThemeChooser" />
+    </header>
+
     <!-- DEVICE -->
     <header android:title="@string/header_category_device" />
 
