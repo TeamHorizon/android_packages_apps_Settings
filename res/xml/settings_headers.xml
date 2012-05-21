@@ -70,6 +70,17 @@
             android:targetPackage="com.cyanogenmod.trebuchet"
             android:targetClass="com.cyanogenmod.trebuchet.preference.Preferences" />
     </header>
+
+<!-- Themes -->
+    <header
+        android:id="@+id/themes_settings"
+        android:icon="@drawable/ic_settings_themes"
+        android:title="@string/themes_settings_title">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetPackage="com.tmobile.themechooser"
+            android:targetClass="com.tmobile.themechooser.ThemeChooser" />
+    </header>
     
     <!-- Toggle Settings -->
     <header
@@ -85,17 +96,6 @@
         android:title="@string/processor_title"
         android:summary="@string/processor_summary"
         android:icon="@drawable/ic_processor_settings"/>
-    
-     <!-- Theme chooser -->
-    <header
-	android:id="@+id/themes_settings"	
-	android:title="@string/theme_manager_title"
-	android:icon="@drawable/ic_settings_themes">
- 	<intent
-	android:action="android.intent.action.MAIN"
-	android:targetPackage="com.tmobile.themechooser"
-	android:targetClass="com.tmobile.themechooser.ThemeChooser" />
-    </header>
 
     <!-- DEVICE -->
     <header android:title="@string/header_category_device" />

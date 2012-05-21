@@ -3887,7 +3887,7 @@ found in the list of installed apps.</string>
     <string name="volbtn_music_controls_title">Volume rocker music controls</string>
     <string name="volbtn_music_controls_summary">When screen off, long-pressing the volume rockers will seek music tracks</string>
 
-    <!-- Theme chooser -->
-    <string name="theme_manager_title">Theme Chooser</string>
+<!-- Themes settings #CM -->
+    <string name="themes_settings_title">Themes</string>
 
 </resources>
