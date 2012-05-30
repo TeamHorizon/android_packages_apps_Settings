@@ -53,6 +53,7 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
     private static final String KEY_BATTERY_PERCENTAGE = "battery_percentage";
     private static final String KEY_VOLUME_WAKE = "pref_volume_wake";
     private static final String KEY_VOLBTN_MUSIC_CTRL = "volbtn_music_controls";
+private static final String KEY_NAVIGATION_BAR = "navigation_bar";
     private static final String KEY_FONT_SIZE = "font_size";
     private static final String KEY_NOTIFICATION_PULSE = "notification_pulse";
 
@@ -104,7 +105,13 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
         mFontSizePref.setOnPreferenceChangeListener(this);
         
 	mNotificationPulse = (CheckBoxPreference) findPreference(KEY_NOTIFICATION_PULSE);
-        if (mNotificationPulse != null
+        
+	if (Utils.isScreenLarge() || !getResources().getBoolean(
+                com.android.internal.R.bool.config_showNavigationBar)) {
+            getPreferenceScreen().removePreference(findPreference(KEY_NAVIGATION_BAR));
+        }
+
+	if (mNotificationPulse != null
                 && getResources().getBoolean(
                         com.android.internal.R.bool.config_intrusiveNotificationLed) == false) {
             getPreferenceScreen().removePreference(mNotificationPulse);

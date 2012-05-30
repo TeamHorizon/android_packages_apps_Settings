@@ -486,6 +486,7 @@ public class Utils {
             return false;
         }
         return true;
+	}
 	
 	public static boolean isScreenLarge() {
         final int screenSize = Resources.getSystem().getConfiguration().screenLayout &
@@ -495,4 +496,3 @@ public class Utils {
         return isScreenLarge;
 	}
 }
-
