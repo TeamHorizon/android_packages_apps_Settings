@@ -60,6 +60,11 @@
              android:title="@string/navigation_bar_title" 
              android:summary="@string/navigation_bar_summary" />
             
+        <!-- Lockscreen Targets -->
+        <Preference android:key="lockscreen_targets"
+             android:title="@string/lockscreen_target_title"
+             android:summary="@string/lockscreen_target_summary"
+             android:fragment="com.android.settings.th.LockscreenTargets" />
 
 	<!-- Battery Percentage -->
 	<CheckBoxPreference
