@@ -3799,6 +3799,12 @@ found in the list of installed apps.</string>
     "system_update_settings_list_item_title" in this project. [CHAR LIMIT=25] -->
     <string name="additional_system_update_settings_list_item_title">Additional system updates</string>
 
+    <!-- Category -->
+    <string name="build_tweaks_category">Tweaks</string>
+    <string name="ok">Ok</string>
+    <string name="profile_reset_title">Reset</string>
+    <string name="lockscreen_target_reset_title">Reset</string>
+
     <!-- Status bar toggles settings -->
     <string name="toggles_layout">Status bar toggles</string>
     <string name="alternate_button_layout_title">Toggle style</string>
@@ -3890,7 +3896,17 @@ found in the list of installed apps.</string>
     <string name="volbtn_music_controls_title">Volume rocker music controls</string>
     <string name="volbtn_music_controls_summary">When screen off, long-pressing the volume rockers will seek music tracks</string>
 
-<!-- Themes settings #CM -->
+<!-- Themes settings -->
     <string name="themes_settings_title">Themes</string>
+
+    <!-- NavigationBar Customization -->
+    <string name="navigation_bar_title">Navigation bar</string>
+    <string name="navigation_bar_summary">Add or configure custom navigation bar buttons</string>
+    <string name="navigation_bar_help_text">1 - To begin editing, tap the lock icon\n\n2 - Tap any button to assign or change functionality\n\n3 - Long press any button to rearrange the order\n\n4 - To save, tap the lock icon again\n\n5 - To restore system default, tap the reset button\n\n</string>
+    <string name="navigation_bar_tips">&#8226; Actions can only be assigned to one button at a time\n\n&#8226; The home button cannot be re-assigned\n\n&#8226; Side buttons cannot be rearranged</string>
+    <string name="navigation_bar_tips_title">Quick tips</string>
+    <string name="navigation_bar_reset_message">Delete current settings and restore to default?</string>
+    <string name="navigation_bar_save_message">Navigation bar settings saved</string>
+    <string name="navigation_bar_reset_toast">Navigation bar reset to default</string>
 
 </resources>

@@ -53,6 +53,14 @@
             android:title="@string/notification_pulse_title"
             android:persistent="false" />
 
+        <!-- NavigationBar Customization -->
+        <PreferenceScreen
+             android:key="navigation_bar"
+             android:fragment="com.android.settings.th.NavBar"
+             android:title="@string/navigation_bar_title" 
+             android:summary="@string/navigation_bar_summary" />
+            
+
 	<!-- Battery Percentage -->
 	<CheckBoxPreference
 	android:key="battery_percentage"
