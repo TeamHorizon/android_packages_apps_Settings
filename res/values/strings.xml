@@ -3953,5 +3953,7 @@ found in the list of installed apps.</string>
     <string name="lockscreen_target_edit_title">Edit shortcut</string>
     <string name="lockscreen_target_edit_msg">Select or change the desired application or activity and icon</string>
 
+    <!-- XenonHD Extras -->
+    <string name="xenonhd_extras_title">Extras</string>
 
 </resources>
