@@ -72,6 +72,8 @@ public class DeviceInfoSettings extends RestrictedSettingsFragment {
     private static final String KEY_DEVICE_REAR_CAMERA = "device_rear_camera";
     private static final String KEY_DEVICE_FRONT_CAMERA = "device_front_camera";
     private static final String KEY_DEVICE_SCREEN_RESOLUTION = "device_screen_resolution";
+    static final int TAPS_TO_BE_A_DEVELOPER = 7;
+    private static final String KEY_MOD_BUILD_DATE = "build_date";
 
     static final int TAPS_TO_BE_A_DEVELOPER = 7;
 
@@ -104,6 +106,18 @@ public class DeviceInfoSettings extends RestrictedSettingsFragment {
         setStringSummary(KEY_KERNEL_VERSION, getFormattedKernelVersion());
         findPreference(KEY_KERNEL_VERSION).setEnabled(true);
         setValueSummary(KEY_XEHD_VERSION, "ro.xehdversion");
+
+        addStringPreference(KEY_DEVICE_CPU,
+                SystemProperties.get("ro.device.cpu", getCPUInfo()));
+        addStringPreference(KEY_DEVICE_GPU,
+                SystemProperties.get("ro.device.gpu", null));
+        addStringPreference(KEY_DEVICE_MEMORY, getMemInfo());
+        addStringPreference(KEY_DEVICE_FRONT_CAMERA,
+                SystemProperties.get("ro.device.front_cam", null));
+        addStringPreference(KEY_DEVICE_REAR_CAMERA,
+                SystemProperties.get("ro.device.rear_cam", null));
+        addStringPreference(KEY_DEVICE_SCREEN_RESOLUTION,
+                SystemProperties.get("ro.device.screen_res", null));
 
         addStringPreference(KEY_DEVICE_CPU,
                 SystemProperties.get("ro.device.cpu", getCPUInfo()));
