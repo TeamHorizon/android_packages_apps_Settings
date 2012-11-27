@@ -26,6 +26,11 @@
             android:persistent="false"
             android:streamType="ring" />
 
+	<PreferenceScreen
+            android:key="quiet_hours"
+            android:fragment="com.android.settings.QuietHours"
+            android:title="@string/quiet_hours_title" />
+
     <Preference
             android:key="musicfx"
             android:title="@string/musicfx_title">
