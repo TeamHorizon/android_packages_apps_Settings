@@ -5202,4 +5202,7 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
 
     <string name="camera_sounds_title">Camera shutter sound</string>
     <string name="camera_sounds_summary">WARNING: Disabling the camera shutter sound is illegal in some areas!</string>
+
+    <!-- Launches Dev Tools -->
+    <string name="development_tools_title">Launch Tools</string>
 </resources>
