@@ -64,6 +64,7 @@
     <uses-permission android:name="android.permission.CONFIGURE_WIFI_DISPLAY" />
     <uses-permission android:name="android.permission.SET_TIME" />
     <uses-permission android:name="android.permission.ACCESS_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
 
     <permission
         android:name="android.permission.REQUEST_SUPERUSER"
@@ -1674,6 +1675,19 @@
                 <action android:name="android.provider.Contacts.PROFILE_CHANGED" />
             </intent-filter>
         </receiver>
+
+        <!-- Performance Settings -->
+        <activity android:name=".performance.PowerWidget" />
+        <activity android:name=".performance.SystemSettings" />
+        <activity android:name=".performance.PerformanceSettings" />
+
+        <receiver android:name=".performance.BootReceiver" android:enabled="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".performance.VoltageControlSettings" />
 
     </application>
 </manifest>

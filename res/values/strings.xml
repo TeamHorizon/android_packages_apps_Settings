@@ -4606,5 +4606,63 @@
     <string name="volume_adjust_sounds_enable_title">Volume adjust sound</string>
     <!-- Sound settings screen, setting check box summary -->
     <string name="volume_adjust_sounds_enable_summary">Play sound when adjusting volume with hard keys</string>
+    
+    <!-- Performance settings  -->
+    <string name="performance_settings_title">Performance</string>
+
+    <!-- Performance Settings : Processor settings title -->
+    <string name="processor_title">Processor</string>
+    <!-- Performance Settings : Processor settings summary. -->
+    <string name="processor_summary">Change CPU governor and clock speed</string>
+
+    <!-- Performance Settings : Processor settings sub items -->
+    <string name="cpu_cur_freq_title">Current CPU frequency</string>
+    <string name="cpu_governors_title">CPU governor</string>
+    <string name="cpu_governors_summary">%S</string>
+    <string name="cpu_min_freq_title">Minimum CPU frequency</string>
+    <string name="cpu_min_freq_summary">%s</string>
+    <string name="cpu_max_freq_title">Maximum CPU frequency</string>
+    <string name="cpu_max_freq_summary">%s</string>
+    <string name="cpu_set_on_boot">Set on boot</string>
+    <string name="cpu_set_on_boot_summary">Restore the processor settings on boot</string>
+
+    <!-- Performance Settings : I/O scheduler settings summary. -->
+    <string name="io_scheds_summary">Change I/O scheduler</string>
+
+    <!-- Performance Settings : I/O scheduler settings sub items -->
+    <string name="io_sched_title">I/O scheduler</string>
+    <string name="io_sched_summary">%S</string>
+    <string name="io_sched_set_on_boot">Set on boot</string>
+    <string name="io_sched_set_on_boot_summary">Restore the I/O scheduler settings on boot</string>
+
+    <!-- Purgeable Assets -->
+    <string name="pref_purgeable_assets_title">Allow purging of assets</string>
+    <string name="pref_purgeable_assets_summary">Purging of bitmap memory assets allows the freeing of more RAM when needed (requires reboot)</string>
+
+    <!-- Performance Settings : Dithering -->
+    <string name="pref_use_dithering_title">Surface improvement</string>
+    <string name="dithering_no_dither">Disable dithering</string>
+    <string name="dithering_color_banding">Fix color banding (default)</string>
+    <string name="dithering_blur_effect">Fix color banding and blur effect</string>
+
+    <!-- Performance Settings : 16bpp Alpha -->
+    <string name="pref_use_16bpp_alpha_title">16bit transparency</string>
+    <string name="pref_use_16bpp_alpha_summary">Better graphics performance, but lower quality and may cause visual artifacts (requires reboot)</string>
+
+    <!-- Performance | Voltage Control -->
+    <string name="cpu_voltage">Voltage control</string>
+    <string name="cpu_voltage_summary">Change CPU voltage of each frequency</string>
+    <string name="ps_volt_mhz_voltage">" MHz Voltage"</string>
+    <string name="ps_volt_save">"Save"</string>
+    <string name="ps_volt_current_voltage">"Current voltage: "</string>
+    <string name="ps_volt_setting_to_apply">"Setting to apply: "</string>
+    <string name="pt_volt_control">Voltage control</string>
+    <string name="ps_volt_control">Set voltages for each frequency</string>
+    <string name="not_supported">Your kernel does not support voltage control</string>
+    <string name="apply_values">Apply values</string>
+    <string name="freq">Frequency</string>
+    <string name="current">mV current</string>
+    <string name="saved">mV saved</string>
+    <string name="sob">Set on boot</string>
 
 </resources>
