@@ -4626,6 +4626,19 @@
     <string name="cpu_set_on_boot">Set on boot</string>
     <string name="cpu_set_on_boot_summary">Restore the processor settings on boot</string>
 
+    <!-- Memory Management -->
+    <string name="memory_management_title">Memory management</string>
+    <string name="memory_management_summary">Customize the usage of memory to alter system performance</string>
+    <!-- zRam -->
+    <string name="pref_zram_title">zRam</string>
+    <string name="pref_zram_summary">Compress memory for increased virtual capacity (requires reboot)</string>
+    <!-- KSM -->
+    <string name="pref_ksm_title">Kernel samepage merging</string>
+    <string name="pref_ksm_summary">KSM reduces physical memory requirements and improves performance</string>
+    <!-- Purgeable Assets -->
+    <string name="pref_purgeable_assets_title">Allow purging of assets</string>
+    <string name="pref_purgeable_assets_summary">Purging of bitmap memory assets allows the freeing of more RAM when needed (requires reboot)</string>
+
     <!-- Performance Settings : I/O scheduler settings summary. -->
     <string name="io_scheds_summary">Change I/O scheduler</string>
 
@@ -4634,10 +4647,6 @@
     <string name="io_sched_summary">%S</string>
     <string name="io_sched_set_on_boot">Set on boot</string>
     <string name="io_sched_set_on_boot_summary">Restore the I/O scheduler settings on boot</string>
-
-    <!-- Purgeable Assets -->
-    <string name="pref_purgeable_assets_title">Allow purging of assets</string>
-    <string name="pref_purgeable_assets_summary">Purging of bitmap memory assets allows the freeing of more RAM when needed (requires reboot)</string>
 
     <!-- Performance Settings : Dithering -->
     <string name="pref_use_dithering_title">Surface improvement</string>

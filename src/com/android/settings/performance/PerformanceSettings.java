@@ -40,15 +40,9 @@ public class PerformanceSettings extends SettingsPreferenceFragment implements P
     private static final String USE_16BPP_ALPHA_PREF = "pref_use_16bpp_alpha";
     private static final String USE_16BPP_ALPHA_PROP = "persist.sys.use_16bpp_alpha";
 
-    private static final String PURGEABLE_ASSETS_PREF = "pref_purgeable_assets";
-    private static final String PURGEABLE_ASSETS_PERSIST_PROP = "persist.sys.purgeable_assets";
-    private static final String PURGEABLE_ASSETS_DEFAULT = "1";
-
     private ListPreference mUseDitheringPref;
 
     private CheckBoxPreference mUse16bppAlphaPref;
-
-    private CheckBoxPreference mPurgeableAssetsPref;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -59,11 +53,6 @@ public class PerformanceSettings extends SettingsPreferenceFragment implements P
             addPreferencesFromResource(R.xml.performance_settings);
 
             PreferenceScreen prefSet = getPreferenceScreen();
-
-            mPurgeableAssetsPref = (CheckBoxPreference) prefSet.findPreference(PURGEABLE_ASSETS_PREF);
-            String purgeableAssets = SystemProperties.get(PURGEABLE_ASSETS_PERSIST_PROP,
-                    PURGEABLE_ASSETS_DEFAULT);
-            mPurgeableAssetsPref.setChecked("1".equals(purgeableAssets));
 
             String useDithering = SystemProperties.get(USE_DITHERING_PERSIST_PROP, USE_DITHERING_DEFAULT);
             mUseDitheringPref = (ListPreference) prefSet.findPreference(USE_DITHERING_PREF);
@@ -88,11 +77,6 @@ public class PerformanceSettings extends SettingsPreferenceFragment implements P
             return super.onPreferenceTreeClick(preferenceScreen, preference);
         }
 //        return true;
-
-        if (preference == mPurgeableAssetsPref) {
-            SystemProperties.set(PURGEABLE_ASSETS_PERSIST_PROP,
-                    mPurgeableAssetsPref.isChecked() ? "1" : "0");
-            return true;
         }
         return false;
 

@@ -26,6 +26,12 @@
         android:summary="@string/processor_summary" />
 
     <PreferenceScreen
+        android:key="memory_management"
+        android:fragment="com.android.settings.performance.MemoryManagement"
+        android:title="@string/memory_management_title"
+        android:summary="@string/memory_management_summary" />
+
+    <PreferenceScreen
         android:key="ioscheduler"
         android:fragment="com.android.settings.performance.IOScheduler"
         android:title="@string/io_sched_title"
@@ -36,11 +42,6 @@
         android:fragment="com.android.settings.performance.VoltageControlSettings"
         android:title="@string/cpu_voltage"
         android:summary="@string/cpu_voltage_summary" />
-
-    <CheckBoxPreference
-        android:key="pref_purgeable_assets"
-        android:title="@string/pref_purgeable_assets_title"
-        android:summary="@string/pref_purgeable_assets_summary" />
 
     <CheckBoxPreference
         android:key="pref_use_16bpp_alpha"
