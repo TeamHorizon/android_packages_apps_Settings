@@ -98,6 +98,7 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment {
         findPreference(KEY_BUILD_NUMBER).setEnabled(true);
         findPreference(KEY_KERNEL_VERSION).setSummary(getFormattedKernelVersion());
         setValueSummary(KEY_XEHD_VERSION, "ro.modversion");
+	findPreference(KEY_XEHD_VERSION).setEnabled(true);
 
         if (!SELinux.isSELinuxEnabled()) {
             String status = getResources().getString(R.string.selinux_status_disabled);
@@ -216,6 +217,20 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment {
                     mDevHitToast = Toast.makeText(getActivity(), R.string.show_dev_on,
                             Toast.LENGTH_LONG);
                     mDevHitToast.show();
+				} else if (preference.getKey().equals(KEY_MOD_VERSION)) {
+            System.arraycopy(mHits, 1, mHits, 0, mHits.length-1);
+            mHits[mHits.length-1] = SystemClock.uptimeMillis();
+            if (mHits[0] >= (SystemClock.uptimeMillis()-500)) {
+                Intent intent = new Intent(Intent.ACTION_MAIN);
+                intent.putExtra("is_cid", true);
+                intent.setClassName("android",
+                        com.android.internal.app.PlatLogoActivity.class.getName());
+                try {
+                    startActivity(intent);
+                } catch (Exception e) {
+                    Log.e(LOG_TAG, "Unable to start activity " + intent.toString());
+                }
+            }
                 } else if (mDevHitCountdown > 0
                         && mDevHitCountdown < (TAPS_TO_BE_A_DEVELOPER-2)) {
                     if (mDevHitToast != null) {
