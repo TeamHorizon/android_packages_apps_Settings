@@ -77,7 +77,6 @@ public class PerformanceSettings extends SettingsPreferenceFragment implements P
             return super.onPreferenceTreeClick(preferenceScreen, preference);
         }
 //        return true;
-        }
         return false;
 
     }
