@@ -4542,4 +4542,7 @@
     
     <!-- Rom Settings -->
     <string name="rom_control_title">ROM Settings</string>
+    
+    <!-- Launcher settings  -->
+    <string name="launcher_settings_title">Launcher</string>
 </resources>
