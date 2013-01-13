@@ -217,7 +217,7 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment {
                     mDevHitToast = Toast.makeText(getActivity(), R.string.show_dev_on,
                             Toast.LENGTH_LONG);
                     mDevHitToast.show();
-				} else if (preference.getKey().equals(KEY_MOD_VERSION)) {
+				} else if (preference.getKey().equals(KEY_XEHD_VERSION)) {
             System.arraycopy(mHits, 1, mHits, 0, mHits.length-1);
             mHits[mHits.length-1] = SystemClock.uptimeMillis();
             if (mHits[0] >= (SystemClock.uptimeMillis()-500)) {
