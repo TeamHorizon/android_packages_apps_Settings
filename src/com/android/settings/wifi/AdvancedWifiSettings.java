@@ -53,7 +53,6 @@ public class AdvancedWifiSettings extends SettingsPreferenceFragment
     private static final String KEY_SUSPEND_OPTIMIZATIONS = "suspend_optimizations";
     private static final String KEY_WIFI_PRIORITY = "wifi_priority";
 
-
     private WifiManager mWifiManager;
 
     @Override
@@ -157,7 +156,6 @@ public class AdvancedWifiSettings extends SettingsPreferenceFragment
 
         Preference wifiPriority = findPreference(KEY_WIFI_PRIORITY);
         wifiPriority.setEnabled(mWifiManager.isWifiEnabled());
-
     }
 
     private void updateSleepPolicySummary(Preference sleepPolicyPref, String value) {
