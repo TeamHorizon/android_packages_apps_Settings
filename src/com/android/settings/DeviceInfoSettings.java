@@ -70,7 +70,6 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment {
 
     static final int TAPS_TO_BE_A_DEVELOPER = 7;
 
-    private static final String KEY_MOD_VERSION = "mod_version";
     private static final String KEY_DEVICE_CHIPSET = "device_chipset";
     private static final String KEY_DEVICE_CPU = "device_cpu";
     private static final String KEY_DEVICE_GPU = "device_gpu";
