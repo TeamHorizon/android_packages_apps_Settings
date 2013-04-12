@@ -4688,4 +4688,6 @@
     <string name="saved">mV saved</string>
     <string name="sob">Set on boot</string>
 
+	<!-- TRDS Settings -->
+    <string name="trds_settings_title">Dark XenonHD</string>
 </resources>
