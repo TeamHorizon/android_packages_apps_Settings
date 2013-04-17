@@ -148,6 +148,8 @@ public class DevelopmentSettings extends PreferenceFragment
 
     private static final String DEVELOPMENT_TOOLS = "development_tools";
 
+    private static final String MEDIA_SCANNER_ON_BOOT = "media_scanner_on_boot";
+
     private static final int RESULT_DEBUG_APP = 1000;
 
     private IWindowManager mWindowManager;
@@ -204,6 +206,8 @@ public class DevelopmentSettings extends PreferenceFragment
     private Object mSelectedRootValue;
     private PreferenceScreen mDevelopmentTools;
 
+    private ListPreference mMSOB;
+
     private final ArrayList<Preference> mAllPrefs = new ArrayList<Preference>();
     private final ArrayList<CheckBoxPreference> mResetCbPrefs
             = new ArrayList<CheckBoxPreference>();
@@ -254,6 +258,10 @@ public class DevelopmentSettings extends PreferenceFragment
         mAllowMockLocation = findAndInitCheckboxPref(ALLOW_MOCK_LOCATION);
         mPassword = (PreferenceScreen) findPreference(LOCAL_BACKUP_PASSWORD);
         mAllPrefs.add(mPassword);
+
+        mMSOB = (ListPreference) findPreference(MEDIA_SCANNER_ON_BOOT);
+        mAllPrefs.add(mMSOB);
+        mMSOB.setOnPreferenceChangeListener(this);
 
         if (!android.os.Process.myUserHandle().equals(UserHandle.OWNER)) {
             disableForUser(mEnableAdb);
@@ -508,6 +516,26 @@ public class DevelopmentSettings extends PreferenceFragment
         updateVerifyAppsOverUsbOptions();
         updateBugreportOptions();
         updateRootAccessOptions();
+        updateMSOBOptions();
+    }
+
+    private void resetMSOBOptions() {
+        Settings.System.putInt(getActivity().getContentResolver(),
+                Settings.System.MEDIA_SCANNER_ON_BOOT, 0);
+    }
+
+    private void writeMSOBOptions(Object newValue) {
+        Settings.System.putInt(getActivity().getContentResolver(),
+                Settings.System.MEDIA_SCANNER_ON_BOOT,
+                Integer.valueOf((String) newValue));
+        updateMSOBOptions();
+    }
+
+    private void updateMSOBOptions() {
+        int value = Settings.System.getInt(getActivity().getContentResolver(),
+                Settings.System.MEDIA_SCANNER_ON_BOOT, 0);
+        mMSOB.setValue(String.valueOf(value));
+        mMSOB.setSummary(mMSOB.getEntry());
     }
 
     private void resetDangerousOptions() {
@@ -520,6 +548,7 @@ public class DevelopmentSettings extends PreferenceFragment
             }
         }
         resetDebuggerOptions();
+        resetMSOBOptions();
         writeAnimationScaleOption(0, mWindowAnimationScale, null);
         writeAnimationScaleOption(1, mTransitionAnimationScale, null);
         writeAnimationScaleOption(2, mAnimatorDurationScale, null);
@@ -1254,6 +1283,9 @@ public class DevelopmentSettings extends PreferenceFragment
             } else {
                 writeRootAccessOptions(newValue);
             }
+            return true;
+        } else if (preference == mMSOB) {
+            writeMSOBOptions(newValue);
             return true;
         }
         return false;
