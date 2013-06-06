@@ -1264,5 +1264,12 @@
         <item>vibrate</item>
         <item>mute</item>
     </string-array>
+    
+    <!--  Values for profile Wi-Fi triggers -->
+    <string-array name="profile_trigger_wifi_options" translatable="false">
+        <item>@string/profile_trigger_connect</item>
+        <item>@string/profile_trigger_disconnect</item>
+        <item>@string/profile_trigger_notrigger</item>
+    </string-array>
 
 </resources>

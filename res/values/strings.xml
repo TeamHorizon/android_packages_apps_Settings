@@ -5068,6 +5068,9 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="toggleWimax">WiMAX</string>
     <string name="toggleNfc">NFC</string>
 
+    <string name="profile_trigger_title_wifi">Wi-Fi triggers for <xliff:g id="profile">%s</xliff:g></string>
+    <string name="profile_trigger_configure">Configure trigger</string>
+    <string name="profile_trigger_wifi">Wi-Fi triggers</string>
     <string name="profile_write_nfc_tag">Write to NFC tag</string>
     <string name="profile_write_touch_tag">Touch tag to write</string>
     <string name="profile_write_success">Tag successfully written</string>
