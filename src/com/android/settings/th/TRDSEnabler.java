@@ -24,6 +24,7 @@ import android.provider.Settings;
 import android.util.Slog;
 import android.widget.CompoundButton;
 import android.widget.Switch;
+import com.android.settings.util.Helpers;
 
 import java.util.List;
 
