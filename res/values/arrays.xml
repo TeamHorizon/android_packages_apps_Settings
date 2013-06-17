@@ -1272,4 +1272,11 @@
         <item>@string/profile_trigger_notrigger</item>
     </string-array>
 
+    <!--  Values for profile trigger types -->
+    <string-array name="profile_trigger_filters" translatable="false">
+        <item>@string/profile_trigger_filter_all</item>
+        <item>@string/profile_trigger_filter_wifi</item>
+        <item>@string/profile_trigger_filter_bluetooth</item>
+    </string-array>
+
 </resources>
