@@ -34,7 +34,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.media.AudioManager;
-import android.net.wimax.WimaxHelper;
+import android.nfc.NfcAdapter;
 import android.os.Bundle;
 import android.preference.ListPreference;
 import android.preference.Preference;
@@ -107,9 +107,6 @@ public class ProfileConfig extends SettingsPreferenceFragment
             mConnections.add(new ConnectionItem(ConnectionSettings.PROFILE_CONNECTION_MOBILEDATA, getString(R.string.toggleData)));
             mConnections.add(new ConnectionItem(ConnectionSettings.PROFILE_CONNECTION_WIFIAP, getString(R.string.toggleWifiAp)));
         }
-        if (WimaxHelper.isWimaxSupported(getActivity())) {
-            mConnections.add(new ConnectionItem(ConnectionSettings.PROFILE_CONNECTION_WIMAX, getString(R.string.toggleWimax)));
-        }
         if (NfcAdapter.getDefaultAdapter(getActivity()) != null) {
             mConnections.add(new ConnectionItem(ConnectionSettings.PROFILE_CONNECTION_NFC, getString(R.string.toggleNfc)));
         }
@@ -132,7 +129,7 @@ public class ProfileConfig extends SettingsPreferenceFragment
 
     @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
-        if (deviceSupportsNfc(getActivity())) {
+        if (NfcAdapter.getDefaultAdapter(getActivity()) != null) {
             MenuItem nfc = menu.add(0, MENU_NFC_WRITE, 0, R.string.profile_write_nfc_tag)
                 .setIcon(R.drawable.ic_menu_nfc_writer_dark);
             nfc.setShowAsAction(MenuItem.SHOW_AS_ACTION_IF_ROOM |
