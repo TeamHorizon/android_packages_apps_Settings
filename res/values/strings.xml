@@ -1930,7 +1930,7 @@
     <!-- About phone screen, Free memory info -->
     <string name="mem_info">Memory</string>
     <!-- About phone screen, list item title. Screen for viewing ROM stats. -->
-    <string name="rominfo_settings_list_item_title">ROM Statistics</string>
+    <string name="rominfo_settings_list_item_title">XenonHD Statistics</string>
     <!--  About device screen, Hardware info -->
     <string name="hardware_info">Hardware info</string>
     <!--  About device Screen, hardware info, rear camera -->
