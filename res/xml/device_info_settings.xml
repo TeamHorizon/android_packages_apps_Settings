@@ -24,15 +24,16 @@
             <intent android:action="android.settings.SYSTEM_UPDATE_SETTINGS" />
         </PreferenceScreen> -->
 
-        <PreferenceScreen android:key="additional_system_update_settings"
+
+		<PreferenceScreen android:key="xenon_logo"
+			android:layout="@layout/logo_row" />
+
+		<PreferenceScreen android:key="additional_system_update_settings"
                           android:title="@string/additional_system_update_settings_list_item_title">
             <intent android:action="android.intent.action.MAIN"
                     android:targetPackage="com.otaupdater"
                     android:targetClass="com.otaupdater.OTAUpdaterActivity" />
         </PreferenceScreen>
-
-		<PreferenceScreen android:key="xenon_logo"
-			android:layout="@layout/logo_row" />
 
         <!-- Device status - launches activity -->
         <PreferenceScreen android:key="status_info"
