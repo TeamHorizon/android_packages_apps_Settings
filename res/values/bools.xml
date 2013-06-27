@@ -24,7 +24,7 @@
     <bool name="has_powercontrol_widget">true</bool>
 
     <!-- Display additional System Update menu if true -->
-    <bool name="config_additional_system_update_setting_enable">false</bool>
+    <bool name="config_additional_system_update_setting_enable">true</bool>
 
     <!-- Whether the bluetooth activation confirmation dialogs should be auto dismissed.
          Can be overridden for specific product builds. -->
