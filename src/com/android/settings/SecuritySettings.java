@@ -283,35 +283,8 @@ public class SecuritySettings extends SettingsPreferenceFragment
             }
         }
 
-        mNotificationAccess = findPreference(KEY_NOTIFICATION_ACCESS);
-        if (mNotificationAccess != null) {
-            final int total = NotificationAccessSettings.getListenersCount(mPM);
-            if (total == 0) {
-                if (deviceAdminCategory != null) {
-                    deviceAdminCategory.removePreference(mNotificationAccess);
-                }
-            } else {
-                final int n = getNumEnabledNotificationListeners();
-                if (n == 0) {
-                    mNotificationAccess.setSummary(getResources().getString(
-                            R.string.manage_notification_access_summary_zero));
-                } else {
-                    mNotificationAccess.setSummary(String.format(getResources().getQuantityString(
-                            R.plurals.manage_notification_access_summary_nonzero,
-                            n, n)));
-                }
-            }
-        }
 
         return root;
-    }
-
-    private int getNumEnabledNotificationListeners() {
-        final String flat = Settings.Secure.getString(getContentResolver(),
-                Settings.Secure.ENABLED_NOTIFICATION_LISTENERS);
-        if (flat == null || "".equals(flat)) return 0;
-        final String[] components = flat.split(":");
-        return components.length;
     }
 
     private boolean isNonMarketAppsAllowed() {
