@@ -101,6 +101,12 @@
                 android:title="@string/model_number"
                 android:summary="@string/device_info_default"/>
                 
+        <!-- XeHD version -->
+        <Preference android:key="xehd_version"
+                style="?android:preferenceInformationStyle"
+                android:title="@string/xehd_version"
+                android:summary="@string/xehd_version_default" />
+                
         <!-- Device firmware version -->
         <Preference android:key="firmware_version" 
                 style="?android:preferenceInformationStyle"
