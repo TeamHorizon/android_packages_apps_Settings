@@ -315,7 +315,6 @@ public class DevelopmentSettings extends PreferenceFragment
         }
         removeHdcpOptionsForProduction();
 
-
         mRootAccess = (ListPreference) findPreference(ROOT_ACCESS_KEY);
         mRootAccess.setOnPreferenceChangeListener(this);
         removeRootOptionsIfRequired();
