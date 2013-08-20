@@ -3109,6 +3109,8 @@
     <!-- Error message for users that aren't allowed to modify developer options [CHAR LIMIT=none] -->
     <string name="development_settings_not_available">Developer options are not available for this user</string>
     <string name="enable_adb">USB debugging</string>
+    <!-- Whether to allow mock SMS -->
+    <string name="allow_mock_sms">Allow mock SMS</string>
     <!-- Setting checkbox summary for Whether to enable USB debugging support on the phone -->
     <string name="enable_adb_summary">Debug mode when USB is connected</string>
     <!-- Setting title to revoke secure USB debugging authorizations -->
