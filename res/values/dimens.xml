@@ -73,4 +73,10 @@
     <dimen name="captioning_preview_height">200dp</dimen>
 
     <dimen name="settings_side_margin">@*android:dimen/preference_fragment_padding_side</dimen>
+
+  <!-- Height of a normal list item in edit playlist mode -->
+    <dimen name="normal_height">64dip</dimen>
+    <!-- Height of an expanded list item in edit playlist mode -->
+    <dimen name="expanded_height">128dip</dimen>
+
 </resources>
