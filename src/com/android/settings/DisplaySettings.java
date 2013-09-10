@@ -175,8 +175,6 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
                 Log.e(TAG, Settings.System.NOTIFICATION_LIGHT_PULSE + " not found");
             }
         }
-<<<<<<< HEAD
-=======
         
         mNotificationManager = INotificationManager.Stub.asInterface(
                 ServiceManager.getService(Context.NOTIFICATION_SERVICE));
@@ -223,7 +221,6 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
 
         mWallpaperImage = new File(getActivity().getFilesDir() + "/lockwallpaper");
         mWallpaperTemporary = new File(getActivity().getCacheDir() + "/lockwallpaper.tmp");
->>>>>>> 06b8af3... HALO mass commit
 
         mDisplayManager = (DisplayManager)getActivity().getSystemService(
                 Context.DISPLAY_SERVICE);
@@ -426,9 +423,6 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
             boolean value = mNotificationPulse.isChecked();
             Settings.System.putInt(getContentResolver(), Settings.System.NOTIFICATION_LIGHT_PULSE,
                     value ? 1 : 0);
-<<<<<<< HEAD
-            return true;
-=======
 	} else if (preference == mHaloEnabled) {
 		Settings.System.putInt(getActivity().getContentResolver(),
 			Settings.System.HALO_ENABLED, mHaloEnabled.isChecked() ? 1:0);
@@ -449,7 +443,6 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
                     Settings.System.HALO_COLORS, 
                     mHaloColors.isChecked() ? 1 : 0);
             Helpers.restartSystemUI();
->>>>>>> 06b8af3... HALO mass commit
         }
         return super.onPreferenceTreeClick(preferenceScreen, preference);
     }
@@ -467,11 +460,6 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
         }
         if (KEY_FONT_SIZE.equals(key)) {
             writeFontSizePreference(objValue);
-<<<<<<< HEAD
-        }
-
-        return true;
-=======
 		} else if (preference == mHaloState) {
             boolean state = Integer.valueOf((String) objValue) == 1;
             try {
@@ -518,7 +506,6 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
             		return handleBackgroundSelection(selection);
     }
     return false;
->>>>>>> 06b8af3... HALO mass commit
     }
 
     private final BroadcastReceiver mReceiver = new BroadcastReceiver() {

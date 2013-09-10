@@ -930,6 +930,7 @@
         <item>1</item>
         <item>2</item>
         <item>3</item>
+    </string-array>
 
     <string-array name="pref_zram_size_values" translatable="false">
         <item>0</item>
@@ -1080,7 +1081,6 @@
         <item>0</item>
         <item>1</item>
         <item>2</item>
-
     </string-array>
 
     <!-- Performance settings -->
@@ -1109,4 +1109,5 @@
         <item>1</item>
         <item>2</item>
     </string-array>
+
 </resources>
