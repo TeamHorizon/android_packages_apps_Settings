@@ -238,9 +238,6 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
                 Settings.System.HALO_PAUSE, isLowRAM) == 1);
 
                 
-        mHaloStyle = (ListPreference) findPreference(PREF_HALO_STYLE);
-        mHaloStyle.setOnPreferenceChangeListener(this);
-        
         mCustomBackground = (ListPreference) prefSet.findPreference(KEY_BACKGROUND_PREF);
         mCustomBackground.setOnPreferenceChangeListener(this);
 
@@ -255,7 +252,8 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
                 == WifiDisplayStatus.FEATURE_STATE_UNAVAILABLE) {
             getPreferenceScreen().removePreference(mWifiDisplayPreference);
             mWifiDisplayPreference = null;
-    
+	}
+    } 
 
     private boolean handleBackgroundSelection(int selection) {
         if (selection == LOCKSCREEN_BACKGROUND_COLOR_FILL) {
@@ -687,81 +685,6 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
                 mFontSizePref.click();
             }
         }
-        return false;
-    }
-    private boolean handleBackgroundSelection(int selection) {
-        if (selection == LOCKSCREEN_BACKGROUND_COLOR_FILL) {
-            final ColorPickerView colorView = new ColorPickerView(getActivity());
-            int currentColor = Settings.System.getInt(getContentResolver(),
-                    Settings.System.LOCKSCREEN_BACKGROUND, -1);
-
-            if (currentColor != -1) {
-                colorView.setColor(currentColor);
-            }
-            colorView.setAlphaSliderVisible(true);
-
-            new AlertDialog.Builder(getActivity())
-                    .setTitle(R.string.lockscreen_custom_background_dialog_title)
-                    .setPositiveButton(R.string.ok, new DialogInterface.OnClickListener() {
-                        @Override
-                        public void onClick(DialogInterface dialog, int which) {
-                            Settings.System.putInt(getContentResolver(),
-                                    Settings.System.LOCKSCREEN_BACKGROUND, colorView.getColor());
-                            updateCustomBackgroundSummary();
-                        }
-                    })
-                    .setNegativeButton(R.string.cancel, new DialogInterface.OnClickListener() {
-                        @Override
-                        public void onClick(DialogInterface dialog, int which) {
-                            dialog.dismiss();
-                        }
-                    })
-                    .setView(colorView)
-                    .show();
-        } else if (selection == LOCKSCREEN_BACKGROUND_CUSTOM_IMAGE) {
-            final Intent intent = new Intent(Intent.ACTION_GET_CONTENT, null);
-            intent.setType("image/*");
-            intent.putExtra("crop", "true");
-            intent.putExtra("scale", true);
-            intent.putExtra("scaleUpIfNeeded", false);
-            intent.putExtra("outputFormat", Bitmap.CompressFormat.PNG.toString());
-
-            final Display display = getActivity().getWindowManager().getDefaultDisplay();
-            final Rect rect = new Rect();
-            final Window window = getActivity().getWindow();
-
-            window.getDecorView().getWindowVisibleDisplayFrame(rect);
-
-            int statusBarHeight = rect.top;
-            int contentViewTop = window.findViewById(Window.ID_ANDROID_CONTENT).getTop();
-            int titleBarHeight = contentViewTop - statusBarHeight;
-            boolean isPortrait = getResources().getConfiguration().orientation ==
-                    Configuration.ORIENTATION_PORTRAIT;
-
-            int width = display.getWidth();
-            int height = display.getHeight() - titleBarHeight;
-
-            intent.putExtra("aspectX", isPortrait ? width : height);
-            intent.putExtra("aspectY", isPortrait ? height : width);
-
-            try {
-                mWallpaperTemporary.createNewFile();
-                mWallpaperTemporary.setWritable(true, false);
-                intent.putExtra(MediaStore.EXTRA_OUTPUT, Uri.fromFile(mWallpaperTemporary));
-                intent.putExtra("return-data", false);
-                getActivity().startActivityFromFragment(this, intent, REQUEST_CODE_BG_WALLPAPER);
-            } catch (IOException e) {
-                // Do nothing here
-            } catch (ActivityNotFoundException e) {
-                // Do nothing here
-            }
-        } else if (selection == LOCKSCREEN_BACKGROUND_DEFAULT_WALLPAPER) {
-            Settings.System.putString(getContentResolver(),
-                    Settings.System.LOCKSCREEN_BACKGROUND, null);
-            updateCustomBackgroundSummary();
-            return true;
-        }
-
         return false;
     }
 }
