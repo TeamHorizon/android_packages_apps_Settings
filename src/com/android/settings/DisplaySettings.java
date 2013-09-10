@@ -26,6 +26,7 @@ import android.app.admin.DevicePolicyManager;
 import android.content.BroadcastReceiver;
 import android.content.ContentResolver;
 import android.content.Context;
+import android.app.INotificationManager;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.res.Configuration;
@@ -35,6 +36,7 @@ import android.hardware.display.WifiDisplay;
 import android.hardware.display.WifiDisplayStatus;
 import android.os.Bundle;
 import android.os.RemoteException;
+import android.os.ServiceManager;
 import android.preference.CheckBoxPreference;
 import android.preference.ListPreference;
 import android.preference.Preference;
@@ -49,6 +51,7 @@ import android.view.Window;
 import android.widget.Toast;
 
 import com.android.settings.R;
+import com.android.settings.util.Helpers;
 import com.android.settings.Utils;
 import com.android.settings.notificationlight.ColorPickerView;
 import com.android.settings.SettingsPreferenceFragment;
@@ -57,7 +60,7 @@ import com.android.settings.widgets.SeekBarPreference;
 
 import com.android.internal.view.RotationPolicy;
 import com.android.settings.DreamSettings;
-
+import java.io.File;
 import java.util.ArrayList;
 
 import java.util.regex.Matcher;
@@ -117,6 +120,7 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
     private ListPreference mScreenTimeoutPreference;
     private Preference mScreenSaverPreference;
 
+    private INotificationManager mNotificationManager;
     private WifiDisplayStatus mWifiDisplayStatus;
     private Preference mWifiDisplayPreference;
 
@@ -134,6 +138,7 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
         ContentResolver resolver = getActivity().getContentResolver();
 
         addPreferencesFromResource(R.xml.display_settings);
+        PreferenceScreen prefSet = getPreferenceScreen();
 
         mAccelerometer = (CheckBoxPreference) findPreference(KEY_ACCELEROMETER);
         mAccelerometer.setPersistent(false);
@@ -230,7 +235,91 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
                 == WifiDisplayStatus.FEATURE_STATE_UNAVAILABLE) {
             getPreferenceScreen().removePreference(mWifiDisplayPreference);
             mWifiDisplayPreference = null;
+    
+
+    private boolean handleBackgroundSelection(int selection) {
+        if (selection == LOCKSCREEN_BACKGROUND_COLOR_FILL) {
+            final ColorPickerView colorView = new ColorPickerView(getActivity());
+            int currentColor = Settings.System.getInt(getContentResolver(),
+                    Settings.System.LOCKSCREEN_BACKGROUND, -1);
+
+            if (currentColor != -1) {
+                colorView.setColor(currentColor);
+            }
+            colorView.setAlphaSliderVisible(true);
+
+            new AlertDialog.Builder(getActivity())
+                    .setTitle(R.string.lockscreen_custom_background_dialog_title)
+                    .setPositiveButton(R.string.ok, new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            Settings.System.putInt(getContentResolver(),
+                                    Settings.System.LOCKSCREEN_BACKGROUND, colorView.getColor());
+                            updateCustomBackgroundSummary();
+                        }
+                    })
+                    .setNegativeButton(R.string.cancel, new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            dialog.dismiss();
+                        }
+                    })
+                    .setView(colorView)
+                    .show();
+        } else if (selection == LOCKSCREEN_BACKGROUND_CUSTOM_IMAGE) {
+            final Intent intent = new Intent(Intent.ACTION_GET_CONTENT, null);
+            intent.setType("image/*");
+            intent.putExtra("crop", "true");
+            intent.putExtra("scale", true);
+            intent.putExtra("scaleUpIfNeeded", false);
+            intent.putExtra("outputFormat", Bitmap.CompressFormat.PNG.toString());
+
+            final Display display = getActivity().getWindowManager().getDefaultDisplay();
+            final Rect rect = new Rect();
+            final Window window = getActivity().getWindow();
+
+            window.getDecorView().getWindowVisibleDisplayFrame(rect);
+
+            int statusBarHeight = rect.top;
+            int contentViewTop = window.findViewById(Window.ID_ANDROID_CONTENT).getTop();
+            int titleBarHeight = contentViewTop - statusBarHeight;
+            boolean isPortrait = getResources().getConfiguration().orientation ==
+                    Configuration.ORIENTATION_PORTRAIT;
+
+            int width = display.getWidth();
+            int height = display.getHeight() - titleBarHeight;
+
+            intent.putExtra("aspectX", isPortrait ? width : height);
+            intent.putExtra("aspectY", isPortrait ? height : width);
+
+            try {
+                mWallpaperTemporary.createNewFile();
+                mWallpaperTemporary.setWritable(true, false);
+                intent.putExtra(MediaStore.EXTRA_OUTPUT, Uri.fromFile(mWallpaperTemporary));
+                intent.putExtra("return-data", false);
+                getActivity().startActivityFromFragment(this, intent, REQUEST_CODE_BG_WALLPAPER);
+            } catch (IOException e) {
+                // Do nothing here
+            } catch (ActivityNotFoundException e) {
+                // Do nothing here
+            }
+        } else if (selection == LOCKSCREEN_BACKGROUND_DEFAULT_WALLPAPER) {
+            Settings.System.putString(getContentResolver(),
+                    Settings.System.LOCKSCREEN_BACKGROUND, null);
+            updateCustomBackgroundSummary();
+            return true;
         }
+
+        return false;
+    }
+
+  private boolean isHaloPolicyBlack() {
+        try {
+            return mNotificationManager.isHaloPolicyBlack();
+        } catch (android.os.RemoteException ex) {
+                // System dead
+        }
+        return true;
     }
 
     private void updateTimeoutPreferenceDescription(long currentTimeout) {
