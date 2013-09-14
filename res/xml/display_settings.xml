@@ -35,6 +35,14 @@
         		android:entries="@array/lockscreen_background_entries"
         		android:entryValues="@array/lockscreen_background_values" />
 
+        <!-- Active display -->
+    <PreferenceScreen
+        android:key="active_display"
+        android:fragment="com.android.settings.chameleonos.ActiveDisplaySettings"
+        android:title="@string/ad_settings_title"
+        android:summary="@string/ad_settings_summary">
+    </PreferenceScreen>
+
         <CheckBoxPreference
             android:key="accelerometer"
             android:title="@string/accelerometer_title"/>
