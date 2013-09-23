@@ -85,9 +85,6 @@
             android:title="@string/ad_brightness_title"
             android:summary="@string/ad_brightness_summary"
             android:max="100"
-            settings:min="0"
-            settings:unitsLeft=""
-            settings:unitsRight="%"
             android:defaultValue="100"
             android:dependency="ad_enable" />
 
