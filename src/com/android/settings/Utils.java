@@ -56,9 +56,12 @@ import android.provider.ContactsContract.Profile;
 import android.provider.ContactsContract.RawContacts;
 import android.telephony.TelephonyManager;
 import android.text.TextUtils;
+import android.util.DisplayMetrics;
 import android.util.Log;
+import android.view.DisplayInfo;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.WindowManager;
 import android.widget.ListView;
 import android.widget.TabWidget;
 
@@ -107,6 +110,15 @@ public class Utils {
      * to specify the summary text that should be displayed for the preference.
      */
     private static final String META_DATA_PREFERENCE_SUMMARY = "com.android.settings.summary";
+
+    // Device types
+    private static final int DEVICE_PHONE = 0;
+    private static final int DEVICE_HYBRID = 1;
+    private static final int DEVICE_TABLET = 2;
+
+    // Device type reference
+    private static int mDeviceType = -1;
+
 
     /**
      * Finds a matching activity for a preference's intent. If a matching
@@ -181,6 +193,14 @@ public class Utils {
      *         removed.
      *
      * @see {@link #META_DATA_PREFERENCE_ICON}
+    private static final int DEVICE_PHONE = 0;
+    private static final int DEVICE_HYBRID = 1;
+    private static final int DEVICE_TABLET = 2;
+
+    // Device type reference
+    private static int mDeviceType = -1;
+
+    /*
      *      {@link #META_DATA_PREFERENCE_TITLE}
      *      {@link #META_DATA_PREFERENCE_SUMMARY}
      */
