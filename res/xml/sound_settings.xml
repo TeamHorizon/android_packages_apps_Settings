@@ -34,7 +34,6 @@
     <Preference
             android:key="musicfx"
             android:title="@string/musicfx_title" />
-    </Preference>
 
     <PreferenceCategory
             android:key="category_calls_and_notification"
