@@ -60,6 +60,7 @@ import com.android.settings.ProxySelector;
 import com.android.settings.R;
 
 import java.net.InetAddress;
+import java.net.Inet6Address;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
@@ -522,6 +523,17 @@ public class WifiConfigController implements TextWatcher,
         return true;
     }
 
+    private InetAddress numericToInet4Address(String addrString)
+            throws IllegalArgumentException {
+        // We need IPv4 for 'legacy' wireless networking static address assignments
+        InetAddress inetAddr = NetworkUtils.numericToInetAddress(addrString);
+        if (inetAddr instanceof Inet6Address) {
+            throw new IllegalArgumentException("Sorry, IPv4 only");
+        }
+        return inetAddr;
+    }
+
+
     private int validateIpConfigFields(LinkProperties linkProperties) {
         if (mIpAddressView == null) return 0;
 
@@ -530,7 +542,7 @@ public class WifiConfigController implements TextWatcher,
 
         InetAddress inetAddr = null;
         try {
-            inetAddr = NetworkUtils.numericToInetAddress(ipAddr);
+            inetAddr = numericToInet4Address(ipAddr);
         } catch (IllegalArgumentException e) {
             return R.string.wifi_ip_settings_invalid_ip_address;
         }
@@ -562,7 +574,7 @@ public class WifiConfigController implements TextWatcher,
         } else {
             InetAddress gatewayAddr = null;
             try {
-                gatewayAddr = NetworkUtils.numericToInetAddress(gateway);
+                gatewayAddr = numericToInet4Address(gateway);
             } catch (IllegalArgumentException e) {
                 return R.string.wifi_ip_settings_invalid_gateway;
             }
@@ -577,7 +589,7 @@ public class WifiConfigController implements TextWatcher,
             mDns1View.setText(mConfigUi.getContext().getString(R.string.wifi_dns1_hint));
         } else {
             try {
-                dnsAddr = NetworkUtils.numericToInetAddress(dns);
+                dnsAddr = numericToInet4Address(dns);
             } catch (IllegalArgumentException e) {
                 return R.string.wifi_ip_settings_invalid_dns;
             }
@@ -587,7 +599,7 @@ public class WifiConfigController implements TextWatcher,
         if (mDns2View.length() > 0) {
             dns = mDns2View.getText().toString();
             try {
-                dnsAddr = NetworkUtils.numericToInetAddress(dns);
+                dnsAddr = numericToInet4Address(dns);
             } catch (IllegalArgumentException e) {
                 return R.string.wifi_ip_settings_invalid_dns;
             }
