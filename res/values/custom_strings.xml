@@ -23,6 +23,10 @@
     <string name="root_access_adb">ADB only</string>
     <string name="root_access_all">Apps and ADB</string>
 
+    <!-- Main list strings -->
+    <string name="header_category_interface">Interface</string>
+    <string name="performance_settings">Performance</string>
+
     <string name="volume_adjust_sounds_enable_title">Volume adjust sound</string>
      <!-- Sound settings screen, setting check box summary -->
     <string name="volume_adjust_sounds_enable_summary">Play sound when adjusting volume with hard keys</string>
