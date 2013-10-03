@@ -28,6 +28,8 @@
     <!-- ROMSettings -->
     <string name="misc_settings_title">ROM Settings</string>
 
+    <string name="random_stuff">Do whatever you want to do man</string>
+
     <!-- Sound settings -->
     <string name="advanced_sound_title">Advanced options</string>
     <string name="sound_title">Sound</string>

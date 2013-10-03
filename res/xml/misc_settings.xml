@@ -128,4 +128,15 @@
 
     </PreferenceCategory>
 
+    <PreferenceCategory
+        android:key="do_whatever_you_want_to_do_man"
+        android:title="@string/random_stuff" >
+
+        <ListPreference
+                android:key="lcd_density"
+                android:title="@string/lcd_density"
+                android:persistent="false" />
+
+    </PreferenceCategory>
+
 </PreferenceScreen>
