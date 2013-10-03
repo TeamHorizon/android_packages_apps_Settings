@@ -240,12 +240,12 @@
         android:icon="@drawable/ic_action_permission"
         android:title="@string/superuser" />   
 
-	<!-- Performance -->
+    <!-- Performance Controls -->
     <header
-        android:id="@+id/performance_settings"
-        android:fragment="com.android.settings.performance.PerformanceSettings"
+        android:id="@+id/performance_controls"
+        android:fragment="com.brewcrewfoo.performance.activities.MainActivity"
         android:icon="@drawable/ic_settings_performance"
-        android:title="@string/performance_settings_title" />
+        android:title="@string/performance_settings" />
 
     <!-- About Device -->
     <header

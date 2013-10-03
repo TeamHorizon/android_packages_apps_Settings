@@ -40,6 +40,7 @@ import android.os.ServiceManager;
 import android.preference.CheckBoxPreference;
 import android.preference.ListPreference;
 import android.preference.Preference;
+import android.preference.PreferenceCategory;
 import android.preference.Preference.OnPreferenceClickListener;
 import android.preference.PreferenceScreen;
 import android.provider.Settings;
@@ -297,18 +298,11 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
         return false;
     }
 
-<<<<<<< HEAD
   private boolean isHaloPolicyBlack() {
         try {
             return mNotificationManager.isHaloPolicyBlack();
         } catch (android.os.RemoteException ex) {
                 // System dead
-=======
-        } else if (preference == mSmartCoverWake) {
-            Settings.System.putInt(getActivity().getApplicationContext().getContentResolver(),
-                    Settings.System.LOCKSCREEN_LID_WAKE, (Boolean) objValue ? 1 : 0);
-            return true;
->>>>>>> 2b15de8... Settings: Ability to Enable/Disable Smart Wake covers
         }
         return true;
     }
@@ -535,11 +529,6 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
                     Settings.System.HALO_COLORS, 
                     mHaloColors.isChecked() ? 1 : 0);
             Helpers.restartSystemUI();
-        } else if (preference == mSmartCoverWake) {
-            Settings.System.putInt(getActivity().getApplicationContext()
-			.getContentResolver(),
-                    Settings.System.LOCKSCREEN_LID_WAKE,
-			 (Boolean) objValue ? 1 : 0);
         }
         return super.onPreferenceTreeClick(preferenceScreen, preference);
     }
@@ -609,6 +598,12 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
             Settings.System.putInt(getActivity().getContentResolver(),
                     Settings.System.HALO_BUBBLE_TEXT_COLOR, intHex);
             return true;
+        } else if (preference == mSmartCoverWake) {
+            Settings.System.putInt(getActivity().getApplicationContext()
+                        .getContentResolver(),
+                    Settings.System.LOCKSCREEN_LID_WAKE,
+                         (Boolean) objValue ? 1 : 0);
+	    return true;
         } else if (preference == mCustomBackground) {
             int selection = mCustomBackground.findIndexOfValue(objValue.toString());
             		return handleBackgroundSelection(selection);
