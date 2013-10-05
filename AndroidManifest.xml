@@ -1560,6 +1560,8 @@
             android:theme="@style/CryptKeeperBlankTheme"
         />
 
+        <activity android:name=".chameleonos.LabSettings" />
+
         <!-- Pseudo-activity used to provide an intent-filter entry point to encryption settings -->
         <activity android:name="Settings$CryptKeeperSettingsActivity"
                 android:label="@string/crypt_keeper_encrypt_title">
