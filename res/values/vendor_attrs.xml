@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
 /*
-** Copyright 2013 The ChameleonOS Open Source Project
+** Copyright 2013, The ChameleonOS Open Source Project
 **
 ** Licensed under the Apache License, Version 2.0 (the "License");
 ** you may not use this file except in compliance with the License.
@@ -18,15 +18,10 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
-    <!-- Gesture Anywhere -->
-    <string-array name="gesture_anywhere_position_entries" translatable="false">
-        <item>@string/gesture_anywhere_position_left</item>
-        <item>@string/gesture_anywhere_position_right</item>
-    </string-array>
-
-    <string-array name="gesture_anywhere_position_values" translatable="false">
-        <item>3</item>
-        <item>5</item>
-    </string-array>
+    <declare-styleable name="SeekBarPreference">
+        <attr name="min" format="integer" />
+        <attr name="unitsLeft" format="string" />
+        <attr name="unitsRight" format="string" />
+    </declare-styleable>
 
 </resources>
