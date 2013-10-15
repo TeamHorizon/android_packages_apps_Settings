@@ -82,9 +82,9 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
     private static final String KEY_NOTIFICATION_PULSE = "notification_pulse";
     private static final String KEY_SCREEN_SAVER = "screensaver";
     private static final String KEY_WIFI_DISPLAY = "wifi_display";
-	private static final String KEY_LOCK_CLOCK = "lock_clock";
-	private static final String KEY_HALO_ENABLED = "halo_enabled";
-	private static final String KEY_HALO_STATE = "halo_state";
+    private static final String KEY_LOCK_CLOCK = "lock_clock";
+    private static final String KEY_HALO_ENABLED = "halo_enabled";
+    private static final String KEY_HALO_STATE = "halo_state";
     private static final String KEY_HALO_HIDE = "halo_hide";
     private static final String KEY_HALO_NINJA = "halo_ninja";
     private static final String KEY_HALO_MSGBOX = "halo_msgbox";
@@ -99,6 +99,8 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
     private static final String PREF_HALO_EFFECT_COLOR = "halo_effect_color";
     private static final String PREF_HALO_BUBBLE_COLOR = "halo_bubble_color";
     private static final String PREF_HALO_BUBBLE_TEXT_COLOR = "halo_bubble_text_color";
+    private static final String PREF_SMART_COVER_CATEGORY = "smart_cover_category";
+    private static final String PREF_SMART_COVER_WAKE = "smart_cover_wake";
 
     private static final int DLG_GLOBAL_CHANGE_WARNING = 1;
 
@@ -138,6 +140,7 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
     private INotificationManager mNotificationManager;
     private WifiDisplayStatus mWifiDisplayStatus;
     private Preference mWifiDisplayPreference;
+    private CheckBoxPreference mSmartCoverWake;
 
     private final RotationPolicy.RotationPolicyListener mRotationPolicyListener =
             new RotationPolicy.RotationPolicyListener() {
@@ -278,19 +281,34 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
                 == WifiDisplayStatus.FEATURE_STATE_UNAVAILABLE) {
             getPreferenceScreen().removePreference(mWifiDisplayPreference);
             mWifiDisplayPreference = null;
-	}
-    } 
+        }
+
+        mSmartCoverWake = (CheckBoxPreference) findPreference(PREF_SMART_COVER_WAKE);
+        mSmartCoverWake.setOnPreferenceChangeListener(this);
+        if(!getResources().getBoolean(com.android.internal.R.bool.config_lidControlsSleep)) {
+            PreferenceCategory smartCoverOptions = (PreferenceCategory)
+                    getPreferenceScreen().findPreference(PREF_SMART_COVER_CATEGORY);
+            getPreferenceScreen().removePreference(smartCoverOptions);
+        }
+    }
 
     private boolean handleBackgroundSelection(int selection) {
 
         return false;
     }
 
+<<<<<<< HEAD
   private boolean isHaloPolicyBlack() {
         try {
             return mNotificationManager.isHaloPolicyBlack();
         } catch (android.os.RemoteException ex) {
                 // System dead
+=======
+        } else if (preference == mSmartCoverWake) {
+            Settings.System.putInt(getActivity().getApplicationContext().getContentResolver(),
+                    Settings.System.LOCKSCREEN_LID_WAKE, (Boolean) objValue ? 1 : 0);
+            return true;
+>>>>>>> 2b15de8... Settings: Ability to Enable/Disable Smart Wake covers
         }
         return true;
     }
@@ -517,6 +535,11 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
                     Settings.System.HALO_COLORS, 
                     mHaloColors.isChecked() ? 1 : 0);
             Helpers.restartSystemUI();
+        } else if (preference == mSmartCoverWake) {
+            Settings.System.putInt(getActivity().getApplicationContext()
+			.getContentResolver(),
+                    Settings.System.LOCKSCREEN_LID_WAKE,
+			 (Boolean) objValue ? 1 : 0);
         }
         return super.onPreferenceTreeClick(preferenceScreen, preference);
     }
