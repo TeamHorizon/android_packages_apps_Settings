@@ -65,9 +65,16 @@
         android:key="ad_customizations"
         android:title="@string/ad_customizations_title" />
 
+        <com.android.settings.cyanogenmod.AppMultiSelectListPreference
+            android:key="ad_excluded_apps"
+            android:persistent="false"
+            android:title="@string/ad_excluded_apps_title"
+            android:summary="@string/ad_excluded_apps_summary"
+            android:dependency="ad_enable" />
+
         <CheckBoxPreference
             android:key="ad_show_date"
-            android:persistent="false"
+	    android:persistent="false"
             android:title="@string/ad_show_date_title"
             android:summary="@string/ad_show_date_summary"
             android:dependency="ad_enable"/>
