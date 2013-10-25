@@ -102,13 +102,15 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
     private static final String PREF_HALO_BUBBLE_TEXT_COLOR = "halo_bubble_text_color";
     private static final String PREF_SMART_COVER_CATEGORY = "smart_cover_category";
     private static final String PREF_SMART_COVER_WAKE = "smart_cover_wake";
+    private static final String KEY_WAKE_WHEN_PLUGGED_OR_UNPLUGGED = "wake_when_plugged_or_unplugged";
 
     private static final int DLG_GLOBAL_CHANGE_WARNING = 1;
 
     private DisplayManager mDisplayManager;
-
     private CheckBoxPreference mAccelerometer;
     private FontDialogPreference mFontSizePref;
+    private CheckBoxPreference mWakeWhenPluggedOrUnplugged;
+    private WarnedListPreference mFontSizePref;
     private CheckBoxPreference mNotificationPulse;
     private CheckBoxPreference mHaloEnabled;
     private ListPreference mHaloState;
@@ -290,6 +292,17 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
                     getPreferenceScreen().findPreference(PREF_SMART_COVER_CATEGORY);
             getPreferenceScreen().removePreference(smartCoverOptions);
         }
+
+        // Default value for wake-on-plug behavior from config.xml
+        boolean wakeUpWhenPluggedOrUnpluggedConfig = getResources().getBoolean(
+                com.android.internal.R.bool.config_unplugTurnsOnScreen);
+
+        mWakeWhenPluggedOrUnplugged =
+                (CheckBoxPreference) findPreference(KEY_WAKE_WHEN_PLUGGED_OR_UNPLUGGED);
+        mWakeWhenPluggedOrUnplugged.setChecked(Settings.Global.getInt(resolver,
+                Settings.Global.WAKE_WHEN_PLUGGED_OR_UNPLUGGED,
+                (wakeUpWhenPluggedOrUnpluggedConfig ? 1 : 0)) == 1);
+
     }
 
     private boolean handleBackgroundSelection(int selection) {
@@ -513,6 +526,11 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
                     Settings.System.HALO_COLORS, 
                     mHaloColors.isChecked() ? 1 : 0);
             Helpers.restartSystemUI();
+        } else if (preference == mWakeWhenPluggedOrUnplugged) {
+            Settings.Global.putInt(getContentResolver(),
+                    Settings.Global.WAKE_WHEN_PLUGGED_OR_UNPLUGGED,
+                    mWakeWhenPluggedOrUnplugged.isChecked() ? 1 : 0);
+            return true;
         }
         return super.onPreferenceTreeClick(preferenceScreen, preference);
     }
