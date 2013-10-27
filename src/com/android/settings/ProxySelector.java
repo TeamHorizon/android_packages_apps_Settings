@@ -23,7 +23,6 @@ import android.app.AlertDialog;
 import android.app.Dialog;
 import android.app.Fragment;
 import android.app.admin.DevicePolicyManager;
-import android.content.ContentResolver;
 import android.content.Context;
 import android.content.Intent;
 import android.net.ConnectivityManager;
@@ -44,7 +43,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import java.net.InetSocketAddress;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 

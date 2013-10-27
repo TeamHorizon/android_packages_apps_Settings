@@ -17,13 +17,10 @@
 package com.android.settings;
 
 import android.app.AlertDialog;
-import android.content.Context;
 import android.content.res.Configuration;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.SystemProperties;
-import android.telephony.TelephonyManager;
-import android.text.TextUtils;
 import android.view.KeyEvent;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;

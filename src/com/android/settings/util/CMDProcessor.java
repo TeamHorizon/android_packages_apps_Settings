@@ -2,11 +2,6 @@ package com.android.settings.util;
 
 import android.util.Log;
 
-import java.io.DataInputStream;
-import java.io.DataOutputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
 
 // convenience import for quick referencing of this method
 

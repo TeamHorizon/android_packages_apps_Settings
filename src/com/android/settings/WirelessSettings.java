@@ -41,7 +41,6 @@ import android.util.Log;
 import com.android.internal.telephony.TelephonyIntents;
 import com.android.internal.telephony.TelephonyProperties;
 import com.android.settings.nfc.NfcEnabler;
-import com.android.settings.NsdEnabler;
 
 public class WirelessSettings extends SettingsPreferenceFragment {
     private static final String TAG = "WirelessSettings";
@@ -277,18 +276,22 @@ public class WirelessSettings extends SettingsPreferenceFragment {
         }
 
         // Enable link to CMAS app settings depending on the value in config.xml.
-        boolean isCellBroadcastAppLinkEnabled = this.getResources().getBoolean(
-                com.android.internal.R.bool.config_cellBroadcastAppLinks);
-        try {
-            if (isCellBroadcastAppLinkEnabled) {
-                PackageManager pm = getPackageManager();
-                if (pm.getApplicationEnabledSetting("com.android.cellbroadcastreceiver")
-                        == PackageManager.COMPONENT_ENABLED_STATE_DISABLED) {
-                    isCellBroadcastAppLinkEnabled = false;  // CMAS app disabled
-                }
+        PackageManager pm = getPackageManager();
+        boolean hasPhoneFeatures = pm.hasSystemFeature(PackageManager.FEATURE_TELEPHONY);
+        boolean isCellBroadcastAppLinkEnabled = false;
+        if (hasPhoneFeatures) {
+            isCellBroadcastAppLinkEnabled = this.getResources().getBoolean(
+                    com.android.internal.R.bool.config_cellBroadcastAppLinks);
+            try {
+                if (isCellBroadcastAppLinkEnabled) {
+                    if (pm.getApplicationEnabledSetting("com.android.cellbroadcastreceiver")
+                            == PackageManager.COMPONENT_ENABLED_STATE_DISABLED) {
+                        isCellBroadcastAppLinkEnabled = false;  
+                    }
+		} 
+            } catch (IllegalArgumentException ignored) {
+			isCellBroadcastAppLinkEnabled = false;
             }
-        } catch (IllegalArgumentException ignored) {
-            isCellBroadcastAppLinkEnabled = false;  // CMAS app not installed
         }
         if (isSecondaryUser || !isCellBroadcastAppLinkEnabled) {
             PreferenceScreen root = getPreferenceScreen();

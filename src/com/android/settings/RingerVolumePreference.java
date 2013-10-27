@@ -16,10 +16,6 @@
 
 package com.android.settings;
 
-import static android.os.BatteryManager.BATTERY_STATUS_UNKNOWN;
-
-import com.android.internal.telephony.TelephonyIntents;
-
 import android.app.Dialog;
 import android.content.BroadcastReceiver;
 import android.content.ContentResolver;
@@ -30,7 +26,6 @@ import android.media.AudioManager;
 import android.media.AudioSystem;
 import android.net.Uri;
 import android.os.Handler;
-import android.os.Looper;
 import android.os.Message;
 import android.os.Parcel;
 import android.os.Parcelable;
@@ -38,15 +33,12 @@ import android.preference.VolumePreference;
 import android.provider.Settings;
 import android.provider.Settings.System;
 import android.util.AttributeSet;
-import android.util.Log;
 import android.view.KeyEvent;
 import android.view.View;
-import android.view.View.OnClickListener;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.ImageView;
 import android.widget.SeekBar;
-import android.widget.TextView;
 
 /**
  * Special preference type that allows configuration of both the ring volume and

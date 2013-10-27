@@ -17,27 +17,19 @@
 package com.android.settings.wifi;
 
 import com.android.settings.R;
-import com.android.settings.WirelessSettings;
 
 import java.util.ArrayList;
 
-import android.app.AlertDialog;
 import android.content.BroadcastReceiver;
 import android.content.ContentResolver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.net.ConnectivityManager;
-import android.net.NetworkInfo;
-import android.net.wifi.SupplicantState;
 import android.net.wifi.WifiConfiguration;
-import android.net.wifi.WifiInfo;
 import android.net.wifi.WifiManager;
 import android.preference.CheckBoxPreference;
 import android.provider.Settings;
-import android.text.TextUtils;
-import android.util.Log;
-import android.widget.Toast;
 
 public class WifiApEnabler {
     private final Context mContext;

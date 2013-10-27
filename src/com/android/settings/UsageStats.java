@@ -19,7 +19,6 @@
 package com.android.settings;
 
 import com.android.internal.app.IUsageStats;
-import com.android.settings.R;
 import android.app.Activity;
 import android.content.Context;
 import android.content.pm.ApplicationInfo;

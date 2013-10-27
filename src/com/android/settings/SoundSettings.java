@@ -22,7 +22,6 @@ import android.content.BroadcastReceiver;
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.bluetooth.BluetoothDevice;
-import android.content.BroadcastReceiver;
 import android.content.ContentResolver;
 import android.content.Context;
 import android.content.Intent;

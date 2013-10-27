@@ -39,7 +39,6 @@ import android.os.Bundle;
 import android.os.IBinder;
 import android.os.RemoteException;
 import android.os.ServiceManager;
-import android.os.UserHandle;
 import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.IWindowManager;

@@ -27,7 +27,6 @@ import android.text.Editable;
 import android.text.Html;
 import android.text.InputFilter;
 import android.text.InputType;
-import android.text.Spanned;
 import android.text.TextWatcher;
 import android.text.InputFilter.LengthFilter;
 import android.util.Log;

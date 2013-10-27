@@ -1,17 +1,11 @@
 package com.android.settings;
 
-import android.app.ActivityManagerNative;
 import android.content.Context;
-import android.content.res.Configuration;
 import android.content.res.Resources;
-import android.content.res.TypedArray;
-import android.os.RemoteException;
 import android.preference.DialogPreference;
 import android.preference.Preference;
-import android.provider.Settings;
 import android.util.AttributeSet;
 import android.util.DisplayMetrics;
-import android.util.Log;
 import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.View;

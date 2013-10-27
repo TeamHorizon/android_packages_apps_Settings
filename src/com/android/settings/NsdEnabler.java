@@ -23,9 +23,6 @@ import android.content.IntentFilter;
 import android.net.nsd.NsdManager;
 import android.preference.CheckBoxPreference;
 import android.preference.Preference;
-import android.preference.PreferenceScreen;
-
-import com.android.settings.R;
 
 /**
  * NsdEnabler is a helper to manage network service discovery on/off checkbox state.

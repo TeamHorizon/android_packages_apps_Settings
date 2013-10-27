@@ -17,6 +17,7 @@
 package com.android.settings;
 
 import static android.provider.Settings.System.SCREEN_OFF_TIMEOUT;
+import com.android.settings.util.Helpers;
 
 import android.app.Activity;
 import android.app.ActivityManager;
@@ -45,27 +46,13 @@ import android.preference.Preference.OnPreferenceClickListener;
 import android.preference.PreferenceScreen;
 import android.provider.Settings;
 import android.provider.Settings.SettingNotFoundException;
-import android.util.AttributeSet;
 import android.util.Log;
 import android.view.Display;
-import android.view.Window;
-import android.widget.Toast;
-
-import com.android.settings.R;
-import com.android.settings.util.Helpers;
-import com.android.settings.Utils;
-import com.android.settings.SettingsPreferenceFragment;
-import com.android.settings.bluetooth.DeviceListPreferenceFragment;
-import com.android.settings.widgets.AlphaSeekBar;
-import com.android.settings.widgets.SeekBarPreference;
 
 import com.android.internal.view.RotationPolicy;
-import com.android.settings.DreamSettings;
 import java.io.File;
 import java.util.ArrayList;
 
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 import net.margaritov.preference.colorpicker.ColorPickerPreference;
 

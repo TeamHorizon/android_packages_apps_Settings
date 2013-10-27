@@ -55,9 +55,7 @@ import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
-import com.android.internal.statusbar.StatusBarIcon;
 import com.android.internal.telephony.ITelephony;
-import com.android.internal.telephony.Phone;
 import com.android.internal.telephony.PhoneConstants;
 
 import java.util.List;

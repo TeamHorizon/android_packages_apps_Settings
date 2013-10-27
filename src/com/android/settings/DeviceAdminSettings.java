@@ -16,7 +16,6 @@
 
 package com.android.settings;
 
-import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserException;
 
 import android.app.Activity;

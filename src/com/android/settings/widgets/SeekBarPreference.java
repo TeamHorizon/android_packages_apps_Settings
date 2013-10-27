@@ -1,7 +1,6 @@
 package com.android.settings.widgets;
 
 import android.content.Context;
-import android.content.SharedPreferences;
 import android.content.res.TypedArray;
 import android.preference.Preference;
 import android.util.AttributeSet;

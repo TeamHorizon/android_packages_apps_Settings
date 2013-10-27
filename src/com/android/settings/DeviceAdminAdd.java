@@ -50,7 +50,6 @@ import android.widget.TextView;
 
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.HashSet;
 import java.util.List;
 
 public class DeviceAdminAdd extends Activity {

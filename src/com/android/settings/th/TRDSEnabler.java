@@ -18,10 +18,7 @@ package com.android.settings.th;
 
 import android.app.ActivityManager;
 import android.content.Context;
-import android.content.Intent;
-import android.content.IntentFilter;
 import android.provider.Settings;
-import android.util.Slog;
 import android.widget.CompoundButton;
 import android.widget.Switch;
 import com.android.settings.util.Helpers;

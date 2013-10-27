@@ -1,7 +1,6 @@
 package com.android.settings.util;
 
 import android.os.Environment;
-import android.util.Log;
 
 import java.io.InputStream;
 import java.io.OutputStream;

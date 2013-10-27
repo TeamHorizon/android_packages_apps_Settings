@@ -32,7 +32,6 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
 import android.preference.Preference;
-import android.preference.PreferenceActivity;
 import android.preference.PreferenceCategory;
 import android.preference.PreferenceGroup;
 import android.preference.PreferenceScreen;

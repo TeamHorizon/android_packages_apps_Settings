@@ -27,7 +27,6 @@ import android.content.Intent;
 import android.net.wifi.WifiManager;
 import android.os.Bundle;
 import android.provider.Settings;
-import android.util.Log;
 
 /**
  * This activity requests users permission to allow scanning even when Wi-Fi is turned off

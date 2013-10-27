@@ -16,8 +16,6 @@
 
 package com.android.settings.performance;
 
-import android.app.AlertDialog;
-import android.content.DialogInterface;
 import android.os.Bundle;
 import android.os.SystemProperties;
 import android.preference.CheckBoxPreference;
@@ -25,12 +23,11 @@ import android.preference.Preference;
 import android.preference.ListPreference;
 import android.preference.PreferenceScreen;
 import android.preference.Preference.OnPreferenceChangeListener;
-import android.preference.Preference;
 
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 
-public class PerformanceSettings extends SettingsPreferenceFragment implements Preference.OnPreferenceChangeListener {
+public class PerformanceSettings extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
     private static final String TAG = "PerformanceSettings";
 
     private static final String USE_DITHERING_PREF = "pref_use_dithering";
