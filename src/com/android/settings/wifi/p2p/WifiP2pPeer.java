@@ -20,14 +20,12 @@ import com.android.settings.R;
 
 import android.content.Context;
 import android.net.wifi.WifiManager;
-import android.net.wifi.p2p.WifiP2pManager;
 import android.net.wifi.p2p.WifiP2pDevice;
 import android.preference.Preference;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.ImageView;
 
-import java.util.Comparator;
 
 public class WifiP2pPeer extends Preference {
 

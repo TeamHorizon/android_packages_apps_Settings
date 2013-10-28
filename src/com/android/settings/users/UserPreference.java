@@ -16,7 +16,6 @@
 
 package com.android.settings.users;
 
-import com.android.internal.util.CharSequences;
 import com.android.settings.R;
 
 import android.content.Context;

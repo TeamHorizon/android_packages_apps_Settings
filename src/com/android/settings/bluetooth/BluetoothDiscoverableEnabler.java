@@ -25,7 +25,6 @@ import android.content.SharedPreferences;
 import android.os.Handler;
 import android.os.SystemProperties;
 import android.preference.Preference;
-import android.text.format.DateUtils;
 
 import com.android.settings.R;
 

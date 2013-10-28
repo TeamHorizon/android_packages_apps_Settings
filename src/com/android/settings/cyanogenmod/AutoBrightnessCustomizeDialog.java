@@ -30,7 +30,6 @@ import android.provider.Settings;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.Log;
-import android.util.Spline;
 import android.view.ContextMenu;
 import android.view.Menu;
 import android.view.MenuItem;

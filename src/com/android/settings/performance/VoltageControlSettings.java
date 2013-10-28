@@ -25,7 +25,6 @@ import android.widget.AdapterView.OnItemClickListener;
 import android.widget.BaseAdapter;
 import android.widget.Button;
 import android.widget.CompoundButton;
-import android.widget.CompoundButton.OnCheckedChangeListener;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.ListView;
@@ -43,8 +42,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.android.settings.R;
-
-import com.android.settings.performance.CMDProcessor;
 
 public class VoltageControlSettings extends Fragment {
 

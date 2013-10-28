@@ -25,7 +25,6 @@ import android.os.Parcelable;
 import android.preference.VolumePreference;
 import android.provider.Settings;
 import android.util.AttributeSet;
-import android.view.MotionEvent;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;

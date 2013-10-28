@@ -18,7 +18,6 @@ package com.android.settings;
 
 import android.app.LauncherActivity;
 import android.content.Intent;
-import android.os.Bundle;
 import android.view.View;
 import android.widget.ListView;
 

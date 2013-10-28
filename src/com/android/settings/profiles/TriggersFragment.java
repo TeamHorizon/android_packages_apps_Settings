@@ -33,7 +33,6 @@ import android.net.wifi.WifiManager;
 import android.os.Bundle;
 import android.preference.Preference;
 import android.preference.PreferenceScreen;
-import android.util.Log;
 import android.widget.ArrayAdapter;
 
 import com.android.settings.R;

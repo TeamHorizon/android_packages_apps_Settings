@@ -44,7 +44,6 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import java.text.Collator;
-import java.util.Comparator;
 import java.util.List;
 
 public class InputMethodPreference extends CheckBoxPreference {

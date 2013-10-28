@@ -24,8 +24,6 @@ import android.net.NetworkInfo.DetailedState;
 import android.net.wifi.WifiConfiguration;
 import android.net.wifi.WifiManager;
 import android.os.Bundle;
-import android.os.Handler;
-import android.os.Message;
 import android.preference.PreferenceScreen;
 import android.text.TextUtils;
 import android.util.Log;

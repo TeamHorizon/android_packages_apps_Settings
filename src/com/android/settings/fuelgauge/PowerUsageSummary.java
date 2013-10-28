@@ -24,7 +24,6 @@ import android.content.pm.UserInfo;
 import android.graphics.drawable.Drawable;
 import android.hardware.Sensor;
 import android.hardware.SensorManager;
-import android.net.Uri;
 import android.os.BatteryStats;
 import android.os.BatteryStats.Uid;
 import android.os.Bundle;

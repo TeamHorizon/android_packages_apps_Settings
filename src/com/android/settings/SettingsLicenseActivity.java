@@ -30,7 +30,6 @@ import android.app.AlertDialog;
 import android.app.ProgressDialog;
 import android.content.DialogInterface;
 import android.content.DialogInterface.OnDismissListener;
-import android.content.res.Configuration;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;

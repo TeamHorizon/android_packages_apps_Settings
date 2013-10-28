@@ -25,13 +25,9 @@ import android.preference.Preference;
 import android.text.format.DateFormat;
 import android.util.AttributeSet;
 import android.view.View;
-import android.widget.CheckBox;
-import android.widget.CompoundButton;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.TimePicker;
-
-import com.android.settings.R;
 
 public class TimeRangePreference extends Preference implements
     View.OnClickListener {

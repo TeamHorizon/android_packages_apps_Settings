@@ -30,7 +30,6 @@ import android.preference.PreferenceScreen;
 import android.text.Html;
 import android.text.TextUtils;
 import android.util.Log;
-import android.view.View;
 import android.widget.EditText;
 import android.text.TextWatcher;
 import android.app.Dialog;
