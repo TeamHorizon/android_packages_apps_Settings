@@ -89,6 +89,7 @@ public class SoundSettings extends SettingsPreferenceFragment implements
 	private static final String KEY_SWAP_VOLUME_BUTTONS = "swap_volume_buttons";
 	private static final String KEY_CAMERA_SOUNDS = "camera_sounds";
 	private static final String PROP_CAMERA_SOUND = "persist.sys.camera-sound";
+    private static final String KEY_SAFE_HEADSET_VOLUME = "safe_headset_volume";
 
     private static final String[] NEED_VOICE_CAPABILITY = {
             KEY_RINGTONE, KEY_DTMF_TONE, KEY_CATEGORY_CALLS,
@@ -113,6 +114,7 @@ public class SoundSettings extends SettingsPreferenceFragment implements
 	private CheckBoxPreference mConvertSoundToVibration;
 	private CheckBoxPreference mSwapVolumeButtons;
 	private CheckBoxPreference mCameraSounds;
+    private CheckBoxPreference mSafeHeadsetVolume;
 
     private Runnable mRingtoneLookupRunnable;
 
@@ -202,6 +204,10 @@ public class SoundSettings extends SettingsPreferenceFragment implements
         mCameraSounds.setPersistent(false);
         mCameraSounds.setChecked(SystemProperties.getBoolean(
                 PROP_CAMERA_SOUND, true));
+        mSafeHeadsetVolume = (CheckBoxPreference) findPreference(KEY_SAFE_HEADSET_VOLUME);
+        mSafeHeadsetVolume.setPersistent(false);
+        mSafeHeadsetVolume.setChecked(Settings.System.getBoolean(resolver,
+                Settings.System.MANUAL_SAFE_MEDIA_VOLUME, true));
 
         mRingtonePreference = findPreference(KEY_RINGTONE);
         mNotificationPreference = findPreference(KEY_NOTIFICATION_SOUND);
@@ -385,6 +391,10 @@ public class SoundSettings extends SettingsPreferenceFragment implements
                         
         } else if (preference == mCameraSounds) {
             SystemProperties.set(PROP_CAMERA_SOUND, mCameraSounds.isChecked() ? "1" : "0");
+
+        } else if (preference == mSafeHeadsetVolume) {
+            Settings.System.putBoolean(getContentResolver(), Settings.System.MANUAL_SAFE_MEDIA_VOLUME,
+                    mSafeHeadsetVolume.isChecked());
 
         } else if (preference == mMusicFx) {
             // let the framework fire off the intent

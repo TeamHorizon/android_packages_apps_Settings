@@ -35,6 +35,11 @@
             android:key="musicfx"
             android:title="@string/musicfx_title" />
 
+    <CheckBoxPreference
+            android:key="safe_headset_volume"
+            android:title="@string/safe_headset_volume_title"
+            android:defaultValue="true" />        
+
     <PreferenceCategory
             android:key="category_calls_and_notification"
             android:title="@string/sound_category_call_ringtone_vibrate_title"/>
