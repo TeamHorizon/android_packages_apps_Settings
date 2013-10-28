@@ -89,7 +89,6 @@ public class SoundSettings extends SettingsPreferenceFragment implements
 	private static final String KEY_SWAP_VOLUME_BUTTONS = "swap_volume_buttons";
 	private static final String KEY_CAMERA_SOUNDS = "camera_sounds";
 	private static final String PROP_CAMERA_SOUND = "persist.sys.camera-sound";
-    private static final String KEY_SAFE_HEADSET_VOLUME = "safe_headset_volume";
 
     private static final String[] NEED_VOICE_CAPABILITY = {
             KEY_RINGTONE, KEY_DTMF_TONE, KEY_CATEGORY_CALLS,
@@ -114,7 +113,6 @@ public class SoundSettings extends SettingsPreferenceFragment implements
 	private CheckBoxPreference mConvertSoundToVibration;
 	private CheckBoxPreference mSwapVolumeButtons;
 	private CheckBoxPreference mCameraSounds;
-    private CheckBoxPreference mSafeHeadsetVolume;
 
     private Runnable mRingtoneLookupRunnable;
 

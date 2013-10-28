@@ -110,7 +110,6 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
     private CheckBoxPreference mAccelerometer;
     private FontDialogPreference mFontSizePref;
     private CheckBoxPreference mWakeWhenPluggedOrUnplugged;
-    private WarnedListPreference mFontSizePref;
     private CheckBoxPreference mNotificationPulse;
     private CheckBoxPreference mHaloEnabled;
     private ListPreference mHaloState;

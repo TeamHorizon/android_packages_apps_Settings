@@ -136,7 +136,7 @@ public class SecuritySettings extends SettingsPreferenceFragment
         addPreferencesFromResource(R.xml.security_settings);
         root = getPreferenceScreen();
 
-		// Add package manager to check if features are available
+                // Add package manager to check if features are available
         PackageManager pm = getPackageManager();
 
         // Add options for lock/unlock screen
@@ -169,7 +169,7 @@ public class SecuritySettings extends SettingsPreferenceFragment
                     resid = R.xml.security_settings_password;
                     break;
                 case DevicePolicyManager.PASSWORD_QUALITY_GESTURE_WEAK:
-                    resid = R.xml.security_settings_gesture;
+                     resid = R.xml.security_settings_gesture;
                     break;
             }
         }
@@ -222,7 +222,7 @@ public class SecuritySettings extends SettingsPreferenceFragment
         mVisiblePattern = (CheckBoxPreference) root.findPreference(KEY_VISIBLE_PATTERN);
 
         // visible gesture
-             mVisibleGesture = (CheckBoxPreference) root.findPreference(KEY_VISIBLE_GESTURE);
+        mVisibleGesture = (CheckBoxPreference) root.findPreference(KEY_VISIBLE_GESTURE);
 
         // Quick Unlock for PIN and Password Lockscreens
         mQuickUnlock = (CheckBoxPreference) root.findPreference(KEY_QUICK_UNLOCK);
@@ -230,14 +230,14 @@ public class SecuritySettings extends SettingsPreferenceFragment
         // lock instantly on power key press
         mPowerButtonInstantlyLocks = (CheckBoxPreference) root.findPreference(
                 KEY_POWER_INSTANTLY_LOCKS);
-                
+
         // visible error pattern
         mVisibleErrorPattern = (CheckBoxPreference) root.findPreference(KEY_VISIBLE_ERROR_PATTERN);
-        
+         
         // visible dots
         mVisibleDots = (CheckBoxPreference) root.findPreference(KEY_VISIBLE_DOTS);
 
-		// if we aren't using a pin or password remove quick unlock
+        // if we aren't using a pin or password remove quick unlock
         if (!usingPinOrPassword(resid)) {
             PreferenceGroup securityCategory = (PreferenceGroup) root.findPreference(KEY_SECURITY_CATEGORY);
             if (securityCategory != null && mQuickUnlock != null) {
@@ -322,7 +322,7 @@ public class SecuritySettings extends SettingsPreferenceFragment
             }
         }
 
-		boolean isTelephony = pm.hasSystemFeature(PackageManager.FEATURE_TELEPHONY);
+                boolean isTelephony = pm.hasSystemFeature(PackageManager.FEATURE_TELEPHONY);
         if (isTelephony) {
             addPreferencesFromResource(R.xml.security_settings_app_cyanogenmod);
             mSmsSecurityCheck = (ListPreference) root.findPreference(KEY_SMS_SECURITY_CHECK_PREF);
@@ -339,7 +339,7 @@ public class SecuritySettings extends SettingsPreferenceFragment
                                       Settings.Global.INSTALL_NON_MARKET_APPS, 0) > 0;
     }
 
-	// Why? cuz I hate negative logic.
+        // Why? cuz I hate negative logic.
     private boolean usingPinOrPassword(int resid) {
         if (resid == R.xml.security_settings_pattern || resid == R.xml.security_settings_pin) {
             return true;
@@ -405,7 +405,7 @@ public class SecuritySettings extends SettingsPreferenceFragment
         }
     }
 
-	private void updateSmsSecuritySummary(int i) {
+        private void updateSmsSecuritySummary(int i) {
         String message = getString(R.string.sms_security_check_limit_summary, i);
         mSmsSecurityCheck.setSummary(message);
     }
@@ -488,14 +488,15 @@ public class SecuritySettings extends SettingsPreferenceFragment
         if (mVisiblePattern != null) {
             mVisiblePattern.setChecked(lockPatternUtils.isVisiblePatternEnabled());
         }
+        if (mVisibleErrorPattern != null) {
+             mVisibleErrorPattern.setChecked(lockPatternUtils.isShowErrorPath());
+        }
+        if (mVisibleDots != null) {
+             mVisibleDots.setChecked(lockPatternUtils.isVisibleDotsEnabled());
+        }
         if (mQuickUnlock != null) {
             mQuickUnlock.setChecked(Settings.System.getBoolean(getContentResolver(),
                     Settings.System.LOCKSCREEN_QUICK_UNLOCK_CONTROL, false));
-        if (mVisibleErrorPattern != null) {
-            mVisibleErrorPattern.setChecked(lockPatternUtils.isShowErrorPath());
-        }
-        if (mVisibleDots != null) {
-            mVisibleDots.setChecked(lockPatternUtils.isVisibleDotsEnabled());
         }
         if (mPowerButtonInstantlyLocks != null) {
             mPowerButtonInstantlyLocks.setChecked(lockPatternUtils.getPowerButtonInstantlyLocks());
@@ -557,9 +558,9 @@ public class SecuritySettings extends SettingsPreferenceFragment
         } else if (KEY_VISIBLE_GESTURE.equals(key)) {
             lockPatternUtils.setVisibleGestureEnabled(isToggled(preference));
         } else if (KEY_VISIBLE_ERROR_PATTERN.equals(key)) {
-            lockPatternUtils.setShowErrorPath(isToggled(preference));
+             lockPatternUtils.setShowErrorPath(isToggled(preference));
         } else if (KEY_VISIBLE_DOTS.equals(key)) {
-            lockPatternUtils.setVisibleDotsEnabled(isToggled(preference));
+             lockPatternUtils.setVisibleDotsEnabled(isToggled(preference));
         } else if (KEY_POWER_INSTANTLY_LOCKS.equals(key)) {
             lockPatternUtils.setPowerButtonInstantlyLocks(isToggled(preference));
         } else if (KEY_QUICK_UNLOCK.equals(key)) {
