@@ -38,4 +38,9 @@
     <string name="wifi_setting_countrycode_error">There was a problem setting the region code.</string>
     <!-- Wi-Fi settings diables message if Wifi is off-->
     <string name="wifi_setting_countrycode_disabled">Enable Wi-Fi to change this option.</string>
+
+    <string name="quick_links_title">Quick Links</string>
+     
+    <!-- Rom Settings -->
+    <string name="rom_control_title">ROM Settings</string>
 </resources>
