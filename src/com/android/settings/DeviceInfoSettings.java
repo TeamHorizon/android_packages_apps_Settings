@@ -75,8 +75,6 @@ public class DeviceInfoSettings extends RestrictedSettingsFragment {
     static final int TAPS_TO_BE_A_DEVELOPER = 7;
     private static final String KEY_MOD_BUILD_DATE = "build_date";
 
-    static final int TAPS_TO_BE_A_DEVELOPER = 7;
-
     long[] mHits = new long[3];
     int mDevHitCountdown;
     Toast mDevHitToast;
