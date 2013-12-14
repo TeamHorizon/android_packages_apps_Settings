@@ -82,6 +82,7 @@ import com.android.settings.inputmethod.InputMethodAndLanguageSettings;
 import com.android.settings.inputmethod.KeyboardLayoutPickerFragment;
 import com.android.settings.inputmethod.SpellCheckersSettings;
 import com.android.settings.inputmethod.UserDictionaryList;
+import com.android.settings.location.LocationEnabler;
 import com.android.settings.location.LocationSettings;
 import com.android.settings.net.MobileDataEnabler;
 import com.android.settings.nfc.AndroidBeam;
@@ -833,6 +834,7 @@ public class Settings extends PreferenceActivity
 
         private final WifiEnabler mWifiEnabler;
         private final BluetoothEnabler mBluetoothEnabler;
+        private final LocationEnabler mLocationEnabler;
         public static ThemeEnabler mThemeEnabler;
         private final MobileDataEnabler mMobileDataEnabler;
         private final VoiceWakeupEnabler mVoiceWakeupEnabler;
@@ -858,6 +860,7 @@ public class Settings extends PreferenceActivity
                     || header.id == R.id.bluetooth_settings
                     || header.id == R.id.theme_settings 
                     || header.id == R.id.voice_wakeup_settings
+                    || header.id == R.id.location_settings
                     || header.id == R.id.mobile_network_settings ) {
                 return HEADER_TYPE_SWITCH;
             } else if (header.id == R.id.security_settings) {
@@ -907,6 +910,7 @@ public class Settings extends PreferenceActivity
             mThemeEnabler = new ThemeEnabler(context, new Switch(context));
             mMobileDataEnabler = new MobileDataEnabler(context, new Switch(context));
             mVoiceWakeupEnabler = new VoiceWakeupEnabler(context, new Switch(context));
+            mLocationEnabler = new LocationEnabler(context, new Switch(context));
             mDevicePolicyManager = dpm;
         }
 
@@ -978,6 +982,8 @@ public class Settings extends PreferenceActivity
                         mWifiEnabler.setSwitch(holder.switch_);
                     } else if (header.id == R.id.bluetooth_settings) {
                         mBluetoothEnabler.setSwitch(holder.switch_);
+                    } else if (header.id == R.id.location_settings) {
+                        mLocationEnabler.setSwitch(holder.switch_);
                     } else if (header.id == R.id.theme_settings) {
                         mThemeEnabler.setSwitch(holder.switch_);
                     } else if (header.id == R.id.mobile_network_settings) {
@@ -1060,6 +1066,7 @@ public class Settings extends PreferenceActivity
             mThemeEnabler.resume();
             mMobileDataEnabler.resume();
             mVoiceWakeupEnabler.resume();
+            mLocationEnabler.resume();
         }
 
         public void pause() {
@@ -1068,6 +1075,7 @@ public class Settings extends PreferenceActivity
             mThemeEnabler.resume();
             mMobileDataEnabler.resume();
             mVoiceWakeupEnabler.pause();
+            mLocationEnabler.pause();
         }
     }
 
