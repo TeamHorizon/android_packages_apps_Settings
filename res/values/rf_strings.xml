@@ -192,4 +192,9 @@
     <string name="profile_choose_app">Choose app</string>
     <string name="profiles_add">Add</string>
 
+    <!-- Wi-Fi settings screen, advanced, title of the item to set the Wi-Fi priority. -->
+    <string name="wifi_setting_priority_title">Wi-Fi priority</string>
+    <!-- Wi-Fi settings screen, setting summary for setting the Wi-Fi priority-->
+    <string name="wifi_setting_priority_summary">Specify the priority of the Wi-Fi networks</string>
+
 </resources>
