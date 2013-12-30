@@ -201,4 +201,8 @@
     <string name="disable_camera_widget_title">Enable camera widget</string>
     <string name="disable_camera_widget_summary">Allow the lockscreen camera widget</string>
 
+    <string name="storage_rescan_media">Rescan media for the storage volume</string>
+    <string name="storage_rescan_media_complete">Scan completed</string>
+
+
 </resources>
