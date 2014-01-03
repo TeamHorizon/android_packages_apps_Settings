@@ -29,6 +29,7 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.content.pm.ResolveInfo;
 import android.content.pm.UserInfo;
+import android.content.res.Resources;
 import android.os.Bundle;
 import android.os.UserHandle;
 import android.os.UserManager;
@@ -67,6 +68,7 @@ public class SecuritySettings extends RestrictedSettingsFragment
     private static final String KEY_LOCK_AFTER_TIMEOUT = "lock_after_timeout";
     private static final String KEY_OWNER_INFO_SETTINGS = "owner_info_settings";
     private static final String KEY_ENABLE_WIDGETS = "keyguard_enable_widgets";
+    private static final String KEY_DISABLE_CAMERA_WIDGET = "disable_camera_widget";
 
     private static final int SET_OR_CHANGE_LOCK_METHOD_REQUEST = 123;
     private static final int CONFIRM_EXISTING_FOR_BIOMETRIC_WEAK_IMPROVE_REQUEST = 124;
@@ -107,6 +109,7 @@ public class SecuritySettings extends RestrictedSettingsFragment
     private CheckBoxPreference mToggleVerifyApps;
     private CheckBoxPreference mPowerButtonInstantlyLocks;
     private CheckBoxPreference mEnableKeyguardWidgets;
+    private CheckBoxPreference mCameraWidget;
 
     private Preference mNotificationAccess;
 
@@ -206,6 +209,11 @@ public class SecuritySettings extends RestrictedSettingsFragment
             setupLockAfterPreference();
             updateLockAfterPreferenceSummary();
         }
+
+       // Lockscreen Camera Widget
+        mCameraWidget = (CheckBoxPreference) findPreference(KEY_DISABLE_CAMERA_WIDGET);
+        mCameraWidget.setChecked(Settings.System.getInt(getActivity().getContentResolver(),
+                Settings.System.DISABLE_CAMERA_WIDGET, 0) == 1);
 
         // biometric weak liveliness
         mBiometricWeakLiveliness =
@@ -583,6 +591,10 @@ public class SecuritySettings extends RestrictedSettingsFragment
             } else {
                 setNonMarketAppsAllowed(false);
             }
+        } else if (preference == mCameraWidget) {
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.DISABLE_CAMERA_WIDGET, mCameraWidget.isChecked()
+                    ? 1 : 0);
         } else if (KEY_TOGGLE_VERIFY_APPLICATIONS.equals(key)) {
             Settings.Global.putInt(getContentResolver(), Settings.Global.PACKAGE_VERIFIER_ENABLE,
                     mToggleVerifyApps.isChecked() ? 1 : 0);

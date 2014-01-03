@@ -197,4 +197,8 @@
     <!-- Wi-Fi settings screen, setting summary for setting the Wi-Fi priority-->
     <string name="wifi_setting_priority_summary">Specify the priority of the Wi-Fi networks</string>
 
+    <!-- Lockscreen camera widget toggle -->
+    <string name="disable_camera_widget_title">Enable camera widget</string>
+    <string name="disable_camera_widget_summary">Allow the lockscreen camera widget</string>
+
 </resources>
