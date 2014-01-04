@@ -23,6 +23,12 @@
             android:title="@string/accessibility_services_title">
     </PreferenceCategory>
 
+    <PreferenceScreen
+        android:key="interface_voice_tts"
+        android:fragment="com.android.settings.accessibility.TtsNotification"
+        android:title="@string/voice_tts_title" />
+
+
     <PreferenceCategory
             android:key="system_category"
             android:title="@string/accessibility_system_title">
