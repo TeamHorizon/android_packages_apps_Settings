@@ -55,6 +55,12 @@
             android:key="keyguard_enable_widgets"
             android:title="@string/security_enable_widgets_title"/>
 
+        <CheckBoxPreference
+            android:key="lockscreen_enable_camera"
+            android:title="@string/lockscreen_enable_camera_title"
+            android:summary="@string/lockscreen_enable_camera_summary"
+            android:persistent="false"/>
+
         <PreferenceScreen
             android:fragment="com.android.settings.OwnerInfoSettings"
             android:key="owner_info_settings"
