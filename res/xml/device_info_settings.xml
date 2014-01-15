@@ -21,12 +21,12 @@
 		<PreferenceScreen android:key="xenon_logo"
 			android:layout="@layout/logo_row" />
 
-	<PreferenceScreen android:key="additional_system_update_settings"
+	<!--<PreferenceScreen android:key="additional_system_update_settings"
             android:title="@string/system_update_settings_list_item_title">
             <intent android:action="android.intent.action.MAIN"
                     android:targetPackage="com.otaupdater"
                     android:targetClass="com.otaupdater.OTAUpdaterActivity" />
-        </PreferenceScreen>
+        </PreferenceScreen>-->
 
        <PreferenceScreen android:key="rominfo_settings"
             android:title="@string/rominfo_settings_list_item_title">
