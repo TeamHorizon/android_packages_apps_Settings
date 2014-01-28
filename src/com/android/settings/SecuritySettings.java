@@ -111,9 +111,6 @@ public class SecuritySettings extends RestrictedSettingsFragment
     private CheckBoxPreference mToggleVerifyApps;
     private CheckBoxPreference mPowerButtonInstantlyLocks;
     private CheckBoxPreference mEnableKeyguardWidgets;
-    private CheckBoxPreference mEnableCameraWidget;
-    private CheckBoxPreference mEnablePowerMenu;
-    private CheckBoxPreference mSeeThrough;
 
     private Preference mNotificationAccess;
 
@@ -125,6 +122,7 @@ public class SecuritySettings extends RestrictedSettingsFragment
         super(null /* Don't ask for restrictions pin on creation. */);
     }
 
+    private CheckBoxPreference mEnableCameraWidget;
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -218,17 +216,21 @@ public class SecuritySettings extends RestrictedSettingsFragment
         mEnableCameraWidget = (CheckBoxPreference) findPreference(KEY_ENABLE_CAMERA);
 
         // Enable or disable camera widget settings based on device
-        if (!getPackageManager().hasSystemFeature(PackageManager.FEATURE_CAMERA) ||
-                Camera.getNumberOfCameras() == 0) {
-            PreferenceGroup securityCategory = (PreferenceGroup)
-                    root.findPreference(KEY_SECURITY_CATEGORY);
-            securityCategory.removePreference(root.findPreference(KEY_ENABLE_CAMERA));
-        } else if (isCameraDisabledByDpm()) {
-            mEnableCameraWidget.setEnabled(false);
-        } else {
-            mEnableCameraWidget.setChecked(Settings.System.getInt(getContentResolver(),
-                    Settings.System.LOCKSCREEN_ENABLE_CAMERA, 1) == 1);
-            mEnableCameraWidget.setOnPreferenceChangeListener(this);
+        if (mEnableCameraWidget != null) {
+            if (!getPackageManager().hasSystemFeature(PackageManager.FEATURE_CAMERA) ||
+                    Camera.getNumberOfCameras() == 0) {
+                PreferenceGroup securityCategory = (PreferenceGroup)
+                        root.findPreference(KEY_SECURITY_CATEGORY);
+                if (securityCategory != null) {
+                    securityCategory.removePreference(root.findPreference(KEY_ENABLE_CAMERA));
+                }
+            } else if (isCameraDisabledByDpm()) {
+                mEnableCameraWidget.setEnabled(false);
+            } else {
+                mEnableCameraWidget.setChecked(Settings.System.getInt(getContentResolver(),
+                        Settings.System.LOCKSCREEN_ENABLE_CAMERA, 1) == 1);
+                mEnableCameraWidget.setOnPreferenceChangeListener(this);
+            }
         }
 
         // biometric weak liveliness
