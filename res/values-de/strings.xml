@@ -2043,4 +2043,7 @@
     <string name="user_image_take_photo" msgid="1280274310152803669">"Foto aufnehmen"</string>
     <string name="user_image_choose_photo" msgid="7940990613897477057">"Foto aus Galerie auswählen"</string>
     <string name="regulatory_info_text" msgid="5623087902354026557"></string>
+    
+    <!-- Advanced Settings -->	
+    <string name="header_category_rootsettings">Erweiterte Einstellungen</string>
 </resources>
