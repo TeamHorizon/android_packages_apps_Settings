@@ -212,13 +212,6 @@
     <header android:id="@+id/system_section"
         android:title="@string/header_category_system" />
 
-    <!-- AppOps -->
-    <header
-        android:fragment="com.android.settings.applications.AppOpsSummary"
-        android:icon="@drawable/ic_app_ops"
-        android:title="@string/appops_settings_title"
-        android:id="@+id/appops_settings" />
-
     <!-- Date & Time -->
     <header
         android:id="@+id/date_time_settings"
@@ -239,6 +232,17 @@
         android:fragment="com.android.settings.print.PrintSettingsFragment"
         android:icon="@*android:drawable/ic_print"
         android:title="@string/print_settings" />
+        
+    <!-- Advanced Settings-->
+    <header
+        android:title="@string/header_category_advsettings" />
+        
+    <!-- AppOps -->
+    <header
+        android:fragment="com.android.settings.applications.AppOpsSummary"
+        android:icon="@drawable/ic_app_ops"
+        android:title="@string/appops_settings_title"
+        android:id="@+id/appops_settings" />
 
     <!-- Development -->
     <header
