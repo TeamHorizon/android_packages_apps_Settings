@@ -326,6 +326,50 @@ public class SoundSettings extends SettingsPreferenceFragment implements
         mHandler.sendMessage(mHandler.obtainMessage(msg, summary));
     }
 
+    private void updateVolumeSteps(int streamType, int steps)
+    {
+        //Change the setting live
+        mAudioManager.setStreamMaxVolume(streamType, steps);
+
+        }
+
+        private void updateVolumeSteps(String settingsKey, int steps){
+
+                int streamType = -1;
+                if (settingsKey.equals(KEY_VOLUME_STEPS_ALARM))
+                                streamType = mAudioManager.STREAM_ALARM;
+
+                else if (settingsKey.equals(KEY_VOLUME_STEPS_DTMF))
+                                streamType = mAudioManager.STREAM_DTMF;
+
+                else if (settingsKey.equals(KEY_VOLUME_STEPS_MUSIC))
+                                streamType = mAudioManager.STREAM_MUSIC;
+
+                else if (settingsKey.equals(KEY_VOLUME_STEPS_NOTIFICATION))
+                                streamType = mAudioManager.STREAM_NOTIFICATION;
+
+                else if (settingsKey.equals(KEY_VOLUME_STEPS_RING))
+                                streamType = mAudioManager.STREAM_RING;
+
+                else if (settingsKey.equals(KEY_VOLUME_STEPS_SYSTEM))
+                                streamType = mAudioManager.STREAM_SYSTEM;
+
+                else if (settingsKey.equals(KEY_VOLUME_STEPS_VOICE_CALL))
+                                streamType = mAudioManager.STREAM_VOICE_CALL;
+
+                //Save the setting for next boot
+                Settings.System.putInt(getContentResolver(),
+                settingsKey, steps);
+
+                ((ListPreference)findPreference(settingsKey)).setSummary(String.valueOf(steps));
+
+                updateVolumeSteps(streamType, steps);
+
+                Log.i(TAG, "Volume steps:" + settingsKey + "" +String.valueOf(steps));
+
+        }
+
+
     private void lookupRingtoneNames() {
         new Thread(mRingtoneLookupRunnable).start();
     }

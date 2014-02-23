@@ -56,6 +56,8 @@
      <string name="battery_circle">Battery circle</string>
      <string name="battery_circle_percent">Battery circle &amp; percent</string>
      <string name="battery_prefs_title">Options</string>
+     <string name="battery_percent_only">Percent Only</string>
+     <string name="battery_none">None</string>
 
     <!-- Wi-Fi region code settings-->
     <string name="wifi_setting_countrycode_title">Wi-Fi region code</string>
