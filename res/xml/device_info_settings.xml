@@ -19,7 +19,8 @@
 
 
 		<PreferenceScreen android:key="xenon_logo"
-			android:layout="@layout/logo_row" />
+			android:layout="@layout/logo_row"
+            android:selectable="false" />
 
 	<!--<PreferenceScreen android:key="additional_system_update_settings"
             android:title="@string/system_update_settings_list_item_title">
