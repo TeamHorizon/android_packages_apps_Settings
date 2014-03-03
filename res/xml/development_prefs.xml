@@ -37,12 +37,6 @@
         android:title="@string/keep_screen_on" 
         android:summary="@string/keep_screen_on_summary"/>
 
-   <PreferenceScreen
-        android:id="@+id/wakelock_blocker"
-        android:layout="@layout/preference_wakelockblocker"
-        android:title="@string/wakelock_blocker"
-        android:fragment="com.android.settings.du.WakeLockBlocker" />
-
     <ListPreference
         android:key="select_runtime"
         android:title="@string/select_runtime_title"
