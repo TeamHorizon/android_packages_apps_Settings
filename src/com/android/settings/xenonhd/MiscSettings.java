@@ -18,6 +18,7 @@ package com.android.settings.xenonhd;
 import android.os.Bundle;
 import android.os.UserHandle;
 import android.content.ContentResolver;
+import android.content.Context;
 import android.content.res.Resources;
 import android.preference.ListPreference;
 import android.preference.Preference;
@@ -28,6 +29,9 @@ import android.preference.SwitchPreference;
 import android.provider.Settings;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
+import android.util.Log;
+import android.view.View;
+import android.widget.Toast;
 
 import com.android.settings.R;
 
@@ -36,9 +40,13 @@ Preference.OnPreferenceChangeListener {
 
     private static final String SHOW_CLEAR_ALL_RECENTS = "show_clear_all_recents";
     private static final String RECENTS_CLEAR_ALL_LOCATION = "recents_clear_all_location";
+    private static final String KEY_TOAST_ANIMATION = "toast_animation";
+
+    private Context mContext;
 
     private SwitchPreference mRecentsClearAll;
     private ListPreference mRecentsClearAllLocation;
+    private ListPreference mToastAnimation;
 
     @Override
     public void onCreate(Bundle icicle) {
@@ -47,6 +55,16 @@ Preference.OnPreferenceChangeListener {
 
         PreferenceScreen prefSet = getPreferenceScreen();
         ContentResolver resolver = getActivity().getContentResolver();
+
+        mContext = getActivity().getApplicationContext();
+
+        // Toast Animations
+        mToastAnimation = (ListPreference) findPreference(KEY_TOAST_ANIMATION);
+        mToastAnimation.setSummary(mToastAnimation.getEntry());
+        int CurrentToastAnimation = Settings.System.getInt(getContentResolver(), Settings.System.TOAST_ANIMATION, 1);
+        mToastAnimation.setValueIndex(CurrentToastAnimation); //set to index of default value
+        mToastAnimation.setSummary(mToastAnimation.getEntries()[CurrentToastAnimation]);
+        mToastAnimation.setOnPreferenceChangeListener(this);
 
         mRecentsClearAll = (SwitchPreference) prefSet.findPreference(SHOW_CLEAR_ALL_RECENTS);
         mRecentsClearAll.setChecked(Settings.System.getIntForUser(resolver,
@@ -72,6 +90,12 @@ Preference.OnPreferenceChangeListener {
             Settings.System.putIntForUser(getActivity().getContentResolver(),
             Settings.System.RECENTS_CLEAR_ALL_LOCATION, location, UserHandle.USER_CURRENT);
             updateRecentsLocation(location);
+            return true;
+        } else if (preference == mToastAnimation) {
+            int index = mToastAnimation.findIndexOfValue((String) objValue);
+            Settings.System.putString(getContentResolver(), Settings.System.TOAST_ANIMATION, (String) objValue);
+            mToastAnimation.setSummary(mToastAnimation.getEntries()[index]);
+            Toast.makeText(mContext, "Toast Test", Toast.LENGTH_SHORT).show();
             return true;
         }
         return false;

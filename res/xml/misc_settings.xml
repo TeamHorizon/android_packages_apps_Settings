@@ -61,4 +61,18 @@
                 android:icon="@drawable/ic_settings_notification_drawer"
                 />
 
+    <PreferenceCategory
+        android:key="custom_animations"
+        android:title="@string/custom_animations" >
+
+         <!-- Toast Animation -->
+         <ListPreference
+           android:key="toast_animation"
+           android:title="@string/toast_animation_title"
+           android:entries="@array/toast_animation_entries"
+           android:entryValues="@array/toast_animation_values"
+           android:persistent="false" />
+
+    </PreferenceCategory>
+
 </PreferenceScreen>
