@@ -21,8 +21,8 @@ import android.content.res.Configuration;
 import android.widget.CompoundButton;
 import android.widget.Switch;
 
-//import com.android.internal.util.slim.ButtonsConstants;
-//import com.android.internal.util.slim.SlimActions;
+import com.android.internal.util.slim.TRDSConstant;
+import com.android.internal.util.slim.TRDSActions;
 
 import com.android.settings.R;
 
@@ -65,7 +65,7 @@ public class ThemeEnabler implements CompoundButton.OnCheckedChangeListener {
         if (mStateMachineEvent) {
             return;
         }
-        //SlimActions.processAction(mContext, ButtonsConstants.ACTION_THEME_SWITCH, false);
+        TRDSActions.processAction(mContext, TRDSConstant.ACTION_THEME_SWITCH, false);
         setSwitchState();
     }
 
