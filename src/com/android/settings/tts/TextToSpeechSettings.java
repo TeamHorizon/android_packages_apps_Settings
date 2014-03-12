@@ -304,6 +304,7 @@ public class TextToSpeechSettings extends SettingsPreferenceFragment implements
             }
         } catch (MissingResourceException e) {
             if (DBG) Log.wtf(TAG, "MissingResourceException", e);
+            updateEngineStatus(R.string.tts_status_not_supported);
             updateWidgetState(false);
             return false;
         }
