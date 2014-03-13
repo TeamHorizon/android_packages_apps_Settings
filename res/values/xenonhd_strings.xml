@@ -605,4 +605,7 @@
     <string name="daniel">Daniel Sikorski</string>
     <string name="daniel_gplus">+DanielSikorskidadi11</string>
 
+    <!-- On-The-Go -->
+    <string name="power_menu_onthego_title">On-The-Go Mode</string>
+
 </resources>
