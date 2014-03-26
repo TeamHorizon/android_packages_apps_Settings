@@ -351,6 +351,11 @@ public class WirelessSettings extends RestrictedSettingsFragment
             removePreference(KEY_SMS_APPLICATION);
         }
 
+        // Remove Voice+ option if Google Voice is not installed
+        if (!Utils.isPackageInstalled(getActivity(), GOOGLE_VOICE_PACKAGE)) {
+            removePreference(KEY_VOICE_PLUS_ACCOUNT);
+        }
+
         // Remove Airplane Mode settings if it's a stationary device such as a TV.
         if (getActivity().getPackageManager().hasSystemFeature(PackageManager.FEATURE_TELEVISION)) {
             removePreference(KEY_TOGGLE_AIRPLANE);
