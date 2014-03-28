@@ -94,12 +94,6 @@ public class SoundSettings extends SettingsPreferenceFragment implements
     private static final String KEY_POWER_NOTIFICATIONS_VIBRATE = "power_notifications_vibrate";
     private static final String KEY_POWER_NOTIFICATIONS_RINGTONE = "power_notifications_ringtone";
 
-    // Request code for power notification ringtone picker
-    private static final int REQUEST_CODE_POWER_NOTIFICATIONS_RINGTONE = 1;
-
-    // Used for power notification uri string if set to silent
-    private static final String POWER_NOTIFICATIONS_SILENT_URI = "silent";
-
     private static final String[] NEED_VOICE_CAPABILITY = {
             KEY_RINGTONE, KEY_DTMF_TONE, KEY_CATEGORY_CALLS,
             KEY_EMERGENCY_TONE, KEY_VIBRATE
@@ -107,6 +101,12 @@ public class SoundSettings extends SettingsPreferenceFragment implements
 
     private static final int MSG_UPDATE_RINGTONE_SUMMARY = 1;
     private static final int MSG_UPDATE_NOTIFICATION_SUMMARY = 2;
+
+    // Request code for power notification ringtone picker
+    private static final int REQUEST_CODE_POWER_NOTIFICATIONS_RINGTONE = 1;
+
+    // Used for power notification uri string if set to silent
+    private static final String POWER_NOTIFICATIONS_SILENT_URI = "silent";
 
     private CheckBoxPreference mVibrateWhenRinging;
     private CheckBoxPreference mDtmfTone;
@@ -126,6 +126,7 @@ public class SoundSettings extends SettingsPreferenceFragment implements
     private Preference mNotificationPreference;
     private CheckBoxPreference mVolumeAdjustSounds;
     private PreferenceScreen mQuietHours;
+    
     private CheckBoxPreference mPowerSounds;
     private CheckBoxPreference mPowerSoundsVibrate;
     private Preference mPowerSoundsRingtone;
@@ -223,37 +224,6 @@ public class SoundSettings extends SettingsPreferenceFragment implements
         mVolumeAdjustSounds.setChecked(Settings.System.getInt(resolver,
                 Settings.System.VOLUME_ADJUST_SOUNDS_ENABLED, 1) != 0);
 
-        // power state change notification sounds
-        mPowerSounds = (CheckBoxPreference) findPreference(KEY_POWER_NOTIFICATIONS);
-        mPowerSounds.setChecked(Settings.Global.getInt(getContentResolver(),
-                Settings.Global.POWER_NOTIFICATIONS_ENABLED, 0) != 0);
-        mPowerSoundsVibrate = (CheckBoxPreference) findPreference(KEY_POWER_NOTIFICATIONS_VIBRATE);
-        mPowerSoundsVibrate.setChecked(Settings.Global.getInt(getContentResolver(),
-                Settings.Global.POWER_NOTIFICATIONS_VIBRATE, 0) != 0);
-
-        mPowerSoundsRingtone = findPreference(KEY_POWER_NOTIFICATIONS_RINGTONE);
-        String currentPowerRingtonePath =
-                Settings.Global.getString(getContentResolver(),
-                    Settings.Global.POWER_NOTIFICATIONS_RINGTONE);
-
-        // set to default notification if we don't yet have one
-        if (currentPowerRingtonePath == null) {
-                currentPowerRingtonePath = Settings.System.DEFAULT_NOTIFICATION_URI.toString();
-                Settings.Global.putString(getContentResolver(),
-                        Settings.Global.POWER_NOTIFICATIONS_RINGTONE, currentPowerRingtonePath);
-        }
-        // is it silent ?
-        if (currentPowerRingtonePath.equals(POWER_NOTIFICATIONS_SILENT_URI)) {
-            mPowerSoundsRingtone.setSummary(
-                    getString(R.string.power_notifications_ringtone_silent));
-        } else {
-            final Ringtone ringtone =
-                    RingtoneManager.getRingtone(getActivity(), Uri.parse(currentPowerRingtonePath));
-            if (ringtone != null) {
-                mPowerSoundsRingtone.setSummary(ringtone.getTitle(getActivity()));
-            }
-        }
-
         mRingtonePreference = findPreference(KEY_RINGTONE);
         mNotificationPreference = findPreference(KEY_NOTIFICATION_SOUND);
 
@@ -310,6 +280,39 @@ public class SoundSettings extends SettingsPreferenceFragment implements
         };
 
         initDockSettings();
+
+        // power state change notification sounds
+        mPowerSounds = (CheckBoxPreference) findPreference(KEY_POWER_NOTIFICATIONS);
+        mPowerSounds.setChecked(Settings.Global.getInt(resolver,
+                Settings.Global.POWER_NOTIFICATIONS_ENABLED, 0) != 0);
+        mPowerSoundsVibrate = (CheckBoxPreference) findPreference(KEY_POWER_NOTIFICATIONS_VIBRATE);
+        mPowerSoundsVibrate.setChecked(Settings.Global.getInt(resolver,
+                Settings.Global.POWER_NOTIFICATIONS_VIBRATE, 0) != 0);
+        if (vibrator == null || !vibrator.hasVibrator()) {
+            removePreference(KEY_POWER_NOTIFICATIONS_VIBRATE);
+        }
+
+        mPowerSoundsRingtone = findPreference(KEY_POWER_NOTIFICATIONS_RINGTONE);
+        String currentPowerRingtonePath =
+                Settings.Global.getString(resolver, Settings.Global.POWER_NOTIFICATIONS_RINGTONE);
+
+        // set to default notification if we don't yet have one
+        if (currentPowerRingtonePath == null) {
+                currentPowerRingtonePath = Settings.System.DEFAULT_NOTIFICATION_URI.toString();
+                Settings.Global.putString(getContentResolver(),
+                        Settings.Global.POWER_NOTIFICATIONS_RINGTONE, currentPowerRingtonePath);
+        }
+        // is it silent ?
+        if (currentPowerRingtonePath.equals(POWER_NOTIFICATIONS_SILENT_URI)) {
+            mPowerSoundsRingtone.setSummary(
+                    getString(R.string.power_notifications_ringtone_silent));
+        } else {
+            final Ringtone ringtone =
+                    RingtoneManager.getRingtone(getActivity(), Uri.parse(currentPowerRingtonePath));
+            if (ringtone != null) {
+                mPowerSoundsRingtone.setSummary(ringtone.getTitle(getActivity()));
+            }
+        }
     }
 
     @Override
@@ -483,6 +486,22 @@ public class SoundSettings extends SettingsPreferenceFragment implements
         } else if (preference == mDockAudioMediaEnabled) {
             Settings.Global.putInt(getContentResolver(), Settings.Global.DOCK_AUDIO_MEDIA_ENABLED,
                     mDockAudioMediaEnabled.isChecked() ? 1 : 0);
+
+        } else if (preference == mPowerSounds) {
+            Settings.Global.putInt(getContentResolver(),
+                    Settings.Global.POWER_NOTIFICATIONS_ENABLED,
+                    mPowerSounds.isChecked() ? 1 : 0);
+
+        } else if (preference == mPowerSoundsVibrate) {
+            Settings.Global.putInt(getContentResolver(),
+                    Settings.Global.POWER_NOTIFICATIONS_VIBRATE,
+                    mPowerSoundsVibrate.isChecked() ? 1 : 0);
+
+        } else if (preference == mPowerSoundsRingtone) {
+            launchNotificationSoundPicker(REQUEST_CODE_POWER_NOTIFICATIONS_RINGTONE,
+                    Settings.Global.getString(getContentResolver(),
+                            Settings.Global.POWER_NOTIFICATIONS_RINGTONE));
+
         } else {
             // If we didn't handle it, let preferences handle it.
             return super.onPreferenceTreeClick(preferenceScreen, preference);
@@ -515,24 +534,6 @@ public class SoundSettings extends SettingsPreferenceFragment implements
         } else if (preference == mVolumeStepsVoiceCall) {
             updateVolumeSteps(preference.getKey(),Integer.parseInt(objValue.toString()));
         }
-        if (KEY_POWER_NOTIFICATIONS.equals(key)) {
-            Settings.Global.putInt(getContentResolver(),
-                    Settings.Global.POWER_NOTIFICATIONS_ENABLED,
-                    (Boolean) objValue ? 1 : 0);
-
-        }
-        if (KEY_POWER_NOTIFICATIONS_VIBRATE.equals(key)) {
-            Settings.Global.putInt(getContentResolver(),
-                    Settings.Global.POWER_NOTIFICATIONS_VIBRATE,
-                    (Boolean) objValue ? 1 : 0);
-
-        }
-        if (KEY_POWER_NOTIFICATIONS_RINGTONE.equals(key)) {
-            launchNotificationSoundPicker(REQUEST_CODE_POWER_NOTIFICATIONS_RINGTONE,
-                    Settings.Global.getString(getContentResolver(),
-                            Settings.Global.POWER_NOTIFICATIONS_RINGTONE));
-        }
-
         return true;
     }
 
