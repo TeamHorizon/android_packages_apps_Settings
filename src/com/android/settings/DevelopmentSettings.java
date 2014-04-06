@@ -292,10 +292,6 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
             disableForUser(mQuickBoot);
         }
 
-        if (!Utils.isPackageInstalled(getActivity(), QUICKBOOT_PACKAGE_NAME)) {
-            removePreference(mQuickBoot);
-        }
-
         mDebugAppPref = findPreference(DEBUG_APP_KEY);
         mAllPrefs.add(mDebugAppPref);
         mWaitForDebugger = findAndInitCheckboxPref(WAIT_FOR_DEBUGGER_KEY);
