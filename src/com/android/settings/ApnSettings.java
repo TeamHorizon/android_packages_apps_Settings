@@ -80,6 +80,7 @@ public class ApnSettings extends SettingsPreferenceFragment implements
 
     private static final Uri DEFAULTAPN_URI = Uri.parse(RESTORE_CARRIERS_URI);
     private static final Uri PREFERAPN_URI = Uri.parse(PREFERRED_APN_URI);
+    private Uri mPreferApnUri;
 
     private static boolean mRestoreDefaultApnMode;
 
@@ -129,8 +130,7 @@ public class ApnSettings extends SettingsPreferenceFragment implements
 
         mMobileStateFilter = new IntentFilter(
                 TelephonyIntents.ACTION_ANY_DATA_CONNECTION_STATE_CHANGED);
-            mPreferApnUri = PREFERAPN_URI;
-        }
+        mPreferApnUri = PREFERAPN_URI;
         Log.d(TAG, "Preferred APN Uri is set to '" + mPreferApnUri.toString() + "'");
 
         setHasOptionsMenu(true);
