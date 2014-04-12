@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2014 The CyanogenMod Project
+<!-- Copyright (C) 2013 SlimRoms (blk_jack)
+     Copyright (C) 2014 The CyanogenMod Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -15,6 +16,14 @@
 -->
 <PreferenceScreen
         xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- TRDS 3.0 -->
+    <ListPreference
+        android:key="pref_theme_auto_mode"
+        android:entries="@array/theme_auto_mode_entries"
+        android:entryValues="@array/theme_auto_mode_values"
+        android:title="@string/theme_auto_mode_title"
+        android:dialogTitle="@string/theme_auto_mode_title" />
 
     <!-- Theme Packs -->
     <Preference
@@ -99,5 +108,4 @@
              <extra android:name="component_filter" android:value="mods_sounds"/>
         </intent>
     </Preference>
->>>>>>> ff02240... [6/8] Settings: Theme engine
 </PreferenceScreen>

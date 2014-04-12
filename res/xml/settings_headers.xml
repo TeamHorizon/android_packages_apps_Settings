@@ -100,9 +100,17 @@
 
     <!-- Launcher -->
     <header
+<<<<<<< HEAD
         android:id="@+id/launcher_settings"
         android:title="@string/launcher_settings_title"
         android:icon="@drawable/ic_settings_launcher" />
+=======
+        android:id="@+id/themes_cyanogen"
+        android:title="@string/themes_settings_title"
+        android:breadCrumbTitle="@string/themes_settings_title"
+        android:fragment="com.android.settings.ThemeSettings"
+        android:icon="@drawable/prd_ic_themepacks" />
+>>>>>>> 04e7fa0... Add new themes items to personalization menu
 
 	<!-- Theme chooser -->
     <!-- header android:icon="@drawable/ic_settings_theme"
