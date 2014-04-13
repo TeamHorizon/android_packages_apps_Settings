@@ -93,6 +93,7 @@ public class SoundSettings extends SettingsPreferenceFragment implements
     private static final String KEY_POWER_NOTIFICATIONS = "power_notifications";
     private static final String KEY_POWER_NOTIFICATIONS_VIBRATE = "power_notifications_vibrate";
     private static final String KEY_POWER_NOTIFICATIONS_RINGTONE = "power_notifications_ringtone";
+    private static final String KEY_HEADSET_PLUG = "headset_plug";
 
     private static final String[] NEED_VOICE_CAPABILITY = {
             KEY_RINGTONE, KEY_DTMF_TONE, KEY_CATEGORY_CALLS,
@@ -140,6 +141,8 @@ public class SoundSettings extends SettingsPreferenceFragment implements
     private Intent mDockIntent;
     private CheckBoxPreference mDockAudioMediaEnabled;
 
+    private CheckBoxPreference mHeadsetPlug;
+    
     private Handler mHandler = new Handler() {
         public void handleMessage(Message msg) {
             switch (msg.what) {
@@ -223,6 +226,11 @@ public class SoundSettings extends SettingsPreferenceFragment implements
         mVolumeAdjustSounds.setPersistent(false);
         mVolumeAdjustSounds.setChecked(Settings.System.getInt(resolver,
                 Settings.System.VOLUME_ADJUST_SOUNDS_ENABLED, 1) != 0);
+
+        mHeadsetPlug = (CheckBoxPreference) findPreference(KEY_HEADSET_PLUG);
+        mHeadsetPlug.setPersistent(false);
+        mHeadsetPlug.setChecked(Settings.System.getInt(resolver,
+                Settings.System.HEADSET_PLUG_ENABLED, 0) != 0);
 
         mRingtonePreference = findPreference(KEY_RINGTONE);
         mNotificationPreference = findPreference(KEY_NOTIFICATION_SOUND);
@@ -449,6 +457,9 @@ public class SoundSettings extends SettingsPreferenceFragment implements
         } else if (preference == mVolumeAdjustSounds) {
             Settings.System.putInt(getContentResolver(), Settings.System.VOLUME_ADJUST_SOUNDS_ENABLED ,
                     mVolumeAdjustSounds.isChecked() ? 1 : 0);
+        } else if (preference == mHeadsetPlug) {
+            Settings.System.putInt(getContentResolver(), Settings.System.HEADSET_PLUG_ENABLED,
+                    mHeadsetPlug.isChecked() ? 1 : 0);
 
         } else if (preference == mMusicFx) {
             // let the framework fire off the intent
