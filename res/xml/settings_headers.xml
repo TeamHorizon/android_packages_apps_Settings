@@ -96,7 +96,7 @@
         android:id="@+id/theme_settings"
         android:fragment="com.android.settings.slim.themes.ThemeSettings"
         android:icon="@drawable/ic_settings_theme"
-        android:title="@string/theme_settings_title" />
+        android:title="@string/theme_settings_title" /-->
 
     <!-- Launcher -->
     <header
@@ -105,13 +105,21 @@
         android:icon="@drawable/ic_settings_launcher" />
 
 	<!-- Theme chooser -->
-    <header android:icon="@drawable/ic_settings_themes"
+    <!-- header android:icon="@drawable/ic_settings_theme"
             android:title="@string/themes_title">
         <intent
                 android:action="android.intent.action.MAIN"
                 android:targetPackage="com.tmobile.themechooser"
                 android:targetClass="com.tmobile.themechooser.ThemeChooser" />
-    </header>
+    </header -->
+
+    <!-- Theme chooser -->
+    <header
+        android:id="@+id/theme_settings"
+        android:title="@string/themes_settings_title"
+        android:breadCrumbTitle="@string/themes_settings_title"
+        android:fragment="com.android.settings.ThemeSettings"
+        android:icon="@drawable/ic_settings_theme"/>
 
     <!-- DEVICE -->
     <header android:id="@+id/device_section"
