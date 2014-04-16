@@ -1855,6 +1855,13 @@
             android:label="@string/theme_settings_title" >
         </activity>
 
+        <activity   android:name=".ThemeSettings" android:label="@string/themes_settings_title">  
+            <intent-filter> 
+                <action android:name="android.intent.action.MAIN" />  
+                <category android:name="cyanogenmod.intent.category.APP_THEMES" />
+            </intent-filter>   
+        </activity>
+
         <receiver android:name=".widget.SettingsAppWidgetProvider"
                 android:label="@string/gadget_title"
                 android:exported="false"
