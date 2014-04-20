@@ -101,6 +101,10 @@
             android:title="@string/bugreport_in_power"
             android:summary="@string/bugreport_in_power_summary"/>
 
+       <CheckBoxPreference
+            android:key="pref_force_fast_charge"
+            android:title="@string/pref_force_fast_charge_title" />
+
         <CheckBoxPreference
             android:key="allow_mock_location"
             android:title="@string/allow_mock_location"

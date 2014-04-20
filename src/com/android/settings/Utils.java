@@ -69,6 +69,7 @@ import android.widget.TabWidget;
 import com.android.settings.users.ProfileUpdateReceiver;
 
 import java.io.FileOutputStream;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.InetAddress;
@@ -498,6 +499,22 @@ public class Utils {
         } else {
             return R.string.tether_settings_title_bluetooth;
         }
+    }
+
+    public static boolean fileWriteOneLine(String fname, String value) {
+        try {
+            FileWriter fw = new FileWriter(fname);
+            try {
+                fw.write(value);
+            } finally {
+                fw.close();
+            }
+        } catch (IOException e) {
+            String Error = "Error writing to " + fname + ". Exception: ";
+            Log.e("Utils", Error, e);
+            return false;
+        }
+        return true;
     }
 
     /* Used by UserSettings as well. Call this on a non-ui thread. */
