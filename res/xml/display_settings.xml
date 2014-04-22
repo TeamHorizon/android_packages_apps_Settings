@@ -67,5 +67,10 @@
                 android:targetClass="com.android.settings.ScreenColorSettings" />
         </PreferenceScreen-->
 
+        <com.android.settings.cyanogenmod.SystemSettingCheckBoxPreference
+            android:key="force_multi_pane"
+            android:title="@string/force_multi_pane"
+            android:summary="@string/force_multi_pane_summary" />
+
 
 </PreferenceScreen>

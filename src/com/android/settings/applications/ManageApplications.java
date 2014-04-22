@@ -72,6 +72,7 @@ import android.widget.TextView;
 import com.android.internal.app.IMediaContainerService;
 import com.android.internal.content.PackageHelper;
 import com.android.settings.R;
+import com.android.settings.DepthPageTransformer;
 import com.android.settings.Settings.RunningServicesActivity;
 import com.android.settings.Settings.StorageUseActivity;
 import com.android.settings.applications.ApplicationsState.AppEntry;
@@ -908,6 +909,7 @@ public class ManageApplications extends Fragment implements
         mRootView = rootView;
 
         mViewPager = (ViewPager) rootView.findViewById(R.id.pager);
+        mViewPager.setPageTransformer(true, new DepthPageTransformer());
         MyPagerAdapter adapter = new MyPagerAdapter();
         mViewPager.setAdapter(adapter);
         mViewPager.setOnPageChangeListener(adapter);

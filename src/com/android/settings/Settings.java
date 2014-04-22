@@ -19,6 +19,7 @@ package com.android.settings;
 import android.accounts.Account;
 import android.accounts.AccountManager;
 import android.accounts.OnAccountsUpdateListener;
+import android.app.ActionBar;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.Dialog;
@@ -251,9 +252,21 @@ public class Settings extends PreferenceActivity
 
         // Override up navigation for multi-pane, since we handle it in the fragment breadcrumbs
         if (onIsMultiPane()) {
-            getActionBar().setDisplayHomeAsUpEnabled(false);
-            getActionBar().setHomeButtonEnabled(false);
+            final ActionBar actionBar = getActionBar();
+            if (actionBar != null) {
+                actionBar.setDisplayHomeAsUpEnabled(false);
+                actionBar.setHomeButtonEnabled(false);
+            }
         }
+    }
+
+    @Override
+    public boolean onIsMultiPane() {
+        if (android.provider.Settings.System.getBoolean(getContentResolver(),
+                android.provider.Settings.System.FORCE_MULTI_PANE, false)) {
+            return true;
+        }
+        return super.onIsMultiPane();
     }
 
     @Override
@@ -313,11 +326,6 @@ public class Settings extends PreferenceActivity
         if (mListeningToAccountUpdates) {
             AccountManager.get(this).removeOnAccountsUpdatedListener(this);
         }
-    }
-
-    @Override
-    public boolean onIsMultiPane() {
-        return false;
     }
 
     private static final String[] ENTRY_FRAGMENTS = {

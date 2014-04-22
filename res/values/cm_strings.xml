@@ -1180,4 +1180,10 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="power_notifications_ringtone_title">Notification sound</string>
     <!-- Sound settings, power notifications label for ringtone == none -->
     <string name="power_notifications_ringtone_silent">Silent</string>
+
+
+    <!-- Force Multi Pane-->
+    <string name="force_multi_pane">Force multi-pane</string>
+    <string name="force_multi_pane_summary">Force use multi-pane layout in system settings</string>
+
 </resources>
