@@ -1227,10 +1227,4 @@
         <item>@string/volume_steps_5</item>
     </string-array>
 
-    <string-array name="screen_color_setting">
-        <item>Standard</item>
-        <item>Vivid</item>
-        <item>Custom</item>
-    </string-array>
-
 </resources>

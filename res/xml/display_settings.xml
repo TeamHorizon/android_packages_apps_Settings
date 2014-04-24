@@ -22,19 +22,9 @@
                 android:title="@string/brightness"
                 android:persistent="false"/>
 
-        <PreferenceScreen
-            android:persistent="false"
-            android:key="screencolor_settings"
-            android:title="@string/screencolor">
-            <intent
-                android:action="android.intent.action.MAIN"
-                android:targetPackage="com.android.settings"
-                android:targetClass="com.android.settings.ScreenColorSettings" />
-        </PreferenceScreen>
-
         <CheckBoxPreference
-            android:key="accelerometer"
-            android:title="@string/accelerometer_title"/>
+                android:key="accelerometer"
+                android:title="@string/accelerometer_title"/>
 
         <ListPreference
                 android:key="screen_timeout"
@@ -66,5 +56,16 @@
                 android:key="wifi_display"
                 android:title="@string/wifi_display_settings_title"
                 android:fragment="com.android.settings.wfd.WifiDisplaySettings" />
+
+        <!--PreferenceScreen
+            android:persistent="false"
+            android:key="screencolor_settings"
+            android:title="@string/screencolor">
+            <intent
+                android:action="android.intent.action.MAIN"
+                android:targetPackage="com.android.settings"
+                android:targetClass="com.android.settings.ScreenColorSettings" />
+        </PreferenceScreen-->
+
 
 </PreferenceScreen>
