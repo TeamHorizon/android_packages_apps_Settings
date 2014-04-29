@@ -226,10 +226,6 @@
     <string name="power_notifications_ringtone_title">Notification sound</string>
     <!-- Sound settings, power notifications label for ringtone == none -->
     <string name="power_notifications_ringtone_silent">Silent</string>
-
-    <!-- Headset plug -->
-    <string name="headset_plug_enable_title">Opens music app when headset is plugged</string>
-
     <!-- Theme chooser -->
     <string name="themes_settings_title">Themes</string>
     <string name="themepacks_settings_title">Theme Packs</string>
