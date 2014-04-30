@@ -244,6 +244,9 @@
     <string name="vibrator_intensity_dialog_warning">Values greater than %1$d%% are not recommended</string>
     <string name="vibrator_intensity_dialog_reset">Reset</string>
 
+    <!-- Bluetooth settings.  A checkbox to set if we should accept all the file types regardless of their presence in MIME type whitelist -->
+    <string name="bluetooth_accept_all_files">Accept all file types</string>
+
     <!-- Sizes for pattern lockscreen -->
     <string name="lock_pattern_size_3" translatable="false">3 \u00d7 3</string>
     <string name="lock_pattern_size_4" translatable="false">4 \u00d7 4</string>
