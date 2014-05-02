@@ -17,6 +17,12 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
         android:title="@string/wireless_networks_settings_title">
 
+    <!-- Data Usage -->
+    <PreferenceScreen
+        android:id="@+id/data_usage_settings"
+        android:fragment="com.android.settings.DataUsageSummary"
+        android:title="@string/data_usage_summary_title" />
+
     <CheckBoxPreference
         android:key="toggle_airplane"
         android:title="@string/airplane_mode"
