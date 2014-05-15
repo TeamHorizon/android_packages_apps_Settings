@@ -35,11 +35,11 @@ import android.provider.Settings;
 import android.telephony.SmsManager;
 import android.util.Log;
 
-import com.android.internal.util.slim.QuietHoursHelper;
-
 import java.util.Calendar;
 
 import com.android.settings.R;
+import com.android.settings.slim.WhitelistUtils;
+import com.android.internal.util.slim.QuietHoursHelper;
 
 public class SmsCallController {
 
@@ -513,8 +513,10 @@ public class SmsCallController {
 			    || (mAutoCall == DEFAULT_DISABLED
 			    && mAutoText == DEFAULT_DISABLED
 			    && mCallBypass == DEFAULT_DISABLED
-			    && mSmsBypass == DEFAULT_DISABLED)) {
-			mContext.stopServiceAsUser(mServiceTriggerIntent,
+                            && mSmsBypass == DEFAULT_DISABLED
+                            && !WhitelistUtils.hasMessageBypass(mContext)
+                            && !WhitelistUtils.hasCallBypass(mContext))) {
+            mContext.stopServiceAsUser(mServiceTriggerIntent,
                     android.os.Process.myUserHandle());
             return;
         }
@@ -639,6 +641,10 @@ public class SmsCallController {
             resolver.registerContentObserver(Settings.System.getUriFor(
                     Settings.System.QUIET_HOURS_FORCED),
                     false, this, UserHandle.USER_ALL);
+            resolver.registerContentObserver(Settings.System.getUriFor(
+                    Settings.System.QUIET_HOURS_WHITELIST),
+                    false, this, UserHandle.USER_ALL);
+
             update();
         }
 
