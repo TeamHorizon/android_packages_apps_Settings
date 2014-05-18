@@ -213,8 +213,10 @@ public class NotificationService extends Service {
         return null;
     }
 
-    private static void destroyQuietHour(Context context) {
-        mNotificationManager.cancelAsUser(null, QUIETHOUR_NOTIFICATION_ID, UserHandle.ALL);
+    public static void destroyQuietHour(Context context) {
+        if (mNotificationManager != null) {
+           mNotificationManager.cancelAsUser(null, QUIETHOUR_NOTIFICATION_ID, UserHandle.ALL);
+        }
     }
 
     private static void notifyQuietHour(Context context) {
