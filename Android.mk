@@ -13,6 +13,9 @@ LOCAL_SRC_FILES += $(call all-java-files-under, ../PerformanceControl/src)
 
 LOCAL_ASSET_DIR += $(LOCAL_PATH)/../PerformanceControl/assets
 
+LOCAL_SRC_FILES += \
+        src/com/android/display/IPPService.aidl
+
 LOCAL_PACKAGE_NAME := Settings
 LOCAL_CERTIFICATE := platform
 LOCAL_PRIVILEGED_MODULE := true
