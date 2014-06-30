@@ -2240,6 +2240,12 @@
             </intent-filter>
         </receiver>
 
+        <service android:name=".xenonhd.identicons.IdenticonCreationService"
+                 android:exported="false" />
+
+        <service android:name=".xenonhd.identicons.IdenticonRemovalService"
+                 android:exported="false" />
+
         <provider
             android:name="android.support.v4.content.FileProvider"
             android:authorities="com.android.settings.files"

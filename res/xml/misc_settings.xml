@@ -110,6 +110,12 @@
                 android:title="@string/lcd_density"
                 android:persistent="false" />
 
+        <!-- Identicons -->
+        <PreferenceScreen
+                android:id="@+id/identicons"
+                android:title="@string/identicons_title"
+                android:fragment="com.android.settings.xenonhd.identicons.IdenticonsSettings" />
+
     </PreferenceCategory>
 
 </PreferenceScreen>
