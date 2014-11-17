@@ -41,4 +41,11 @@
             android:id="@+id/lockscreen_settings"
             android:title="@string/lockscreen_category"
             android:fragment="com.android.settings.xenonhd.LockscreenSettings" />
+
+		<!-- Interface -->
+        <PreferenceScreen
+            android:id="@+id/interface_settings"
+            android:title="@string/category_interface"
+            android:fragment="com.android.settings.xenonhd.InterfaceSettings" />
+
 </PreferenceScreen>

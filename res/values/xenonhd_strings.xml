@@ -221,4 +221,7 @@
 
 	<!-- Lock screen shortcuts -->
 	<string name="lockscreen_targets_message">Shortcuts</string>
+
+	<!-- Interface settings -->
+	<string name="category_interface">Interface</string>
 </resources>
