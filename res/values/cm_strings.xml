@@ -25,4 +25,7 @@
     <string name="show_dev_on_cm">You have enabled development settings!</string>
     <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
     <string name="show_dev_already_cm">No need, you have already enabled development settings.</string>
+
+	<!-- Status bar -->
+    <string name="status_bar_title">Status bar</string>
 </resources>
