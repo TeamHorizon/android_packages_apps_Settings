@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2012-2014 SlimRoms Project
+<!-- Copyright (C) 2012-2015 Team Horizon
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -18,4 +18,10 @@
     <!-- Miscellaneous settings -->
     <string name="misc_settings_title">Miscellaneous</string>
 
+    <!-- Recents panel settings -->
+    <string name="show_clear_all_recents_button_title">Clear all recents button</string>
+    <string name="show_clear_all_recents_button_summary">Show clear all button on recents panel</string>
+    <string name="recents_clear_all_location_title">Clear all recents location</string>
+    <string name="recents_clear_all_location_right">Top right</string>
+    <string name="recents_clear_all_location_left">Top left</string>
 </resources>
