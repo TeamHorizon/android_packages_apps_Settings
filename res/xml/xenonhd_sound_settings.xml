@@ -23,4 +23,10 @@
         android:persistent="false"
         android:defaultValue="true" />
 
+	<SwitchPreference
+        android:key="camera_sounds"
+        android:title="@string/camera_sounds_title"
+        android:summary="@string/camera_sounds_summary"
+        android:defaultValue="true" />
+
 </PreferenceScreen>
