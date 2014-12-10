@@ -58,10 +58,10 @@ import android.provider.Settings;
 import android.text.TextUtils;
 import android.util.Log;
 
-
 import java.util.ArrayList;
 import java.util.List;
 
+import com.android.settings.cyanogenmod.DisplayRotation;
 import com.android.settings.hardware.DisplayColor;
 import com.android.settings.hardware.DisplayGamma;
 
@@ -83,12 +83,12 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
     private static final String KEY_LIFT_TO_WAKE = "lift_to_wake";
     private static final String KEY_DOZE = "doze";
     private static final String KEY_AUTO_BRIGHTNESS = "auto_brightness";
-    private static final String KEY_AUTO_ROTATE = "auto_rotate";
     private static final String KEY_ADAPTIVE_BACKLIGHT = "adaptive_backlight";
     private static final String KEY_SUNLIGHT_ENHANCEMENT = "sunlight_enhancement";
     private static final String KEY_COLOR_ENHANCEMENT = "color_enhancement";
     private static final String KEY_TAP_TO_WAKE = "double_tap_wake_gesture";
     private static final String KEY_PROXIMITY_WAKE = "proximity_on_wake";
+    private static final String KEY_DISPLAY_ROTATION = "display_rotation";
     private static final String KEY_WAKE_WHEN_PLUGGED_OR_UNPLUGGED = "wake_when_plugged_or_unplugged";
 
     private static final String CATEGORY_ADVANCED = "advanced_display_prefs";
@@ -98,6 +98,7 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
     private static final int DLG_GLOBAL_CHANGE_WARNING = 1;
 
     private FontDialogPreference mFontSizePref;
+    private PreferenceScreen mDisplayRotationPreference;
 
     private final Configuration mCurConfig = new Configuration();
 
@@ -186,41 +187,6 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
             mDozePreference.setOnPreferenceChangeListener(this);
         } else {
             removePreference(KEY_DOZE);
-        }
-
-        if (RotationPolicy.isRotationLockToggleVisible(activity)) {
-            DropDownPreference rotatePreference =
-                    (DropDownPreference) findPreference(KEY_AUTO_ROTATE);
-            rotatePreference.addItem(activity.getString(R.string.display_auto_rotate_rotate),
-                    false);
-            int rotateLockedResourceId;
-            // The following block sets the string used when rotation is locked.
-            // If the device locks specifically to portrait or landscape (rather than current
-            // rotation), then we use a different string to include this information.
-            if (allowAllRotations(activity)) {
-                rotateLockedResourceId = R.string.display_auto_rotate_stay_in_current;
-            } else {
-                if (RotationPolicy.getRotationLockOrientation(activity)
-                        == Configuration.ORIENTATION_PORTRAIT) {
-                    rotateLockedResourceId =
-                            R.string.display_auto_rotate_stay_in_portrait;
-                } else {
-                    rotateLockedResourceId =
-                            R.string.display_auto_rotate_stay_in_landscape;
-                }
-            }
-            rotatePreference.addItem(activity.getString(rotateLockedResourceId), true);
-            rotatePreference.setSelectedItem(RotationPolicy.isRotationLocked(activity) ?
-                    1 : 0);
-            rotatePreference.setCallback(new Callback() {
-                @Override
-                public boolean onItemSelected(int pos, Object value) {
-                    RotationPolicy.setRotationLock(activity, (Boolean) value);
-                    return true;
-                }
-            });
-        } else {
-            removePreference(KEY_AUTO_ROTATE);
         }
 
         mTapToWake = (SwitchPreference) findPreference(KEY_TAP_TO_WAKE);
@@ -625,9 +591,6 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
                     }
                     if (!isDozeAvailable(context)) {
                         result.add(KEY_DOZE);
-                    }
-                    if (!RotationPolicy.isRotationLockToggleVisible(context)) {
-                        result.add(KEY_AUTO_ROTATE);
                     }
                     return result;
                 }
