@@ -1071,6 +1071,9 @@
     <string name="preview_country_title">Country</string>
     <string name="preview_carrier_title">Carrier</string>
 
+	<string name="stats_collection_title">Stats collection</string>
+    <string name="stats_collection_summary">When enabled, allows metrics collection.</string>
+
     <!-- Show/Hide Search Bar -->
     <string name="recents_show_searchbar">Show search bar in recents menu</string>
     <string name="keywords_recents_show_searchbar">recent recents disable enable show hide search bar searchbar</string>
