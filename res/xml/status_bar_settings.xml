@@ -37,6 +37,12 @@
         android:summary="@string/status_bar_notif_count_summary"
         android:defaultValue="false" />
 
+	<!-- Network traffic -->
+    <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
+        android:key="network_traffic_state"
+        android:title="@string/network_traffic_indicator_title"
+        android:summary="@string/network_traffic_indicator_summary" />
+
     <PreferenceCategory
         android:title="@string/status_bar_clock_style">
 
