@@ -16,6 +16,9 @@
 package com.android.settings.cyanogenmod;
 
 import android.os.Bundle;
+
+import com.android.internal.logging.MetricsLogger;
+
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 
@@ -26,4 +29,10 @@ public class StatusBarSettings extends SettingsPreferenceFragment {
         super.onCreate(icicle);
         addPreferencesFromResource(R.xml.status_bar_settings);
     }
+
+	@Override
+    protected int getMetricsCategory() {
+        return MetricsLogger.APPLICATION;
+    }
+
 }
