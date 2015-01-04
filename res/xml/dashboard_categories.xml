@@ -84,6 +84,14 @@
                 android:icon="@drawable/ic_settings_home"
                 />
 
+        <!-- Miscellaneous -->
+        <dashboard-tile
+                android:id="@+id/misc_settings"
+                android:title="@string/misc_settings_title"
+                android:fragment="com.android.settings.xenonhd.MiscSettings"
+                android:icon="@drawable/ic_settings_misc"
+                />
+
         <!-- Status bar -->
         <dashboard-tile
                 android:id="@+id/status_bar_settings"
