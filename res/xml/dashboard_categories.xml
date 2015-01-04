@@ -72,6 +72,21 @@
 
     </dashboard-category>
 
+	<!-- Personalization -->
+    <dashboard-category
+            android:id="@+id/device_personalization"
+            android:title="@string/header_category_personalization" >
+
+        <!-- Miscellaneous -->
+        <dashboard-tile
+                android:id="@+id/misc_settings"
+                android:title="@string/misc_settings_title"
+                android:fragment="com.android.settings.xenonhd.MiscSettings"
+                android:icon="@drawable/ic_settings_misc"
+                />
+
+	</dashboard-category>
+
     <!-- DEVICE -->
     <dashboard-category
             android:id="@+id/device_section"
