@@ -92,6 +92,17 @@
     </PreferenceCategory>
 
     <PreferenceCategory
+        android:key="navbar"
+        android:title="@string/navbar_title" >
+
+        <PreferenceScreen
+            android:key="navigation_bar_dimen"
+            android:fragment="com.android.settings.xenonhd.NavBarDimen"
+            android:title="@string/navbar_dimen_title" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
         android:key="custom_animations"
         android:title="@string/custom_animations" >
 
