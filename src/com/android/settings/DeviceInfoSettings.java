@@ -126,14 +126,7 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
                 PROPERTY_SELINUX_STATUS);
 
         // CPU & RAM info
-        String cpuInfo = getCPUInfo();
         String memInfo = getMemInfo();
-
-        if (cpuInfo != null) {
-            setStringSummary(KEY_DEVICE_CPU, cpuInfo);
-        } else {
-            getPreferenceScreen().removePreference(findPreference(KEY_DEVICE_CPU));
-        }
 
         if (memInfo != null) {
             setStringSummary(KEY_DEVICE_MEMORY, memInfo);
@@ -553,7 +546,6 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
 
     private String getMemInfo() {
         String result = null;
-        BufferedReader reader = null;
 
         try {
             /* /proc/meminfo entries follow this format:
