@@ -18,9 +18,15 @@
         xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
         android:title="@string/lockscreen_category">
 
+    <PreferenceScreen
+        android:key="lock_screen_weather_settings"
+        android:title="@string/lock_screen_weather_settings_title"
+        android:summary="@string/lock_screen_weather_settings_summary"
+        android:fragment="com.android.settings.xenonhd.LockScreenWeatherSettings" />
+
     <com.android.settings.cyanogenmod.SecureSettingSwitchPreference
-            android:key="long_press_lock_icon_to_sleep"
-            android:title="@string/longpress_lock_icon_to_sleep_title"
-            android:summary="@string/longpress_lock_icon_to_sleep_summary" />
+        android:key="long_press_lock_icon_to_sleep"
+        android:title="@string/longpress_lock_icon_to_sleep_title"
+        android:summary="@string/longpress_lock_icon_to_sleep_summary" />
 
 </PreferenceScreen>
