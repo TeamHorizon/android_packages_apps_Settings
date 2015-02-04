@@ -88,7 +88,7 @@
                 android:id="@+id/misc_settings"
                 android:title="@string/misc_settings_title"
                 android:fragment="com.android.settings.xenonhd.MiscSettings"
-                android:icon="@drawable/ic_settings_misc"
+                android:icon="@drawable/ic_settings_interface"
                 />
 
         <!-- Gestures -->
