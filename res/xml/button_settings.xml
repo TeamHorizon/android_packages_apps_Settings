@@ -50,12 +50,18 @@
         <PreferenceScreen
             android:key="navigation_bar_ring"
             android:fragment="com.android.settings.cyanogenmod.NavRing"
-            android:title="@string/navigation_ring_title" />
+            android:title="@string/navigation_ring_title"
+            android:dependency="search_panel_enabled" />
 
         <PreferenceScreen
             android:key="navigation_bar_dimen"
             android:fragment="com.android.settings.xenonhd.NavBarDimen"
             android:title="@string/navbar_dimen_title" />
+
+        <com.android.settings.cyanogenmod.SecureSettingSwitchPreference
+            android:key="search_panel_enabled"
+            android:title="@string/navigation_ring_enable_title"
+            android:defaultValue="true" />
 
         <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
             android:key="navigation_bar_left"
