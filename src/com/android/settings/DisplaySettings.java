@@ -79,6 +79,11 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
     /** If there is no setting in the provider, use this. */
     private static final int FALLBACK_SCREEN_TIMEOUT_VALUE = 30000;
 
+    private static final String KEY_CATEGORY_LIGHTS = "lights";
+    private static final String KEY_CATEGORY_DISPLAY = "display";
+    private static final String KEY_CATEGORY_INTERFACE = "interface";
+    private static final String KEY_CATEGORY_CALIBRATION = "calibration";
+
     private static final String KEY_SCREEN_TIMEOUT = "screen_timeout";
     private static final String KEY_FONT_SIZE = "font_size";
     private static final String KEY_SCREEN_SAVER = "screensaver";
@@ -126,6 +131,13 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
 
         addPreferencesFromResource(R.xml.display_settings);
 
+        PreferenceCategory displayPrefs = (PreferenceCategory)
+                findPreference(KEY_CATEGORY_DISPLAY);
+        PreferenceCategory interfacePrefs = (PreferenceCategory)
+                findPreference(KEY_CATEGORY_INTERFACE);
+        PreferenceCategory calibrationPrefs = (PreferenceCategory)
+                findPreference(KEY_CATEGORY_CALIBRATION);
+
         mScreenSaverPreference = findPreference(KEY_SCREEN_SAVER);
         if (mScreenSaverPreference != null
                 && getResources().getBoolean(
@@ -149,7 +161,7 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
         if (mAutoBrightnessPreference != null && isAutomaticBrightnessAvailable(getResources())) {
             mAutoBrightnessPreference.setOnPreferenceChangeListener(this);
         } else {
-            if (displayPrefs != null && mAutoBrightnessPreference != null) {
+            if (interfacePrefs != null && mAutoBrightnessPreference != null) {
                 displayPrefs.removePreference(mAutoBrightnessPreference);
                 mAutoBrightnessPreference = null;
             }

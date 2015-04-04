@@ -89,8 +89,7 @@
                     android:key="recents_show_search_bar"
                     android:title="@string/recents_show_searchbar"
                     settings:keywords="@string/keywords_recents_show_searchbar"
-                    android:defaultValue="true"
-                    settings:advanced="true" />
+                    android:defaultValue="true" />
 
                 <SwitchPreference
                     android:key="double_tap_wake_gesture"

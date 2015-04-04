@@ -134,9 +134,7 @@ public class NotificationSettings extends SettingsPreferenceFragment implements 
 
         addPreferencesFromResource(R.xml.notification_settings);
 
-        final PreferenceCategory volumes = (PreferenceCategory) findPreference(KEY_VOLUMES);
-        final PreferenceCategory sounds = (PreferenceCategory) findPreference(KEY_SOUND);
-        final PreferenceCategory vibrate = (PreferenceCategory) findPreference(KEY_VIBRATE);
+        final PreferenceCategory sound = (PreferenceCategory) findPreference(KEY_SOUND);
 
         initVolumePreference(KEY_MEDIA_VOLUME, AudioManager.STREAM_MUSIC,
                 com.android.internal.R.drawable.ic_audio_vol_mute);
