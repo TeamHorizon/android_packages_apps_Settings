@@ -24,8 +24,8 @@
     <string name="default_string">Default</string>
     <string name="choose_app">Choose application</string>
 
-    <!-- Miscellaneous settings -->
-    <string name="misc_settings_title">Miscellaneous</string>
+    <!-- ROMSettings -->
+    <string name="misc_settings_title">ROM Settings</string>
 
     <!-- Recents panel settings -->
     <string name="recents_panel_title">Recents panel</string>

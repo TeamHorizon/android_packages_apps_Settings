@@ -18,6 +18,18 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:title="@string/status_bar_title">
 
+        <!-- Status bar -->
+        <PreferenceScreen
+            android:id="@+id/status_bar_settings"
+            android:title="@string/status_bar_title"
+            android:fragment="com.android.settings.cyanogenmod.StatusBarSettings" />
+
+        <!-- Notification drawer -->
+        <PreferenceScreen
+            android:id="@+id/notification_drawer_settings"
+            android:title="@string/notification_drawer_title"
+            android:fragment="com.android.settings.cyanogenmod.NotificationDrawerSettings" />
+
     <PreferenceCategory
         android:key="recents_panel"
         android:title="@string/recents_panel_settings" >
@@ -44,22 +56,6 @@
             android:dependency="show_clear_all_recents" />
 
     </PreferenceCategory>
-
-    <!-- Status bar -->
-        <PreferenceScreen
-                android:id="@+id/status_bar_settings"
-                android:title="@string/status_bar_title"
-                android:fragment="com.android.settings.cyanogenmod.StatusBarSettings"
-                android:icon="@drawable/ic_settings_extdesk_hidenavbar"
-                />
-
-        <!-- Notification drawer -->
-        <PreferenceScreen
-                android:id="@+id/notification_drawer_settings"
-                android:title="@string/notification_drawer_title"
-                android:fragment="com.android.settings.cyanogenmod.NotificationDrawerSettings"
-                android:icon="@drawable/ic_settings_notification_drawer"
-                />
 
     <PreferenceCategory
         android:key="custom_animations"
