@@ -34,6 +34,21 @@
         android:key="navigation_bar"
         android:title="@string/navigation_bar_category" >
 
+        <PreferenceScreen
+            android:key="navigation_bar"
+            android:fragment="com.android.settings.cyanogenmod.NavBar"
+            android:title="@string/navigation_bar_title" />
+
+        <PreferenceScreen
+            android:key="navigation_bar_ring"
+            android:fragment="com.android.settings.cyanogenmod.NavRing"
+            android:title="@string/navigation_ring_title" />
+
+        <PreferenceScreen
+            android:key="navigation_bar_dimen"
+            android:fragment="com.android.settings.xenonhd.NavBarDimen"
+            android:title="@string/navbar_dimen_title" />
+
         <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
             android:key="navigation_bar_left"
             android:title="@string/navigation_bar_left_title"
@@ -45,22 +60,6 @@
             android:title="@string/navigation_bar_arrow_keys_title"
             android:summary="@string/navigation_bar_arrow_keys_summary"
             android:defaultValue="false" />
-
-        <PreferenceScreen
-            android:key="navigation_bar"
-            android:fragment="com.android.settings.cyanogenmod.NavBar"
-            android:title="@string/navigation_bar_title" />
-
-        <PreferenceScreen
-            android:key="navigation_bar_ring"
-            android:fragment="com.android.settings.cyanogenmod.NavRing"
-            android:title="@string/navigation_ring_title" />
-
-        <ListPreference
-            android:key="navigation_recents_long_press"
-            android:dialogTitle="@string/navigation_bar_recents_title"
-            android:title="@string/navigation_bar_recents_title"
-            android:persistent="false" />
 
     </PreferenceCategory>
 
@@ -88,17 +87,6 @@
             android:summary="@string/recents_clear_all_dismiss_all_summary"
             android:defaultValue="true"
             android:dependency="show_clear_all_recents" />
-
-    </PreferenceCategory>
-
-    <PreferenceCategory
-        android:key="navbar"
-        android:title="@string/navbar_title" >
-
-        <PreferenceScreen
-            android:key="navigation_bar_dimen"
-            android:fragment="com.android.settings.xenonhd.NavBarDimen"
-            android:title="@string/navbar_dimen_title" />
 
     </PreferenceCategory>
 
