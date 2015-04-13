@@ -30,6 +30,12 @@
             android:title="@string/notification_drawer_title"
             android:fragment="com.android.settings.cyanogenmod.NotificationDrawerSettings" />
 
+        <!-- Expanded desktop -->
+        <PreferenceScreen
+            android:key="expanded_desktop"
+            android:title="@string/power_menu_expanded_desktop"
+            android:fragment="com.android.settings.applications.ExpandedDesktopPreferenceFragment" />
+
     <PreferenceCategory
         android:key="navigation_bar"
         android:title="@string/navigation_bar_category" >
@@ -87,6 +93,11 @@
             android:summary="@string/recents_clear_all_dismiss_all_summary"
             android:defaultValue="true"
             android:dependency="show_clear_all_recents" />
+
+        <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
+            android:key="recents_show_search_bar"
+            android:title="@string/recents_show_searchbar"
+            android:defaultValue="true" />
 
     </PreferenceCategory>
 
