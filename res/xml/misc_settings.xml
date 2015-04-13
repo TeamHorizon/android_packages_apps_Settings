@@ -36,6 +36,13 @@
             android:title="@string/power_menu_expanded_desktop"
             android:fragment="com.android.settings.applications.ExpandedDesktopPreferenceFragment" />
 
+        <!-- Advanced sound options -->
+        <PreferenceScreen
+            android:key="advanced_sound_settings"
+            android:title="@string/sound_title"
+            android:persistent="false"
+            android:fragment="com.android.settings.xenonhd.SoundSettings" />
+
     <PreferenceCategory
         android:key="navigation_bar"
         android:title="@string/navigation_bar_category" >
