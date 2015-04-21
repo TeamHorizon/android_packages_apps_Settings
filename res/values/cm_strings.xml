@@ -1089,4 +1089,9 @@
     <string name="none_is_silent_title">None is Silent mode</string>
     <string name="none_is_silent_summary">Silent mode always sounds alarms</string>
     <string name="allow_lights_title">Allow notification lights</string>
+
+    <!-- Heads up -->
+    <string name="heads_up_notifications">Heads up</string>
+    <string name="summary_heads_up_enabled">Pop-up notifications are enabled</string>
+    <string name="summary_heads_up_disabled">Pop-up notifications are disabled</string>
 </resources>
