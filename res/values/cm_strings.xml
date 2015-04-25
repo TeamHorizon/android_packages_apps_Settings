@@ -305,6 +305,8 @@
 
     <string name="app_ops_btn_text">Modify</string>
 
+    <string name="app_ops_btn_text">Modify</string>
+
     <!-- Increasing ring tone volume -->
     <string name="increasing_ring_volume_option_title">Increasing ring volume</string>
     <string name="increasing_ring_min_volume_title">Start volume</string>
