@@ -1186,6 +1186,13 @@ public class SettingsActivity extends Activity
                     if (!getPackageManager().hasSystemFeature(PackageManager.FEATURE_BLUETOOTH)) {
                         removeTile = true;
                     }
+                } else if (id == R.id.mobile_networks) {
+                    // Remove Mobile Networks Settings if Telephony service is not available.
+                    if (!getPackageManager().hasSystemFeature(PackageManager.FEATURE_TELEPHONY)) {
+                        removeTile = true;
+                    } else if (TelephonyManager.getDefault().getPhoneCount() > 1) {
+                        removeTile = true;
+                    }
                 } else if (id == R.id.data_usage_settings) {
                     // Remove data usage when kernel module not enabled
                     final INetworkManagementService netManager = INetworkManagementService.Stub
