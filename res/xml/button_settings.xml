@@ -211,8 +211,7 @@
         <com.android.settings.cyanogenmod.SecureSettingSwitchPreference
             android:key="volume_keys_control_ring_stream"
             android:title="@string/volume_keys_control_ring_stream_title"
-            android:summary="@string/volume_keys_control_ring_stream_summary"
-            settings:advanced="true" />
+            android:summary="@string/volume_keys_control_ring_stream_summary" />
 
         <ListPreference
             android:key="volume_key_cursor_control"
