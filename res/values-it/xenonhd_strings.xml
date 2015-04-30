@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2012-2015 Team Horizon
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- General strings -->
+    <string name="ok">OK</string>
+    <string name="reset">Reset</string>
+    <string name="add">Aggiungi</string>
+    <string name="enabled">Attivato</string>
+    <string name="default_string">Predefinito</string>
+    <string name="choose_app">Scegli un\'applicazione</string>
+    <string name="attention">Attenzione</string>
+
+    <!-- ROMSettings -->
+    <string name="misc_settings_title">Impostazioni ROM</string>
+
+    <string name="random_stuff">Fai quello che ti pare amico</string>
+
+    <!-- Sound settings -->
+    <string name="advanced_sound_title">Opzioni avanzate</string>
+    <string name="sound_title">Suoni</string>
+
+    <!-- Safe headset volume restore checkbox -->
+    <string name="safe_headset_volume_title">Volume sicuro auricolari</string>
+    <string name="safe_headset_volume_summary">Previeni livelli del volume alti alla connessione degli auricolari</string>
+    <string name="safe_headset_volume_warning_dialog_text">L\'Ascolto ad alto volume per periodi prolungati può danneggiare l\'udito. Procedere con cautela.</string>
+
+    <!-- Camera sound switch -->
+    <string name="camera_sounds_title">Suono otturatore fotocamera</string>
+    <string name="camera_sounds_summary">Abilita il suono di sistema dell\'otturatore della fotocamera</string>
+    <string name="camera_sound_warning_dialog_text">Disabilitare il suono dell\'otturatore della fotocamera è illegale in alcuni paesi. Per favore informati sulla legge vigente nel tuo paese!</string>
+
+    <!-- Recents panel settings -->
+    <string name="recents_panel_title">Pannello app recenti</string>
+    <string name="recents_panel_settings">Impostazioni pannello app recenti</string>
+    <string name="show_clear_all_recents_button_title">Pulsante chiudi tutte</string>
+    <string name="show_clear_all_recents_button_summary">Mostra pulsante chiudi tutte</string>
+    <string name="recents_clear_all_location_title">Posizione chiudi tutte</string>
+    <string name="recents_clear_all_location_top_right">In alto a destra</string>
+    <string name="recents_clear_all_location_top_left">In alto a sinistra</string>
+    <string name="recents_clear_all_location_top_center">In alto al centro</string>
+    <string name="recents_clear_all_location_bottom_right">In basso a destra</string>
+    <string name="recents_clear_all_location_bottom_left">In basso a sinistra</string>
+    <string name="recents_clear_all_location_bottom_center">In basso al centro</string>
+    <string name="recents_clear_all_dismiss_all_title">Chiudi tutte le app</string>
+    <string name="recents_clear_all_dismiss_all_summary">Scegli se chiudere tutte le app o ignorare l\'ultima aperta</string>
+
+    <!-- Color Picker -->
+    <string name="dialog_color_picker">Selettore colore</string>
+    <string name="press_color_to_apply">Premi su un colore in basso per applicarlo</string>
+
+    <!-- Status bar | Clock -->
+    <string name="status_bar_clock_style">Stile orologio</string>
+    <string name="status_bar_clock">Orologio e data</string>
+    <string name="status_bar_clock_title">Stile orologio e data</string>
+    <string name="clock_title_enable">Allineamento</string>
+    <string name="clock_enabled">Abilitato</string>
+    <string name="clock_disabled">Disabilitato</string>
+    <string name="clock_color_title">Colore</string>
+    <string name="status_bar_clock_style_reset">Resetta colore</string>
+    <string name="status_bar_show_clock_title">Mostra orologio e data</string>
+    <string name="status_bar_am_pm_info">Orologio 24-ore attivo</string>
+    <string name="enable_clock_weekday">Giorno della settimana</string>
+    <string name="enable_clock_weekday_summary">Giorno della settimana abbreviato prima dell\'ora</string>
+    <string name="right_clock">Orologio a destra</string>
+    <string name="center_clock">Orologio al centro</string>
+    <string name="left_clock">Orologio a sinistra</string>
+    <string name="dont_show">Non mostrare</string>
+    <string name="clock_date_display">Data</string>
+    <string name="clock_date_display_summary">Mostra data personalizzata prima dell\'ora/string>
+    <string name="clock_date_style">Stile data</string>
+    <string name="clock_date_format">Formato data</string>
+    <string name="clock_date_string_edittext_title">Deve essere nel formato della data ad es. MM/dd/yy</string>
+    <string name="clock_date_string_edittext_summary">Inserisci stringa</string>
+    <string name="am_pm_clock_normal">Dimensione del carattere normale</string>
+    <string name="am_pm_clock_small">Dimensione del carattere piccola</string>
+    <string name="am_pm_clock_none">Non mostrare</string>
+    <string name="clock_date_display_none">Non mostrare</string>
+    <string name="clock_date_display_small">Dimensione del carattere piccola</string>
+    <string name="clock_date_display_normal">Dimensione del carattere normale</string>
+    <string name="clock_date_style_normal">Normale</string>
+    <string name="clock_date_style_lowercase">Miniscolo</string>
+    <string name="clock_date_style_uppercase">Maiuscolo</string>
+    <string name="clock_date_format_custom">Formato java personalizzato</string>
+    <string name="status_bar_clock_style_reset_message">Resettare colore orologio?</string>
+
+	<!-- Status bar | Network Traffic -->
+	<string name="network_traffic_title">Traffico rete</string>
+    <string name="show_network_traffic_state">Monitor traffico sulla barra di stato</string>
+    <string name="show_network_traffic_unit">Unità di visualizzazione</string>
+    <string name="show_network_traffic_frequency">Intervallo di aggiornamento</string>
+    <string name="show_network_traffic_disable">Disabilitato</string>
+    <string name="show_network_traffic_up">Upload</string>
+    <string name="show_network_traffic_down">Download</string>
+    <string name="show_network_traffic_all">Upload e download</string>
+    <string name="show_network_traffic_bit">Bits per secondo</string>
+    <string name="show_network_traffic_byte">Bytes per secondo</string>
+    <string name="network_traffic_autohide">Nascondi automaticamente</string>
+    <string name="network_traffic_autohide_summary">Nascondi il monitor quando non c\'è attvità</string>
+    <string name="network_traffic_autohide_threshold">Soglia inattività</string>
+    <string name="network_traffic_color_style">Colore</string>
+    <string name="network_traffic_color_reset">Resetta colore</string>
+    <string name="network_traffic_color_reset_message">Resettare il colore di default?</string>
+
+    <!-- QuickSettings tiles -->
+    <string name="qs_battery_saver_tile">Risparmio batteria</string>
+    <string name="qs_brightness_tile">Luminosità</string>
+    <string name="qs_expanded_desktop_tile">Desktop esteso</string>
+    <string name="qs_notifications_tile">Notifiche</string>
+    <string name="qs_screen_off_tile">Spegni schermo</string>
+    <string name="qs_screenshot_tile">Salvaschermo</string>
+    <string name="qs_sync_tile">Sincronizzazione</string>
+    <string name="qs_tile_reboot">Riavvio</string>
+
+    <!-- QuickSettings 4 columns -->
+    <string name="qs_four_columns_title">Mostra quattro piastrelle per riga</string>
+
+    <!-- QuickSettings haptic feedback -->
+    <string name="quick_settings_vibrate_title">Vibra al tocco</string>
+    <string name="quick_settings_vibrate_summary">Vibra al tocco di una piastrella</string>
+
+    <!-- QuickSettings collapse panel -->
+    <string name="quick_settings_collapse_title">Chiudi automaticamente pannello</string>
+    <string name="quick_settings_collapse_summary">Chiudi il pannello dei quick settings dopo averne toccato uno</string>
+
+    <!-- Animations -->
+    <string name="custom_animations">Animazioni</string>
+
+    <!-- Toast Animation -->
+    <string name="toast_animation_title">Animazione Toast</string>
+    <string name="toast_none_animation">Nessuna</string>
+    <string name="toast_default_animation">Predefinito</string>
+    <string name="toast_fade_animation">Dissolvenza</string>
+    <string name="toast_SlideRight_animation">Scorrimento a destra</string>
+    <string name="toast_SlideLeft_animation">Scorrimento a sinistra</string>
+    <string name="toast_FastFade_animation">Dissolvenza veloce</string>
+    <string name="toast_GrowFade_animation">Dissolvenza con crescita</string>
+    <string name="toast_GrowFadeCenter_animation">Dissolvenza con crescita dal centro</string>
+    <string name="toast_GrowFadeBottom_animation">Dissolvenza con crescita dal basso</string>
+    <string name="toast_Translucent_animation">Translucenza</string>
+    <string name="toast_SlideLeftRight_animation">Scorrimento da sinistra a destra</string>
+    <string name="toast_SlideRightLeft_animation">Scorrimento da destra a sinistra</string>
+
+    <!-- AOKP custom system animations -->
+    <string name="aokp_animation_title">Animazioni sistema</string>
+    <string name="aokp_animation_summary">Animazioni sistema personalizzate</string>
+    <string name="animation_exit_only_title">Solo animazioni in entrata</string>
+    <string name="animation_reverse_exit_title">Inverti animazione in uscita</string>
+    <string name="activity_open_title">Apertura activity</string>
+    <string name="activity_close_title">Chiusura activity</string>
+    <string name="task_open_title">Apertura task</string>
+    <string name="task_close_title">Chiusura task</string>
+    <string name="task_move_to_front_title">Porta in primo piano</string>
+    <string name="task_move_to_back_title">Porta in secondo piano</string>
+    <string name="wallpaper_open_title">Ritorno alla home</string>
+    <string name="wallpaper_close_title">Chiusura della home</string>
+    <string name="wallpaper_intra_open_title">Apertura selezione sfondo</string>
+    <string name="wallpaper_intra_close_title">Chiusura selezione sfondo</string>
+    <string name="task_open_behind_title">Apertura task in secondo piano</string>
+    <string name="animation_duration_title">Durata animazione</string>
+
+    <!-- Navigation bar height/width -->
+    <string name="navbar_title">Barra di navigazione</string>
+    <string name="navbar_dimen_title">Dimensioni</string>
+    <string name="navbar_dimensions_reset_message">Ripristinare tutti i valori delle dimensioni a quelli predefiniti?</string>
+    <string name="navigation_bar_height_title">Altezza barra di navigazione</string>
+    <string name="navigation_bar_height_summary">Altezza barra di navigazione mentre si è in verticale.</string>
+    <string name="navigation_bar_height_landscape_title">Altezza barra di navigazione in orizzontale</string>
+    <string name="navigation_bar_height_landscape_summary">Altezza barra di navigazione mentre si è in orizzontale.</string>
+    <string name="navigation_bar_width_title">Larghezza barra di navigazione</string>
+    <string name="navigation_bar_width_summary">Altezza barra di navigazione se questa è lungo un lato</string>
+
+    <!-- Force expand notifications -->
+    <string name="notification_force_expand_title">Forza notifiche estese</string>
+    <string name="notification_force_expand_summary">Forza notifiche estese per tutte le app che le supportano</string>
+
+    <!-- long press back to kill configurable timeout -->
+    <string name="kill_app_longpress_timeout_title">Ritardo chiusura app</string>
+    <string name="timeout_2000">2 secondi (default)</string>
+    <string name="timeout_1500">1.5 secondi</string>
+    <string name="timeout_1000">1 secondo</string>
+    <string name="timeout_500">0.5 secondi</string>
+
+    <!-- Doze pulse (ambient display) options -->
+    <string name="doze_overwrite_value_title">Sovrascrivi valori</string>
+    <string name="doze_overwrite_value_summary">Permette di sovrascrivere i valori di default con dei personalizzati</string>
+
+    <string name="doze_list_mode_title">Modalità doze</string>
+    <string name="doze_list_mode_summary">Opzione per configurare la modalità del doze</string>
+
+    <string name="doze_pulse_title">Impostazioni durata</string>
+    <string name="doze_pulse_duration_in_title">Animazione di accensione</string>
+
+    <string name="doze_pulse_duration_visible_title">Durata visibilità</string>
+
+    <string name="doze_pulse_duration_out_title">Animazione di spegnimento</string>
+
+    <string name="doze_pulse_on_notifications_title">Pulsa per notifiche</string>
+    <string name="doze_pulse_on_notifications_summary">Pulsa se vi sono notifiche in sospeso</string>
+
+    <string name="doze_shake_title">Impostazioni scuotimento</string>
+    <string name="doze_shake_mode_title">Modalità scuotimento</string>
+    <string name="doze_shake_mode_summary">Utilizza il valore del sensore di movimento per attivarlo</string>
+    <string name="doze_shake_mode_test_summary">Hai voglia di testare il sensore di movimento?</string>
+    <string name="doze_shake_mode_test_result">Applicare il valore corrente?</string>
+    <string name="doze_shake_test">Scuoti il tuo telefono adesso</string>
+    <string name="doze_shake_it">Movimento individuato!</string>
+
+    <string name="doze_shake_acc_threshold_title">Sensibilità sensore</string>
+    <string name="doze_shake_acc_threshold_summary">Configura l\'intensità del movimento necessaria per attivarlo</string>
+
+    <string name="doze_time_mode_title">Mostra orologio e data</string>
+    <string name="doze_time_mode_summary">Mostra il tempo quando non ci sono notifiche</string>
+
+    <string name="veryeasy_shake">Molto alta</string>
+    <string name="easy_shake">Alta</string>
+    <string name="medium_shake">Predefinita</string>
+    <string name="hard_shake">Bassa</string>
+    <string name="veryhard_shake">Molto bassa</string>
+    <string name="strong_shake">Bassissima</string>
+
+    <string name="fully_mode">Modalità completa</string>
+    <string name="pocket_shake_mode">Tasca e scuotimento</string>
+    <string name="pocket_pulse_mode">Tasca e pulsamento</string>
+    <string name="pocket_only_mode">Tasca</string>
+    <string name="shake_pulse_mode">Scuotimento e pulsamento</string>
+    <string name="pulse_only_mode">Pulsamento (predefinito)</string>
+
+    <!-- Double Tap Navbar to Sleep -->
+    <string name="double_tap_sleep_nav_bar_title">Doppio tocco per sospendere</string>
+    <string name="double_tap_sleep_nav_bar_summary">Doppio tocco sulla barra di navigazione per sospende il telefono</string>
+
+    <!-- Show carrier label and custom -->
+    <string name="carrier_options">Testo operatore</string>
+    <string name="show_status_bar_carrier_title">Operatore barra di tasto</string>
+    <string name="show_status_bar_carrier_summary">Mostra l\'operatore nella barra di tasto</string>
+    <string name="custom_carrier_label_title">Testo operatore personalizzato</string>
+    <string name="custom_carrier_label_explain">Inserire il testo desirato. Lasciare vuoto per tornare al valore predefinito.</string>
+    <string name="custom_carrier_label_notset">Testo personalizzato attualmente non impostato</string>
+    <string name="status_bar_carrier_color">Colore testo operatore</string>
+</resources>
