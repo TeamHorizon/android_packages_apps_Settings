@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Copyright (C) 2014 The CyanogenMod Project
+<!-- Copyright (C) 2015 Team Horizon
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -121,6 +121,18 @@
             android:title="@string/longpress_lock_icon_to_sleep_title"
             android:summary="@string/longpress_lock_icon_to_sleep_summary" />
 
+        <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
+            android:key="disable_torch_on_screen_off"
+            android:title="@string/disable_torch_screen_off_title"
+            android:defaultValue="false" />
+
+        <ListPreference
+            android:key="disable_torch_on_screen_off_delay"
+            android:title="@string/disable_torch_screen_off_delay_title"
+            android:dialogTitle="@string/disable_torch_screen_off_delay_title"
+            android:entries="@array/torch_screen_off_delay_entries"
+            android:entryValues="@array/torch_screen_off_delay_values"
+            android:dependency="disable_torch_on_screen_off" />
     </PreferenceCategory>
 
 </PreferenceScreen>

@@ -43,6 +43,8 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
 
+import com.android.internal.util.cm.QSUtils;
+
 import com.android.settings.R;
 
 public class MiscSettings extends SettingsPreferenceFragment implements
@@ -54,6 +56,8 @@ Preference.OnPreferenceChangeListener {
     private static final String RECENTS_CLEAR_ALL_LOCATION = "recents_clear_all_location";
     private static final String KEY_TOAST_ANIMATION = "toast_animation";
     private static final String KEY_LCD_DENSITY = "lcd_density";
+    private static final String DISABLE_TORCH_ON_SCREEN_OFF = "disable_torch_on_screen_off";
+    private static final String DISABLE_TORCH_ON_SCREEN_OFF_DELAY = "disable_torch_on_screen_off_delay";
 
     private Context mContext;
 
@@ -61,11 +65,14 @@ Preference.OnPreferenceChangeListener {
     private ListPreference mRecentsClearAllLocation;
     private ListPreference mToastAnimation;
     private ListPreference mLcdDensityPreference;
+    private SwitchPreference mTorchOff;
+    private ListPreference mTorchOffDelay;
 
     @Override
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
         addPreferencesFromResource(R.xml.misc_settings);
+        Activity activity = getActivity();
 
         PreferenceScreen prefSet = getPreferenceScreen();
         ContentResolver resolver = getActivity().getContentResolver();
@@ -126,6 +133,19 @@ Preference.OnPreferenceChangeListener {
             mLcdDensityPreference.setOnPreferenceChangeListener(this);
             updateLcdDensityPreferenceDescription(currentDensity);
         }
+
+        mTorchOff = (SwitchPreference) prefSet.findPreference(DISABLE_TORCH_ON_SCREEN_OFF);
+        mTorchOffDelay = (ListPreference) prefSet.findPreference(DISABLE_TORCH_ON_SCREEN_OFF_DELAY);
+        int torchOffDelay = Settings.System.getInt(resolver,
+                Settings.System.DISABLE_TORCH_ON_SCREEN_OFF_DELAY, 10);
+        mTorchOffDelay.setValue(String.valueOf(torchOffDelay));
+        mTorchOffDelay.setSummary(mTorchOffDelay.getEntry());
+        mTorchOffDelay.setOnPreferenceChangeListener(this);
+
+        if (!QSUtils.deviceSupportsFlashLight(activity)) {
+            prefSet.removePreference(mTorchOff);
+            prefSet.removePreference(mTorchOffDelay);
+        }
     }
 
     private void updateLcdDensityPreferenceDescription(int currentDensity) {
@@ -151,6 +171,13 @@ Preference.OnPreferenceChangeListener {
             Settings.System.putString(getContentResolver(), Settings.System.TOAST_ANIMATION, (String) objValue);
             mToastAnimation.setSummary(mToastAnimation.getEntries()[index]);
             Toast.makeText(mContext, "Toast Test", Toast.LENGTH_SHORT).show();
+            return true;
+        } else if (preference == mTorchOffDelay) {
+            int torchOffDelay = Integer.valueOf((String) objValue);
+            int index = mTorchOffDelay.findIndexOfValue((String) objValue);
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.DISABLE_TORCH_ON_SCREEN_OFF_DELAY, torchOffDelay);
+            mTorchOffDelay.setSummary(mTorchOffDelay.getEntries()[index]);
             return true;
         } else if (preference == mLcdDensityPreference) {
             try {
