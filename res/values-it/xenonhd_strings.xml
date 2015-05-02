@@ -80,7 +80,7 @@
     <string name="left_clock">Orologio a sinistra</string>
     <string name="dont_show">Non mostrare</string>
     <string name="clock_date_display">Data</string>
-    <string name="clock_date_display_summary">Mostra data personalizzata prima dell\'ora/string>
+    <string name="clock_date_display_summary">Mostra data personalizzata prima dell\'ora</string>
     <string name="clock_date_style">Stile data</string>
     <string name="clock_date_format">Formato data</string>
     <string name="clock_date_string_edittext_title">Deve essere nel formato della data ad es. MM/dd/yy</string>
