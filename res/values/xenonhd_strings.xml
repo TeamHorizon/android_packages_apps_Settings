@@ -27,4 +27,7 @@
     <string name="xenonota_title">XenonHD Updates</string>
     <string name="xenonota_summary">Check for ROM updates</string>
 
+    <!-- Dev Options Enabled by Default -->
+    <string name="show_dev_already_enabled">No need, Development settings are enabled by default.</string>
+
 </resources>
