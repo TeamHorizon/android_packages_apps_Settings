@@ -251,4 +251,15 @@
     <string name="custom_carrier_label_explain">Inserire il testo desirato. Lasciare vuoto per tornare al valore predefinito.</string>
     <string name="custom_carrier_label_notset">Testo personalizzato attualmente non impostato</string>
     <string name="status_bar_carrier_color">Colore testo operatore</string>
+    
+    <!-- Privacy guard notification -->
+    <string name="privacy_guard_notification_title">Notifica</string>
+    <string name="privacy_guard_notifiation_summary">Mostra una notifica quando privacy guard è attivo</string>
+
+    <!-- Navring targets (enable/disable) -->
+    <string name="navigation_ring_enable_title">Abilita anelli barra di navigazione</string>
+
+    <!-- Battery saver -->
+    <string name="battery_saver_title">Colore di avviso</string>
+    <string name="battery_saver_style_reset_message">Resettare il colore di avviso del risparmio batteria?</string>
 </resources>
