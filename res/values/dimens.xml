@@ -117,7 +117,7 @@
     <!-- Dashboard category padding start / end -->
     <dimen name="dashboard_category_padding_start">0dp</dimen>
     <dimen name="dashboard_category_padding_end">0dp</dimen>
-    <dimen name="control_corner_dashboard">15dp</dimen>
+    <dimen name="control_corner_dashboard">0dp</dimen>
 
     <!-- Dashboard category panel elevation -->
     <dimen name="dashboard_category_elevation">4dp</dimen>
