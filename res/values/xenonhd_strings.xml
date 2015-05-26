@@ -268,4 +268,9 @@
 	<!-- Long press to skip tracks -->
 	<string name="volbtn_music_controls_title">Playback control</string>
 	<string name="volbtn_music_controls_summary">When the screen is off, long pressing the volume keys will seek music tracks</string>
+
+    <!-- Changelog -->
+    <string name="changelog_crdroid_title">Changelog</string>
+    <string name="changelog_crdroid_error">Unable to load changelog</string>
+
 </resources>
