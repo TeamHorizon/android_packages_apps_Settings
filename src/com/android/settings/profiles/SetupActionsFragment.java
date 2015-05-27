@@ -25,6 +25,7 @@ import android.app.Profile;
 import android.app.ProfileManager;
 import android.app.RingModeSettings;
 import android.app.StreamSettings;
+import android.app.admin.DevicePolicyManager;
 import android.bluetooth.BluetoothAdapter;
 import android.content.ContentResolver;
 import android.content.Context;
@@ -69,6 +70,7 @@ import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.profiles.actions.ItemListAdapter;
 import com.android.settings.profiles.actions.item.AirplaneModeItem;
 import com.android.settings.profiles.actions.item.ConnectionOverrideItem;
+import com.android.settings.profiles.actions.item.DisabledItem;
 import com.android.settings.profiles.actions.item.Header;
 import com.android.settings.profiles.actions.item.Item;
 import com.android.settings.profiles.actions.item.LockModeItem;
@@ -204,7 +206,14 @@ public class SetupActionsFragment extends SettingsPreferenceFragment
         mItems.add(new Header(getString(R.string.profile_system_settings_title)));
         mItems.add(new RingModeItem(mProfile.getRingMode()));
         mItems.add(new AirplaneModeItem(mProfile.getAirplaneMode()));
-        mItems.add(new LockModeItem(mProfile));
+        DevicePolicyManager dpm = (DevicePolicyManager) getSystemService(
+                Context.DEVICE_POLICY_SERVICE);
+        if (!dpm.requireSecureKeyguard()) {
+            mItems.add(new LockModeItem(mProfile));
+        } else {
+            mItems.add(new DisabledItem(R.string.profile_lockmode_title,
+                    R.string.profile_lockmode_policy_disabled_summary));
+        }
         mAdapter.notifyDataSetChanged();
     }
 
