@@ -18,6 +18,7 @@
     <!-- General strings -->
     <string name="ok">OK</string>
     <string name="reset">Reset</string>
+    <string name="reset_message">Reset all entries to default?</string>
     <string name="add">Add</string>
     <string name="attention">Attention</string>
     <string name="enabled">Enabled</string>
@@ -457,4 +458,27 @@
     <!-- Notification ticker -->
     <string name="status_bar_ticker_title">Notification ticker</string>
     <string name="status_bar_ticker_summary">Notification text animation in the statusbar</string>
+
+    <!-- Recent panel -->
+    <string name="recent_panel_category">Recent apps panel</string>
+    <string name="use_slim_recents_title">Slim recents</string>
+    <string name="show_running_tasks_title">Only show running apps</string>
+    <string name="recents_max_apps_title">Max allowed apps</string>
+    <string name="recent_panel_scale_title">Size</string>
+    <string name="recent_panel_expanded_mode_title">Expanded mode</string>
+    <string name="recent_panel_expanded_mode_summary">Recent tasks expanded preview mode</string>
+    <string name="recent_panel_expanded_mode_auto">Auto (default)</string>
+    <string name="recent_panel_expanded_mode_always">Always</string>
+    <string name="recent_panel_expanded_mode_never">Never</string>
+    <string name="recent_panel_show_topmost_title">Show topmost task</string>
+    <string name="recent_panel_show_topmost_summary">Don\'t exclude the topmost task in recents view</string>
+    <string name="recent_panel_bg_color_title">Panel background color</string>
+    <string name="recent_card_bg_color_title">Card background color</string>
+    <string name="recent_card_text_color_title">Card text color</string>
+    <string name="shortcut_action_reset">Reset</string>
+    <string name="shortcut_action_reset_message">Reset all entries to default?</string>
+
+    <!-- ATTENTION: RTL languages need to replace left with right -->
+    <string name="recent_panel_lefty_mode_title">Show on the left edge</string>
+    <string name="recent_panel_lefty_mode_summary">Show recent apps panel on the left edge</string>
 </resources>
