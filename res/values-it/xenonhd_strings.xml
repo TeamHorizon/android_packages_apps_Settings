@@ -262,4 +262,124 @@
     <!-- Battery saver -->
     <string name="battery_saver_title">Colore di avviso</string>
     <string name="battery_saver_style_reset_message">Resettare il colore di avviso del risparmio batteria?</string>
+    
+    <!-- Lock Gesture settings -->
+    <!-- Security & location settings screen, setting option name -->
+    <string name="lockgesture_change_lock_pattern_label">Cambia il gesto di sblocco</string>
+    <!-- Security & location settings screen, change unlock gesture screen instruction when the user chooses "Change unlock gesture".  We first ask the user toe nter the current pattern, and this is the message seen -->
+    <string name="lockgesture_change_lock_pin_label">Cambia il PIN di sblocco</string>
+    <!-- Security & location settings screen, change unlock gesture screen instruction when the user chooses "Change unlock gesture".  We first ask the user toe nter the current pattern, and this is the message seen -->
+    <string name="lockgesture_need_to_unlock">Conferma il gesto salvato</string>
+    <!-- Security & location settings screen, change unlock gesture screen instruction on top of screen.  This si when they are supposed to draw a new unlock pattern (for example, if they are changing their unlock patterns)..-->
+    <string name="lockgesture_recording_intro_header">Disegna un gesto di sblocco:</string>
+    <!-- Security & location settings screen, change unlock gesture screen hint on bottom of screen.  We are telling them to press the menu button to see more options or help. -->
+    <string name="lockgesture_recording_intro_footer">Premi Menu per un aiuto.</string>
+    <!-- Security & location settings screen, change unlock gesture screen instruction on top of screen while drawing pattern -->
+    <string name="lockgesture_recording_inprogress">Rilascia il dito quando finito.</string>
+    <!-- Security & location settings screen, change unlock gesture screen message on top of screen after drawing pattern -->
+    <string name="lockgesture_pattern_entered_header">Gesto acquisito</string>
+    <!-- Security & location settings screen, change unlock gesture screen instruction on top of screen to confirm pattern -->
+    <string name="lockgesture_need_to_confirm">Disegna di nuovo il gesto per confermare:</string>
+    <string name="lockgesture_pattern_confirmed_header">Il tuo gesto di sblocco nuovo:</string>
+    <!-- Security & location settings screen, change unlock gesture screen button, on bottom of screen.  After they draw a gesture and release their finger, we display the pattern so they remember.  When they are ready to draw it once again to confirm it, they press this button. -->
+    <string name="lockgesture_confirm_button_text">Conferma</string>
+    <!-- Security & location settings screen, change unlock gesture screen button, on bottom of screen.  After they draw a gesture and release their finger, we display the pattern so they remember.  If they are nto satisfied with this pattern, they click this button to redraw the pattern. -->
+    <string name="lockgesture_restart_button_text">Ridisegna</string>
+    <!-- Security & location settings screen, change unlock gesture screen button, on bottom of screen. If they are supposed to enter their current gesture before being able to draw another one, and they screw up, they hit this button to try again -->
+    <string name="lockgesture_retry_button_text">Riprova</string>
+    <!-- Security & location settings screen, change unlock gesture screen button, on bottom of screen. Once they draw a new gesture and confirm it by drawing it again, they press this button to exit -->
+    <string name="lockgesture_continue_button_text">Continua</string>
+    <!-- Security & location settings screen, unlock screen activity title -->
+    <string name="lockgesture_settings_title">Gesto di sblocco</string>
+    <!-- Security & location settings screen, setting check box title if the unlock pattern MUST be drawn everytime they turn on the screen -->
+    <string name="lockgesture_settings_enable_title">Richiedi gesto</string>
+    <!-- Security & location settings screen, setting summary for the checkbox "Require pattern" -->
+    <string name="lockgesture_settings_enable_summary">E\' necessario disegnare un gesto per sbloccare lo schermo</string>
+   <!-- Security & location settings screen, setting check box title. This setting controls whether a visible gesture is drawn as the user moves his finger around while drawing the unlock pattern.  If checked, this line is drawn.  If unchecked, there is nothing drawn so the user does not reveal his pattern while he unlocks the phone.-->
+    <string name="lockgesture_settings_enable_visible_pattern_title">Rendere gesto visibile</string>
+    <!-- Security & location settings screen, setting check box title. This controls whether the device locks immediately when the power button is pressed. [CHAR LIMIT=28]-->
+    <string name="lockgesture_settings_enable_power_button_instantly_locks">Il pulsante di spegnimento blocca immediatamente</string>
+    <!-- Security & location settings screen, setting option name when user has never set an unlock gesture -->
+    <string name="lockgesture_settings_choose_lock_pattern">Imposta gesto di sblocco</string>
+    <!-- Security & location settings screen, setting option name when user has previously set an unlock gesture and wants to change to a new pattern -->
+    <string name="lockgesture_settings_change_lock_pattern">Cambia gesto di sblocco</string>
+    <!-- Security & location settings screen, the help instructions (an animation) caption -->
+    <string name="lockgesture_settings_help_how_to_record">Come si disegna un gesto di sblocco</string>
+    <!-- Security & location settings screen, change unlock gesture screen instruction on top of screen after too many incorrect attempts -->
+    <string name="lockgesture_too_many_failed_confirmation_attempts_header">Troppi tentativi falliti!</string>
+    <!-- Security & location settings screen, change unlock gesture screen countdown hint on bottom of screen after too many incorrect attempts -->
+    <string name="lockgesture_too_many_failed_confirmation_attempts_footer">Prova ancora tra <xliff:g id="number">%d</xliff:g> secondi.</string>
+    <!-- Toast shown if setting gesture was successful -->
+    <string name="lockpassword_gesture_set_toast">Il gesto è stato impostato</string>
+    <!-- Header on gesture confirm screen [CHAR LIMIT=30] -->
+    <string name="lockpassword_confirm_your_gesture_header">Conferma il tuo gesto</string>
+    <!-- Header on first screen of choose gesture flow [CHAR LIMIT=30] -->
+    <string name="lockpassword_choose_your_gesture_header">Disegna il tuo gesto</string>
+
+    <!-- Title for preference that guides the user through creating an unlock gesture [CHAR LIMIT=22] -->
+    <string name="unlock_set_unlock_gesture_title">Gesto</string>
+    <!-- Title for preference that guides the user through creating an unlock gesture [CHAR LIMIT=45] -->
+    <string name="unlock_set_unlock_gesture_summary">Bassa sicurezza, sperimentale</string>
+
+    <!-- Summary for "Configure lockscreen" when security gesture is enabled [CHAR LIMIT=45] -->
+    <string name="unlock_set_unlock_mode_gesture">Gesto</string>
+
+    <!-- Identicons -->
+    <string name="identicons_title">Identicons</string>
+    <string name="identicons_enabled_title">Identicons</string>
+    <string name="identicons_enabled_summary">Usa una identicon come immagine per i nuovi contatti</string>
+    <string name="identicons_style_title">Stile identicon</string>
+    <string name="identicons_style_summary">Scegli uno stile di identicon da usare</string>
+    <string name="identicons_create_title">Crea identicons</string>
+    <string name="identicons_create_summary">Crea identicons per i contatti esistenti ma sprovvisti di foto</string>
+    <string name="identicons_creation_service_running_title">Creazione identicons in corso</string>
+    <string name="identicons_creation_service_running_summary"></string>
+    <string name="identicons_creation_service_contact_summary">Elaborazione %s</string>
+    <string name="identicons_creation_service_contact_summary_finishing">Stiamo sistemando alcune ultime cose...</string>
+    <string name="identicons_remove_title">Rimuovi identicons</string>
+    <string name="identicons_remove_summary">Rimuovi le identicon dai contatti che le hanno impostate</string>
+    <string name="identicons_remove_service_running_title">Rimozione identicons in corso</string>
+    <string name="identicons_remove_service_running_summary"></string>
+    <string name="identicons_remove_service_contact_summary">Lavorazione foto %1$d/%2$d</string>
+    <string name="identicons_remove_service_contact_summary_finishing">Stiamo sistemando alcune ultime cose...</string>
+    <string name="identicons_style_retro">Retro</string>
+    <string name="identicons_style_contemporary">Contemporanee</string>
+    <string name="identicons_style_spirograph">Spirografo</string>
+    <string name="identicons_style_dotmatrix">Matrice di punti</string>
+
+    <!-- Less Notification sounds -->
+    <string name="notifications_category_title">Notifiche</string>
+    <string name="less_notification_sounds_title">Avvisi di notifica meno frequenti</string>
+    <string name="less_notification_sounds_summary">Limita gli avvisi di notifica di ciascuna app a solo uno per il periodo di tempo selezionato</string>
+    <string name="less_notification_sounds_default">Comportamento predefinito</string>
+    <string name="less_notification_sounds_3s">3 secondi</string>
+    <string name="less_notification_sounds_5s">5 secondi</string>
+    <string name="less_notification_sounds_10s">10 secondi</string>
+    <string name="less_notification_sounds_15s">15 secondi</string>
+    <string name="less_notification_sounds_30s">30 secondi</string>
+    <string name="less_notification_sounds_45s">45 secondi</string>
+    <string name="less_notification_sounds_1m">1 minuto</string>
+    <string name="less_notification_sounds_2m">2 minuti</string>
+    <string name="less_notification_sounds_5m">5 minuti</string>
+
+    <!-- Battery Bar Category -->
+    <string name="battery_bar_settings">Barra batteria</string>
+
+    <!-- Battery Bar -->
+    <string name="status_bar_battery_cat_title">Batteria</string>
+    <string name="battery_bar_title">Barra batteria</string>
+    <string name="battery_bar">Posizione barra batteria</string>
+    <string name="battery_bar_color">Colore barra batteria</string>
+    <string name="battery_bar_cat">Stile barra batteria</string>
+    <string name="battery_bar_style_title">Allineamento barra batteria</string>
+    <string name="battery_bar_thickness_title">Spessore barra batteria</string>
+    <string name="battery_bar_animate_title">Animazione durante la carica</string>
+    <string name="battery_bar_animate_summary">L\'animazione di caricamento può peggiorare la user experience. Attivala a tuo rischio e pericolo!</string>
+
+    <!-- Long press on lock screen lock icon to sleep -->
+    <string name="longpress_lock_icon_to_sleep_title">Pressione lunga sulla icona di blocco per sospendere</string>
+    <string name="longpress_lock_icon_to_sleep_summary">Questa opzione non funzionerà se smart lock e le impostazioni di esplorazione al tocco sono attive</string>
+
+    <!-- Changelog -->
+    <string name="changelog_crdroid_error">Impossibile caricare il changelog</string>
 </resources>
