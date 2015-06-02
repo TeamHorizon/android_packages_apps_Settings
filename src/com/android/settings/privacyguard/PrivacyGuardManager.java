@@ -181,11 +181,6 @@ public class PrivacyGuardManager extends Fragment
 
         // rebuild the list; the user might have changed settings inbetween
         scheduleAppsLoad();
-
-        if (mSavedFirstVisiblePosition != AdapterView.INVALID_POSITION) {
-            mAppsList.setSelectionFromTop(mSavedFirstVisiblePosition, mSavedFirstItemOffset);
-            mSavedFirstVisiblePosition = AdapterView.INVALID_POSITION;
-        }
     }
 
     @Override
@@ -209,6 +204,11 @@ public class PrivacyGuardManager extends Fragment
               mActivity, android.R.anim.fade_out));
         mAppsList.startAnimation(AnimationUtils.loadAnimation(
               mActivity, android.R.anim.fade_in));
+
+        if (mSavedFirstVisiblePosition != AdapterView.INVALID_POSITION) {
+            mAppsList.setSelectionFromTop(mSavedFirstVisiblePosition, mSavedFirstItemOffset);
+            mSavedFirstVisiblePosition = AdapterView.INVALID_POSITION;
+        }
 
         mLoadingContainer.setVisibility(View.INVISIBLE);
         mAppsList.setVisibility(View.VISIBLE);
