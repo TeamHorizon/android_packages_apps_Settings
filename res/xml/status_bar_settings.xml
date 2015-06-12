@@ -29,6 +29,12 @@
             android:fragment="com.android.settings.xenonhd.Traffic"
             android:title="@string/network_traffic_title" />
 
+    <!-- Breathing Notifications -->
+    <PreferenceScreen
+            android:key="breathing_notifications"
+            android:fragment="com.android.settings.xenonhd.BreathingNotifications"
+            android:title="@string/breathing_notifications_title" />
+
     <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
         android:key="status_bar_show_empty_sims"
         android:defaultValue="true"
