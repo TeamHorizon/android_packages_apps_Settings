@@ -453,4 +453,8 @@
     <string name="torch_screen_off_one_minute">1 minute</string>
     <string name="torch_screen_off_five_minutes">5 minutes</string>
     <string name="torch_screen_off_ten_minutes">10 minutes</string>
+
+    <!-- Notification ticker -->
+    <string name="status_bar_ticker_title">Notification ticker</string>
+    <string name="status_bar_ticker_summary">Notification text animation in the statusbar</string>
 </resources>
