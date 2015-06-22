@@ -481,4 +481,8 @@
     <!-- ATTENTION: RTL languages need to replace left with right -->
     <string name="recent_panel_lefty_mode_title">Show on the left edge</string>
     <string name="recent_panel_lefty_mode_summary">Show recent apps panel on the left edge</string>
+
+    <!-- Lockscreen settings -->
+    <string name="lockscreen_category">Lockscreen</string>
+
 </resources>
