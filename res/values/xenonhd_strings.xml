@@ -486,6 +486,12 @@
     <string name="lockscreen_category">Lockscreen</string>
 
     <!-- Weather settings -->
+    <string name="dlg_reset_values_message">Reset values to\nAndroid- or DarkKat default?</string>
+    <string name="dlg_reset_android">Android</string>
+    <string name="dlg_reset_darkkat">DarkKat</string>
+    <string name="colors_title">Colors</string>
+    <string name="text_title">Text</string>
+    <string name="icons_title">Icons</string>
     <string name="lock_screen_weather_settings_title">Weather</string>
     <string name="lock_screen_weather_settings_summary">Customize Weather</string>
     <string name="weather_show_weather_title">Show weather</string>

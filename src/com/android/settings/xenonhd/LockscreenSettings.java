@@ -15,58 +15,19 @@
 */
 package com.android.settings.xenonhd;
 
-import android.app.Activity;
-import android.app.ActivityManagerNative;
-import android.app.Dialog;
-import android.app.IActivityManager;
-import android.app.ProgressDialog;
-import android.os.AsyncTask;
 import android.os.Bundle;
-import android.os.RemoteException;
-import android.os.ServiceManager;
-import android.os.SystemProperties;
-import android.os.UserHandle;
-import android.content.ContentResolver;
-import android.content.Context;
-import android.content.res.Resources;
-import android.preference.ListPreference;
-import android.preference.Preference;
-import android.preference.Preference.OnPreferenceChangeListener;
-import android.preference.PreferenceCategory;
-import android.preference.PreferenceScreen;
-import android.preference.SwitchPreference;
-import android.provider.Settings;
+
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
-import android.util.DisplayMetrics;
-import android.util.Log;
-import android.view.Display;
-import android.view.IWindowManager;
-import android.view.View;
-import android.view.WindowManager;
-import android.view.WindowManagerGlobal;
-import android.view.WindowManagerImpl;
-import android.widget.Toast;
 
-import com.android.settings.R;
-
-public class LockscreenSettings extends SettingsPreferenceFragment implements
-Preference.OnPreferenceChangeListener {
+public class LockscreenSettings extends SettingsPreferenceFragment {
 
     private static final String TAG = "LockscreenSettings";
 
-    private Context mContext;
-
     @Override
-    public void onCreate(Bundle icicle) {
-        super.onCreate(icicle);
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.lockscreen_settings);
-        Activity activity = getActivity();
-
-        PreferenceScreen prefSet = getPreferenceScreen();
-        ContentResolver resolver = getActivity().getContentResolver();
-
-        mContext = getActivity().getApplicationContext();
 
     }
 }
