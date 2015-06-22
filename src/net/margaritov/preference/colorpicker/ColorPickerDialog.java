@@ -111,12 +111,12 @@ public class ColorPickerDialog
         mOldColor.setColor(color);
         mColorPicker.setColor(color, true);
 
-        setColorAndClickAction(mWhite, Color.WHITE);
-        setColorAndClickAction(mBlack, Color.BLACK);
-        setColorAndClickAction(mCyan, 0xff33b5e5);
-        setColorAndClickAction(mRed, Color.RED);
-        setColorAndClickAction(mGreen, Color.GREEN);
-        setColorAndClickAction(mYellow, Color.YELLOW);
+        setColorAndClickAction(mWhite, 0xff4CAF50);
+        setColorAndClickAction(mBlack, 0xff607D8B);
+        setColorAndClickAction(mCyan, 0xff03A9F4);
+        setColorAndClickAction(mRed, 0xffE91E63);
+        setColorAndClickAction(mGreen, 0xff009688);
+        setColorAndClickAction(mYellow, 0xff3F51B5);
 
         if (mHex != null) {
             mHex.setText(ColorPickerPreference.convertToARGB(color));
