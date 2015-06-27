@@ -505,6 +505,7 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
     private static String getDeviceProcessorInfo() {
         // Hardware : XYZ
         final String PROC_HARDWARE_REGEX = "Hardware\\s*:\\s*(.*)$"; /* hardware string */
+        final String PROC_PROCESSOR_REGEX = "Processor\\s*:\\s*(.*)$"; /* Processor string */
 
         try {
             BufferedReader reader = new BufferedReader(new FileReader(FILENAME_PROC_CPUINFO));
@@ -518,6 +519,13 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
                             return m.group(1);
                         }
                     }
+                    else if (cpuinfo.startsWith("Processor")) {
+                        Matcher m = Pattern.compile(PROC_PROCESSOR_REGEX).matcher(cpuinfo);
+                        if (m.matches()) {
+                            return m.group(1);
+                        }
+                    }
+
                 }
                 return "Unknown";
             } finally {
