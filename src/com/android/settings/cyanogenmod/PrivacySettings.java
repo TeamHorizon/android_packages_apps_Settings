@@ -90,34 +90,6 @@ public class PrivacySettings extends SettingsPreferenceFragment implements Index
         if (!Utils.isPackageInstalled(context, WHISPERPUSH_UPDATE)) {
             return false;
         }
-
-        // ...and it has been granted the correct permission
-        int result = pm.checkPermission(
-            android.Manifest.permission.INTERCEPT_SMS,
-            WHISPERPUSH_UPDATE);
-        if(result == PackageManager.PERMISSION_GRANTED) {
-            return true;
-        } else {
-            // Stranger Danger!
-            Log.e(TAG, "WhisperPush2 package present, but missing required permission!");
-            return false;
-        }
-    }
-
-    private static boolean isWhisperPushOriginalOK(PackageManager pm) {
-        try {
-            PackageInfo info = pm.getPackageInfo(
-                WHISPERPUSH_ORIGINAL, PackageManager.GET_PERMISSIONS);
-            if (info != null && info.applicationInfo != null &&
-                (info.applicationInfo.flags & ApplicationInfo.FLAG_SYSTEM) != 0) {
-                return true;
-            } else {
-                Log.e(TAG, "WhisperPush package present, but not system app");
-                return false;
-            }
-        } catch (PackageManager.NameNotFoundException e) {
-            return false; // not installed
-        }
     }
 
     @Override
