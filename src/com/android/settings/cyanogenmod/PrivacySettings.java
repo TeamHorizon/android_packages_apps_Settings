@@ -44,12 +44,8 @@ public class PrivacySettings extends SettingsPreferenceFragment implements Index
 
     private static final String TAG = "PrivacySettings";
     private static final String KEY_BLACKLIST = "blacklist";
-    private static final String KEY_WHISPERPUSH = "whisperpush";
-    private static final String WHISPERPUSH_ORIGINAL = "org.whispersystems.whisperpush";
-    private static final String WHISPERPUSH_UPDATE = "org.whispersystems.whisperpush2";
 
     private PreferenceScreen mBlacklist;
-    private Preference mWhisperPush;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -57,7 +53,6 @@ public class PrivacySettings extends SettingsPreferenceFragment implements Index
         addPreferencesFromResource(R.xml.privacy_settings_cyanogenmod);
 
         mBlacklist = (PreferenceScreen) findPreference(KEY_BLACKLIST);
-        mWhisperPush = (Preference) findPreference(KEY_WHISPERPUSH);
 
         // Add package manager to check if features are available
         PackageManager pm = getPackageManager();
@@ -67,29 +62,8 @@ public class PrivacySettings extends SettingsPreferenceFragment implements Index
             // No telephony, remove dependent options
             PreferenceScreen root = getPreferenceScreen();
             root.removePreference(mBlacklist);
-            root.removePreference(mWhisperPush);
-        } else {
-            // TODO: once we are shipping with updated WhisperPush by default
-            // all this code can be pulled out - WF
-            if (isWhisperPushUpdated(pm, getActivity())) {
-                // redirect intent to updated whisperpush2 package
-                Intent intent = mWhisperPush.getIntent();
-                ComponentName component = intent.getComponent();
-                intent.setClassName(WHISPERPUSH_UPDATE, component.getClassName());
-                mWhisperPush.setIntent(intent);
-                Log.d(TAG, "Using WhisperPush2");
-            } else if (!isWhisperPushOriginalOK(pm)) {
-                getPreferenceScreen().removePreference(mWhisperPush);
-            }
         }
 
-    }
-
-    private static boolean isWhisperPushUpdated(PackageManager pm, Context context) {
-        // updated package is present
-        if (!Utils.isPackageInstalled(context, WHISPERPUSH_UPDATE)) {
-            return false;
-        }
     }
 
     @Override
@@ -129,10 +103,6 @@ public class PrivacySettings extends SettingsPreferenceFragment implements Index
                     // Determine options based on device telephony support
                     if (!pm.hasSystemFeature(PackageManager.FEATURE_TELEPHONY)) {
                         result.add(KEY_BLACKLIST);
-                        result.add(KEY_WHISPERPUSH);
-                    } else if (!(isWhisperPushOriginalOK(pm) ||
-                                 isWhisperPushUpdated(pm, context))) {
-                        result.add(KEY_WHISPERPUSH);
                     }
                     return result;
                 }
