@@ -510,4 +510,6 @@
 
     <string name="mem_info">RAM</string>
 
+    <!-- Kernel Adiutor -->
+    <string name="kernel_adiutor">Kernel</string>
 </resources>

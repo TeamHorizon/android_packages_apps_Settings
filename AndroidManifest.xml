@@ -2192,6 +2192,8 @@
 
         <activity android:name=".cyanogenmod.PerformanceSettings" />
 
+        <activity android:name="com.grarak.kerneladiutor.MainActivity"/>
+
         <receiver android:name=".widget.SettingsAppWidgetProvider"
                 android:label="@string/gadget_title"
                 android:exported="false"
