@@ -484,6 +484,7 @@
 
     <!-- Lockscreen settings -->
     <string name="lockscreen_category">Lockscreen</string>
+    <string name="lockscreen_shorcuts_settings_summary">Reassign Lockscreen shortcuts</string>
 
     <!-- Weather settings -->
     <string name="dlg_reset_values_message">Reset values to\nAndroid- or DarkKat default?</string>
