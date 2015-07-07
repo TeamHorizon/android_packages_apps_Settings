@@ -48,12 +48,6 @@
             android:title="@string/navigation_bar_title" />
 
         <PreferenceScreen
-            android:key="navigation_bar_ring"
-            android:fragment="com.android.settings.cyanogenmod.NavRing"
-            android:title="@string/navigation_ring_title"
-            android:dependency="search_panel_enabled" />
-
-        <PreferenceScreen
             android:key="navigation_bar_dimen"
             android:fragment="com.android.settings.xenonhd.NavBarDimen"
             android:title="@string/navbar_dimen_title" />
