@@ -139,6 +139,12 @@
             android:entries="@array/torch_screen_off_delay_entries"
             android:entryValues="@array/torch_screen_off_delay_values"
             android:dependency="disable_torch_on_screen_off" />
+
+        <SwitchPreference
+            android:key="disable_immersive_message"
+            android:title="@string/disable_immersive_message_title"
+            android:summary="@string/disable_immersive_message_summary"
+            android:persistent="false" />
     </PreferenceCategory>
 
 </PreferenceScreen>

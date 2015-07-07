@@ -63,6 +63,7 @@ Preference.OnPreferenceChangeListener {
     private static final String KEY_LCD_DENSITY = "lcd_density";
     private static final String DISABLE_TORCH_ON_SCREEN_OFF = "disable_torch_on_screen_off";
     private static final String DISABLE_TORCH_ON_SCREEN_OFF_DELAY = "disable_torch_on_screen_off_delay";
+    private static final String DISABLE_IMMERSIVE_MESSAGE = "disable_immersive_message";
 
     private Context mContext;
 
@@ -72,6 +73,7 @@ Preference.OnPreferenceChangeListener {
     private ListPreference mLcdDensityPreference;
     private SwitchPreference mTorchOff;
     private ListPreference mTorchOffDelay;
+    private SwitchPreference mDisableIM;
 
     @Override
     public void onCreate(Bundle icicle) {
@@ -151,6 +153,10 @@ Preference.OnPreferenceChangeListener {
             prefSet.removePreference(mTorchOff);
             prefSet.removePreference(mTorchOffDelay);
         }
+
+        mDisableIM = (SwitchPreference) findPreference(DISABLE_IMMERSIVE_MESSAGE);
+        mDisableIM.setChecked((Settings.System.getInt(resolver,
+                Settings.System.DISABLE_IMMERSIVE_MESSAGE, 0) == 1));
     }
 
     private void updateLcdDensityPreferenceDescription(int currentDensity) {
@@ -202,6 +208,17 @@ Preference.OnPreferenceChangeListener {
             }
         }
         return false;
+    }
+
+    @Override
+    public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen, Preference preference) {
+        if  (preference == mDisableIM) {
+            boolean checked = ((SwitchPreference)preference).isChecked();
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.DISABLE_IMMERSIVE_MESSAGE, checked ? 1:0);
+            return true;
+        }
+        return super.onPreferenceTreeClick(preferenceScreen, preference);
     }
 
     private void writeLcdDensityPreference(final Context context, final int density) {
