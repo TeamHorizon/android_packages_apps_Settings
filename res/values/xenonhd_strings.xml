@@ -511,6 +511,9 @@
 
     <string name="mem_info">RAM</string>
 
+    <!-- BitSyko Layers -->
+    <string name="bitsyko_layers">Layers Manager</string>
+
     <!-- Kernel Adiutor -->
     <string name="kernel_adiutor">Kernel</string>
 
