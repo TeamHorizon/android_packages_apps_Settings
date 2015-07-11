@@ -557,4 +557,37 @@
     <string name="xenonota_title">XenonHD Updates</string>
     <string name="xenonota_summary">Check for ROM updates</string>
 
+    <!-- About -->
+    <string name="about_xenonhd">About XenonHD</string>
+    <string name="about_xenonhd_summary">Faces behind this ROM</string>
+    <string name="title_about">About XenonHD</string>
+    <string name="sponsor">The Provider</string>
+    <string name="devs">The Team</string>
+    <string name="xenonhd">The ROM</string>
+    <string name="xenonhd_website_title">Website</string>
+    <string name="xenonhd_website_summary">@null</string>
+    <string name="xenonhd_source_title">Source</string>
+    <string name="xenonhd_source_summary">You can always check out the latest source at github.com/teamhorizon</string>
+    <string name="xenonhd_gerrit_title">Gerrit Code Review</string>
+    <string name="xenonhd_gerrit_summary">Contribute and collaborate!</string>
+    <string name="about_xehd">About XenonHD</string>
+    <string name="about_xehd_summary">@null</string>
+    <string name="donate">https://play.google.com/store/apps/details?id=com.th.xenonhdsupport</string>
+    <string name="arham">Arham Jamal</string>
+    <string name="arham_gplus">+ArhamIceAndFireJamal</string>
+    <string name="adam">Adam Holloway</string>
+    <string name="adam_gplus">+AdamHolloway</string>
+    <string name="peter">Peter Carenza</string>
+    <string name="peter_gplus">+PeterCarenza</string>
+    <string name="jose">Jose Toro</string>
+    <string name="jose_gplus">+JoseToro</string>
+    <string name="tony">Tony Roach</string>
+    <string name="tony_gplus">104607315155709998435</string>
+    <string name="leo">Leo Jehl</string>
+    <string name="leo_gplus">+LeoJehl</string>
+    <string name="tory">Tha Maxx</string>
+    <string name="tory_gplus">+Torypr0xyman1AcHeal</string>
+    <string name="daniel">Daniel Sikorski</string>
+    <string name="daniel_gplus">+DanielSikorskidadi11</string>
+
 </resources>

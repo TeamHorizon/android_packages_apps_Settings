@@ -26,6 +26,13 @@
         <attr name="aspectRatio" format="float" />
     </declare-styleable>
 
+    <declare-styleable name="DeveloperPreference">
+        <attr name="android:title" />
+        <attr name="nameDev" format="string" />
+        <attr name="userName" format="string"/>
+        <attr name="donateLink" format="string" />
+    </declare-styleable>
+
     <declare-styleable name="BatteryHistoryChart">
         <!-- Base text color, typeface, size, and style. -->
         <attr name="android:textAppearance" />

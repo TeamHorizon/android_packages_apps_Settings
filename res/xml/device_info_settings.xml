@@ -36,6 +36,14 @@
                     android:targetClass="@string/additional_system_update_menu" />
         </PreferenceScreen>
 
+        <!-- About XenonHD -->
+        <PreferenceScreen
+                android:key="about"
+                android:fragment="com.android.settings.About"
+                android:title="@string/about_xenonhd"
+                android:summary="@string/about_xenonhd_summary" />
+
+
         <!-- XenonOTA -->
         <PreferenceScreen android:key="xenonota"
                 android:title="@string/xenonota_title"
@@ -45,7 +53,7 @@
                     android:targetClass="com.fusionjack.slimota.MainActivity" />
         </PreferenceScreen>
 
-		<!-- Anonymous statistics -->
+        <!-- Anonymous statistics -->
         <PreferenceScreen
             android:key="cmstats"
             android:title="@string/anonymous_statistics_title"
