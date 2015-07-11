@@ -121,6 +121,16 @@
             </intent-filter>
         </activity-alias>
 
+        <activity
+            android:name="About"
+            android:taskAffinity="com.android.settings"
+	    android:parentActivityName="Settings"
+            android:label="@string/about_xenonhd">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+
         <receiver android:name="ManagedProfileSetup">
             <intent-filter>
                 <action android:name="android.intent.action.USER_INITIALIZE"/>

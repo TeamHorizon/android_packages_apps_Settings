@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+        android:title="@string/about_settings">
+
+	<PreferenceCategory
+		android:key="about_xenon"
+		android:title="@string/xenonhd">
+
+		<Preference
+			android:key="xenonhd_website"
+			android:title="@string/xenonhd_website_title"
+			android:summary="@string/xenonhd_website_summary" />
+
+		<Preference
+			android:key="xenonhd_source"
+			android:title="@string/xenonhd_source_title"
+			android:summary="@string/xenonhd_source_summary" />
+
+		<Preference
+			android:key="xenonhd_gerrit"
+			android:title="@string/xenonhd_gerrit_title"
+			android:summary="@string/xenonhd_gerrit_summary" />
+
+	</PreferenceCategory>
+
+	<PreferenceCategory
+		android:key="sponsor"
+		android:title="@string/sponsor">
+
+                <com.android.settings.TeamHorizon
+                        android:key="xenonhd_picture" />
+
+	</PreferenceCategory>
+
+	<PreferenceCategory
+		android:key="devs"
+		android:title="@string/devs">
+
+		<com.android.settings.DeveloperPreference
+                        android:key="arhamjamal"
+			android:persistent="true"
+			android:layout="@layout/dev_card"
+			android:order="1"
+			settings:nameDev="@string/arham"
+			settings:userName="@string/arham_gplus"/>
+
+		<com.android.settings.DeveloperPreference
+			android:key="adam80460"
+			android:persistent="true"
+			android:layout="@layout/dev_card"
+			android:order="2"
+			settings:nameDev="@string/adam"
+			settings:userName="@string/adam_gplus" />
+
+		<com.android.settings.DeveloperPreference
+ 			android:key="pcarenza"
+			android:persistent="true"
+			android:layout="@layout/dev_card"
+			android:order="3"
+			settings:nameDev="@string/peter"
+			settings:userName="@string/peter_gplus" />
+
+		<com.android.settings.DeveloperPreference
+			android:key="thebroken"
+			android:persistent="true"
+			android:layout="@layout/dev_card"
+			android:order="4"
+			settings:nameDev="@string/jose"
+			settings:userName="@string/jose_gplus" />
+
+		<com.android.settings.DeveloperPreference
+			android:key="tmacgnolia"
+			android:persistent="true"
+			android:layout="@layout/dev_card"
+			android:order="5"
+			settings:nameDev="@string/tony"
+			settings:userName="@string/tony_gplus" />
+
+		<com.android.settings.DeveloperPreference
+			android:key="ljjehl"
+			android:title="ljjehl"
+			android:persistent="true"
+			android:layout="@layout/dev_card"
+			android:order="6"
+			settings:nameDev="@string/leo"
+			settings:userName="@string/leo_gplus" />
+
+		<com.android.settings.DeveloperPreference
+			android:key="thamaxx"
+			android:title="thamaxx"
+			android:persistent="true"
+			android:layout="@layout/dev_card"
+			android:order="7"
+			settings:nameDev="@string/tory"
+			settings:userName="@string/tory_gplus" />
+
+                <com.android.settings.DeveloperPreference
+                        android:key="dadi11"
+                        android:title="dadi11"
+                        android:persistent="true"
+                        android:layout="@layout/dev_card"
+                        android:order="8"
+                        settings:nameDev="@string/daniel"
+                        settings:userName="@string/daniel_gplus" />
+
+	</PreferenceCategory>
+
+</PreferenceScreen>
