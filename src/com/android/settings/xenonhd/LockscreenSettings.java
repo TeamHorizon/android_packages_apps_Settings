@@ -15,7 +15,36 @@
 */
 package com.android.settings.xenonhd;
 
+import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.ContentResolver;
+import android.content.Context;
+import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.content.pm.ResolveInfo;
+import android.content.res.Resources;
+import android.content.SharedPreferences;
+import android.content.SharedPreferences.OnSharedPreferenceChangeListener;
+import android.net.Uri;
 import android.os.Bundle;
+import android.os.Environment;
+import android.os.Handler;
+import android.os.UserHandle;
+import android.preference.SwitchPreference;
+import android.preference.ListPreference;
+import android.preference.Preference;
+import android.preference.Preference.OnPreferenceChangeListener;
+import android.preference.PreferenceCategory;
+import android.preference.PreferenceScreen;
+import android.provider.Settings;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+
+import com.android.settings.util.AbstractAsyncSuCMDProcessor;
+import com.android.settings.util.CMDProcessor;
+import com.android.settings.util.Helpers;
+import com.android.settings.Utils;
 
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
@@ -24,10 +53,41 @@ public class LockscreenSettings extends SettingsPreferenceFragment {
 
     private static final String TAG = "LockscreenSettings";
 
+	private static final String CARRIERLABEL_ON_LOCKSCREEN="lock_screen_hide_carrier";
+
+	private SwitchPreference mCarrierLabelOnLockScreen;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.lockscreen_settings);
+		PreferenceScreen prefSet = getPreferenceScreen();
 
+		//CarrierLabel on LockScreen
+        mCarrierLabelOnLockScreen = (SwitchPreference) findPreference(CARRIERLABEL_ON_LOCKSCREEN);
+        if (!Utils.isWifiOnly(getActivity())) {
+            mCarrierLabelOnLockScreen.setOnPreferenceChangeListener(this);
+
+            boolean hideCarrierLabelOnLS = Settings.System.getInt(
+                    getActivity().getContentResolver(),
+                    Settings.System.LOCK_SCREEN_HIDE_CARRIER, 0) == 1;
+            mCarrierLabelOnLockScreen.setChecked(hideCarrierLabelOnLS);
+        } else {
+            prefSet.removePreference(mCarrierLabelOnLockScreen);
+        }
+    }
+
+	@Override
+    public boolean onPreferenceChange(Preference preference, Object objValue) {
+        ContentResolver resolver = getActivity().getContentResolver();
+        final String key = preference.getKey();
+     	if (preference == mCarrierLabelOnLockScreen) {
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.LOCK_SCREEN_HIDE_CARRIER,
+                    (Boolean) objValue ? 1 : 0);
+            Helpers.restartSystemUI();
+            return true;
+        }
+        return false;
     }
 }

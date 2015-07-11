@@ -35,4 +35,9 @@
         android:title="@string/longpress_lock_icon_to_sleep_title"
         android:summary="@string/longpress_lock_icon_to_sleep_summary" />
 
+    <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
+        android:key="lock_screen_hide_carrier"
+        android:title="@string/lock_screen_hide_carrier_title"
+        android:summary="@string/lock_screen_hide_carrier_summary" />
+
 </PreferenceScreen>

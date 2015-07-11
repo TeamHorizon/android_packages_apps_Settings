@@ -467,4 +467,8 @@
     <!-- Disabling immersive mode messages -->
     <string name="disable_immersive_message_title">Disable immersive mode messages</string>
     <string name="disable_immersive_message_summary">This will hide all immersive mode messages</string>
+
+	<!-- Hide lock screen carrier -->
+    <string name="lock_screen_hide_carrier_title">Hide carrier on lock screen</string>
+    <string name="lock_screen_hide_carrier_summary">SystemUI will be restarted on switch toggle.</string>
 </resources>
