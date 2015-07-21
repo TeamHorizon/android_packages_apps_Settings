@@ -36,6 +36,14 @@
                     android:targetClass="@string/additional_system_update_menu" />
         </PreferenceScreen>
 
+		<!-- Anonymous statistics -->
+        <PreferenceScreen
+            android:key="cmstats"
+            android:title="@string/anonymous_statistics_title"
+            android:summary="@string/anonymous_statistics_summary"
+            android:fragment="com.android.settings.cmstats.AnonymousStats" >
+        </PreferenceScreen>
+
         <!-- Changelog -->
         <PreferenceScreen android:key="changelog"
                 android:title="@string/changelog_crdroid_title"
