@@ -79,11 +79,6 @@
                     android:title="@string/double_tap_to_wake_title"
                     android:summary="@string/double_tap_to_wake_summary" />
 
-                <SwitchPreference
-                    android:key="lift_to_wake"
-                    android:title="@string/lift_to_wake_title"
-                    android:persistent="false" />
-
                 <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
                     android:key="proximity_on_wake"
                     android:title="@string/proximity_wake_title"
