@@ -427,6 +427,13 @@
     <string name="lockscreen_category">Lockscreen</string>
     <string name="lockscreen_shorcuts_settings_summary">Reassign Lockscreen shortcuts</string>
 
+  <!-- Lockscreen wallpaper -->
+    <string name="lockscreen_wallpaper_title">Wallpaper</string>
+    <string name="lockscreen_wallpaper_summary">Set lockscreen wallpaper</string>
+    <string name="lockscreen_wallpaper_set_title">Set lock screen wallpaper</string>
+    <string name="lockscreen_wallpaper_clear_title">Clear lock screen wallpaper</string>
+    <string name="reset_lockscreen_wallpaper">Set to default</string>
+
     <!-- Lockscreen see through -->
     <string name="lockscreen_see_through_title">Lockscreen blur</string>
     <string name="lockscreen_see_through_summary">Blurs and displays the content behind your lockscreen.</string>
