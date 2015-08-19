@@ -84,6 +84,13 @@
         android:title="@string/status_bar_show_network_activity_title"
         android:defaultValue="false" />
 
+    <SwitchPreference
+        android:key="heads_up_floating"
+        android:title="@string/heads_up_floating_window_title"
+        android:summary="@string/heads_up_floating_window_summary"
+        android:persistent="false"
+        android:defaultValue="false" />
+
     <PreferenceCategory
         android:title="@string/status_bar_clock_style">
 

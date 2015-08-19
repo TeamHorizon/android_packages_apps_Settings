@@ -51,6 +51,7 @@ public class StatusBarSettings extends SettingsPreferenceFragment
     private static final String KEY_CARRIERLABEL_PREFERENCE = "carrier_options";
     private static final String KEY_STATUS_BAR_NETWORK_ARROWS= "status_bar_show_network_activity";
     private static final String KEY_BREATHING_NOTIFICATIONS = "breathing_notifications";
+	private static final String PREF_HEADS_UP_FLOATING = "heads_up_floating";
 
     private static final int STATUS_BAR_BATTERY_STYLE_HIDDEN = 4;
     private static final int STATUS_BAR_BATTERY_STYLE_TEXT = 6;
@@ -60,6 +61,7 @@ public class StatusBarSettings extends SettingsPreferenceFragment
     private PreferenceScreen mCarrierLabel;
     private SwitchPreference mNetworkArrows;
     private Preference mBreathingNotifications;
+	private SwitchPreference mHeadsUpFloatingWindow;
 
     @Override
     public void onCreate(Bundle icicle) {
@@ -106,6 +108,12 @@ public class StatusBarSettings extends SettingsPreferenceFragment
         if (Utils.isWifiOnly(getActivity())) {
             removePreference(KEY_BREATHING_NOTIFICATIONS);
         }
+
+		mHeadsUpFloatingWindow = (SwitchPreference) findPreference(PREF_HEADS_UP_FLOATING);
+        mHeadsUpFloatingWindow.setChecked(Settings.System.getInt(getContentResolver(),
+                Settings.System.HEADS_UP_FLOATING, 0) == 1);
+        mHeadsUpFloatingWindow.setOnPreferenceChangeListener(this);
+
     }
 
     @Override
@@ -134,6 +142,11 @@ public class StatusBarSettings extends SettingsPreferenceFragment
             int networkArrows = Settings.System.getInt(getContentResolver(),
                     Settings.System.STATUS_BAR_SHOW_NETWORK_ACTIVITY, 0);
             updateNetworkArrowsSummary(networkArrows);
+            return true;
+		} else if (preference == mHeadsUpFloatingWindow) {
+            Settings.System.putInt(getContentResolver(),
+                    Settings.System.HEADS_UP_FLOATING,
+            (Boolean) newValue ? 1 : 0);
             return true;
         }
         return false;
