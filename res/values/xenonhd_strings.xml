@@ -532,4 +532,9 @@
 	<!-- Heads Up Floating Mode -->
     <string name="heads_up_floating_window_title">Heads-up float mode</string>
     <string name="heads_up_floating_window_summary">Longpress on the heads-up notification and release to open in float mode</string>
+
+       <!-- Custom Header Image -->
+   <string name="status_bar_custom_header_title">Custom header image</string>
+   <string name="status_bar_custom_header_summary">Enable notification panel header image</string>
+
 </resources>
