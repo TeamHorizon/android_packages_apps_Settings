@@ -24,9 +24,10 @@
             android:defaultValue="false" />
 
         <SwitchPreference
+            android:dependency="use_slim_recents"
             android:key="only_show_running_tasks"
             android:title="@string/show_running_tasks_title"
-            android:defaultValue="false" />
+            android:defaultValue="true" />  
 
         <SlimSeekBarPreference
             android:key="max_apps"
