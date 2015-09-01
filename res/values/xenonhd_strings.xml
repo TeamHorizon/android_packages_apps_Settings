@@ -23,4 +23,8 @@
     <string name="changelog_xenonhd_error">Unable to load changelog</string>
     <string name="changelog_xenonhd_summary">Check changes in current build</string>
 
+    <!-- XenonOTA -->
+    <string name="xenonota_title">XenonHD Updates</string>
+    <string name="xenonota_summary">Check for ROM updates</string>
+
 </resources>
