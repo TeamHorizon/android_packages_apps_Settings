@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <!-- Copyright (C) 2012-2015 Team Horizon
-     
+
 	 Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
      You may obtain a copy of the License at
@@ -33,16 +33,16 @@
     <string name="set">Set</string>
     <string name="color_default">Default</string>
 
-    <!-- SuperSU header name - the app hides itself from launcher based on this resource name being present in com.android.settings -->
+      <!-- SuperSU header name - the app hides itself from launcher based on this resource name being present in com.android.settings -->
     <string name="supersu_title">SuperSU</string>
 
-	<string name="header_category_personalization">Personalization</string>
+    <string name="header_category_personalization">Personalization</string>
 
 	<!-- XenonHD settings -->
     <string name="misc_settings_title">ROM Settings</string>
 
 	<!-- Status bar | Network Traffic -->
-	<string name="network_traffic_title">Network traffic</string>
+    <string name="network_traffic_title">Network traffic</string>
     <string name="show_network_traffic_state">Status bar traffic monitor</string>
     <string name="show_network_traffic_unit">Display unit</string>
     <string name="show_network_traffic_frequency">Update interval</string>
@@ -64,22 +64,22 @@
     <string name="network_traffic_color_reset_message">Reset network traffic color to default?</string>
 
 	<!-- Status bar | Brightness control -->
-	<string name="status_bar_toggle_brightness">Brightness control</string>
+    <string name="status_bar_toggle_brightness">Brightness control</string>
     <string name="status_bar_toggle_brightness_summary">Adjust brightness by sliding across the status bar</string>
 
 	<!-- Hardware keys -->
-	<string name="button_pref_title">Buttons</string>
-	<string name="hardware_keys_power_key_title">Power button</string>
-	<string name="hardware_keys_volume_key_title">Volume button</string>
+    <string name="button_pref_title">Buttons</string>
+    <string name="hardware_keys_power_key_title">Power button</string>
+    <string name="hardware_keys_volume_key_title">Volume button</string>
 
-	<string name="navigation_bar_category">Navigation bar</string>
+    <string name="navigation_bar_category">Navigation bar</string>
 
 	<!-- Double Tap Navbar to Sleep -->
     <string name="double_tap_sleep_nav_bar_title">Double-tap to sleep</string>
     <string name="double_tap_sleep_nav_bar_summary">Double tap navigation bar to put the device to sleep</string>
 
 	<!-- Power menu -->
-	<string name="power_menu_title">Power menu</string>
+    <string name="power_menu_title">Power menu</string>
     <string name="power_menu_reboot_title">Reboot menu</string>
     <string name="power_menu_screenshot_title">Screenshot</string>
     <string name="power_menu_airplane_title">Airplane mode</string>
@@ -92,7 +92,7 @@
     <string name="power_menu_sound_title">Sound panel</string>
     <string name="power_menu_bug_report_disabled">Bug reporting is disabled in development settings</string>
 
-	<string name="notification_drawer_title">Notification drawer</string>
+    <string name="notification_drawer_title">Notification drawer</string>
 
 	<!-- Force expand notifications -->
     <string name="notification_force_expand_title">Force expanded notification</string>
@@ -103,7 +103,7 @@
     <string name="double_tap_to_sleep_summary">Double-tap on the status bar to turn off the display</string>
 
 	<!-- Clock and date -->
-    <string name="clock_styles_title">Clock and date</string>  
+    <string name="clock_styles_title">Clock and date</string>
     <string name="clock_styles_summary">Customize clock styles and date format</string>
     <string name="clock_title_enable">Alignment</string>
     <string name="clock_enabled">Enabled</string>
@@ -117,7 +117,7 @@
     <string name="enable_clock_weekday_summary">Abbreviated day of the week before the time</string>
     <string name="right_clock">Right clock</string>
     <string name="center_clock">Center clock</string>
-	<string name="left_clock">Left clock</string>
+    <string name="left_clock">Left clock</string>
     <string name="dont_show">Don\'t show</string>
     <string name="clock_date_display">Date</string>
     <string name="clock_date_display_summary">Display custom date before the clock</string>
@@ -220,10 +220,10 @@
     <string name="lockscreen_category">Lockscreen</string>
 
 	<!-- Lock screen shortcuts -->
-	<string name="lockscreen_targets_message">Shortcuts</string>
+    <string name="lockscreen_targets_message">Shortcuts</string>
 
 	<!-- Interface settings -->
-	<string name="category_interface">Interface</string>
+    <string name="category_interface">Interface</string>
 
 	<!-- Display & Lights screen, setting options for LCD density -->
     <string name="lcd_density">LCD density</string>
@@ -233,24 +233,24 @@
     <string name="restarting_ui">Restarting UI\u2026</string>
 
 	<!-- Audio ducking -->
-	<string name="interruptions_ignore_while_media_title">Prevent audio ducking</string>
+    <string name="interruptions_ignore_while_media_title">Prevent audio ducking</string>
     <string name="interruptions_ignore_while_media_summary">Do not reduce media playback volume when a notification arrives</string>
 
 	<!-- Quick Settings -->
-	<string name="qs_category_title">Quick Settings</string>
-	<string name="qs_advanced_location_title">Advanced location quick settings</string>
+    <string name="qs_category_title">Quick Settings</string>
+    <string name="qs_advanced_location_title">Advanced location quick settings</string>
     <string name="qs_advanced_location_summary">Enable advanced settings for location in quick settings</string>
 
 	<!-- Sound settings -->
     <string name="advanced_sound_title">Advanced options</string>
     <string name="sound_title">Sound</string>
 
-    <!-- Safe headset volume restore checkbox -->
+	<!-- Safe headset volume restore checkbox -->
     <string name="safe_headset_volume_title">Safe headset volume</string>
     <string name="safe_headset_volume_summary">Prevent loud volume levels when headset is first plugged in</string>
     <string name="safe_headset_volume_warning_dialog_text">Listening at high volume for long periods may damage your hearing. Disable it with caution.</string>
 
-    <!-- Less Notification sounds -->
+	<!-- Less Notification sounds -->
     <string name="notifications_category_title">Notifications</string>
     <string name="less_notification_sounds_title">Less frequent notification sounds</string>
     <string name="less_notification_sounds_summary">Limit the notification sounds of each app to only play once per set time period</string>
@@ -265,15 +265,15 @@
     <string name="less_notification_sounds_2m">2 minutes</string>
     <string name="less_notification_sounds_5m">5 minutes</string>
 
-    <!-- Changelog -->
+	<!-- Changelog -->
     <string name="changelog_crdroid_title">Changelog</string>
     <string name="changelog_crdroid_error">Unable to load changelog</string>
 
-    <!-- Long press to skip tracks -->
+	<!-- Long press to skip tracks -->
     <string name="volbtn_music_controls_title">Playback control</string>
     <string name="volbtn_music_controls_summary">When the screen is off, long pressing the volume keys will seek music tracks</string>
 
-    <!-- About -->
+	<!-- About -->
     <string name="about_xenonhd">About XenonHD</string>
     <string name="about_xenonhd_summary">Faces behind this ROM</string>
     <string name="title_about">About XenonHD</string>
@@ -305,5 +305,9 @@
     <string name="tory_gplus">+Torypr0xyman1AcHeal</string>
     <string name="daniel">Daniel Sikorski</string>
     <string name="daniel_gplus">+DanielSikorskidadi11</string>
+
+	<!-- XenonOTA -->
+    <string name="xenonota_title">XenonHD Updates</string>
+    <string name="xenonota_summary">Check for ROM updates</string>
 
 </resources>

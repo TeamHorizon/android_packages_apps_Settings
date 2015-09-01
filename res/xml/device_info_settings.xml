@@ -19,7 +19,16 @@
 
         <PreferenceScreen android:key="xenonhd_logo"
                           android:enabled="false"
-                          android:layout="@layout/xenonhd_logo_row" />		
+                          android:layout="@layout/xenonhd_logo_row" />
+
+        <!-- XenonOTA -->
+        <PreferenceScreen android:key="xenonota"
+                android:title="@string/xenonota_title"
+                android:summary="@string/xenonota_summary">
+            <intent android:action="android.intent.action.MAIN"
+                    android:targetPackage="com.fusionjack.slimota"
+                    android:targetClass="com.fusionjack.slimota.MainActivity" />
+        </PreferenceScreen>
 
         <!-- Changelog -->
         <PreferenceScreen android:key="changelog"
