@@ -59,7 +59,7 @@ public class About extends SettingsPreferenceFragment {
         } else if (preference == mSourceUrl) {
             launchUrl("http://github.com/TeamHorizon");
         } else if (preference == mGerritUrl) {
-	    launchUrl("http://83.233.5.249:8081");
+	    launchUrl("http://gerrit.xenonhd.com");
         } else if (preference == mSponsorUrl) {
             launchUrl("https://www.kazi-networks.com/link.php?id=15");
         }
