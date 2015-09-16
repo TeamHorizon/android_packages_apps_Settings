@@ -156,6 +156,9 @@
 
     <!-- Animations -->
     <string name="custom_animations">Animations</string>
+ 
+    <!-- Toast Icons -->
+    <string name="toast_icon_title">Toast Icon</string>
 
     <!-- Toast Animation -->
     <string name="toast_animation_title">Toast animation</string>

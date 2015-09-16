@@ -96,6 +96,12 @@
         android:key="custom_animations"
         android:title="@string/custom_animations" >
 
+         <!-- Toast icon switcher -->
+         <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
+           android:key="toast_icon"
+           android:title="@string/toast_icon_title"
+           android:defaultValue="true" />
+
          <!-- Toast Animation -->
          <ListPreference
            android:key="toast_animation"
