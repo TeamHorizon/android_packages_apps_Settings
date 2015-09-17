@@ -427,6 +427,11 @@
     <string name="lockscreen_category">Lockscreen</string>
     <string name="lockscreen_shorcuts_settings_summary">Reassign Lockscreen shortcuts</string>
 
+    <!-- Lockscreen see through -->
+    <string name="lockscreen_see_through_title">Lockscreen blur</string>
+    <string name="lockscreen_see_through_summary">Blurs and displays the content behind your lockscreen.</string>
+    <string name="lockscreen_blur_radius">Blur effect intensity</string>
+
     <!-- Weather settings -->
 	<string name="weather_cat_notifications_title">Notifications</string>
     <string name="dlg_reset_values_message">Reset values to\nAndroid- or DarkKat default?</string>
