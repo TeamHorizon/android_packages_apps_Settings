@@ -551,6 +551,8 @@
        <!-- Custom Header Image -->
    <string name="status_bar_custom_header_title">Custom header image</string>
    <string name="status_bar_custom_header_summary">Enable notification panel header image</string>
+   <string name="status_bar_custom_header_default_title">Use poly HD images</string>
+   <string name="status_bar_custom_header_default_summary">Enable for poly hd images. Disable for originals.</string>
 
     <!-- Volume Steps -->
     <string name="volume_steps_title">Volume steps</string>
