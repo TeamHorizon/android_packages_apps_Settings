@@ -68,7 +68,8 @@ public class LockscreenSettings extends SettingsPreferenceFragment
 		PreferenceScreen prefSet = getPreferenceScreen();
 
         mBlurRadius = (SeekBarPreferenceCham) findPreference(KEY_LOCKSCREEN_BLUR_RADIUS);
-	mBlurRadius.setValue(Settings.System.getInt(resolver,
+	mBlurRadius.setValue(Settings.System.getInt(
+                getActivity().getContentResolver(),
 		Settings.System.LOCKSCREEN_BLUR_RADIUS, 14));
 	mBlurRadius.setOnPreferenceChangeListener(this);
 
