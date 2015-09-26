@@ -48,6 +48,7 @@ import com.android.settings.Utils;
 
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
+import com.android.settings.widget.SeekBarPreferenceCham;
 
 public class LockscreenSettings extends SettingsPreferenceFragment 
 	implements OnPreferenceChangeListener {
@@ -55,14 +56,21 @@ public class LockscreenSettings extends SettingsPreferenceFragment
     private static final String TAG = "LockscreenSettings";
 
 	private static final String CARRIERLABEL_ON_LOCKSCREEN="lock_screen_hide_carrier";
+        private static final String KEY_LOCKSCREEN_BLUR_RADIUS = "lockscreen_blur_radius";
 
 	private SwitchPreference mCarrierLabelOnLockScreen;
+        private SeekBarPreferenceCham mBlurRadius;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.lockscreen_settings);
 		PreferenceScreen prefSet = getPreferenceScreen();
+
+        mBlurRadius = (SeekBarPreferenceCham) findPreference(KEY_LOCKSCREEN_BLUR_RADIUS);
+	mBlurRadius.setValue(Settings.System.getInt(resolver,
+		Settings.System.LOCKSCREEN_BLUR_RADIUS, 14));
+	mBlurRadius.setOnPreferenceChangeListener(this);
 
 		//CarrierLabel on LockScreen
         mCarrierLabelOnLockScreen = (SwitchPreference) findPreference(CARRIERLABEL_ON_LOCKSCREEN);
@@ -82,7 +90,12 @@ public class LockscreenSettings extends SettingsPreferenceFragment
     public boolean onPreferenceChange(Preference preference, Object objValue) {
         ContentResolver resolver = getActivity().getContentResolver();
         final String key = preference.getKey();
-     	if (preference == mCarrierLabelOnLockScreen) {
+	if (preference == mBlurRadius) {
+	    int width = ((Integer)objValue).intValue();
+            Settings.System.putInt(resolver,
+                Settings.System.LOCKSCREEN_BLUR_RADIUS, width);
+            return true;
+     	} else if (preference == mCarrierLabelOnLockScreen) {
             Settings.System.putInt(getActivity().getContentResolver(),
                     Settings.System.LOCK_SCREEN_HIDE_CARRIER,
                     (Boolean) objValue ? 1 : 0);
