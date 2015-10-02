@@ -840,8 +840,8 @@
   <string name="battery_saver_threshold">Próg oszczędzania baterii</string>
   <string name="battery_saver_summary">Zmniejsza wydajność oraz ogranicza dane w tle</string>
   <string name="battery_saver_summary_unavailable">Nie dostępny podczas ładowania</string>
-  <string name="anonymous_statistics_title">Statystyki CyanogenMod</string>
-  <string name="anonymous_statistics_summary">Pomóż ulepszyć CyanogenMod, pozwalając na wysyłanie anonimowych statystyk</string>
+  <string name="anonymous_statistics_title">Statystyki XenonHD</string>
+  <string name="anonymous_statistics_summary">Pomóż ulepszyć XenonHD, pozwalając na wysyłanie anonimowych statystyk</string>
   <string name="anonymous_statistics_warning_title">O...</string>
   <string name="anonymous_statistics_warning">Wyrażenie zgody na udział w Statystykach CyanogenMod zezwoli na przesył anonimowych danych do
         developerów CyanogenMod, aby śledzić ilość unikalnych instalacji na urządzeniach . Informacje zawierają unikalny identyfikator,
