@@ -610,4 +610,18 @@
     <!-- On-The-Go -->
     <string name="power_menu_onthego_title">On-The-Go Mode</string>
 
+    <!-- About phone screen, status item label -->
+    <string name="processor_info">Processor info</string>
+    <!-- About phone screen,  setting option name -->
+    <string name="xehd_version">XeHD version</string>
+    <string name="xehd_version_default">Unknown</string>
+
+    <!-- Smart pulldown -->
+    <string name="smart_pulldown_title">Smart pulldown</string>
+    <string name="smart_pulldown_summary">Open Quick Settings when there are %1$s notifications present</string>
+    <string name="smart_pulldown_off">Off</string>
+    <string name="smart_pulldown_dismissable">No dismissable</string>
+    <string name="smart_pulldown_persistent">No persistent</string>
+    <string name="smart_pulldown_all">No dismissable or persistent</string>
+
 </resources>
