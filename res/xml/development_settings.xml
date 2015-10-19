@@ -115,6 +115,10 @@
             android:entries="@array/dark_ui_mode_entries"
             android:entryValues="@array/dark_ui_mode_values" />
 
+        <ListPreference
+            android:key="root_access"
+            android:title="@string/root_access"
+            android:persistent="false" />
     </PreferenceCategory>
 
     <PreferenceCategory
