@@ -1075,6 +1075,7 @@
     <string name="apn_type" msgid="469613123902220544">"APN 类型"</string>
     <string name="apn_protocol" msgid="3272222921649348640">"APN 协议"</string>
     <string name="apn_roaming_protocol" msgid="3386954381510788422">"APN 漫游协议"</string>
+    <string name="apn_ppp_number">"PPP 拨叫号码""</string>
     <string name="carrier_enabled" msgid="407655861175280806">"APN 启用/停用"</string>
     <string name="carrier_enabled_summaryOn" msgid="6338915271908057531">"APN 已启用"</string>
     <string name="carrier_enabled_summaryOff" msgid="4300790190221203756">"未启用 APN"</string>
@@ -2868,4 +2869,6 @@
     <string name="write_settings_description" msgid="6868293938839954623">"此权限允许应用修改系统设置。"</string>
     <string name="write_settings_on" msgid="8230580416068832239">"允许"</string>
     <string name="write_settings_off" msgid="5156104383386336233">"不允许"</string>
+
+    <string name="primary_sub_select_title">默认4G/3G SIM卡</string>
 </resources>
