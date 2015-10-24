@@ -123,10 +123,6 @@
     <string name="qs_easy_toggle_title">Advanced QS Easy Toggle</string>
     <string name="qs_easy_toggle_summary">Enable one tap action to enable/disable Wi-Fi, Mobile Data and Bluetooth. Long press to see advanced settings</string>
 
-    <!-- Media art -->
-    <string name="media_art_title">Media cover art</string>
-    <string name="media_art_summary">Display media cover art on the lockscreen</string>
-
     <!-- Quick unlock -->
     <string name="quick_unlock_warning">Quick Unlock caution</string>
     <string name="quick_unlock_warning_summary">This feature bypasses important security mechanisms and almost certainly mishandles multiple users support. Use at your own risk</string>
