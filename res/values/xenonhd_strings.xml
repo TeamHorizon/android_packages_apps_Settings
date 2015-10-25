@@ -96,4 +96,8 @@
 	<!-- Force expand notifications -->
     <string name="notification_force_expand_title">Force expanded notification</string>
     <string name="notification_force_expand_summary">Force expanded notifications on all apps that support it</string>
+
+	<!-- tap-to-sleep -->
+    <string name="double_tap_to_sleep_title">Double-tap to sleep</string>
+    <string name="double_tap_to_sleep_summary">Double-tap on the status bar to turn off the display</string>
 </resources>
