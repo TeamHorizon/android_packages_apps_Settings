@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Copyright (C) 2014 The CyanogenMod Project
+	 Copyright (C) 2014-2015 Team Horizon
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -23,5 +24,11 @@
         android:key="network_traffic"
         android:fragment="com.android.settings.xenonhd.Traffic"
         android:title="@string/network_traffic_title" />
+
+	<com.android.settings.cyanogenmod.SystemSettingSwitchPreference
+        android:key="status_bar_brightness_control"
+        android:title="@string/status_bar_toggle_brightness"
+        android:summary="@string/status_bar_toggle_brightness_summary"
+        android:defaultValue="false" />
 
 </PreferenceScreen>
