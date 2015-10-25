@@ -24,6 +24,12 @@
 			android:title="@string/status_bar_title"
 			android:fragment="com.android.settings.cyanogenmod.StatusBarSettings" />
 
+		<!-- Notification drawer -->
+        <PreferenceScreen
+            android:id="@+id/notification_drawer_settings"
+            android:title="@string/notification_drawer_title"
+            android:fragment="com.android.settings.cyanogenmod.NotificationDrawerSettings" />
+
 		<!-- Buttons -->
         <PreferenceScreen
             android:id="@+id/button_settings"
