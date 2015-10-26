@@ -38,8 +38,8 @@
 
 	<string name="header_category_personalization">Personalization</string>
 
-	<!-- Miscellaneous settings -->
-    <string name="misc_settings_title">Miscellaneous</string>
+	<!-- XenonHD settings -->
+    <string name="misc_settings_title">ROM Settings</string>
 
 	<!-- Status bar | Network Traffic -->
 	<string name="network_traffic_title">Network traffic</string>
