@@ -70,6 +70,7 @@
 	<!-- Hardware keys -->
 	<string name="button_pref_title">Buttons</string>
 	<string name="hardware_keys_power_key_title">Power button</string>
+	<string name="hardware_keys_volume_key_title">Volume button</string>
 
 	<string name="navigation_bar_category">Navigation bar</string>
 
@@ -136,4 +137,11 @@
     <string name="clock_date_style_uppercase">Uppercase</string>
     <string name="clock_date_format_custom">Custom java format</string>
     <string name="status_bar_clock_style_reset_message">Reset clock color?</string>
+
+	<!-- Volume rocker cursor control -->
+    <string name="cursor_section_header">Cursor</string>
+    <string name="volume_key_cursor_control_title">Volume key cursor control</string>
+    <string name="volume_key_cursor_control_off">Disabled</string>
+    <string name="volume_key_cursor_control_on">Volume up/down moves cursor left/right</string>
+    <string name="volume_key_cursor_control_on_reverse">Volume up/down moves cursor right/left</string>
 </resources>
