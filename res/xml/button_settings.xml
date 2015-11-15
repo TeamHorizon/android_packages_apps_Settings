@@ -53,6 +53,11 @@
 			android:persistent="false"
 			android:title="@string/volume_key_cursor_control_title" />
 
+		<SwitchPreference
+			android:key="volume_rocker_wake"
+			android:summary="@string/volume_rocker_wake_summary"
+			android:title="@string/volume_rocker_wake_title" />
+
 	</PreferenceCategory>
 
 </PreferenceScreen>
