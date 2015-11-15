@@ -30,6 +30,8 @@ import android.preference.Preference;
 import android.preference.PreferenceCategory;
 import android.preference.PreferenceManager;
 import android.preference.PreferenceScreen;
+import android.preference.SwitchPreference;
+import android.provider.SearchIndexableResource;
 import android.provider.Settings;
 
 import android.util.Log;
@@ -92,6 +94,11 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
     private PreferenceCategory mNavigationPreferencesCat;
 
     private Handler mHandler;
+	private static final String VOLUME_KEY_CURSOR_CONTROL = "volume_key_cursor_control";
+	private static final String VOLUME_ROCKER_WAKE = "volume_rocker_wake";
+
+	private ListPreference mVolumeKeyCursorControl;
+	private SwitchPreference mVolumeRockerWake;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -163,6 +170,19 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
         } else {
             prefScreen.removePreference(menuCategory);
         }
+
+		mVolumeRockerWake = (SwitchPreference) findPreference(VOLUME_ROCKER_WAKE);
+        mVolumeRockerWake.setOnPreferenceChangeListener(this);
+        int volumeRockerWake = Settings.System.getInt(getContentResolver(),
+                VOLUME_ROCKER_WAKE, 0);
+        mVolumeRockerWake.setChecked(volumeRockerWake != 0);
+    }
+
+	private void handleActionListChange(ListPreference pref, Object newValue, String setting) {
+        String value = (String) newValue;
+        int index = pref.findIndexOfValue(value);
+        pref.setSummary(pref.getEntries()[index]);
+        Settings.System.putInt(getContentResolver(), setting, Integer.valueOf(value));
     }
 
     private ListPreference initActionList(String key, int value) {
@@ -173,13 +193,6 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
         return list;
     }
 
-    private void handleActionListChange(ListPreference pref, Object newValue, String setting) {
-        String value = (String) newValue;
-        int index = pref.findIndexOfValue(value);
-
-        pref.setSummary(pref.getEntries()[index]);
-        Settings.System.putInt(getContentResolver(), setting, Integer.valueOf(value));
-    }
 
     @Override
     protected int getMetricsCategory() {
@@ -203,9 +216,17 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
         } else if (preference == mMenuLongPressAction) {
             handleActionListChange(mMenuLongPressAction, newValue,
                     Settings.System.KEY_MENU_LONG_PRESS_ACTION);
+           return true;
+        } else if (preference == mVolumeKeyCursorControl) {
+            handleActionListChange(mVolumeKeyCursorControl, newValue,
+                    Settings.System.VOLUME_KEY_CURSOR_CONTROL);
+            return true;
+	} else if (preference == mVolumeRockerWake) {
+            Settings.System.putInt(getActivity().getContentResolver(),
+                Settings.System.VOLUME_ROCKER_WAKE,
+                    ((Boolean) newValue) ? 1 : 0);
             return true;
         }
         return false;
     }
-
 }
