@@ -23,4 +23,11 @@
         android:summary="@string/notification_force_expand_summary"
         android:defaultValue="false" />
 
+	<ListPreference
+        android:key="quick_pulldown"
+        android:title="@string/quick_pulldown_title"
+        android:entries="@array/quick_pulldown_entries"
+        android:entryValues="@array/quick_pulldown_values"
+        android:persistent="false" />
+
 </PreferenceScreen>
