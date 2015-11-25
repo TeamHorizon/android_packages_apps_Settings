@@ -215,4 +215,7 @@
 	<!-- Headphones icon switch -->
     <string name="show_headset_icon_title">Headset icon</string>
     <string name="show_headset_icon_summary">Shows icon when headsets are connected.</string>
+
+	<!-- Lockscreen settings -->
+    <string name="lockscreen_category">Lockscreen</string>
 </resources>

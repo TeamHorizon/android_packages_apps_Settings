@@ -35,4 +35,10 @@
             android:id="@+id/button_settings"
             android:title="@string/button_pref_title"
             android:fragment="com.android.settings.ButtonSettings" />
+
+		<!-- Lockscreen -->
+        <PreferenceScreen
+            android:id="@+id/lockscreen_settings"
+            android:title="@string/lockscreen_category"
+            android:fragment="com.android.settings.xenonhd.LockscreenSettings" />
 </PreferenceScreen>
