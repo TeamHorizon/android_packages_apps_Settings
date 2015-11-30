@@ -47,6 +47,7 @@ import java.util.List;
 public class OtherSoundSettings extends SettingsPreferenceFragment implements Indexable {
     private static final String TAG = "OtherSoundSettings";
 
+	private static final int DEFAULT_OFF = 0;
     private static final int DEFAULT_ON = 1;
 
     private static final int EMERGENCY_TONE_SILENT = 0;
@@ -66,6 +67,7 @@ public class OtherSoundSettings extends SettingsPreferenceFragment implements In
     private static final String KEY_VIBRATE_ON_TOUCH = "vibrate_on_touch";
     private static final String KEY_DOCK_AUDIO_MEDIA = "dock_audio_media";
     private static final String KEY_EMERGENCY_TONE = "emergency_tone";
+	private static final String KEY_MUSIC_INTERRUPTIONS = "music_interruptions";
 
     private static final SettingPref PREF_DIAL_PAD_TONES = new SettingPref(
             TYPE_SYSTEM, KEY_DIAL_PAD_TONES, System.DTMF_TONE_WHEN_DIALING, DEFAULT_ON) {
@@ -88,6 +90,9 @@ public class OtherSoundSettings extends SettingsPreferenceFragment implements In
             return hasDockSettings(context);
         }
     };
+
+	private static final SettingPref PREF_MUSIC_INTERRUPTIONS = new SettingPref(
+            TYPE_GLOBAL, KEY_MUSIC_INTERRUPTIONS, Global.ZEN_DISABLE_DUCKING_DURING_MEDIA_PLAYBACK, DEFAULT_OFF);
 
     private static final SettingPref PREF_TOUCH_SOUNDS = new SettingPref(
             TYPE_SYSTEM, KEY_TOUCH_SOUNDS, System.SOUND_EFFECTS_ENABLED, DEFAULT_ON) {
@@ -165,6 +170,7 @@ public class OtherSoundSettings extends SettingsPreferenceFragment implements In
         PREF_VIBRATE_ON_TOUCH,
         PREF_DOCK_AUDIO_MEDIA,
         PREF_EMERGENCY_TONE,
+		PREF_MUSIC_INTERRUPTIONS,
     };
 
     private final SettingsObserver mSettingsObserver = new SettingsObserver();

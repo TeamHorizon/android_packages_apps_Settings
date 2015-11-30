@@ -55,6 +55,13 @@
             android:title="@string/vibrate_on_touch_title"
             android:persistent="false" />
 
+	<!-- Audio ducking -->
+	<SwitchPreference
+        	android:key="music_interruptions"
+        	android:title="@string/interruptions_ignore_while_media_title"
+        	android:summary="@string/interruptions_ignore_while_media_summary"
+        	android:persistent="false" />
+
     <!-- Dock speaker plays -->
     <com.android.settings.DropDownPreference
             android:key="dock_audio_media"
