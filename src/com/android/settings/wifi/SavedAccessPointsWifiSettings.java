@@ -31,6 +31,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.preference.Preference;
 import android.preference.PreferenceScreen;
+import android.provider.Settings;
 import android.util.Log;
 
 import android.view.LayoutInflater;
@@ -50,7 +51,6 @@ import com.android.settings.search.SearchIndexableRaw;
 import com.android.settings.wifi.AccessPointPreference.UserBadgeCache;
 import com.android.settingslib.wifi.AccessPoint;
 import com.android.settingslib.wifi.WifiTracker;
-import cyanogenmod.providers.CMSettings;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -149,8 +149,8 @@ public class SavedAccessPointsWifiSettings extends RestrictedSettingsFragment
         mNetworksListView.setDropListener(isAutoConfigPriorities() ? null : mDropListener);
         getActivity().invalidateOptionsMenu();
         ContentResolver resolver = getContentResolver();
-        resolver.registerContentObserver(CMSettings.Global.getUriFor(
-                CMSettings.Global.WIFI_AUTO_PRIORITIES_CONFIGURATION), false, mSettingsObserver);
+        resolver.registerContentObserver(Settings.Global.getUriFor(
+                Settings.Global.WIFI_AUTO_PRIORITIES_CONFIGURATION), false, mSettingsObserver);
     }
 
     @Override
@@ -222,8 +222,8 @@ public class SavedAccessPointsWifiSettings extends RestrictedSettingsFragment
                 boolean autoConfig = !item.isChecked();
 
                 // Set the system settings and refresh the listview
-                CMSettings.Global.putInt(getActivity().getContentResolver(),
-                        CMSettings.Global.WIFI_AUTO_PRIORITIES_CONFIGURATION, autoConfig ? 1 : 0);
+                Settings.Global.putInt(getActivity().getContentResolver(),
+                        Settings.Global.WIFI_AUTO_PRIORITIES_CONFIGURATION, autoConfig ? 1 : 0);
                 mNetworksListView.setDropListener(autoConfig ? null : mDropListener);
                 item.setChecked(autoConfig);
 
@@ -352,8 +352,8 @@ public class SavedAccessPointsWifiSettings extends RestrictedSettingsFragment
     }
 
     private boolean isAutoConfigPriorities() {
-        return CMSettings.Global.getInt(getActivity().getContentResolver(),
-                CMSettings.Global.WIFI_AUTO_PRIORITIES_CONFIGURATION, 1) != 0;
+        return Settings.Global.getInt(getActivity().getContentResolver(),
+                Settings.Global.WIFI_AUTO_PRIORITIES_CONFIGURATION, 1) != 0;
     }
 
     /**
