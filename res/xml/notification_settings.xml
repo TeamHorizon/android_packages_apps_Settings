@@ -54,6 +54,11 @@
                 android:title="@string/vibrate_when_ringing_title"
                 android:persistent="false" />
 
+		<!-- Link Volume Notification -->
+        <com.android.settings.cyanogenmod.SecureSettingSwitchPreference
+                android:key="volume_link_notification"
+                android:title="@string/link_volume_option_title" />
+
         <!-- Interruptions -->
         <PreferenceScreen
                 android:key="zen_mode"

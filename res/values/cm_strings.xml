@@ -121,4 +121,5 @@
     <string name="lockscreen_vibrate_enabled_title">Vibrate</string>
     <string name="lockscreen_vibrate_enabled_head">Vibrate when unlocking</string>
 
+	<string name="link_volume_option_title">Link ringtone &amp; notification volumes</string>
 </resources>
