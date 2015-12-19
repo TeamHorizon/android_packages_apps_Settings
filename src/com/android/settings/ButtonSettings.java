@@ -52,6 +52,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
 
 	private static final String VOLUME_KEY_CURSOR_CONTROL = "volume_key_cursor_control";
 	private static final String VOLUME_ROCKER_WAKE = "volume_rocker_wake";
+	private static final String KEY_VOLUME_CONTROL_RING_STREAM = "volume_keys_control_ring_stream";
 
 	private ListPreference mVolumeKeyCursorControl;
 	private SwitchPreference mVolumeRockerWake;
