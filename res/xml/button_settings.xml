@@ -69,6 +69,12 @@
 			android:summary="@string/volume_rocker_wake_summary"
 			android:title="@string/volume_rocker_wake_title" />
 
+		<com.android.settings.cyanogenmod.SecureSettingSwitchPreference
+            android:key="volume_keys_control_ring_stream"
+            android:title="@string/volume_keys_control_ring_stream_title"
+            android:summaryOn="@string/volume_keys_control_ring_stream_summary_on"
+            android:summaryOff="@string/volume_keys_control_ring_stream_summary_off" />
+
 	</PreferenceCategory>
 
 </PreferenceScreen>

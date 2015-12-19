@@ -55,6 +55,7 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
 
 	private ListPreference mVolumeKeyCursorControl;
 	private SwitchPreference mVolumeRockerWake;
+	private SwitchPreference mVolumeControlRingStream;
 
     @Override
     public void onCreate(Bundle icicle) {
@@ -76,6 +77,14 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
         int volumeRockerWake = Settings.System.getInt(getContentResolver(),
                 VOLUME_ROCKER_WAKE, 0);
         mVolumeRockerWake.setChecked(volumeRockerWake != 0);
+
+		mVolumeControlRingStream = (SwitchPreference)
+                findPreference(KEY_VOLUME_CONTROL_RING_STREAM);
+        int volumeControlRingtone = Settings.System.getInt(getContentResolver(),
+                Settings.System.VOLUME_KEYS_CONTROL_RING_STREAM, 1);
+        if (mVolumeControlRingStream != null) {
+            mVolumeControlRingStream.setChecked(volumeControlRingtone > 0);
+        }
     }
 
 	private void handleActionListChange(ListPreference pref, Object newValue, String setting) {
@@ -104,4 +113,16 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
     protected int getMetricsCategory() {
         return MetricsLogger.APPLICATION;
     }
+
+	@Override
+    public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen, Preference preference) {
+        if (preference == mVolumeControlRingStream) {
+            int value = mVolumeControlRingStream.isChecked() ? 1 : 0;
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.VOLUME_KEYS_CONTROL_RING_STREAM, value);
+        }
+
+        return super.onPreferenceTreeClick(preferenceScreen, preference);
+    }
+
 }

@@ -122,4 +122,10 @@
     <string name="lockscreen_vibrate_enabled_head">Vibrate when unlocking</string>
 
 	<string name="link_volume_option_title">Link ringtone &amp; notification volumes</string>
+
+	<!-- Media volume control toggle -->
+	<string name="volume_keys_control_ring_stream_title">Control ringtone volume</string>
+    <string name="volume_keys_control_ring_stream_summary_on">Volume keys control ringtone volume</string>
+    <string name="volume_keys_control_ring_stream_summary_off">Volume keys control media volume</string>
+
 </resources>
