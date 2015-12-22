@@ -30,4 +30,15 @@
         android:entryValues="@array/quick_pulldown_values"
         android:persistent="false" />
 
+	<PreferenceCategory
+        android:title="@string/qs_category_title">
+
+    <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
+        android:key="qs_location_advanced"
+        android:title="@string/qs_advanced_location_title"
+        android:summary="@string/qs_advanced_location_summary"
+        android:defaultValue="false" />
+
+	</PreferenceCategory>
+
 </PreferenceScreen>

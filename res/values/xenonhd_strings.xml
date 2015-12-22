@@ -235,4 +235,9 @@
 	<!-- Audio ducking -->
 	<string name="interruptions_ignore_while_media_title">Prevent audio ducking</string>
     <string name="interruptions_ignore_while_media_summary">Do not reduce media playback volume when a notification arrives</string>
+
+	<!-- Quick Settings -->
+	<string name="qs_category_title">Quick Settings</string>
+	<string name="qs_advanced_location_title">Advanced location quick settings</string>
+    <string name="qs_advanced_location_summary">Enable advanced settings for location in quick settings</string>
 </resources>
