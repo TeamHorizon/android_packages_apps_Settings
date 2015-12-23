@@ -48,4 +48,10 @@
             android:title="@string/category_interface"
             android:fragment="com.android.settings.xenonhd.InterfaceSettings" />
 
+		<!-- Sound -->
+        <PreferenceScreen
+            android:key="advanced_sound_settings"
+            android:title="@string/sound_title"
+            android:fragment="com.android.settings.xenonhd.SoundSettings" />
+
 </PreferenceScreen>
