@@ -22,13 +22,14 @@ public class About extends SettingsPreferenceFragment {
     Preference mGerritUrl;
     Preference mSponsorUrl;
 
-    protected int getMetricsCategory() {
+    public int getMetricsCategory() {
+        return 0;
     }
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setTitle(R.string.title_about);
+//        setTitle(R.string.title_about);
         addPreferencesFromResource(R.xml.prefs_about);
         mSiteUrl = findPreference("xenonhd_website");
         mSourceUrl = findPreference("xenonhd_source");
