@@ -18,4 +18,9 @@
     <string name="xenonhd_version">XenonHD version</string>
     <string name="xenonhd_version_default">Unknown</string>
 
+    <!-- Changelog -->
+    <string name="changelog_xenonhd_title">Changelog</string>
+    <string name="changelog_xenonhd_error">Unable to load changelog</string>
+    <string name="changelog_xenonhd_summary">Check changes in current build</string>
+
 </resources>

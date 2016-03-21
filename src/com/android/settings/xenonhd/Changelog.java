@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2015 crDroid Android
+ * Copyright (C) 2016 XenonHD
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.settings.crdroid;
+package com.android.settings.xenonhd;
 
 import android.app.Fragment;
 import android.os.Bundle;
@@ -52,18 +52,18 @@ public class Changelog extends Fragment {
         Pattern p = Pattern.compile("([a-f0-9]{7})\\s\\s(.*)\\s\\s\\[(.*)\\]"); //(?dms)
         Pattern p2 = Pattern.compile("\\s+\\*\\s(([\\w_\\-]+/)+)");
         Pattern p3 = Pattern.compile("(\\d\\d\\-\\d\\d\\-\\d{4})");
-        try {    
+        try {
             char tmp[] = new char[2048];
             int numRead;
 
             inputReader = new FileReader(CHANGELOG_PATH);
             while ((numRead = inputReader.read(tmp)) >= 0) {
-                
+
                 data.append(tmp, 0, numRead);
             }
-//            text = data.toString();
+            text = data.toString();
         } catch (IOException e) {
-//            text = getString(R.string.changelog_crdroid_error);
+            text = getString(R.string.changelog_xenonhd_error);
         } finally {
             try {
                 if (inputReader != null) {
@@ -73,17 +73,17 @@ public class Changelog extends Fragment {
             }
         }
 
-	SpannableStringBuilder sb = new SpannableStringBuilder(data);
+        SpannableStringBuilder sb = new SpannableStringBuilder(data);
         Matcher m = p.matcher(data);
         while (m.find()){
-          sb.setSpan(new ForegroundColorSpan(Color.rgb(158,158,20)),m.start(1), m.end(1), Spannable.SPAN_INCLUSIVE_INCLUSIVE);
+          sb.setSpan(new ForegroundColorSpan(Color.rgb(156,39,176)),m.start(1), m.end(1), Spannable.SPAN_INCLUSIVE_INCLUSIVE);
           sb.setSpan(new StyleSpan(Typeface.BOLD),m.start(1),m.end(1),Spannable.SPAN_INCLUSIVE_INCLUSIVE);
-          sb.setSpan(new ForegroundColorSpan(Color.rgb(20,158,20)),m.start(3), m.end(3), Spannable.SPAN_INCLUSIVE_INCLUSIVE);
+          sb.setSpan(new ForegroundColorSpan(Color.rgb(103,58,183)),m.start(3), m.end(3), Spannable.SPAN_INCLUSIVE_INCLUSIVE);
         }
         m = p2.matcher(data);
         while (m.find()){
           sb.setSpan(new StyleSpan(Typeface.BOLD),m.start(1), m.end(1), Spannable.SPAN_INCLUSIVE_INCLUSIVE);
-          sb.setSpan(new ForegroundColorSpan(Color.rgb(20,40,158)),m.start(1),m.end(1),Spannable.SPAN_INCLUSIVE_INCLUSIVE);
+          sb.setSpan(new ForegroundColorSpan(Color.rgb(0,150,136)),m.start(1),m.end(1),Spannable.SPAN_INCLUSIVE_INCLUSIVE);
         }
         m = p3.matcher(data);
         while (m.find()){

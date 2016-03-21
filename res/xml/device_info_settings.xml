@@ -23,6 +23,12 @@
                           android:enabled="false"
                           android:layout="@layout/xenonhd_logo_row" />		
 
+        <!-- Changelog -->
+        <PreferenceScreen android:key="changelog_xenonhd"
+                android:title="@string/changelog_xenonhd_title"
+                android:summary="@string/changelog_xenonhd_summary"
+                android:fragment="com.android.settings.xenonhd.Changelog" />
+
         <!-- Device status - launches activity -->
         <PreferenceScreen android:key="status_info"
                 android:title="@string/device_status"
