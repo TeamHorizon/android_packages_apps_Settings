@@ -83,13 +83,12 @@ public class FingerprintEnrollFindSensor extends FingerprintEnrollBase {
                 R.array.security_settings_fingerprint_sensor_locations)[sensorLocation];
         TextView message = (TextView) findViewById(R.id.find_sensor_message);
         message.setText(getString(
-                R.string.security_settings_fingerprint_enroll_find_sensor_message_custom,
+                R.string.security_settings_fingerprint_enroll_find_sensor_message_cm,
                 location));
         if (sensorLocation != SENSOR_LOCATION_BACK) {
             findViewById(R.id.fingerprint_sensor_location_front_overlay)
                     .setVisibility(View.VISIBLE);
         }
-
     }
 
     protected int getContentView() {
