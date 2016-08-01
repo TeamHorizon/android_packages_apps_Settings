@@ -23,6 +23,9 @@
     <!-- Development Settings -->
     <string name="show_dev_already_enabled">Development settings are enabled by default</string>
 
+    <!-- Phone info -->
+    <string name="device_info_title">Phone info</string>
+
     <!-- Vendor version -->
     <string name="vendor_version">Vendor version</string>
     <string name="vendor_version_default">Unknown</string>
