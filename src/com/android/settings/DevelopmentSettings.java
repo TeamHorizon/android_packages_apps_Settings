@@ -2056,6 +2056,14 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
                 preference == mAnimatorDurationScale) {
             ((AnimationScalePreference) preference).click();
         }
+        if (preference == mRootAppops) {
+            Activity mActivity = getActivity();
+            Intent intent = new Intent(Intent.ACTION_MAIN);
+            intent.putExtra("appops_tab", getString(R.string.app_ops_categories_su));
+            intent.setClass(mActivity, AppOpsSummaryActivity.class);
+            mActivity.startActivity(intent);
+            return true;
+        }
         return false;
     }
 
