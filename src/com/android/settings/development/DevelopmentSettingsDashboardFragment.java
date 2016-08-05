@@ -485,6 +485,7 @@ public class DevelopmentSettingsDashboardFragment extends RestrictedDashboardFra
         controllers.add(new EnableGnssRawMeasFullTrackingPreferenceController(context));
         controllers.add(new ForceAuthorizeSubstratumPreferenceController(context));
         controllers.add(new RootAccessPreferenceController(context, fragment));
+        controllers.add(new RootAppOpsPreferenceController(context));
         controllers.add(new DefaultLaunchPreferenceController(context, "running_apps"));
         controllers.add(new DefaultLaunchPreferenceController(context, "feature_flags_dashboard"));
         controllers.add(
