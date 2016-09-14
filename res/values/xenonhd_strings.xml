@@ -349,4 +349,9 @@
     <string name="status_bar_battery_saver_color_title">Battery saver color</string>
     <string name="status_bar_battery_saver_color_summary">Note: If battery saver already enabled, for new color be effective, toggle battery saver!</string>
 
+    <!-- Reset battery stats -->
+    <string name="ok">Okay</string>
+    <string name="menu_stats_reset">Reset stats</string>
+    <string name="reset_stats_msg">Battery history stats are going to be reset</string>
+
 </resources>
