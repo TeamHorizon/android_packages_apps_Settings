@@ -15,20 +15,24 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
-    <!-- About phone screen, XenonHD version -->
-    <string name="xenonhd_version">XenonHD version</string>
-    <string name="xenonhd_maintainer">Maintainer</string>
-
     <!-- Changelog -->
     <string name="changelog_xenonhd_title">Changelog</string>
     <string name="changelog_xenonhd_error">Unable to load changelog</string>
     <string name="changelog_xenonhd_summary">View changes in curent release</string>
 
+    <!-- Development Settings -->
+    <string name="show_dev_already_enabled">Development settings are enabled by default</string>
+
+    <!-- Vendor version -->
+    <string name="vendor_version">Vendor version</string>
+    <string name="vendor_version_default">Unknown</string>
+
     <!-- XenonOTA -->
     <string name="xenonota_title">XenonOTA</string>
     <string name="xenonota_summary">Check for XenonHD updates</string>
 
-    <!-- Development Settings -->
-    <string name="show_dev_already_enabled">Development settings are enabled by default</string>
+    <!-- XenonHD version -->
+    <string name="xenonhd_version">XenonHD version</string>
+    <string name="xenonhd_maintainer">Maintainer</string>
 
 </resources>
