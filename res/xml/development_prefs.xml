@@ -30,6 +30,11 @@
                 android:targetClass="com.android.development.Development" />
     </PreferenceScreen>
 
+    <lineageos.preference.LineageSecureSettingSwitchPreference
+            android:key="advanced_reboot"
+            android:title="@string/advanced_reboot_title"
+            android:summary="@string/advanced_reboot_summary" />
+
     <Preference
             android:key="local_backup_password"
             android:title="@string/local_backup_password_title"
