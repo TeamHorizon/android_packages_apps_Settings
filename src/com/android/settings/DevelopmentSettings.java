@@ -228,8 +228,6 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
 
     private static final String KEY_CONVERT_FBE = "convert_to_file_encryption";
 
-    private static final String OTA_DISABLE_AUTOMATIC_UPDATE_KEY = "ota_disable_automatic_update";
-
     private static final String DEVELOPMENT_TOOLS = "development_tools";
 
     private static final int RESULT_DEBUG_APP = 1000;
@@ -282,7 +280,6 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
     private SwitchPreference mWifiAggressiveHandover;
     private SwitchPreference mMobileDataAlwaysOn;
     private SwitchPreference mBluetoothDisableAbsVolume;
-    private SwitchPreference mOtaDisableAutomaticUpdate;
 
     private SwitchPreference mWifiAllowScansWithTraffic;
     private SwitchPreference mStrictMode;
@@ -522,12 +519,6 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
             }
         } catch(RemoteException e) {
             removePreference(KEY_CONVERT_FBE);
-        }
-
-        mOtaDisableAutomaticUpdate = findAndInitSwitchPref(OTA_DISABLE_AUTOMATIC_UPDATE_KEY);
-        if (!SystemProperties.getBoolean("ro.build.ab_update", false)) {
-            removePreference(mOtaDisableAutomaticUpdate);
-            mOtaDisableAutomaticUpdate = null;
         }
 
         mColorModePreference = (ColorModePreference) findPreference(KEY_COLOR_MODE);
@@ -780,9 +771,6 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
         updateAppProcessLimitOptions();
         updateShowAllANRsOptions();
         updateVerifyAppsOverUsbOptions();
-        if (mOtaDisableAutomaticUpdate != null) {
-            updateOtaDisableAutomaticUpdateOptions();
-        }
         updateForceRtlOptions();
         updateLogdSizeValues();
         updateLogpersistValues();
@@ -1137,24 +1125,6 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
         Settings.Global.putInt(getActivity().getContentResolver(),
                 Settings.Global.PACKAGE_VERIFIER_INCLUDE_ADB,
                 mVerifyAppsOverUsb.isChecked() ? 1 : 0);
-    }
-
-    private void updateOtaDisableAutomaticUpdateOptions() {
-        // We use the "disabled status" in code, but show the opposite text
-        // "Automatic system updates" on screen. So a value 0 indicates the
-        // automatic update is enabled.
-        updateSwitchPreference(mOtaDisableAutomaticUpdate, Settings.Global.getInt(
-                getActivity().getContentResolver(),
-                Settings.Global.OTA_DISABLE_AUTOMATIC_UPDATE, 0) != 1);
-    }
-
-    private void writeOtaDisableAutomaticUpdateOptions() {
-        // We use the "disabled status" in code, but show the opposite text
-        // "Automatic system updates" on screen. So a value 0 indicates the
-        // automatic update is enabled.
-        Settings.Global.putInt(getActivity().getContentResolver(),
-                Settings.Global.OTA_DISABLE_AUTOMATIC_UPDATE,
-                mOtaDisableAutomaticUpdate.isChecked() ? 0 : 1);
     }
 
     private boolean enableVerifierSetting() {
@@ -2180,8 +2150,6 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
             writeDebuggerOptions();
         } else if (preference == mVerifyAppsOverUsb) {
             writeVerifyAppsOverUsbOptions();
-        } else if (preference == mOtaDisableAutomaticUpdate) {
-            writeOtaDisableAutomaticUpdateOptions();
         } else if (preference == mStrictMode) {
             writeStrictModeVisualOptions();
         } else if (preference == mPointerLocation) {
