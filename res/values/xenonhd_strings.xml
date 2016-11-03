@@ -23,6 +23,9 @@
     <string name="changelog_xenonhd_error">Unable to load changelog</string>
     <string name="changelog_xenonhd_summary">Check changes in current build</string>
 
+    <!-- Density category -->
+    <string name="density_category">Density options</string>
+
     <!-- XenonOTA -->
     <string name="xenonota_title">XenonHD Updates</string>
     <string name="xenonota_summary">Check for ROM updates</string>
