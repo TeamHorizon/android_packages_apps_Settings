@@ -21,4 +21,10 @@
     <color name="icon_tint_color">@*android:color/material_pixel_blue_bright</color>
     <color name="white">#FFF</color>
 
+    <color name="lock_settings_primary">@*android:color/material_grey_300</color>
+    <color name="lock_settings_background">@*android:color/material_grey_50</color>
+    <color name="lock_settings_text">@*android:color/black</color>
+    <color name="lock_settings_blue">#ff4285f4</color>
+    <color name="lock_settings_pass">@*android:color/material_grey_850</color>
+
 </resources>
