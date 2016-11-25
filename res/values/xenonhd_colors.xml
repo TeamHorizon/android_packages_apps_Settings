@@ -27,4 +27,7 @@
     <color name="lock_settings_blue">#ff4285f4</color>
     <color name="lock_settings_pass">@*android:color/material_grey_850</color>
 
+    <!-- Gesture settings switchbar background -->
+    <color name="gestures_switchbar_color">@android:color/white</color>
+
 </resources>
