@@ -20,8 +20,23 @@
   <string name="changelog_xenonhd_title">Note de version</string>
   <string name="changelog_xenonhd_error">Impossible de charger le journal des changements</string>
   <string name="changelog_xenonhd_summary">Vérifier les modifications dans la version actuelle</string>
+  <!-- Density category -->
   <!-- XenonOTA -->
   <string name="xenonota_title">Mises à jour XenonHD</string>
   <string name="xenonota_summary">Rechercher les mises à jour de ROM</string>
   <!-- Dev Options Enabled by Default -->
+  <string name="show_dev_already_enabled">Inutile, les options de développement sont activées par défaut.</string>
+  <!-- Phone info shortcut -->
+  <string name="device_info_title">Infos téléphone</string>
+  <!-- Local (desktop) backup password menu title [CHAR LIMIT=25] -->
+  <!-- Double tap to sleep on lockscreen -->
+  <string name="double_tap_sleep_anywhere_summary">Tapez deux fois sur l\'écran de verrouillage pour mettre l\'appareil en veille</string>
+  <!-- Notification sound timeout -->
+  <string name="app_notification_sound_timeout_value_none">Aucune restriction</string>
+  <string name="app_notification_sound_timeout_value_10_seconds">10 secondes</string>
+  <string name="app_notification_sound_timeout_value_30_seconds">30 secondes</string>
+  <string name="app_notification_sound_timeout_value_1_minute">1 minute</string>
+  <string name="app_notification_sound_timeout_value_5_minutes">5 minutes</string>
+  <string name="app_notification_sound_timeout_value_15_minutes">10 minutes</string>
+  <string name="app_notification_sound_timeout_value_30_minutes">30 minutes</string>
 </resources>

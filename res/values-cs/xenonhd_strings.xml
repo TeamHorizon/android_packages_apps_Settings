@@ -15,6 +15,11 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- About phone screen, XenonHD version -->
   <!-- Changelog -->
+  <!-- Density category -->
   <!-- XenonOTA -->
   <!-- Dev Options Enabled by Default -->
+  <!-- Phone info shortcut -->
+  <!-- Local (desktop) backup password menu title [CHAR LIMIT=25] -->
+  <!-- Double tap to sleep on lockscreen -->
+  <!-- Notification sound timeout -->
 </resources>

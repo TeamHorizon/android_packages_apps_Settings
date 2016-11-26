@@ -14,12 +14,34 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- About phone screen, XenonHD version -->
+  <string name="xenonhd_version">Versão XenonHD</string>
   <string name="xenonhd_version_default">Desconhecido</string>
   <!-- Changelog -->
   <string name="changelog_xenonhd_title">Registro de Alterações</string>
   <string name="changelog_xenonhd_error">Não foi possível carregar o registro de alterações</string>
+  <string name="changelog_xenonhd_summary">Verificar alterações na compilação atual</string>
+  <!-- Density category -->
+  <string name="density_category">Opções de densidade</string>
   <!-- XenonOTA -->
   <string name="xenonota_title">Atualizações XenonHD</string>
   <string name="xenonota_summary">Verificar se há atualizações da ROM</string>
   <!-- Dev Options Enabled by Default -->
+  <string name="show_dev_already_enabled">Não há necessidade, as configurações de desenvolvimento são ativadas por padrão.</string>
+  <!-- Phone info shortcut -->
+  <string name="device_info_title">Informações do telefone</string>
+  <!-- Local (desktop) backup password menu title [CHAR LIMIT=25] -->
+  <string name="local_backup_password_title">Senha de backup do desktop</string>
+  <!-- Double tap to sleep on lockscreen -->
+  <string name="double_tap_sleep_anywhere_title">DT2S na tela de bloqueio</string>
+  <string name="double_tap_sleep_anywhere_summary">Toque duplo na barra de status para desligar a tela</string>
+  <!-- Notification sound timeout -->
+  <string name="app_notification_sound_timeout_title">Tempo mínimo entre sons de notificação</string>
+  <string name="app_notification_sound_timeout_summary_template">Permitir que sons ou vibrações não mais do que uma vez todos os <xliff:g id="duration">%1$s </xliff:g></string>
+  <string name="app_notification_sound_timeout_value_none">Sem restrições</string>
+  <string name="app_notification_sound_timeout_value_10_seconds">10 segundos</string>
+  <string name="app_notification_sound_timeout_value_30_seconds">30 segundos</string>
+  <string name="app_notification_sound_timeout_value_1_minute">1 minuto</string>
+  <string name="app_notification_sound_timeout_value_5_minutes">5 minutos</string>
+  <string name="app_notification_sound_timeout_value_15_minutes">10 minutos</string>
+  <string name="app_notification_sound_timeout_value_30_minutes">30 minutos</string>
 </resources>

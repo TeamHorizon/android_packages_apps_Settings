@@ -17,12 +17,31 @@
   <string name="xenonhd_version">Версия XenonHD</string>
   <string name="xenonhd_version_default">Неизвестно</string>
   <!-- Changelog -->
-  <string name="changelog_xenonhd_title">История Изменений</string>
-  <string name="changelog_xenonhd_error">Не удаётся загрузить Историю Изменений</string>
-  <string name="changelog_xenonhd_summary">Посмотрите изменения в этой сборке</string>
+  <string name="changelog_xenonhd_title">Список изменений</string>
+  <string name="changelog_xenonhd_error">Невозможно загрузить список изменений</string>
+  <string name="changelog_xenonhd_summary">Посмотрите изменения в текущей сборке</string>
+  <!-- Density category -->
+  <string name="density_category">Параметры плотности</string>
   <!-- XenonOTA -->
   <string name="xenonota_title">Обновления XenonHD</string>
-  <string name="xenonota_summary">Проверить обновления прошивки</string>
+  <string name="xenonota_summary">Проверить наличие обновлений прошивки</string>
   <!-- Dev Options Enabled by Default -->
   <string name="show_dev_already_enabled">Не нужно, настройки для разработчиков включены по умолчанию.</string>
+  <!-- Phone info shortcut -->
+  <string name="device_info_title">Информация об устройстве</string>
+  <!-- Local (desktop) backup password menu title [CHAR LIMIT=25] -->
+  <string name="local_backup_password_title">Пароль для резервного копирования</string>
+  <!-- Double tap to sleep on lockscreen -->
+  <string name="double_tap_sleep_anywhere_title">DT2S на экране блокировки</string>
+  <string name="double_tap_sleep_anywhere_summary">Дважды коснитесь экрана блокировки, чтобы заблокировать устройство</string>
+  <!-- Notification sound timeout -->
+  <string name="app_notification_sound_timeout_title">Минимальный интервал между звуками уведомлений</string>
+  <string name="app_notification_sound_timeout_summary_template">Разрешить звуки или вибрацию не более чем один раз каждые <xliff:g id="duration">%1$s</xliff:g></string>
+  <string name="app_notification_sound_timeout_value_none">Без ограничения</string>
+  <string name="app_notification_sound_timeout_value_10_seconds">10 секунд</string>
+  <string name="app_notification_sound_timeout_value_30_seconds">30 секунд</string>
+  <string name="app_notification_sound_timeout_value_1_minute">1 минута</string>
+  <string name="app_notification_sound_timeout_value_5_minutes">5 минут</string>
+  <string name="app_notification_sound_timeout_value_15_minutes">10 минут</string>
+  <string name="app_notification_sound_timeout_value_30_minutes">30 минут</string>
 </resources>

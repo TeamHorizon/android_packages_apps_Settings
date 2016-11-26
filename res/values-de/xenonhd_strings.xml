@@ -18,8 +18,13 @@
   <!-- Changelog -->
   <string name="changelog_xenonhd_title">Änderungsprotokoll</string>
   <string name="changelog_xenonhd_error">Änderungsprotokoll konnte nicht geladen werden</string>
+  <!-- Density category -->
   <!-- XenonOTA -->
   <string name="xenonota_title">XenonHD-Updates</string>
   <string name="xenonota_summary">ROM-Updates suchen</string>
   <!-- Dev Options Enabled by Default -->
+  <!-- Phone info shortcut -->
+  <!-- Local (desktop) backup password menu title [CHAR LIMIT=25] -->
+  <!-- Double tap to sleep on lockscreen -->
+  <!-- Notification sound timeout -->
 </resources>

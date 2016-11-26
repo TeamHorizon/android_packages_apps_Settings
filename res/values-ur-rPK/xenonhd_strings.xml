@@ -17,8 +17,13 @@
   <!-- Changelog -->
   <string name="changelog_xenonhd_title">چینج لاگ</string>
   <string name="changelog_xenonhd_error">چینج لاگ لوڈ کرنے سے قاصر</string>
+  <!-- Density category -->
   <!-- XenonOTA -->
   <string name="xenonota_title">زینان ایچ ڈی اپ ڈیٹ</string>
   <string name="xenonota_summary">ROM اپ ڈیٹس کے لئے چیک کریں</string>
   <!-- Dev Options Enabled by Default -->
+  <!-- Phone info shortcut -->
+  <!-- Local (desktop) backup password menu title [CHAR LIMIT=25] -->
+  <!-- Double tap to sleep on lockscreen -->
+  <!-- Notification sound timeout -->
 </resources>

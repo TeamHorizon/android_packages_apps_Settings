@@ -18,8 +18,13 @@
   <!-- Changelog -->
   <string name="changelog_xenonhd_title">Список змін</string>
   <string name="changelog_xenonhd_error">Помилка завантаження списку змін</string>
+  <!-- Density category -->
   <!-- XenonOTA -->
   <string name="xenonota_title">Оновлення XenonHD</string>
   <string name="xenonota_summary">Перевірити наявність оновлень</string>
   <!-- Dev Options Enabled by Default -->
+  <!-- Phone info shortcut -->
+  <!-- Local (desktop) backup password menu title [CHAR LIMIT=25] -->
+  <!-- Double tap to sleep on lockscreen -->
+  <!-- Notification sound timeout -->
 </resources>

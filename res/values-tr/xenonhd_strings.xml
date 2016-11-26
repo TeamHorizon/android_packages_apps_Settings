@@ -14,12 +14,23 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- About phone screen, XenonHD version -->
+  <string name="xenonhd_version">XenonHD Versiyon</string>
   <string name="xenonhd_version_default">Bilinmeyen</string>
   <!-- Changelog -->
-  <string name="changelog_xenonhd_title">Değişiklikler</string>
+  <string name="changelog_xenonhd_title">Değişikliklers</string>
   <string name="changelog_xenonhd_error">Değişiklik kaydı yüklenemedi</string>
+  <string name="changelog_xenonhd_summary">Değişiklikleri Kontrol Et Ve Geçerli Yap</string>
+  <!-- Density category -->
+  <string name="density_category">Yoğunluk Ayarları</string>
   <!-- XenonOTA -->
   <string name="xenonota_title">XenonHD Güncelleştirmeleri</string>
   <string name="xenonota_summary">ROM Güncellemelerini kontrol et</string>
   <!-- Dev Options Enabled by Default -->
+  <string name="show_dev_already_enabled">Gerek Yok, Depolanmış Ayarları Varsayılan Olarak Kaydet.</string>
+  <!-- Phone info shortcut -->
+  <string name="device_info_title">Telefon Bilgileri</string>
+  <!-- Local (desktop) backup password menu title [CHAR LIMIT=25] -->
+  <string name="local_backup_password_title">Masaüstü Şifresini Yedekle</string>
+  <!-- Double tap to sleep on lockscreen -->
+  <!-- Notification sound timeout -->
 </resources>

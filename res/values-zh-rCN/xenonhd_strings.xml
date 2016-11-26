@@ -14,7 +14,23 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- About phone screen, XenonHD version -->
+  <string name="xenonhd_version">XenonHD版本</string>
+  <string name="xenonhd_version_default">未知</string>
   <!-- Changelog -->
+  <string name="changelog_xenonhd_title">更新日志</string>
+  <string name="changelog_xenonhd_error">无法加载更新日志</string>
+  <string name="changelog_xenonhd_summary">查看当前版本变更</string>
+  <!-- Density category -->
+  <string name="density_category">密度选项</string>
   <!-- XenonOTA -->
+  <string name="xenonota_title">XenonHD更新</string>
+  <string name="xenonota_summary">检查更新</string>
   <!-- Dev Options Enabled by Default -->
+  <string name="show_dev_already_enabled">您已处于开发者模式，不需要进行此操作</string>
+  <!-- Phone info shortcut -->
+  <string name="device_info_title">手机信息</string>
+  <!-- Local (desktop) backup password menu title [CHAR LIMIT=25] -->
+  <string name="local_backup_password_title">桌面备份密码</string>
+  <!-- Double tap to sleep on lockscreen -->
+  <!-- Notification sound timeout -->
 </resources>

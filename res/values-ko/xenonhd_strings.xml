@@ -14,10 +14,17 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- About phone screen, XenonHD version -->
+  <string name="xenonhd_version">XenonHD 버전</string>
   <string name="xenonhd_version_default">알 수 없는</string>
   <!-- Changelog -->
+  <string name="changelog_xenonhd_title">체인지 로그</string>
+  <!-- Density category -->
   <!-- XenonOTA -->
   <string name="xenonota_title">XenonHD 업데이트</string>
   <string name="xenonota_summary">ROM 업데이트 확인</string>
   <!-- Dev Options Enabled by Default -->
+  <!-- Phone info shortcut -->
+  <!-- Local (desktop) backup password menu title [CHAR LIMIT=25] -->
+  <!-- Double tap to sleep on lockscreen -->
+  <!-- Notification sound timeout -->
 </resources>

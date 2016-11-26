@@ -20,9 +20,28 @@
   <string name="changelog_xenonhd_title">Lista zmian</string>
   <string name="changelog_xenonhd_error">Nie można wczytać listy zmian</string>
   <string name="changelog_xenonhd_summary">Sprawdź zmiany w bieżącej kompilacji</string>
+  <!-- Density category -->
+  <string name="density_category">Ustawienia gęstości</string>
   <!-- XenonOTA -->
   <string name="xenonota_title">Aktualizacje XenonHD</string>
   <string name="xenonota_summary">Sprawdź aktualizacje ROM\'u</string>
   <!-- Dev Options Enabled by Default -->
   <string name="show_dev_already_enabled">Nie ma potrzeby, Opcje programistyczne są domyślnie włączone.</string>
+  <!-- Phone info shortcut -->
+  <string name="device_info_title">Informacje o telefonie</string>
+  <!-- Local (desktop) backup password menu title [CHAR LIMIT=25] -->
+  <string name="local_backup_password_title">Hasło kopii zapasowej</string>
+  <!-- Double tap to sleep on lockscreen -->
+  <string name="double_tap_sleep_anywhere_title">DT2S na ekranie blokady</string>
+  <string name="double_tap_sleep_anywhere_summary">Dwukrotnie dotknij ekranu blokady w celu uśpienia urządzenia</string>
+  <!-- Notification sound timeout -->
+  <string name="app_notification_sound_timeout_title">Minimalny czas między dźwiękami powiadomień</string>
+  <string name="app_notification_sound_timeout_summary_template">Zezwól na dźwięki i wibracje, nie więcej niż jeden raz każde <xliff:g id="duration">%1$s </xliff:g></string>
+  <string name="app_notification_sound_timeout_value_none">Brak ograniczeń</string>
+  <string name="app_notification_sound_timeout_value_10_seconds">10 sekund</string>
+  <string name="app_notification_sound_timeout_value_30_seconds">30 sekund</string>
+  <string name="app_notification_sound_timeout_value_1_minute">1 minuta</string>
+  <string name="app_notification_sound_timeout_value_5_minutes">5 minut</string>
+  <string name="app_notification_sound_timeout_value_15_minutes">10 minut</string>
+  <string name="app_notification_sound_timeout_value_30_minutes">30 minut</string>
 </resources>
