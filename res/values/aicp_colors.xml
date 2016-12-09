@@ -31,5 +31,9 @@
     
     <color name="dashboard_category_title_background">@color/card_background</color>
     <color name="selectable_card_background">@color/card_background</color>
-    
+
+    <!-- Linear color bar -->
+    <color name="linear_color_bar_left">@*android:color/material_deep_teal_500</color>
+    <color name="linear_color_bar_middle">@*android:color/material_deep_teal_500</color>
+    <color name="linear_color_bar_right">#ffced7db</color>
 </resources>
