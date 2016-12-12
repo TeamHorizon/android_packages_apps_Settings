@@ -76,14 +76,14 @@ public class Changelog extends Fragment {
         SpannableStringBuilder sb = new SpannableStringBuilder(data);
         Matcher m = p.matcher(data);
         while (m.find()){
-          sb.setSpan(new ForegroundColorSpan(Color.rgb(156,39,176)),m.start(1), m.end(1), Spannable.SPAN_INCLUSIVE_INCLUSIVE);
+          sb.setSpan(new ForegroundColorSpan(Color.rgb(244,194,13)),m.start(1), m.end(1), Spannable.SPAN_INCLUSIVE_INCLUSIVE);
           sb.setSpan(new StyleSpan(Typeface.BOLD),m.start(1),m.end(1),Spannable.SPAN_INCLUSIVE_INCLUSIVE);
-          sb.setSpan(new ForegroundColorSpan(Color.rgb(103,58,183)),m.start(3), m.end(3), Spannable.SPAN_INCLUSIVE_INCLUSIVE);
+          sb.setSpan(new ForegroundColorSpan(Color.rgb(219,50,54)),m.start(3), m.end(3), Spannable.SPAN_INCLUSIVE_INCLUSIVE);
         }
         m = p2.matcher(data);
         while (m.find()){
           sb.setSpan(new StyleSpan(Typeface.BOLD),m.start(1), m.end(1), Spannable.SPAN_INCLUSIVE_INCLUSIVE);
-          sb.setSpan(new ForegroundColorSpan(Color.rgb(0,150,136)),m.start(1),m.end(1),Spannable.SPAN_INCLUSIVE_INCLUSIVE);
+          sb.setSpan(new ForegroundColorSpan(Color.rgb(66,133,244)),m.start(1),m.end(1),Spannable.SPAN_INCLUSIVE_INCLUSIVE);
         }
         m = p3.matcher(data);
         while (m.find()){
