@@ -28,8 +28,8 @@
                 android:title="@string/xenonota_title"
                 android:summary="@string/xenonota_summary">
             <intent android:action="android.intent.action.MAIN"
-                    android:targetPackage="com.fusionjack.slimota"
-                    android:targetClass="com.fusionjack.slimota.MainActivity" />
+                    android:targetPackage="com.xenonota"
+                    android:targetClass="com.xenonota.MainActivity" />
         </PreferenceScreen>
 
         <!-- Changelog -->
