@@ -24,6 +24,7 @@
 -keep class com.android.settings.preference.*
 
 -keep class com.android.settings.cyanogenmod.*Settings
+-keep class com.android.settings.xenonhd.**
 
 # Keep click responders
 -keepclassmembers class com.android.settings.inputmethod.UserDictionaryAddWordActivity {
