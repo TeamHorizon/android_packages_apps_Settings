@@ -20,11 +20,16 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/xenonhd_title">
 
-    <!-- Misc -->
-    <PreferenceScreen
-            android:key="xenonhd_misc"
-            android:title="@string/xenonhd_misc_title"
-            android:fragment="com.android.settings.xenonhd.MiscSettings" 
-            android:icon="@drawable/xenonhd_misc_icon"/>
+    <!-- SELinux -->
+        <Preference
+            android:key="selinux_switch"
+            android:title="@string/selinux_switch_title"
+            android:summary="@string/selinux_switch_summary"
+            android:selectable="false"/>
+
+        <SwitchPreference
+            android:key="selinux"
+            android:title="@string/selinux_title"
+            android:defaultValue="false" />
 
 </PreferenceScreen>

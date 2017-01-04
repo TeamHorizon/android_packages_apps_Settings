@@ -13,11 +13,29 @@
 */
 package com.android.settings.xenonhd;
 
+import android.content.Context;
+import android.content.ContentResolver;
+import android.content.Intent;
+import android.content.SharedPreferences;
+import android.content.pm.PackageManager;
+import android.content.pm.ResolveInfo;
 import android.os.Bundle;
-import android.preference.Preference;
+import android.os.Build;
+import com.android.settings.util.AbstractAsyncSuCMDProcessor;
+import com.android.settings.util.CMDProcessor;
+import com.android.settings.util.Helpers;
+import android.os.SystemProperties;
+import android.os.UserHandle;
+import android.support.v7.preference.ListPreference;
+import android.support.v14.preference.SwitchPreference;
+import android.support.v7.preference.Preference;
+import android.support.v7.preference.Preference.OnPreferenceChangeListener;
+import android.support.v7.preference.PreferenceScreen;
+import android.provider.Settings;
+import com.android.settings.util.Helpers;
+import dalvik.system.VMRuntime;
 import android.preference.PreferenceActivity;
 import android.preference.PreferenceCategory;
-import android.preference.PreferenceScreen;
 
 import com.android.internal.logging.MetricsProto.MetricsEvent;
 
@@ -25,9 +43,40 @@ import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.Utils;
 
+import java.util.List;
+
+import java.io.File;
+import java.io.IOException;
+import java.io.DataOutputStream;
+
 public class MainSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
+
     private static final String TAG = "MainSettings";
+    private static final String SELINUX = "selinux";
+
+    private SwitchPreference mConfig;
+    private SwitchPreference mSelinux;
+
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+
+        addPreferencesFromResource(R.xml.xenonhd_main_settings);
+	  	final ContentResolver resolver = getActivity().getContentResolver();
+
+        //SELinux
+        mSelinux = (SwitchPreference) findPreference(SELINUX);
+        mSelinux.setOnPreferenceChangeListener(this);
+
+ 	if (CMDProcessor.runShellCommand("getenforce").getStdout().contains("Enforcing")) {
+            mSelinux.setChecked(true);
+            mSelinux.setSummary(R.string.selinux_enforcing_title);
+        } else {
+            mSelinux.setChecked(false);
+            mSelinux.setSummary(R.string.selinux_permissive_title);
+        }
+    }
 
     @Override
     protected int getMetricsCategory() {
@@ -35,14 +84,29 @@ public class MainSettings extends SettingsPreferenceFragment implements
     }
 
     @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-
-        addPreferencesFromResource(R.xml.xenonhd_main_settings);
+    public void onResume() {
+        super.onResume();
     }
 
-    public boolean onPreferenceChange(Preference preference, Object objValue) 		{
+     private void setSelinuxEnabled(String status) {
+         SharedPreferences.Editor editor = getContext().getSharedPreferences("selinux_pref", Context.MODE_PRIVATE).edit();
+         editor.putString("selinux", status);
+         editor.apply();
+     }
 
-        return true;
-    }
+     @Override
+     public boolean onPreferenceChange(Preference preference, Object value) {
+     ContentResolver resolver = getActivity().getContentResolver();
+            if (preference == mSelinux) {
+            if (value.toString().equals("true")) {
+                CMDProcessor.runSuCommand("setenforce 1");
+                mSelinux.setSummary(R.string.selinux_enforcing_title);
+            } else if (value.toString().equals("false")) {
+                CMDProcessor.runSuCommand("setenforce 0");
+                mSelinux.setSummary(R.string.selinux_permissive_title);
+            }
+            return true;
+         }
+        return false;
+     } 
 }
