@@ -106,4 +106,8 @@
     <string name="selinux_permissive_title">Permissive</string>
     <string name="selinux_enforcing_title">Enforcing</string>
 
+    <!-- Recents Membar -->
+    <string name="systemui_recents_mem_display_title">Show Memory Bar</string>
+    <string name="systemui_recents_mem_display_summary">Show free RAM bar in recent apps view</string>
+
 </resources>
