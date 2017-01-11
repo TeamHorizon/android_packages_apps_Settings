@@ -100,6 +100,7 @@
     <string name="xenonhd_misc_title">Miscellaneous</string>
 
     <!-- Selinux Switch -->
+    <string name="selinux_category">SELinux</string>
     <string name="selinux_switch_title">Selinux Switch options</string>
     <string name="selinux_switch_summary">SELinux is a set of kernel modifications and user-space tools. Changing modes can cause unwanted effects. Use at your own risk</string>
     <string name="selinux_title">Selinux Mode</string>
@@ -107,11 +108,12 @@
     <string name="selinux_enforcing_title">Enforcing</string>
 
     <!-- Recents Membar -->
+    <string name="recents_membar">Memory Bar</string>
     <string name="systemui_recents_mem_display_title">Show Memory Bar</string>
     <string name="systemui_recents_mem_display_summary">Show free RAM bar in recent apps view</string>
 
     <!-- Quick settings tiles columns and rows config -->
-    <string name="qs_layout_category">Rows and columns</string>
+    <string name="qs_layout_category">QS Rows and columns</string>
     <string name="qs_rows_portrait_title">Rows (portrait)</string>
     <string name="qs_rows_landscape_title">Rows (landscape)</string>
     <string name="qs_columns_title">Columns</string>

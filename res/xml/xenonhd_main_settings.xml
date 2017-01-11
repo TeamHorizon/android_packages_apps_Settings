@@ -20,7 +20,10 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/xenonhd_title">
 
-    <!-- SELinux -->
+    <PreferenceCategory
+        android:key="selinux_category"
+        android:title="@string/selinux_category">
+
         <Preference
             android:key="selinux_switch"
             android:title="@string/selinux_switch_title"
@@ -32,33 +35,41 @@
             android:title="@string/selinux_title"
             android:defaultValue="false" />
 
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="recents_membar"
+        android:title="@string/recents_membar">
+
         <com.android.settings.preference.SystemSettingSwitchPreference
              android:key="systemui_recents_mem_display"
              android:title="@string/systemui_recents_mem_display_title"
              android:summary="@string/systemui_recents_mem_display_summary"
              android:defaultValue="false" />
 
+    </PreferenceCategory>
+
     <PreferenceCategory
         android:key="qs_layout_category"
         android:title="@string/qs_layout_category">
 
-    <ListPreference
-        android:key="qs_rows_portrait"
-        android:title="@string/qs_rows_portrait_title"
-        android:entries="@array/qs_rows_portrait_entries"
-        android:entryValues="@array/qs_rows_portrait_values" />
+        <ListPreference
+            android:key="qs_rows_portrait"
+            android:title="@string/qs_rows_portrait_title"
+            android:entries="@array/qs_rows_portrait_entries"
+            android:entryValues="@array/qs_rows_portrait_values" />
 
-    <ListPreference
-        android:key="qs_rows_landscape"
-        android:title="@string/qs_rows_landscape_title"
-        android:entries="@array/qs_rows_landscape_entries"
-        android:entryValues="@array/qs_rows_landscape_values" />
+        <ListPreference
+            android:key="qs_rows_landscape"
+            android:title="@string/qs_rows_landscape_title"
+            android:entries="@array/qs_rows_landscape_entries"
+            android:entryValues="@array/qs_rows_landscape_values" />
 
-    <ListPreference
-        android:key="qs_columns"
-        android:title="@string/qs_columns_title"
-        android:entries="@array/qs_columns_entries"
-        android:entryValues="@array/qs_columns_values" />
+        <ListPreference
+            android:key="qs_columns"
+            android:title="@string/qs_columns_title"
+            android:entries="@array/qs_columns_entries"
+            android:entryValues="@array/qs_columns_values" />
 
     </PreferenceCategory>
 
