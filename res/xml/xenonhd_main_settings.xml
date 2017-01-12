@@ -38,6 +38,23 @@
     </PreferenceCategory>
 
     <PreferenceCategory
+        android:key="unlock_quick_unlock_control_title"
+        android:title="@string/unlock_quick_unlock_control_title">
+
+       <Preference
+            android:key="quick_unlock_warning"
+            android:title="@string/quick_unlock_warning"
+            android:summary="@string/quick_unlock_warning_summary"
+            android:selectable="false"/>
+
+       <com.android.settings.preference.SystemSettingSwitchPreference
+            android:key="lockscreen_quick_unlock_control"
+            android:title="@string/unlock_quick_unlock_control_title"
+            android:summary="@string/unlock_quick_unlock_control_summary" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
         android:key="recents_membar"
         android:title="@string/recents_membar">
 
