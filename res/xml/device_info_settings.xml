@@ -101,6 +101,13 @@
                 android:title="@string/xenonhd_version"
                 android:summary="@string/xenonhd_version_default" />
 
+        <!-- XenonHD Maintainer -->
+        <Preference android:key="xenonhd_maintainer"
+                android:enabled="false"
+                android:shouldDisableView="false"
+                android:title="@string/xenonhd_maintainer"
+                android:summary="@string/xenonhd_maintainer_default"/>
+
         <!-- Security patch level -->
         <PreferenceScreen android:key="security_patch"
                 android:title="@string/security_patch"
