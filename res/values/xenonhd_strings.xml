@@ -100,6 +100,7 @@
     <!-- XenonHD Configurations-->
     <string name="xenonhd_title">Configurations</string>
     <string name="xenonhd_misc_title">Miscellaneous</string>
+    <string name="ui_title">UI</string>
 
     <!-- Selinux Switch -->
     <string name="selinux_category">SELinux</string>
@@ -129,5 +130,9 @@
     <string name="quick_unlock_warning_summary">This feature almost certainly mishandles multiple users and bypasses important security mechanisms. Use at your own risk</string>
     <string name="unlock_quick_unlock_control_title">Quick unlock</string>
     <string name="unlock_quick_unlock_control_summary">Unlock automatically when the correct PIN/password is entered</string>
+
+    <!-- Three-fingers-swipe to screenshot -->
+    <string name="three_finger_gesture">Swipe to screenshot</string>
+    <string name="three_finger_gesture_summary">Swipe three fingers to take screenshot</string>
 
 </resources>

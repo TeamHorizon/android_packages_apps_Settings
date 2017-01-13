@@ -38,6 +38,19 @@
     </PreferenceCategory>
 
     <PreferenceCategory
+        android:key="user_interface"
+        android:title="@string/ui_title">
+
+	<!-- Three finger screenshot -->
+    	<com.android.settings.preference.SystemSettingSwitchPreference
+        	android:key="three_finger_gesture"
+        	android:title="@string/three_finger_gesture"
+        	android:summary="@string/three_finger_gesture_summary"
+		android:defaultValue="false" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
         android:key="unlock_quick_unlock_control_title"
         android:title="@string/unlock_quick_unlock_control_title">
 
