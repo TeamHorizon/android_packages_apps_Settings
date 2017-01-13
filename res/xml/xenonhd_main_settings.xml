@@ -21,8 +21,8 @@
     android:title="@string/xenonhd_title">
 
     <PreferenceCategory
-        android:key="selinux_category"
-        android:title="@string/selinux_category">
+        android:key="xenonhd_misc"
+        android:title="@string/xenonhd_misc_title">
 
         <Preference
             android:key="selinux_switch"
@@ -38,8 +38,31 @@
     </PreferenceCategory>
 
     <PreferenceCategory
+        android:key="xenonhd_lockscreen"
+        android:title="@string/xenonhd_lockscreen_title">
+
+        <Preference
+            android:key="quick_unlock_warning"
+            android:title="@string/quick_unlock_warning"
+            android:summary="@string/quick_unlock_warning_summary"
+            android:selectable="false"/>
+
+        <com.android.settings.preference.SystemSettingSwitchPreference
+            android:key="lockscreen_quick_unlock_control"
+            android:title="@string/unlock_quick_unlock_control_title"
+            android:summary="@string/unlock_quick_unlock_control_summary" />
+
+        <com.android.settings.preference.SystemSettingSwitchPreference
+            android:key="lockscreen_media_metadata"
+            android:title="@string/media_art_title"
+            android:summary="@string/media_art_summary"
+            android:defaultValue="true" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
         android:key="user_interface"
-        android:title="@string/ui_title">
+        android:title="@string/xenonhd_ui_title">
 
 	<!-- Three finger screenshot -->
     	<com.android.settings.preference.SystemSettingSwitchPreference
@@ -48,34 +71,11 @@
         	android:summary="@string/three_finger_gesture_summary"
 		android:defaultValue="false" />
 
-    </PreferenceCategory>
-
-    <PreferenceCategory
-        android:key="unlock_quick_unlock_control_title"
-        android:title="@string/unlock_quick_unlock_control_title">
-
-       <Preference
-            android:key="quick_unlock_warning"
-            android:title="@string/quick_unlock_warning"
-            android:summary="@string/quick_unlock_warning_summary"
-            android:selectable="false"/>
-
-       <com.android.settings.preference.SystemSettingSwitchPreference
-            android:key="lockscreen_quick_unlock_control"
-            android:title="@string/unlock_quick_unlock_control_title"
-            android:summary="@string/unlock_quick_unlock_control_summary" />
-
-    </PreferenceCategory>
-
-    <PreferenceCategory
-        android:key="recents_membar"
-        android:title="@string/recents_membar">
-
         <com.android.settings.preference.SystemSettingSwitchPreference
-             android:key="systemui_recents_mem_display"
-             android:title="@string/systemui_recents_mem_display_title"
-             android:summary="@string/systemui_recents_mem_display_summary"
-             android:defaultValue="false" />
+            android:key="systemui_recents_mem_display"
+            android:title="@string/systemui_recents_mem_display_title"
+            android:summary="@string/systemui_recents_mem_display_summary"
+            android:defaultValue="false" />
 
     </PreferenceCategory>
 
@@ -100,18 +100,6 @@
             android:title="@string/qs_columns_title"
             android:entries="@array/qs_columns_entries"
             android:entryValues="@array/qs_columns_values" />
-
-    </PreferenceCategory>
-
-    <PreferenceCategory
-        android:key="media_art_title"
-        android:title="@string/media_art_title">
-
-        <com.android.settings.preference.SystemSettingSwitchPreference
-            android:key="lockscreen_media_metadata"
-            android:title="@string/media_art_title"
-            android:summary="@string/media_art_summary"
-            android:defaultValue="true" />
 
     </PreferenceCategory>
 
