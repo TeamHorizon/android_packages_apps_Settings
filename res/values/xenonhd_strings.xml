@@ -104,9 +104,9 @@
     <string name="xenonhd_ui_title">UI</string>
 
     <!-- Selinux Switch -->
-    <string name="selinux_switch_title">Selinux Switch caution</string>
+    <string name="selinux_switch_title">SELinux Switch caution</string>
     <string name="selinux_switch_summary">SELinux is a set of kernel modifications and user-space tools. Changing modes can cause unwanted effects. Permissive recommended. Use at your own risk</string>
-    <string name="selinux_title">Selinux Mode</string>
+    <string name="selinux_title">SELinux Mode</string>
     <string name="selinux_permissive_title">Permissive</string>
     <string name="selinux_enforcing_title">Enforcing</string>
 
