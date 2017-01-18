@@ -60,6 +60,8 @@ public class MainSettings extends SettingsPreferenceFragment implements
     private static final String PREF_ROWS_LANDSCAPE = "qs_rows_landscape";
     private static final String PREF_COLUMNS = "qs_columns";
 
+    private static final String RECENTS_CLEAR_ALL_LOCATION = "recents_clear_all_location";
+
     private SwitchPreference mConfig;
 
     private SwitchPreference mSelinux;
@@ -68,11 +70,15 @@ public class MainSettings extends SettingsPreferenceFragment implements
     private ListPreference mRowsLandscape;
     private ListPreference mQsColumns;
 
+    private SwitchPreference mRecentsClearAll;
+    private ListPreference mRecentsClearAllLocation;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         addPreferencesFromResource(R.xml.xenonhd_main_settings);
+        PreferenceScreen prefSet = getPreferenceScreen();
 	  	final ContentResolver resolver = getActivity().getContentResolver();
 
         //SELinux
@@ -86,6 +92,14 @@ public class MainSettings extends SettingsPreferenceFragment implements
             mSelinux.setChecked(false);
             mSelinux.setSummary(R.string.selinux_permissive_title);
         }
+
+        // clear all location
+        mRecentsClearAllLocation = (ListPreference) prefSet.findPreference(RECENTS_CLEAR_ALL_LOCATION);
+        int location = Settings.System.getIntForUser(resolver,
+                Settings.System.RECENTS_CLEAR_ALL_LOCATION, 3, UserHandle.USER_CURRENT);
+        mRecentsClearAllLocation.setValue(String.valueOf(location));
+        mRecentsClearAllLocation.setSummary(mRecentsClearAllLocation.getEntry());
+        mRecentsClearAllLocation.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -172,6 +186,13 @@ public class MainSettings extends SettingsPreferenceFragment implements
             Settings.Secure.putInt(getContentResolver(),
                     Settings.Secure.QS_COLUMNS, intValue);
             preference.setSummary(mQsColumns.getEntries()[index]);
+            return true;
+        } else if (preference == mRecentsClearAllLocation) {
+            int location = Integer.valueOf((String) objValue);
+            index = mRecentsClearAllLocation.findIndexOfValue((String) objValue);
+            Settings.System.putIntForUser(resolver,
+                    Settings.System.RECENTS_CLEAR_ALL_LOCATION, location, UserHandle.USER_CURRENT);
+            mRecentsClearAllLocation.setSummary(mRecentsClearAllLocation.getEntries()[index]);
             return true;
         }
         return false;
