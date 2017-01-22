@@ -142,7 +142,7 @@
     <string name="timeout_1000">1 second</string>
     <string name="timeout_500">0,5 second</string>
 
-	<!-- Doze pulse options -->
+    <!-- Doze pulse options -->
     <string name="summary_doze_enabled">Enabled</string>
     <string name="summary_doze_disabled">Disabled</string>
     <string name="doze_overwrite_value_title">Overwrite defaults</string>
@@ -190,5 +190,15 @@
     <string name="recents_clear_all_location_bottom_right">Bottom right</string>
     <string name="recents_clear_all_location_bottom_left">Bottom left</string>
     <string name="recents_clear_all_location_bottom_center">Bottom center</string>
+
+    <!-- Dashboard options -->
+    <string name="dashboard_category">Dashboard options</string>
+    <string name="disable_suggestions_title">Disable suggestions</string>
+    <string name="disable_suggestions_summary">Disable the suggestions that appear on top of the dashboard</string>
+    <string name="remove_tile_summaries_title">Remove tile summaries</string>
+    <string name="remove_tile_summaries_summary">Remove tiles summaries that display underneath tile titles</string>
+    <string name="dashboard_conditions_title">Dashboard conditions</string>
+    <string name="summary_dashboard_conditions_enabled">Dashboard conditions are enabled</string>
+    <string name="summary_dashboard_conditions_disabled">Dashboard conditions are disabled</string>
 
 </resources>
