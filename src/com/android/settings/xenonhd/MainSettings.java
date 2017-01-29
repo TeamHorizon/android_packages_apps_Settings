@@ -40,6 +40,8 @@ import android.preference.PreferenceCategory;
 
 import com.android.internal.logging.MetricsProto.MetricsEvent;
 
+import com.android.settings.preference.CustomSeekBarPreference;
+
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.Utils;
@@ -63,7 +65,8 @@ public class MainSettings extends SettingsPreferenceFragment implements
 
     private static final String RECENTS_CLEAR_ALL_LOCATION = "recents_clear_all_location";
 
-    private static final String KEY_DASHBOARD_COLUMNS = "dashboard_columns";
+    private static final String KEY_DASHBOARD_PORTRAIT_COLUMNS = "dashboard_portrait_columns";
+    private static final String KEY_DASHBOARD_LANDSCAPE_COLUMNS = "dashboard_landscape_columns";
 
     private SwitchPreference mConfig;
 
@@ -76,7 +79,8 @@ public class MainSettings extends SettingsPreferenceFragment implements
     private SwitchPreference mRecentsClearAll;
     private ListPreference mRecentsClearAllLocation;
 
-    private ListPreference mDashboardColumns;
+    private CustomSeekBarPreference mDashboardPortraitColumns;
+    private CustomSeekBarPreference mDashboardLandscapeColumns;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -106,11 +110,17 @@ public class MainSettings extends SettingsPreferenceFragment implements
         mRecentsClearAllLocation.setSummary(mRecentsClearAllLocation.getEntry());
         mRecentsClearAllLocation.setOnPreferenceChangeListener(this);
 
-        mDashboardColumns = (ListPreference) findPreference(KEY_DASHBOARD_COLUMNS);
-        mDashboardColumns.setValue(String.valueOf(Settings.System.getInt(
-                getContentResolver(), Settings.System.DASHBOARD_COLUMNS, DashboardSummary.mNumColumns)));
-        mDashboardColumns.setSummary(mDashboardColumns.getEntry());
-        mDashboardColumns.setOnPreferenceChangeListener(this);
+        mDashboardPortraitColumns = (CustomSeekBarPreference) findPreference(KEY_DASHBOARD_PORTRAIT_COLUMNS);
+        int columnsPortrait = Settings.System.getInt(resolver,
+                Settings.System.DASHBOARD_PORTRAIT_COLUMNS, DashboardSummary.mNumColumns);
+        mDashboardPortraitColumns.setValue(columnsPortrait / 1);
+        mDashboardPortraitColumns.setOnPreferenceChangeListener(this);
+
+        mDashboardLandscapeColumns = (CustomSeekBarPreference) findPreference(KEY_DASHBOARD_LANDSCAPE_COLUMNS);
+        int columnsLandscape = Settings.System.getInt(resolver,
+                Settings.System.DASHBOARD_LANDSCAPE_COLUMNS, 2);
+        mDashboardLandscapeColumns.setValue(columnsLandscape / 1);
+        mDashboardLandscapeColumns.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -205,13 +215,17 @@ public class MainSettings extends SettingsPreferenceFragment implements
                     Settings.System.RECENTS_CLEAR_ALL_LOCATION, location, UserHandle.USER_CURRENT);
             mRecentsClearAllLocation.setSummary(mRecentsClearAllLocation.getEntries()[index]);
             return true;
-        } else if (preference == mDashboardColumns) {
-            Settings.System.putInt(getContentResolver(), Settings.System.DASHBOARD_COLUMNS,
-                    Integer.valueOf((String) objValue));
-            mDashboardColumns.setValue(String.valueOf(objValue));
-            mDashboardColumns.setSummary(mDashboardColumns.getEntry());
+        } else if (preference == mDashboardPortraitColumns) {
+            int columnsPortrait = (Integer) objValue;
+            Settings.System.putInt(getContentResolver(),
+                    Settings.System.DASHBOARD_PORTRAIT_COLUMNS, columnsPortrait * 1);
+            return true;
+        } else if (preference == mDashboardLandscapeColumns) {
+            int columnsLandscape = (Integer) objValue;
+            Settings.System.putInt(getContentResolver(),
+                    Settings.System.DASHBOARD_LANDSCAPE_COLUMNS, columnsLandscape * 1);
             return true;
         }
         return false;
-     } 
+    }
 }
