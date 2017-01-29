@@ -115,6 +115,12 @@
             android:entries="@array/qs_columns_entries"
             android:entryValues="@array/qs_columns_values" />
 
+        <com.android.settings.preference.SecureSettingSwitchPreference
+            android:key="qs_easy_toggle"
+            android:title="@string/qs_easy_toggle_title"
+            android:summary="@string/qs_easy_toggle_summary"
+            android:defaultValue="false" />
+
     </PreferenceCategory>
 
     <PreferenceCategory

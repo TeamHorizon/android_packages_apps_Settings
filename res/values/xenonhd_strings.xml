@@ -121,6 +121,11 @@
     <string name="qs_rows_landscape_title">Rows (landscape)</string>
     <string name="qs_columns_title">Columns</string>
 
+    <!-- QS tiles category -->
+    <string name="qs_tiles_category">QS tile options</string>
+    <string name="qs_easy_toggle_title">Advanced QS Easy Toggle</string>
+    <string name="qs_easy_toggle_summary">Enable one tap action to enable or disable mobile data, wifi, and bluetooth</string>
+
     <!-- Media art -->
     <string name="media_art_title">Media cover art</string>
     <string name="media_art_summary">Display media cover art on the lockscreen</string>

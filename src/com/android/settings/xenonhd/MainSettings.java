@@ -62,6 +62,7 @@ public class MainSettings extends SettingsPreferenceFragment implements
     private static final String PREF_ROWS_PORTRAIT = "qs_rows_portrait";
     private static final String PREF_ROWS_LANDSCAPE = "qs_rows_landscape";
     private static final String PREF_COLUMNS = "qs_columns";
+    private static final String PREF_QS_EASY_TOGGLE = "qs_easy_toggle";
 
     private static final String RECENTS_CLEAR_ALL_LOCATION = "recents_clear_all_location";
 
@@ -75,6 +76,7 @@ public class MainSettings extends SettingsPreferenceFragment implements
     private ListPreference mRowsPortrait;
     private ListPreference mRowsLandscape;
     private ListPreference mQsColumns;
+    private SwitchPreference mEasyToggle;
 
     private SwitchPreference mRecentsClearAll;
     private ListPreference mRecentsClearAllLocation;
@@ -121,6 +123,11 @@ public class MainSettings extends SettingsPreferenceFragment implements
                 Settings.System.DASHBOARD_LANDSCAPE_COLUMNS, 2);
         mDashboardLandscapeColumns.setValue(columnsLandscape / 1);
         mDashboardLandscapeColumns.setOnPreferenceChangeListener(this);
+
+        mEasyToggle = (SwitchPreference) findPreference(PREF_QS_EASY_TOGGLE);
+        mEasyToggle.setOnPreferenceChangeListener(this);
+        mEasyToggle.setChecked((Settings.Secure.getInt(resolver,
+                Settings.Secure.QS_EASY_TOGGLE, 0) == 1));
     }
 
     @Override
@@ -224,6 +231,11 @@ public class MainSettings extends SettingsPreferenceFragment implements
             int columnsLandscape = (Integer) objValue;
             Settings.System.putInt(getContentResolver(),
                     Settings.System.DASHBOARD_LANDSCAPE_COLUMNS, columnsLandscape * 1);
+            return true;
+        } else if  (preference == mEasyToggle) {
+            boolean checked = ((SwitchPreference)preference).isChecked();
+            Settings.Secure.putInt(getActivity().getContentResolver(),
+                    Settings.Secure.QS_EASY_TOGGLE, checked ? 1:0);
             return true;
         }
         return false;
