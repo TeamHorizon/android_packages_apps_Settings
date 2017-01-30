@@ -97,23 +97,26 @@
         android:key="qs_layout_category"
         android:title="@string/qs_layout_category">
 
-        <ListPreference
+        <com.android.settings.preference.CustomSeekBarPreference
             android:key="qs_rows_portrait"
             android:title="@string/qs_rows_portrait_title"
-            android:entries="@array/qs_rows_portrait_entries"
-            android:entryValues="@array/qs_rows_portrait_values" />
+            settings:max="4"
+            settings:min="1"
+            settings:units="" />
 
-        <ListPreference
+        <com.android.settings.preference.CustomSeekBarPreference
             android:key="qs_rows_landscape"
             android:title="@string/qs_rows_landscape_title"
-            android:entries="@array/qs_rows_landscape_entries"
-            android:entryValues="@array/qs_rows_landscape_values" />
+            settings:max="3"
+            settings:min="1"
+            settings:units="" />
 
-        <ListPreference
+        <com.android.settings.preference.CustomSeekBarPreference
             android:key="qs_columns"
             android:title="@string/qs_columns_title"
-            android:entries="@array/qs_columns_entries"
-            android:entryValues="@array/qs_columns_values" />
+            settings:max="6"
+            settings:min="1"
+            settings:units="" />
 
         <com.android.settings.preference.SecureSettingSwitchPreference
             android:key="qs_easy_toggle"

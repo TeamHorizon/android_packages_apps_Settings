@@ -73,9 +73,9 @@ public class MainSettings extends SettingsPreferenceFragment implements
 
     private SwitchPreference mSelinux;
 
-    private ListPreference mRowsPortrait;
-    private ListPreference mRowsLandscape;
-    private ListPreference mQsColumns;
+    private CustomSeekBarPreference mRowsPortrait;
+    private CustomSeekBarPreference mRowsLandscape;
+    private CustomSeekBarPreference mQsColumns;
     private SwitchPreference mEasyToggle;
 
     private SwitchPreference mRecentsClearAll;
@@ -139,26 +139,23 @@ public class MainSettings extends SettingsPreferenceFragment implements
 
         int defaultValue;
 
-        mRowsPortrait = (ListPreference) findPreference(PREF_ROWS_PORTRAIT);
+        mRowsPortrait = (CustomSeekBarPreference) findPreference(PREF_ROWS_PORTRAIT);
         int rowsPortrait = Settings.Secure.getInt(getContentResolver(),
                 Settings.Secure.QS_ROWS_PORTRAIT, 3);
-        mRowsPortrait.setValue(String.valueOf(rowsPortrait));
-        mRowsPortrait.setSummary(mRowsPortrait.getEntry());
+        mRowsPortrait.setValue(rowsPortrait / 1);
         mRowsPortrait.setOnPreferenceChangeListener(this);
 
         defaultValue = getResources().getInteger(com.android.internal.R.integer.config_qs_num_rows_landscape_default);
-        mRowsLandscape = (ListPreference) findPreference(PREF_ROWS_LANDSCAPE);
+        mRowsLandscape = (CustomSeekBarPreference) findPreference(PREF_ROWS_LANDSCAPE);
         int rowsLandscape = Settings.Secure.getInt(getContentResolver(),
                 Settings.Secure.QS_ROWS_LANDSCAPE, defaultValue);
-        mRowsLandscape.setValue(String.valueOf(rowsLandscape));
-        mRowsLandscape.setSummary(mRowsLandscape.getEntry());
+        mRowsLandscape.setValue(rowsLandscape / 1);
         mRowsLandscape.setOnPreferenceChangeListener(this);
 
-        mQsColumns = (ListPreference) findPreference(PREF_COLUMNS);
+        mQsColumns = (CustomSeekBarPreference) findPreference(PREF_COLUMNS);
         int columnsQs = Settings.Secure.getInt(getContentResolver(),
                 Settings.Secure.QS_COLUMNS, 3);
-        mQsColumns.setValue(String.valueOf(columnsQs));
-        mQsColumns.setSummary(mQsColumns.getEntry());
+        mQsColumns.setValue(columnsQs / 1);
         mQsColumns.setOnPreferenceChangeListener(this);
     }
 
@@ -195,25 +192,19 @@ public class MainSettings extends SettingsPreferenceFragment implements
             }
             return true;
         } else if (preference == mRowsPortrait) {
-            intValue = Integer.valueOf((String) objValue);
-            index = mRowsPortrait.findIndexOfValue((String) objValue);
+            int rowsPortrait = (Integer) objValue;
             Settings.Secure.putInt(getContentResolver(),
-                    Settings.Secure.QS_ROWS_PORTRAIT, intValue);
-            preference.setSummary(mRowsPortrait.getEntries()[index]);
+                    Settings.Secure.QS_ROWS_PORTRAIT, rowsPortrait * 1);
             return true;
         } else if (preference == mRowsLandscape) {
-            intValue = Integer.valueOf((String) objValue);
-            index = mRowsLandscape.findIndexOfValue((String) objValue);
+            int rowsLandscape = (Integer) objValue;
             Settings.Secure.putInt(getContentResolver(),
-                    Settings.Secure.QS_ROWS_LANDSCAPE, intValue);
-            preference.setSummary(mRowsLandscape.getEntries()[index]);
+                    Settings.Secure.QS_ROWS_LANDSCAPE, rowsLandscape * 1);
             return true;
         } else if (preference == mQsColumns) {
-            intValue = Integer.valueOf((String) objValue);
-            index = mQsColumns.findIndexOfValue((String) objValue);
+            int columnsQs = (Integer) objValue;
             Settings.Secure.putInt(getContentResolver(),
-                    Settings.Secure.QS_COLUMNS, intValue);
-            preference.setSummary(mQsColumns.getEntries()[index]);
+                    Settings.Secure.QS_COLUMNS, columnsQs * 1);
             return true;
         } else if (preference == mRecentsClearAllLocation) {
             int location = Integer.valueOf((String) objValue);
