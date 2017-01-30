@@ -130,6 +130,28 @@
             android:key="dashboard_category"
             android:title="@string/dashboard_category">
 
+        <Preference
+                android:key="dashboard_columns"
+                android:title="@string/dashboard_columns_title"
+                android:summary="@string/dashboard_columns_summary"
+                android:selectable="false"/>
+
+        <com.android.settings.preference.CustomSeekBarPreference
+                android:key="dashboard_portrait_columns"
+                android:title="@string/dashboard_columns_portrait_title"
+                settings:max="3"
+                settings:min="1"
+                settings:units=""
+                android:persistent="false" />
+
+        <com.android.settings.preference.CustomSeekBarPreference
+                android:key="dashboard_landscape_columns"
+                android:title="@string/dashboard_columns_landscape_title"
+                settings:max="5"
+                settings:min="1"
+                settings:units=""
+                android:persistent="false" />
+
         <com.android.settings.preference.SystemSettingSwitchPreference
                 android:key="disable_dashboard_suggestions"
                 android:title="@string/dashboard_suggestions_title"
@@ -150,22 +172,6 @@
                 android:summaryOn="@string/remove_tile_summaries_summary_enabled"
                 android:summaryOff="@string/remove_tile_summaries_summary_disabled"
                 android:defaultValue="true" />
-
-        <com.android.settings.preference.CustomSeekBarPreference
-                android:key="dashboard_portrait_columns"
-                android:title="@string/dashboard_columns_portrait_title"
-                settings:max="3"
-                settings:min="1"
-                settings:units=""
-                android:persistent="false" />
-
-        <com.android.settings.preference.CustomSeekBarPreference
-                android:key="dashboard_landscape_columns"
-                android:title="@string/dashboard_columns_landscape_title"
-                settings:max="5"
-                settings:min="1"
-                settings:units=""
-                android:persistent="false" />
 
     </PreferenceCategory>
 
