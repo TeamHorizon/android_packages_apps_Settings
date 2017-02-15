@@ -14,12 +14,166 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- About phone screen, XenonHD version -->
+  <string name="xenonhd_version">XenonHD verzió</string>
+  <string name="xenonhd_version_default">Ismeretlen</string>
+  <string name="xenonhd_maintainer">Karbantartó</string>
+  <string name="xenonhd_maintainer_default">Ismeretlen</string>
   <!-- Changelog -->
+  <string name="changelog_xenonhd_title">Változásnapló</string>
+  <string name="changelog_xenonhd_error">Nem lehet betölteni a változások listáját</string>
+  <string name="changelog_xenonhd_summary">Legutolsó változások ellenőrzése</string>
   <!-- Density category -->
+  <string name="density_category">Sűrűségi beállítások</string>
   <!-- XenonOTA -->
+  <string name="xenonota_title">XenonHD frissítések</string>
+  <string name="xenonota_summary">ROM frissítések ellenőrzése</string>
   <!-- Dev Options Enabled by Default -->
+  <string name="show_dev_already_enabled">Nem szükséges, a fejlesztői beállítások engedélyezve vannak</string>
   <!-- Phone info shortcut -->
+  <string name="device_info_title">Telefon adatai</string>
   <!-- Local (desktop) backup password menu title [CHAR LIMIT=25] -->
+  <string name="local_backup_password_title">Asztali jelszó mentés</string>
   <!-- Double tap to sleep on lockscreen -->
+  <string name="double_tap_sleep_anywhere_title">Dupla érintéses lezárás a zárképernyőn</string>
+  <string name="double_tap_sleep_anywhere_summary">Zárképernyő dupla érintésére a készülék alvó módba kerül</string>
   <!-- Notification sound timeout -->
+  <string name="app_notification_sound_timeout_title">Értesítési hangok közötti minimum időtartam</string>
+  <string name="app_notification_sound_timeout_summary_template"><xliff:g id="duration">%1$s</xliff:g> alatt legfeljebb egy értesítési hang vagy rezgés engedélyezése</string>
+  <string name="app_notification_sound_timeout_value_none">Nincs korlátozás</string>
+  <string name="app_notification_sound_timeout_value_10_seconds">10 másodperc</string>
+  <string name="app_notification_sound_timeout_value_30_seconds">30 másodperc</string>
+  <string name="app_notification_sound_timeout_value_1_minute">1 perc</string>
+  <string name="app_notification_sound_timeout_value_5_minutes">5 perc</string>
+  <string name="app_notification_sound_timeout_value_15_minutes">10 perc</string>
+  <string name="app_notification_sound_timeout_value_30_minutes">30 perc</string>
+  <!-- Randomize MAC addresses -->
+  <string name="randomize_mac_title">Véletlenszerű MAC-címek</string>
+  <string name="randomize_mac_summary">Véletlenszerű MAC cím hozzárendelése, ha a hálózati eszközök engedélyezve vannak. A MAC cím véletlenszerűsége keresés közben ettől a kapcsolótól függetlenül engedélyezve van</string>
+  <string name="tethering_no_sim_alert_title">Nincs SIM kártya</string>
+  <string name="tethering_no_sim_card_text">Kérjük helyezze be a SIM kártyát annak érdekében, hogy adatkapcsolatát megoszthassa más eszközökkel mobil hotszpot vagy USB-s internetmegosztás segítségével</string>
+  <string name="tether_settings_launch_title">Mobil hotszpot</string>
+  <string name="wifi_tether_first_use_message">Mobil hotszpot beállítása első használatánál</string>
+  <!-- Volume Steps -->
+  <string name="volume_steps_title">Hangerő lépések</string>
+  <string name="volume_steps_alarm_title">Riasztások</string>
+  <string name="volume_steps_dtmf_title">Tárcsázás</string>
+  <string name="volume_steps_music_title">Zene</string>
+  <string name="volume_steps_notification_title">Értesítések</string>
+  <string name="volume_steps_ring_title">Csengetés</string>
+  <string name="volume_steps_system_title">Rendszer</string>
+  <string name="volume_steps_voice_call_title">Hanghívás</string>
+  <string name="volume_steps_reset">Visszaállitás</string>
+  <!-- DayNight Theme -->
+  <string name="night_mode_title">Téma</string>
+  <string name="night_mode_no">Világos</string>
+  <string name="night_mode_yes">Sötét</string>
+  <!-- Screenshot sound -->
+  <string name="screenshot_sound_title">Képernyőkép hangja</string>
+  <string name="screenshot_sound_summary">Hang lejátszása képernyőkép készítésekor</string>
+  <!-- Manage applications: show substratum overlays -->
+  <string name="filter_substratum_apps">Substratum fedvények</string>
+  <string name="menu_show_substratum">Fedvények megjelenítése</string>
+  <string name="menu_hide_substratum">Fedvények elrejtése</string>
+  <!-- Manage applications: show substratum icon overlays -->
+  <string name="filter_substratum_icons">Substratum ikonfedvények</string>
+  <string name="menu_show_substratum_icons">Ikonfedvények megjelenítése</string>
+  <string name="menu_hide_substratum_icons">Ikonfedvények elrejtése</string>
+  <!-- XenonHD Configurations-->
+  <string name="xenonhd_title">Testreszabás</string>
+  <string name="xenonhd_misc_title">Vegyes</string>
+  <string name="xenonhd_lockscreen_title">Zárképernyő</string>
+  <string name="xenonhd_ui_title">Felhasználói felület</string>
+  <!-- Selinux Switch -->
+  <string name="selinux_switch_title">SELinux váltási figyelmeztetés</string>
+  <string name="selinux_switch_summary">A SELinux egy sor kernel módosítás és felhasználói téri eszköz. Mód váltása root hozzáférést igényel és nemkívánatos hatásokat okozhat. Engedélyezett mód ajánlott. Saját felelősségére használja</string>
+  <string name="selinux_title">SELinux mód</string>
+  <string name="selinux_permissive_title">Engedélyező</string>
+  <string name="selinux_enforcing_title">Kényszerítés</string>
+  <!-- Recents Membar -->
+  <string name="recents_membar">Memóriasáv</string>
+  <string name="systemui_recents_mem_display_title">Memóriasáv megjelenítése</string>
+  <string name="systemui_recents_mem_display_summary">Szabad RAM sáv megjelenítése az alkalmazáselőzmények nézetben</string>
+  <!-- Quick settings config -->
+  <string name="qs_layout_category">Gyorsbeállítások beállításai</string>
+  <string name="qs_rows_portrait_title">Sorok (álló)</string>
+  <string name="qs_rows_landscape_title">Sorok (fekvő)</string>
+  <string name="qs_columns_title">Oszlopok</string>
+  <string name="qs_easy_toggle_title">Haladó gyorskapcsoló csempe</string>
+  <string name="qs_easy_toggle_summary">Engedélyezése után egy érintéssel kapcsolja ki/be a Wi-Fi-t, mobil adatkapcsolatot és Bluetooth-t. Hosszan nyomásukra visz a haladó beállításokba</string>
+  <!-- Media art -->
+  <string name="media_art_title">Média borítója</string>
+  <string name="media_art_summary">Engedélyezze a média borítóját a zárképernyőn</string>
+  <!-- Quick unlock -->
+  <string name="quick_unlock_warning">Gyors feloldási figyelmeztetés</string>
+  <string name="quick_unlock_warning_summary">Ez a funkció mellőzi a fontos biztonsági mechanizmusokat és majdnem biztosan rosszul kezeli a többfelhasználós módot. Használja saját felelősségre</string>
+  <string name="unlock_quick_unlock_control_title">Gyors feloldás</string>
+  <string name="unlock_quick_unlock_control_summary">Automatikus feloldás a helyes jelszó/PIN kód megadásakor</string>
+  <!-- Three-fingers-swipe to screenshot -->
+  <string name="three_finger_gesture">Képernyőkép csúsztatással</string>
+  <string name="three_finger_gesture_summary">Csúsztasson három ujjal képernyőkép készítéséhez</string>
+  <!-- Long press back to kill configurable timeout -->
+  <string name="kill_app_longpress_timeout_title">Vissza gomb hosszan nyomásának időtartama</string>
+  <string name="timeout_2000">2 másodperc (alapértelmezett)</string>
+  <string name="timeout_1500">1,5 másodperc</string>
+  <string name="timeout_1000">1 másodperc</string>
+  <string name="timeout_500">0,5 másodperc</string>
+  <!-- Doze pulse options -->
+  <string name="summary_doze_enabled">Engedélyezve</string>
+  <string name="summary_doze_disabled">Kikapcsolva</string>
+  <string name="doze_overwrite_value_title">Alapértékek felülírása</string>
+  <string name="doze_overwrite_value_summary">Alapértékek felhasználó általi felülírásának engedélyezése</string>
+  <string name="doze_pulse_title">Felhasználó által állítható beállítások</string>
+  <string name="doze_pulse_duration_in_title">Előtűnés</string>
+  <string name="doze_pulse_duration_visible_title">Látható időtartam</string>
+  <string name="doze_pulse_duration_out_title">Eltűnés</string>
+  <string name="doze_trigger_pickup_title">Felemelő mozdulat</string>
+  <string name="doze_trigger_pickup_summary_on">A kijelző felvillanása a készülék felemelését követően</string>
+  <string name="doze_trigger_pickup_summary_off">Felemelés nem fogja felvillantani a kijelzőt</string>
+  <string name="doze_trigger_notification_title">Értesítések</string>
+  <string name="doze_trigger_notification_summary_on">Képernyő felvillanása értesítéskor</string>
+  <string name="doze_trigger_notification_summary_off">Értesítések nem lesznek kiváltó események</string>
+  <string name="doze_brightness_level_title">Fényerőszint</string>
+  <string name="onehundred_ms">100 ms</string>
+  <string name="twofifty_ms">250 ms</string>
+  <string name="fivehundred_ms_default">500 ms (alapértelmezett)</string>
+  <string name="sevenfifty_ms">750 ms</string>
+  <string name="one_second">1 mp</string>
+  <string name="onehalf_second">1,5 mp</string>
+  <string name="two_second">2 mp</string>
+  <string name="twohalf_second">2,5 mp</string>
+  <string name="three_second_default">3 mp (alapértelmezett)</string>
+  <string name="threehalf_second">3,5 mp</string>
+  <string name="four_second">4 mp</string>
+  <string name="fourhalf_second">4,5 mp</string>
+  <string name="five_second">5 mp</string>
+  <string name="doze_notification_color_invert_title">Értesítések invertálása</string>
+  <string name="doze_notification_color_invert_summary_off">Értesítések nem lesznek invertálva. Sötét téma esetén használja</string>
+  <string name="doze_notification_color_invert_summary_on">Értesítések invertálva lesznek. Világos/gyári téma esetén használja</string>
+  <string name="ambient_display_show_battery_title">Akkumulátor állapota</string>
+  <string name="ambient_display_show_battery_summary">Akkumulátorikon megjelenítése a felvillanás során</string>
+  <!-- Recents panel settings -->
+  <string name="show_clear_all_recents_button_title">Összes törlése gomb</string>
+  <string name="show_clear_all_recents_button_summary">Összes törlése gomb megjelenítése az alkalmazáselőzmények képernyőn</string>
+  <string name="recents_clear_all_location_title">Összes törlése gomb helye</string>
+  <string name="recents_clear_all_location_top_right">Jobb fent</string>
+  <string name="recents_clear_all_location_top_left">Bal fent</string>
+  <string name="recents_clear_all_location_top_center">Fent középen</string>
+  <string name="recents_clear_all_location_bottom_right">Jobb alul</string>
+  <string name="recents_clear_all_location_bottom_left">Bal alul</string>
+  <string name="recents_clear_all_location_bottom_center">Alul középen</string>
+  <!-- Dashboard options -->
+  <string name="dashboard_category">Irányítópult beállítások</string>
+  <string name="dashboard_suggestions_title">Javaslatok</string>
+  <string name="summary_dashboard_suggestions_enabled">Irányítópult javaslatok bekapcsolva</string>
+  <string name="summary_dashboard_suggestions_disabled">Irányítópult javaslatok kikapcsolva</string>
+  <string name="remove_tile_summaries_title">Összefoglalók</string>
+  <string name="remove_tile_summaries_summary_enabled">Irányítópult összefoglalók bekapcsolva</string>
+  <string name="remove_tile_summaries_summary_disabled">Irányítópult összefoglalók kikapcsolva</string>
+  <string name="dashboard_conditions_title">Feltételek</string>
+  <string name="summary_dashboard_conditions_enabled">Irányítópult feltételek bekapcsolva</string>
+  <string name="summary_dashboard_conditions_disabled">Irányítópult feltételek kikapcsolva</string>
+  <string name="dashboard_columns_title">Irányítópult oszlopok</string>
+  <string name="dashboard_columns_summary">Az irányítópulton megjelenő oszlopok számának módosítása</string>
+  <string name="dashboard_columns_portrait_title">Oszlopok (álló)</string>
+  <string name="dashboard_columns_landscape_title">Oszlopok (fekvő)</string>
 </resources>

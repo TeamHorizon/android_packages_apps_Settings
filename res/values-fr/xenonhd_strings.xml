@@ -14,24 +14,31 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- About phone screen, XenonHD version -->
-  <string name="xenonhd_version">Version XenonHD</string>
+  <string name="xenonhd_version">Version de XenonHD</string>
   <string name="xenonhd_version_default">Inconnu</string>
+  <string name="xenonhd_maintainer">Mainteneur</string>
+  <string name="xenonhd_maintainer_default">Inconnu</string>
   <!-- Changelog -->
   <string name="changelog_xenonhd_title">Note de version</string>
   <string name="changelog_xenonhd_error">Impossible de charger le journal des changements</string>
   <string name="changelog_xenonhd_summary">Vérifier les modifications dans la version actuelle</string>
   <!-- Density category -->
+  <string name="density_category">Options de densité</string>
   <!-- XenonOTA -->
-  <string name="xenonota_title">Mises à jour XenonHD</string>
+  <string name="xenonota_title">Mises à jour de XenonHD</string>
   <string name="xenonota_summary">Rechercher les mises à jour de ROM</string>
   <!-- Dev Options Enabled by Default -->
-  <string name="show_dev_already_enabled">Inutile, les options de développement sont activées par défaut.</string>
+  <string name="show_dev_already_enabled">Inutile, les options de développement sont activées par défaut</string>
   <!-- Phone info shortcut -->
-  <string name="device_info_title">Infos téléphone</string>
+  <string name="device_info_title">Informations sur l\'appareil</string>
   <!-- Local (desktop) backup password menu title [CHAR LIMIT=25] -->
+  <string name="local_backup_password_title">Mot de passe de sauvegarde bureau</string>
   <!-- Double tap to sleep on lockscreen -->
+  <string name="double_tap_sleep_anywhere_title">Veille par double appui sur l\'écran de verrouillage</string>
   <string name="double_tap_sleep_anywhere_summary">Tapez deux fois sur l\'écran de verrouillage pour mettre l\'appareil en veille</string>
   <!-- Notification sound timeout -->
+  <string name="app_notification_sound_timeout_title">Temps minimum entre les sons de notification</string>
+  <string name="app_notification_sound_timeout_summary_template">Permettent des sons ou des vibrations non plus d’une fois chaque <xliff:g id="duration">%1$s </xliff:g> <xliff:g id="duration">%1$s</xliff:g></string>
   <string name="app_notification_sound_timeout_value_none">Aucune restriction</string>
   <string name="app_notification_sound_timeout_value_10_seconds">10 secondes</string>
   <string name="app_notification_sound_timeout_value_30_seconds">30 secondes</string>
@@ -39,4 +46,117 @@
   <string name="app_notification_sound_timeout_value_5_minutes">5 minutes</string>
   <string name="app_notification_sound_timeout_value_15_minutes">10 minutes</string>
   <string name="app_notification_sound_timeout_value_30_minutes">30 minutes</string>
+  <!-- Randomize MAC addresses -->
+  <string name="randomize_mac_title">Alternez les adresses MAC</string>
+  <string name="randomize_mac_summary">Attribuer des adresses MAC aléatoires lorsque des périphériques réseau sont activés</string>
+  <string name="tethering_no_sim_alert_title">Pas de carte SIM</string>
+  <string name="tethering_no_sim_card_text">S’il vous plaît, installer une carte SIM afin de partager votre connexion de données avec d’autres appareils</string>
+  <string name="tether_settings_launch_title">Point d’accès mobile</string>
+  <string name="wifi_tether_first_use_message">Mettre en place un hotspot mobile lors de la première utilisation</string>
+  <!-- Volume Steps -->
+  <string name="volume_steps_title">Niveaux du volume</string>
+  <string name="volume_steps_alarm_title">Alarme</string>
+  <string name="volume_steps_dtmf_title">DTMF (numérotation)</string>
+  <string name="volume_steps_music_title">Musique</string>
+  <string name="volume_steps_notification_title">Notification</string>
+  <string name="volume_steps_ring_title">Sonnerie</string>
+  <string name="volume_steps_system_title">Système</string>
+  <string name="volume_steps_voice_call_title">Appel vocal</string>
+  <string name="volume_steps_reset">Remise à zéro</string>
+  <!-- DayNight Theme -->
+  <string name="night_mode_title">Thème</string>
+  <string name="night_mode_no">Clair</string>
+  <string name="night_mode_yes">Sombre</string>
+  <!-- Screenshot sound -->
+  <string name="screenshot_sound_title">Son de capture d\'écran</string>
+  <string name="screenshot_sound_summary">Émettre un son lors de la capture d\'écran</string>
+  <!-- Manage applications: show substratum overlays -->
+  <string name="filter_substratum_apps">Surcouches Substratum</string>
+  <string name="menu_show_substratum">Afficher les surcouches</string>
+  <string name="menu_hide_substratum">Masquer les surcouches</string>
+  <!-- Manage applications: show substratum icon overlays -->
+  <string name="filter_substratum_icons">Icône surcouches Substratum</string>
+  <string name="menu_show_substratum_icons">Afficher les icônes de surcouches</string>
+  <string name="menu_hide_substratum_icons">Masquer les icônes de surcouches</string>
+  <!-- XenonHD Configurations-->
+  <string name="xenonhd_title">Configuration
+</string>
+  <string name="xenonhd_misc_title">Réglages divers</string>
+  <string name="xenonhd_lockscreen_title">Écran de verrouillage</string>
+  <string name="xenonhd_ui_title">Interface utilisateur</string>
+  <!-- Selinux Switch -->
+  <string name="selinux_switch_title">Attention changement d\'état Selinux</string>
+  <string name="selinux_switch_summary">SELinux est un un ensemble de modification apporter au kernel et à la mémoire de stockage utile. Changer ce mode nécessite un appareil enraciné et peut causer des effets indésirables. Le mode Permissive est recommandé. A utiliser à vos risques et périls</string>
+  <string name="selinux_title">Mode de Selinux</string>
+  <string name="selinux_permissive_title">Permissif</string>
+  <string name="selinux_enforcing_title">Appliqué</string>
+  <!-- Recents Membar -->
+  <string name="recents_membar">Barre de mémoire</string>
+  <string name="systemui_recents_mem_display_title">Afficher la barre de mémoire</string>
+  <string name="systemui_recents_mem_display_summary">Afficher la barre de RAM libre dans le multitâche</string>
+  <!-- Quick settings config -->
+  <string name="qs_layout_category">Options de configuration rapides</string>
+  <string name="qs_rows_portrait_title">Lignes (portrait)</string>
+  <string name="qs_rows_landscape_title">Lignes (paysage)</string>
+  <string name="qs_columns_title">Colonnes</string>
+  <string name="qs_easy_toggle_title">Commutateurs rapides</string>
+  <!-- Media art -->
+  <string name="media_art_title">Pochette de l\'album</string>
+  <string name="media_art_summary">Afficher la pochette d\'album sur l\'écran de verrouillage</string>
+  <!-- Quick unlock -->
+  <string name="quick_unlock_warning">Attention déverrouillage rapide</string>
+  <string name="quick_unlock_warning_summary">Cette fonctionnalité permet de contourner les mécanismes de sécurité important et malmène certainement plusieurs support utilisateurs. Utiliser à vos risques et périls</string>
+  <string name="unlock_quick_unlock_control_title">Déverrouillage rapide</string>
+  <string name="unlock_quick_unlock_control_summary">Déverouille automatiquement l\'appareil lorsque le PIN/mot de passe correct est entré</string>
+  <!-- Three-fingers-swipe to screenshot -->
+  <string name="three_finger_gesture">Glisser pour prendre une capture d\'écran</string>
+  <string name="three_finger_gesture_summary">Faites glisser trois doigts pour prendre une capture d’écran</string>
+  <!-- Long press back to kill configurable timeout -->
+  <string name="kill_app_longpress_timeout_title">Délai du retour avec le bouton retour</string>
+  <string name="timeout_2000">2 secondes (par défaut)</string>
+  <string name="timeout_1500">1.5 secondes</string>
+  <string name="timeout_1000">1 seconde</string>
+  <string name="timeout_500">0.5 seconde</string>
+  <!-- Doze pulse options -->
+  <string name="summary_doze_enabled">Activé</string>
+  <string name="summary_doze_disabled">Désactivé</string>
+  <string name="doze_overwrite_value_title">Écraser les valeurs par défaut</string>
+  <string name="doze_overwrite_value_summary">Permettre de remplacer la valeur par défaut par la configuration de l\'utilisateur</string>
+  <string name="doze_pulse_title">Paramètres configurables de l’utilisateur</string>
+  <string name="doze_pulse_duration_in_title">Délai d\'ouverture</string>
+  <string name="doze_pulse_duration_visible_title">Durée visible</string>
+  <string name="doze_pulse_duration_out_title">Délai de fermeture</string>
+  <string name="doze_trigger_pickup_title">Déclenchement par détection de geste</string>
+  <string name="doze_trigger_pickup_summary_on">Activer l\'écran lors de la prise en main de l\'appareil</string>
+  <string name="doze_trigger_pickup_summary_off">Ne pas activer l\'écran lors de la prise en main de l\'appareil</string>
+  <string name="doze_trigger_notification_title">Déclenchement des notifications</string>
+  <string name="doze_trigger_notification_summary_on">Activer l\'écran lors de la réception de notifications</string>
+  <string name="doze_trigger_notification_summary_off">Ne pas activer l\'écran lors de la réception de notifications</string>
+  <string name="doze_brightness_level_title">Niveau de luminosité</string>
+  <string name="fivehundred_ms_default">500 ms (Par défaut)</string>
+  <string name="one_second">1 sec</string>
+  <string name="onehalf_second">1,5 sec</string>
+  <string name="two_second">2 sec</string>
+  <string name="twohalf_second">2. 5 sec</string>
+  <string name="three_second_default">3 sec (Par défaut)</string>
+  <string name="threehalf_second">3.5 sec</string>
+  <string name="four_second">4 sec</string>
+  <string name="fourhalf_second">4. 5 sec</string>
+  <string name="five_second">5 sec</string>
+  <string name="doze_notification_color_invert_title">Inversion de notification</string>
+  <string name="doze_notification_color_invert_summary_off">Les notifications du mode Veille ne seront pas inversées. À utiliser avec des thèmes sombres</string>
+  <string name="doze_notification_color_invert_summary_on">Les notifications du mode Veille seront inversées. À utiliser avec des thèmes sombres ou d\'usine (par défaut)</string>
+  <string name="ambient_display_show_battery_title">État de la batterie</string>
+  <string name="ambient_display_show_battery_summary">Afficher l\'icône de la batterie pendant la pulsation</string>
+  <!-- Recents panel settings -->
+  <string name="show_clear_all_recents_button_title">Activer le bouton \"tout effacer\"</string>
+  <string name="show_clear_all_recents_button_summary">Afficher le tout effacer lorsque vous utilisez le multitâche</string>
+  <string name="recents_clear_all_location_title">Position du bouton \"tout effacer\"</string>
+  <string name="recents_clear_all_location_top_right">En haut à droite</string>
+  <string name="recents_clear_all_location_top_left">En haut à gauche</string>
+  <string name="recents_clear_all_location_top_center">En haut au centre</string>
+  <string name="recents_clear_all_location_bottom_right">En bas à droite</string>
+  <string name="recents_clear_all_location_bottom_left">En bas à gauche</string>
+  <string name="recents_clear_all_location_bottom_center">En bas au centre</string>
+  <!-- Dashboard options -->
 </resources>

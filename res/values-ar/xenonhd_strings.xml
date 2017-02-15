@@ -14,12 +14,40 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- About phone screen, XenonHD version -->
+  <string name="xenonhd_version_default">مجهول</string>
+  <string name="xenonhd_maintainer_default">مجهول</string>
   <!-- Changelog -->
+  <string name="changelog_xenonhd_title">سجل التغيرات</string>
+  <string name="changelog_xenonhd_error">غير قادر على تحميل سجل التغييرات</string>
+  <string name="changelog_xenonhd_summary">التحقق من التغييرات في البيلد الحالي</string>
   <!-- Density category -->
+  <string name="density_category">خيارات الكثافة</string>
   <!-- XenonOTA -->
+  <string name="xenonota_title">تحديثات XenonHD</string>
+  <string name="xenonota_summary">التحقق من وجود تحديثات ROM</string>
   <!-- Dev Options Enabled by Default -->
   <!-- Phone info shortcut -->
+  <string name="device_info_title">معلومات الهاتف</string>
   <!-- Local (desktop) backup password menu title [CHAR LIMIT=25] -->
   <!-- Double tap to sleep on lockscreen -->
   <!-- Notification sound timeout -->
+  <!-- Randomize MAC addresses -->
+  <!-- Volume Steps -->
+  <!-- DayNight Theme -->
+  <!-- Screenshot sound -->
+  <!-- Manage applications: show substratum overlays -->
+  <!-- Manage applications: show substratum icon overlays -->
+  <!-- XenonHD Configurations-->
+  <!-- Selinux Switch -->
+  <!-- Recents Membar -->
+  <!-- Quick settings config -->
+  <!-- Media art -->
+  <!-- Quick unlock -->
+  <!-- Three-fingers-swipe to screenshot -->
+  <!-- Long press back to kill configurable timeout -->
+  <!-- Doze pulse options -->
+  <string name="summary_doze_enabled">مفعل</string>
+  <string name="summary_doze_disabled">غير مفعل</string>
+  <!-- Recents panel settings -->
+  <!-- Dashboard options -->
 </resources>

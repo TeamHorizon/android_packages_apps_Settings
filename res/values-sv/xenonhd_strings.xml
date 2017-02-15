@@ -14,8 +14,8 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- About phone screen, XenonHD version -->
-  <string name="xenonhd_version">XenonHD-version</string>
   <string name="xenonhd_version_default">Okänd</string>
+  <string name="xenonhd_maintainer_default">Okänd</string>
   <!-- Changelog -->
   <string name="changelog_xenonhd_title">Ändringslogg</string>
   <string name="changelog_xenonhd_error">Kan inte ladda ändringslogg</string>
@@ -26,7 +26,46 @@
   <string name="xenonota_summary">Sök efter ROM-uppdateringar</string>
   <!-- Dev Options Enabled by Default -->
   <!-- Phone info shortcut -->
+  <string name="device_info_title">Telefoninfo</string>
   <!-- Local (desktop) backup password menu title [CHAR LIMIT=25] -->
   <!-- Double tap to sleep on lockscreen -->
+  <string name="double_tap_sleep_anywhere_title">DT2S på låsskärmen</string>
   <!-- Notification sound timeout -->
+  <string name="app_notification_sound_timeout_value_none">Ingen begränsning</string>
+  <string name="app_notification_sound_timeout_value_10_seconds">10 sekunder</string>
+  <string name="app_notification_sound_timeout_value_30_seconds">30 sekunder</string>
+  <string name="app_notification_sound_timeout_value_1_minute">1 minut</string>
+  <string name="app_notification_sound_timeout_value_5_minutes">5 minuter</string>
+  <string name="app_notification_sound_timeout_value_15_minutes">10 minuter</string>
+  <string name="app_notification_sound_timeout_value_30_minutes">30 minuter</string>
+  <!-- Randomize MAC addresses -->
+  <string name="randomize_mac_title">Slumpa MAC-adresser</string>
+  <string name="tethering_no_sim_alert_title">Inget SIM-kort</string>
+  <!-- Volume Steps -->
+  <string name="volume_steps_title">Volymsteg</string>
+  <string name="volume_steps_music_title">Musik</string>
+  <string name="volume_steps_reset">Återställ</string>
+  <!-- DayNight Theme -->
+  <string name="night_mode_title">Tema</string>
+  <string name="night_mode_no">Ljus</string>
+  <string name="night_mode_yes">Mörk</string>
+  <!-- Screenshot sound -->
+  <string name="screenshot_sound_title">Skärmdumpsljud</string>
+  <!-- Manage applications: show substratum overlays -->
+  <!-- Manage applications: show substratum icon overlays -->
+  <!-- XenonHD Configurations-->
+  <string name="xenonhd_title">Konfigurationer</string>
+  <!-- Selinux Switch -->
+  <string name="selinux_permissive_title">Tillåtande</string>
+  <!-- Recents Membar -->
+  <!-- Quick settings config -->
+  <!-- Media art -->
+  <!-- Quick unlock -->
+  <!-- Three-fingers-swipe to screenshot -->
+  <!-- Long press back to kill configurable timeout -->
+  <!-- Doze pulse options -->
+  <string name="summary_doze_enabled">Aktiverad</string>
+  <string name="summary_doze_disabled">Inaktiverad</string>
+  <!-- Recents panel settings -->
+  <!-- Dashboard options -->
 </resources>

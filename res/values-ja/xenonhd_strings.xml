@@ -14,12 +14,86 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- About phone screen, XenonHD version -->
+  <string name="xenonhd_version">XenonHDバージョン</string>
+  <string name="xenonhd_version_default">不明</string>
+  <string name="xenonhd_maintainer">メンテナ</string>
+  <string name="xenonhd_maintainer_default">不明</string>
   <!-- Changelog -->
+  <string name="changelog_xenonhd_title">更新履歴</string>
+  <string name="changelog_xenonhd_error">更新履歴を読み込めませんでした</string>
   <!-- Density category -->
   <!-- XenonOTA -->
+  <string name="xenonota_title">XenonHDの更新</string>
   <!-- Dev Options Enabled by Default -->
   <!-- Phone info shortcut -->
+  <string name="device_info_title">携帯電話情報</string>
   <!-- Local (desktop) backup password menu title [CHAR LIMIT=25] -->
+  <string name="local_backup_password_title">PCバックアップパスワード</string>
   <!-- Double tap to sleep on lockscreen -->
+  <string name="double_tap_sleep_anywhere_title">ロック画面をダブルタップしてスリープ</string>
   <!-- Notification sound timeout -->
+  <string name="app_notification_sound_timeout_value_10_seconds">10秒</string>
+  <string name="app_notification_sound_timeout_value_30_seconds">30秒</string>
+  <string name="app_notification_sound_timeout_value_1_minute">1分</string>
+  <string name="app_notification_sound_timeout_value_5_minutes">5分</string>
+  <string name="app_notification_sound_timeout_value_15_minutes">10分</string>
+  <string name="app_notification_sound_timeout_value_30_minutes">30分</string>
+  <!-- Randomize MAC addresses -->
+  <string name="tethering_no_sim_alert_title">SIMカードが挿入されていません</string>
+  <!-- Volume Steps -->
+  <string name="volume_steps_music_title">音楽</string>
+  <string name="volume_steps_reset">リセット</string>
+  <!-- DayNight Theme -->
+  <string name="night_mode_title">テーマ</string>
+  <!-- Screenshot sound -->
+  <string name="screenshot_sound_title">スクリーンショットの音</string>
+  <string name="screenshot_sound_summary">スクリーンショットを取得した際に効果音を鳴らす</string>
+  <!-- Manage applications: show substratum overlays -->
+  <!-- Manage applications: show substratum icon overlays -->
+  <!-- XenonHD Configurations-->
+  <!-- Selinux Switch -->
+  <string name="selinux_title">SELinuxモード</string>
+  <string name="selinux_permissive_title">Permissive</string>
+  <string name="selinux_enforcing_title">Enforcing</string>
+  <!-- Recents Membar -->
+  <string name="recents_membar">メモリ使用量バー</string>
+  <string name="systemui_recents_mem_display_title">メモリ使用量を表示する</string>
+  <!-- Quick settings config -->
+  <!-- Media art -->
+  <!-- Quick unlock -->
+  <string name="unlock_quick_unlock_control_title">クイックロック解除</string>
+  <string name="unlock_quick_unlock_control_summary">正しいPIN/パスワードが入力されたときはロックを自動的に解除する</string>
+  <!-- Three-fingers-swipe to screenshot -->
+  <!-- Long press back to kill configurable timeout -->
+  <!-- Doze pulse options -->
+  <string name="summary_doze_enabled">有効</string>
+  <string name="summary_doze_disabled">無効</string>
+  <string name="doze_overwrite_value_title">既定値を上書き</string>
+  <string name="doze_overwrite_value_summary">ユーザーの設定を既定値に上書きする</string>
+  <string name="doze_pulse_duration_in_title">フェードイン</string>
+  <string name="doze_pulse_duration_visible_title">表示時間を指定</string>
+  <string name="doze_pulse_duration_out_title">フェードアウト</string>
+  <string name="doze_trigger_notification_title">通知トリガー</string>
+  <string name="doze_brightness_level_title">明るさレベル</string>
+  <string name="onehundred_ms">100 ミリ秒</string>
+  <string name="twofifty_ms">250 ミリ秒</string>
+  <string name="fivehundred_ms_default">500 ミリ秒 (規定値)</string>
+  <string name="sevenfifty_ms">750 ミリ秒</string>
+  <string name="one_second">1秒</string>
+  <string name="onehalf_second">1.5秒</string>
+  <string name="two_second">2秒</string>
+  <string name="twohalf_second">2.5秒</string>
+  <string name="three_second_default">3秒 (規定値)</string>
+  <string name="threehalf_second">3.5秒</string>
+  <string name="four_second">4秒</string>
+  <string name="fourhalf_second">4.5秒</string>
+  <string name="five_second">5秒</string>
+  <!-- Recents panel settings -->
+  <string name="recents_clear_all_location_top_right">右上</string>
+  <string name="recents_clear_all_location_top_left">左上</string>
+  <string name="recents_clear_all_location_top_center">中央上</string>
+  <string name="recents_clear_all_location_bottom_right">右下</string>
+  <string name="recents_clear_all_location_bottom_left">左下</string>
+  <string name="recents_clear_all_location_bottom_center">中央下</string>
+  <!-- Dashboard options -->
 </resources>

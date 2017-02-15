@@ -16,6 +16,8 @@
   <!-- About phone screen, XenonHD version -->
   <string name="xenonhd_version">Версия XenonHD</string>
   <string name="xenonhd_version_default">Неизвестно</string>
+  <string name="xenonhd_maintainer">Сопровождающий</string>
+  <string name="xenonhd_maintainer_default">Неизвестно</string>
   <!-- Changelog -->
   <string name="changelog_xenonhd_title">Список изменений</string>
   <string name="changelog_xenonhd_error">Невозможно загрузить список изменений</string>
@@ -26,7 +28,7 @@
   <string name="xenonota_title">Обновления XenonHD</string>
   <string name="xenonota_summary">Проверить наличие обновлений прошивки</string>
   <!-- Dev Options Enabled by Default -->
-  <string name="show_dev_already_enabled">Не нужно, настройки для разработчиков включены по умолчанию.</string>
+  <string name="show_dev_already_enabled">Не нужно, настройки для разработчиков включены по умолчанию</string>
   <!-- Phone info shortcut -->
   <string name="device_info_title">Информация об устройстве</string>
   <!-- Local (desktop) backup password menu title [CHAR LIMIT=25] -->
@@ -44,4 +46,134 @@
   <string name="app_notification_sound_timeout_value_5_minutes">5 минут</string>
   <string name="app_notification_sound_timeout_value_15_minutes">10 минут</string>
   <string name="app_notification_sound_timeout_value_30_minutes">30 минут</string>
+  <!-- Randomize MAC addresses -->
+  <string name="randomize_mac_title">Рандомизировать MAC-адреса</string>
+  <string name="randomize_mac_summary">Назначать случайные MAC адреса, когда сетевые устройства включены. Рандомизация MAC адресов используется во время сканирования, независимо от того, включена она или нет</string>
+  <string name="tethering_no_sim_alert_title">Нет SIM-карты</string>
+  <string name="tethering_no_sim_card_text">Пожалуйста установите SIM-карту, чтобы предоставить другим устройствам, использующим мобильную точку доступа, доступ в Интернет</string>
+  <string name="tether_settings_launch_title">Мобильная точка доступа</string>
+  <string name="wifi_tether_first_use_message">Настроить мобильную точку доступа при первом использовании</string>
+  <!-- Volume Steps -->
+  <string name="volume_steps_title">Уровни громкости</string>
+  <string name="volume_steps_alarm_title">Будильник</string>
+  <string name="volume_steps_dtmf_title">DTMF (набор)</string>
+  <string name="volume_steps_music_title">Музыка</string>
+  <string name="volume_steps_notification_title">Уведомления</string>
+  <string name="volume_steps_ring_title">Звонок</string>
+  <string name="volume_steps_system_title">Система</string>
+  <string name="volume_steps_voice_call_title">Голосовой вызов</string>
+  <string name="volume_steps_reset">Сброс</string>
+  <!-- DayNight Theme -->
+  <string name="night_mode_title">Тема</string>
+  <string name="night_mode_no">Светлая</string>
+  <string name="night_mode_yes">Тёмная</string>
+  <!-- Screenshot sound -->
+  <string name="screenshot_sound_title">Звук скриншота</string>
+  <string name="screenshot_sound_summary">Проигрывать звук при скриншоте</string>
+  <!-- Manage applications: show substratum overlays -->
+  <string name="filter_substratum_apps">Слои Substratum</string>
+  <string name="menu_show_substratum">Показывать слои</string>
+  <string name="menu_hide_substratum">Скрыть слои</string>
+  <!-- Manage applications: show substratum icon overlays -->
+  <string name="filter_substratum_icons">Слои Substratum для значков</string>
+  <string name="menu_show_substratum_icons">Показывать слои для значков</string>
+  <string name="menu_hide_substratum_icons">Скрыть слои для значков</string>
+  <!-- XenonHD Configurations-->
+  <string name="xenonhd_title">Расширенные настройки</string>
+  <string name="xenonhd_misc_title">Разное</string>
+  <string name="xenonhd_lockscreen_title">Экран блокировки</string>
+  <string name="xenonhd_ui_title">Пользовательский интерфейс</string>
+  <!-- Selinux Switch -->
+  <string name="selinux_switch_title">Предупреждение</string>
+  <string name="selinux_switch_summary">SELinux - это набор модификаций ядра и инструментов пользовательского пространства. Изменение режимов может привести к нежелательным последствиям. Рекомендуется режим \"Только предупреждение\". Используйте на свой риск</string>
+  <string name="selinux_title">Режим SELinux</string>
+  <string name="selinux_permissive_title">Только предупреждение</string>
+  <string name="selinux_enforcing_title">Блокировка</string>
+  <!-- Recents Membar -->
+  <string name="recents_membar">Панель ОЗУ</string>
+  <string name="systemui_recents_mem_display_title">Показывать панель использования ОЗУ</string>
+  <string name="systemui_recents_mem_display_summary">Показывать панель свободной ОЗУ в меню недавних приложений</string>
+  <!-- Quick settings config -->
+  <string name="qs_layout_category">Опции быстрых настроек</string>
+  <string name="qs_rows_portrait_title">Строки (портрет)</string>
+  <string name="qs_rows_landscape_title">Строки (ландшафт)</string>
+  <string name="qs_columns_title">Количество столбцов</string>
+  <string name="qs_easy_toggle_title">Расширенный упрощенный переключатель быстрых настроек</string>
+  <string name="qs_easy_toggle_summary">Включите действие по одиночному нажатию для включения/выключения Wi-Fi, мобильных данных и Bluetooth. Длительное нажатие для просмотра дополнительных настроек</string>
+  <!-- Media art -->
+  <string name="media_art_title">Обложка альбома</string>
+  <string name="media_art_summary">Показывать обложку альбома на экране блокировки</string>
+  <!-- Quick unlock -->
+  <string name="quick_unlock_warning">Предупреждение</string>
+  <string name="quick_unlock_warning_summary">Данная возможность обходит важный защитный механизм и плохо влияет на поддержку нескольких пользователей на устройстве. Используйте на свой риск</string>
+  <string name="unlock_quick_unlock_control_title">Быстрая разблокировка</string>
+  <string name="unlock_quick_unlock_control_summary">Автоматическая разблокировка при вводе правильного пароля или PIN-кода</string>
+  <!-- Three-fingers-swipe to screenshot -->
+  <string name="three_finger_gesture">Свайп для создания скриншота</string>
+  <string name="three_finger_gesture_summary">Проведите тремя пальцами для создания скриншота</string>
+  <!-- Long press back to kill configurable timeout -->
+  <string name="kill_app_longpress_timeout_title">Длительность долгого нажатия кнопки «Назад»</string>
+  <string name="timeout_2000">2 секунды (по умолчанию)</string>
+  <string name="timeout_1500">1.5 секунды</string>
+  <string name="timeout_1000">1 секунда</string>
+  <string name="timeout_500">0.5 секунды</string>
+  <!-- Doze pulse options -->
+  <string name="summary_doze_enabled">Включено</string>
+  <string name="summary_doze_disabled">Отключено</string>
+  <string name="doze_overwrite_value_title">Перезаписать значения по умолчанию</string>
+  <string name="doze_overwrite_value_summary">Разрешить перезапись значений по умолчанию с пользовательскими настройками</string>
+  <string name="doze_pulse_title">Параметры, настраиваемые пользователем</string>
+  <string name="doze_pulse_duration_in_title">Появление</string>
+  <string name="doze_pulse_duration_visible_title">Время видимости</string>
+  <string name="doze_pulse_duration_out_title">Исчезновение</string>
+  <string name="doze_trigger_pickup_title">Триггер датчика движения</string>
+  <string name="doze_trigger_pickup_summary_on">Пульсация экрана при запрете спящего режима будет переключаться датчиком движения</string>
+  <string name="doze_trigger_pickup_summary_off">Датчик движения не будет использован в качестве триггера</string>
+  <string name="doze_trigger_notification_title">Триггер для уведомлений</string>
+  <string name="doze_trigger_notification_summary_on">Пульсация экрана при запрете спящего режима будет переключаться уведомлениями</string>
+  <string name="doze_trigger_notification_summary_off">Уведомления не будут использованы в качестве триггера</string>
+  <string name="doze_brightness_level_title">Уровень яркости</string>
+  <string name="onehundred_ms">100 мс</string>
+  <string name="twofifty_ms">250 мс</string>
+  <string name="fivehundred_ms_default">500 мс (по умолчанию)</string>
+  <string name="sevenfifty_ms">750 мс</string>
+  <string name="one_second">1 с</string>
+  <string name="onehalf_second">1.5 с</string>
+  <string name="two_second">2 с</string>
+  <string name="twohalf_second">2.5 с</string>
+  <string name="three_second_default">3 с (по умолчанию)</string>
+  <string name="threehalf_second">3.5 с</string>
+  <string name="four_second">4 с</string>
+  <string name="fourhalf_second">4.5 с</string>
+  <string name="five_second">5 с</string>
+  <string name="doze_notification_color_invert_title">Инвертирование уведомлений</string>
+  <string name="doze_notification_color_invert_summary_off">Уведомления не будут инвертированы. Используйте для темных тем</string>
+  <string name="doze_notification_color_invert_summary_on">Уведомления будут инвертированы. Используйте для светлых/стоковых тем</string>
+  <string name="ambient_display_show_battery_title">Статус батареи</string>
+  <string name="ambient_display_show_battery_summary">Показывать значок батареи во время пульсации</string>
+  <!-- Recents panel settings -->
+  <string name="show_clear_all_recents_button_title">Включить кнопку \"Очистить всё\"</string>
+  <string name="show_clear_all_recents_button_summary">Показывать кнопку \"Очистить всё\" при использовании меню недавних приложений</string>
+  <string name="recents_clear_all_location_title">Расположение кнопки \"Очистить всё\"</string>
+  <string name="recents_clear_all_location_top_right">Вверху справа</string>
+  <string name="recents_clear_all_location_top_left">Вверху слева</string>
+  <string name="recents_clear_all_location_top_center">Вверху по центру</string>
+  <string name="recents_clear_all_location_bottom_right">Внизу справа</string>
+  <string name="recents_clear_all_location_bottom_left">Внизу слева</string>
+  <string name="recents_clear_all_location_bottom_center">Внизу по центру</string>
+  <!-- Dashboard options -->
+  <string name="dashboard_category">Опции меню настроек</string>
+  <string name="dashboard_suggestions_title">Подсказки</string>
+  <string name="summary_dashboard_suggestions_enabled">Подсказки меню настроек включены</string>
+  <string name="summary_dashboard_suggestions_disabled">Подсказки меню настроек выключены</string>
+  <string name="remove_tile_summaries_title">Сводки</string>
+  <string name="remove_tile_summaries_summary_enabled">Сводки в меню настроек включены</string>
+  <string name="remove_tile_summaries_summary_disabled">Сводки в меню настроек выключены</string>
+  <string name="dashboard_conditions_title">Уведомления</string>
+  <string name="summary_dashboard_conditions_enabled">Уведомления в главном меню включены</string>
+  <string name="summary_dashboard_conditions_disabled">Уведомления в главном меню выключены</string>
+  <string name="dashboard_columns_title">Количество колонок</string>
+  <string name="dashboard_columns_summary">Изменение количества колонок отображаемых на панели настроек</string>
+  <string name="dashboard_columns_portrait_title">Колонки (портрет)</string>
+  <string name="dashboard_columns_landscape_title">Колонки (ландшафт)</string>
 </resources>

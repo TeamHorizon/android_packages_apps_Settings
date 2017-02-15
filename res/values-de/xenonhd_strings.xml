@@ -14,17 +14,165 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- About phone screen, XenonHD version -->
+  <string name="xenonhd_version">XenonHD Version</string>
   <string name="xenonhd_version_default">Unbekannt</string>
+  <string name="xenonhd_maintainer">Entwickler</string>
+  <string name="xenonhd_maintainer_default">Unbekannt</string>
   <!-- Changelog -->
   <string name="changelog_xenonhd_title">Änderungsprotokoll</string>
   <string name="changelog_xenonhd_error">Änderungsprotokoll konnte nicht geladen werden</string>
+  <string name="changelog_xenonhd_summary">Drücke hier, um die Änderungen des aktuellen Builds zu sehen</string>
   <!-- Density category -->
+  <string name="density_category">Bildschirmauflösung</string>
   <!-- XenonOTA -->
   <string name="xenonota_title">XenonHD-Updates</string>
   <string name="xenonota_summary">ROM-Updates suchen</string>
   <!-- Dev Options Enabled by Default -->
+  <string name="show_dev_already_enabled">Nicht benötigt, da die Entwickleroptionen standardmäßig aktiviert sind.</string>
   <!-- Phone info shortcut -->
+  <string name="device_info_title">Über das Telefon</string>
   <!-- Local (desktop) backup password menu title [CHAR LIMIT=25] -->
+  <string name="local_backup_password_title">Desktop-Sicherungspasswort</string>
   <!-- Double tap to sleep on lockscreen -->
+  <string name="double_tap_sleep_anywhere_title">DT2S auf Sperrbildschirm</string>
+  <string name="double_tap_sleep_anywhere_summary">Zum Versetzen des Gerätes in den Standby-Modus zwei Mal auf den Sperrbildschirm tippen</string>
   <!-- Notification sound timeout -->
+  <string name="app_notification_sound_timeout_title">Minimale Zeit zwischen Benachrichtigungsgeräuschen</string>
+  <string name="app_notification_sound_timeout_summary_template">Lassen Sie Geräusche oder Vibrationen nicht mehr als einmal alle <xliff:g id="duration">%1$s</xliff:g></string>
+  <string name="app_notification_sound_timeout_value_none">Keine Einschränkungen</string>
+  <string name="app_notification_sound_timeout_value_10_seconds">10 Sekunden</string>
+  <string name="app_notification_sound_timeout_value_30_seconds">30 Sekunden</string>
+  <string name="app_notification_sound_timeout_value_1_minute">1 Minute</string>
+  <string name="app_notification_sound_timeout_value_5_minutes">5 Minuten</string>
+  <string name="app_notification_sound_timeout_value_15_minutes">10 Minuten</string>
+  <string name="app_notification_sound_timeout_value_30_minutes">30 Minuten</string>
+  <!-- Randomize MAC addresses -->
+  <string name="randomize_mac_title">Autorisierte MAC-Adressen</string>
+  <string name="randomize_mac_summary">Weisen Sie zufällige MAC-Adressen zu, wenn Netzwerkgeräte aktiviert sind. MAC-Randomisierung wird während des Scannens verwendet, ob dieses aktiviert ist oder nicht.</string>
+  <string name="tethering_no_sim_alert_title">Keine SIM-Karte</string>
+  <string name="tethering_no_sim_card_text">Bitte legen Sie eine SIM-Karte ein, um Ihre Datenverbindung mit anderen Geräten über mobilen Hotspot oder USB-Tethering zu teilen</string>
+  <string name="tether_settings_launch_title">Mobiler Hotspot</string>
+  <string name="wifi_tether_first_use_message">Mobiler Hotspot bei der ersten Benutzung einrichten</string>
+  <!-- Volume Steps -->
+  <string name="volume_steps_title">Lautstärke-Schritte</string>
+  <string name="volume_steps_alarm_title">Wecker</string>
+  <string name="volume_steps_dtmf_title">DTMF (Einwahl)</string>
+  <string name="volume_steps_music_title">Musik</string>
+  <string name="volume_steps_notification_title">Benachrichtigung</string>
+  <string name="volume_steps_ring_title">Klingelton</string>
+  <string name="volume_steps_system_title">System</string>
+  <string name="volume_steps_voice_call_title">Sprachanruf</string>
+  <string name="volume_steps_reset">Zurücksetzen</string>
+  <!-- DayNight Theme -->
+  <string name="night_mode_title">Thema</string>
+  <string name="night_mode_no">Hell</string>
+  <string name="night_mode_yes">Dunkel</string>
+  <!-- Screenshot sound -->
+  <string name="screenshot_sound_title">Bildschirmfoto-Ton</string>
+  <string name="screenshot_sound_summary">Spielt einen Ton ab, wenn ein Screenshot aufgenommen wird</string>
+  <!-- Manage applications: show substratum overlays -->
+  <string name="filter_substratum_apps">Substratum Overlays</string>
+  <string name="menu_show_substratum">Overlays anzeigen</string>
+  <string name="menu_hide_substratum">Overlays verstecken</string>
+  <!-- Manage applications: show substratum icon overlays -->
+  <string name="filter_substratum_icons">Substratum Icon-Overlays</string>
+  <string name="menu_show_substratum_icons">Nur Symbole anzeigen</string>
+  <string name="menu_hide_substratum_icons">Nur Symbole ausblenden</string>
+  <!-- XenonHD Configurations-->
+  <string name="xenonhd_title">Konfigurationen</string>
+  <string name="xenonhd_misc_title">Verschiedenes</string>
+  <string name="xenonhd_lockscreen_title">Sperrbildschirm</string>
+  <string name="xenonhd_ui_title">Benutzeroberfläche</string>
+  <!-- Selinux Switch -->
+  <string name="selinux_switch_title">SELinux Wechsel-Optionen</string>
+  <string name="selinux_switch_summary">SELinux ist eine Sammlung von Kernel-Modifikationstools und Sicherheitsrichtlinien. Das Ändern dieser Einstellung benötigt Root-Rechte und kann ungewünschte Ereignisse hervorrufen. Benutzung auf eigene Gefahr</string>
+  <string name="selinux_title">SELinux-Modus</string>
+  <string name="selinux_permissive_title">Moderat</string>
+  <string name="selinux_enforcing_title">Strikt</string>
+  <!-- Recents Membar -->
+  <string name="recents_membar">RAM-Leiste</string>
+  <string name="systemui_recents_mem_display_title">Arbeitsspeicher anzeigen</string>
+  <string name="systemui_recents_mem_display_summary">Freier RAM-Speicher in den letzten Apps Ansicht anzeigen</string>
+  <!-- Quick settings config -->
+  <string name="qs_layout_category">QS-Schaltflächen</string>
+  <string name="qs_rows_portrait_title">Zeilen (Hochformat)</string>
+  <string name="qs_rows_landscape_title">Zeilen (Querformat)</string>
+  <string name="qs_columns_title">Spalten</string>
+  <string name="qs_easy_toggle_summary">Ermöglicht das Aktivieren und Deaktivieren von Wi-Fi, Mobilen Daten und Bluetooth mit einem Tap. Lange drücken, um erweiterte Einstellungen zu sehen</string>
+  <!-- Media art -->
+  <string name="media_art_title">Albumcover</string>
+  <string name="media_art_summary">Zeigt das Albumcover auf dem Sperrbildschirm bei Musikwiedergabe</string>
+  <!-- Quick unlock -->
+  <string name="quick_unlock_warning">Schnellfreischaltungs-Warnung</string>
+  <string name="quick_unlock_warning_summary">Diese Funktion umgeht wichtige Sicherheitsmechanismen und wird mit hoher Wahrscheinlichkeit im Multi-User-Modus unerwartete Wirkungen zeigen</string>
+  <string name="unlock_quick_unlock_control_title">Schnelles entsperren</string>
+  <string name="unlock_quick_unlock_control_summary">Automatisch entsperren, wenn PIN/Passwort korrekt eingegeben wird</string>
+  <!-- Three-fingers-swipe to screenshot -->
+  <string name="three_finger_gesture">Wischen um Screenshot zu erstellen</string>
+  <string name="three_finger_gesture_summary">Wische mit drei Fingern für Screenshot</string>
+  <!-- Long press back to kill configurable timeout -->
+  <string name="kill_app_longpress_timeout_title">Zeitfenster der Zurück-Taste</string>
+  <string name="timeout_2000">2 Sekunden (Standard)</string>
+  <string name="timeout_1500">1,5 Sekunden</string>
+  <string name="timeout_1000">1 Sekunde</string>
+  <string name="timeout_500">0,5 Sekunden</string>
+  <!-- Doze pulse options -->
+  <string name="summary_doze_enabled">Aktiviert</string>
+  <string name="summary_doze_disabled">Deaktiviert</string>
+  <string name="doze_overwrite_value_title">Standardwerte überschreiben</string>
+  <string name="doze_overwrite_value_summary">Zulassen dass die Standardwerte mit Benutzereinstellungen überschrieben wird</string>
+  <string name="doze_pulse_title">Vom Benutzer konfigurierbare Einstellungen</string>
+  <string name="doze_pulse_duration_in_title">Einblenden</string>
+  <string name="doze_pulse_duration_visible_title">Sichtbarkeitsdauer</string>
+  <string name="doze_pulse_duration_out_title">Ausblenden</string>
+  <string name="doze_trigger_pickup_title">Auslöser durch Aufhebesensor</string>
+  <string name="doze_trigger_pickup_summary_on">Pulse wird durch den Hochhebe-Sensor ausgelöst</string>
+  <string name="doze_trigger_pickup_summary_off">Hochhebe-Sensor wird nicht als Auslöser benutzt</string>
+  <string name="doze_trigger_notification_title">Auslöser für Benachrichtigungen</string>
+  <string name="doze_trigger_notification_summary_on">Pulse wird durch Benachrichtigungen ausgelöst</string>
+  <string name="doze_trigger_notification_summary_off">Benachrichtigungen werden nicht als Auslöser verwendet</string>
+  <string name="doze_brightness_level_title">Helligkeitsstufe</string>
+  <string name="onehundred_ms">100 ms</string>
+  <string name="twofifty_ms">250 ms</string>
+  <string name="fivehundred_ms_default">500 ms (Standard)</string>
+  <string name="sevenfifty_ms">750 ms</string>
+  <string name="one_second">1 Sek</string>
+  <string name="onehalf_second">1,5 Sek</string>
+  <string name="two_second">2 Sek</string>
+  <string name="twohalf_second">2,5 Sek</string>
+  <string name="three_second_default">3 Sek (Standard)</string>
+  <string name="threehalf_second">3,5 Sek</string>
+  <string name="four_second">4 Sek</string>
+  <string name="fourhalf_second">4,5 Sek</string>
+  <string name="five_second">5 Sek</string>
+  <string name="doze_notification_color_invert_title">Benachrichtigungen invertieren</string>
+  <string name="doze_notification_color_invert_summary_off">Benachrichtigungen werden nicht invertiert. Für dunkle Themen verwenden.</string>
+  <string name="doze_notification_color_invert_summary_on">Benachrichtigungen werden invertiert. Für helle Themen verwenden.</string>
+  <string name="ambient_display_show_battery_title">Akkustatus</string>
+  <string name="ambient_display_show_battery_summary">Akkustatus während Puls anzeigen</string>
+  <!-- Recents panel settings -->
+  <string name="show_clear_all_recents_button_title">Anzeige einer Taste zum Schließen aller geöffneten Apps</string>
+  <string name="show_clear_all_recents_button_summary">Alle-Beenden Taste im Taskmanager Anzeigen</string>
+  <string name="recents_clear_all_location_title">Position der Alle-Schließen Taste</string>
+  <string name="recents_clear_all_location_top_right">Oben rechts</string>
+  <string name="recents_clear_all_location_top_left">Oben links</string>
+  <string name="recents_clear_all_location_top_center">Oben in der Mitte</string>
+  <string name="recents_clear_all_location_bottom_right">Unten rechts</string>
+  <string name="recents_clear_all_location_bottom_left">Unten links</string>
+  <string name="recents_clear_all_location_bottom_center">Unten in der Mitte</string>
+  <!-- Dashboard options -->
+  <string name="dashboard_category">Dashboard-Optionen</string>
+  <string name="dashboard_suggestions_title">Vorschläge</string>
+  <string name="summary_dashboard_suggestions_enabled">Dashboard-Vorschläge sind aktiviert</string>
+  <string name="summary_dashboard_suggestions_disabled">Dashboard-Vorschläge sind deaktiviert</string>
+  <string name="remove_tile_summaries_title">Zusammenfassungen</string>
+  <string name="remove_tile_summaries_summary_enabled">Dashboard-Zusammenfassungen sind aktiviert</string>
+  <string name="remove_tile_summaries_summary_disabled">Dashboard-Zusammenfassungen sind deaktiviert</string>
+  <string name="dashboard_conditions_title">Bedingungen</string>
+  <string name="summary_dashboard_conditions_enabled">Dashboard-Bedingungen sind aktiviert</string>
+  <string name="summary_dashboard_conditions_disabled">Dashboard-Bedingungen sind deaktiviert</string>
+  <string name="dashboard_columns_title">Dashboard-Spalten</string>
+  <string name="dashboard_columns_summary">Anzahl der Spalten bearbeiten, die im Dashboard angezeigt werden</string>
+  <string name="dashboard_columns_portrait_title">Spalten (Hochformat)</string>
+  <string name="dashboard_columns_landscape_title">Spalten (Querformat)</string>
 </resources>

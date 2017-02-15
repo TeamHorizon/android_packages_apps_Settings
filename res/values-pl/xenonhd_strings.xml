@@ -16,6 +16,8 @@
   <!-- About phone screen, XenonHD version -->
   <string name="xenonhd_version">Wersja XenonHD</string>
   <string name="xenonhd_version_default">Nieznana</string>
+  <string name="xenonhd_maintainer">Opiekun</string>
+  <string name="xenonhd_maintainer_default">Nieznany</string>
   <!-- Changelog -->
   <string name="changelog_xenonhd_title">Lista zmian</string>
   <string name="changelog_xenonhd_error">Nie można wczytać listy zmian</string>
@@ -26,7 +28,7 @@
   <string name="xenonota_title">Aktualizacje XenonHD</string>
   <string name="xenonota_summary">Sprawdź aktualizacje ROM\'u</string>
   <!-- Dev Options Enabled by Default -->
-  <string name="show_dev_already_enabled">Nie ma potrzeby, Opcje programistyczne są domyślnie włączone.</string>
+  <string name="show_dev_already_enabled">Nie ma potrzeby, Opcje programistyczne są domyślnie włączone</string>
   <!-- Phone info shortcut -->
   <string name="device_info_title">Informacje o telefonie</string>
   <!-- Local (desktop) backup password menu title [CHAR LIMIT=25] -->
@@ -44,4 +46,134 @@
   <string name="app_notification_sound_timeout_value_5_minutes">5 minut</string>
   <string name="app_notification_sound_timeout_value_15_minutes">10 minut</string>
   <string name="app_notification_sound_timeout_value_30_minutes">30 minut</string>
+  <!-- Randomize MAC addresses -->
+  <string name="randomize_mac_title">Losowe adresy MAC</string>
+  <string name="randomize_mac_summary">Przypisuje losowe adresy MAC, gdy urządzenia sieciowe są włączone. Randomizacja MAC jest używana podczas skanowania, niezależnie od stanu przełącznika</string>
+  <string name="tethering_no_sim_alert_title">Brak karty SIM</string>
+  <string name="tethering_no_sim_card_text">Proszę włożyć kartę SIM, aby udostępnić połączenie danych innym urządzeniom, za pomocą mobilnego punktu dostępu lub tetheringu przez USB</string>
+  <string name="tether_settings_launch_title">Przenośny punkt dostępu</string>
+  <string name="wifi_tether_first_use_message">Skonfiguruj przenośny punk dostępu przy pierwszym użyciu</string>
+  <!-- Volume Steps -->
+  <string name="volume_steps_title">Poziomy głośności</string>
+  <string name="volume_steps_alarm_title">Budzik</string>
+  <string name="volume_steps_dtmf_title">DTMF (Wybieranie numeru)</string>
+  <string name="volume_steps_music_title">Muzyka</string>
+  <string name="volume_steps_notification_title">Powiadomienia</string>
+  <string name="volume_steps_ring_title">Dzwonek</string>
+  <string name="volume_steps_system_title">System</string>
+  <string name="volume_steps_voice_call_title">Połączenia głosowe</string>
+  <string name="volume_steps_reset">Resetuj</string>
+  <!-- DayNight Theme -->
+  <string name="night_mode_title">Motyw</string>
+  <string name="night_mode_no">Jasny</string>
+  <string name="night_mode_yes">Ciemny</string>
+  <!-- Screenshot sound -->
+  <string name="screenshot_sound_title">Dźwięk zrzutu ekranu</string>
+  <string name="screenshot_sound_summary">Efekt dźwiękowy podczas zrzutu ekranu</string>
+  <!-- Manage applications: show substratum overlays -->
+  <string name="filter_substratum_apps">Nakładki substratum</string>
+  <string name="menu_show_substratum">Pokaż nakładki</string>
+  <string name="menu_hide_substratum">Ukryj nakładki</string>
+  <!-- Manage applications: show substratum icon overlays -->
+  <string name="filter_substratum_icons">Nakładki ikon substratum</string>
+  <string name="menu_show_substratum_icons">Pokaż nakładki ikon</string>
+  <string name="menu_hide_substratum_icons">Ukryj nakładki ikon</string>
+  <!-- XenonHD Configurations-->
+  <string name="xenonhd_title">Konfiguracje</string>
+  <string name="xenonhd_misc_title">Różne</string>
+  <string name="xenonhd_lockscreen_title">Ekran blokady</string>
+  <string name="xenonhd_ui_title">Interfejs</string>
+  <!-- Selinux Switch -->
+  <string name="selinux_switch_title">Uwagi do przełącznika SELinux</string>
+  <string name="selinux_switch_summary">SELinux to zestaw modyfikacji jądra i narzędzi przestrzeni użytkownika. Zmiana trybu wymaga roota i może spowodować niepożądane działania. Tryb Pobłażliwy rekomendowany. Używasz tylko na własne ryzyko</string>
+  <string name="selinux_title">Tryb SELinux</string>
+  <string name="selinux_permissive_title">Pobłażliwy</string>
+  <string name="selinux_enforcing_title">Restrykcyjny</string>
+  <!-- Recents Membar -->
+  <string name="recents_membar">Pasek pamięci</string>
+  <string name="systemui_recents_mem_display_title">Pokaż użycie pamięci</string>
+  <string name="systemui_recents_mem_display_summary">Pokaż ilość wolnej pamięci RAM na ekranie ostatnich aplikacji</string>
+  <!-- Quick settings config -->
+  <string name="qs_layout_category">Opcje szybkich ustawień</string>
+  <string name="qs_rows_portrait_title">Wiersze (pionowo)</string>
+  <string name="qs_rows_landscape_title">Wiersze (poziomo)</string>
+  <string name="qs_columns_title">Kolumny</string>
+  <string name="qs_easy_toggle_title">Łatwe przełączanie</string>
+  <string name="qs_easy_toggle_summary">Pojedyncze dotknięcie przełącza Wi-Fi, Dane Komórkowe, oraz Bluetooth. Przytrzymaj, aby rozwinąć zaawansowane ustawienia</string>
+  <!-- Media art -->
+  <string name="media_art_title">Okładka albumu</string>
+  <string name="media_art_summary">Wyświetlaj okładkę odtwarzanego albumu na ekranie blokady</string>
+  <!-- Quick unlock -->
+  <string name="quick_unlock_warning">Uwagi do szybkiego odblokowywania</string>
+  <string name="quick_unlock_warning_summary">Ta funkcja omija ważne mechanizmy zabezpieczeń i prawie na pewno psuje obsługę wielu użytkowników. Używasz tylko na własne ryzyko</string>
+  <string name="unlock_quick_unlock_control_title">Szybkie odblokowywanie</string>
+  <string name="unlock_quick_unlock_control_summary">Odblokuj automatycznie, gdy wprowadzony zostanie poprawny PIN/hasło</string>
+  <!-- Three-fingers-swipe to screenshot -->
+  <string name="three_finger_gesture">Gest zrzutu ekranu</string>
+  <string name="three_finger_gesture_summary">Przeciągnij trzema palcami w dół, aby wykonać zrzut ekranu</string>
+  <!-- Long press back to kill configurable timeout -->
+  <string name="kill_app_longpress_timeout_title">Czas przytrzymania klawisza wstecz</string>
+  <string name="timeout_2000">2 sekundy (domyślnie)</string>
+  <string name="timeout_1500">1.5 sekundy</string>
+  <string name="timeout_1000">1 sekunda</string>
+  <string name="timeout_500">0.5 sekundy</string>
+  <!-- Doze pulse options -->
+  <string name="summary_doze_enabled">Włączone</string>
+  <string name="summary_doze_disabled">Wyłączone</string>
+  <string name="doze_overwrite_value_title">Własne ustawienia</string>
+  <string name="doze_overwrite_value_summary">Pozwól nadpisać domyślne wartości konfiguracją użytkownika</string>
+  <string name="doze_pulse_title">Ustawienia konfigurowalne przez użytkownika</string>
+  <string name="doze_pulse_duration_in_title">Stopniowe rozjaśnianie</string>
+  <string name="doze_pulse_duration_visible_title">Czas widoczności</string>
+  <string name="doze_pulse_duration_out_title">Stopniowe przyciemnianie</string>
+  <string name="doze_trigger_pickup_title">Aktywacja przy podniesieniu urządzenia</string>
+  <string name="doze_trigger_pickup_summary_on">Aktywny ekran po podniesieniu urządzenia</string>
+  <string name="doze_trigger_pickup_summary_off">Podnoszenie urządzenia nie będzie wykorzystywane do aktywacji</string>
+  <string name="doze_trigger_notification_title">Aktywacja przez powiadomienia</string>
+  <string name="doze_trigger_notification_summary_on">Aktywny ekran po otrzymaniu powiadomienia</string>
+  <string name="doze_trigger_notification_summary_off">Powiadomienia nie będą wykorzystywane do aktywacji</string>
+  <string name="doze_brightness_level_title">Poziom jasności</string>
+  <string name="onehundred_ms">100 ms</string>
+  <string name="twofifty_ms">250 ms</string>
+  <string name="fivehundred_ms_default">500 ms (domyślne)</string>
+  <string name="sevenfifty_ms">750 ms</string>
+  <string name="one_second">1 s</string>
+  <string name="onehalf_second">1.5 s</string>
+  <string name="two_second">2 s</string>
+  <string name="twohalf_second">2.5 s</string>
+  <string name="three_second_default">3 s (domyślnie)</string>
+  <string name="threehalf_second">3.5 s</string>
+  <string name="four_second">4 s</string>
+  <string name="fourhalf_second">4.5 s</string>
+  <string name="five_second">5 s</string>
+  <string name="doze_notification_color_invert_title">Kolor powiadomień</string>
+  <string name="doze_notification_color_invert_summary_off">Jasne powiadomienia dla ciemnych motywów</string>
+  <string name="doze_notification_color_invert_summary_on">Ciemne powiadomienia dla jasnych motywów</string>
+  <string name="ambient_display_show_battery_title">Stan baterii</string>
+  <string name="ambient_display_show_battery_summary">Pokaż wskaźnik baterii podczas aktywnego ekranu</string>
+  <!-- Recents panel settings -->
+  <string name="show_clear_all_recents_button_title">Włącz przycisk \"Wyczyść wszystko\"</string>
+  <string name="show_clear_all_recents_button_summary">Pokaż przycisk czyszczenia wszystkich ostatnio używanych aplikacji</string>
+  <string name="recents_clear_all_location_title">Pozycja przycisku</string>
+  <string name="recents_clear_all_location_top_right">Prawy górny róg</string>
+  <string name="recents_clear_all_location_top_left">Lewy górny róg</string>
+  <string name="recents_clear_all_location_top_center">Wyśrodkowany na górze</string>
+  <string name="recents_clear_all_location_bottom_right">Prawy dolny róg</string>
+  <string name="recents_clear_all_location_bottom_left">Lewy dolny róg</string>
+  <string name="recents_clear_all_location_bottom_center">Wyśrodkowany na dole</string>
+  <!-- Dashboard options -->
+  <string name="dashboard_category">Opcje panelu ustawień</string>
+  <string name="dashboard_suggestions_title">Sugestie</string>
+  <string name="summary_dashboard_suggestions_enabled">Sugestie są włączone</string>
+  <string name="summary_dashboard_suggestions_disabled">Sugestie są wyłączone</string>
+  <string name="remove_tile_summaries_title">Streszczenia</string>
+  <string name="remove_tile_summaries_summary_enabled">Streszczenia są włączone</string>
+  <string name="remove_tile_summaries_summary_disabled">Streszczenia są wyłączone</string>
+  <string name="dashboard_conditions_title">Warunki</string>
+  <string name="summary_dashboard_conditions_enabled">Warunki są włączone</string>
+  <string name="summary_dashboard_conditions_disabled">Warunki są wyłączone</string>
+  <string name="dashboard_columns_title">Ilość kolumn</string>
+  <string name="dashboard_columns_summary">Ilość kolumn wyświetlanych w panelu ustawień</string>
+  <string name="dashboard_columns_portrait_title">Kolumny (pionowo)</string>
+  <string name="dashboard_columns_landscape_title">Kolumny (poziomo)</string>
 </resources>

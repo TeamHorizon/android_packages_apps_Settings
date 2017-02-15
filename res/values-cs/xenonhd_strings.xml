@@ -14,12 +14,166 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- About phone screen, XenonHD version -->
+  <string name="xenonhd_version">Verze XenonHD</string>
+  <string name="xenonhd_version_default">Neznámá</string>
+  <string name="xenonhd_maintainer">Správce</string>
+  <string name="xenonhd_maintainer_default">Neznámá</string>
   <!-- Changelog -->
+  <string name="changelog_xenonhd_title">Protokol změn</string>
+  <string name="changelog_xenonhd_error">Chyba při načítání seznamu změn</string>
+  <string name="changelog_xenonhd_summary">Zkontrolujte změny v aktuálním sestavení</string>
   <!-- Density category -->
+  <string name="density_category">Možnosti hustoty zobrazení</string>
   <!-- XenonOTA -->
+  <string name="xenonota_title">Aktualizace XenonHD</string>
+  <string name="xenonota_summary">Zkontrolovat aktualizace ROM</string>
   <!-- Dev Options Enabled by Default -->
+  <string name="show_dev_already_enabled">Není třeba, možnosti vývojáře jsou ve výchozím nastavení povolena</string>
   <!-- Phone info shortcut -->
+  <string name="device_info_title">Informace o telefonu</string>
   <!-- Local (desktop) backup password menu title [CHAR LIMIT=25] -->
+  <string name="local_backup_password_title">Heslo pro zálohy v počítači</string>
   <!-- Double tap to sleep on lockscreen -->
+  <string name="double_tap_sleep_anywhere_title">Dvojí poklepání na uzamčenou obrazovku</string>
+  <string name="double_tap_sleep_anywhere_summary">Dvojitým poklepáním na zamykací obrazovku uvést zařízení do režimu spánku</string>
   <!-- Notification sound timeout -->
+  <string name="app_notification_sound_timeout_title">Minimální doba mezi zvuky upozornění</string>
+  <string name="app_notification_sound_timeout_summary_template">Povolit zvuky nebo vibrace ne více než jednou každých <xliff:g id="duration">%1$s </xliff:g></string>
+  <string name="app_notification_sound_timeout_value_none">Bez omezení</string>
+  <string name="app_notification_sound_timeout_value_10_seconds">10 sekund</string>
+  <string name="app_notification_sound_timeout_value_30_seconds">30 sekund</string>
+  <string name="app_notification_sound_timeout_value_1_minute">1 minuta</string>
+  <string name="app_notification_sound_timeout_value_5_minutes">5 minut</string>
+  <string name="app_notification_sound_timeout_value_15_minutes">10 minut</string>
+  <string name="app_notification_sound_timeout_value_30_minutes">30 Minut</string>
+  <!-- Randomize MAC addresses -->
+  <string name="randomize_mac_title">Náhodné adresy MAC</string>
+  <string name="randomize_mac_summary">Přiřadí náhodné MAC adresy, pokud jsou síťová zařízení zapnuta. Randomizace MAC je použita během kontroly, bez ohledu na povolení</string>
+  <string name="tethering_no_sim_alert_title">Není vložena SIM karta</string>
+  <string name="tethering_no_sim_card_text">Prosím vložte SIM kartu a sdílejte datové připojení s dalšími zařízeními pomocí mobilního přístupového bodu nebo USB tethering</string>
+  <string name="tether_settings_launch_title">Mobilní hotspoty</string>
+  <string name="wifi_tether_first_use_message">Nastavení mobilního hotspotu při prvním použití</string>
+  <!-- Volume Steps -->
+  <string name="volume_steps_title">Kroky hlasitosti</string>
+  <string name="volume_steps_alarm_title">Budík</string>
+  <string name="volume_steps_dtmf_title">DTMF (volání)</string>
+  <string name="volume_steps_music_title">Hudba</string>
+  <string name="volume_steps_notification_title">Upozornění</string>
+  <string name="volume_steps_ring_title">Vyzvánení</string>
+  <string name="volume_steps_system_title">Systém</string>
+  <string name="volume_steps_voice_call_title">Hlasový hovor</string>
+  <string name="volume_steps_reset">Resetovat</string>
+  <!-- DayNight Theme -->
+  <string name="night_mode_title">Téma</string>
+  <string name="night_mode_no">Světlé</string>
+  <string name="night_mode_yes">Tmavé</string>
+  <!-- Screenshot sound -->
+  <string name="screenshot_sound_title">Zvuk při snímku obrazovky</string>
+  <string name="screenshot_sound_summary">Přehraje zvukový efekt při snímku obrazovky</string>
+  <!-- Manage applications: show substratum overlays -->
+  <string name="filter_substratum_apps">Substratum překrytí</string>
+  <string name="menu_show_substratum">Zobrazit překrytí</string>
+  <string name="menu_hide_substratum">Skrýt překrytí</string>
+  <!-- Manage applications: show substratum icon overlays -->
+  <string name="filter_substratum_icons">Ikona Substratum překrytí</string>
+  <string name="menu_show_substratum_icons">Zobrazit ikonu překrytí</string>
+  <string name="menu_hide_substratum_icons">Skrýt ikonu překrytí</string>
+  <!-- XenonHD Configurations-->
+  <string name="xenonhd_title">Nastavení</string>
+  <string name="xenonhd_misc_title">Různé</string>
+  <string name="xenonhd_lockscreen_title">Zamykací obrazovka</string>
+  <string name="xenonhd_ui_title">Uživatelské rozhraní</string>
+  <!-- Selinux Switch -->
+  <string name="selinux_switch_title">Upozornění přepnutí SELinux</string>
+  <string name="selinux_switch_summary">SELinux je soubor změn na linuxovém jádře a způsob přidělování zdrojů pro danou aplikaci. Změna režimu vyžaduje root přístup a může způsobit nežádoucí chování. Je doporučeno mírné nastavení. Použití je na vlastní nebezpečí</string>
+  <string name="selinux_title">SELinux režim</string>
+  <string name="selinux_permissive_title">Mírné</string>
+  <string name="selinux_enforcing_title">Vynucené</string>
+  <!-- Recents Membar -->
+  <string name="recents_membar">Ukazatel paměti</string>
+  <string name="systemui_recents_mem_display_title">Zobrazit ukazatel paměti</string>
+  <string name="systemui_recents_mem_display_summary">Zobrazit ukazatel volné RAM v zobrazení nedávných aplikací</string>
+  <!-- Quick settings config -->
+  <string name="qs_layout_category">Možnosti rychlého nastavení</string>
+  <string name="qs_rows_portrait_title">Řádky (na výšku)</string>
+  <string name="qs_rows_landscape_title">Řádky (na šířku)</string>
+  <string name="qs_columns_title">Sloupce</string>
+  <string name="qs_easy_toggle_title">Snadné přepnutí QS dlaždic</string>
+  <string name="qs_easy_toggle_summary">Povolte akci jedním klepnutím na možnost povolit/zakázat mobilní data, Wi-Fi a Bluetooth. Dlouhým stisknutím zobrazíte upřesňující nastavení</string>
+  <!-- Media art -->
+  <string name="media_art_title">Obal alba</string>
+  <string name="media_art_summary">Zobrazit obal alba na zamčené obrazovce</string>
+  <!-- Quick unlock -->
+  <string name="quick_unlock_warning">Upozornění rychlého odemknutí</string>
+  <string name="quick_unlock_warning_summary">Tato funkce obchází důležité bezpečnostní mechanismy a nepodporuje režim více uživatelů. Používáte na vlastní nebezpečí</string>
+  <string name="unlock_quick_unlock_control_title">Rychlé odemknutí</string>
+  <string name="unlock_quick_unlock_control_summary">Automatické odemknutí, pokud je zadán správný PIN/heslo</string>
+  <!-- Three-fingers-swipe to screenshot -->
+  <string name="three_finger_gesture">Přejetím pořídit snímek obrazovky</string>
+  <string name="three_finger_gesture_summary">Snímek obrazovky přejetím tří prstů</string>
+  <!-- Long press back to kill configurable timeout -->
+  <string name="kill_app_longpress_timeout_title">Časový limit dlouhého stisku tlačítka Zpět</string>
+  <string name="timeout_2000">2 sekundy (výchozí)</string>
+  <string name="timeout_1500">1,5 sekundy</string>
+  <string name="timeout_1000">1 sekunda</string>
+  <string name="timeout_500">0,5 sekundy</string>
+  <!-- Doze pulse options -->
+  <string name="summary_doze_enabled">Zapnuto</string>
+  <string name="summary_doze_disabled">Vypnuto</string>
+  <string name="doze_overwrite_value_title">Přepsat výchozí hodnoty</string>
+  <string name="doze_overwrite_value_summary">Povolit přepsat výchozí hodnoty uživatelským nastavením</string>
+  <string name="doze_pulse_title">Uživatelsky konfigurovatelné nastavení</string>
+  <string name="doze_pulse_duration_in_title">Postupné zesílení</string>
+  <string name="doze_pulse_duration_visible_title">Viditelné trvání</string>
+  <string name="doze_pulse_duration_out_title">Postupné zeslabení</string>
+  <string name="doze_trigger_pickup_title">Vyberte sensor aktivace</string>
+  <string name="doze_trigger_pickup_summary_on">Pulsování se spustí pomocí čidel pohybu</string>
+  <string name="doze_trigger_pickup_summary_off">Senzory pohybu nebudou použity ke spuštění</string>
+  <string name="doze_trigger_notification_title">Spouštěč upozornění</string>
+  <string name="doze_trigger_notification_summary_on">Pulsováním dojde ke spuštění oznámení</string>
+  <string name="doze_trigger_notification_summary_off">Oznámení nebudou použity ke spuštění</string>
+  <string name="doze_brightness_level_title">Úroveň jasu</string>
+  <string name="onehundred_ms">100ms</string>
+  <string name="twofifty_ms">250 ms</string>
+  <string name="fivehundred_ms_default">500 ms (výchozí)</string>
+  <string name="sevenfifty_ms">750 ms</string>
+  <string name="one_second">1 s</string>
+  <string name="onehalf_second">1.5 s</string>
+  <string name="two_second">2 s</string>
+  <string name="twohalf_second">2.5 s</string>
+  <string name="three_second_default">3 s (výchozí)</string>
+  <string name="threehalf_second">3.5 s</string>
+  <string name="four_second">4 s</string>
+  <string name="fourhalf_second">4.5 s</string>
+  <string name="five_second">5 s</string>
+  <string name="doze_notification_color_invert_title">Inverze oznámení</string>
+  <string name="doze_notification_color_invert_summary_off">Barvy oznámení nebudou obráceny (doporučeno pro tmavé motivy).</string>
+  <string name="doze_notification_color_invert_summary_on">Barvy oznámení budou obráceny (doporučeno pro světlé motivy).</string>
+  <string name="ambient_display_show_battery_title">Stav baterie</string>
+  <string name="ambient_display_show_battery_summary">Zobrazit indikátor baterie během pulsování</string>
+  <!-- Recents panel settings -->
+  <string name="show_clear_all_recents_button_title">Povolit tlačítko \"Vyčistit vše\"</string>
+  <string name="show_clear_all_recents_button_summary">Zobrazit tlačítko \"Vyčistit vše\" v zobrazení nedávných aplikací</string>
+  <string name="recents_clear_all_location_title">Pozice tlačítka \"Vyčistit vše\"</string>
+  <string name="recents_clear_all_location_top_right">Vpravo nahoře</string>
+  <string name="recents_clear_all_location_top_left">Vlevo nahoře</string>
+  <string name="recents_clear_all_location_top_center">Nahoře uprostřed</string>
+  <string name="recents_clear_all_location_bottom_right">Vpravo dole</string>
+  <string name="recents_clear_all_location_bottom_left">Vlevo dole</string>
+  <string name="recents_clear_all_location_bottom_center">Dole uprostřed</string>
+  <!-- Dashboard options -->
+  <string name="dashboard_category">Možnosti hlavního panelu</string>
+  <string name="dashboard_suggestions_title">Návrhy</string>
+  <string name="summary_dashboard_suggestions_enabled">Návrhy hlavního panelu jsou povoleny</string>
+  <string name="summary_dashboard_suggestions_disabled">Návrhy hlavního panelu jsou zakázány</string>
+  <string name="remove_tile_summaries_title">Shrnutí</string>
+  <string name="remove_tile_summaries_summary_enabled">Návrhy hlavního panelu jsou povoleny</string>
+  <string name="remove_tile_summaries_summary_disabled">Návrhy hlavního panelu jsou zakázány</string>
+  <string name="dashboard_conditions_title">Podmínky</string>
+  <string name="summary_dashboard_conditions_enabled">Podmínky hlavního panelu jsou povoleny</string>
+  <string name="summary_dashboard_conditions_disabled">Podmínky hlavního panelu jsou zakázány</string>
+  <string name="dashboard_columns_title">Sloupce hlavního panelu</string>
+  <string name="dashboard_columns_summary">Změna počtu zobrazených sloupců v nastavení hlavního panelu</string>
+  <string name="dashboard_columns_portrait_title">Sloupce (na výšku)</string>
+  <string name="dashboard_columns_landscape_title">Sloupce (na šířku)</string>
 </resources>

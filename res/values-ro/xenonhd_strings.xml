@@ -14,7 +14,13 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- About phone screen, XenonHD version -->
+  <string name="xenonhd_version">Versiune XenonHD</string>
+  <string name="xenonhd_version_default">Necunoscut</string>
+  <string name="xenonhd_maintainer">Sustinator</string>
+  <string name="xenonhd_maintainer_default">Necunoscut</string>
   <!-- Changelog -->
+  <string name="changelog_xenonhd_title">Istoricul schimbărilor</string>
+  <string name="changelog_xenonhd_error">Nu am putut încărca jurnalul cu schimbări</string>
   <!-- Density category -->
   <!-- XenonOTA -->
   <!-- Dev Options Enabled by Default -->
@@ -22,4 +28,22 @@
   <!-- Local (desktop) backup password menu title [CHAR LIMIT=25] -->
   <!-- Double tap to sleep on lockscreen -->
   <!-- Notification sound timeout -->
+  <!-- Randomize MAC addresses -->
+  <string name="tethering_no_sim_alert_title">Niciun card SIM</string>
+  <!-- Volume Steps -->
+  <!-- DayNight Theme -->
+  <!-- Screenshot sound -->
+  <!-- Manage applications: show substratum overlays -->
+  <!-- Manage applications: show substratum icon overlays -->
+  <!-- XenonHD Configurations-->
+  <!-- Selinux Switch -->
+  <!-- Recents Membar -->
+  <!-- Quick settings config -->
+  <!-- Media art -->
+  <!-- Quick unlock -->
+  <!-- Three-fingers-swipe to screenshot -->
+  <!-- Long press back to kill configurable timeout -->
+  <!-- Doze pulse options -->
+  <!-- Recents panel settings -->
+  <!-- Dashboard options -->
 </resources>

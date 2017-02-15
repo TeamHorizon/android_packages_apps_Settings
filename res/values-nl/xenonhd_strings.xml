@@ -14,12 +14,61 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- About phone screen, XenonHD version -->
+  <string name="xenonhd_version_default">Onbekend</string>
+  <string name="xenonhd_maintainer_default">Onbekend</string>
   <!-- Changelog -->
+  <string name="changelog_xenonhd_error">Kan changelog niet laden</string>
+  <string name="changelog_xenonhd_summary">Controleer wijzigingen in huidige versie</string>
   <!-- Density category -->
+  <string name="density_category">Dichtheid opties</string>
   <!-- XenonOTA -->
+  <string name="xenonota_summary">Controleren op ROM updates</string>
   <!-- Dev Options Enabled by Default -->
   <!-- Phone info shortcut -->
+  <string name="device_info_title">Telefoon info</string>
   <!-- Local (desktop) backup password menu title [CHAR LIMIT=25] -->
+  <string name="local_backup_password_title">Wachtwoord desktopback-up</string>
   <!-- Double tap to sleep on lockscreen -->
+  <string name="double_tap_sleep_anywhere_title">DT2S op vergrendelscherm</string>
+  <string name="double_tap_sleep_anywhere_summary">Dubbeltik op het vergrendelscherm om uit te schakelen</string>
   <!-- Notification sound timeout -->
+  <string name="app_notification_sound_timeout_title">Minimuminterval tussen meldings-geluiden</string>
+  <string name="app_notification_sound_timeout_summary_template">Toestaan dat geluiden of trillingen niet meer dan eenmaal per <xliff:g id="duration">%1$s </xliff:g></string>
+  <string name="app_notification_sound_timeout_value_none">Geen beperkingen</string>
+  <string name="app_notification_sound_timeout_value_10_seconds">10 seconden</string>
+  <string name="app_notification_sound_timeout_value_30_seconds">30 seconden</string>
+  <string name="app_notification_sound_timeout_value_1_minute">1 minuut</string>
+  <string name="app_notification_sound_timeout_value_5_minutes">5 minuten</string>
+  <string name="app_notification_sound_timeout_value_15_minutes">10 minuten</string>
+  <string name="app_notification_sound_timeout_value_30_minutes">0,5 uur</string>
+  <!-- Randomize MAC addresses -->
+  <string name="randomize_mac_title">Randomize MAC-adressen</string>
+  <string name="tethering_no_sim_alert_title">Geen simkaart</string>
+  <string name="tether_settings_launch_title">Mobiele Hotspot</string>
+  <string name="wifi_tether_first_use_message">Stel mobiel hotspot in, bij het eerste gebruik</string>
+  <!-- Volume Steps -->
+  <string name="volume_steps_title">Volume stappen</string>
+  <string name="volume_steps_music_title">Muziek</string>
+  <!-- DayNight Theme -->
+  <string name="night_mode_title">Thema</string>
+  <string name="night_mode_no">Licht</string>
+  <string name="night_mode_yes">Donker</string>
+  <!-- Screenshot sound -->
+  <string name="screenshot_sound_title">Schermafdruk geluid</string>
+  <string name="screenshot_sound_summary">Geluidseffect wanneer screenshot wordt genomen</string>
+  <!-- Manage applications: show substratum overlays -->
+  <!-- Manage applications: show substratum icon overlays -->
+  <!-- XenonHD Configurations-->
+  <!-- Selinux Switch -->
+  <!-- Recents Membar -->
+  <!-- Quick settings config -->
+  <!-- Media art -->
+  <!-- Quick unlock -->
+  <!-- Three-fingers-swipe to screenshot -->
+  <!-- Long press back to kill configurable timeout -->
+  <!-- Doze pulse options -->
+  <string name="summary_doze_enabled">Ingeschakeld</string>
+  <string name="summary_doze_disabled">Uitgeschakeld</string>
+  <!-- Recents panel settings -->
+  <!-- Dashboard options -->
 </resources>

@@ -16,17 +16,19 @@
   <!-- About phone screen, XenonHD version -->
   <string name="xenonhd_version">XenonHD 版本</string>
   <string name="xenonhd_version_default">未知</string>
+  <string name="xenonhd_maintainer">維護者</string>
+  <string name="xenonhd_maintainer_default">不明</string>
   <!-- Changelog -->
   <string name="changelog_xenonhd_title">更新日誌</string>
   <string name="changelog_xenonhd_error">無法讀取更新日誌</string>
-  <string name="changelog_xenonhd_summary">檢查當前版本中的更改</string>
+  <string name="changelog_xenonhd_summary">檢查目前版本中的更改</string>
   <!-- Density category -->
   <string name="density_category">密度選項</string>
   <!-- XenonOTA -->
   <string name="xenonota_title">XenonHD 更新</string>
   <string name="xenonota_summary">檢查系統更新</string>
   <!-- Dev Options Enabled by Default -->
-  <string name="show_dev_already_enabled">不需要，開發設定預設情況下啟用。</string>
+  <string name="show_dev_already_enabled">不需要，開發人員選項預設情況下啟用。</string>
   <!-- Phone info shortcut -->
   <string name="device_info_title">手機資訊</string>
   <!-- Local (desktop) backup password menu title [CHAR LIMIT=25] -->
@@ -44,4 +46,134 @@
   <string name="app_notification_sound_timeout_value_5_minutes">5 分鐘</string>
   <string name="app_notification_sound_timeout_value_15_minutes">10 分鐘</string>
   <string name="app_notification_sound_timeout_value_30_minutes">30 分鐘</string>
+  <!-- Randomize MAC addresses -->
+  <string name="randomize_mac_title">隨機的 MAC 位址</string>
+  <string name="randomize_mac_summary">啟用網路裝置時分配隨機 MAC 位址。 在掃描期間使用 MAC 隨機化，無論是否啟用。</string>
+  <string name="tethering_no_sim_alert_title">沒有 SIM 卡</string>
+  <string name="tethering_no_sim_card_text">請裝上 SIM 卡，以便使用行動熱點或 USB 網路共用存取網際網路，與其他裝置共用您的數據連線。</string>
+  <string name="tether_settings_launch_title">行動熱點</string>
+  <string name="wifi_tether_first_use_message">首次使用時設定行動熱點</string>
+  <!-- Volume Steps -->
+  <string name="volume_steps_title">音量調整等級</string>
+  <string name="volume_steps_alarm_title">鬧鈴</string>
+  <string name="volume_steps_dtmf_title">DTMF (撥號)</string>
+  <string name="volume_steps_music_title">音樂</string>
+  <string name="volume_steps_notification_title">通知</string>
+  <string name="volume_steps_ring_title">鈴聲</string>
+  <string name="volume_steps_system_title">系統</string>
+  <string name="volume_steps_voice_call_title">語音通話</string>
+  <string name="volume_steps_reset">重設</string>
+  <!-- DayNight Theme -->
+  <string name="night_mode_title">主題</string>
+  <string name="night_mode_no">淺色</string>
+  <string name="night_mode_yes">深色</string>
+  <!-- Screenshot sound -->
+  <string name="screenshot_sound_title">螢幕擷取音效</string>
+  <string name="screenshot_sound_summary">擷取螢幕畫面時播放音效</string>
+  <!-- Manage applications: show substratum overlays -->
+  <string name="filter_substratum_apps">底層覆蓋</string>
+  <string name="menu_show_substratum">顯示覆蓋</string>
+  <string name="menu_hide_substratum">隱藏覆蓋</string>
+  <!-- Manage applications: show substratum icon overlays -->
+  <string name="filter_substratum_icons">底層圖示覆蓋</string>
+  <string name="menu_show_substratum_icons">顯示圖示覆蓋</string>
+  <string name="menu_hide_substratum_icons">隱藏圖示覆蓋</string>
+  <!-- XenonHD Configurations-->
+  <string name="xenonhd_title">配置</string>
+  <string name="xenonhd_misc_title">其他事項</string>
+  <string name="xenonhd_lockscreen_title">鎖定畫面</string>
+  <string name="xenonhd_ui_title">使用者介面</string>
+  <!-- Selinux Switch -->
+  <string name="selinux_switch_title">Selinux 切換警告</string>
+  <string name="selinux_switch_summary">SELinux 是修改內核和使用者空間的工具。變更模式需要root訪問權限，並可能導致不必要的影響。使用時自擔風險</string>
+  <string name="selinux_title">Selinux 模式</string>
+  <string name="selinux_permissive_title">許可</string>
+  <string name="selinux_enforcing_title">執行中</string>
+  <!-- Recents Membar -->
+  <string name="recents_membar">記憶體用量列</string>
+  <string name="systemui_recents_mem_display_title">顯示記憶體列</string>
+  <string name="systemui_recents_mem_display_summary">在最近的應用程式中顯示可用記憶體列</string>
+  <!-- Quick settings config -->
+  <string name="qs_layout_category">快速設定選項</string>
+  <string name="qs_rows_portrait_title">行 (縱向)</string>
+  <string name="qs_rows_landscape_title">行 (橫向)</string>
+  <string name="qs_columns_title">列</string>
+  <string name="qs_easy_toggle_title">進階快速設定簡易切換</string>
+  <string name="qs_easy_toggle_summary">啟用輕觸動作可啟用/停用 Wi-Fi、行動數據和藍牙。 長按可查看進階設定</string>
+  <!-- Media art -->
+  <string name="media_art_title">媒體封面</string>
+  <string name="media_art_summary">在鎖定畫面上顯示媒體封面</string>
+  <!-- Quick unlock -->
+  <string name="quick_unlock_warning">快速解鎖警告</string>
+  <string name="quick_unlock_warning_summary">此功能繞過重要的安全機制，幾乎肯定會誤操作多使用者支援。使用時自擔風險</string>
+  <string name="unlock_quick_unlock_control_title">快速解鎖</string>
+  <string name="unlock_quick_unlock_control_summary">當正確輸入 PIN 碼/密碼時自動解鎖</string>
+  <!-- Three-fingers-swipe to screenshot -->
+  <string name="three_finger_gesture">滑動以螢幕擷取</string>
+  <string name="three_finger_gesture_summary">同時滑動三支指頭以擷取螢幕畫面</string>
+  <!-- Long press back to kill configurable timeout -->
+  <string name="kill_app_longpress_timeout_title">長按返回鍵逾時</string>
+  <string name="timeout_2000">2 秒 (預設)</string>
+  <string name="timeout_1500">1.5 秒</string>
+  <string name="timeout_1000">1 秒</string>
+  <string name="timeout_500">0.5 秒</string>
+  <!-- Doze pulse options -->
+  <string name="summary_doze_enabled">已啟用</string>
+  <string name="summary_doze_disabled">停用</string>
+  <string name="doze_overwrite_value_title">覆蓋預設值</string>
+  <string name="doze_overwrite_value_summary">允許使用者覆蓋預設值</string>
+  <string name="doze_pulse_title">使用者可配置的設定</string>
+  <string name="doze_pulse_duration_in_title">淡入</string>
+  <string name="doze_pulse_duration_visible_title">可見的持續時間</string>
+  <string name="doze_pulse_duration_out_title">淡出</string>
+  <string name="doze_trigger_pickup_title">拿起感應器觸發</string>
+  <string name="doze_trigger_pickup_summary_on">自動顯示將由拿起感應器觸發</string>
+  <string name="doze_trigger_pickup_summary_off">拿起感應器不會用做觸發</string>
+  <string name="doze_trigger_notification_title">通知觸發</string>
+  <string name="doze_trigger_notification_summary_on">自動顯示將被通知觸發</string>
+  <string name="doze_trigger_notification_summary_off">通知不會被用作觸發</string>
+  <string name="doze_brightness_level_title">亮度級別</string>
+  <string name="onehundred_ms">100 毫秒</string>
+  <string name="twofifty_ms">250 毫秒</string>
+  <string name="fivehundred_ms_default">500 毫秒 (預設)</string>
+  <string name="sevenfifty_ms">750 毫秒</string>
+  <string name="one_second">1 秒</string>
+  <string name="onehalf_second">1.5 秒</string>
+  <string name="two_second">2 秒</string>
+  <string name="twohalf_second">2.5秒</string>
+  <string name="three_second_default">3 秒 (預設)</string>
+  <string name="threehalf_second">3.5 秒</string>
+  <string name="four_second">4 秒</string>
+  <string name="fourhalf_second">4.5 秒</string>
+  <string name="five_second">5 秒</string>
+  <string name="doze_notification_color_invert_title">通知反轉</string>
+  <string name="doze_notification_color_invert_summary_off">通知不會被反轉。 用於深色的主題</string>
+  <string name="doze_notification_color_invert_summary_on">通知將反轉。 用於淡色/原始主題</string>
+  <string name="ambient_display_show_battery_title">電池狀態</string>
+  <string name="ambient_display_show_battery_summary">在充電時顯示電池電量指示器</string>
+  <!-- Recents panel settings -->
+  <string name="show_clear_all_recents_button_title">開啟全部清除按鈕</string>
+  <string name="show_clear_all_recents_button_summary">清除所有按鈕使用時都顯示紀錄</string>
+  <string name="recents_clear_all_location_title">全部清除按鈕位置</string>
+  <string name="recents_clear_all_location_top_right">右上</string>
+  <string name="recents_clear_all_location_top_left">左上</string>
+  <string name="recents_clear_all_location_top_center">頂部置中</string>
+  <string name="recents_clear_all_location_bottom_right">右下</string>
+  <string name="recents_clear_all_location_bottom_left">左下</string>
+  <string name="recents_clear_all_location_bottom_center">底部置中</string>
+  <!-- Dashboard options -->
+  <string name="dashboard_category">面板選項</string>
+  <string name="dashboard_suggestions_title">建議</string>
+  <string name="summary_dashboard_suggestions_enabled">面板建議已停用</string>
+  <string name="summary_dashboard_suggestions_disabled">面板建議已啟用</string>
+  <string name="remove_tile_summaries_title">摘要</string>
+  <string name="remove_tile_summaries_summary_enabled">面板摘要已啟用</string>
+  <string name="remove_tile_summaries_summary_disabled">面板摘要已停用</string>
+  <string name="dashboard_conditions_title">條件</string>
+  <string name="summary_dashboard_conditions_enabled">面板條件已啟用</string>
+  <string name="summary_dashboard_conditions_disabled">面板條件已停用</string>
+  <string name="dashboard_columns_title">面板欄位</string>
+  <string name="dashboard_columns_summary">變更設定面板中顯示的欄位數</string>
+  <string name="dashboard_columns_portrait_title">行 (縱向)</string>
+  <string name="dashboard_columns_landscape_title">行 (橫向)</string>
 </resources>

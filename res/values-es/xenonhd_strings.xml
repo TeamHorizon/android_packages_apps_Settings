@@ -14,8 +14,8 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- About phone screen, XenonHD version -->
-  <string name="xenonhd_version">Versión XenonHD</string>
   <string name="xenonhd_version_default">Desconocido</string>
+  <string name="xenonhd_maintainer_default">Desconocido</string>
   <!-- Changelog -->
   <string name="changelog_xenonhd_title">Lista de cambios</string>
   <string name="changelog_xenonhd_error">No es posible mostrar la lista de cambios</string>
@@ -26,7 +26,6 @@
   <string name="xenonota_title">Actualizaciones XenonHD</string>
   <string name="xenonota_summary">Buscar actualizaciones</string>
   <!-- Dev Options Enabled by Default -->
-  <string name="show_dev_already_enabled">No es necesario, Opciones de desarrollo ya están activadas por defecto.</string>
   <!-- Phone info shortcut -->
   <string name="device_info_title">Información del dispositivo</string>
   <!-- Local (desktop) backup password menu title [CHAR LIMIT=25] -->
@@ -44,4 +43,35 @@
   <string name="app_notification_sound_timeout_value_5_minutes">5 minutos</string>
   <string name="app_notification_sound_timeout_value_15_minutes">10 minutos</string>
   <string name="app_notification_sound_timeout_value_30_minutes">30 minutos</string>
+  <!-- Randomize MAC addresses -->
+  <string name="randomize_mac_title">Direcciones MAC aleatorias</string>
+  <string name="tethering_no_sim_alert_title">Falta la tarjeta SIM</string>
+  <string name="tether_settings_launch_title">Punto de acceso móvil</string>
+  <string name="wifi_tether_first_use_message">Configurar punto de acceso móvil en el primer uso</string>
+  <!-- Volume Steps -->
+  <string name="volume_steps_title">Niveles de volumen</string>
+  <string name="volume_steps_music_title">Música</string>
+  <string name="volume_steps_reset">Resetear</string>
+  <!-- DayNight Theme -->
+  <string name="night_mode_title">Tema</string>
+  <string name="night_mode_no">Claro</string>
+  <string name="night_mode_yes">Oscuro</string>
+  <!-- Screenshot sound -->
+  <string name="screenshot_sound_title">Sonido de captura de pantalla</string>
+  <string name="screenshot_sound_summary">Reproducir sonido cuando se hace una captura de pantalla</string>
+  <!-- Manage applications: show substratum overlays -->
+  <!-- Manage applications: show substratum icon overlays -->
+  <!-- XenonHD Configurations-->
+  <!-- Selinux Switch -->
+  <!-- Recents Membar -->
+  <!-- Quick settings config -->
+  <!-- Media art -->
+  <!-- Quick unlock -->
+  <!-- Three-fingers-swipe to screenshot -->
+  <!-- Long press back to kill configurable timeout -->
+  <!-- Doze pulse options -->
+  <string name="summary_doze_enabled">Habilitado</string>
+  <string name="summary_doze_disabled">Deshabilitado</string>
+  <!-- Recents panel settings -->
+  <!-- Dashboard options -->
 </resources>

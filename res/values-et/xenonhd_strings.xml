@@ -14,12 +14,166 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- About phone screen, XenonHD version -->
+  <string name="xenonhd_version">XenonHD versioon</string>
+  <string name="xenonhd_version_default">Tundmatu</string>
+  <string name="xenonhd_maintainer">Hooldaja</string>
+  <string name="xenonhd_maintainer_default">Tundmatu</string>
   <!-- Changelog -->
+  <string name="changelog_xenonhd_title">Muudatuste logi</string>
+  <string name="changelog_xenonhd_error">Muudatuste logi ei saanud laadida</string>
+  <string name="changelog_xenonhd_summary">Muudatusi näete praeguses ehituses</string>
   <!-- Density category -->
+  <string name="density_category">Ekraanitiheduse valikud</string>
   <!-- XenonOTA -->
+  <string name="xenonota_title">XenonHD Uuendused</string>
+  <string name="xenonota_summary">Tarkvara uuenduste otsimine</string>
   <!-- Dev Options Enabled by Default -->
+  <string name="show_dev_already_enabled">Pole vaja, arendaja seaded on juba vaikimisi lubatud</string>
   <!-- Phone info shortcut -->
+  <string name="device_info_title">Telefoni teave</string>
   <!-- Local (desktop) backup password menu title [CHAR LIMIT=25] -->
+  <string name="local_backup_password_title">Töölaua varunduse parool</string>
   <!-- Double tap to sleep on lockscreen -->
+  <string name="double_tap_sleep_anywhere_title">DT2S lukustusekraanil</string>
+  <string name="double_tap_sleep_anywhere_summary">Koputage kaks korda ekraanile, et seade unerežiimi panna</string>
   <!-- Notification sound timeout -->
+  <string name="app_notification_sound_timeout_title">Väikseim aeg teavitushelide vahel</string>
+  <string name="app_notification_sound_timeout_summary_template">Ära luba heli või vibratsiooni rohkem kui üks kord iga <xliff:g id="duration">%1$s </xliff:g></string>
+  <string name="app_notification_sound_timeout_value_none">Piiranguta</string>
+  <string name="app_notification_sound_timeout_value_10_seconds">10 sekundit</string>
+  <string name="app_notification_sound_timeout_value_30_seconds">30 sekundit</string>
+  <string name="app_notification_sound_timeout_value_1_minute">1 minut</string>
+  <string name="app_notification_sound_timeout_value_5_minutes">5 minutit</string>
+  <string name="app_notification_sound_timeout_value_15_minutes">10 minutit</string>
+  <string name="app_notification_sound_timeout_value_30_minutes">30 minutit</string>
+  <!-- Randomize MAC addresses -->
+  <string name="randomize_mac_title">Ebakorrapärastage MAC aadressid</string>
+  <string name="randomize_mac_summary">Määra suvalised MAC aadressid kui võrguseadmed on sisse lülitatud. MAC-i ebakorrapärastamist kasutatakse skaneerimise ajal, olenemata sellest kas see seadistus on sisse lülitatud või mitte</string>
+  <string name="tethering_no_sim_alert_title">SIM kaarti pole sisestatud</string>
+  <string name="tethering_no_sim_card_text">Palun paigaldage SIM kaart, et saaksite oma andmesideühendust jagada teiste seadmetega mobiilse kuumkoha või USB interneti jagamise kaudu</string>
+  <string name="tether_settings_launch_title">Mobiilne kuumkoht</string>
+  <string name="wifi_tether_first_use_message">Sea ülesse mobiilne kuumkoht esimesel kasutusel</string>
+  <!-- Volume Steps -->
+  <string name="volume_steps_title">Heli astmed</string>
+  <string name="volume_steps_alarm_title">Äratus</string>
+  <string name="volume_steps_dtmf_title">DTMF (helistamine)</string>
+  <string name="volume_steps_music_title">Muusika</string>
+  <string name="volume_steps_notification_title">Teavitus</string>
+  <string name="volume_steps_ring_title">Kõlisti</string>
+  <string name="volume_steps_system_title">Süsteem</string>
+  <string name="volume_steps_voice_call_title">Helikõne</string>
+  <string name="volume_steps_reset">Lähtesta</string>
+  <!-- DayNight Theme -->
+  <string name="night_mode_title">Teema</string>
+  <string name="night_mode_no">Valgus</string>
+  <string name="night_mode_yes">Tume</string>
+  <!-- Screenshot sound -->
+  <string name="screenshot_sound_title">Kuvatõmmise heli</string>
+  <string name="screenshot_sound_summary">Esitab heli, kui kuvatõmmis on võetud</string>
+  <!-- Manage applications: show substratum overlays -->
+  <string name="filter_substratum_apps">Substratumi ülekatted</string>
+  <string name="menu_show_substratum">Näita ülekatteid</string>
+  <string name="menu_hide_substratum">Peida ülekatted</string>
+  <!-- Manage applications: show substratum icon overlays -->
+  <string name="filter_substratum_icons">Substratumi ikooni ülekatted</string>
+  <string name="menu_show_substratum_icons">Näita ikooni ülekatteid</string>
+  <string name="menu_hide_substratum_icons">Peida ikooni ülekatted</string>
+  <!-- XenonHD Configurations-->
+  <string name="xenonhd_title">Konfiguratioonid</string>
+  <string name="xenonhd_misc_title">Varia</string>
+  <string name="xenonhd_lockscreen_title">Lukustusekraan</string>
+  <string name="xenonhd_ui_title">Kasutajaliides</string>
+  <!-- Selinux Switch -->
+  <string name="selinux_switch_title">SELinux muutmise hoiatus</string>
+  <string name="selinux_switch_summary">SELinux on kerneli modifikatsioonide ja user-space komplekt. Režiimide vahetamine nõuab juurkasutaja õigusi ja see võib põhjustada soovimatuid tagajärgi. Premissive režiim on soovitatud. Vahetage seda omal vastutusel</string>
+  <string name="selinux_title">SELinux režiim</string>
+  <string name="selinux_permissive_title">Lubav</string>
+  <string name="selinux_enforcing_title">Sundiv</string>
+  <!-- Recents Membar -->
+  <string name="recents_membar">Mäluriba</string>
+  <string name="systemui_recents_mem_display_title">Näita Mäluriba</string>
+  <string name="systemui_recents_mem_display_summary">Näita vaba RAM hulka hiljutiste rakenduste vaates</string>
+  <!-- Quick settings config -->
+  <string name="qs_layout_category">Kiirseadete valikud</string>
+  <string name="qs_rows_portrait_title">Read (vertikaalpaigutus)</string>
+  <string name="qs_rows_landscape_title">Read (diagonaalpaigutus)</string>
+  <string name="qs_columns_title">Veerud</string>
+  <string name="qs_easy_toggle_title">Täiustatud Kiirseadete lihtne vahetamine</string>
+  <string name="qs_easy_toggle_summary">Võimalda ühe vajutusega lubada/keelata Wi-Fi, Mobiilne andmeside ja Bluetooth. Pikk vajutus näitab täpsemaid seadeid</string>
+  <!-- Media art -->
+  <string name="media_art_title">Meedia kaane pilt</string>
+  <string name="media_art_summary">Kuva meedia kaanepilt lukustusekraanil</string>
+  <!-- Quick unlock -->
+  <string name="quick_unlock_warning">Kiiravamise hoiatus</string>
+  <string name="quick_unlock_warning_summary">See funktsioon eirab olulisi kaitsemehhanisme ja peaaegu kindlasti häirib mitmik-kasutaja tuge. Kasutage omal vastutusel</string>
+  <string name="unlock_quick_unlock_control_title">Kiiravamine</string>
+  <string name="unlock_quick_unlock_control_summary">Ava automaatselt kui õige PIN/parool on sisestatud</string>
+  <!-- Three-fingers-swipe to screenshot -->
+  <string name="three_finger_gesture">Libistage et teha kuvatõmmis</string>
+  <string name="three_finger_gesture_summary">Libistage kolme sõrmega et teha kuvatõmmis</string>
+  <!-- Long press back to kill configurable timeout -->
+  <string name="kill_app_longpress_timeout_title">Pikalt tagasinupule vajutamise ajalõpp</string>
+  <string name="timeout_2000">2 sekundit (vaikimisi)</string>
+  <string name="timeout_1500">1,5 sekundit</string>
+  <string name="timeout_1000">1 sekund</string>
+  <string name="timeout_500">0,5 sekundit</string>
+  <!-- Doze pulse options -->
+  <string name="summary_doze_enabled">Lubatud</string>
+  <string name="summary_doze_disabled">Keelatud</string>
+  <string name="doze_overwrite_value_title">Kirjuta üle vaikesätted</string>
+  <string name="doze_overwrite_value_summary">Luba vaikeväärtusi alistada kasutaja konfiguratsiooniga</string>
+  <string name="doze_pulse_title">Kasutaja seadistatavad seaded</string>
+  <string name="doze_pulse_duration_in_title">Hajuta sisse</string>
+  <string name="doze_pulse_duration_visible_title">Nähtav kestus</string>
+  <string name="doze_pulse_duration_out_title">Hajuta välja</string>
+  <string name="doze_trigger_pickup_title">Ülesvõtmise sensori reageerimine</string>
+  <string name="doze_trigger_pickup_summary_on">Pulss käivitatakse ülesvõtmise sensori poolt</string>
+  <string name="doze_trigger_pickup_summary_off">Ülesvõtmise sensorit ei kasutata kui reageeriat</string>
+  <string name="doze_trigger_notification_title">Teate käivitaja</string>
+  <string name="doze_trigger_notification_summary_on">Pulss käivitatakse teadete poolt</string>
+  <string name="doze_trigger_notification_summary_off">Teated ei kasutata reageerimiseks</string>
+  <string name="doze_brightness_level_title">Heleduse tase</string>
+  <string name="onehundred_ms">100 ms</string>
+  <string name="twofifty_ms">250 ms</string>
+  <string name="fivehundred_ms_default">500 ms (vaikimisi)</string>
+  <string name="sevenfifty_ms">750 ms</string>
+  <string name="one_second">1 s</string>
+  <string name="onehalf_second">1,5 s</string>
+  <string name="two_second">2 s</string>
+  <string name="twohalf_second">2,5 s</string>
+  <string name="three_second_default">3 s (vaikimisi)</string>
+  <string name="threehalf_second">3,5 s</string>
+  <string name="four_second">4 s</string>
+  <string name="fourhalf_second">4,5 s</string>
+  <string name="five_second">5 s</string>
+  <string name="doze_notification_color_invert_title">Teate inversioon</string>
+  <string name="doze_notification_color_invert_summary_off">Teateid ei pöörata. Kasutada tumedate teemade puhul</string>
+  <string name="doze_notification_color_invert_summary_on">Teateid pööratakse. Kasutada heledate teemade puhul</string>
+  <string name="ambient_display_show_battery_title">Aku olek</string>
+  <string name="ambient_display_show_battery_summary">Näita aku indikaatorit pulsi ajal</string>
+  <!-- Recents panel settings -->
+  <string name="show_clear_all_recents_button_title">Luba tühjenda kõik nupp</string>
+  <string name="show_clear_all_recents_button_summary">Näita tühjenda kõik nuppu hiljutiste rakenduste aknas</string>
+  <string name="recents_clear_all_location_title">Tühjenda kõik nupu asukoht</string>
+  <string name="recents_clear_all_location_top_right">Paremal ülanurgas</string>
+  <string name="recents_clear_all_location_top_left">Vasakul ülanurgas</string>
+  <string name="recents_clear_all_location_top_center">Ülal keskel</string>
+  <string name="recents_clear_all_location_bottom_right">Paremal allnurgas</string>
+  <string name="recents_clear_all_location_bottom_left">Vasakul allnurgas</string>
+  <string name="recents_clear_all_location_bottom_center">All keskel</string>
+  <!-- Dashboard options -->
+  <string name="dashboard_category">Armatuurlaua valikud</string>
+  <string name="dashboard_suggestions_title">Soovitused</string>
+  <string name="summary_dashboard_suggestions_enabled">Armatuurlaua soovitused on lubatud</string>
+  <string name="summary_dashboard_suggestions_disabled">Armatuurlaua soovitused on keelatud</string>
+  <string name="remove_tile_summaries_title">Kokkuvõtted</string>
+  <string name="remove_tile_summaries_summary_enabled">Armatuurlaua kokkuvõtted on lubatud</string>
+  <string name="remove_tile_summaries_summary_disabled">Armatuurlaua kokkuvõtted on keelatud</string>
+  <string name="dashboard_conditions_title">Tingimused</string>
+  <string name="summary_dashboard_conditions_enabled">Armatuurlaua tingimused on lubatud</string>
+  <string name="summary_dashboard_conditions_disabled">Armatuurlaua tingimused on keelatud</string>
+  <string name="dashboard_columns_title">Armatuurlaua veerud</string>
+  <string name="dashboard_columns_summary">Armatuurlaua veergude arvu muutmine</string>
+  <string name="dashboard_columns_portrait_title">Veerud (vertikaalpaigutus)</string>
+  <string name="dashboard_columns_landscape_title">Veerud (landscape)</string>
 </resources>

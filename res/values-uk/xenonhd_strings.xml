@@ -15,6 +15,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- About phone screen, XenonHD version -->
   <string name="xenonhd_version_default">Невідомо</string>
+  <string name="xenonhd_maintainer_default">Невідомо</string>
   <!-- Changelog -->
   <string name="changelog_xenonhd_title">Список змін</string>
   <string name="changelog_xenonhd_error">Помилка завантаження списку змін</string>
@@ -27,4 +28,24 @@
   <!-- Local (desktop) backup password menu title [CHAR LIMIT=25] -->
   <!-- Double tap to sleep on lockscreen -->
   <!-- Notification sound timeout -->
+  <!-- Randomize MAC addresses -->
+  <!-- Volume Steps -->
+  <string name="volume_steps_music_title">Музика</string>
+  <!-- DayNight Theme -->
+  <!-- Screenshot sound -->
+  <!-- Manage applications: show substratum overlays -->
+  <!-- Manage applications: show substratum icon overlays -->
+  <!-- XenonHD Configurations-->
+  <!-- Selinux Switch -->
+  <!-- Recents Membar -->
+  <!-- Quick settings config -->
+  <!-- Media art -->
+  <!-- Quick unlock -->
+  <!-- Three-fingers-swipe to screenshot -->
+  <!-- Long press back to kill configurable timeout -->
+  <!-- Doze pulse options -->
+  <string name="summary_doze_enabled">Увімкнено</string>
+  <string name="summary_doze_disabled">Вимкнено</string>
+  <!-- Recents panel settings -->
+  <!-- Dashboard options -->
 </resources>

@@ -115,16 +115,13 @@
     <string name="systemui_recents_mem_display_title">Show Memory Bar</string>
     <string name="systemui_recents_mem_display_summary">Show free RAM bar in recent apps view</string>
 
-    <!-- Quick settings tiles columns and rows config -->
-    <string name="qs_layout_category">Quick Settings tiles layout</string>
+    <!-- Quick settings config -->
+    <string name="qs_layout_category">Quick Settings options</string>
     <string name="qs_rows_portrait_title">Rows (portrait)</string>
     <string name="qs_rows_landscape_title">Rows (landscape)</string>
     <string name="qs_columns_title">Columns</string>
-
-    <!-- QS tiles category -->
-    <string name="qs_tiles_category">QS tile options</string>
     <string name="qs_easy_toggle_title">Advanced QS Easy Toggle</string>
-    <string name="qs_easy_toggle_summary">Enable one tap action to enable or disable mobile data, wifi, and bluetooth</string>
+    <string name="qs_easy_toggle_summary">Enable one tap action to enable/disable Wi-Fi, Mobile Data and Bluetooth. Long press to see advanced settings</string>
 
     <!-- Media art -->
     <string name="media_art_title">Media cover art</string>
@@ -143,9 +140,9 @@
     <!-- Long press back to kill configurable timeout -->
     <string name="kill_app_longpress_timeout_title">Long press back button timeout</string>
     <string name="timeout_2000">2 seconds (default)</string>
-    <string name="timeout_1500">1,5 seconds</string>
+    <string name="timeout_1500">1.5 seconds</string>
     <string name="timeout_1000">1 second</string>
-    <string name="timeout_500">0,5 second</string>
+    <string name="timeout_500">0.5 second</string>
 
     <!-- Doze pulse options -->
     <string name="summary_doze_enabled">Enabled</string>
@@ -180,8 +177,8 @@
     <string name="fourhalf_second">4.5 s</string>
     <string name="five_second">5 s</string>
     <string name="doze_notification_color_invert_title">Notification inversion</string>
-    <string name="doze_notification_color_invert_summary_off">Notifications will not be inverted. Use for dark themes.</string>
-    <string name="doze_notification_color_invert_summary_on">Notifications will be inverted. Use for light/stock theme.</string>
+    <string name="doze_notification_color_invert_summary_off">Notifications will not be inverted. Use for dark themes</string>
+    <string name="doze_notification_color_invert_summary_on">Notifications will be inverted. Use for light/stock theme</string>
     <string name="ambient_display_show_battery_title">Battery Status</string>
     <string name="ambient_display_show_battery_summary">Show battery indicator during pulse</string>
 
