@@ -209,4 +209,12 @@
     <string name="dashboard_columns_portrait_title">Columns (portrait)</string>
     <string name="dashboard_columns_landscape_title">Columns (landscape)</string>
 
+    <!-- Hide Lockscreen clock, date, & alarm -->
+    <string name="hide_lockscreen_clock_title">Clock widget</string>
+    <string name="hide_lockscreen_clock_summary">Hide clock widget</string>
+    <string name="hide_lockscreen_date_title">Date widget</string>
+    <string name="hide_lockscreen_date_summary">Hide date underneath the clock widget</string>
+    <string name="hide_lockscreen_alarm_title">Alarm text</string>
+    <string name="hide_lockscreen_alarm_summary">Hide alarm text underneath the clock widget</string>
+
 </resources>
