@@ -39,6 +39,7 @@ import android.preference.PreferenceActivity;
 import android.preference.PreferenceCategory;
 
 import com.android.internal.logging.MetricsProto.MetricsEvent;
+import com.android.internal.widget.LockPatternUtils;
 
 import com.android.settings.preference.CustomSeekBarPreference;
 
@@ -69,6 +70,10 @@ public class MainSettings extends SettingsPreferenceFragment implements
     private static final String KEY_DASHBOARD_PORTRAIT_COLUMNS = "dashboard_portrait_columns";
     private static final String KEY_DASHBOARD_LANDSCAPE_COLUMNS = "dashboard_landscape_columns";
 
+    private static final String PREF_SHOW_EMERGENCY_BUTTON = "show_emergency_button";
+
+    private static final int MY_USER_ID = UserHandle.myUserId();
+
     private SwitchPreference mConfig;
 
     private SwitchPreference mSelinux;
@@ -84,12 +89,14 @@ public class MainSettings extends SettingsPreferenceFragment implements
     private CustomSeekBarPreference mDashboardPortraitColumns;
     private CustomSeekBarPreference mDashboardLandscapeColumns;
 
+    private SwitchPreference mEmergencyButton;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         addPreferencesFromResource(R.xml.xenonhd_main_settings);
-        PreferenceScreen prefSet = getPreferenceScreen();
+        final PreferenceScreen prefSet = getPreferenceScreen();
 	  	final ContentResolver resolver = getActivity().getContentResolver();
 
         //SELinux
@@ -128,6 +135,17 @@ public class MainSettings extends SettingsPreferenceFragment implements
         mEasyToggle.setOnPreferenceChangeListener(this);
         mEasyToggle.setChecked((Settings.Secure.getInt(resolver,
                 Settings.Secure.QS_EASY_TOGGLE, 0) == 1));
+
+        final LockPatternUtils lockPatternUtils = new LockPatternUtils(getActivity());
+
+        mEmergencyButton = (SwitchPreference) findPreference(PREF_SHOW_EMERGENCY_BUTTON);
+        if (lockPatternUtils.isSecure(MY_USER_ID)) {
+            mEmergencyButton.setChecked((Settings.System.getInt(resolver,
+                Settings.System.SHOW_EMERGENCY_BUTTON, 1) == 1));
+            mEmergencyButton.setOnPreferenceChangeListener(this);
+        } else {
+            prefSet.removePreference(mEmergencyButton);
+        }
     }
 
     @Override
@@ -227,6 +245,11 @@ public class MainSettings extends SettingsPreferenceFragment implements
             boolean checked = ((SwitchPreference)preference).isChecked();
             Settings.Secure.putInt(getActivity().getContentResolver(),
                     Settings.Secure.QS_EASY_TOGGLE, checked ? 1:0);
+            return true;
+        } else if  (preference == mEmergencyButton) {
+            boolean checked = ((SwitchPreference)preference).isChecked();
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.SHOW_EMERGENCY_BUTTON, checked ? 1:0);
             return true;
         }
         return false;

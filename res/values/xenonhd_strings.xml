@@ -217,4 +217,9 @@
     <string name="hide_lockscreen_alarm_title">Alarm text</string>
     <string name="hide_lockscreen_alarm_summary">Hide alarm text underneath the clock widget</string>
 
+    <!-- Emergency button -->
+    <string name="emergency_button_title">Emergency button</string>
+    <string name="emergency_button_summary_on">Emergency button shown on the lockscreen</string>
+    <string name="emergency_button_summary_off">Emergency button hidden on the lockscreen</string>
+
 </resources>
