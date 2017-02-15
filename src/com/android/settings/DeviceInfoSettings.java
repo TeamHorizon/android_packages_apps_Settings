@@ -229,7 +229,7 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
     @Override
     public boolean onPreferenceTreeClick(Preference preference) {
         if (preference.getKey().equals(KEY_FIRMWARE_VERSION)
-                || preference.getKey().equals(KEY_MOD_VERSION)) {
+                || preference.getKey().equals(KEY_XENONHD_VERSION)) {
             System.arraycopy(mHits, 1, mHits, 0, mHits.length-1);
             mHits[mHits.length-1] = SystemClock.uptimeMillis();
             if (mHits[0] >= (SystemClock.uptimeMillis()-500)) {
@@ -243,7 +243,7 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
                 }
 
                 Intent intent = new Intent(Intent.ACTION_MAIN);
-                intent.putExtra("is_lineage", preference.getKey().equals(KEY_MOD_VERSION));
+                intent.putExtra("is_xenonhd", preference.getKey().equals(KEY_XENONHD_VERSION));
                 intent.setClassName("android",
                         com.android.internal.app.PlatLogoActivity.class.getName());
                 try {

@@ -186,7 +186,7 @@ public class StorageSettings extends SettingsPreferenceFragment implements Index
                 }
             } else if (vol.getType() == VolumeInfo.TYPE_PUBLIC) {
                 StorageVolumePreference ExStorageVolumePreference =
-                        new StorageVolumePreference(context, vol, getColorPublic(getResources()), 0));
+                        new StorageVolumePreference(context, vol, getColorPublic(getResources()), 0);
 
                 //Disable preference when in change
                 ExStorageVolumePreference.setEnabled(vol.getState()!= VolumeInfo.STATE_CHECKING
