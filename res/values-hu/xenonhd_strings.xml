@@ -49,10 +49,6 @@
   <!-- Randomize MAC addresses -->
   <string name="randomize_mac_title">Véletlenszerű MAC-címek</string>
   <string name="randomize_mac_summary">Véletlenszerű MAC cím hozzárendelése, ha a hálózati eszközök engedélyezve vannak. A MAC cím véletlenszerűsége keresés közben ettől a kapcsolótól függetlenül engedélyezve van</string>
-  <string name="tethering_no_sim_alert_title">Nincs SIM kártya</string>
-  <string name="tethering_no_sim_card_text">Kérjük helyezze be a SIM kártyát annak érdekében, hogy adatkapcsolatát megoszthassa más eszközökkel mobil hotszpot vagy USB-s internetmegosztás segítségével</string>
-  <string name="tether_settings_launch_title">Mobil hotszpot</string>
-  <string name="wifi_tether_first_use_message">Mobil hotszpot beállítása első használatánál</string>
   <!-- Volume Steps -->
   <string name="volume_steps_title">Hangerő lépések</string>
   <string name="volume_steps_alarm_title">Riasztások</string>
@@ -176,4 +172,15 @@
   <string name="dashboard_columns_summary">Az irányítópulton megjelenő oszlopok számának módosítása</string>
   <string name="dashboard_columns_portrait_title">Oszlopok (álló)</string>
   <string name="dashboard_columns_landscape_title">Oszlopok (fekvő)</string>
+  <!-- Hide Lockscreen clock, date, & alarm -->
+  <string name="hide_lockscreen_clock_title">Óra modul</string>
+  <string name="hide_lockscreen_clock_summary">Óra modul elrejtése</string>
+  <string name="hide_lockscreen_date_title">Dátum modul</string>
+  <string name="hide_lockscreen_date_summary">Az óra modul alatti dátum elrejtése</string>
+  <string name="hide_lockscreen_alarm_title">Riasztási szöveg</string>
+  <string name="hide_lockscreen_alarm_summary">Az óra modul alatti riasztási szöveg elrejtése</string>
+  <!-- Emergency button -->
+  <string name="emergency_button_title">Segélyhívó gomb</string>
+  <string name="emergency_button_summary_on">Segélyhívó gomb megjelenítve a zárképernyőn</string>
+  <string name="emergency_button_summary_off">Segélyhívó gomb elrejtve a zárképernyőn</string>
 </resources>

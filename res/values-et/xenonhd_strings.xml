@@ -49,10 +49,6 @@
   <!-- Randomize MAC addresses -->
   <string name="randomize_mac_title">Ebakorrapärastage MAC aadressid</string>
   <string name="randomize_mac_summary">Määra suvalised MAC aadressid kui võrguseadmed on sisse lülitatud. MAC-i ebakorrapärastamist kasutatakse skaneerimise ajal, olenemata sellest kas see seadistus on sisse lülitatud või mitte</string>
-  <string name="tethering_no_sim_alert_title">SIM kaarti pole sisestatud</string>
-  <string name="tethering_no_sim_card_text">Palun paigaldage SIM kaart, et saaksite oma andmesideühendust jagada teiste seadmetega mobiilse kuumkoha või USB interneti jagamise kaudu</string>
-  <string name="tether_settings_launch_title">Mobiilne kuumkoht</string>
-  <string name="wifi_tether_first_use_message">Sea ülesse mobiilne kuumkoht esimesel kasutusel</string>
   <!-- Volume Steps -->
   <string name="volume_steps_title">Heli astmed</string>
   <string name="volume_steps_alarm_title">Äratus</string>
@@ -176,4 +172,6 @@
   <string name="dashboard_columns_summary">Armatuurlaua veergude arvu muutmine</string>
   <string name="dashboard_columns_portrait_title">Veerud (vertikaalpaigutus)</string>
   <string name="dashboard_columns_landscape_title">Veerud (landscape)</string>
+  <!-- Hide Lockscreen clock, date, & alarm -->
+  <!-- Emergency button -->
 </resources>

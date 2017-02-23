@@ -49,10 +49,6 @@
   <!-- Randomize MAC addresses -->
   <string name="randomize_mac_title">Losowe adresy MAC</string>
   <string name="randomize_mac_summary">Przypisuje losowe adresy MAC, gdy urządzenia sieciowe są włączone. Randomizacja MAC jest używana podczas skanowania, niezależnie od stanu przełącznika</string>
-  <string name="tethering_no_sim_alert_title">Brak karty SIM</string>
-  <string name="tethering_no_sim_card_text">Proszę włożyć kartę SIM, aby udostępnić połączenie danych innym urządzeniom, za pomocą mobilnego punktu dostępu lub tetheringu przez USB</string>
-  <string name="tether_settings_launch_title">Przenośny punkt dostępu</string>
-  <string name="wifi_tether_first_use_message">Skonfiguruj przenośny punk dostępu przy pierwszym użyciu</string>
   <!-- Volume Steps -->
   <string name="volume_steps_title">Poziomy głośności</string>
   <string name="volume_steps_alarm_title">Budzik</string>
@@ -176,4 +172,15 @@
   <string name="dashboard_columns_summary">Ilość kolumn wyświetlanych w panelu ustawień</string>
   <string name="dashboard_columns_portrait_title">Kolumny (pionowo)</string>
   <string name="dashboard_columns_landscape_title">Kolumny (poziomo)</string>
+  <!-- Hide Lockscreen clock, date, & alarm -->
+  <string name="hide_lockscreen_clock_title">Widżet zegara</string>
+  <string name="hide_lockscreen_clock_summary">Ukryj widżet zegara</string>
+  <string name="hide_lockscreen_date_title">Widżet daty</string>
+  <string name="hide_lockscreen_date_summary">Ukryj datę pod widżetem zegara</string>
+  <string name="hide_lockscreen_alarm_title">Budzik</string>
+  <string name="hide_lockscreen_alarm_summary">Ukryj budzik pod widżetem zegara</string>
+  <!-- Emergency button -->
+  <string name="emergency_button_title">Przycisk połączenia alarmowego</string>
+  <string name="emergency_button_summary_on">Przycisk połączenia alarmowego widoczny na ekranie blokady</string>
+  <string name="emergency_button_summary_off">Przycisk połączenia alarmowego ukryty na ekranie blokady</string>
 </resources>

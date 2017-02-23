@@ -48,4 +48,6 @@
   <string name="summary_doze_disabled">Вимкнено</string>
   <!-- Recents panel settings -->
   <!-- Dashboard options -->
+  <!-- Hide Lockscreen clock, date, & alarm -->
+  <!-- Emergency button -->
 </resources>

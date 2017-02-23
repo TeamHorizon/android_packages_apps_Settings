@@ -14,7 +14,9 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- About phone screen, XenonHD version -->
+  <string name="xenonhd_version">Versión de XenonHD</string>
   <string name="xenonhd_version_default">Desconocido</string>
+  <string name="xenonhd_maintainer">Desarrollador</string>
   <string name="xenonhd_maintainer_default">Desconocido</string>
   <!-- Changelog -->
   <string name="changelog_xenonhd_title">Lista de cambios</string>
@@ -26,6 +28,7 @@
   <string name="xenonota_title">Actualizaciones XenonHD</string>
   <string name="xenonota_summary">Buscar actualizaciones</string>
   <!-- Dev Options Enabled by Default -->
+  <string name="show_dev_already_enabled">No es necesario, las opciones de desarrollo ya están activadas por defecto</string>
   <!-- Phone info shortcut -->
   <string name="device_info_title">Información del dispositivo</string>
   <!-- Local (desktop) backup password menu title [CHAR LIMIT=25] -->
@@ -45,12 +48,16 @@
   <string name="app_notification_sound_timeout_value_30_minutes">30 minutos</string>
   <!-- Randomize MAC addresses -->
   <string name="randomize_mac_title">Direcciones MAC aleatorias</string>
-  <string name="tethering_no_sim_alert_title">Falta la tarjeta SIM</string>
-  <string name="tether_settings_launch_title">Punto de acceso móvil</string>
-  <string name="wifi_tether_first_use_message">Configurar punto de acceso móvil en el primer uso</string>
+  <string name="randomize_mac_summary">Asignar direcciones MAC al azar cuando se activan los dispositivos de red. MAC aleatoria se utiliza durante el escaneo, esté o no habilitado</string>
   <!-- Volume Steps -->
   <string name="volume_steps_title">Niveles de volumen</string>
+  <string name="volume_steps_alarm_title">Alarma</string>
+  <string name="volume_steps_dtmf_title">DTMF (marcación)</string>
   <string name="volume_steps_music_title">Música</string>
+  <string name="volume_steps_notification_title">Notificación</string>
+  <string name="volume_steps_ring_title">Tono de llamada</string>
+  <string name="volume_steps_system_title">Sistema</string>
+  <string name="volume_steps_voice_call_title">Llamada de voz</string>
   <string name="volume_steps_reset">Resetear</string>
   <!-- DayNight Theme -->
   <string name="night_mode_title">Tema</string>
@@ -60,18 +67,120 @@
   <string name="screenshot_sound_title">Sonido de captura de pantalla</string>
   <string name="screenshot_sound_summary">Reproducir sonido cuando se hace una captura de pantalla</string>
   <!-- Manage applications: show substratum overlays -->
+  <string name="filter_substratum_apps">Capas de Substratum</string>
+  <string name="menu_show_substratum">Mostrar capas</string>
+  <string name="menu_hide_substratum">Ocultar capas</string>
   <!-- Manage applications: show substratum icon overlays -->
+  <string name="filter_substratum_icons">Capa de iconos de Substratum</string>
+  <string name="menu_show_substratum_icons">Mostrar capa de iconos</string>
+  <string name="menu_hide_substratum_icons">Ocultar capa de iconos</string>
   <!-- XenonHD Configurations-->
+  <string name="xenonhd_title">Configuraciones</string>
+  <string name="xenonhd_misc_title">Varios</string>
+  <string name="xenonhd_lockscreen_title">Pantalla de bloqueo</string>
+  <string name="xenonhd_ui_title">Interfaz de Usuario</string>
   <!-- Selinux Switch -->
+  <string name="selinux_switch_title">Precaución al cambiar el modo SELinux</string>
+  <string name="selinux_switch_summary">SELinux es un conjunto de modificaciones del kernel y herramientas de espacio del usuario. Cambiar el modo SELinux requiere acceso root y puede causar efectos no deseados. Modo Permisivo recomendado. Usar bajo su propio riesgo</string>
+  <string name="selinux_title">Modo SELinux</string>
+  <string name="selinux_permissive_title">Permisivo</string>
+  <string name="selinux_enforcing_title">Obligatorio</string>
   <!-- Recents Membar -->
+  <string name="recents_membar">Barra de memoria</string>
+  <string name="systemui_recents_mem_display_title">Mostrar barra de memoria RAM</string>
+  <string name="systemui_recents_mem_display_summary">Mostrar barra de memoria RAM libre en multitarea</string>
   <!-- Quick settings config -->
+  <string name="qs_layout_category">Opciones de configuración rápidas</string>
+  <string name="qs_rows_portrait_title">Filas (vertical)</string>
+  <string name="qs_rows_landscape_title">Filas (horizontal)</string>
+  <string name="qs_columns_title">Columnas</string>
+  <string name="qs_easy_toggle_title">Modo avanzado QS Easy Toggle</string>
+  <string name="qs_easy_toggle_summary">Activar una pulsación para activar/desactivar Wi-Fi, datos móviles y bluetooth. Pulsación larga para ver ajustes avanzados</string>
   <!-- Media art -->
+  <string name="media_art_title">Caratula de música</string>
+  <string name="media_art_summary">Mostrar carátula de las canciones en la pantalla de bloqueo</string>
   <!-- Quick unlock -->
+  <string name="quick_unlock_warning">Precaución de desbloqueo rápido</string>
+  <string name="quick_unlock_warning_summary">Esta característica se salta importantes mecanismos de seguridad y seguramente provoca un mal funcionamiento de la función multiusuario. Usar bajo tu propia responsabilidad</string>
+  <string name="unlock_quick_unlock_control_title">Desbloqueo rápido</string>
+  <string name="unlock_quick_unlock_control_summary">Desbloquear automáticamente al introducir correctamente el PIN o la contraseña</string>
   <!-- Three-fingers-swipe to screenshot -->
+  <string name="three_finger_gesture">Deslizar para hacer captura de pantalla</string>
+  <string name="three_finger_gesture_summary">Deslizar tres dedos para hacer captura de pantalla</string>
   <!-- Long press back to kill configurable timeout -->
+  <string name="kill_app_longpress_timeout_title">Tiempo de espera de pulsación larga del botón atrás</string>
+  <string name="timeout_2000">2 segundos (por defecto)</string>
+  <string name="timeout_1500">1.5 segundos</string>
+  <string name="timeout_1000">1 segundo</string>
+  <string name="timeout_500">0,5 segundos</string>
   <!-- Doze pulse options -->
   <string name="summary_doze_enabled">Habilitado</string>
   <string name="summary_doze_disabled">Deshabilitado</string>
+  <string name="doze_overwrite_value_title">Sobrescribir los valores por defecto</string>
+  <string name="doze_overwrite_value_summary">Permitir sobrescribir los valores por defecto con la configuración de usuario</string>
+  <string name="doze_pulse_title">Ajustes configurables del usuario</string>
+  <string name="doze_pulse_duration_in_title">Desvanecer hacia dentro</string>
+  <string name="doze_pulse_duration_visible_title">Duración visible</string>
+  <string name="doze_pulse_duration_out_title">Desvanecer hacia afuera</string>
+  <string name="doze_trigger_pickup_title">Activar cuando levantas el dispositivo</string>
+  <string name="doze_trigger_pickup_summary_on">La pantalla se encenderá al coger el dispositivo</string>
+  <string name="doze_trigger_pickup_summary_off">Levantar el dispositivo no despertará la pantalla</string>
+  <string name="doze_trigger_notification_title">Activador de notificaciones</string>
+  <string name="doze_trigger_notification_summary_on">La pantalla se encenderá al recibir notificaciones</string>
+  <string name="doze_trigger_notification_summary_off">La pantalla no se encenderá al recibir notificaciones</string>
+  <string name="doze_brightness_level_title">Nivel de brillo</string>
+  <string name="onehundred_ms">100 ms</string>
+  <string name="twofifty_ms">250 ms</string>
+  <string name="fivehundred_ms_default">500 ms (predeterminado)</string>
+  <string name="sevenfifty_ms">750 ms</string>
+  <string name="one_second">1 s</string>
+  <string name="onehalf_second">1.5 s</string>
+  <string name="two_second">2 s</string>
+  <string name="twohalf_second">2.5 s</string>
+  <string name="three_second_default">3 s (por defecto)</string>
+  <string name="threehalf_second">3.5 s</string>
+  <string name="four_second">4 s</string>
+  <string name="fourhalf_second">4.5 s</string>
+  <string name="five_second">5 s</string>
+  <string name="doze_notification_color_invert_title">Inversión de notificaciones</string>
+  <string name="doze_notification_color_invert_summary_off">Las notificaciones no se invierten. Úsalo para temas oscuros</string>
+  <string name="doze_notification_color_invert_summary_on">Se invertirán los colores de la notificaciones. Se usa para temas claros</string>
+  <string name="ambient_display_show_battery_title">Estado de batería</string>
+  <string name="ambient_display_show_battery_summary">Mostrar indicador de la batería durante el pulso</string>
   <!-- Recents panel settings -->
+  <string name="show_clear_all_recents_button_title">Activar botón borrar todo</string>
+  <string name="show_clear_all_recents_button_summary">Mostrar el botón de borrar todo mientras se usa la multitarea</string>
+  <string name="recents_clear_all_location_title">Ubicación del botón borrar todo</string>
+  <string name="recents_clear_all_location_top_right">Arriba a la derecha</string>
+  <string name="recents_clear_all_location_top_left">Arriba a la izquierda</string>
+  <string name="recents_clear_all_location_top_center">Arriba centrado</string>
+  <string name="recents_clear_all_location_bottom_right">Abajo a la derecha</string>
+  <string name="recents_clear_all_location_bottom_left">Abajo a la izquierda</string>
+  <string name="recents_clear_all_location_bottom_center">Abajo centrado</string>
   <!-- Dashboard options -->
+  <string name="dashboard_category">Opciones de la pantalla de ajustes</string>
+  <string name="dashboard_suggestions_title">Sugerencias</string>
+  <string name="summary_dashboard_suggestions_enabled">Sugerencias habilitadas en la pantalla de ajustes</string>
+  <string name="summary_dashboard_suggestions_disabled">Sugerencias deshabilitadas en la pantalla de ajustes</string>
+  <string name="remove_tile_summaries_title">Resúmenes</string>
+  <string name="remove_tile_summaries_summary_enabled">Resúmenes habilitados en la pantalla de ajustes</string>
+  <string name="remove_tile_summaries_summary_disabled">Resúmenes deshabilitados en la pantalla de ajustes</string>
+  <string name="dashboard_conditions_title">Condiciones</string>
+  <string name="summary_dashboard_conditions_enabled">Las condiciones en el panel de ajustes están habilitadas</string>
+  <string name="summary_dashboard_conditions_disabled">Las condiciones en el panel de ajustes están deshabilitadas</string>
+  <string name="dashboard_columns_title">Columnas del panel de ajustes</string>
+  <string name="dashboard_columns_summary">Cambiar el número de columnas del panel de ajustes</string>
+  <string name="dashboard_columns_portrait_title">Columnas (vertical)</string>
+  <string name="dashboard_columns_landscape_title">Columnas (apaisado)</string>
+  <!-- Hide Lockscreen clock, date, & alarm -->
+  <string name="hide_lockscreen_clock_title">Widget del reloj</string>
+  <string name="hide_lockscreen_clock_summary">Ocultar el widget del reloj</string>
+  <string name="hide_lockscreen_date_title">Widget de la fecha</string>
+  <string name="hide_lockscreen_date_summary">Ocultar fecha debajo del widget del reloj</string>
+  <string name="hide_lockscreen_alarm_title">Texto de alarma</string>
+  <string name="hide_lockscreen_alarm_summary">Ocultar el texto de alarma debajo del widget del reloj</string>
+  <!-- Emergency button -->
+  <string name="emergency_button_title">Botón de emergencia</string>
+  <string name="emergency_button_summary_on">Botón de emergencia en la pantalla de bloqueo</string>
+  <string name="emergency_button_summary_off">Botón de emergencia oculto en la pantalla de bloqueo</string>
 </resources>

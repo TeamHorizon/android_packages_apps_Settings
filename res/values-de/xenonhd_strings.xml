@@ -49,10 +49,6 @@
   <!-- Randomize MAC addresses -->
   <string name="randomize_mac_title">Autorisierte MAC-Adressen</string>
   <string name="randomize_mac_summary">Weisen Sie zufällige MAC-Adressen zu, wenn Netzwerkgeräte aktiviert sind. MAC-Randomisierung wird während des Scannens verwendet, ob dieses aktiviert ist oder nicht.</string>
-  <string name="tethering_no_sim_alert_title">Keine SIM-Karte</string>
-  <string name="tethering_no_sim_card_text">Bitte legen Sie eine SIM-Karte ein, um Ihre Datenverbindung mit anderen Geräten über mobilen Hotspot oder USB-Tethering zu teilen</string>
-  <string name="tether_settings_launch_title">Mobiler Hotspot</string>
-  <string name="wifi_tether_first_use_message">Mobiler Hotspot bei der ersten Benutzung einrichten</string>
   <!-- Volume Steps -->
   <string name="volume_steps_title">Lautstärke-Schritte</string>
   <string name="volume_steps_alarm_title">Wecker</string>
@@ -98,6 +94,7 @@
   <string name="qs_rows_portrait_title">Zeilen (Hochformat)</string>
   <string name="qs_rows_landscape_title">Zeilen (Querformat)</string>
   <string name="qs_columns_title">Spalten</string>
+  <string name="qs_easy_toggle_title">Erweiterter QS Easy Toggle</string>
   <string name="qs_easy_toggle_summary">Ermöglicht das Aktivieren und Deaktivieren von Wi-Fi, Mobilen Daten und Bluetooth mit einem Tap. Lange drücken, um erweiterte Einstellungen zu sehen</string>
   <!-- Media art -->
   <string name="media_art_title">Albumcover</string>
@@ -175,4 +172,15 @@
   <string name="dashboard_columns_summary">Anzahl der Spalten bearbeiten, die im Dashboard angezeigt werden</string>
   <string name="dashboard_columns_portrait_title">Spalten (Hochformat)</string>
   <string name="dashboard_columns_landscape_title">Spalten (Querformat)</string>
+  <!-- Hide Lockscreen clock, date, & alarm -->
+  <string name="hide_lockscreen_clock_title">Uhr-Widget</string>
+  <string name="hide_lockscreen_clock_summary">Uhr-Widget ausblenden</string>
+  <string name="hide_lockscreen_date_title">Datum-Widget</string>
+  <string name="hide_lockscreen_date_summary">Datum unter dem Uhr-Widget ausblenden</string>
+  <string name="hide_lockscreen_alarm_title">Alarmtext</string>
+  <string name="hide_lockscreen_alarm_summary">Alarmtext unterhalb des Uhr-Widgets ausblenden</string>
+  <!-- Emergency button -->
+  <string name="emergency_button_title">Notruftaste</string>
+  <string name="emergency_button_summary_on">Notruftaste auf dem Lockscreen angezeigt</string>
+  <string name="emergency_button_summary_off">Notruftaste auf dem Lockscreen versteckt</string>
 </resources>
