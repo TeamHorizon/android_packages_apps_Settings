@@ -243,4 +243,8 @@
     <string name="wakelock_blocker_warning_title">Proceed with caution</string>
     <string name="wakelock_blocker_warning">Blocking wakelocks have the potential to cause instability, crashes or data loss</string>
 
+    <!-- Force authorize substratum packages -->
+    <string name="force_authorize_substratum_packages_title">Force authorize every theme app</string>
+    <string name="force_authorize_substratum_packages_summary">Allow theme apps from unknown sources</string>
+
 </resources>
