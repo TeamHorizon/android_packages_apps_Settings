@@ -19,6 +19,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.content.pm.ResolveInfo;
+import android.hardware.fingerprint.FingerprintManager;
 import android.os.Bundle;
 import android.os.Build;
 import com.android.settings.dashboard.DashboardSummary;
@@ -74,6 +75,8 @@ public class MainSettings extends SettingsPreferenceFragment implements
 
     private static final int MY_USER_ID = UserHandle.myUserId();
 
+    private static final String FINGERPRINT_VIB = "fingerprint_success_vib";
+
     private SwitchPreference mConfig;
 
     private SwitchPreference mSelinux;
@@ -90,6 +93,9 @@ public class MainSettings extends SettingsPreferenceFragment implements
     private CustomSeekBarPreference mDashboardLandscapeColumns;
 
     private SwitchPreference mEmergencyButton;
+
+    private FingerprintManager mFingerprintManager;
+    private SystemSettingSwitchPreference mFingerprintVib;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -145,6 +151,12 @@ public class MainSettings extends SettingsPreferenceFragment implements
             mEmergencyButton.setOnPreferenceChangeListener(this);
         } else {
             prefSet.removePreference(mEmergencyButton);
+        }
+
+        mFingerprintManager = (FingerprintManager) getActivity().getSystemService(Context.FINGERPRINT_SERVICE);
+        mFingerprintVib = (SystemSettingSwitchPreference) findPreference(FINGERPRINT_VIB);
+        if (!mFingerprintManager.isHardwareDetected()){
+            secureCategory.removePreference(mFingerprintVib);
         }
     }
 

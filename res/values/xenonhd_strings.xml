@@ -222,4 +222,8 @@
     <string name="emergency_button_summary_on">Emergency button shown on the lockscreen</string>
     <string name="emergency_button_summary_off">Emergency button hidden on the lockscreen</string>
 
+    <!-- Fingerprint authentication vibration -->
+    <string name="fprint_sucess_vib_title">Fingerprint authentication vibration</string>
+    <string name="fprint_sucess_vib_summary">Vibrate on successful fingerprint authentication</string>
+
 </resources>
