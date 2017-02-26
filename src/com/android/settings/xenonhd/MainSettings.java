@@ -76,6 +76,7 @@ public class MainSettings extends SettingsPreferenceFragment implements
     private static final int MY_USER_ID = UserHandle.myUserId();
 
     private static final String FINGERPRINT_VIB = "fingerprint_success_vib";
+    private static final String FP_UNLOCK_KEYSTORE = "fp_unlock_keystore";
 
     private SwitchPreference mConfig;
 
@@ -96,6 +97,7 @@ public class MainSettings extends SettingsPreferenceFragment implements
 
     private FingerprintManager mFingerprintManager;
     private SystemSettingSwitchPreference mFingerprintVib;
+    private SystemSettingSwitchPreference mFpKeystore;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -155,8 +157,10 @@ public class MainSettings extends SettingsPreferenceFragment implements
 
         mFingerprintManager = (FingerprintManager) getActivity().getSystemService(Context.FINGERPRINT_SERVICE);
         mFingerprintVib = (SystemSettingSwitchPreference) findPreference(FINGERPRINT_VIB);
-        if (!mFingerprintManager.isHardwareDetected()){
+        mFpKeystore = (SystemSettingSwitchPreference) findPreference(FP_UNLOCK_KEYSTORE);
+        if (!mFingerprintManager.isHardwareDetected()) {
             secureCategory.removePreference(mFingerprintVib);
+            secureCategory.removePreference(mFpKeystore);
         }
     }
 
