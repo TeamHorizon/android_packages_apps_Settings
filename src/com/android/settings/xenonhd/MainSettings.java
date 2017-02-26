@@ -32,12 +32,12 @@ import android.support.v7.preference.ListPreference;
 import android.support.v14.preference.SwitchPreference;
 import android.support.v7.preference.Preference;
 import android.support.v7.preference.Preference.OnPreferenceChangeListener;
+import android.support.v7.preference.PreferenceCategory;
 import android.support.v7.preference.PreferenceScreen;
 import android.provider.Settings;
 import com.android.settings.util.Helpers;
 import dalvik.system.VMRuntime;
 import android.preference.PreferenceActivity;
-import android.preference.PreferenceCategory;
 
 import com.android.internal.logging.MetricsProto.MetricsEvent;
 import com.android.internal.widget.LockPatternUtils;
@@ -57,6 +57,8 @@ import java.io.DataOutputStream;
 public class MainSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
 
+    private static final int MY_USER_ID = UserHandle.myUserId();
+
     private static final String TAG = "MainSettings";
 
     private static final String SELINUX = "selinux";
@@ -72,8 +74,6 @@ public class MainSettings extends SettingsPreferenceFragment implements
     private static final String KEY_DASHBOARD_LANDSCAPE_COLUMNS = "dashboard_landscape_columns";
 
     private static final String PREF_SHOW_EMERGENCY_BUTTON = "show_emergency_button";
-
-    private static final int MY_USER_ID = UserHandle.myUserId();
 
     private static final String FINGERPRINT_VIB = "fingerprint_success_vib";
     private static final String FP_UNLOCK_KEYSTORE = "fp_unlock_keystore";
@@ -96,16 +96,18 @@ public class MainSettings extends SettingsPreferenceFragment implements
     private SwitchPreference mEmergencyButton;
 
     private FingerprintManager mFingerprintManager;
-    private SystemSettingSwitchPreference mFingerprintVib;
-    private SystemSettingSwitchPreference mFpKeystore;
+    private SwitchPreference mFingerprintVib;
+    private SwitchPreference mFpKeystore;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         addPreferencesFromResource(R.xml.xenonhd_main_settings);
+
         final PreferenceScreen prefSet = getPreferenceScreen();
-	  	final ContentResolver resolver = getActivity().getContentResolver();
+        final ContentResolver resolver = getActivity().getContentResolver();
+        final LockPatternUtils lockPatternUtils = new LockPatternUtils(getActivity());
 
         //SELinux
         mSelinux = (SwitchPreference) findPreference(SELINUX);
@@ -144,24 +146,16 @@ public class MainSettings extends SettingsPreferenceFragment implements
         mEasyToggle.setChecked((Settings.Secure.getInt(resolver,
                 Settings.Secure.QS_EASY_TOGGLE, 0) == 1));
 
-        final LockPatternUtils lockPatternUtils = new LockPatternUtils(getActivity());
-
         mEmergencyButton = (SwitchPreference) findPreference(PREF_SHOW_EMERGENCY_BUTTON);
         if (lockPatternUtils.isSecure(MY_USER_ID)) {
             mEmergencyButton.setChecked((Settings.System.getInt(resolver,
                 Settings.System.SHOW_EMERGENCY_BUTTON, 1) == 1));
             mEmergencyButton.setOnPreferenceChangeListener(this);
-        } else {
-            prefSet.removePreference(mEmergencyButton);
         }
 
         mFingerprintManager = (FingerprintManager) getActivity().getSystemService(Context.FINGERPRINT_SERVICE);
-        mFingerprintVib = (SystemSettingSwitchPreference) findPreference(FINGERPRINT_VIB);
-        mFpKeystore = (SystemSettingSwitchPreference) findPreference(FP_UNLOCK_KEYSTORE);
-        if (!mFingerprintManager.isHardwareDetected()) {
-            secureCategory.removePreference(mFingerprintVib);
-            secureCategory.removePreference(mFpKeystore);
-        }
+        mFingerprintVib = (SwitchPreference) findPreference(FINGERPRINT_VIB);
+        mFpKeystore = (SwitchPreference) findPreference(FP_UNLOCK_KEYSTORE);
     }
 
     @Override
