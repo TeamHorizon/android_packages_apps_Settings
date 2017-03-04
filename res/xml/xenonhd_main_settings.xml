@@ -42,6 +42,12 @@
             android:title="@string/wakelock_blocker_title"
             />
 
+        <PreferenceScreen
+            android:key="carrier_label"
+            android:fragment="com.android.settings.xenonhd.CarrierLabel"
+            android:title="@string/carrier_title" 
+            android:icon="@drawable/carrier_label_icon" />
+
     </PreferenceCategory>
 
     <PreferenceCategory
