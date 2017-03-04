@@ -50,6 +50,7 @@ import com.android.internal.logging.MetricsProto.MetricsEvent;
 import net.margaritov.preference.colorpicker.ColorPickerPreference;
 
 import com.android.settings.R;
+import com.android.settings.SeekBarPreference;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.Utils;
 
@@ -65,12 +66,18 @@ public class CarrierLabel extends SettingsPreferenceFragment implements
     private static final String STATUS_BAR_CARRIER = "status_bar_carrier";
     private static final String CUSTOM_CARRIER_LABEL = "custom_carrier_label";
     private static final String STATUS_BAR_CARRIER_COLOR = "status_bar_carrier_color";
+    private static final String STATUS_BAR_CARRIER_FONT_SIZE  = "status_bar_carrier_font_size";
+    private static final String STATUS_BAR_CARRIER_FONT_STYLE = "status_bar_carrier_font_style";
+    private static final String HIDE_CARRIER_MAX_NOTIFICATION = "hide_carrier_max_notification";
     static final int DEFAULT_STATUS_CARRIER_COLOR = 0xffffffff;
 
     private ListPreference mShowCarrierLabel;
     private PreferenceScreen mCustomCarrierLabel;
     private String mCustomCarrierLabelText;
     private ColorPickerPreference mCarrierColorPicker;
+    private ListPreference mStatusBarCarrierFontStyle;	
+    private SeekBarPreference mStatusBarCarrierSize;
+    private SeekBarPreference mHideCarrierMaxNotification;
 
     @Override
     protected int getMetricsCategory() {
@@ -103,6 +110,22 @@ public class CarrierLabel extends SettingsPreferenceFragment implements
         mCarrierColorPicker.setSummary(hexColor);
         mCarrierColorPicker.setNewPreviewColor(intColor);
 
+        mStatusBarCarrierFontStyle = (ListPreference) findPreference(STATUS_BAR_CARRIER_FONT_STYLE);
+        mStatusBarCarrierFontStyle.setOnPreferenceChangeListener(this);
+        mStatusBarCarrierFontStyle.setValue(Integer.toString(Settings.System.getInt(resolver,
+                Settings.System.STATUS_BAR_CARRIER_FONT_STYLE, 0)));
+        mStatusBarCarrierFontStyle.setSummary(mStatusBarCarrierFontStyle.getEntry());
+
+        mStatusBarCarrierSize = (SeekBarPreference) findPreference(STATUS_BAR_CARRIER_FONT_SIZE);
+        mStatusBarCarrierSize.setProgress(Settings.System.getInt(getActivity().getContentResolver(),
+                Settings.System.STATUS_BAR_CARRIER_FONT_SIZE, 10));
+        mStatusBarCarrierSize.setOnPreferenceChangeListener(this);
+
+        mHideCarrierMaxNotification = (SeekBarPreference) findPreference(HIDE_CARRIER_MAX_NOTIFICATION);
+        mHideCarrierMaxNotification.setProgress(Settings.System.getInt(resolver,
+                Settings.System.HIDE_CARRIER_MAX_NOTIFICATION, 1));
+        mHideCarrierMaxNotification.setOnPreferenceChangeListener(this);
+
         updatepreferences();
         updateCustomLabelTextSummary();
 
@@ -134,8 +157,25 @@ public class CarrierLabel extends SettingsPreferenceFragment implements
             Settings.System.putInt(getActivity().getApplicationContext().getContentResolver(),
                     Settings.System.STATUS_BAR_CARRIER_COLOR, intHex);
             return true;
-        }
-      return false;
+        } else if (preference == mStatusBarCarrierSize) {
+            int width = ((Integer)newValue).intValue();
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.STATUS_BAR_CARRIER_FONT_SIZE, width);
+            return true;
+        } else if (preference == mStatusBarCarrierFontStyle) {
+            int val = Integer.parseInt((String) newValue);
+            int index = mStatusBarCarrierFontStyle.findIndexOfValue((String) newValue);
+            Settings.System.putInt(resolver,
+                    Settings.System.STATUS_BAR_CARRIER_FONT_STYLE, val);
+            mStatusBarCarrierFontStyle.setSummary(mStatusBarCarrierFontStyle.getEntries()[index]);
+            return true;
+        } else if (preference == mHideCarrierMaxNotification) {
+            int width = ((Integer)newValue).intValue();
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.HIDE_CARRIER_MAX_NOTIFICATION, width);
+            return true;
+        } 
+        return false;
     }
 
     private void updateCustomLabelTextSummary() {
