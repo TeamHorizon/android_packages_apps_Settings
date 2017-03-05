@@ -211,11 +211,14 @@
 
     <!-- Hide Lockscreen clock, date, & alarm -->
     <string name="hide_lockscreen_clock_title">Clock widget</string>
-    <string name="hide_lockscreen_clock_summary">Hide clock widget</string>
+    <string name="hide_lockscreen_clock_summary_on">Clock widget shown on the lockscreen</string>
+    <string name="hide_lockscreen_clock_summary_off">Clock widget hidden on the lockscreen</string>
     <string name="hide_lockscreen_date_title">Date widget</string>
-    <string name="hide_lockscreen_date_summary">Hide date underneath the clock widget</string>
+    <string name="hide_lockscreen_date_summary_on">Date underneath the clock widget shown</string>
+    <string name="hide_lockscreen_date_summary_off">Date underneath the clock widget hidden </string>
     <string name="hide_lockscreen_alarm_title">Alarm text</string>
-    <string name="hide_lockscreen_alarm_summary">Hide alarm text underneath the clock widget</string>
+    <string name="hide_lockscreen_alarm_summary_on">Alarm text underneath the clock widget shown</string>
+    <string name="hide_lockscreen_alarm_summary_off">Alarm text underneath the clock widget hidden</string>
 
     <!-- Emergency button -->
     <string name="emergency_button_title">Emergency button</string>
