@@ -66,7 +66,6 @@ public class MainSettings extends SettingsPreferenceFragment implements
     private static final String PREF_ROWS_PORTRAIT = "qs_rows_portrait";
     private static final String PREF_ROWS_LANDSCAPE = "qs_rows_landscape";
     private static final String PREF_COLUMNS = "qs_columns";
-    private static final String PREF_QS_TILE_TITLE_VISIBILITY = "qs_tile_title_visibility";
     private static final String PREF_QS_EASY_TOGGLE = "qs_easy_toggle";
 
     private static final String RECENTS_CLEAR_ALL_LOCATION = "recents_clear_all_location";
@@ -87,7 +86,6 @@ public class MainSettings extends SettingsPreferenceFragment implements
     private CustomSeekBarPreference mRowsLandscape;
     private CustomSeekBarPreference mQsColumns;
     private SwitchPreference mEasyToggle;
-    private SwitchPreference mQsTileTitleVisibility;
 
     private SwitchPreference mRecentsClearAll;
     private ListPreference mRecentsClearAllLocation;
@@ -147,11 +145,6 @@ public class MainSettings extends SettingsPreferenceFragment implements
         mEasyToggle.setOnPreferenceChangeListener(this);
         mEasyToggle.setChecked((Settings.Secure.getInt(resolver,
                 Settings.Secure.QS_EASY_TOGGLE, 0) == 1));
-
-        mQsTileTitleVisibility = (SwitchPreference) findPreference(PREF_QS_TILE_TITLE_VISIBILITY);
-        mQsTileTitleVisibility.setOnPreferenceChangeListener(this);
-        mQsTileTitleVisibility.setChecked((Settings.System.getIntForUser(resolver,
-                Settings.System.QS_TILE_TITLE_VISIBILITY, 0, UserHandle.USER_CURRENT) == 1));
 
         mEmergencyButton = (SwitchPreference) findPreference(PREF_SHOW_EMERGENCY_BUTTON);
         if (lockPatternUtils.isSecure(MY_USER_ID)) {
@@ -262,11 +255,6 @@ public class MainSettings extends SettingsPreferenceFragment implements
             boolean checked = ((SwitchPreference)preference).isChecked();
             Settings.Secure.putInt(getActivity().getContentResolver(),
                     Settings.Secure.QS_EASY_TOGGLE, checked ? 1:0);
-            return true;
-        } else if  (preference == mQsTileTitleVisibility) {
-            boolean checked = ((SwitchPreference) preference).isChecked();
-            Settings.System.putIntForUser(resolver,
-                    Settings.System.QS_TILE_TITLE_VISIBILITY, checked ? 1:0, UserHandle.USER_CURRENT);
             return true;
         } else if  (preference == mEmergencyButton) {
             boolean checked = ((SwitchPreference)preference).isChecked();

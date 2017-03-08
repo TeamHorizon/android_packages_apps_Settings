@@ -171,11 +171,12 @@
             settings:min="1"
             settings:units="" />
 
-        <SwitchPreference
+        <com.android.settings.preference.SystemSettingSwitchPreference
             android:key="qs_tile_title_visibility"
             android:title="@string/qs_menu_item_titles"
-            android:summary="@string/qs_menu_item_titles_summary"
-            android:defaultValue="false" />
+            android:summaryOn="@string/qs_menu_item_titles_summaryOn"
+            android:summaryOff="@string/qs_menu_item_titles_summaryOff"
+            android:defaultValue="true" />
 
         <com.android.settings.preference.SecureSettingSwitchPreference
             android:key="qs_easy_toggle"
