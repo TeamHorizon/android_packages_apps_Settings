@@ -213,9 +213,11 @@ public class MainSettings extends SettingsPreferenceFragment implements
             if (preference == mSelinux) {
             if (objValue.toString().equals("true")) {
                 CMDProcessor.runSuCommand("setenforce 1");
+                setSelinuxEnabled("true");
                 mSelinux.setSummary(R.string.selinux_enforcing_title);
             } else if (objValue.toString().equals("false")) {
                 CMDProcessor.runSuCommand("setenforce 0");
+                setSelinuxEnabled("false");
                 mSelinux.setSummary(R.string.selinux_permissive_title);
             }
             return true;

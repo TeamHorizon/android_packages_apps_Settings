@@ -109,6 +109,7 @@
     <string name="selinux_title">SELinux Mode</string>
     <string name="selinux_permissive_title">Permissive</string>
     <string name="selinux_enforcing_title">Enforcing</string>
+    <string name="selinux_permissive_toast_title">Selinux set to permissive!</string>
 
     <!-- Recents Membar -->
     <string name="recents_membar">Memory Bar</string>
