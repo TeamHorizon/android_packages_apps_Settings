@@ -116,6 +116,44 @@
             android:summaryOff="@string/emergency_button_summary_off"
             android:defaultValue="true" />
 
+        <ListPreference
+            android:key="lock_clock_fonts"
+            android:title="@string/lock_clock_font_title"
+            android:dialogTitle="@string/lock_clock_font_dialog_title"
+            android:entries="@array/lock_clock_fonts_entries"
+            android:entryValues="@array/lock_clock_fonts_values"
+            android:summary="@string/lock_clock_font_summary"
+            android:persistent="false" />
+
+        <ListPreference
+            android:key="lock_date_fonts"
+            android:title="@string/lock_date_font_title"
+            android:dialogTitle="@string/lock_date_font_title"
+            android:entries="@array/lock_clock_fonts_entries"
+            android:entryValues="@array/lock_clock_fonts_values"
+            android:summary="@string/lock_date_font_summary"
+            android:persistent="false" />
+
+        <com.android.settings.preference.CustomSeekBarPreference
+            android:key="lockclock_font_size"
+            android:title="@string/lockclock_font_size_title"
+            settings:max="150"
+            settings:minimum="1"
+            settings:units="sp"
+            android:persistent="false"
+            android:defaultValue="88"
+            android:dependency="hide_lockscreen_clock" />
+
+        <com.android.settings.preference.CustomSeekBarPreference
+            android:key="lockdate_font_size"
+            android:title="@string/lockdate_font_size_title"
+            settings:max="25"
+            settings:minimum="1"
+            settings:units="sp"
+            android:defaultValue="14"
+            android:persistent="false"
+            android:dependency="hide_lockscreen_date" />
+
     </PreferenceCategory>
 
     <PreferenceCategory

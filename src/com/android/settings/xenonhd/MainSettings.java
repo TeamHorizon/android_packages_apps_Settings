@@ -13,12 +13,14 @@
 */
 package com.android.settings.xenonhd;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.ContentResolver;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.content.pm.ResolveInfo;
+import android.content.res.Resources;
 import android.hardware.fingerprint.FingerprintManager;
 import android.os.Bundle;
 import android.os.Build;
@@ -26,6 +28,7 @@ import com.android.settings.dashboard.DashboardSummary;
 import com.android.settings.util.AbstractAsyncSuCMDProcessor;
 import com.android.settings.util.CMDProcessor;
 import com.android.settings.util.Helpers;
+import android.os.Handler;
 import android.os.SystemProperties;
 import android.os.UserHandle;
 import android.support.v7.preference.ListPreference;
@@ -38,6 +41,7 @@ import android.provider.Settings;
 import com.android.settings.util.Helpers;
 import dalvik.system.VMRuntime;
 import android.preference.PreferenceActivity;
+import android.view.View;
 
 import com.android.internal.logging.MetricsProto.MetricsEvent;
 import com.android.internal.widget.LockPatternUtils;
@@ -78,6 +82,11 @@ public class MainSettings extends SettingsPreferenceFragment implements
     private static final String FINGERPRINT_VIB = "fingerprint_success_vib";
     private static final String FP_UNLOCK_KEYSTORE = "fp_unlock_keystore";
 
+    private static final String LOCK_CLOCK_FONTS = "lock_clock_fonts";
+    private static final String CLOCK_FONT_SIZE  = "lockclock_font_size";
+    private static final String DATE_FONT_SIZE  = "lockdate_font_size";
+    private static final String LOCK_DATE_FONTS = "lock_date_fonts";
+
     private SwitchPreference mConfig;
 
     private SwitchPreference mSelinux;
@@ -98,6 +107,11 @@ public class MainSettings extends SettingsPreferenceFragment implements
     private FingerprintManager mFingerprintManager;
     private SwitchPreference mFingerprintVib;
     private SwitchPreference mFpKeystore;
+
+    ListPreference mDateFonts;
+    ListPreference mLockClockFonts;
+    private CustomSeekBarPreference mClockFontSize;
+    private CustomSeekBarPreference mDateFontSize;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -156,6 +170,28 @@ public class MainSettings extends SettingsPreferenceFragment implements
         mFingerprintManager = (FingerprintManager) getActivity().getSystemService(Context.FINGERPRINT_SERVICE);
         mFingerprintVib = (SwitchPreference) findPreference(FINGERPRINT_VIB);
         mFpKeystore = (SwitchPreference) findPreference(FP_UNLOCK_KEYSTORE);
+
+        mLockClockFonts = (ListPreference) findPreference(LOCK_CLOCK_FONTS);
+        mLockClockFonts.setValue(String.valueOf(Settings.System.getInt(
+                getContentResolver(), Settings.System.LOCK_CLOCK_FONTS, 0)));
+        mLockClockFonts.setSummary(mLockClockFonts.getEntry());
+        mLockClockFonts.setOnPreferenceChangeListener(this);
+
+        mClockFontSize = (CustomSeekBarPreference) findPreference(CLOCK_FONT_SIZE);
+        mClockFontSize.setValue(Settings.System.getInt(getContentResolver(),
+                Settings.System.LOCKCLOCK_FONT_SIZE, 88));
+        mClockFontSize.setOnPreferenceChangeListener(this);
+
+        mDateFontSize = (CustomSeekBarPreference) findPreference(DATE_FONT_SIZE);
+        mDateFontSize.setValue(Settings.System.getInt(getContentResolver(),
+                Settings.System.LOCKDATE_FONT_SIZE,14));
+        mDateFontSize.setOnPreferenceChangeListener(this);
+
+        mDateFonts = (ListPreference) findPreference(LOCK_DATE_FONTS);
+        mDateFonts.setValue(String.valueOf(Settings.System.getInt(
+                resolver, Settings.System.LOCK_DATE_FONTS, 4)));
+        mDateFonts.setSummary(mDateFonts.getEntry());
+        mDateFonts.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -263,7 +299,29 @@ public class MainSettings extends SettingsPreferenceFragment implements
             Settings.System.putInt(getActivity().getContentResolver(),
                     Settings.System.SHOW_EMERGENCY_BUTTON, checked ? 1:0);
             return true;
-        }
+        } else if (preference == mLockClockFonts) {
+            Settings.System.putInt(getContentResolver(), Settings.System.LOCK_CLOCK_FONTS,
+                    Integer.valueOf((String) objValue));
+            mLockClockFonts.setValue(String.valueOf(objValue));
+            mLockClockFonts.setSummary(mLockClockFonts.getEntry());
+            return true;
+        } else if (preference == mClockFontSize) {
+            int top = (Integer) objValue;
+            Settings.System.putInt(getContentResolver(),
+                    Settings.System.LOCKCLOCK_FONT_SIZE, top*1);
+            return true;
+        } else if (preference == mDateFontSize) {
+            int top = (Integer) objValue;
+            Settings.System.putInt(getContentResolver(),
+                    Settings.System.LOCKDATE_FONT_SIZE, top*1);
+            return true;
+        } else if (preference == mDateFonts) {
+            Settings.System.putInt(resolver, Settings.System.LOCK_DATE_FONTS,
+                    Integer.valueOf((String) objValue));
+            mDateFonts.setValue(String.valueOf(objValue));
+            mDateFonts.setSummary(mDateFonts.getEntry());
+            return true;
+        } 
         return false;
     }
 }
