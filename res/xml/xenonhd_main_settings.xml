@@ -47,6 +47,12 @@
             android:fragment="com.android.settings.xenonhd.CarrierLabel"
             android:title="@string/carrier_title" />
 
+        <!-- Screen state -->
+        <PreferenceScreen
+            android:key="screenstate_category"
+            android:title="@string/screen_state_toggles_title" 
+            android:fragment="com.android.settings.xenonhd.ScreenStateToggles" />
+
     </PreferenceCategory>
 
     <PreferenceCategory
