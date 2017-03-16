@@ -283,4 +283,19 @@
   <string name="lock_clock_font_medium_normal">Средний</string>
   <string name="lock_clock_font_medium_italic">Средний курсив</string>
   <!-- Screen state service -->
+  <string name="screen_state_toggles_title">Действия при выключении экрана</string>
+  <string name="screen_state_toggles_enable_title">Вкл.</string>
+  <string name="screen_state_toggles_enable_summary">Действия будут выполняться при выключении экрана. При включении будет восстановлено предыдущее состояние.</string>
+  <string name="screen_state_toggles_mobile_title">Мобильные сети</string>
+  <string name="screen_state_toggles_location_title">Местоположение</string>
+  <string name="screen_state_toggles_twog">Переключить на 2G</string>
+  <string name="screen_state_toggles_twog_summary">Режим сети будет переключен в 2G при выключенном экране</string>
+  <string name="screen_state_toggles_gps">Отключить GPS</string>
+  <string name="screen_state_toggles_gps_summary">Местоположение по GPS будет отключено при выключении экрана</string>
+  <string name="screen_state_toggles_mobile_data">Отключить передачу данных</string>
+  <string name="screen_state_toggles_mobile_data_summary">Выключить передачу данных после отключения экрана</string>
+  <string name="screen_state_off_delay_title">Задержка отключения экрана</string>
+  <string name="screen_state_off_delay_summary">Задержка перед выполнением действий после выключения экрана</string>
+  <string name="screen_state_on_delay_title">Задержка при включении экрана</string>
+  <string name="screen_state_on_delay_summary">Задержка перед выполнением действий после включения экрана</string>
 </resources>

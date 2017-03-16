@@ -243,6 +243,12 @@
   <string name="status_bar_font_light_italic">Leicht kursiv</string>
   <string name="status_bar_font_thin">Dünn</string>
   <string name="status_bar_font_thin_italic">Dünn + kursiv</string>
+  <string name="status_bar_font_condensed">Schmal</string>
+  <string name="status_bar_font_condensed_italic">Schmal + kursiv</string>
+  <string name="status_bar_font_condensed_light">Leicht Schmal</string>
+  <string name="status_bar_font_condensed_light_italic">Leicht Schmal + kursiv</string>
+  <string name="status_bar_font_condensed_bold">Schmal + fett</string>
+  <string name="status_bar_font_condensed_bold_italic">Schmal + fett + kursiv</string>
   <!-- Lock Clock Fonts -->
   <string name="lock_date_font_title">Datum</string>
   <string name="lock_clock_font_bold">Fett gedruckt</string>
@@ -252,5 +258,9 @@
   <string name="lock_clock_font_light_italic">Leicht kursiv</string>
   <string name="lock_clock_font_thin_italic">Dünn + kursiv</string>
   <string name="lock_clock_font_thin">Dünn</string>
+  <string name="lock_clock_font_condensed_normal">Schmal</string>
+  <string name="lock_clock_font_condensed_italic">Schmal + kursiv</string>
+  <string name="lock_clock_font_condensed_bold">Schmal + fett</string>
   <!-- Screen state service -->
+  <string name="screen_state_toggles_twog">Wechseln zu 2G</string>
 </resources>

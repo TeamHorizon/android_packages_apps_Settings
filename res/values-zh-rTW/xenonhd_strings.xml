@@ -283,4 +283,19 @@
   <string name="lock_clock_font_medium_normal">中等</string>
   <string name="lock_clock_font_medium_italic">中斜體</string>
   <!-- Screen state service -->
+  <string name="screen_state_toggles_title">暫停動作</string>
+  <string name="screen_state_toggles_enable_title">啟用</string>
+  <string name="screen_state_toggles_enable_summary">在螢幕關閉時才執行動作。螢幕開啟後會還原先前的狀態。</string>
+  <string name="screen_state_toggles_mobile_title">行動網路</string>
+  <string name="screen_state_toggles_location_title">定位</string>
+  <string name="screen_state_toggles_twog">切換至 2G</string>
+  <string name="screen_state_toggles_twog_summary">螢幕關閉時網路模式將會切換至 2G</string>
+  <string name="screen_state_toggles_gps">停用 GPS</string>
+  <string name="screen_state_toggles_gps_summary">螢幕關閉時根據 GPS 的定位服務將被停用</string>
+  <string name="screen_state_toggles_mobile_data">停用行動數據</string>
+  <string name="screen_state_toggles_mobile_data_summary">螢幕關閉時將會停用行動數據</string>
+  <string name="screen_state_off_delay_title">螢幕關閉動作延遲</string>
+  <string name="screen_state_off_delay_summary">螢幕關閉後執行動作之前等待的秒數</string>
+  <string name="screen_state_on_delay_title">螢幕關閉動作延遲</string>
+  <string name="screen_state_on_delay_summary">螢幕開啟後執行動作之前等待的秒數</string>
 </resources>
