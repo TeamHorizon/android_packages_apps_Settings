@@ -35,13 +35,6 @@
             android:title="@string/selinux_title"
             android:defaultValue="false" />
 
-        <!-- Wakelock blocker -->
-        <PreferenceScreen
-            android:key="wakelock_blocker"
-            android:fragment="com.android.settings.xenonhd.WakelockBlockerFragment"
-            android:title="@string/wakelock_blocker_title"
-            />
-
         <PreferenceScreen
             android:key="carrier_label"
             android:fragment="com.android.settings.xenonhd.CarrierLabel"
