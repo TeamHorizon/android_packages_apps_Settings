@@ -72,8 +72,6 @@
   <!-- Fingerprint authentication vibration -->
   <!-- Fingerprint unlock keystore -->
   <!-- Hide Statusbar on Lockscreen -->
-  <!-- Wakelock blocker -->
-  <string name="wakelock_blocker_save">Opslaan</string>
   <!-- Force authorize substratum packages -->
   <!-- QS tile labels visibility -->
   <!-- Color Picker -->

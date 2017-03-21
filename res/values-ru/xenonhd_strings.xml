@@ -195,14 +195,6 @@
   <!-- Hide Statusbar on Lockscreen -->
   <string name="lockscreen_hide_status_bar_title">Скрыть строку состояния</string>
   <string name="lockscreen_hide_status_bar_summary">Прикоснитесь к строке состояния для отображения</string>
-  <!-- Wakelock blocker -->
-  <string name="wakelock_blocker_title">Блокировка пробуждений</string>
-  <string name="wakelock_blocker_summary">Заблокировать пробуждения системы</string>
-  <string name="wakelock_blocker_save">Сохранить</string>
-  <string name="wakelock_list_header">Доступные пробуждения</string>
-  <string name="wakelock_blocker_reload">Обновить</string>
-  <string name="wakelock_blocker_warning_title">Используйте на свой страх и риск</string>
-  <string name="wakelock_blocker_warning">Блокировка пробуждений может вызвать нестабильность, ошибки и потерю данных</string>
   <!-- Force authorize substratum packages -->
   <string name="force_authorize_substratum_packages_title">Принудительно запрашивать разрешения для каждой темы</string>
   <string name="force_authorize_substratum_packages_summary">Разрешить установку тем из неизвестных источников</string>

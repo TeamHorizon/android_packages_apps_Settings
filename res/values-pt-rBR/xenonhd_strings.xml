@@ -87,6 +87,7 @@
   <string name="systemui_recents_mem_display_title">Mostrar barra de memória</string>
   <string name="systemui_recents_mem_display_summary">Mostrar barra de RAM livre no modo de exibição de apps recentes</string>
   <!-- Quick settings config -->
+  <string name="qs_layout_category">Opções de Configurações Rápidas</string>
   <string name="qs_rows_portrait_title">Linhas (retrato)</string>
   <string name="qs_rows_landscape_title">Linhas (paisagem)</string>
   <string name="qs_columns_title">Colunas</string>
@@ -123,8 +124,19 @@
   <string name="doze_trigger_notification_summary_on">Pulso será acionado por notificações</string>
   <string name="doze_trigger_notification_summary_off">Notificações não serão utilizadas como um gatilho para o Doze</string>
   <string name="doze_brightness_level_title">Nível de brilho</string>
+  <string name="onehundred_ms">100 ms</string>
+  <string name="twofifty_ms">250 ms</string>
   <string name="fivehundred_ms_default">500 ms (padrão)</string>
+  <string name="sevenfifty_ms">750 ms</string>
+  <string name="one_second">1 s</string>
+  <string name="onehalf_second">1.5 s</string>
+  <string name="two_second">2 s</string>
+  <string name="twohalf_second">2.5 s</string>
   <string name="three_second_default">3 s (padrão)</string>
+  <string name="threehalf_second">3.5 s</string>
+  <string name="four_second">4 s</string>
+  <string name="fourhalf_second">4.5 s</string>
+  <string name="five_second">5 s</string>
   <string name="doze_notification_color_invert_title">Notificação invertida</string>
   <string name="doze_notification_color_invert_summary_off">Notificações do ambiente de exposição não serão invertidas. Use com temas escuros.</string>
   <string name="doze_notification_color_invert_summary_on">As notificações serão invertidas. Use para tema Branco/Stock theme</string>
@@ -141,22 +153,39 @@
   <string name="recents_clear_all_location_bottom_left">Inferior esquerdo</string>
   <string name="recents_clear_all_location_bottom_center">Centro inferior</string>
   <!-- Dashboard options -->
+  <string name="dashboard_category">Opções do painel de controle</string>
+  <string name="dashboard_suggestions_title">Sugestões</string>
+  <string name="summary_dashboard_suggestions_enabled">Sugestões de painel de controle estão habilitadas</string>
+  <string name="summary_dashboard_suggestions_disabled">Sugestões do painel de controle estão desabilitadas</string>
+  <string name="remove_tile_summaries_title">Resumos</string>
+  <string name="remove_tile_summaries_summary_enabled">Placas de painéis estão habilitadas</string>
+  <string name="remove_tile_summaries_summary_disabled">Placas de painéis estão desabilitadas</string>
+  <string name="dashboard_conditions_title">Condições</string>
+  <string name="dashboard_columns_title">Colunas do painel de controle</string>
+  <string name="dashboard_columns_summary">Altera o número de colunas exibidas no painel de controle</string>
+  <string name="dashboard_columns_portrait_title">Colunas (retrato)</string>
+  <string name="dashboard_columns_landscape_title">Colunas (paisagem)</string>
   <!-- Hide Lockscreen clock, date, & alarm -->
+  <string name="hide_lockscreen_alarm_title">Texto de alarme</string>
   <!-- Emergency button -->
+  <string name="emergency_button_title">Botão de emergência</string>
   <!-- Fingerprint authentication vibration -->
   <!-- Fingerprint unlock keystore -->
+  <string name="fp_unlock_keystore_summary">Permite que o dispositivo seja sempre destravado com impressão digital, mesmo após a reinicialização</string>
   <!-- Hide Statusbar on Lockscreen -->
-  <!-- Wakelock blocker -->
-  <string name="wakelock_blocker_save">Salvar</string>
+  <string name="lockscreen_hide_status_bar_title">Ocultar a barra de status</string>
+  <string name="lockscreen_hide_status_bar_summary">Toque a barra de status para alternar a visibilidade</string>
   <!-- Force authorize substratum packages -->
   <!-- QS tile labels visibility -->
   <!-- Color Picker -->
   <string name="dialog_color_picker">Selecionador de cores</string>
   <string name="press_color_to_apply">Pressione a cor abaixo para aplicar</string>
+  <string name="hex">Hex:</string>
   <string name="set">Aplicar</string>
   <string name="color_default">Padrão</string>
   <!-- Carrier label -->
   <string name="show_carrier_disabled">Desativado</string>
+  <string name="status_bar_font_normal">Normal</string>
   <string name="status_bar_font_light">Claro</string>
   <!-- Lock Clock Fonts -->
   <string name="lock_date_font_title">Data</string>

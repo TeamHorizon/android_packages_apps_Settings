@@ -196,14 +196,6 @@
   <!-- Hide Statusbar on Lockscreen -->
   <string name="lockscreen_hide_status_bar_title">Masquer la barre d\'état</string>
   <string name="lockscreen_hide_status_bar_summary">Toucher la barre d\'état pour basculer la visibilité</string>
-  <!-- Wakelock blocker -->
-  <string name="wakelock_blocker_title">Empêcher les applications de maintenir l\'appareil actif</string>
-  <string name="wakelock_blocker_summary">Système de blocage du maintient actif de l\'appareil</string>
-  <string name="wakelock_blocker_save">Enregistrer</string>
-  <string name="wakelock_list_header">Maintient de l\'appareil actif disponible</string>
-  <string name="wakelock_blocker_reload">Rafraîchir</string>
-  <string name="wakelock_blocker_warning_title">Procédez avec précaution</string>
-  <string name="wakelock_blocker_warning">Le blocage de Wakelocks peut potentiellement causer des instabilités, des bogues, des pertes de données</string>
   <!-- Force authorize substratum packages -->
   <string name="force_authorize_substratum_packages_title">Forcer l’autorisation de chaque thème d\'application</string>
   <string name="force_authorize_substratum_packages_summary">Autorise les applications de thème à partir de sources inconnues</string>

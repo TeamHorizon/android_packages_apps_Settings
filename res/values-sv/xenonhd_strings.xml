@@ -13,7 +13,9 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- About phone screen, XenonHD version -->
+  <string name="xenonhd_version">XenonHD-version</string>
   <string name="xenonhd_version_default">Okänd</string>
+  <string name="xenonhd_maintainer">Underhållare</string>
   <string name="xenonhd_maintainer_default">Okänd</string>
   <!-- Changelog -->
   <string name="changelog_xenonhd_title">Ändringslogg</string>
@@ -85,8 +87,6 @@
   <!-- Fingerprint authentication vibration -->
   <!-- Fingerprint unlock keystore -->
   <!-- Hide Statusbar on Lockscreen -->
-  <!-- Wakelock blocker -->
-  <string name="wakelock_blocker_save">Spara</string>
   <!-- Force authorize substratum packages -->
   <!-- QS tile labels visibility -->
   <!-- Color Picker -->

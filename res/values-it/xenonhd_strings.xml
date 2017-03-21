@@ -195,14 +195,6 @@
   <!-- Hide Statusbar on Lockscreen -->
   <string name="lockscreen_hide_status_bar_title">Nascondi barra di stato</string>
   <string name="lockscreen_hide_status_bar_summary">Toccare la barra di stato per alternare la visibilità</string>
-  <!-- Wakelock blocker -->
-  <string name="wakelock_blocker_title">Blocco wakelock</string>
-  <string name="wakelock_blocker_summary">Blocca i wakelocks di sistema</string>
-  <string name="wakelock_blocker_save">Salva</string>
-  <string name="wakelock_list_header">Wakelocks disponibili</string>
-  <string name="wakelock_blocker_reload">Ricarica</string>
-  <string name="wakelock_blocker_warning_title">Procedi con cautela</string>
-  <string name="wakelock_blocker_warning">Bloccare i wakelock potrebbe causare instabilità, crash o perdita di dati</string>
   <!-- Force authorize substratum packages -->
   <string name="force_authorize_substratum_packages_title">Forza l\'autorizzazione ad ogni applicazione del tema</string>
   <string name="force_authorize_substratum_packages_summary">Consenti l\'installazione di applicazioni da fonti sconosciute</string>
@@ -288,7 +280,7 @@
   <string name="screen_state_toggles_enable_summary">Le azioni saranno eseguite a schermo spento. A schermo acceso verrà ripristinato allo stato precedente.</string>
   <string name="screen_state_toggles_mobile_title">Rete mobile</string>
   <string name="screen_state_toggles_location_title">Posizione</string>
-  <string name="screen_state_toggles_twog">Passare a 2G</string>
+  <string name="screen_state_toggles_twog">Passa a 2G</string>
   <string name="screen_state_toggles_twog_summary">La modalità di rete 2G si spegne a schermo spento</string>
   <string name="screen_state_toggles_gps">Disabilita GPS</string>
   <string name="screen_state_toggles_gps_summary">I servizi dipendenti dalla posizione saranno disattivati a schermo spento</string>

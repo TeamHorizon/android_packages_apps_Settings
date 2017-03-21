@@ -195,14 +195,6 @@
   <!-- Hide Statusbar on Lockscreen -->
   <string name="lockscreen_hide_status_bar_title">Ukryj pasek stanu</string>
   <string name="lockscreen_hide_status_bar_summary">Kliknij pasek stanu, aby przełączyć widoczność</string>
-  <!-- Wakelock blocker -->
-  <string name="wakelock_blocker_title">Blokada wybudzeń (wakelock)</string>
-  <string name="wakelock_blocker_summary">Blokuj wybudzenia systemu</string>
-  <string name="wakelock_blocker_save">Zapisz</string>
-  <string name="wakelock_list_header">Dostępne wybudzenia</string>
-  <string name="wakelock_blocker_reload">Odśwież</string>
-  <string name="wakelock_blocker_warning_title">Postępuj ostrożnie</string>
-  <string name="wakelock_blocker_warning">Blokowanie wybudzeń może powodować niestabilność, awarie lub utratę danych</string>
   <!-- Force authorize substratum packages -->
   <string name="force_authorize_substratum_packages_title">Wymuś autoryzację każdego motywu</string>
   <string name="force_authorize_substratum_packages_summary">Zezwalaj na instalowanie motywów z nieznanych źródeł</string>

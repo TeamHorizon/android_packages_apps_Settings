@@ -84,6 +84,7 @@
   <string name="selinux_title">Modo SELinux</string>
   <string name="selinux_permissive_title">Permisivo</string>
   <string name="selinux_enforcing_title">Obligatorio</string>
+  <string name="selinux_permissive_toast_title">SeLinux permisivo!</string>
   <!-- Recents Membar -->
   <string name="recents_membar">Barra de memoria</string>
   <string name="systemui_recents_mem_display_title">Mostrar barra de memoria RAM</string>
@@ -173,6 +174,8 @@
   <string name="dashboard_columns_landscape_title">Columnas (apaisado)</string>
   <!-- Hide Lockscreen clock, date, & alarm -->
   <string name="hide_lockscreen_clock_title">Widget del reloj</string>
+  <string name="hide_lockscreen_clock_summary_on">Widget de reloj en la pantalla de bloqueo</string>
+  <string name="hide_lockscreen_clock_summary_off">Widget de reloj escondido en la pantalla de bloqueo</string>
   <string name="hide_lockscreen_date_title">Widget de la fecha</string>
   <string name="hide_lockscreen_alarm_title">Texto de alarma</string>
   <!-- Emergency button -->
@@ -180,12 +183,18 @@
   <string name="emergency_button_summary_on">Botón de emergencia en la pantalla de bloqueo</string>
   <string name="emergency_button_summary_off">Botón de emergencia oculto en la pantalla de bloqueo</string>
   <!-- Fingerprint authentication vibration -->
+  <string name="fprint_sucess_vib_title">Vibración de autenticación de huella digital</string>
+  <string name="fprint_sucess_vib_summary">Vibrar cuando la autenticación con la huella es correcta</string>
   <!-- Fingerprint unlock keystore -->
+  <string name="fp_unlock_keystore_title">Desbloqueo con huella dactilar después de reiniciar</string>
+  <string name="fp_unlock_keystore_summary">Permitir que el dispositivo siempre sea desbloqueado mediante huella dactilar, incluso después de reiniciar el sistema</string>
   <!-- Hide Statusbar on Lockscreen -->
-  <!-- Wakelock blocker -->
-  <string name="wakelock_blocker_save">Guardar</string>
+  <string name="lockscreen_hide_status_bar_title">Ocultar barra de estado</string>
+  <string name="lockscreen_hide_status_bar_summary">Toque la barra de estado para cambiar la visibilidad</string>
   <!-- Force authorize substratum packages -->
   <!-- QS tile labels visibility -->
+  <string name="qs_menu_item_titles_summaryOn">Las etiquetas se muestran</string>
+  <string name="qs_menu_item_titles_summaryOff">Las etiquetas se ocultan</string>
   <!-- Color Picker -->
   <string name="dialog_color_picker">Selección de color</string>
   <string name="press_color_to_apply">Pulse color de debajo para aplicar</string>
@@ -193,11 +202,85 @@
   <string name="set">Establecer</string>
   <string name="color_default">Por defecto</string>
   <!-- Carrier label -->
+  <string name="carrier_title">Nombre del operador</string>
+  <string name="carrier_options_summary">Personalizar la etiqueta del operador</string>
+  <string name="custom_carrier_label_title">Nombre personalizado del operador</string>
+  <string name="custom_carrier_label_explain">Introduce un nuevo nombre. Deje en blanco para volver al nombre por defecto.</string>
+  <string name="custom_carrier_label_notset">Nombre personalizado actualmente no establecido</string>
+  <string name="show_carrier_title">Etiqueta de Operador</string>
   <string name="show_carrier_disabled">Deshabilitado</string>
+  <string name="show_carrier_keyguard">Sólo en la pantalla de bloqueo</string>
+  <string name="show_carrier_statusbar">Sólo en la barra de estado</string>
+  <string name="show_carrier_both">Pantalla de bloqueo y barra de estado</string>
+  <string name="show_carrier_enabled">Pantalla de bloqueo y barra de estado</string>
+  <string name="status_bar_carrier_color">Color para el nombre del operador</string>
+  <string name="status_bar_carrier_size">Tamaño de texto de la etiqueta del operador</string>
+  <string name="status_bar_carrier_font_style_title">Tipo de letra de la etiqueta del operador</string>
+  <string name="number_of_notifications_title">Número de notificaciones</string>
+  <string name="carrier_label_hide_label_title">Ocultar en las notificaciones</string>
+  <string name="carrier_label_number_of_notification_icons_title">Número máximo de iconos antes de ocultar</string>
+  <string name="status_bar_font_style_title">Tipo de letra</string>
   <string name="status_bar_font_normal">Normal</string>
+  <string name="status_bar_font_italic">Italic</string>
+  <string name="status_bar_font_bold">Negrita</string>
+  <string name="status_bar_font_bold_italic">Negrita Cursiva</string>
   <string name="status_bar_font_light">Claro</string>
+  <string name="status_bar_font_light_italic">Fina cursiva</string>
+  <string name="status_bar_font_thin">Delgada</string>
+  <string name="status_bar_font_thin_italic">Delgada Cursiva</string>
+  <string name="status_bar_font_condensed">Condensed</string>
+  <string name="status_bar_font_condensed_italic">Condensed Cursiva</string>
+  <string name="status_bar_font_condensed_light">Condensed fina</string>
+  <string name="status_bar_font_condensed_light_italic">Condensed Fina Cursiva</string>
+  <string name="status_bar_font_condensed_bold">Condensed negrita</string>
+  <string name="status_bar_font_condensed_bold_italic">Negrita y cursiva condensada</string>
+  <string name="status_bar_font_medium">Normal</string>
+  <string name="status_bar_font_medium_italic">Normal Cursiva</string>
+  <string name="status_bar_font_black">Negrita</string>
+  <string name="status_bar_font_black_italic">Negrita Cursiva</string>
+  <string name="status_bar_font_dancingscript">DancingScript</string>
+  <string name="status_bar_font_dancingscript_bold">DancingScript Negrita</string>
+  <string name="status_bar_font_comingsoon">Próximamente</string>
+  <string name="status_bar_font_notoserif">NotoSerif Normal</string>
+  <string name="status_bar_font_notoserif_italic">NotoSerif Cursiva</string>
+  <string name="status_bar_font_notoserif_bold">NotoSerif Negrita</string>
+  <string name="status_bar_font_notoserif_bold_italic">NotoSerif Negrita Cursiva</string>
   <!-- Lock Clock Fonts -->
+  <string name="lock_clock_font_title">Opciones de fuente</string>
+  <string name="lock_clock_font_summary">Cambiar la fuente predeterminada del widget de reloj de la pantalla de bloqueo</string>
+  <string name="lockdate_font_size_title">Tamaño de la fuente de la fecha</string>
+  <string name="lockclock_font_size_title">Tamaño de la fuente del reloj</string>
+  <string name="lock_date_font_summary">Personalizar fuente fecha</string>
   <string name="lock_date_font_title">Fecha</string>
+  <string name="lock_clock_font_dialog_title">Seleccione el tipo de letra del reloj de la pantalla de bloqueo</string>
+  <string name="lock_clock_font_stock">Normal (por defecto)</string>
+  <string name="lock_clock_font_bold">Negrita</string>
   <string name="lock_clock_font_light">Claro</string>
+  <string name="lock_clock_font_italic">Italic</string>
+  <string name="lock_clock_font_bold_italic">Negrita Cursiva</string>
+  <string name="lock_clock_font_light_italic">Fina cursiva</string>
+  <string name="lock_clock_font_thin_italic">Delgada Cursiva</string>
+  <string name="lock_clock_font_thin">Delgada</string>
+  <string name="lock_clock_font_condensed_normal">Condensed</string>
+  <string name="lock_clock_font_condensed_italic">Condensed Cursiva</string>
+  <string name="lock_clock_font_condensed_bold">Condensed negrita</string>
+  <string name="lock_clock_font_condensed_bold_italic">Condensed Negrita Cursiva</string>
+  <string name="lock_clock_font_medium_normal">Normal</string>
+  <string name="lock_clock_font_medium_italic">Normal Cursiva</string>
   <!-- Screen state service -->
+  <string name="screen_state_toggles_title">Suspender acciones</string>
+  <string name="screen_state_toggles_enable_title">Habilitar</string>
+  <string name="screen_state_toggles_enable_summary">Las acciones se ejecutarán al apagar la pantalla. Al encenderla, el estado anterior se restaurará.</string>
+  <string name="screen_state_toggles_mobile_title">Redes móviles</string>
+  <string name="screen_state_toggles_location_title">Ubicación</string>
+  <string name="screen_state_toggles_twog">Cambiar a 2G</string>
+  <string name="screen_state_toggles_twog_summary">Modo de red se cambiará a 2G al apagar la pantalla</string>
+  <string name="screen_state_toggles_gps">Desactivar GPS</string>
+  <string name="screen_state_toggles_gps_summary">Servicio de localización basado en GPS se desactivará al apagar la pantalla</string>
+  <string name="screen_state_toggles_mobile_data">Desactivar los datos móviles</string>
+  <string name="screen_state_toggles_mobile_data_summary">Datos móviles se deshabilatarán al apagar la pantalla</string>
+  <string name="screen_state_off_delay_title">Retardo de las acciones con la pantalla apagada</string>
+  <string name="screen_state_off_delay_summary">Número de segundos a esperar antes de realizar acciones después de apagar la pantalla</string>
+  <string name="screen_state_on_delay_title">Retardo de las acciones con la pantalla encendida</string>
+  <string name="screen_state_on_delay_summary">Número de segundos a esperar antes de realizar acciones después de apagar la pantalla</string>
 </resources>

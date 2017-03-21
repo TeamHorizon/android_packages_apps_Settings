@@ -13,47 +13,281 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- About phone screen, XenonHD version -->
+  <string name="xenonhd_version">XeHD verzia</string>
   <string name="xenonhd_version_default">Neznámy</string>
+  <string name="xenonhd_maintainer">Správca</string>
   <string name="xenonhd_maintainer_default">Neznámy</string>
   <!-- Changelog -->
   <string name="changelog_xenonhd_title">Prehľad zmien</string>
   <string name="changelog_xenonhd_error">Nie je možné načítať zoznam zmien</string>
+  <string name="changelog_xenonhd_summary">Skontrolujte zmeny v aktuálnej verzii</string>
   <!-- Density category -->
+  <string name="density_category">Možnosti hustoty zobrazenia</string>
   <!-- XenonOTA -->
   <string name="xenonota_title">XenonHD Aktualizácie</string>
   <string name="xenonota_summary">Skontrolovať aktualizácie ROM</string>
   <!-- Dev Options Enabled by Default -->
+  <string name="show_dev_already_enabled">Nie je potrebné, nastavenia pre vývojárov sú predvolene povolené</string>
   <!-- Phone info shortcut -->
+  <string name="device_info_title">Informácie o telefóne</string>
   <!-- Local (desktop) backup password menu title [CHAR LIMIT=25] -->
+  <string name="local_backup_password_title">Heslo pre zálohu do PC</string>
   <!-- Double tap to sleep on lockscreen -->
+  <string name="double_tap_sleep_anywhere_title">Dvojklik obrazovku uzamknutia</string>
+  <string name="double_tap_sleep_anywhere_summary">Dvojklikom na obrazovke uzamknutia uspať zariadenie</string>
   <!-- Notification sound timeout -->
+  <string name="app_notification_sound_timeout_title">Minimálny čas medzi zvukmi upozornenia</string>
+  <string name="app_notification_sound_timeout_summary_template">Povoliť zvuky alebo vibrácie nie viac ako raz za <xliff:g id="duration">%1$s </xliff:g></string>
+  <string name="app_notification_sound_timeout_value_none">Bez obmedzení</string>
+  <string name="app_notification_sound_timeout_value_10_seconds">10 sekúnd</string>
+  <string name="app_notification_sound_timeout_value_30_seconds">30 sekúnd</string>
+  <string name="app_notification_sound_timeout_value_1_minute">1 minúta</string>
+  <string name="app_notification_sound_timeout_value_5_minutes">5 minút</string>
+  <string name="app_notification_sound_timeout_value_15_minutes">10 minút</string>
+  <string name="app_notification_sound_timeout_value_30_minutes">30 minút</string>
   <!-- Randomize MAC addresses -->
+  <string name="randomize_mac_title">Náhodné MAC adresy</string>
+  <string name="randomize_mac_summary">Priradiť náhodné MAC adresy keď sú aktivované sieťové zariadenia. Náhodné MAC sú používané počas kontroly, bez ohľadu na povolenie</string>
   <!-- Volume Steps -->
+  <string name="volume_steps_title">Stupne hlasitosti</string>
+  <string name="volume_steps_alarm_title">Budík</string>
+  <string name="volume_steps_dtmf_title">DTMF (vytáčanie)</string>
+  <string name="volume_steps_music_title">Hudba</string>
+  <string name="volume_steps_notification_title">Upozornenie</string>
+  <string name="volume_steps_ring_title">Zvonenie</string>
+  <string name="volume_steps_system_title">Systém</string>
+  <string name="volume_steps_voice_call_title">Hlasový hovor</string>
+  <string name="volume_steps_reset">Resetovať</string>
   <!-- DayNight Theme -->
+  <string name="night_mode_title">Téma</string>
+  <string name="night_mode_no">Svetlé</string>
+  <string name="night_mode_yes">Tmavé</string>
   <!-- Screenshot sound -->
+  <string name="screenshot_sound_title">Zvuk pri snímke obrazovky</string>
+  <string name="screenshot_sound_summary">Prehrá zvukový efekt pri snímke obrazovky</string>
   <!-- Manage applications: show substratum overlays -->
+  <string name="filter_substratum_apps">Substratum prekrytia</string>
+  <string name="menu_show_substratum">Zobraziť prekrytia</string>
+  <string name="menu_hide_substratum">Skryť prekrytia</string>
   <!-- Manage applications: show substratum icon overlays -->
+  <string name="filter_substratum_icons">Ikona Substratum prekrytia</string>
+  <string name="menu_show_substratum_icons">Zobraziť ikonu prekrytia</string>
+  <string name="menu_hide_substratum_icons">Skryť ikonu prekrytia</string>
   <!-- XenonHD Configurations-->
+  <string name="xenonhd_title">Nastavenia</string>
+  <string name="xenonhd_misc_title">Rôzne</string>
+  <string name="xenonhd_lockscreen_title">Obrazovka uzamknutia</string>
+  <string name="xenonhd_ui_title">Používateľské rozhranie</string>
   <!-- Selinux Switch -->
+  <string name="selinux_switch_title">Upozornenie na prepnutie SELinux</string>
+  <string name="selinux_switch_summary">SELinux je súbor zmien na linuxovom jadre a spôsob prideľovania zdrojov pre danú aplikáciu. Zmena režimu môže spôsobiť nežiaduce správanie. Použitie je na vlastné nebezpečenstvo</string>
+  <string name="selinux_title">SELinux režim</string>
+  <string name="selinux_permissive_title">Tolerantné</string>
+  <string name="selinux_enforcing_title">Výnútené</string>
+  <string name="selinux_permissive_toast_title">SELinux nastavená na tolerantné!</string>
   <!-- Recents Membar -->
+  <string name="recents_membar">Ukazovateľ pamäte</string>
+  <string name="systemui_recents_mem_display_title">Zobraziť ukazovateľ pamäte</string>
+  <string name="systemui_recents_mem_display_summary">Zobraziť ukazovateľ voľnej RAM v zobrazení nedávných aplikací</string>
   <!-- Quick settings config -->
+  <string name="qs_layout_category">Panel rýchlych nastavení</string>
+  <string name="qs_rows_portrait_title">Riadky (na výšku)</string>
+  <string name="qs_rows_landscape_title">Riadky (na šírku)</string>
+  <string name="qs_columns_title">Stĺpce</string>
+  <string name="qs_easy_toggle_title">Jendnoduché prepnutie dlaždíc rýchlych nastavení</string>
+  <string name="qs_easy_toggle_summary">Povoľte akciu jedným kliknutím na možnosť povoliť/zakázať mobilné dáta, Wi-Fi a Bluetooth. Dlhým kliknutím zobrazíte upresňujúce nastavenia</string>
   <!-- Media art -->
+  <string name="media_art_title">Obal albumu</string>
+  <string name="media_art_summary">Povoliť zobrazenie obalu albumu na uzamknutej obrazovke</string>
   <!-- Quick unlock -->
+  <string name="quick_unlock_warning">Upozornenie na rychle odemknutie</string>
+  <string name="quick_unlock_warning_summary">Táto funkcia obchádza dôležité bezpečnostné mechanizmy a a nepodporuje režim viacerých používateľov. Použite na vlastné riziko</string>
+  <string name="unlock_quick_unlock_control_title">Rýchle odomknutie</string>
+  <string name="unlock_quick_unlock_control_summary">Odomknúť automaticky po zadaní správneho PIN kódu alebo hesla</string>
   <!-- Three-fingers-swipe to screenshot -->
+  <string name="three_finger_gesture">Potiahnutím urobiť foto obrazovky</string>
+  <string name="three_finger_gesture_summary">Prejdite tromi prstami po obrazovke pre jej odfotenie</string>
   <!-- Long press back to kill configurable timeout -->
+  <string name="kill_app_longpress_timeout_title">Časový limit dlhého kliku na tlačítko Späť</string>
+  <string name="timeout_2000">2 sekundy (predvolené)</string>
+  <string name="timeout_1500">1,5 sekundy</string>
+  <string name="timeout_1000">1 sekunda</string>
+  <string name="timeout_500">0,5 sekundy</string>
   <!-- Doze pulse options -->
+  <string name="summary_doze_enabled">Zapnuté</string>
+  <string name="summary_doze_disabled">Vypnuté</string>
+  <string name="doze_overwrite_value_title">Prepísať predvolené hodnoty</string>
+  <string name="doze_overwrite_value_summary">Povoliť prepísať predvolené hodnoty užívateľským nastavením</string>
+  <string name="doze_pulse_title">Používateľom konfigurovateľné nastavenia</string>
+  <string name="doze_pulse_duration_in_title">Postupné zosvetlenie</string>
+  <string name="doze_pulse_duration_visible_title">Trvanie zobrazenia</string>
+  <string name="doze_pulse_duration_out_title">Postupné stmavnutie</string>
+  <string name="doze_trigger_pickup_title">Vyberte senzor aktivácie</string>
+  <string name="doze_trigger_pickup_summary_on">Pulzovanie sa spustí pomocou snímača pohybu</string>
+  <string name="doze_trigger_pickup_summary_off">Senzory pohybu nebudú použité k spusteniu</string>
+  <string name="doze_trigger_notification_title">Spúšťač upozornení</string>
+  <string name="doze_trigger_notification_summary_on">Pulzovaním dôjde k spusteniu oznámenia</string>
+  <string name="doze_trigger_notification_summary_off">Oznámenia nebudú použité k spusteniu</string>
+  <string name="doze_brightness_level_title">Úroveň jasu</string>
+  <string name="onehundred_ms">100 ms</string>
+  <string name="twofifty_ms">250 ms</string>
+  <string name="fivehundred_ms_default">500 ms (predvolené)</string>
+  <string name="sevenfifty_ms">750 ms</string>
+  <string name="one_second">1 s</string>
+  <string name="onehalf_second">1.5 s</string>
+  <string name="two_second">2 s</string>
+  <string name="twohalf_second">2.5 s</string>
+  <string name="three_second_default">3 s (predvolené)</string>
+  <string name="threehalf_second">3.5 s</string>
+  <string name="four_second">4 s</string>
+  <string name="fourhalf_second">4.5 s</string>
+  <string name="five_second">5 s</string>
+  <string name="doze_notification_color_invert_title">Inverzia oznámenia</string>
+  <string name="doze_notification_color_invert_summary_off">Farby oznámení sa nezmenia (doporučené pre tmavé motívy)</string>
+  <string name="doze_notification_color_invert_summary_on">Farby oznámení sa zmenia (doporučené pre svetlé motívy)</string>
+  <string name="ambient_display_show_battery_title">Stav batérie</string>
+  <string name="ambient_display_show_battery_summary">Zobraziť indikátor batérie počas pulzovania</string>
   <!-- Recents panel settings -->
+  <string name="show_clear_all_recents_button_title">Povoliť tlačidlo Vyčistiť všetko</string>
+  <string name="show_clear_all_recents_button_summary">Zobraziť tlačítko \"Vyčistiť všetko\" v zobrazení nedávných aplikácií</string>
+  <string name="recents_clear_all_location_title">Umiestnenie tlačítka \"Vyčistiť všetko\"</string>
+  <string name="recents_clear_all_location_top_right">Vpravo hore</string>
+  <string name="recents_clear_all_location_top_left">Vľavo hore</string>
+  <string name="recents_clear_all_location_top_center">Hore na stred</string>
+  <string name="recents_clear_all_location_bottom_right">Vpravo dole</string>
+  <string name="recents_clear_all_location_bottom_left">Vľavo dole</string>
+  <string name="recents_clear_all_location_bottom_center">Dole na stred</string>
   <!-- Dashboard options -->
+  <string name="dashboard_category">Možnosti hlavného panela</string>
+  <string name="dashboard_suggestions_title">Návrhy</string>
+  <string name="summary_dashboard_suggestions_enabled">Návrhy hlavného panela sú povolené</string>
+  <string name="summary_dashboard_suggestions_disabled">Návrhy hlavného panela sú zakázané</string>
+  <string name="remove_tile_summaries_title">Súhrny</string>
+  <string name="remove_tile_summaries_summary_enabled">Súhrny hlavného panela sú povolené</string>
+  <string name="remove_tile_summaries_summary_disabled">Súhrny hlavného panela sú zakázané</string>
+  <string name="dashboard_conditions_title">Podmienky</string>
+  <string name="summary_dashboard_conditions_enabled">Podmienky hlavného panela sú povolené</string>
+  <string name="summary_dashboard_conditions_disabled">Podmienky hlavného panela sú zakázané</string>
+  <string name="dashboard_columns_title">Stĺpce hlavného panelu</string>
+  <string name="dashboard_columns_summary">Zmena počtu stĺpcov zobrazených na hlavnom panely</string>
+  <string name="dashboard_columns_portrait_title">Stĺpce (na výšku)</string>
+  <string name="dashboard_columns_landscape_title">Stĺpce (na šírku)</string>
   <!-- Hide Lockscreen clock, date, & alarm -->
+  <string name="hide_lockscreen_clock_title">Widget hodín</string>
+  <string name="hide_lockscreen_clock_summary_on">Zobraziť widget hodín na obrazovke uzamknutia</string>
+  <string name="hide_lockscreen_clock_summary_off">Sktyť widget hodín na obrazovke uzamknutia</string>
+  <string name="hide_lockscreen_date_title">Widget dátumu</string>
+  <string name="hide_lockscreen_date_summary_on">Zobraziť dátum pod widgetom hodín</string>
+  <string name="hide_lockscreen_date_summary_off">Skryť dátum pod widgetom hodín </string>
+  <string name="hide_lockscreen_alarm_title">Text budíku</string>
+  <string name="hide_lockscreen_alarm_summary_on">Zobraziť text budíku pod widgetom hodín</string>
+  <string name="hide_lockscreen_alarm_summary_off">Skryť text budíku pod widgetom hodín</string>
   <!-- Emergency button -->
+  <string name="emergency_button_title">Núdzové tlačidlo</string>
+  <string name="emergency_button_summary_on">Núdzové tlačidlo sa zobrazí na obrazovke uzamknutia</string>
+  <string name="emergency_button_summary_off">Núdzové tlačidlo bude skryté na obrazovke uzamknutia</string>
   <!-- Fingerprint authentication vibration -->
+  <string name="fprint_sucess_vib_title">Vibrovať pri overení odtlačku prsta</string>
+  <string name="fprint_sucess_vib_summary">Vibrovať pri úspešnom odtlačku prsta</string>
   <!-- Fingerprint unlock keystore -->
+  <string name="fp_unlock_keystore_title">Odomknutie odtlačkom prsta po reštarte</string>
+  <string name="fp_unlock_keystore_summary">Povoliť odomknutie zariadenia odtlačkom prsta aj po reštarte</string>
   <!-- Hide Statusbar on Lockscreen -->
-  <!-- Wakelock blocker -->
+  <string name="lockscreen_hide_status_bar_title">Skryť stavový riadok</string>
+  <string name="lockscreen_hide_status_bar_summary">Pre prepínanie viditeľnosti kliknite na stavový riadok</string>
   <!-- Force authorize substratum packages -->
+  <string name="force_authorize_substratum_packages_title">Vyžadovať povolenie pre každú tému</string>
+  <string name="force_authorize_substratum_packages_summary">Povoliť inštaláciu tém z neznámych zdrojov</string>
   <!-- QS tile labels visibility -->
+  <string name="qs_menu_item_titles">Popisky dlaždíc rýchlych nastavení</string>
+  <string name="qs_menu_item_titles_summaryOn">Popisky zobrazené</string>
+  <string name="qs_menu_item_titles_summaryOff">Popisky skryté</string>
   <!-- Color Picker -->
+  <string name="dialog_color_picker">Výber farby</string>
+  <string name="press_color_to_apply">Kliknite na farbu pre jej výber</string>
+  <string name="hex">Hex:</string>
+  <string name="set">Nastaviť</string>
+  <string name="color_default">Predvolené</string>
   <!-- Carrier label -->
+  <string name="carrier_title">Názov operátora</string>
+  <string name="carrier_options_summary">Prispôsobiť názov operátora</string>
+  <string name="custom_carrier_label_title">Vlastný názov operátora</string>
+  <string name="custom_carrier_label_explain">Prosím zadajte nový názov. Nechajte prázdne pre obnovenie na pôvodné meno.</string>
+  <string name="custom_carrier_label_notset">Vlastný názov momentálne nie je nastavený</string>
+  <string name="show_carrier_title">Názov operátora</string>
+  <string name="show_carrier_disabled">Vypnuté</string>
+  <string name="show_carrier_keyguard">Iba na obrazovke uzamknutia</string>
+  <string name="show_carrier_statusbar">Iba stavový riadok</string>
+  <string name="show_carrier_both">Obrazovka uzamknutia a stavový riadok</string>
+  <string name="show_carrier_enabled">Obrazovka uzamknutia a stavový riadok</string>
+  <string name="status_bar_carrier_color">Farba názvu operátora</string>
+  <string name="status_bar_carrier_size">Veľkosť textu popisku operátora</string>
+  <string name="status_bar_carrier_font_style_title">Štýl popisku operátora</string>
+  <string name="number_of_notifications_title">Počet upozornení</string>
+  <string name="carrier_label_hide_label_title">Skryť upozornenie</string>
+  <string name="carrier_label_number_of_notification_icons_title">Max počet ikon pred skrytím</string>
+  <string name="status_bar_font_style_title">Písmo</string>
+  <string name="status_bar_font_normal">Normálna</string>
+  <string name="status_bar_font_italic">Kurzíva</string>
+  <string name="status_bar_font_bold">Tučné</string>
+  <string name="status_bar_font_bold_italic">Tučné kurzíva</string>
+  <string name="status_bar_font_light">Light</string>
+  <string name="status_bar_font_light_italic">Light kurzíva</string>
+  <string name="status_bar_font_thin">Tenké</string>
+  <string name="status_bar_font_thin_italic">Tenké kurzíva</string>
+  <string name="status_bar_font_condensed">Zhustené</string>
+  <string name="status_bar_font_condensed_italic">Zhustené kurzíva</string>
+  <string name="status_bar_font_condensed_light">Zhustené Light</string>
+  <string name="status_bar_font_condensed_light_italic">Zhustené Light kurzíva</string>
+  <string name="status_bar_font_condensed_bold">Zhustené Tučné</string>
+  <string name="status_bar_font_condensed_bold_italic">Zhustené Tučné kurzíva</string>
+  <string name="status_bar_font_medium">Stredné</string>
+  <string name="status_bar_font_medium_italic">Stredné kurzíva</string>
+  <string name="status_bar_font_black">Čierne</string>
+  <string name="status_bar_font_black_italic">Čierne kurzíva</string>
+  <string name="status_bar_font_dancingscript">DancingScript</string>
+  <string name="status_bar_font_dancingscript_bold">DancingScript Tučné</string>
+  <string name="status_bar_font_comingsoon">ComingSoon</string>
+  <string name="status_bar_font_notoserif">NotoSerif Normálne</string>
+  <string name="status_bar_font_notoserif_italic">NotoSerif kurzíva</string>
+  <string name="status_bar_font_notoserif_bold">NotoSerif Tučné</string>
+  <string name="status_bar_font_notoserif_bold_italic">NotoSerif Tučné kurzíva</string>
   <!-- Lock Clock Fonts -->
+  <string name="lock_clock_font_title">Možnosti písma</string>
+  <string name="lock_clock_font_summary">Zmeniť písmo widgetu hodín na obrazovke uzamknutia</string>
+  <string name="lockdate_font_size_title">Veľkosť písma dátumu</string>
+  <string name="lockclock_font_size_title">Veľkosť písma hodín</string>
+  <string name="lock_date_font_summary">Upraviť písmo dátumu</string>
+  <string name="lock_date_font_title">Dátum</string>
+  <string name="lock_clock_font_dialog_title">Vyberte štýl písma hodín na obrazovke uzamknutia</string>
+  <string name="lock_clock_font_stock">Normálny (predvolené)</string>
+  <string name="lock_clock_font_bold">Tučné</string>
+  <string name="lock_clock_font_light">Svetlé</string>
+  <string name="lock_clock_font_italic">Kurzíva</string>
+  <string name="lock_clock_font_bold_italic">Tučné kurzíva</string>
+  <string name="lock_clock_font_light_italic">Light kurzíva</string>
+  <string name="lock_clock_font_thin_italic">Tenké kurzíva</string>
+  <string name="lock_clock_font_thin">Tenké</string>
+  <string name="lock_clock_font_condensed_normal">Zhustené</string>
+  <string name="lock_clock_font_condensed_italic">Zhustené kurzíva</string>
+  <string name="lock_clock_font_condensed_bold">Zhustené Tučné</string>
+  <string name="lock_clock_font_condensed_bold_italic">Zhustené Tučné kurzíva</string>
+  <string name="lock_clock_font_medium_normal">Stredné</string>
+  <string name="lock_clock_font_medium_italic">Stredné kurzíva</string>
   <!-- Screen state service -->
+  <string name="screen_state_toggles_title">Pozastavené akcie</string>
+  <string name="screen_state_toggles_enable_title">Povoliť</string>
+  <string name="screen_state_toggles_enable_summary">Akcie budú vykonané pri vypnutí obrazovky. Pri zapnutí a uvedení do predchádzajúceho stavu budú obnovené.</string>
+  <string name="screen_state_toggles_mobile_title">Mobilné siete</string>
+  <string name="screen_state_toggles_location_title">Poloha</string>
+  <string name="screen_state_toggles_twog">Prepnúť na 2G</string>
+  <string name="screen_state_toggles_twog_summary">Pri vypnutí obrazovky sa režim siete sa prepne na 2G</string>
+  <string name="screen_state_toggles_gps">Zakázať GPS</string>
+  <string name="screen_state_toggles_gps_summary">Pri vypnutí displeja bude GPS služba vypnutá</string>
+  <string name="screen_state_toggles_mobile_data">Vypnúť mobilné dáta</string>
+  <string name="screen_state_toggles_mobile_data_summary">Pri vypnutí obrazovky budú mobilné dáta vypnuté</string>
+  <string name="screen_state_off_delay_title">Oneskorenie akcí po vypnutí obrazovky</string>
+  <string name="screen_state_off_delay_summary">Počet sekúnd čakania pred vykonaním akcie po vypnutí obrazovky</string>
+  <string name="screen_state_on_delay_title">Oneskorenie akcí po zapnutí obrazovky</string>
+  <string name="screen_state_on_delay_summary">Počet sekúnd čakania pred vykonaním akcie po zapnutí obrazovky</string>
 </resources>

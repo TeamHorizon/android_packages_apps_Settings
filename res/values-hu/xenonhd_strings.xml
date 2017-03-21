@@ -84,6 +84,7 @@
   <string name="selinux_title">SELinux mód</string>
   <string name="selinux_permissive_title">Engedélyező</string>
   <string name="selinux_enforcing_title">Kényszerítés</string>
+  <string name="selinux_permissive_toast_title">Selinux engedélyezettre állítva!</string>
   <!-- Recents Membar -->
   <string name="recents_membar">Memóriasáv</string>
   <string name="systemui_recents_mem_display_title">Memóriasáv megjelenítése</string>
@@ -194,17 +195,13 @@
   <!-- Hide Statusbar on Lockscreen -->
   <string name="lockscreen_hide_status_bar_title">Állapotsáv elrejtése</string>
   <string name="lockscreen_hide_status_bar_summary">Érintse meg az állapotsávot a láthatóság kapcsolásához</string>
-  <!-- Wakelock blocker -->
-  <string name="wakelock_blocker_title">Wakelock blokkoló</string>
-  <string name="wakelock_blocker_summary">Rendszer wakelock-ok blokkolása</string>
-  <string name="wakelock_blocker_save">Mentés</string>
-  <string name="wakelock_list_header">Meglévő wakelock-ok</string>
-  <string name="wakelock_blocker_reload">Újratöltés</string>
-  <string name="wakelock_blocker_warning_title">Járjon el körültekintően</string>
-  <string name="wakelock_blocker_warning">A wakelock-ok blokkolása instabilitáshoz, összeomláshoz vagy adatvesztéshez vezethet</string>
   <!-- Force authorize substratum packages -->
+  <string name="force_authorize_substratum_packages_title">Minden téma alkalmazás engedélyezésének kényszerítése</string>
   <string name="force_authorize_substratum_packages_summary">Az ismeretlen forrásból származó témák telepítésének engedélyezése</string>
   <!-- QS tile labels visibility -->
+  <string name="qs_menu_item_titles">Gyorsbeállítás csempék címkéi</string>
+  <string name="qs_menu_item_titles_summaryOn">Címkék megjelenítve</string>
+  <string name="qs_menu_item_titles_summaryOff">Címkék elrejtve</string>
   <!-- Color Picker -->
   <string name="dialog_color_picker">Színválasztó</string>
   <string name="press_color_to_apply">Érintse meg a színt az alkalmazáshoz</string>
@@ -212,11 +209,85 @@
   <string name="set">Beállít</string>
   <string name="color_default">Alapértelmezett</string>
   <!-- Carrier label -->
+  <string name="carrier_title">Szolgáltatói címke</string>
+  <string name="carrier_options_summary">Adjon meg egyéni szolgáltatónevet</string>
+  <string name="custom_carrier_label_title">Egyéni szolgáltatónév</string>
+  <string name="custom_carrier_label_explain">Adjon meg egy új címkét. Hagyja üresen az eredeti visszaállításához.</string>
+  <string name="custom_carrier_label_notset">Egyéni szolgáltatóinév nincs beállítva</string>
+  <string name="show_carrier_title">Szolgáltatói címke</string>
   <string name="show_carrier_disabled">Letiltva</string>
+  <string name="show_carrier_keyguard">Csak zárképernyő</string>
+  <string name="show_carrier_statusbar">Csak állapotsor</string>
+  <string name="show_carrier_both">Zárképernyő és állapotsor</string>
+  <string name="show_carrier_enabled">Zárképernyő és állapotsor</string>
+  <string name="status_bar_carrier_color">Szolgáltatói címke színe</string>
+  <string name="status_bar_carrier_size">Szolgáltatói címke betűmérete</string>
+  <string name="status_bar_carrier_font_style_title">Szolgáltatói címke betűtípusa</string>
+  <string name="number_of_notifications_title">Értesítések száma</string>
+  <string name="carrier_label_hide_label_title">Értesítésekre elrejt</string>
+  <string name="carrier_label_number_of_notification_icons_title">Ikonok maximális száma az elrejtés előtt</string>
+  <string name="status_bar_font_style_title">Betűtípus</string>
   <string name="status_bar_font_normal">Normál</string>
+  <string name="status_bar_font_italic">Dőlt</string>
+  <string name="status_bar_font_bold">Félkövér</string>
+  <string name="status_bar_font_bold_italic">Félkövér dőlt</string>
   <string name="status_bar_font_light">Világos</string>
+  <string name="status_bar_font_light_italic">Szellős dőlt</string>
+  <string name="status_bar_font_thin">Vékony</string>
+  <string name="status_bar_font_thin_italic">Vékony dőlt</string>
+  <string name="status_bar_font_condensed">Sűrített</string>
+  <string name="status_bar_font_condensed_italic">Sűrített dőlt</string>
+  <string name="status_bar_font_condensed_light">Sűrített könnyű</string>
+  <string name="status_bar_font_condensed_light_italic">Sűrített könnyű dőlt</string>
+  <string name="status_bar_font_condensed_bold">Sűrített félkövér</string>
+  <string name="status_bar_font_condensed_bold_italic">Sűrített félkövér dőlt</string>
+  <string name="status_bar_font_medium">Közepes</string>
+  <string name="status_bar_font_medium_italic">Közepes dőlt</string>
+  <string name="status_bar_font_black">Fekete</string>
+  <string name="status_bar_font_black_italic">Fekete dőlt</string>
+  <string name="status_bar_font_dancingscript">DancingScript</string>
+  <string name="status_bar_font_dancingscript_bold">DancingScript félkövér</string>
+  <string name="status_bar_font_comingsoon">ComingSoon</string>
+  <string name="status_bar_font_notoserif">NotoSerif Normál</string>
+  <string name="status_bar_font_notoserif_italic">NotoSerif dőlt</string>
+  <string name="status_bar_font_notoserif_bold">NotoSerif félkövér</string>
+  <string name="status_bar_font_notoserif_bold_italic">NotoSerif félkövér dőlt</string>
   <!-- Lock Clock Fonts -->
+  <string name="lock_clock_font_title">Betűtípus beállítások</string>
+  <string name="lock_clock_font_summary">A zárképernyő óra alapértelmezett betűtípusának módosítása</string>
+  <string name="lockdate_font_size_title">Dátum betűmérete</string>
+  <string name="lockclock_font_size_title">Óra betűmérete</string>
+  <string name="lock_date_font_summary">Dátum betűtípus testreszabása</string>
   <string name="lock_date_font_title">Dátum</string>
+  <string name="lock_clock_font_dialog_title">Zérképernyő óra betűtípusának választása</string>
+  <string name="lock_clock_font_stock">Normál (alapértelmezett)</string>
+  <string name="lock_clock_font_bold">Félkövér</string>
   <string name="lock_clock_font_light">Világos</string>
+  <string name="lock_clock_font_italic">Dőlt</string>
+  <string name="lock_clock_font_bold_italic">Félkövér dőlt</string>
+  <string name="lock_clock_font_light_italic">Szellős dőlt</string>
+  <string name="lock_clock_font_thin_italic">Vékony dőlt</string>
+  <string name="lock_clock_font_thin">Vékony</string>
+  <string name="lock_clock_font_condensed_normal">Sűrített</string>
+  <string name="lock_clock_font_condensed_italic">Sűrített dőlt</string>
+  <string name="lock_clock_font_condensed_bold">Sűrített félkövér</string>
+  <string name="lock_clock_font_condensed_bold_italic">Sűrített félkövér dőlt</string>
+  <string name="lock_clock_font_medium_normal">Közepes</string>
+  <string name="lock_clock_font_medium_italic">Közepes dőlt</string>
   <!-- Screen state service -->
+  <string name="screen_state_toggles_title">Felfüggesztett műveletek</string>
+  <string name="screen_state_toggles_enable_title">Engedélyezés</string>
+  <string name="screen_state_toggles_enable_summary">Az intézkedések a képernyő kikapcsolásakor végrehajtódnak. A képernyő bekapcsolása esetén az előző állapot áll vissza.</string>
+  <string name="screen_state_toggles_mobile_title">Mobilhálózatok</string>
+  <string name="screen_state_toggles_location_title">Hely</string>
+  <string name="screen_state_toggles_twog">Váltás 2G-re</string>
+  <string name="screen_state_toggles_twog_summary">Hálózati mód 2G-re vált képernyő kikapcsolásakor</string>
+  <string name="screen_state_toggles_gps">GPS kikapcsolása</string>
+  <string name="screen_state_toggles_gps_summary">GPS alapú helymeghatározás le lesz tiltva képernyő kikapcsolásakor</string>
+  <string name="screen_state_toggles_mobile_data">Mobiladatok kikapcsolása</string>
+  <string name="screen_state_toggles_mobile_data_summary">Mobilinternet le lesz tiltva a képernyő kikapcsolásakor</string>
+  <string name="screen_state_off_delay_title">Kikapcsolt képernyős műveletek késleltetése</string>
+  <string name="screen_state_off_delay_summary">Az elvégzendő műveletek előtti várakozás időtartama (másodpercekben)</string>
+  <string name="screen_state_on_delay_title">Bekapcsolt képernyős műveletek késleltetése</string>
+  <string name="screen_state_on_delay_summary">Az elvégzendő műveletek előtti várakozás időtartama (másodpercekben)</string>
 </resources>
