@@ -75,6 +75,13 @@
             android:summary="@string/fp_unlock_keystore_summary"
             android:defaultValue="false" />
 
+        <ListPreference
+            android:key="fp_max_failed_attempts"
+            android:title="@string/fp_max_failed_attempts"
+            android:entries="@array/fp_max_failed_attempts_entries"
+            android:entryValues="@array/fp_max_failed_attempts_values"
+            android:defaultValue="5" />
+
         <com.android.settings.preference.SecureSettingSwitchPreference
             android:key="lockscreen_hide_status_bar"
             android:title="@string/lockscreen_hide_status_bar_title"

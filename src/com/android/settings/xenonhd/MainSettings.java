@@ -81,6 +81,7 @@ public class MainSettings extends SettingsPreferenceFragment implements
 
     private static final String FINGERPRINT_VIB = "fingerprint_success_vib";
     private static final String FP_UNLOCK_KEYSTORE = "fp_unlock_keystore";
+    private static final String FP_MAX_FAILED_ATTEMPTS = "fp_max_failed_attempts";
 
     private static final String LOCK_CLOCK_FONTS = "lock_clock_fonts";
     private static final String CLOCK_FONT_SIZE  = "lockclock_font_size";
@@ -107,6 +108,7 @@ public class MainSettings extends SettingsPreferenceFragment implements
     private FingerprintManager mFingerprintManager;
     private SwitchPreference mFingerprintVib;
     private SwitchPreference mFpKeystore;
+    private ListPreference maxFailedAttempts;
 
     ListPreference mDateFonts;
     ListPreference mLockClockFonts;
@@ -170,6 +172,14 @@ public class MainSettings extends SettingsPreferenceFragment implements
         mFingerprintManager = (FingerprintManager) getActivity().getSystemService(Context.FINGERPRINT_SERVICE);
         mFingerprintVib = (SwitchPreference) findPreference(FINGERPRINT_VIB);
         mFpKeystore = (SwitchPreference) findPreference(FP_UNLOCK_KEYSTORE);
+
+        // fp max failed attempts
+        maxFailedAttempts = (ListPreference) findPreference(FP_MAX_FAILED_ATTEMPTS);
+        int set = Settings.System.getIntForUser(resolver,
+                Settings.System.FP_MAX_FAILED_ATTEMPTS, 5, UserHandle.USER_CURRENT);
+        maxFailedAttempts.setValue(String.valueOf(set));
+        maxFailedAttempts.setSummary(maxFailedAttempts.getEntry());
+        maxFailedAttempts.setOnPreferenceChangeListener(this);
 
         mLockClockFonts = (ListPreference) findPreference(LOCK_CLOCK_FONTS);
         mLockClockFonts.setValue(String.valueOf(Settings.System.getInt(
@@ -320,6 +330,13 @@ public class MainSettings extends SettingsPreferenceFragment implements
                     Integer.valueOf((String) objValue));
             mDateFonts.setValue(String.valueOf(objValue));
             mDateFonts.setSummary(mDateFonts.getEntry());
+            return true;
+        } else if (preference == maxFailedAttempts) {
+            int set = Integer.valueOf((String) objValue);
+            index = maxFailedAttempts.findIndexOfValue((String) objValue);
+            Settings.System.putIntForUser(getActivity().getContentResolver(),
+                    Settings.System.FP_MAX_FAILED_ATTEMPTS, set, UserHandle.USER_CURRENT);
+            maxFailedAttempts.setSummary(maxFailedAttempts.getEntries()[index]);
             return true;
         } 
         return false;

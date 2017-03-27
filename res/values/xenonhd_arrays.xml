@@ -233,4 +233,19 @@
         <item>13</item>
     </string-array>
 
+    <!--- Fingerprint failed attempts -->
+    <string-array name="fp_max_failed_attempts_entries" translatable="false">
+        <item>@string/fp_three_attempts</item>
+        <item>@string/fp_five_attempts</item>
+        <item>@string/fp_ten_attempts</item>
+        <item>@string/fp_fifteen_attempts</item>
+    </string-array>
+
+    <string-array name="fp_max_failed_attempts_values" translatable="false">
+        <item>3</item>
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+    </string-array>
+
 </resources>
