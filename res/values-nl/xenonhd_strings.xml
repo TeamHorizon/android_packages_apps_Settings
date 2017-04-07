@@ -87,4 +87,5 @@
   <string name="lock_date_font_title">Datum</string>
   <string name="lock_clock_font_light">Licht</string>
   <!-- Screen state service -->
+  <!-- Fingerprint max failed attempts -->
 </resources>

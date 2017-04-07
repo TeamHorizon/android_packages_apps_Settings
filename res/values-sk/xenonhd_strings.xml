@@ -13,10 +13,10 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- About phone screen, XenonHD version -->
-  <string name="xenonhd_version">XeHD verzia</string>
-  <string name="xenonhd_version_default">Neznámy</string>
+  <string name="xenonhd_version">Verzia XenonHD</string>
+  <string name="xenonhd_version_default">Neznáma</string>
   <string name="xenonhd_maintainer">Správca</string>
-  <string name="xenonhd_maintainer_default">Neznámy</string>
+  <string name="xenonhd_maintainer_default">Neznáma</string>
   <!-- Changelog -->
   <string name="changelog_xenonhd_title">Prehľad zmien</string>
   <string name="changelog_xenonhd_error">Nie je možné načítať zoznam zmien</string>
@@ -24,7 +24,7 @@
   <!-- Density category -->
   <string name="density_category">Možnosti hustoty zobrazenia</string>
   <!-- XenonOTA -->
-  <string name="xenonota_title">XenonHD Aktualizácie</string>
+  <string name="xenonota_title">Aktualizácie XenonHD</string>
   <string name="xenonota_summary">Skontrolovať aktualizácie ROM</string>
   <!-- Dev Options Enabled by Default -->
   <string name="show_dev_already_enabled">Nie je potrebné, nastavenia pre vývojárov sú predvolene povolené</string>
@@ -33,7 +33,7 @@
   <!-- Local (desktop) backup password menu title [CHAR LIMIT=25] -->
   <string name="local_backup_password_title">Heslo pre zálohu do PC</string>
   <!-- Double tap to sleep on lockscreen -->
-  <string name="double_tap_sleep_anywhere_title">Dvojklik obrazovku uzamknutia</string>
+  <string name="double_tap_sleep_anywhere_title">Dvojklik na obrazovku uzamknutia</string>
   <string name="double_tap_sleep_anywhere_summary">Dvojklikom na obrazovke uzamknutia uspať zariadenie</string>
   <!-- Notification sound timeout -->
   <string name="app_notification_sound_timeout_title">Minimálny čas medzi zvukmi upozornenia</string>
@@ -82,9 +82,9 @@
   <string name="selinux_switch_title">Upozornenie na prepnutie SELinux</string>
   <string name="selinux_switch_summary">SELinux je súbor zmien na linuxovom jadre a spôsob prideľovania zdrojov pre danú aplikáciu. Zmena režimu môže spôsobiť nežiaduce správanie. Použitie je na vlastné nebezpečenstvo</string>
   <string name="selinux_title">SELinux režim</string>
-  <string name="selinux_permissive_title">Tolerantné</string>
+  <string name="selinux_permissive_title">Mierne</string>
   <string name="selinux_enforcing_title">Výnútené</string>
-  <string name="selinux_permissive_toast_title">SELinux nastavená na tolerantné!</string>
+  <string name="selinux_permissive_toast_title">SElinux nastavený na režim mierne!</string>
   <!-- Recents Membar -->
   <string name="recents_membar">Ukazovateľ pamäte</string>
   <string name="systemui_recents_mem_display_title">Zobraziť ukazovateľ pamäte</string>
@@ -98,10 +98,10 @@
   <string name="qs_easy_toggle_summary">Povoľte akciu jedným kliknutím na možnosť povoliť/zakázať mobilné dáta, Wi-Fi a Bluetooth. Dlhým kliknutím zobrazíte upresňujúce nastavenia</string>
   <!-- Media art -->
   <string name="media_art_title">Obal albumu</string>
-  <string name="media_art_summary">Povoliť zobrazenie obalu albumu na uzamknutej obrazovke</string>
+  <string name="media_art_summary">Povoliť zobrazenie obalu albumu na obrazovke uzamknutia</string>
   <!-- Quick unlock -->
-  <string name="quick_unlock_warning">Upozornenie na rychle odemknutie</string>
-  <string name="quick_unlock_warning_summary">Táto funkcia obchádza dôležité bezpečnostné mechanizmy a a nepodporuje režim viacerých používateľov. Použite na vlastné riziko</string>
+  <string name="quick_unlock_warning">Upozornenie na rychle odomknutie</string>
+  <string name="quick_unlock_warning_summary">Táto funkcia obchádza dôležité bezpečnostné mechanizmy a nepodporuje režim viacerých používateľov. Použite na vlastné riziko</string>
   <string name="unlock_quick_unlock_control_title">Rýchle odomknutie</string>
   <string name="unlock_quick_unlock_control_summary">Odomknúť automaticky po zadaní správneho PIN kódu alebo hesla</string>
   <!-- Three-fingers-swipe to screenshot -->
@@ -126,7 +126,7 @@
   <string name="doze_trigger_pickup_summary_on">Pulzovanie sa spustí pomocou snímača pohybu</string>
   <string name="doze_trigger_pickup_summary_off">Senzory pohybu nebudú použité k spusteniu</string>
   <string name="doze_trigger_notification_title">Spúšťač upozornení</string>
-  <string name="doze_trigger_notification_summary_on">Pulzovaním dôjde k spusteniu oznámenia</string>
+  <string name="doze_trigger_notification_summary_on">Pulzovanie sa spustí oznámením</string>
   <string name="doze_trigger_notification_summary_off">Oznámenia nebudú použité k spusteniu</string>
   <string name="doze_brightness_level_title">Úroveň jasu</string>
   <string name="onehundred_ms">100 ms</string>
@@ -153,10 +153,10 @@
   <string name="recents_clear_all_location_title">Umiestnenie tlačítka \"Vyčistiť všetko\"</string>
   <string name="recents_clear_all_location_top_right">Vpravo hore</string>
   <string name="recents_clear_all_location_top_left">Vľavo hore</string>
-  <string name="recents_clear_all_location_top_center">Hore na stred</string>
+  <string name="recents_clear_all_location_top_center">Hore v strede</string>
   <string name="recents_clear_all_location_bottom_right">Vpravo dole</string>
   <string name="recents_clear_all_location_bottom_left">Vľavo dole</string>
-  <string name="recents_clear_all_location_bottom_center">Dole na stred</string>
+  <string name="recents_clear_all_location_bottom_center">Dole v strede</string>
   <!-- Dashboard options -->
   <string name="dashboard_category">Možnosti hlavného panela</string>
   <string name="dashboard_suggestions_title">Návrhy</string>
@@ -227,7 +227,7 @@
   <string name="carrier_label_hide_label_title">Skryť upozornenie</string>
   <string name="carrier_label_number_of_notification_icons_title">Max počet ikon pred skrytím</string>
   <string name="status_bar_font_style_title">Písmo</string>
-  <string name="status_bar_font_normal">Normálna</string>
+  <string name="status_bar_font_normal">Normálne</string>
   <string name="status_bar_font_italic">Kurzíva</string>
   <string name="status_bar_font_bold">Tučné</string>
   <string name="status_bar_font_bold_italic">Tučné kurzíva</string>
@@ -290,4 +290,5 @@
   <string name="screen_state_off_delay_summary">Počet sekúnd čakania pred vykonaním akcie po vypnutí obrazovky</string>
   <string name="screen_state_on_delay_title">Oneskorenie akcí po zapnutí obrazovky</string>
   <string name="screen_state_on_delay_summary">Počet sekúnd čakania pred vykonaním akcie po zapnutí obrazovky</string>
+  <!-- Fingerprint max failed attempts -->
 </resources>

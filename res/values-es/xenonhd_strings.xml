@@ -177,7 +177,11 @@
   <string name="hide_lockscreen_clock_summary_on">Widget de reloj en la pantalla de bloqueo</string>
   <string name="hide_lockscreen_clock_summary_off">Widget de reloj escondido en la pantalla de bloqueo</string>
   <string name="hide_lockscreen_date_title">Widget de la fecha</string>
+  <string name="hide_lockscreen_date_summary_on">Mostrando fecha debajo del widget de reloj</string>
+  <string name="hide_lockscreen_date_summary_off">Ocultando fecha debajo del widget de reloj </string>
   <string name="hide_lockscreen_alarm_title">Texto de alarma</string>
+  <string name="hide_lockscreen_alarm_summary_on">Mostrando texto de alarma debajo del widget de reloj</string>
+  <string name="hide_lockscreen_alarm_summary_off">Ocultando texto de alarma debajo del widget de reloj</string>
   <!-- Emergency button -->
   <string name="emergency_button_title">Botón de emergencia</string>
   <string name="emergency_button_summary_on">Botón de emergencia en la pantalla de bloqueo</string>
@@ -192,7 +196,10 @@
   <string name="lockscreen_hide_status_bar_title">Ocultar barra de estado</string>
   <string name="lockscreen_hide_status_bar_summary">Toque la barra de estado para cambiar la visibilidad</string>
   <!-- Force authorize substratum packages -->
+  <string name="force_authorize_substratum_packages_title">Forzar autorización de cada aplicación de temas</string>
+  <string name="force_authorize_substratum_packages_summary">Permitir temas de origen desconocido</string>
   <!-- QS tile labels visibility -->
+  <string name="qs_menu_item_titles">Etiquetas de azulejos en selección rápida</string>
   <string name="qs_menu_item_titles_summaryOn">Las etiquetas se muestran</string>
   <string name="qs_menu_item_titles_summaryOff">Las etiquetas se ocultan</string>
   <!-- Color Picker -->
@@ -283,4 +290,5 @@
   <string name="screen_state_off_delay_summary">Número de segundos a esperar antes de realizar acciones después de apagar la pantalla</string>
   <string name="screen_state_on_delay_title">Retardo de las acciones con la pantalla encendida</string>
   <string name="screen_state_on_delay_summary">Número de segundos a esperar antes de realizar acciones después de apagar la pantalla</string>
+  <!-- Fingerprint max failed attempts -->
 </resources>

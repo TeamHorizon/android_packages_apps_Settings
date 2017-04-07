@@ -14,7 +14,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- About phone screen, XenonHD version -->
   <string name="xenonhd_version">Version de XenonHD</string>
-  <string name="xenonhd_version_default">Inconnu</string>
+  <string name="xenonhd_version_default">Inconnue</string>
   <string name="xenonhd_maintainer">Mainteneur</string>
   <string name="xenonhd_maintainer_default">Inconnu</string>
   <!-- Changelog -->
@@ -37,7 +37,7 @@
   <string name="double_tap_sleep_anywhere_summary">Tapez deux fois sur l\'écran de verrouillage pour mettre l\'appareil en veille</string>
   <!-- Notification sound timeout -->
   <string name="app_notification_sound_timeout_title">Temps minimum entre les sons de notification</string>
-  <string name="app_notification_sound_timeout_summary_template">Permettent des sons ou des vibrations pas plus d’une fois chaque <xliff:g id="duration">%1$s </xliff:g> <xliff:g id="duration">%1$s</xliff:g></string>
+  <string name="app_notification_sound_timeout_summary_template">Permettre des sons ou des vibrations pas plus d’une fois chaque <xliff:g id="duration">%1$s</xliff:g></string>
   <string name="app_notification_sound_timeout_value_none">Aucune restriction</string>
   <string name="app_notification_sound_timeout_value_10_seconds">10 secondes</string>
   <string name="app_notification_sound_timeout_value_30_seconds">30 secondes</string>
@@ -163,7 +163,7 @@
   <string name="dashboard_suggestions_title">Suggestions</string>
   <string name="summary_dashboard_suggestions_enabled">Les suggestions du tableau de bord sont activées</string>
   <string name="summary_dashboard_suggestions_disabled">Les suggestions du tableau de bord sont désactivées</string>
-  <string name="remove_tile_summaries_title">Résummés</string>
+  <string name="remove_tile_summaries_title">Résumés</string>
   <string name="remove_tile_summaries_summary_enabled">Les résumés du tableau de bord sont activés</string>
   <string name="remove_tile_summaries_summary_disabled">Les résumés du tableau de bord sont désactivés</string>
   <string name="dashboard_conditions_title">Conditions</string>
@@ -184,9 +184,9 @@
   <string name="hide_lockscreen_alarm_summary_on">Alarme affichée en dessous du widget horloge</string>
   <string name="hide_lockscreen_alarm_summary_off">Texte d\'alarme sous le widget horloge caché</string>
   <!-- Emergency button -->
-  <string name="emergency_button_title">Boutton d\'urgence</string>
-  <string name="emergency_button_summary_on">Boutton d\'urgence affiché sur l\'écran de verrouillage</string>
-  <string name="emergency_button_summary_off">Boutton d\'urgence masqué sur l\'écran de verrouillage</string>
+  <string name="emergency_button_title">Bouton d\'urgence</string>
+  <string name="emergency_button_summary_on">Bouton d\'urgence affiché sur l\'écran de verrouillage</string>
+  <string name="emergency_button_summary_off">Bouton d\'urgence masqué sur l\'écran de verrouillage</string>
   <!-- Fingerprint authentication vibration -->
   <string name="fprint_sucess_vib_title">Vibration d\'authentification de l\'empreinte digitale</string>
   <string name="fprint_sucess_vib_summary">Vibrer lors de l\'authentification réussie de l\'empreinte digitale</string>
@@ -202,6 +202,7 @@
   <!-- QS tile labels visibility -->
   <string name="qs_menu_item_titles">Étiquette des tuiles QS</string>
   <string name="qs_menu_item_titles_summaryOn">Les étiquettes sont montrées</string>
+  <string name="qs_menu_item_titles_summaryOff">Les étiquettes sont masquées</string>
   <!-- Color Picker -->
   <string name="dialog_color_picker">Sélectionneur de couleur</string>
   <string name="press_color_to_apply">Appuyer sur la couleur ci-dessous pour l\'appliquer</string>
@@ -210,11 +211,91 @@
   <string name="set">Appliquer</string>
   <string name="color_default">Défaut</string>
   <!-- Carrier label -->
+  <string name="carrier_title">Libellé de l\'opérateur</string>
+  <string name="carrier_options_summary">Personaliser le libellé de l\'opérateur</string>
+  <string name="custom_carrier_label_title">Libellé de l\'opérateur personalisé</string>
+  <string name="custom_carrier_label_explain">Merci d\'entrer un nouveau label. Laisser vide pour préserver le label par défaut.</string>
+  <string name="custom_carrier_label_notset">Le label personalisé n\'est pas définis</string>
+  <string name="show_carrier_title">Label de l\'opérateur</string>
   <string name="show_carrier_disabled">Désactivé</string>
+  <string name="show_carrier_keyguard">Ecran de verrouillage uniquement</string>
+  <string name="show_carrier_statusbar">Barre de statut uniquement</string>
+  <string name="show_carrier_both">Ecran de verrouillage et barre de statut</string>
+  <string name="show_carrier_enabled">Ecran de verrouillage et barre de statut</string>
+  <string name="status_bar_carrier_color">Couleur du label opérateur</string>
+  <string name="status_bar_carrier_size">Taille du texte du label opérateur</string>
+  <string name="status_bar_carrier_font_style_title">Police du label opérateur</string>
+  <string name="number_of_notifications_title">Nombre de notifications</string>
+  <string name="carrier_label_hide_label_title">Masquer les notifications</string>
+  <string name="carrier_label_number_of_notification_icons_title">Nombre maximum d\'icônes avant le masquage</string>
+  <string name="status_bar_font_style_title">Police</string>
   <string name="status_bar_font_normal">Standard</string>
+  <string name="status_bar_font_italic">Italique</string>
+  <string name="status_bar_font_bold">Gras</string>
+  <string name="status_bar_font_bold_italic">Gras italique</string>
   <string name="status_bar_font_light">Clair</string>
+  <string name="status_bar_font_light_italic">Italique léger</string>
+  <string name="status_bar_font_thin">Fin</string>
+  <string name="status_bar_font_thin_italic">Fin Italique</string>
+  <string name="status_bar_font_condensed">Condensé</string>
+  <string name="status_bar_font_condensed_italic">Italique Condensé</string>
+  <string name="status_bar_font_condensed_light">Clair condensé</string>
+  <string name="status_bar_font_condensed_light_italic">Italique Condensé clair</string>
+  <string name="status_bar_font_condensed_bold">Condensé Gras</string>
+  <string name="status_bar_font_condensed_bold_italic">Italique condensé gras</string>
+  <string name="status_bar_font_medium">Moyen</string>
+  <string name="status_bar_font_medium_italic">Italique Moyen</string>
+  <string name="status_bar_font_black">Noir</string>
+  <string name="status_bar_font_black_italic">Noir Italique</string>
+  <string name="status_bar_font_dancingscript">DancingScript</string>
+  <string name="status_bar_font_dancingscript_bold">DancingScript Gras</string>
+  <string name="status_bar_font_comingsoon">ComingSoon</string>
+  <string name="status_bar_font_notoserif">NotoSerif normale</string>
+  <string name="status_bar_font_notoserif_italic">NotoSerif Italique</string>
+  <string name="status_bar_font_notoserif_bold">NotoSerif Gras</string>
+  <string name="status_bar_font_notoserif_bold_italic">NotoSerif Gras Italique</string>
   <!-- Lock Clock Fonts -->
+  <string name="lock_clock_font_title">Options de polices</string>
+  <string name="lock_clock_font_summary">Modifier la police d\'écriture de l\'horloge de l\'écran de déverrouillage</string>
+  <string name="lockdate_font_size_title">Taille de la police pour la Date</string>
+  <string name="lockclock_font_size_title">Taille de la police pour l\'Horloge</string>
+  <string name="lock_date_font_summary">Personnaliser la police pour la date</string>
   <string name="lock_date_font_title">Date</string>
+  <string name="lock_clock_font_dialog_title">Sélectionnez la police d\'horloge de l\'écran verrouillage</string>
+  <string name="lock_clock_font_stock">Normale (défaut)</string>
+  <string name="lock_clock_font_bold">Gras</string>
   <string name="lock_clock_font_light">Clair</string>
+  <string name="lock_clock_font_italic">Italique</string>
+  <string name="lock_clock_font_bold_italic">Gras italique</string>
+  <string name="lock_clock_font_light_italic">Italique léger</string>
+  <string name="lock_clock_font_thin_italic">Fin Italique</string>
+  <string name="lock_clock_font_thin">Fin</string>
+  <string name="lock_clock_font_condensed_normal">Condensé</string>
+  <string name="lock_clock_font_condensed_italic">Italique Condensé</string>
+  <string name="lock_clock_font_condensed_bold">Condensé Gras</string>
+  <string name="lock_clock_font_condensed_bold_italic">Condensé Gras Italique</string>
+  <string name="lock_clock_font_medium_normal">Moyen</string>
+  <string name="lock_clock_font_medium_italic">Italique Moyen</string>
   <!-- Screen state service -->
+  <string name="screen_state_toggles_title">Suspendre les actions</string>
+  <string name="screen_state_toggles_enable_title">Activer</string>
+  <string name="screen_state_toggles_enable_summary">Les actions seront exécutées sur écran éteint. Sur écran allumé l\'état précédent sera restauré.</string>
+  <string name="screen_state_toggles_mobile_title">Réseaux mobiles</string>
+  <string name="screen_state_toggles_location_title">Localisation</string>
+  <string name="screen_state_toggles_twog">Basculer vers 2G</string>
+  <string name="screen_state_toggles_twog_summary">Le mode réseau basculera vers la 2G à l\'extinction de l\'écran</string>
+  <string name="screen_state_toggles_gps">Désactiver le GPS</string>
+  <string name="screen_state_toggles_gps_summary">Le service de localisation GPS sera désactivé sur écran éteint</string>
+  <string name="screen_state_toggles_mobile_data">Désactiver les données mobiles</string>
+  <string name="screen_state_toggles_mobile_data_summary">La connexion des données mobiles sera désactivée à l\'extinction de l\'écran</string>
+  <string name="screen_state_off_delay_title">Délai des actions à l\'extinction de l\'écran</string>
+  <string name="screen_state_off_delay_summary">Nombre de secondes à attendre avant d’effectuer des actions après extinction de l\'écran</string>
+  <string name="screen_state_on_delay_title">Délai des actions à l\'allumage de l\'écran</string>
+  <string name="screen_state_on_delay_summary">Nombre de secondes à attendre avant d’effectuer des actions après l\'allumage de l\'écran</string>
+  <!-- Fingerprint max failed attempts -->
+  <string name="fp_max_failed_attempts">Nombre maximum d\'essais pour le lecteur d\'empreintes digitales</string>
+  <string name="fp_three_attempts">3 essais</string>
+  <string name="fp_five_attempts">5 essais</string>
+  <string name="fp_ten_attempts">10 essais</string>
+  <string name="fp_fifteen_attempts">15 essais</string>
 </resources>

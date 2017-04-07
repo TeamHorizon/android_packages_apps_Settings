@@ -84,6 +84,7 @@
   <string name="selinux_title">SELinux režiim</string>
   <string name="selinux_permissive_title">Lubav</string>
   <string name="selinux_enforcing_title">Sundiv</string>
+  <string name="selinux_permissive_toast_title">Selinux seatud premissive!</string>
   <!-- Recents Membar -->
   <string name="recents_membar">Mäluriba</string>
   <string name="systemui_recents_mem_display_title">Näita Mäluriba</string>
@@ -202,4 +203,5 @@
   <string name="lock_date_font_title">Kuupäev</string>
   <string name="lock_clock_font_light">Valgus</string>
   <!-- Screen state service -->
+  <!-- Fingerprint max failed attempts -->
 </resources>

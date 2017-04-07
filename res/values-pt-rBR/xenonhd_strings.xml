@@ -191,4 +191,5 @@
   <string name="lock_date_font_title">Data</string>
   <string name="lock_clock_font_light">Claro</string>
   <!-- Screen state service -->
+  <!-- Fingerprint max failed attempts -->
 </resources>

@@ -290,4 +290,10 @@
   <string name="screen_state_off_delay_summary">Liczba sekund oczekiwania przed wykonaniem akcji po wyłączeniu ekranu</string>
   <string name="screen_state_on_delay_title">Opóźnienie akcji po włączeniu ekranu</string>
   <string name="screen_state_on_delay_summary">Liczba sekund oczekiwania przed wykonaniem akcji po włączeniu ekranu</string>
+  <!-- Fingerprint max failed attempts -->
+  <string name="fp_max_failed_attempts">Maksymalna liczba prób odblokowania odciskiem palca</string>
+  <string name="fp_three_attempts">3 próby</string>
+  <string name="fp_five_attempts">5 prób</string>
+  <string name="fp_ten_attempts">10 prób</string>
+  <string name="fp_fifteen_attempts">15 prób</string>
 </resources>

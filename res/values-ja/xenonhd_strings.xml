@@ -113,4 +113,5 @@
   <!-- Lock Clock Fonts -->
   <string name="lock_date_font_title">日付</string>
   <!-- Screen state service -->
+  <!-- Fingerprint max failed attempts -->
 </resources>

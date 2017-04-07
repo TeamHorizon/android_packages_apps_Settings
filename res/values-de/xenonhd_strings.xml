@@ -241,7 +241,19 @@
   <string name="status_bar_font_condensed_light_italic">Leicht Schmal + kursiv</string>
   <string name="status_bar_font_condensed_bold">Schmal + fett</string>
   <string name="status_bar_font_condensed_bold_italic">Schmal + fett + kursiv</string>
+  <string name="status_bar_font_medium">Medium</string>
+  <string name="status_bar_font_medium_italic">Medium Italic</string>
+  <string name="status_bar_font_black">Schwarz</string>
+  <string name="status_bar_font_black_italic">Schwarz Italic</string>
+  <string name="status_bar_font_dancingscript">DancingScript</string>
+  <string name="status_bar_font_dancingscript_bold">DancingScript Fett</string>
+  <string name="status_bar_font_comingsoon">ComingSoon</string>
+  <string name="status_bar_font_notoserif">NotoSerif Normal</string>
+  <string name="status_bar_font_notoserif_italic">NotoSerif Italic</string>
+  <string name="status_bar_font_notoserif_bold">NotoSerif Fett</string>
+  <string name="status_bar_font_notoserif_bold_italic">NotoSerif Fett Kursiv</string>
   <!-- Lock Clock Fonts -->
+  <string name="lock_clock_font_title">Schriftartoptionen</string>
   <string name="lock_date_font_title">Datum</string>
   <string name="lock_clock_font_bold">Fett gedruckt</string>
   <string name="lock_clock_font_light">Hell</string>
@@ -253,6 +265,9 @@
   <string name="lock_clock_font_condensed_normal">Schmal</string>
   <string name="lock_clock_font_condensed_italic">Schmal + kursiv</string>
   <string name="lock_clock_font_condensed_bold">Schmal + fett</string>
+  <string name="lock_clock_font_medium_normal">Medium</string>
+  <string name="lock_clock_font_medium_italic">Medium Italic</string>
   <!-- Screen state service -->
   <string name="screen_state_toggles_twog">Wechseln zu 2G</string>
+  <!-- Fingerprint max failed attempts -->
 </resources>

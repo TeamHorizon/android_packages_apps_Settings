@@ -290,4 +290,10 @@
   <string name="screen_state_off_delay_summary">螢幕關閉後執行動作之前等待的秒數</string>
   <string name="screen_state_on_delay_title">螢幕關閉動作延遲</string>
   <string name="screen_state_on_delay_summary">螢幕開啟後執行動作之前等待的秒數</string>
+  <!-- Fingerprint max failed attempts -->
+  <string name="fp_max_failed_attempts">指紋最大失敗嘗試</string>
+  <string name="fp_three_attempts">第 3 次嘗試</string>
+  <string name="fp_five_attempts">第 5 次嘗試</string>
+  <string name="fp_ten_attempts">第 10 次嘗試</string>
+  <string name="fp_fifteen_attempts">第 15 次嘗試</string>
 </resources>

@@ -290,4 +290,5 @@
   <string name="screen_state_off_delay_summary">Az elvégzendő műveletek előtti várakozás időtartama (másodpercekben)</string>
   <string name="screen_state_on_delay_title">Bekapcsolt képernyős műveletek késleltetése</string>
   <string name="screen_state_on_delay_summary">Az elvégzendő műveletek előtti várakozás időtartama (másodpercekben)</string>
+  <!-- Fingerprint max failed attempts -->
 </resources>
