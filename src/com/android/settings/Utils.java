@@ -77,15 +77,12 @@ import android.text.TextUtils;
 import android.text.format.DateUtils;
 import android.text.style.TtsSpan;
 import android.util.ArraySet;
-import android.util.DisplayMetrics;
 import android.util.Log;
 import android.util.SparseArray;
 import android.util.TypedValue;
-import android.view.DisplayInfo;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.WindowManager;
 import android.view.animation.Animation;
 import android.view.animation.Animation.AnimationListener;
 import android.view.animation.AnimationUtils;
@@ -139,14 +136,6 @@ public final class Utils extends com.android.settingslib.Utils {
     private static final int SECONDS_PER_MINUTE = 60;
     private static final int SECONDS_PER_HOUR = 60 * 60;
     private static final int SECONDS_PER_DAY = 24 * 60 * 60;
-
-	// Device types
-    private static final int DEVICE_PHONE = 0;
-    private static final int DEVICE_HYBRID = 1;
-    private static final int DEVICE_TABLET = 2;
-
-    // Device type reference
-    private static int sDeviceType = -1;
 
     public static final String OS_PKG = "os";
 
@@ -479,40 +468,6 @@ public final class Utils extends com.android.settingslib.Utils {
     public static boolean isRestrictedProfile(Context context) {
         UserManager um = (UserManager) context.getSystemService(Context.USER_SERVICE);
         return um.getUserInfo(um.getUserHandle()).isRestricted();
-    }
-
-	private static int getScreenType(Context context) {
-        if (sDeviceType == -1) {
-            WindowManager wm = (WindowManager) context.getSystemService(Context.WINDOW_SERVICE);
-           DisplayInfo outDisplayInfo = new DisplayInfo();
-            wm.getDefaultDisplay().getDisplayInfo(outDisplayInfo);
-            int shortSize = Math.min(outDisplayInfo.logicalHeight, outDisplayInfo.logicalWidth);
-            int shortSizeDp = shortSize * DisplayMetrics.DENSITY_DEFAULT
-                    / outDisplayInfo.logicalDensityDpi;
-            if (shortSizeDp < 600) {
-                // 0-599dp: "phone" UI with a separate status & navigation bar
-                sDeviceType =  DEVICE_PHONE;
-            } else if (shortSizeDp < 720) {
-                // 600-719dp: "phone" UI with modifications for larger screens
-                sDeviceType = DEVICE_HYBRID;
-            } else {
-                // 720dp: "tablet" UI with a single combined status & navigation bar
-                sDeviceType = DEVICE_TABLET;
-            }
-        }
-        return sDeviceType;
-    }
-
-    public static boolean isPhone(Context context) {
-        return getScreenType(context) == DEVICE_PHONE;
-    }
-
-    public static boolean isHybrid(Context context) {
-        return getScreenType(context) == DEVICE_HYBRID;
-    }
-
-    public static boolean isTablet(Context context) {
-        return getScreenType(context) == DEVICE_TABLET;
     }
 
     /**

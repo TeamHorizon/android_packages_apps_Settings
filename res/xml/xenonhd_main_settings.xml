@@ -193,11 +193,6 @@
             android:defaultValue="3"
             android:dependency="show_clear_all_recents" />
 
-        <PreferenceScreen
-            android:key="navigation_bar_dimen"
-            android:fragment="com.android.settings.xenonhd.NavBarDimen"
-            android:title="@string/navbar_dimen_title" />
-
     </PreferenceCategory>
 
     <PreferenceCategory
