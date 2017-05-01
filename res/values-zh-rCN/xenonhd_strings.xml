@@ -13,7 +13,9 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- About phone screen, XenonHD version -->
+  <string name="xenonhd_version">XenonHD版本</string>
   <string name="xenonhd_version_default">未知</string>
+  <string name="xenonhd_maintainer">维护者</string>
   <string name="xenonhd_maintainer_default">未知</string>
   <!-- Changelog -->
   <string name="changelog_xenonhd_title">更新日志</string>
@@ -25,6 +27,7 @@
   <string name="xenonota_title">XenonHD更新</string>
   <string name="xenonota_summary">检查更新</string>
   <!-- Dev Options Enabled by Default -->
+  <string name="show_dev_already_enabled">不用了，开发者模式已经在操作了。</string>
   <!-- Phone info shortcut -->
   <string name="device_info_title">手机信息</string>
   <!-- Local (desktop) backup password menu title [CHAR LIMIT=25] -->
@@ -33,7 +36,11 @@
   <!-- Notification sound timeout -->
   <!-- Randomize MAC addresses -->
   <!-- Volume Steps -->
+  <string name="volume_steps_alarm_title">闹钟</string>
+  <string name="volume_steps_music_title">音乐</string>
   <!-- DayNight Theme -->
+  <string name="night_mode_no">亮</string>
+  <string name="night_mode_yes">暗</string>
   <!-- Screenshot sound -->
   <!-- Manage applications: show substratum overlays -->
   <!-- Manage applications: show substratum icon overlays -->
@@ -64,7 +71,9 @@
   <string name="color_default">默认</string>
   <!-- Carrier label -->
   <string name="show_carrier_disabled">已禁用</string>
+  <string name="status_bar_font_light">亮</string>
   <!-- Lock Clock Fonts -->
+  <string name="lock_clock_font_light">亮</string>
   <!-- Screen state service -->
   <!-- Fingerprint max failed attempts -->
 </resources>

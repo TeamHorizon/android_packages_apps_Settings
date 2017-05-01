@@ -291,4 +291,9 @@
   <string name="screen_state_on_delay_title">Oneskorenie akcí po zapnutí obrazovky</string>
   <string name="screen_state_on_delay_summary">Počet sekúnd čakania pred vykonaním akcie po zapnutí obrazovky</string>
   <!-- Fingerprint max failed attempts -->
+  <string name="fp_max_failed_attempts">Maximálny počet pokusov odomknúť odtlačkom prsta</string>
+  <string name="fp_three_attempts">3 pokusy</string>
+  <string name="fp_five_attempts">5 pokusov</string>
+  <string name="fp_ten_attempts">10 pokusov</string>
+  <string name="fp_fifteen_attempts">15 pokusov</string>
 </resources>

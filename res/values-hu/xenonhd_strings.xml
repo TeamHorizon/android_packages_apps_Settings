@@ -291,4 +291,9 @@
   <string name="screen_state_on_delay_title">Bekapcsolt képernyős műveletek késleltetése</string>
   <string name="screen_state_on_delay_summary">Az elvégzendő műveletek előtti várakozás időtartama (másodpercekben)</string>
   <!-- Fingerprint max failed attempts -->
+  <string name="fp_max_failed_attempts">Ujjlenyomat maximális sikertelen próbálkozás</string>
+  <string name="fp_three_attempts">3 próbálkozás</string>
+  <string name="fp_five_attempts">5 próbálkozás</string>
+  <string name="fp_ten_attempts">10 próbálkozás</string>
+  <string name="fp_fifteen_attempts">15 próbálkozás</string>
 </resources>
