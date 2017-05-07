@@ -199,7 +199,7 @@
   <string name="force_authorize_substratum_packages_title">Принудительно запрашивать разрешения для каждой темы</string>
   <string name="force_authorize_substratum_packages_summary">Разрешить установку тем из неизвестных источников</string>
   <!-- QS tile labels visibility -->
-  <string name="qs_menu_item_titles">Подписывать значки</string>
+  <string name="qs_menu_item_titles">Подписи плиток</string>
   <string name="qs_menu_item_titles_summaryOn">Подписи отображаются</string>
   <string name="qs_menu_item_titles_summaryOff">Подписи спрятаны</string>
   <!-- Color Picker -->
@@ -231,7 +231,7 @@
   <string name="status_bar_font_italic">Курсив</string>
   <string name="status_bar_font_bold">Жирный</string>
   <string name="status_bar_font_bold_italic">Жирный курсив</string>
-  <string name="status_bar_font_light">Светлая</string>
+  <string name="status_bar_font_light">Легкий</string>
   <string name="status_bar_font_light_italic">Легкий курсив</string>
   <string name="status_bar_font_thin">Тонкий</string>
   <string name="status_bar_font_thin_italic">Тонкий курсив</string>

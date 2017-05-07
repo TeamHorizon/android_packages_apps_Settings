@@ -247,14 +247,20 @@
   <string name="status_bar_font_black_italic">Schwarz Italic</string>
   <string name="status_bar_font_dancingscript">DancingScript</string>
   <string name="status_bar_font_dancingscript_bold">DancingScript Fett</string>
-  <string name="status_bar_font_comingsoon">ComingSoon</string>
+  <string name="status_bar_font_comingsoon">Demnächst</string>
   <string name="status_bar_font_notoserif">NotoSerif Normal</string>
   <string name="status_bar_font_notoserif_italic">NotoSerif Italic</string>
   <string name="status_bar_font_notoserif_bold">NotoSerif Fett</string>
   <string name="status_bar_font_notoserif_bold_italic">NotoSerif Fett Kursiv</string>
   <!-- Lock Clock Fonts -->
   <string name="lock_clock_font_title">Schriftartoptionen</string>
+  <string name="lock_clock_font_summary">Änderung der Schriftart des Uhrzeit-Widgets auf dem Sperrbildschirm</string>
+  <string name="lockdate_font_size_title">Datum-Schriftgröße</string>
+  <string name="lockclock_font_size_title">Uhr-Schriftgröße</string>
+  <string name="lock_date_font_summary">Ändern der Datums-Schriftart</string>
   <string name="lock_date_font_title">Datum</string>
+  <string name="lock_clock_font_dialog_title">Wähle die Schriftart der Uhr</string>
+  <string name="lock_clock_font_stock">Normal (Standard)</string>
   <string name="lock_clock_font_bold">Fett gedruckt</string>
   <string name="lock_clock_font_light">Hell</string>
   <string name="lock_clock_font_italic">Kursiv</string>
@@ -265,9 +271,28 @@
   <string name="lock_clock_font_condensed_normal">Schmal</string>
   <string name="lock_clock_font_condensed_italic">Schmal + kursiv</string>
   <string name="lock_clock_font_condensed_bold">Schmal + fett</string>
+  <string name="lock_clock_font_condensed_bold_italic">Schmal fett kursiv</string>
   <string name="lock_clock_font_medium_normal">Medium</string>
   <string name="lock_clock_font_medium_italic">Medium Italic</string>
   <!-- Screen state service -->
+  <string name="screen_state_toggles_enable_title">Aktivieren</string>
+  <string name="screen_state_toggles_enable_summary">Aktionen werden bei ausgeschaltetem Bildschirm aktiviert. Bei eingeschaltetem Bildschirm werden vorherige Einstellungen wiederhergestellt.</string>
+  <string name="screen_state_toggles_mobile_title">Mobile Netzwerke</string>
+  <string name="screen_state_toggles_location_title">Standort</string>
   <string name="screen_state_toggles_twog">Wechseln zu 2G</string>
+  <string name="screen_state_toggles_twog_summary">Netzwerk wird bei ausgeschaltetem Bildschirm zu 2G geändert</string>
+  <string name="screen_state_toggles_gps">GPS deaktivieren</string>
+  <string name="screen_state_toggles_gps_summary">GPS basierter Standort wird bei ausgeschaltetem Bildschirm deaktiviert</string>
+  <string name="screen_state_toggles_mobile_data">Deaktiviere Mobile Datenverbindung</string>
+  <string name="screen_state_toggles_mobile_data_summary">Mobile Datenverbindung wird bei ausgeschaltetem Bildschirm deaktiviert</string>
+  <string name="screen_state_off_delay_title">Aktions Verzögerung bei ausgeschaltetem Bildschirm</string>
+  <string name="screen_state_off_delay_summary">Zahl der Sekunden um zu warten, bis die Aktionen bei ausgeschaltetem Bildschirm beginnen</string>
+  <string name="screen_state_on_delay_title">Aktions Verzögerung bei eingeschaltetem Bildschirm</string>
+  <string name="screen_state_on_delay_summary">Zahl der Sekunden um zu warten, bis die Aktionen bei eingeschaltetem Bildschirm beginnen</string>
   <!-- Fingerprint max failed attempts -->
+  <string name="fp_max_failed_attempts">Fingerabdruck-maximale Scheitern Versuche</string>
+  <string name="fp_three_attempts">3 Versuche</string>
+  <string name="fp_five_attempts">5 Versuche</string>
+  <string name="fp_ten_attempts">10 Versuche</string>
+  <string name="fp_fifteen_attempts">15 Versuche</string>
 </resources>

@@ -84,6 +84,7 @@
   <string name="selinux_title">SELinux modu</string>
   <string name="selinux_permissive_title">İzinler</string>
   <string name="selinux_enforcing_title">Zorunlu</string>
+  <string name="selinux_permissive_toast_title">Selinux permissive moda ayarlandı!</string>
   <!-- Recents Membar -->
   <string name="recents_membar">Bellek Çubuğu</string>
   <string name="systemui_recents_mem_display_title">Bellek çubuğunu göster</string>
@@ -173,17 +174,34 @@
   <string name="dashboard_columns_landscape_title">Sütunlar (yatay)</string>
   <!-- Hide Lockscreen clock, date, & alarm -->
   <string name="hide_lockscreen_clock_title">Saat widgeti</string>
+  <string name="hide_lockscreen_clock_summary_on">Saat widgeti lockscreen üzerinde gösteriliyor</string>
+  <string name="hide_lockscreen_clock_summary_off">Saat widgeti lockscreen üzerinde gizlendi</string>
   <string name="hide_lockscreen_date_title">Tarih widgeti</string>
+  <string name="hide_lockscreen_date_summary_on">Gösterilen saat widget altında tarih açık</string>
+  <string name="hide_lockscreen_date_summary_off">Saat widget altında tarih gizli</string>
   <string name="hide_lockscreen_alarm_title">Alarm metni</string>
+  <string name="hide_lockscreen_alarm_summary_on">Alarm metin altında gösterilen saat widgeti açık</string>
+  <string name="hide_lockscreen_alarm_summary_off">Alarm metin altında saat widgeti gizli</string>
   <!-- Emergency button -->
   <string name="emergency_button_title">Acil durum butonu</string>
   <string name="emergency_button_summary_on">Acil durum butonu kilit ekranında gösterilir</string>
   <string name="emergency_button_summary_off">Acil durum butonu kilit ekranında gizlenir</string>
   <!-- Fingerprint authentication vibration -->
+  <string name="fprint_sucess_vib_title">Parmak izi doğrulama titreşimi</string>
+  <string name="fprint_sucess_vib_summary">Başarılı parmak izi kimlik doğrulanmasında titre</string>
   <!-- Fingerprint unlock keystore -->
+  <string name="fp_unlock_keystore_title">Yeniden başlatmadan sonra parmakizi ile kilit açma</string>
+  <string name="fp_unlock_keystore_summary">Her zaman, yeniden başlatıldıktan sonra bile parmak izi ile kilit açma</string>
   <!-- Hide Statusbar on Lockscreen -->
+  <string name="lockscreen_hide_status_bar_title">Durum çubuğunu gizle</string>
+  <string name="lockscreen_hide_status_bar_summary">Görünür yapmak için durum çubuğuna dokunun</string>
   <!-- Force authorize substratum packages -->
+  <string name="force_authorize_substratum_packages_title">Her tema uygulamasını zorla yetkilendir</string>
+  <string name="force_authorize_substratum_packages_summary">Bilinmeyen kaynaklardan tema uygulamalarına izin ver</string>
   <!-- QS tile labels visibility -->
+  <string name="qs_menu_item_titles">QS başlıkları</string>
+  <string name="qs_menu_item_titles_summaryOn">Etiketler açık</string>
+  <string name="qs_menu_item_titles_summaryOff">Etiketler gizli</string>
   <!-- Color Picker -->
   <string name="dialog_color_picker">Renk Seçici</string>
   <string name="press_color_to_apply">Uygulamak İstediğiniz Yere Basın</string>
@@ -191,12 +209,91 @@
   <string name="set">Ayarla</string>
   <string name="color_default">Varsayılan</string>
   <!-- Carrier label -->
+  <string name="carrier_title">Operatör Etiketi</string>
+  <string name="carrier_options_summary">Operatör etiketini özelleştir</string>
+  <string name="custom_carrier_label_title">Özel Operatör Etiketi</string>
+  <string name="custom_carrier_label_explain">Lütfen yeni bir etiket girin. Varsayılan etikete dönmek için boş bırakın.</string>
+  <string name="custom_carrier_label_notset">Şu anda özel etiket etkin değil</string>
+  <string name="show_carrier_title">Operatör etiketi</string>
   <string name="show_carrier_disabled">Devre Dışı</string>
+  <string name="show_carrier_keyguard">Sadece kilit ekranı</string>
+  <string name="show_carrier_statusbar">Yalnızca durum çubuğu</string>
+  <string name="show_carrier_both">Kilit ekranı ve durum çubuğu</string>
+  <string name="show_carrier_enabled">Kilit ekranı ve durum çubuğu</string>
+  <string name="status_bar_carrier_color">Operatör Etiket Rengi</string>
+  <string name="status_bar_carrier_size">Operatör etiketi yazı boyutu</string>
+  <string name="status_bar_carrier_font_style_title">Operatör etiketi fontu</string>
+  <string name="number_of_notifications_title">Bildirim sayısı</string>
+  <string name="carrier_label_hide_label_title">Bildirim gelince gizlenir</string>
+  <string name="carrier_label_number_of_notification_icons_title">Simgeleri gizlemeden önceki maks ikon sayısı</string>
+  <string name="status_bar_font_style_title">Yazı tipi</string>
   <string name="status_bar_font_normal">Normal</string>
+  <string name="status_bar_font_italic">Eğik</string>
+  <string name="status_bar_font_bold">Kalın</string>
+  <string name="status_bar_font_bold_italic">Kalın Eğik</string>
   <string name="status_bar_font_light">Parlak</string>
+  <string name="status_bar_font_light_italic">İnce italik</string>
+  <string name="status_bar_font_thin">Seyrek</string>
+  <string name="status_bar_font_thin_italic">İnce İtalik</string>
+  <string name="status_bar_font_condensed">Yoğun</string>
+  <string name="status_bar_font_condensed_italic">Yoğun İtalik</string>
+  <string name="status_bar_font_condensed_light">Yoğun Hafif</string>
+  <string name="status_bar_font_condensed_light_italic">Yoğun Hafif Italik</string>
+  <string name="status_bar_font_condensed_bold">Yoğun Kalın</string>
+  <string name="status_bar_font_condensed_bold_italic">Yoğun Kalın İtalik</string>
+  <string name="status_bar_font_medium">Orta</string>
+  <string name="status_bar_font_medium_italic">Orta İtalik</string>
+  <string name="status_bar_font_black">Siyah</string>
+  <string name="status_bar_font_black_italic">Siyah eğik</string>
+  <string name="status_bar_font_dancingscript">DancingScript</string>
+  <string name="status_bar_font_dancingscript_bold">DancingScript Kalın</string>
+  <string name="status_bar_font_comingsoon">ComingSoon</string>
+  <string name="status_bar_font_notoserif">NotoSerif Normal</string>
+  <string name="status_bar_font_notoserif_italic">NotoSerif İtalik</string>
+  <string name="status_bar_font_notoserif_bold">NotoSerif Kalın</string>
+  <string name="status_bar_font_notoserif_bold_italic">NotoSerif Kalın İtalik</string>
   <!-- Lock Clock Fonts -->
+  <string name="lock_clock_font_title">Yazı tipi seçenekleri</string>
+  <string name="lock_clock_font_summary">Kilit ekranı saat widget\'inin varsayılan yazı tipini değiştir</string>
+  <string name="lockdate_font_size_title">Tarih yazı tipi boyutu</string>
+  <string name="lockclock_font_size_title">Saat yazı tipi boyutu</string>
+  <string name="lock_date_font_summary">Tarih yazı tipini özelleştirme</string>
   <string name="lock_date_font_title">Tarih</string>
+  <string name="lock_clock_font_dialog_title">Kilit Ekranı Saat Yazı Tipini Seç</string>
+  <string name="lock_clock_font_stock">Normal (standart)</string>
+  <string name="lock_clock_font_bold">Kalın</string>
   <string name="lock_clock_font_light">Parlak</string>
+  <string name="lock_clock_font_italic">Eğik</string>
+  <string name="lock_clock_font_bold_italic">Kalın Eğik</string>
+  <string name="lock_clock_font_light_italic">İnce italik</string>
+  <string name="lock_clock_font_thin_italic">İnce İtalik</string>
+  <string name="lock_clock_font_thin">Seyrek</string>
+  <string name="lock_clock_font_condensed_normal">Yoğun</string>
+  <string name="lock_clock_font_condensed_italic">Yoğun İtalik</string>
+  <string name="lock_clock_font_condensed_bold">Yoğun Kalın</string>
+  <string name="lock_clock_font_condensed_bold_italic">Roboto Yoğun Kalın Italik</string>
+  <string name="lock_clock_font_medium_normal">Orta</string>
+  <string name="lock_clock_font_medium_italic">Orta İtalik</string>
   <!-- Screen state service -->
+  <string name="screen_state_toggles_title">Askıya alınan eylemler</string>
+  <string name="screen_state_toggles_enable_title">Etkinleştir</string>
+  <string name="screen_state_toggles_enable_summary">Eylemler ekran kapandığında başlatılır. Ekran açılınca önceki durumuna geri getirilir.</string>
+  <string name="screen_state_toggles_mobile_title">Mobil ağlar</string>
+  <string name="screen_state_toggles_location_title">Konum</string>
+  <string name="screen_state_toggles_twog">2G\'ye geç</string>
+  <string name="screen_state_toggles_twog_summary">Ağ modu ekran kapalıyken 2G olacak</string>
+  <string name="screen_state_toggles_gps">GPS\'i Devre Dışı Bırak</string>
+  <string name="screen_state_toggles_gps_summary">GPS tabanlı konum hizmetleri ekran kapanınca devre dışı bırakılacak</string>
+  <string name="screen_state_toggles_mobile_data">Mobil veriyi devre dışı bırak</string>
+  <string name="screen_state_toggles_mobile_data_summary">Mobil veri ekran kapanınca devre dışı bırakılsın</string>
+  <string name="screen_state_off_delay_title">Ekran Kapandığında eylemlerin gecikmesi</string>
+  <string name="screen_state_off_delay_summary">Ekran kapandıktan sonra eylemleri gerçekleştirmek için beklenecek saniye miktarı</string>
+  <string name="screen_state_on_delay_title">Açık ekran eylem gecikmesi</string>
+  <string name="screen_state_on_delay_summary">Ekran açıldıktan sonra işlem gerçekleştirilmeden önce beklenecek saniye miktarı</string>
   <!-- Fingerprint max failed attempts -->
+  <string name="fp_max_failed_attempts">En fazla parmak izi başarısız girişimleri</string>
+  <string name="fp_three_attempts">3 deneme</string>
+  <string name="fp_five_attempts">5 deneme</string>
+  <string name="fp_ten_attempts">10 deneme</string>
+  <string name="fp_fifteen_attempts">15 deneme</string>
 </resources>
