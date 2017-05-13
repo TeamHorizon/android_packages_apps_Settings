@@ -78,6 +78,7 @@ public class MainSettings extends SettingsPreferenceFragment implements
     private static final String KEY_DASHBOARD_LANDSCAPE_COLUMNS = "dashboard_landscape_columns";
 
     private static final String PREF_SHOW_EMERGENCY_BUTTON = "show_emergency_button";
+    private static final String PREF_LOCKSCREEN_BATTERY_INFO = "lockscreen_battery_info";
 
     private static final String FINGERPRINT_VIB = "fingerprint_success_vib";
     private static final String FP_UNLOCK_KEYSTORE = "fp_unlock_keystore";
@@ -104,6 +105,7 @@ public class MainSettings extends SettingsPreferenceFragment implements
     private CustomSeekBarPreference mDashboardLandscapeColumns;
 
     private SwitchPreference mEmergencyButton;
+    private SwitchPreference mLockscreenBatteryInfo;
 
     private FingerprintManager mFingerprintManager;
     private SwitchPreference mFingerprintVib;
@@ -167,6 +169,12 @@ public class MainSettings extends SettingsPreferenceFragment implements
             mEmergencyButton.setChecked((Settings.System.getInt(resolver,
                 Settings.System.SHOW_EMERGENCY_BUTTON, 1) == 1));
             mEmergencyButton.setOnPreferenceChangeListener(this);
+        }
+        
+        // We need to remove the lockscreen battery info if the device is not a Qualcomm device
+        mLockscreenBatteryInfo = (SwitchPreference) findPreference(PREF_LOCKSCREEN_BATTERY_INFO);
+        if (Build.BOARD.contains("dragon") || Build.BOARD.contains("shieldtablet")) {
+            prefSet.removePreference(mLockscreenBatteryInfo);
         }
 
         mFingerprintManager = (FingerprintManager) getActivity().getSystemService(Context.FINGERPRINT_SERVICE);

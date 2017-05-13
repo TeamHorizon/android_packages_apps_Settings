@@ -122,6 +122,12 @@
             android:summaryOff="@string/emergency_button_summary_off"
             android:defaultValue="true" />
 
+        <com.android.settings.preference.SystemSettingSwitchPreference
+            android:key="lockscreen_battery_info"
+            android:title="@string/lockscreen_battery_info_title"
+            android:summary="@string/lockscreen_battery_info_summary"
+            android:defaultValue="false" />
+
         <ListPreference
             android:key="lock_clock_fonts"
             android:title="@string/lock_clock_font_title"
