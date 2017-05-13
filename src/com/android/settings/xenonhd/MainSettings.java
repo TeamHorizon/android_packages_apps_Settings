@@ -79,6 +79,7 @@ public class MainSettings extends SettingsPreferenceFragment implements
 
     private static final String PREF_SHOW_EMERGENCY_BUTTON = "show_emergency_button";
     private static final String PREF_LOCKSCREEN_BATTERY_INFO = "lockscreen_battery_info";
+    private static final String CURRENT_NOW = "/sys/class/power_supply/battery/current_now";
 
     private static final String FINGERPRINT_VIB = "fingerprint_success_vib";
     private static final String FP_UNLOCK_KEYSTORE = "fp_unlock_keystore";
@@ -173,7 +174,8 @@ public class MainSettings extends SettingsPreferenceFragment implements
         
         // We need to remove the lockscreen battery info if the device is not a Qualcomm device
         mLockscreenBatteryInfo = (SwitchPreference) findPreference(PREF_LOCKSCREEN_BATTERY_INFO);
-        if (Build.BOARD.contains("dragon") || Build.BOARD.contains("shieldtablet")) {
+        File current_now = new File(CURRENT_NOW);
+        if (!current_now.exists()) {
             prefSet.removePreference(mLockscreenBatteryInfo);
         }
 
