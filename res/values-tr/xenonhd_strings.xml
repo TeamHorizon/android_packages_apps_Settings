@@ -296,4 +296,5 @@
   <string name="fp_five_attempts">5 deneme</string>
   <string name="fp_ten_attempts">10 deneme</string>
   <string name="fp_fifteen_attempts">15 deneme</string>
+  <!-- Lockscreen battery info indicator  -->
 </resources>

@@ -296,4 +296,7 @@
   <string name="fp_five_attempts">第 5 次嘗試</string>
   <string name="fp_ten_attempts">第 10 次嘗試</string>
   <string name="fp_fifteen_attempts">第 15 次嘗試</string>
+  <!-- Lockscreen battery info indicator  -->
+  <string name="lockscreen_battery_info_title">充電資訊</string>
+  <string name="lockscreen_battery_info_summary">在充電時，在鎖定螢幕上顯示充電器的電流、電壓和電池溫度</string>
 </resources>

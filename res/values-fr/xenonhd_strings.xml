@@ -298,4 +298,5 @@
   <string name="fp_five_attempts">5 essais</string>
   <string name="fp_ten_attempts">10 essais</string>
   <string name="fp_fifteen_attempts">15 essais</string>
+  <!-- Lockscreen battery info indicator  -->
 </resources>

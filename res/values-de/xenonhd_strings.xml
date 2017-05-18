@@ -275,6 +275,7 @@
   <string name="lock_clock_font_medium_normal">Medium</string>
   <string name="lock_clock_font_medium_italic">Medium Italic</string>
   <!-- Screen state service -->
+  <string name="screen_state_toggles_title">Abbrechen</string>
   <string name="screen_state_toggles_enable_title">Aktivieren</string>
   <string name="screen_state_toggles_enable_summary">Aktionen werden bei ausgeschaltetem Bildschirm aktiviert. Bei eingeschaltetem Bildschirm werden vorherige Einstellungen wiederhergestellt.</string>
   <string name="screen_state_toggles_mobile_title">Mobile Netzwerke</string>
@@ -295,4 +296,7 @@
   <string name="fp_five_attempts">5 Versuche</string>
   <string name="fp_ten_attempts">10 Versuche</string>
   <string name="fp_fifteen_attempts">15 Versuche</string>
+  <!-- Lockscreen battery info indicator  -->
+  <string name="lockscreen_battery_info_title">Info Ladezustand</string>
+  <string name="lockscreen_battery_info_summary">Zeige ermittelte Ladespannung/-Strom und Batterietemperatur während des Ladens auf dem Sperrbildschirm</string>
 </resources>

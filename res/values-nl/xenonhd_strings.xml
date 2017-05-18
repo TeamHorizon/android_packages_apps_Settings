@@ -88,4 +88,5 @@
   <string name="lock_clock_font_light">Licht</string>
   <!-- Screen state service -->
   <!-- Fingerprint max failed attempts -->
+  <!-- Lockscreen battery info indicator  -->
 </resources>

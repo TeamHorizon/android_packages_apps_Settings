@@ -296,4 +296,7 @@
   <string name="fp_five_attempts">5 prób</string>
   <string name="fp_ten_attempts">10 prób</string>
   <string name="fp_fifteen_attempts">15 prób</string>
+  <!-- Lockscreen battery info indicator  -->
+  <string name="lockscreen_battery_info_title">Informacje o ładowaniu</string>
+  <string name="lockscreen_battery_info_summary">Wyświetl napięcie, natężenie oraz temperaturę baterii na ekranie blokady podczas ładowania</string>
 </resources>

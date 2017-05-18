@@ -291,4 +291,5 @@
   <string name="screen_state_on_delay_title">Retardo de las acciones con la pantalla encendida</string>
   <string name="screen_state_on_delay_summary">Número de segundos a esperar antes de realizar acciones después de apagar la pantalla</string>
   <!-- Fingerprint max failed attempts -->
+  <!-- Lockscreen battery info indicator  -->
 </resources>

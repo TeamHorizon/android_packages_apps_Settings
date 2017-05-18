@@ -296,4 +296,7 @@
   <string name="fp_five_attempts">5 попыток</string>
   <string name="fp_ten_attempts">10 попыток</string>
   <string name="fp_fifteen_attempts">15 попыток</string>
+  <!-- Lockscreen battery info indicator  -->
+  <string name="lockscreen_battery_info_title">Информация о зарядке</string>
+  <string name="lockscreen_battery_info_summary">Отображение тока, напряжения и температуры батареи на экране блокировки во время зарядки</string>
 </resources>

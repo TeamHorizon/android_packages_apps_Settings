@@ -296,4 +296,5 @@
   <string name="fp_five_attempts">5 próbálkozás</string>
   <string name="fp_ten_attempts">10 próbálkozás</string>
   <string name="fp_fifteen_attempts">15 próbálkozás</string>
+  <!-- Lockscreen battery info indicator  -->
 </resources>
