@@ -297,4 +297,6 @@
   <string name="fp_ten_attempts">10 próbálkozás</string>
   <string name="fp_fifteen_attempts">15 próbálkozás</string>
   <!-- Lockscreen battery info indicator  -->
+  <string name="lockscreen_battery_info_title">Töltési információk</string>
+  <string name="lockscreen_battery_info_summary">Töltőáram, feszültség és az akkumulátor hőmérsékletének megjelenítése a zárképernyőn töltés közben</string>
 </resources>

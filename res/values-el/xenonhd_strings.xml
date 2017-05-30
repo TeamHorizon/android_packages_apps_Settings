@@ -14,21 +14,28 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- About phone screen, XenonHD version -->
   <string name="xenonhd_version_default">Άγνωστο</string>
+  <string name="xenonhd_maintainer">Συντηρητής</string>
   <string name="xenonhd_maintainer_default">Άγνωστο</string>
   <!-- Changelog -->
   <string name="changelog_xenonhd_title">Κατάλογος αλλαγών</string>
   <string name="changelog_xenonhd_error">Δεν είναι δυνατή η φόρτωση του καταλόγου αλλαγών</string>
+  <string name="changelog_xenonhd_summary">Ελέγξτε τις αλλαγές στην τρέχουσα κατασκευή</string>
   <!-- Density category -->
+  <string name="density_category">Επιλογές πυκνότητος</string>
   <!-- XenonOTA -->
   <string name="xenonota_title">Ενημερώσεις XenonHD</string>
   <string name="xenonota_summary">Έλεγχος για ενημερώσεις ROM</string>
   <!-- Dev Options Enabled by Default -->
+  <string name="show_dev_already_enabled">Δεν υπάρχει ανάγκη, οι ρυθμίσεις προγραμματιστών είναι ενεργοποιημένες από προεπιλογή</string>
   <!-- Phone info shortcut -->
+  <string name="device_info_title">Πληροφορίες τηλεφώνου</string>
   <!-- Local (desktop) backup password menu title [CHAR LIMIT=25] -->
+  <string name="local_backup_password_title">Εφ/κός κωδικός desktop</string>
   <!-- Double tap to sleep on lockscreen -->
   <!-- Notification sound timeout -->
   <!-- Randomize MAC addresses -->
   <!-- Volume Steps -->
+  <string name="volume_steps_music_title">Μουσική</string>
   <!-- DayNight Theme -->
   <!-- Screenshot sound -->
   <!-- Manage applications: show substratum overlays -->
@@ -42,6 +49,8 @@
   <!-- Three-fingers-swipe to screenshot -->
   <!-- Long press back to kill configurable timeout -->
   <!-- Doze pulse options -->
+  <string name="summary_doze_enabled">Ενεργοποιημένο</string>
+  <string name="summary_doze_disabled">Απενεργοποιημένο</string>
   <!-- Recents panel settings -->
   <!-- Dashboard options -->
   <!-- Hide Lockscreen clock, date, & alarm -->
@@ -52,7 +61,10 @@
   <!-- Force authorize substratum packages -->
   <!-- QS tile labels visibility -->
   <!-- Color Picker -->
+  <string name="set">Ορισμός</string>
+  <string name="color_default">Προεπιλεγμένο</string>
   <!-- Carrier label -->
+  <string name="show_carrier_disabled">Απενεργοποιημένο</string>
   <!-- Lock Clock Fonts -->
   <!-- Screen state service -->
   <!-- Fingerprint max failed attempts -->

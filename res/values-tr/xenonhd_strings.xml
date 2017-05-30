@@ -297,4 +297,6 @@
   <string name="fp_ten_attempts">10 deneme</string>
   <string name="fp_fifteen_attempts">15 deneme</string>
   <!-- Lockscreen battery info indicator  -->
+  <string name="lockscreen_battery_info_title">Şarj bilgisi</string>
+  <string name="lockscreen_battery_info_summary">Şarj olurken voltaj, batarya sıcaklığı ve akım bilgilerini görüntüle</string>
 </resources>
