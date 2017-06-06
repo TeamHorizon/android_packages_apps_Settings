@@ -32,9 +32,6 @@
   <string name="device_info_title">Informácie o telefóne</string>
   <!-- Local (desktop) backup password menu title [CHAR LIMIT=25] -->
   <string name="local_backup_password_title">Heslo pre zálohu do PC</string>
-  <!-- Double tap to sleep on lockscreen -->
-  <string name="double_tap_sleep_anywhere_title">Dvojklik na obrazovku uzamknutia</string>
-  <string name="double_tap_sleep_anywhere_summary">Dvojklikom na obrazovke uzamknutia uspať zariadenie</string>
   <!-- Notification sound timeout -->
   <string name="app_notification_sound_timeout_title">Minimálny čas medzi zvukmi upozornenia</string>
   <string name="app_notification_sound_timeout_summary_template">Povoliť zvuky alebo vibrácie nie viac ako raz za <xliff:g id="duration">%1$s </xliff:g></string>
@@ -96,9 +93,6 @@
   <string name="qs_columns_title">Stĺpce</string>
   <string name="qs_easy_toggle_title">Jendnoduché prepnutie dlaždíc rýchlych nastavení</string>
   <string name="qs_easy_toggle_summary">Povoľte akciu jedným kliknutím na možnosť povoliť/zakázať mobilné dáta, Wi-Fi a Bluetooth. Dlhým kliknutím zobrazíte upresňujúce nastavenia</string>
-  <!-- Media art -->
-  <string name="media_art_title">Obal albumu</string>
-  <string name="media_art_summary">Povoliť zobrazenie obalu albumu na obrazovke uzamknutia</string>
   <!-- Quick unlock -->
   <string name="quick_unlock_warning">Upozornenie na rychle odomknutie</string>
   <string name="quick_unlock_warning_summary">Táto funkcia obchádza dôležité bezpečnostné mechanizmy a nepodporuje režim viacerých používateľov. Použite na vlastné riziko</string>

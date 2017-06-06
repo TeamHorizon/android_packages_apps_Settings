@@ -32,9 +32,6 @@
   <string name="device_info_title">Info dispositivo</string>
   <!-- Local (desktop) backup password menu title [CHAR LIMIT=25] -->
   <string name="local_backup_password_title">Password di backup desktop</string>
-  <!-- Double tap to sleep on lockscreen -->
-  <string name="double_tap_sleep_anywhere_title">Doppio tocco sulla schermata di blocco</string>
-  <string name="double_tap_sleep_anywhere_summary">Doppio tocco nella schermata di blocco per spegnere lo schermo</string>
   <!-- Notification sound timeout -->
   <string name="app_notification_sound_timeout_title">Tempo minimo tra suoni di notifica</string>
   <string name="app_notification_sound_timeout_summary_template">Consenti suoni o vibrazioni non più di una volta ogni <xliff:g id="duration">%1$s </xliff:g></string>
@@ -96,9 +93,6 @@
   <string name="qs_columns_title">Colonne</string>
   <string name="qs_easy_toggle_title">Attivazione Avanzata Impostazioni Rapide</string>
   <string name="qs_easy_toggle_summary">Attiva o disattiva il Wi-Fi, dati mobili e bluetooth con un tocco. Pressione prolungata per visualizzare le impostazioni avanzate</string>
-  <!-- Media art -->
-  <string name="media_art_title">Copertina multimediale</string>
-  <string name="media_art_summary">Mostra la copertina multimediale nella schermata di blocco</string>
   <!-- Quick unlock -->
   <string name="quick_unlock_warning">Attenzione di sblocco rapido</string>
   <string name="quick_unlock_warning_summary">Questa funzionalità consente di ignorare i meccanismi di sicurezza importanti e quasi certamente pregiudica il supporto per utenti multipli. Utilizzare a proprio rischio</string>

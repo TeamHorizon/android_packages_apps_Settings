@@ -31,7 +31,6 @@
   <string name="device_info_title">Πληροφορίες τηλεφώνου</string>
   <!-- Local (desktop) backup password menu title [CHAR LIMIT=25] -->
   <string name="local_backup_password_title">Εφ/κός κωδικός desktop</string>
-  <!-- Double tap to sleep on lockscreen -->
   <!-- Notification sound timeout -->
   <!-- Randomize MAC addresses -->
   <!-- Volume Steps -->
@@ -44,7 +43,6 @@
   <!-- Selinux Switch -->
   <!-- Recents Membar -->
   <!-- Quick settings config -->
-  <!-- Media art -->
   <!-- Quick unlock -->
   <!-- Three-fingers-swipe to screenshot -->
   <!-- Long press back to kill configurable timeout -->

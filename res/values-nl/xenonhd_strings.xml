@@ -27,9 +27,6 @@
   <string name="device_info_title">Telefoon info</string>
   <!-- Local (desktop) backup password menu title [CHAR LIMIT=25] -->
   <string name="local_backup_password_title">Wachtwoord desktopback-up</string>
-  <!-- Double tap to sleep on lockscreen -->
-  <string name="double_tap_sleep_anywhere_title">DT2S op vergrendelscherm</string>
-  <string name="double_tap_sleep_anywhere_summary">Dubbeltik op het vergrendelscherm om uit te schakelen</string>
   <!-- Notification sound timeout -->
   <string name="app_notification_sound_timeout_title">Minimuminterval tussen meldings-geluiden</string>
   <string name="app_notification_sound_timeout_summary_template">Toestaan dat geluiden of trillingen niet meer dan eenmaal per <xliff:g id="duration">%1$s </xliff:g></string>
@@ -58,7 +55,6 @@
   <!-- Selinux Switch -->
   <!-- Recents Membar -->
   <!-- Quick settings config -->
-  <!-- Media art -->
   <!-- Quick unlock -->
   <!-- Three-fingers-swipe to screenshot -->
   <!-- Long press back to kill configurable timeout -->

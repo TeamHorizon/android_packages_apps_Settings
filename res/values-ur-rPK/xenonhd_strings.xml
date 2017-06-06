@@ -23,7 +23,6 @@
   <!-- Dev Options Enabled by Default -->
   <!-- Phone info shortcut -->
   <!-- Local (desktop) backup password menu title [CHAR LIMIT=25] -->
-  <!-- Double tap to sleep on lockscreen -->
   <!-- Notification sound timeout -->
   <!-- Randomize MAC addresses -->
   <!-- Volume Steps -->
@@ -35,7 +34,6 @@
   <!-- Selinux Switch -->
   <!-- Recents Membar -->
   <!-- Quick settings config -->
-  <!-- Media art -->
   <!-- Quick unlock -->
   <!-- Three-fingers-swipe to screenshot -->
   <!-- Long press back to kill configurable timeout -->

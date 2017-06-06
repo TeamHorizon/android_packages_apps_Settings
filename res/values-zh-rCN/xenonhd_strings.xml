@@ -32,9 +32,6 @@
   <string name="device_info_title">手机信息</string>
   <!-- Local (desktop) backup password menu title [CHAR LIMIT=25] -->
   <string name="local_backup_password_title">桌面备份密码</string>
-  <!-- Double tap to sleep on lockscreen -->
-  <string name="double_tap_sleep_anywhere_title">双击锁屏界面以休眠</string>
-  <string name="double_tap_sleep_anywhere_summary">在锁屏界面上的任意位置双击以使设备休眠</string>
   <!-- Notification sound timeout -->
   <string name="app_notification_sound_timeout_title">最短通知铃声间隔</string>
   <string name="app_notification_sound_timeout_summary_template">每 <xliff:g id="duration">%1$s</xliff:g> 允许一次响铃或振动</string>
@@ -53,7 +50,6 @@
   <!-- Selinux Switch -->
   <!-- Recents Membar -->
   <!-- Quick settings config -->
-  <!-- Media art -->
   <!-- Quick unlock -->
   <!-- Three-fingers-swipe to screenshot -->
   <!-- Long press back to kill configurable timeout -->

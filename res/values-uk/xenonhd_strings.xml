@@ -13,32 +13,75 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- About phone screen, XenonHD version -->
+  <string name="xenonhd_version">Версія XenonHD</string>
   <string name="xenonhd_version_default">Невідомо</string>
+  <string name="xenonhd_maintainer">Підтримка моделі</string>
   <string name="xenonhd_maintainer_default">Невідомо</string>
   <!-- Changelog -->
   <string name="changelog_xenonhd_title">Список змін</string>
   <string name="changelog_xenonhd_error">Помилка завантаження списку змін</string>
+  <string name="changelog_xenonhd_summary">Перевірте зміни у поточній збірці</string>
   <!-- Density category -->
+  <string name="density_category">Параметри щільності</string>
   <!-- XenonOTA -->
   <string name="xenonota_title">Оновлення XenonHD</string>
   <string name="xenonota_summary">Перевірити наявність оновлень</string>
   <!-- Dev Options Enabled by Default -->
+  <string name="show_dev_already_enabled">Немає необхідності, настройки для розробників включені за замовчуванням</string>
   <!-- Phone info shortcut -->
+  <string name="device_info_title">Інформація про пристрій</string>
   <!-- Local (desktop) backup password menu title [CHAR LIMIT=25] -->
-  <!-- Double tap to sleep on lockscreen -->
+  <string name="local_backup_password_title">Пароль для резервування</string>
   <!-- Notification sound timeout -->
+  <string name="app_notification_sound_timeout_title">Мінімальний час між звуками повідомлень</string>
+  <string name="app_notification_sound_timeout_summary_template">Дозволити звуки або вібрації не більше ніж один раз кожні <xliff:g id="duration">%1$s </xliff:g></string>
+  <string name="app_notification_sound_timeout_value_none">Без обмежень</string>
+  <string name="app_notification_sound_timeout_value_10_seconds">10 секунд</string>
+  <string name="app_notification_sound_timeout_value_30_seconds">30 секунд</string>
+  <string name="app_notification_sound_timeout_value_1_minute">1 хвилина</string>
+  <string name="app_notification_sound_timeout_value_5_minutes">5 хвилин</string>
+  <string name="app_notification_sound_timeout_value_15_minutes">10 хвилин</string>
+  <string name="app_notification_sound_timeout_value_30_minutes">30 хвилин</string>
   <!-- Randomize MAC addresses -->
+  <string name="randomize_mac_title">Рандомізувати MAC-адресса</string>
   <!-- Volume Steps -->
+  <string name="volume_steps_title">Рівні гучності</string>
+  <string name="volume_steps_alarm_title">Будильник</string>
+  <string name="volume_steps_dtmf_title">DTMF (набір)</string>
   <string name="volume_steps_music_title">Музика</string>
+  <string name="volume_steps_notification_title">Повідомлення</string>
+  <string name="volume_steps_ring_title">Дзвінок</string>
+  <string name="volume_steps_system_title">Система</string>
+  <string name="volume_steps_voice_call_title">Голосовий виклик</string>
+  <string name="volume_steps_reset">Скидання</string>
   <!-- DayNight Theme -->
+  <string name="night_mode_title">Тема</string>
+  <string name="night_mode_no">Світла</string>
+  <string name="night_mode_yes">Темна</string>
   <!-- Screenshot sound -->
+  <string name="screenshot_sound_title">Звук скріншота</string>
+  <string name="screenshot_sound_summary">Програвати звук при скріншоті</string>
   <!-- Manage applications: show substratum overlays -->
+  <string name="filter_substratum_apps">Шари Substratum</string>
+  <string name="menu_show_substratum">Відображати шари</string>
+  <string name="menu_hide_substratum">Приховати шари</string>
   <!-- Manage applications: show substratum icon overlays -->
+  <string name="filter_substratum_icons">Шари іконок Substratum</string>
+  <string name="menu_show_substratum_icons">Відображати шари іконок</string>
+  <string name="menu_hide_substratum_icons">Приховати іконку шарів</string>
   <!-- XenonHD Configurations-->
+  <string name="xenonhd_title">Конфігурації</string>
+  <string name="xenonhd_misc_title">Різне</string>
+  <string name="xenonhd_lockscreen_title">Екран блокування</string>
+  <string name="xenonhd_ui_title">Інтерфейс</string>
   <!-- Selinux Switch -->
+  <string name="selinux_switch_title">SELinux попередження</string>
+  <string name="selinux_title">Режим SELinux</string>
+  <string name="selinux_permissive_title">Дозволено</string>
+  <string name="selinux_enforcing_title">Забезпечення</string>
   <!-- Recents Membar -->
+  <string name="recents_membar">Смуга використання Озу</string>
   <!-- Quick settings config -->
-  <!-- Media art -->
   <!-- Quick unlock -->
   <!-- Three-fingers-swipe to screenshot -->
   <!-- Long press back to kill configurable timeout -->
@@ -55,10 +98,18 @@
   <!-- Force authorize substratum packages -->
   <!-- QS tile labels visibility -->
   <!-- Color Picker -->
+  <string name="dialog_color_picker">Палітра кольорів</string>
+  <string name="press_color_to_apply">Натисніть на колір нижче, щоб застосувати</string>
+  <string name="hex">Hex код:</string>
+  <string name="set">Задати</string>
+  <string name="color_default">За замовчуванням</string>
   <!-- Carrier label -->
   <string name="show_carrier_disabled">Вимкнено</string>
   <string name="status_bar_font_normal">Звичайний</string>
+  <string name="status_bar_font_light">Світла</string>
   <!-- Lock Clock Fonts -->
+  <string name="lock_date_font_title">Дата</string>
+  <string name="lock_clock_font_light">Світла</string>
   <!-- Screen state service -->
   <!-- Fingerprint max failed attempts -->
   <!-- Lockscreen battery info indicator  -->

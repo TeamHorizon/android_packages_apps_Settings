@@ -32,9 +32,6 @@
   <string name="device_info_title">Telefoni teave</string>
   <!-- Local (desktop) backup password menu title [CHAR LIMIT=25] -->
   <string name="local_backup_password_title">Töölaua varunduse parool</string>
-  <!-- Double tap to sleep on lockscreen -->
-  <string name="double_tap_sleep_anywhere_title">DT2S lukustusekraanil</string>
-  <string name="double_tap_sleep_anywhere_summary">Koputage kaks korda ekraanile, et seade unerežiimi panna</string>
   <!-- Notification sound timeout -->
   <string name="app_notification_sound_timeout_title">Väikseim aeg teavitushelide vahel</string>
   <string name="app_notification_sound_timeout_summary_template">Ära luba heli või vibratsiooni rohkem kui üks kord iga <xliff:g id="duration">%1$s </xliff:g></string>
@@ -96,9 +93,6 @@
   <string name="qs_columns_title">Veerud</string>
   <string name="qs_easy_toggle_title">Täiustatud Kiirseadete lihtne vahetamine</string>
   <string name="qs_easy_toggle_summary">Võimalda ühe vajutusega lubada/keelata Wi-Fi, Mobiilne andmeside ja Bluetooth. Pikk vajutus näitab täpsemaid seadeid</string>
-  <!-- Media art -->
-  <string name="media_art_title">Meedia kaane pilt</string>
-  <string name="media_art_summary">Kuva meedia kaanepilt lukustusekraanil</string>
   <!-- Quick unlock -->
   <string name="quick_unlock_warning">Kiiravamise hoiatus</string>
   <string name="quick_unlock_warning_summary">See funktsioon eirab olulisi kaitsemehhanisme ja peaaegu kindlasti häirib mitmik-kasutaja tuge. Kasutage omal vastutusel</string>

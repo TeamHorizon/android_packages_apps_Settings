@@ -32,9 +32,6 @@
   <string name="device_info_title">Информация об устройстве</string>
   <!-- Local (desktop) backup password menu title [CHAR LIMIT=25] -->
   <string name="local_backup_password_title">Пароль для резервного копирования</string>
-  <!-- Double tap to sleep on lockscreen -->
-  <string name="double_tap_sleep_anywhere_title">DT2S на экране блокировки</string>
-  <string name="double_tap_sleep_anywhere_summary">Дважды коснитесь экрана блокировки, чтобы заблокировать устройство</string>
   <!-- Notification sound timeout -->
   <string name="app_notification_sound_timeout_title">Минимальный интервал между звуками уведомлений</string>
   <string name="app_notification_sound_timeout_summary_template">Разрешить звуки или вибрацию не более чем один раз каждые <xliff:g id="duration">%1$s</xliff:g></string>
@@ -96,9 +93,6 @@
   <string name="qs_columns_title">Количество столбцов</string>
   <string name="qs_easy_toggle_title">Расширенный упрощенный переключатель быстрых настроек</string>
   <string name="qs_easy_toggle_summary">Включите действие по одиночному нажатию для включения/выключения Wi-Fi, мобильных данных и Bluetooth. Длительное нажатие для просмотра дополнительных настроек</string>
-  <!-- Media art -->
-  <string name="media_art_title">Обложка альбома</string>
-  <string name="media_art_summary">Показывать обложку альбома на экране блокировки</string>
   <!-- Quick unlock -->
   <string name="quick_unlock_warning">Предупреждение</string>
   <string name="quick_unlock_warning_summary">Данная возможность обходит важный защитный механизм и плохо влияет на поддержку нескольких пользователей на устройстве. Используйте на свой риск</string>

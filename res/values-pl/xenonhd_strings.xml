@@ -32,9 +32,6 @@
   <string name="device_info_title">Informacje o telefonie</string>
   <!-- Local (desktop) backup password menu title [CHAR LIMIT=25] -->
   <string name="local_backup_password_title">Hasło kopii zapasowej</string>
-  <!-- Double tap to sleep on lockscreen -->
-  <string name="double_tap_sleep_anywhere_title">DT2S na ekranie blokady</string>
-  <string name="double_tap_sleep_anywhere_summary">Dwukrotnie dotknij ekranu blokady w celu uśpienia urządzenia</string>
   <!-- Notification sound timeout -->
   <string name="app_notification_sound_timeout_title">Minimalny czas między dźwiękami powiadomień</string>
   <string name="app_notification_sound_timeout_summary_template">Zezwól na dźwięki i wibracje, nie więcej niż jeden raz każde <xliff:g id="duration">%1$s </xliff:g></string>
@@ -96,9 +93,6 @@
   <string name="qs_columns_title">Kolumny</string>
   <string name="qs_easy_toggle_title">Łatwe przełączanie</string>
   <string name="qs_easy_toggle_summary">Pojedyncze dotknięcie przełącza Wi-Fi, Dane Komórkowe, oraz Bluetooth. Przytrzymaj, aby rozwinąć zaawansowane ustawienia</string>
-  <!-- Media art -->
-  <string name="media_art_title">Okładka albumu</string>
-  <string name="media_art_summary">Wyświetlaj okładkę odtwarzanego albumu na ekranie blokady</string>
   <!-- Quick unlock -->
   <string name="quick_unlock_warning">Uwagi do szybkiego odblokowywania</string>
   <string name="quick_unlock_warning_summary">Ta funkcja omija ważne mechanizmy zabezpieczeń i prawie na pewno psuje obsługę wielu użytkowników. Używasz tylko na własne ryzyko</string>

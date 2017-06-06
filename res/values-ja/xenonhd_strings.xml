@@ -28,8 +28,6 @@
   <string name="device_info_title">携帯電話情報</string>
   <!-- Local (desktop) backup password menu title [CHAR LIMIT=25] -->
   <string name="local_backup_password_title">PCバックアップパスワード</string>
-  <!-- Double tap to sleep on lockscreen -->
-  <string name="double_tap_sleep_anywhere_title">ロック画面をダブルタップしてスリープ</string>
   <!-- Notification sound timeout -->
   <string name="app_notification_sound_timeout_value_10_seconds">10秒</string>
   <string name="app_notification_sound_timeout_value_30_seconds">30秒</string>
@@ -57,7 +55,6 @@
   <string name="recents_membar">メモリ使用量バー</string>
   <string name="systemui_recents_mem_display_title">メモリ使用量を表示する</string>
   <!-- Quick settings config -->
-  <!-- Media art -->
   <!-- Quick unlock -->
   <string name="unlock_quick_unlock_control_title">クイックロック解除</string>
   <string name="unlock_quick_unlock_control_summary">正しいPIN/パスワードが入力されたときはロックを自動的に解除する</string>

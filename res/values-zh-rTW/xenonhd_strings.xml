@@ -32,9 +32,6 @@
   <string name="device_info_title">手機資訊</string>
   <!-- Local (desktop) backup password menu title [CHAR LIMIT=25] -->
   <string name="local_backup_password_title">電腦備份密碼</string>
-  <!-- Double tap to sleep on lockscreen -->
-  <string name="double_tap_sleep_anywhere_title">輕觸兩下鎖定畫面</string>
-  <string name="double_tap_sleep_anywhere_summary">輕觸兩下鎖定畫面以使裝置進入休眠</string>
   <!-- Notification sound timeout -->
   <string name="app_notification_sound_timeout_title">通知音效之間的最短時間</string>
   <string name="app_notification_sound_timeout_summary_template">允許音效或震動每一次不超過 <xliff:g id="duration">%1$s </xliff:g></string>
@@ -96,9 +93,6 @@
   <string name="qs_columns_title">列</string>
   <string name="qs_easy_toggle_title">進階快速設定簡易切換</string>
   <string name="qs_easy_toggle_summary">啟用輕觸動作可啟用/停用 Wi-Fi、行動數據和藍牙。 長按可查看進階設定</string>
-  <!-- Media art -->
-  <string name="media_art_title">媒體封面</string>
-  <string name="media_art_summary">在鎖定畫面上顯示媒體封面</string>
   <!-- Quick unlock -->
   <string name="quick_unlock_warning">快速解鎖警告</string>
   <string name="quick_unlock_warning_summary">此功能繞過重要的安全機制，幾乎肯定會誤操作多使用者支援。使用時自擔風險</string>

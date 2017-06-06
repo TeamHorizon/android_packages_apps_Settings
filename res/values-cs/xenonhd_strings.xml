@@ -32,9 +32,6 @@
   <string name="device_info_title">Informace o telefonu</string>
   <!-- Local (desktop) backup password menu title [CHAR LIMIT=25] -->
   <string name="local_backup_password_title">Heslo pro zálohy v počítači</string>
-  <!-- Double tap to sleep on lockscreen -->
-  <string name="double_tap_sleep_anywhere_title">Dvojí poklepání na uzamčenou obrazovku</string>
-  <string name="double_tap_sleep_anywhere_summary">Dvojitým poklepáním na zamykací obrazovku uvést zařízení do režimu spánku</string>
   <!-- Notification sound timeout -->
   <string name="app_notification_sound_timeout_title">Minimální doba mezi zvuky upozornění</string>
   <string name="app_notification_sound_timeout_summary_template">Povolit zvuky nebo vibrace ne více než jednou každých <xliff:g id="duration">%1$s </xliff:g></string>
@@ -96,9 +93,6 @@
   <string name="qs_columns_title">Sloupce</string>
   <string name="qs_easy_toggle_title">Snadné přepnutí QS dlaždic</string>
   <string name="qs_easy_toggle_summary">Povolte akci jedním klepnutím na možnost povolit/zakázat mobilní data, Wi-Fi a Bluetooth. Dlouhým stisknutím zobrazíte upřesňující nastavení</string>
-  <!-- Media art -->
-  <string name="media_art_title">Obal alba</string>
-  <string name="media_art_summary">Zobrazit obal alba na zamčené obrazovce</string>
   <!-- Quick unlock -->
   <string name="quick_unlock_warning">Upozornění rychlého odemknutí</string>
   <string name="quick_unlock_warning_summary">Tato funkce obchází důležité bezpečnostní mechanismy a nepodporuje režim více uživatelů. Používáte na vlastní nebezpečí</string>

@@ -32,9 +32,6 @@
   <string name="device_info_title">Über das Telefon</string>
   <!-- Local (desktop) backup password menu title [CHAR LIMIT=25] -->
   <string name="local_backup_password_title">Desktop-Sicherungspasswort</string>
-  <!-- Double tap to sleep on lockscreen -->
-  <string name="double_tap_sleep_anywhere_title">DT2S auf Sperrbildschirm</string>
-  <string name="double_tap_sleep_anywhere_summary">Zum Versetzen des Gerätes in den Standby-Modus zwei Mal auf den Sperrbildschirm tippen</string>
   <!-- Notification sound timeout -->
   <string name="app_notification_sound_timeout_title">Minimale Zeit zwischen Benachrichtigungsgeräuschen</string>
   <string name="app_notification_sound_timeout_summary_template">Lassen Sie Geräusche oder Vibrationen nicht mehr als einmal alle <xliff:g id="duration">%1$s</xliff:g></string>
@@ -96,9 +93,6 @@
   <string name="qs_columns_title">Spalten</string>
   <string name="qs_easy_toggle_title">Erweiterter QS Easy Toggle</string>
   <string name="qs_easy_toggle_summary">Ermöglicht das Aktivieren und Deaktivieren von Wi-Fi, Mobilen Daten und Bluetooth mit einem Tap. Lange drücken, um erweiterte Einstellungen zu sehen</string>
-  <!-- Media art -->
-  <string name="media_art_title">Albumcover</string>
-  <string name="media_art_summary">Zeigt das Albumcover auf dem Sperrbildschirm bei Musikwiedergabe</string>
   <!-- Quick unlock -->
   <string name="quick_unlock_warning">Schnellfreischaltungs-Warnung</string>
   <string name="quick_unlock_warning_summary">Diese Funktion umgeht wichtige Sicherheitsmechanismen und wird mit hoher Wahrscheinlichkeit im Multi-User-Modus unerwartete Wirkungen zeigen</string>

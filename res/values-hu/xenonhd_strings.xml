@@ -32,9 +32,6 @@
   <string name="device_info_title">Telefon adatai</string>
   <!-- Local (desktop) backup password menu title [CHAR LIMIT=25] -->
   <string name="local_backup_password_title">Asztali jelszó mentés</string>
-  <!-- Double tap to sleep on lockscreen -->
-  <string name="double_tap_sleep_anywhere_title">Dupla érintéses lezárás a zárképernyőn</string>
-  <string name="double_tap_sleep_anywhere_summary">Zárképernyő dupla érintésére a készülék alvó módba kerül</string>
   <!-- Notification sound timeout -->
   <string name="app_notification_sound_timeout_title">Értesítési hangok közötti minimum időtartam</string>
   <string name="app_notification_sound_timeout_summary_template"><xliff:g id="duration">%1$s</xliff:g> alatt legfeljebb egy értesítési hang vagy rezgés engedélyezése</string>
@@ -96,9 +93,6 @@
   <string name="qs_columns_title">Oszlopok</string>
   <string name="qs_easy_toggle_title">Haladó gyorskapcsoló csempe</string>
   <string name="qs_easy_toggle_summary">Engedélyezése után egy érintéssel kapcsolja ki/be a Wi-Fi-t, mobil adatkapcsolatot és Bluetooth-t. Hosszan nyomásukra visz a haladó beállításokba</string>
-  <!-- Media art -->
-  <string name="media_art_title">Média borítója</string>
-  <string name="media_art_summary">Engedélyezze a média borítóját a zárképernyőn</string>
   <!-- Quick unlock -->
   <string name="quick_unlock_warning">Gyors feloldási figyelmeztetés</string>
   <string name="quick_unlock_warning_summary">Ez a funkció mellőzi a fontos biztonsági mechanizmusokat és majdnem biztosan rosszul kezeli a többfelhasználós módot. Használja saját felelősségre</string>

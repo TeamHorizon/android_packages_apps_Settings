@@ -32,9 +32,6 @@
   <string name="device_info_title">Telefoninfo</string>
   <!-- Local (desktop) backup password menu title [CHAR LIMIT=25] -->
   <string name="local_backup_password_title">Lösenord för säkerhetskopia av datorn</string>
-  <!-- Double tap to sleep on lockscreen -->
-  <string name="double_tap_sleep_anywhere_title">DT2S på låsskärmen</string>
-  <string name="double_tap_sleep_anywhere_summary">Dubbeltryck på låsskärmen för att sätta enheten i sovläge</string>
   <!-- Notification sound timeout -->
   <string name="app_notification_sound_timeout_title">Minsta tid mellan aviseringsljud</string>
   <string name="app_notification_sound_timeout_value_none">Ingen begränsning</string>
@@ -66,7 +63,6 @@
   <string name="selinux_permissive_title">Tillåtande</string>
   <!-- Recents Membar -->
   <!-- Quick settings config -->
-  <!-- Media art -->
   <!-- Quick unlock -->
   <!-- Three-fingers-swipe to screenshot -->
   <!-- Long press back to kill configurable timeout -->

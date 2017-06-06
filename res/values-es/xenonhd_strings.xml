@@ -32,9 +32,6 @@
   <string name="device_info_title">Información del dispositivo</string>
   <!-- Local (desktop) backup password menu title [CHAR LIMIT=25] -->
   <string name="local_backup_password_title">Contraseña de copia de seguridad</string>
-  <!-- Double tap to sleep on lockscreen -->
-  <string name="double_tap_sleep_anywhere_title">DT2S en pantalla de bloqueo</string>
-  <string name="double_tap_sleep_anywhere_summary">Doble toque en pantalla de bloqueo para bloquear</string>
   <!-- Notification sound timeout -->
   <string name="app_notification_sound_timeout_title">Tiempo mínimo entre sonidos de notificaciones</string>
   <string name="app_notification_sound_timeout_summary_template">Permite sonidos o vibraciones no más de una vez cada <xliff:g id="duration">%1$s </xliff:g></string>
@@ -96,9 +93,6 @@
   <string name="qs_columns_title">Columnas</string>
   <string name="qs_easy_toggle_title">Modo avanzado QS Easy Toggle</string>
   <string name="qs_easy_toggle_summary">Activar una pulsación para activar/desactivar Wi-Fi, datos móviles y bluetooth. Pulsación larga para ver ajustes avanzados</string>
-  <!-- Media art -->
-  <string name="media_art_title">Caratula de música</string>
-  <string name="media_art_summary">Mostrar carátula de las canciones en la pantalla de bloqueo</string>
   <!-- Quick unlock -->
   <string name="quick_unlock_warning">Precaución de desbloqueo rápido</string>
   <string name="quick_unlock_warning_summary">Esta característica se salta importantes mecanismos de seguridad y seguramente provoca un mal funcionamiento de la función multiusuario. Usar bajo tu propia responsabilidad</string>

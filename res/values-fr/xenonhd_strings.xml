@@ -32,9 +32,6 @@
   <string name="device_info_title">Informations sur l\'appareil</string>
   <!-- Local (desktop) backup password menu title [CHAR LIMIT=25] -->
   <string name="local_backup_password_title">Mot de passe de sauvegarde du bureau d\'accueil</string>
-  <!-- Double tap to sleep on lockscreen -->
-  <string name="double_tap_sleep_anywhere_title">Veille par double appui sur l\'écran de verrouillage</string>
-  <string name="double_tap_sleep_anywhere_summary">Tapez deux fois sur l\'écran de verrouillage pour mettre l\'appareil en veille</string>
   <!-- Notification sound timeout -->
   <string name="app_notification_sound_timeout_title">Temps minimum entre les sons de notification</string>
   <string name="app_notification_sound_timeout_summary_template">Permettre des sons ou des vibrations pas plus d’une fois chaque <xliff:g id="duration">%1$s</xliff:g></string>
@@ -97,9 +94,6 @@
   <string name="qs_columns_title">Colonnes</string>
   <string name="qs_easy_toggle_title">Réglages rapides avancés simplifiés</string>
   <string name="qs_easy_toggle_summary">Activer le toucher simple pour activer/désactiver le Wi-Fi, les données mobiles et le Bluetooth. Rester appuyé sur l\'écran pour voir les réglages avancés</string>
-  <!-- Media art -->
-  <string name="media_art_title">Pochette de l\'album</string>
-  <string name="media_art_summary">Afficher la pochette d\'album sur l\'écran de verrouillage</string>
   <!-- Quick unlock -->
   <string name="quick_unlock_warning">Mise en garde du déverrouillage rapide</string>
   <string name="quick_unlock_warning_summary">Cette fonctionnalité permet de contourner les mécanismes de sécurité important et malmène certainement plusieurs support utilisateurs. Utiliser à vos risques et périls</string>

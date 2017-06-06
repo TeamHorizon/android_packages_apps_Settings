@@ -32,9 +32,6 @@
   <string name="device_info_title">Informações do telefone</string>
   <!-- Local (desktop) backup password menu title [CHAR LIMIT=25] -->
   <string name="local_backup_password_title">Senha de backup do desktop</string>
-  <!-- Double tap to sleep on lockscreen -->
-  <string name="double_tap_sleep_anywhere_title">DT2S na tela de bloqueio</string>
-  <string name="double_tap_sleep_anywhere_summary">Toque duplo na barra de status para desligar a tela</string>
   <!-- Notification sound timeout -->
   <string name="app_notification_sound_timeout_title">Tempo mínimo entre sons de notificação</string>
   <string name="app_notification_sound_timeout_summary_template">Permitir que sons ou vibrações não mais do que uma vez todos os <xliff:g id="duration">%1$s </xliff:g></string>
@@ -82,6 +79,7 @@
   <string name="selinux_title">Modo do SElinux</string>
   <string name="selinux_permissive_title">Permissivo</string>
   <string name="selinux_enforcing_title">Impondo</string>
+  <string name="selinux_permissive_toast_title">SELinux definido como permissivo!</string>
   <!-- Recents Membar -->
   <string name="recents_membar">Barra de memória</string>
   <string name="systemui_recents_mem_display_title">Mostrar barra de memória</string>
@@ -91,9 +89,6 @@
   <string name="qs_rows_portrait_title">Linhas (retrato)</string>
   <string name="qs_rows_landscape_title">Linhas (paisagem)</string>
   <string name="qs_columns_title">Colunas</string>
-  <!-- Media art -->
-  <string name="media_art_title">Mostrar capa do album de música</string>
-  <string name="media_art_summary">Arte de capa de mídia de exibição na tela de bloqueio</string>
   <!-- Quick unlock -->
   <string name="quick_unlock_warning">Precaução de desbloqueio rápida</string>
   <string name="quick_unlock_warning_summary">Esta característica ignora os mecanismos de segurança importante e quase certamente maltrata o suporte a múltiplos usuários. Use a seu próprio risco</string>
@@ -166,11 +161,18 @@
   <string name="dashboard_columns_portrait_title">Colunas (retrato)</string>
   <string name="dashboard_columns_landscape_title">Colunas (paisagem)</string>
   <!-- Hide Lockscreen clock, date, & alarm -->
+  <string name="hide_lockscreen_clock_title">Widget de relógio</string>
+  <string name="hide_lockscreen_date_title">Widget de data</string>
   <string name="hide_lockscreen_alarm_title">Texto de alarme</string>
   <!-- Emergency button -->
   <string name="emergency_button_title">Botão de emergência</string>
+  <string name="emergency_button_summary_on">Exibir botão de emergência na tela de bloqueio</string>
+  <string name="emergency_button_summary_off">Esconder botão de emergência na tela de bloqueio</string>
   <!-- Fingerprint authentication vibration -->
+  <string name="fprint_sucess_vib_title">Vibração na autenticação da impressão digital</string>
+  <string name="fprint_sucess_vib_summary">Vibrar na autenticação de impressão digital com sucesso</string>
   <!-- Fingerprint unlock keystore -->
+  <string name="fp_unlock_keystore_title">Desbloqueio com impressão digital após a reinicialização</string>
   <string name="fp_unlock_keystore_summary">Permite que o dispositivo seja sempre destravado com impressão digital, mesmo após a reinicialização</string>
   <!-- Hide Statusbar on Lockscreen -->
   <string name="lockscreen_hide_status_bar_title">Ocultar a barra de status</string>
@@ -184,7 +186,12 @@
   <string name="set">Aplicar</string>
   <string name="color_default">Padrão</string>
   <!-- Carrier label -->
+  <string name="custom_carrier_label_explain">Por favor, insira um novo texto ou deixe em branco para reverter ao original.</string>
   <string name="show_carrier_disabled">Desativado</string>
+  <string name="show_carrier_keyguard">Apenas na tela de bloqueio</string>
+  <string name="show_carrier_statusbar">Apenas na barra de status</string>
+  <string name="show_carrier_both">Tela de bloqueio e barra de status</string>
+  <string name="show_carrier_enabled">Tela de bloqueio e barra de status</string>
   <string name="status_bar_font_normal">Normal</string>
   <string name="status_bar_font_light">Claro</string>
   <!-- Lock Clock Fonts -->
