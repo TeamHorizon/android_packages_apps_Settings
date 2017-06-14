@@ -47,6 +47,7 @@ import com.android.internal.logging.MetricsProto.MetricsEvent;
 import com.android.internal.widget.LockPatternUtils;
 
 import com.android.settings.preference.CustomSeekBarPreference;
+import net.margaritov.preference.colorpicker.ColorPickerPreference;
 
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
@@ -90,6 +91,8 @@ public class MainSettings extends SettingsPreferenceFragment implements
     private static final String DATE_FONT_SIZE  = "lockdate_font_size";
     private static final String LOCK_DATE_FONTS = "lock_date_fonts";
 
+    private static final String STATUS_BAR_BATTERY_SAVER_COLOR = "status_bar_battery_saver_color";
+
     private SwitchPreference mConfig;
 
     private SwitchPreference mSelinux;
@@ -117,6 +120,8 @@ public class MainSettings extends SettingsPreferenceFragment implements
     ListPreference mLockClockFonts;
     private CustomSeekBarPreference mClockFontSize;
     private CustomSeekBarPreference mDateFontSize;
+
+    private ColorPickerPreference mBatterySaverColor;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -212,6 +217,12 @@ public class MainSettings extends SettingsPreferenceFragment implements
                 resolver, Settings.System.LOCK_DATE_FONTS, 4)));
         mDateFonts.setSummary(mDateFonts.getEntry());
         mDateFonts.setOnPreferenceChangeListener(this);
+
+        int batterySaverColor = Settings.Secure.getInt(resolver,
+                Settings.Secure.STATUS_BAR_BATTERY_SAVER_COLOR, 0xfff4511e);
+        mBatterySaverColor = (ColorPickerPreference) findPreference("status_bar_battery_saver_color");
+        mBatterySaverColor.setNewPreviewColor(batterySaverColor);
+        mBatterySaverColor.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -347,6 +358,11 @@ public class MainSettings extends SettingsPreferenceFragment implements
             Settings.System.putIntForUser(getActivity().getContentResolver(),
                     Settings.System.FP_MAX_FAILED_ATTEMPTS, set, UserHandle.USER_CURRENT);
             maxFailedAttempts.setSummary(maxFailedAttempts.getEntries()[index]);
+            return true;
+        } else if (preference.equals(mBatterySaverColor)) {
+            int color = ((Integer) objValue).intValue();
+            Settings.Secure.putInt(getActivity().getContentResolver(),
+                    Settings.Secure.STATUS_BAR_BATTERY_SAVER_COLOR, color);
             return true;
         } 
         return false;

@@ -345,4 +345,8 @@
     <string name="lockscreen_battery_info_title">Charging info</string>
     <string name="lockscreen_battery_info_summary">Display charger current, voltage and battery temperature on the lockscreen while charging</string>
 
+    <!-- Status bar - Battery saver color -->
+    <string name="status_bar_battery_saver_color_title">Battery saver color</string>
+    <string name="status_bar_battery_saver_color_summary">Note: If battery saver already enabled, for new color be effective, toggle battery saver!</string>
+
 </resources>
