@@ -13,7 +13,9 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- About phone screen, XenonHD version -->
+  <string name="xenonhd_version">الإصدار XenonHD (زينون اتش دي)</string>
   <string name="xenonhd_version_default">مجهول</string>
+  <string name="xenonhd_maintainer">المشرفون</string>
   <string name="xenonhd_maintainer_default">مجهول</string>
   <!-- Changelog -->
   <string name="changelog_xenonhd_title">سجل التغيرات</string>
@@ -25,41 +27,190 @@
   <string name="xenonota_title">تحديثات XenonHD</string>
   <string name="xenonota_summary">التحقق من وجود تحديثات ROM</string>
   <!-- Dev Options Enabled by Default -->
+  <string name="show_dev_already_enabled">لا حاجة، إعدادات البرمجة مفعلة بشكل افتراضي.</string>
   <!-- Phone info shortcut -->
   <string name="device_info_title">معلومات الهاتف</string>
   <!-- Local (desktop) backup password menu title [CHAR LIMIT=25] -->
+  <string name="local_backup_password_title">كلمة مرور النسخ الاحتياطي سطح المكتب</string>
   <!-- Notification sound timeout -->
+  <string name="app_notification_sound_timeout_title">الحد الأدنى من الوقت بين أصوات الإشعار</string>
+  <string name="app_notification_sound_timeout_summary_template">السماح بالصوت أو الاهتزاز ليس لأكثر من مرة واحدة كل <xliff:g id="duration">%1$s </xliff:g></string>
+  <string name="app_notification_sound_timeout_value_none">بدون قيود</string>
+  <string name="app_notification_sound_timeout_value_10_seconds">10 ثوان</string>
+  <string name="app_notification_sound_timeout_value_30_seconds">30 ثانية</string>
+  <string name="app_notification_sound_timeout_value_1_minute">دقيقة</string>
+  <string name="app_notification_sound_timeout_value_5_minutes">5 دقائق</string>
+  <string name="app_notification_sound_timeout_value_15_minutes">10 دقائق</string>
+  <string name="app_notification_sound_timeout_value_30_minutes">30 دقيقة</string>
   <!-- Randomize MAC addresses -->
+  <string name="randomize_mac_title">تفعيل عناوين MAC بطريقة عشوائية</string>
+  <string name="randomize_mac_summary">تعيين عناوين MAC عشوائي عند تمكين أجهزة شبكة الاتصال. يستخدم التعشيه ماك خلال فحص ما إذا كان أو لم يتم تمكين هذا</string>
   <!-- Volume Steps -->
+  <string name="volume_steps_title">درجات الصوت</string>
+  <string name="volume_steps_alarm_title">المنبه</string>
+  <string name="volume_steps_dtmf_title">DTMF (الطلب)</string>
+  <string name="volume_steps_music_title">الموسيقى</string>
+  <string name="volume_steps_notification_title">إخطار</string>
+  <string name="volume_steps_ring_title">جرس</string>
+  <string name="volume_steps_system_title">النظام</string>
+  <string name="volume_steps_voice_call_title">مكالمة صوتية</string>
+  <string name="volume_steps_reset">إعادة ضبط</string>
   <!-- DayNight Theme -->
+  <string name="night_mode_title">السِمة</string>
+  <string name="night_mode_no">فاتح (ابيض)</string>
+  <string name="night_mode_yes">مظلم(اسود)</string>
   <!-- Screenshot sound -->
+  <string name="screenshot_sound_title">صوت التقاط صورة للشاشة</string>
+  <string name="screenshot_sound_summary">تشغيل صوت عند التقاط صورة للشاشة</string>
   <!-- Manage applications: show substratum overlays -->
+  <string name="filter_substratum_apps">طبقات Substratum</string>
+  <string name="menu_show_substratum">أظهر الطبقات</string>
+  <string name="menu_hide_substratum">إخفاء الطبقات</string>
   <!-- Manage applications: show substratum icon overlays -->
+  <string name="filter_substratum_icons">طبقات ايقونة Substratum</string>
+  <string name="menu_show_substratum_icons">إظهار ايقونة الطبقات</string>
+  <string name="menu_hide_substratum_icons">إخفاء أيقونة الطبقات</string>
   <!-- XenonHD Configurations-->
+  <string name="xenonhd_title">إعدادات</string>
+  <string name="xenonhd_misc_title">خيارات متنوعة</string>
+  <string name="xenonhd_lockscreen_title">شاشة القفل</string>
+  <string name="xenonhd_ui_title">واجهة المستخدم (UI)</string>
   <!-- Selinux Switch -->
+  <string name="selinux_switch_title">تنبيه التبديل SELinux</string>
+  <string name="selinux_switch_summary">SELinux مجموعة من التعديلات النواة وأدوات مساحة المستخدم. تغيير أوضاع يتطلب الوصول إلى الجذر، ويمكن أن تتسبب في آثار غير مرغوب فيها. وأوصى متساهلة. استخدام على مسؤوليتك الخاصة</string>
+  <string name="selinux_title">SELinux وضع</string>
+  <string name="selinux_permissive_title">متساهلة</string>
+  <string name="selinux_enforcing_title">فارِضة</string>
+  <string name="selinux_permissive_toast_title">تعيين Selinux المتساهلة!</string>
   <!-- Recents Membar -->
+  <string name="recents_membar">شريط الذاكرة</string>
+  <string name="systemui_recents_mem_display_title">إظهار شريط الذاكرة</string>
+  <string name="systemui_recents_mem_display_summary">إظهار شريط ذاكرة الوصول العشوائي الحرة في الآونة الأخيرة تطبيقات العرض</string>
   <!-- Quick settings config -->
+  <string name="qs_layout_category">خيارات إعدادات سريعة</string>
+  <string name="qs_rows_portrait_title">الصفوف (رأسي)</string>
+  <string name="qs_rows_landscape_title">الصفوف (أفقي)</string>
+  <string name="qs_columns_title">الأعمدة</string>
+  <string name="qs_easy_toggle_title">تبديل سهل QS متقدمة</string>
+  <string name="qs_easy_toggle_summary">تمكين عمل الضغطة واحدة لتمكين/تعطيل لاسلكي والبيانات المتنقلة وتقنية البلوتوث. اضغط لمدة طويلة لرؤية إعدادات متقدمة</string>
   <!-- Quick unlock -->
+  <string name="quick_unlock_warning">تح\ير الغاء القفل السريع </string>
+  <string name="quick_unlock_warning_summary">هذه الميزة يتجاوز آليات الأمان الهامة ويكاد ان لا يدعم المستخدمين المتعددة. استخدام على مسؤوليتك الخاصة</string>
+  <string name="unlock_quick_unlock_control_title">إلغاء قفل سريع</string>
+  <string name="unlock_quick_unlock_control_summary">فتح تلقائياً عندما يتم إدخال PIN/كلمة السر صحيحة</string>
   <!-- Three-fingers-swipe to screenshot -->
+  <string name="three_finger_gesture">مرر  لالتقاط الشاشة</string>
+  <string name="three_finger_gesture_summary">انتقد ثلاثة أصابع أخذ لقطة للشاشة</string>
   <!-- Long press back to kill configurable timeout -->
+  <string name="kill_app_longpress_timeout_title">مدة فترة الضغط المطول زر الرجوع</string>
+  <string name="timeout_2000">2 ثانية (افتراضي)</string>
+  <string name="timeout_1500">ثانية ونصف</string>
+  <string name="timeout_1000">ثانية واحدة</string>
+  <string name="timeout_500">نصف ثانية</string>
   <!-- Doze pulse options -->
   <string name="summary_doze_enabled">مفعل</string>
   <string name="summary_doze_disabled">غير مفعل</string>
+  <string name="doze_overwrite_value_title">استبدال الافتراضية</string>
+  <string name="doze_overwrite_value_summary">السماح بتجاوز القيم الافتراضية بتكوين المستخدم</string>
+  <string name="doze_pulse_title">إعدادات المستخدم القابلة للتكوين</string>
+  <string name="doze_pulse_duration_in_title">تتلاشى</string>
+  <string name="doze_pulse_duration_visible_title">مدة الرؤية</string>
+  <string name="doze_pulse_duration_out_title">تلاشي</string>
   <!-- Recents panel settings -->
+  <string name="recents_clear_all_location_top_center">أعلى الوسط</string>
+  <string name="recents_clear_all_location_bottom_right">اسفل اليمين</string>
+  <string name="recents_clear_all_location_bottom_left">اسفل اليسار</string>
+  <string name="recents_clear_all_location_bottom_center">اسفل الوسط</string>
   <!-- Dashboard options -->
+  <string name="dashboard_category">خيارات اللوحة الرئيسية</string>
+  <string name="dashboard_suggestions_title">اقتراحات</string>
+  <string name="summary_dashboard_suggestions_enabled">إقتراحات تطبيق الإعدادات مفعّلة</string>
+  <string name="summary_dashboard_suggestions_disabled">إقتراحات تطبيق الإعدادات معطّلة</string>
+  <string name="remove_tile_summaries_title">الملخصات</string>
+  <string name="remove_tile_summaries_summary_enabled">ملخصات تطبيق الإعدادات مفعّلة</string>
+  <string name="remove_tile_summaries_summary_disabled">ملخصات تطبيق الإعدادات معطّلة</string>
+  <string name="dashboard_conditions_title">الشروط</string>
+  <string name="summary_dashboard_conditions_enabled">شروط تطبيق الإعدادات مفعّلة</string>
+  <string name="summary_dashboard_conditions_disabled">شروط تطبيق الإعدادات معطّلة</string>
+  <string name="dashboard_columns_title">أعمدة تطبيق الإعدادات</string>
+  <string name="dashboard_columns_summary">تغيير عدد الأعمدة المعروضة في لوحة المعلومات</string>
+  <string name="dashboard_columns_portrait_title">الأعمدة (عمودي)</string>
+  <string name="dashboard_columns_landscape_title">الأعمدة (أفقي)</string>
   <!-- Hide Lockscreen clock, date, & alarm -->
+  <string name="hide_lockscreen_clock_title">الساعة مصغرة</string>
+  <string name="hide_lockscreen_clock_summary_on">اظهار الساعة المصغرة على شاشة القفل</string>
+  <string name="hide_lockscreen_clock_summary_off">اخفاء الساعة المصغرة على شاشة القفل</string>
+  <string name="hide_lockscreen_date_title">تاريخ مصغرة</string>
+  <string name="hide_lockscreen_date_summary_on">اظهار التاريخ تحت الساعة المصغرة </string>
+  <string name="hide_lockscreen_date_summary_off">اخفاء التاريخ تحت الساعة المصغرة </string>
+  <string name="hide_lockscreen_alarm_title">نص التنبيه</string>
+  <string name="hide_lockscreen_alarm_summary_on">اظهار نص التنبيه تحت الساعة المصغرة </string>
+  <string name="hide_lockscreen_alarm_summary_off">اخفاء نص التنبيه تحت الساعة المصغرة </string>
   <!-- Emergency button -->
+  <string name="emergency_button_title">زر الطوارئ</string>
+  <string name="emergency_button_summary_on">اظهار زر الطوارئ على شاشة القفل</string>
+  <string name="emergency_button_summary_off">اخفاء زر الطوارئ على شاشة القفل</string>
   <!-- Fingerprint authentication vibration -->
+  <string name="fprint_sucess_vib_title">إهتزاز تصريح البصمة</string>
+  <string name="fprint_sucess_vib_summary">اهتزاز عند نجاح المصادقة على بصمة الاصبع</string>
   <!-- Fingerprint unlock keystore -->
+  <string name="fp_unlock_keystore_title">تفعيل البصمات الأصابع بعد إعادة تشغيل الكمبيوتر</string>
+  <string name="fp_unlock_keystore_summary">السماح للجهاز دائماً أن يتم الغاء القفل مع بصمات الأصابع، حتى بعد إعادة تشغيل الكمبيوتر</string>
   <!-- Hide Statusbar on Lockscreen -->
+  <string name="lockscreen_hide_status_bar_title">إخفاء شريط الحالة</string>
+  <string name="lockscreen_hide_status_bar_summary">لمس شريط الحالة لتبديل الرؤية</string>
   <!-- Force authorize substratum packages -->
+  <string name="force_authorize_substratum_packages_title">أجبار تصريح كل تطبيق ثيمات</string>
+  <string name="force_authorize_substratum_packages_summary">السماح لتطبيقات من المصادر غير المعروفة</string>
   <!-- QS tile labels visibility -->
+  <string name="qs_menu_item_titles_summaryOn">اظهار التسميات</string>
+  <string name="qs_menu_item_titles_summaryOff">إخفاء التسميات</string>
   <!-- Color Picker -->
+  <string name="dialog_color_picker">منتقي الألوان</string>
+  <string name="press_color_to_apply">اضغط على اللون أدناه لتطبيق</string>
+  <string name="hex">ست عشري:</string>
+  <string name="set">تعيين</string>
+  <string name="color_default">الوضع الأصلي</string>
   <!-- Carrier label -->
+  <string name="carrier_title">مشغّل الشبكة</string>
+  <string name="carrier_options_summary">تخصيص علامة مشغل الشبكة</string>
+  <string name="custom_carrier_label_title">عرض اسم مخصص بدل اسم الشبكه</string>
+  <string name="custom_carrier_label_explain">الرجاء إدخال تسمية جديدة. تركه فارغ سيعود للتسمية الافتراضية.</string>
+  <string name="custom_carrier_label_notset">لم يتم ضبط علامة مُعينة</string>
+  <string name="show_carrier_title">علامة مشغّل الشبكة</string>
   <string name="show_carrier_disabled">غير مفعل</string>
+  <string name="show_carrier_keyguard">شاشة القفل فقط</string>
+  <string name="show_carrier_statusbar">شريط الحالة فقط</string>
+  <string name="show_carrier_both">شاشة القفل وشريط الحالة</string>
+  <string name="show_carrier_enabled">شاشة القفل وشريط الحالة</string>
   <string name="status_bar_font_normal">عادي</string>
+  <string name="status_bar_font_light">فاتح (ابيض)</string>
   <!-- Lock Clock Fonts -->
+  <string name="lock_date_font_title">التاريخ</string>
+  <string name="lock_clock_font_light">فاتح (ابيض)</string>
   <!-- Screen state service -->
+  <string name="screen_state_toggles_title">تعليق الإجراءات</string>
+  <string name="screen_state_toggles_enable_title">تفعيل</string>
+  <string name="screen_state_toggles_enable_summary">إجراءات ستُنفذ عند قفل الشاشة. عند تشغيل الشاشة سيتم إستعادة الحالة السابقة.</string>
+  <string name="screen_state_toggles_mobile_title">شبكات الجوال</string>
+  <string name="screen_state_toggles_location_title">المكان</string>
+  <string name="screen_state_toggles_twog">تحويل للجيل الثاني</string>
+  <string name="screen_state_toggles_twog_summary">نمط الشبكة سيتحول للجيل الثاني عند قفل الشاشة</string>
+  <string name="screen_state_toggles_gps">عطّل نظام تحديد الموقع</string>
+  <string name="screen_state_toggles_gps_summary">خدمة الموقع المبنية على نظام تحديد الموقع ستُعطل عند قفل الشاشة</string>
+  <string name="screen_state_toggles_mobile_data">تعطيل بيانات الهاتف</string>
+  <string name="screen_state_toggles_mobile_data_summary">سيتم تعطيل بيانات الهاتف عند اغلاق الشاشة</string>
+  <string name="screen_state_off_delay_title">مدة تأخير إجراءات تشغيل الشاشة</string>
+  <string name="screen_state_off_delay_summary">عدد ثواني الإنتظار قبل تأدية الإجراءات بعد تشغيل الشاشة</string>
+  <string name="screen_state_on_delay_title">مدة تأخير إجراءات تشغيل الشاشة</string>
+  <string name="screen_state_on_delay_summary">عدد ثواني الإنتظار قبل تأدية الإجراءات بعد تشغيل الشاشة</string>
   <!-- Fingerprint max failed attempts -->
+  <string name="fp_max_failed_attempts">حد أقصى لفشل محاولات من بصمات الأصابع </string>
+  <string name="fp_three_attempts">3 محاولات</string>
+  <string name="fp_five_attempts">محاولات 5</string>
+  <string name="fp_ten_attempts">10 محاولات</string>
+  <string name="fp_fifteen_attempts">15 محاولات </string>
   <!-- Lockscreen battery info indicator  -->
+  <string name="lockscreen_battery_info_title">معلومات الشحن</string>
+  <string name="lockscreen_battery_info_summary">عرض درجة الحرارة الحالية والجهد وبطارية شاحن على شاشة القفل أثناء الشحن</string>
 </resources>

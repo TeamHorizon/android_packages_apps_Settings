@@ -259,7 +259,7 @@
   <string name="lock_clock_font_light">Svetlé</string>
   <string name="lock_clock_font_italic">Kurzíva</string>
   <string name="lock_clock_font_bold_italic">Tučné kurzíva</string>
-  <string name="lock_clock_font_light_italic">Light kurzíva</string>
+  <string name="lock_clock_font_light_italic">Svetlé kurzíva</string>
   <string name="lock_clock_font_thin_italic">Tenké kurzíva</string>
   <string name="lock_clock_font_thin">Tenké</string>
   <string name="lock_clock_font_condensed_normal">Zhustené</string>

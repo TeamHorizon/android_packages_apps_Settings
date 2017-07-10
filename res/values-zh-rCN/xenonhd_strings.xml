@@ -36,14 +36,28 @@
   <string name="app_notification_sound_timeout_title">最短通知铃声间隔</string>
   <string name="app_notification_sound_timeout_summary_template">每 <xliff:g id="duration">%1$s</xliff:g> 允许一次响铃或振动</string>
   <string name="app_notification_sound_timeout_value_none">无限制</string>
+  <string name="app_notification_sound_timeout_value_10_seconds">10 秒</string>
+  <string name="app_notification_sound_timeout_value_30_seconds">30秒</string>
+  <string name="app_notification_sound_timeout_value_1_minute">1 分钟</string>
+  <string name="app_notification_sound_timeout_value_5_minutes">5 分钟</string>
+  <string name="app_notification_sound_timeout_value_15_minutes">10 分钟</string>
+  <string name="app_notification_sound_timeout_value_30_minutes">30分钟</string>
   <!-- Randomize MAC addresses -->
+  <string name="randomize_mac_title">随机的 MAC 地址</string>
   <!-- Volume Steps -->
+  <string name="volume_steps_title">音量级别</string>
   <string name="volume_steps_alarm_title">闹钟</string>
   <string name="volume_steps_music_title">音乐</string>
+  <string name="volume_steps_notification_title">通知</string>
+  <string name="volume_steps_ring_title">振铃</string>
+  <string name="volume_steps_system_title">系统</string>
+  <string name="volume_steps_voice_call_title">语音通话</string>
   <!-- DayNight Theme -->
+  <string name="night_mode_title">主题</string>
   <string name="night_mode_no">亮</string>
   <string name="night_mode_yes">暗</string>
   <!-- Screenshot sound -->
+  <string name="screenshot_sound_title">截图提示音</string>
   <!-- Manage applications: show substratum overlays -->
   <!-- Manage applications: show substratum icon overlays -->
   <!-- XenonHD Configurations-->
@@ -53,9 +67,33 @@
   <!-- Quick unlock -->
   <!-- Three-fingers-swipe to screenshot -->
   <!-- Long press back to kill configurable timeout -->
+  <string name="kill_app_longpress_timeout_title">长按返回按钮</string>
   <!-- Doze pulse options -->
+  <string name="summary_doze_enabled">已启用</string>
   <string name="summary_doze_disabled">已禁用</string>
+  <string name="doze_brightness_level_title">亮度</string>
+  <string name="onehundred_ms">100 毫秒</string>
+  <string name="twofifty_ms">250 毫秒</string>
+  <string name="fivehundred_ms_default">500 毫秒 (默认)</string>
+  <string name="sevenfifty_ms">750毫秒</string>
+  <string name="one_second">1秒</string>
+  <string name="onehalf_second">1.5 秒</string>
+  <string name="two_second">2秒</string>
+  <string name="twohalf_second">2.5 秒</string>
+  <string name="three_second_default">3 秒 (默认)</string>
+  <string name="threehalf_second">3.5秒</string>
+  <string name="four_second">4秒</string>
+  <string name="fourhalf_second">4.5秒</string>
+  <string name="five_second">5 秒</string>
+  <string name="ambient_display_show_battery_title">电池状态</string>
   <!-- Recents panel settings -->
+  <string name="show_clear_all_recents_button_title">显示“一键清除”按钮</string>
+  <string name="recents_clear_all_location_top_right">屏幕右上方</string>
+  <string name="recents_clear_all_location_top_left">屏幕左上方</string>
+  <string name="recents_clear_all_location_top_center">顶部居中</string>
+  <string name="recents_clear_all_location_bottom_right">右下角</string>
+  <string name="recents_clear_all_location_bottom_left">左下方</string>
+  <string name="recents_clear_all_location_bottom_center">底部居中</string>
   <!-- Dashboard options -->
   <!-- Hide Lockscreen clock, date, & alarm -->
   <!-- Emergency button -->
@@ -72,8 +110,10 @@
   <string name="color_default">默认</string>
   <!-- Carrier label -->
   <string name="show_carrier_disabled">已禁用</string>
+  <string name="status_bar_font_normal">正常</string>
   <string name="status_bar_font_light">亮</string>
   <!-- Lock Clock Fonts -->
+  <string name="lock_date_font_title">日期</string>
   <string name="lock_clock_font_light">亮</string>
   <!-- Screen state service -->
   <!-- Fingerprint max failed attempts -->
