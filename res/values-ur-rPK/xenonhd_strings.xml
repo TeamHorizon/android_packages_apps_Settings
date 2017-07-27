@@ -53,4 +53,6 @@
   <!-- Screen state service -->
   <!-- Fingerprint max failed attempts -->
   <!-- Lockscreen battery info indicator  -->
+  <!-- Status bar - Battery saver color -->
+  <!-- Reset battery stats -->
 </resources>

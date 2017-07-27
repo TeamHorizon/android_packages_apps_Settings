@@ -34,6 +34,8 @@
   <!-- Three-fingers-swipe to screenshot -->
   <!-- Long press back to kill configurable timeout -->
   <!-- Doze pulse options -->
+  <string name="summary_doze_enabled">Aktiveret</string>
+  <string name="summary_doze_disabled">Deaktiveret</string>
   <!-- Recents panel settings -->
   <!-- Dashboard options -->
   <!-- Hide Lockscreen clock, date, & alarm -->
@@ -44,9 +46,13 @@
   <!-- Force authorize substratum packages -->
   <!-- QS tile labels visibility -->
   <!-- Color Picker -->
+  <string name="dialog_color_picker">Farvevælger</string>
   <!-- Carrier label -->
+  <string name="show_carrier_disabled">Deaktiveret</string>
   <!-- Lock Clock Fonts -->
   <!-- Screen state service -->
   <!-- Fingerprint max failed attempts -->
   <!-- Lockscreen battery info indicator  -->
+  <!-- Status bar - Battery saver color -->
+  <!-- Reset battery stats -->
 </resources>

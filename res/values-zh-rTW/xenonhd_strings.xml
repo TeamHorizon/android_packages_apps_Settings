@@ -293,4 +293,11 @@
   <!-- Lockscreen battery info indicator  -->
   <string name="lockscreen_battery_info_title">充電資訊</string>
   <string name="lockscreen_battery_info_summary">在充電時，在鎖定螢幕上顯示充電器的電流、電壓和電池溫度</string>
+  <!-- Status bar - Battery saver color -->
+  <string name="status_bar_battery_saver_color_title">省電模式顏色</string>
+  <string name="status_bar_battery_saver_color_summary">注意：如果已經啟用了省電模式，為了使新顏色有效，請切換省電模式！</string>
+  <!-- Reset battery stats -->
+  <string name="ok">確定</string>
+  <string name="menu_stats_reset">重設統計</string>
+  <string name="reset_stats_msg">電池統計數據即將重設</string>
 </resources>

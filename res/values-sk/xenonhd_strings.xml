@@ -293,4 +293,11 @@
   <!-- Lockscreen battery info indicator  -->
   <string name="lockscreen_battery_info_title">Informácie o nabíjaní</string>
   <string name="lockscreen_battery_info_summary">Zobraziť maximálny prúd, napätie a teplotu batérie pri nabíjaní na obrazovke uzamknutia</string>
+  <!-- Status bar - Battery saver color -->
+  <string name="status_bar_battery_saver_color_title">Farba pruhu batérie</string>
+  <string name="status_bar_battery_saver_color_summary">Poznámka: Nová farba bude použitá pri nasledujúcom spustení šetriča batérie!</string>
+  <!-- Reset battery stats -->
+  <string name="ok">Okej</string>
+  <string name="menu_stats_reset">Resetovať štatistiky</string>
+  <string name="reset_stats_msg">Chystáte sa vymazať históriu štatistiky batérie</string>
 </resources>

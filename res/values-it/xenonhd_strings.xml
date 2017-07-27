@@ -293,4 +293,6 @@
   <!-- Lockscreen battery info indicator  -->
   <string name="lockscreen_battery_info_title">Informazioni di ricarica</string>
   <string name="lockscreen_battery_info_summary">Visualizza la corrente di ricarica, la tensione e temperatura della batteria nella schermata di blocco durante la ricarica</string>
+  <!-- Status bar - Battery saver color -->
+  <!-- Reset battery stats -->
 </resources>

@@ -293,4 +293,11 @@
   <!-- Lockscreen battery info indicator  -->
   <string name="lockscreen_battery_info_title">Informacje o ładowaniu</string>
   <string name="lockscreen_battery_info_summary">Wyświetl napięcie, natężenie oraz temperaturę baterii na ekranie blokady podczas ładowania</string>
+  <!-- Status bar - Battery saver color -->
+  <string name="status_bar_battery_saver_color_title">Kolor paska w trybie oszczędzania baterii</string>
+  <string name="status_bar_battery_saver_color_summary">Uwaga: kolor zostanie zastosowany przy następnym włączeniu trybu oszczędzania baterii!</string>
+  <!-- Reset battery stats -->
+  <string name="ok">OK</string>
+  <string name="menu_stats_reset">Zresetuj statystyki</string>
+  <string name="reset_stats_msg">Statystyki użycia baterii zostaną zresetowane</string>
 </resources>

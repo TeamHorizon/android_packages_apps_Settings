@@ -293,5 +293,7 @@
   <!-- Lockscreen battery info indicator  -->
   <string name="lockscreen_battery_info_title">Інфармацыя аб зарадцы</string>
   <string name="lockscreen_battery_info_summary">Адлюстраванне току, напружання і тэмпературы батарэі на экране блакавання падчас зарадкі</string>
-
+  <!-- Status bar - Battery saver color -->
+  <string name="status_bar_battery_saver_color_title">Каляровая паласа ў рэжыме эканоміі батарэі</string>
+  <!-- Reset battery stats -->
 </resources>

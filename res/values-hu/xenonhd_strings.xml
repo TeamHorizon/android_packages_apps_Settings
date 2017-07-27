@@ -293,4 +293,6 @@
   <!-- Lockscreen battery info indicator  -->
   <string name="lockscreen_battery_info_title">Töltési információk</string>
   <string name="lockscreen_battery_info_summary">Töltőáram, feszültség és az akkumulátor hőmérsékletének megjelenítése a zárképernyőn töltés közben</string>
+  <!-- Status bar - Battery saver color -->
+  <!-- Reset battery stats -->
 </resources>

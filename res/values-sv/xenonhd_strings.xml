@@ -47,6 +47,7 @@
   <string name="volume_steps_title">Volymsteg</string>
   <string name="volume_steps_alarm_title">Alarm</string>
   <string name="volume_steps_music_title">Musik</string>
+  <string name="volume_steps_system_title">System</string>
   <string name="volume_steps_reset">Återställ</string>
   <!-- DayNight Theme -->
   <string name="night_mode_title">Tema</string>
@@ -104,4 +105,6 @@
   <!-- Screen state service -->
   <!-- Fingerprint max failed attempts -->
   <!-- Lockscreen battery info indicator  -->
+  <!-- Status bar - Battery saver color -->
+  <!-- Reset battery stats -->
 </resources>

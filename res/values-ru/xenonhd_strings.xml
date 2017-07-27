@@ -293,4 +293,6 @@
   <!-- Lockscreen battery info indicator  -->
   <string name="lockscreen_battery_info_title">Информация о зарядке</string>
   <string name="lockscreen_battery_info_summary">Отображение тока, напряжения и температуры батареи на экране блокировки во время зарядки</string>
+  <!-- Status bar - Battery saver color -->
+  <!-- Reset battery stats -->
 </resources>

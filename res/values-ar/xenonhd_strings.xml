@@ -213,4 +213,6 @@
   <!-- Lockscreen battery info indicator  -->
   <string name="lockscreen_battery_info_title">معلومات الشحن</string>
   <string name="lockscreen_battery_info_summary">عرض درجة الحرارة الحالية والجهد وبطارية شاحن على شاشة القفل أثناء الشحن</string>
+  <!-- Status bar - Battery saver color -->
+  <!-- Reset battery stats -->
 </resources>
