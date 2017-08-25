@@ -256,6 +256,9 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
 
     private boolean mHaveDebugSettings;
     private boolean mDontPokeProperties;
+
+    private boolean mOtaDisabledOnce = false;
+
     private SwitchPreference mEnableAdb;
     private Preference mClearAdbKeys;
     private SwitchPreference mEnableTerminal;
@@ -566,6 +569,19 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
             Settings.Secure.putInt(cr, Settings.Secure.BUGREPORT_IN_POWER_MENU, 0);
         }
 
+        /* With this commit we are removing the user switch, but this is a System API and as Google
+            says in the original commit this value is set internally (and its code is within Google services too).
+            Indeed the related frameworks base commit just publishes the String, but the main code is
+            somewhere else.
+            So, to be sure the automatic update function is really kept disabled, we are forcing it to disabled
+            (it means we are enabling the "disable automatic ota" feature) at least once in the onCreate method.*/
+        final ContentResolver cr = getActivity().getContentResolver();
+        if (!mOtaDisabledOnce && 
+                (Settings.Global.getInt(cr, Settings.Global.OTA_DISABLE_AUTOMATIC_UPDATE, 0) != 1)) {
+            Settings.Global.putInt(cr, Settings.Global.OTA_DISABLE_AUTOMATIC_UPDATE, 1);
+            mOtaDisabledOnce = true;
+        }
+
         addDashboardCategoryPreferences();
     }
 
@@ -791,6 +807,10 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
         updateShowAllANRsOptions();
         updateShowNotificationChannelWarningsOptions();
         mVerifyAppsOverUsbController.updatePreference();
+<<<<<<< HEAD
+=======
+        updateBugreportOptions();
+>>>>>>> 84a255c... Remove the Automatic ota check option but be sure it's disabled
         updateForceRtlOptions();
         updateLogdSizeValues();
         updateLogpersistValues();
