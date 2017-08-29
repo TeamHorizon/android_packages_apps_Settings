@@ -27,4 +27,7 @@
     <string name="xenonota_title">XenonOTA</string>
     <string name="xenonota_summary">Check for XenonHD updates</string>
 
+    <!-- Development Settings -->
+    <string name="show_dev_already_enabled">Development settings are enabled by default</string>
+
 </resources>
