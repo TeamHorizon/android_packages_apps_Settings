@@ -19,4 +19,8 @@
     <string name="xenonhd_version">XenonHD version</string>
     <string name="xenonhd_maintainer">Maintainer</string>
 
+    <!-- XenonHD Hub -->
+    <string name="xenonhd_settings_title">XenonHD Hub</string>
+    <string name="xenonhd_settings_summary">Additional settings</string>
+
 </resources>
