@@ -25,7 +25,6 @@ import com.android.settings.DateTimeSettings;
 import com.android.settings.DeviceInfoSettings;
 import com.android.settings.DisplaySettings;
 import com.android.settings.EncryptionAndCredential;
-import com.android.settings.LegalSettings;
 import com.android.settings.R;
 import com.android.settings.ScreenPinningSettings;
 import com.android.settings.SecuritySettings;
@@ -161,7 +160,6 @@ public final class SearchIndexableResources {
         addIndex(PrintSettingsFragment.class, NO_DATA_RES_ID, R.drawable.ic_settings_print);
         addIndex(DevelopmentSettings.class, NO_DATA_RES_ID, R.drawable.ic_settings_development);
         addIndex(DeviceInfoSettings.class, NO_DATA_RES_ID, R.drawable.ic_settings_about);
-        addIndex(LegalSettings.class, NO_DATA_RES_ID, R.drawable.ic_settings_about);
         addIndex(ZenModeVisualInterruptionSettings.class,
                 R.xml.zen_mode_visual_interruptions_settings,
                 R.drawable.ic_settings_notifications);
