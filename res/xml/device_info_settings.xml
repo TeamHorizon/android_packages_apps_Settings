@@ -34,6 +34,12 @@
         android:targetClass="com.xenonota.MainActivity" />
     </Preference>
 
+    <!-- XenonHD Changelog -->
+    <Preference android:key="changelog_xenonhd"
+        android:title="@string/changelog_xenonhd_title"
+        android:summary="@string/changelog_xenonhd_summary"
+        android:fragment="com.android.settings.xenonhd.Changelog" />
+
     <!-- Phone number -->
     <Preference
         android:key="phone_number"
