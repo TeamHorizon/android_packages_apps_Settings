@@ -25,6 +25,15 @@
         android:enabled="false"
         android:layout="@layout/xenonhd_logo_row" />
 
+    <!-- XenonOTA -->
+    <Preference android:key="xenonota"
+        android:title="@string/xenonota_title"
+        android:summary="@string/xenonota_summary">
+    <intent android:action="android.intent.action.MAIN"
+        android:targetPackage="com.xenonota"
+        android:targetClass="com.xenonota.MainActivity" />
+    </Preference>
+
     <!-- Phone number -->
     <Preference
         android:key="phone_number"
