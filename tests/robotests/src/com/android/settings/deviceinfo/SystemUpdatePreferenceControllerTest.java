@@ -66,9 +66,6 @@ public class SystemUpdatePreferenceControllerTest {
     public void updateNonIndexable_bothAvailable_shouldNotUpdate() {
         final List<String> keys = new ArrayList<>();
         when(mUserManager.isAdminUser()).thenReturn(true);
-        when(mContext.getResources().getBoolean(
-                R.bool.config_additional_system_update_setting_enable))
-                .thenReturn(true);
 
         mController.updateNonIndexableKeys(keys);
 
@@ -114,10 +111,6 @@ public class SystemUpdatePreferenceControllerTest {
         when(mScreen.getPreferenceCount()).thenReturn(1);
         when(mScreen.getPreference(0)).thenReturn(preference);
         when(preference.getKey()).thenReturn(mController.getPreferenceKey());
-
-        when(mContext.getResources().getBoolean(
-                R.bool.config_additional_system_update_setting_enable))
-                .thenReturn(true);
 
         mController.displayPreference(mScreen);
 
