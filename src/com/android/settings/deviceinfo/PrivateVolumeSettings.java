@@ -476,13 +476,21 @@ public class PrivateVolumeSettings extends SettingsPreferenceFragment {
     public boolean onPreferenceTreeClick(Preference pref) {
         // TODO: launch better intents for specific volume
 
+        final Context context = getActivity();
         final int userId = (pref instanceof StorageItemPreference ?
                 ((StorageItemPreference) pref).userHandle : -1);
         int itemTitleId;
+        PackageManager pm = context.getPackageManager();
+        boolean isMiXplorer = false;
         try {
             itemTitleId = Integer.parseInt(pref.getKey());
         } catch (NumberFormatException e) {
             itemTitleId = 0;
+        }
+        try {
+            pm.getPackageInfo("com.android.documentsui", 0);
+        } catch (PackageManager.NameNotFoundException e) {
+            isMiXplorer = true;
         }
         Intent intent = null;
         switch (itemTitleId) {
@@ -498,21 +506,51 @@ public class PrivateVolumeSettings extends SettingsPreferenceFragment {
 
             } break;
             case R.string.storage_detail_images: {
-                intent = new Intent(DocumentsContract.ACTION_BROWSE);
-                intent.setData(DocumentsContract.buildRootUri(AUTHORITY_MEDIA, "images_root"));
-                intent.addCategory(Intent.CATEGORY_DEFAULT);
+                if(!isMiXplorer)
+                {
+                    intent = new Intent(DocumentsContract.ACTION_BROWSE);
+                    intent.setData(DocumentsContract.buildRootUri(AUTHORITY_MEDIA, "images_root"));
+                    intent.addCategory(Intent.CATEGORY_DEFAULT);
+                }
+                else
+                {
+                    intent = new Intent();
+                    intent.setAction(Intent.ACTION_GET_CONTENT);
+                    intent.setType("image/*");
+                    startActivity(intent);
+                }
 
             } break;
             case R.string.storage_detail_videos: {
-                intent = new Intent(DocumentsContract.ACTION_BROWSE);
-                intent.setData(DocumentsContract.buildRootUri(AUTHORITY_MEDIA, "videos_root"));
-                intent.addCategory(Intent.CATEGORY_DEFAULT);
+                if(!isMiXplorer)
+                {
+                    intent = new Intent(DocumentsContract.ACTION_BROWSE);
+                    intent.setData(DocumentsContract.buildRootUri(AUTHORITY_MEDIA, "videos_root"));
+                    intent.addCategory(Intent.CATEGORY_DEFAULT);
+                }
+                else
+                {
+                    intent = new Intent();
+                    intent.setAction(Intent.ACTION_GET_CONTENT);
+                    intent.setType("video/*");
+                    startActivity(intent);
+                }
 
             } break;
             case R.string.storage_detail_audio: {
-                intent = new Intent(DocumentsContract.ACTION_BROWSE);
-                intent.setData(DocumentsContract.buildRootUri(AUTHORITY_MEDIA, "audio_root"));
-                intent.addCategory(Intent.CATEGORY_DEFAULT);
+                if(!isMiXplorer)
+                {
+                    intent = new Intent(DocumentsContract.ACTION_BROWSE);
+                    intent.setData(DocumentsContract.buildRootUri(AUTHORITY_MEDIA, "audio_root"));
+                    intent.addCategory(Intent.CATEGORY_DEFAULT);
+                }
+                else
+                {
+                    intent = new Intent();
+                    intent.setAction(Intent.ACTION_GET_CONTENT);
+                    intent.setType("audio/*");
+                    startActivity(intent);
+                }
 
             } break;
             case R.string.storage_detail_system: {
@@ -521,18 +559,38 @@ public class PrivateVolumeSettings extends SettingsPreferenceFragment {
 
             }
             case R.string.storage_detail_other: {
-                OtherInfoFragment.show(this, mStorageManager.getBestVolumeDescription(mVolume),
-                        mSharedVolume, userId);
-                return true;
+                if(!isMiXplorer)
+                {
+                    OtherInfoFragment.show(this, mStorageManager.getBestVolumeDescription(mVolume),
+                            mSharedVolume, userId);
+                    return true;
+			     }
+                else
+                {
+                    intent = new Intent();
+                    intent.setAction(Intent.ACTION_GET_CONTENT);
+                    intent.setType("text/* application/*");
+                    startActivity(intent);
+                }
 
-            }
+            }break;
             case R.string.storage_detail_cached: {
                 ConfirmClearCacheFragment.show(this);
                 return true;
 
             }
             case R.string.storage_menu_explore: {
-                intent = mSharedVolume.buildBrowseIntent();
+                if(!isMiXplorer)
+                {
+                    intent = mSharedVolume.buildBrowseIntent();
+                }
+                else
+                {
+                    intent = new Intent();
+                    intent.setAction(Intent.ACTION_GET_CONTENT);
+                    intent.setType("*/*");
+                    startActivity(intent);
+                }
             } break;
             case R.string.storage_menu_manage: {
                 startFragment(this, AutomaticStorageManagerSettings.class.getCanonicalName(),
