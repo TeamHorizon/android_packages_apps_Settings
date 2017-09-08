@@ -45,6 +45,7 @@ LOCAL_STATIC_JAVA_LIBRARIES := \
     guava \
     jsr305 \
     settings-logtags \
+    org.lineageos.platform.internal
 
 LOCAL_RESOURCE_DIR := $(LOCAL_PATH)/res \
     frameworks/support/v7/preference/res \
