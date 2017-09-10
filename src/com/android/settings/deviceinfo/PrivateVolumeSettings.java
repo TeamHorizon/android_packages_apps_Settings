@@ -488,9 +488,11 @@ public class PrivateVolumeSettings extends SettingsPreferenceFragment {
             itemTitleId = 0;
         }
         try {
-            pm.getPackageInfo("com.android.documentsui", 0);
-        } catch (PackageManager.NameNotFoundException e) {
+            pm.getPackageInfo("com.mixplorer", 0);
             isMiXplorer = true;
+        } catch (PackageManager.NameNotFoundException e) {
+            //Keep it false since MiXplorer is not installed
+            isMiXplorer = false;
         }
         Intent intent = null;
         switch (itemTitleId) {
