@@ -84,6 +84,16 @@
                         android:data="https://source.android.com/security/bulletin/" />
         </Preference>
 
+        <!-- XenonHD Version -->
+        <Preference android:key="xenonhd_version"
+                android:title="@string/xenonhd_version"
+                android:summary="@string/xenonhd_version_default" />
+
+        <!-- XenonHD Maintainer -->
+        <Preference android:key="xenonhd_maintainer"
+                android:title="@string/xenonhd_maintainer"
+                android:summary="@string/xenonhd_maintainer_default"/>
+
         <!-- Device FCC equipment id -->
         <Preference
                 android:key="fcc_equipment_id"
