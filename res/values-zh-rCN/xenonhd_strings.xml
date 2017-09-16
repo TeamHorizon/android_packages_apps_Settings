@@ -52,6 +52,7 @@
   <string name="volume_steps_ring_title">振铃</string>
   <string name="volume_steps_system_title">系统</string>
   <string name="volume_steps_voice_call_title">语音通话</string>
+  <string name="volume_steps_reset">重置</string>
   <!-- DayNight Theme -->
   <string name="night_mode_title">主题</string>
   <string name="night_mode_no">亮</string>
@@ -59,18 +60,33 @@
   <!-- Screenshot sound -->
   <string name="screenshot_sound_title">截图提示音</string>
   <!-- Manage applications: show substratum overlays -->
+  <string name="menu_show_substratum">显示叠加层</string>
+  <string name="menu_hide_substratum">隐藏叠加层</string>
   <!-- Manage applications: show substratum icon overlays -->
   <!-- XenonHD Configurations-->
+  <string name="xenonhd_lockscreen_title">锁屏</string>
   <!-- Selinux Switch -->
+  <string name="selinux_permissive_title">权限</string>
   <!-- Recents Membar -->
   <!-- Quick settings config -->
+  <string name="qs_rows_portrait_title">行（纵向）</string>
+  <string name="qs_rows_landscape_title">行 （横向）</string>
+  <string name="qs_columns_title">列</string>
   <!-- Quick unlock -->
+  <string name="unlock_quick_unlock_control_summary">当输入正确的 PIN 或密码后自动解锁</string>
   <!-- Three-fingers-swipe to screenshot -->
   <!-- Long press back to kill configurable timeout -->
   <string name="kill_app_longpress_timeout_title">长按返回按钮</string>
+  <string name="timeout_2000">2 秒 （默认值）</string>
+  <string name="timeout_1500">1.5 秒</string>
+  <string name="timeout_1000">1 秒</string>
+  <string name="timeout_500">0.5 秒</string>
   <!-- Doze pulse options -->
   <string name="summary_doze_enabled">已启用</string>
   <string name="summary_doze_disabled">已禁用</string>
+  <string name="doze_overwrite_value_title">覆盖默认值</string>
+  <string name="doze_pulse_duration_in_title">淡入</string>
+  <string name="doze_pulse_duration_out_title">淡出</string>
   <string name="doze_brightness_level_title">亮度</string>
   <string name="onehundred_ms">100 毫秒</string>
   <string name="twofifty_ms">250 毫秒</string>

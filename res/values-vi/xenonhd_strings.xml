@@ -13,14 +13,35 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- About phone screen, XenonHD version -->
+  <string name="xenonhd_version">Phiên bản XenonHD</string>
+  <string name="xenonhd_version_default">Không rõ</string>
+  <string name="xenonhd_maintainer">Người duy trì</string>
+  <string name="xenonhd_maintainer_default">Không rõ</string>
   <!-- Changelog -->
+  <string name="changelog_xenonhd_title">Nhật ký thay đổi</string>
+  <string name="changelog_xenonhd_error">Không thể tải nhật ký thay đổi</string>
+  <string name="changelog_xenonhd_summary">Kiểm tra các thay đổi trong bản dựng hiện tại</string>
   <!-- Density category -->
   <!-- XenonOTA -->
+  <string name="xenonota_title">Bản cập nhật XenonHD</string>
+  <string name="xenonota_summary">Kiểm tra bản cập nhật</string>
   <!-- Dev Options Enabled by Default -->
+  <string name="show_dev_already_enabled">Không cần, Tùy chọn nhà phát triển đã được mặc định kích hoạt</string>
   <!-- Phone info shortcut -->
+  <string name="device_info_title">Thông tin điện thoại</string>
   <!-- Local (desktop) backup password menu title [CHAR LIMIT=25] -->
   <!-- Notification sound timeout -->
+  <string name="app_notification_sound_timeout_title">Thời gian tối thiểu giữa các âm thanh thông báo</string>
+  <string name="app_notification_sound_timeout_summary_template">Cho phép âm thanh hoặc rung không nhiều hơn một lần mỗi <xliff:g id="duration">%1$s</xliff:g></string>
+  <string name="app_notification_sound_timeout_value_none">Không giới hạn</string>
+  <string name="app_notification_sound_timeout_value_10_seconds">10 giây</string>
+  <string name="app_notification_sound_timeout_value_30_seconds">30 giây</string>
+  <string name="app_notification_sound_timeout_value_1_minute">1 phút</string>
+  <string name="app_notification_sound_timeout_value_5_minutes">5 phút</string>
+  <string name="app_notification_sound_timeout_value_15_minutes">10 phút</string>
+  <string name="app_notification_sound_timeout_value_30_minutes">30 phút</string>
   <!-- Randomize MAC addresses -->
+  <string name="randomize_mac_title">Chọn ngẫu nhiên địa chỉ MAC</string>
   <!-- Volume Steps -->
   <!-- DayNight Theme -->
   <!-- Screenshot sound -->

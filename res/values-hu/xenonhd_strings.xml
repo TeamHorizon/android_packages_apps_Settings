@@ -294,5 +294,10 @@
   <string name="lockscreen_battery_info_title">Töltési információk</string>
   <string name="lockscreen_battery_info_summary">Töltőáram, feszültség és az akkumulátor hőmérsékletének megjelenítése a zárképernyőn töltés közben</string>
   <!-- Status bar - Battery saver color -->
+  <string name="status_bar_battery_saver_color_title">Akkumulátorkímélő mód színe</string>
+  <string name="status_bar_battery_saver_color_summary">Megjegyzés: ha az akkumulátorkímélő már be van kapcsolva, az új szín alkalmazásához kapcsolja ki/be az akkumulátorkímélőt!</string>
   <!-- Reset battery stats -->
+  <string name="ok">OK</string>
+  <string name="menu_stats_reset">Statisztika törlése</string>
+  <string name="reset_stats_msg">Akkumulátorhasználati statisztika törlésre kerül</string>
 </resources>

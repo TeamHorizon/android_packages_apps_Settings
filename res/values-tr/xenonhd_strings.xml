@@ -295,6 +295,7 @@
   <string name="lockscreen_battery_info_summary">Şarj olurken voltaj, batarya sıcaklığı ve akım bilgilerini görüntüle</string>
   <!-- Status bar - Battery saver color -->
   <string name="status_bar_battery_saver_color_title">Pil tasarrufu rengi</string>
+  <string name="status_bar_battery_saver_color_summary">Not: Pil tasarrufu zaten etkinleştirildiyse, yeni rengin etkili olması için pil tasarrufunu değiştirin!</string>
   <!-- Reset battery stats -->
   <string name="ok">Tamam</string>
   <string name="menu_stats_reset">İstatistikleri sıfırla</string>

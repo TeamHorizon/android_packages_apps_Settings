@@ -192,14 +192,39 @@
   <string name="show_carrier_statusbar">Apenas na barra de status</string>
   <string name="show_carrier_both">Tela de bloqueio e barra de status</string>
   <string name="show_carrier_enabled">Tela de bloqueio e barra de status</string>
+  <string name="status_bar_font_style_title">Tipo de letra</string>
   <string name="status_bar_font_normal">Normal</string>
+  <string name="status_bar_font_italic">Itálico</string>
+  <string name="status_bar_font_bold">Negrito</string>
+  <string name="status_bar_font_bold_italic">Negrito e itálico</string>
   <string name="status_bar_font_light">Claro</string>
+  <string name="status_bar_font_light_italic">Itálico claro</string>
+  <string name="status_bar_font_thin">Fino</string>
+  <string name="status_bar_font_thin_italic">Itálico fino</string>
+  <string name="status_bar_font_condensed">Condensado</string>
+  <string name="status_bar_font_condensed_italic">Itálico condensado</string>
+  <string name="status_bar_font_medium">Média</string>
   <!-- Lock Clock Fonts -->
   <string name="lock_date_font_title">Data</string>
+  <string name="lock_clock_font_bold">Negrito</string>
   <string name="lock_clock_font_light">Claro</string>
+  <string name="lock_clock_font_italic">Itálico</string>
+  <string name="lock_clock_font_bold_italic">Negrito e itálico</string>
+  <string name="lock_clock_font_light_italic">Itálico claro</string>
+  <string name="lock_clock_font_thin_italic">Itálico fino</string>
+  <string name="lock_clock_font_thin">Fino</string>
+  <string name="lock_clock_font_condensed_normal">Condensado</string>
+  <string name="lock_clock_font_condensed_italic">Itálico condensado</string>
+  <string name="lock_clock_font_medium_normal">Média</string>
   <!-- Screen state service -->
   <!-- Fingerprint max failed attempts -->
+  <string name="fp_three_attempts">3 tentativas</string>
+  <string name="fp_five_attempts">5 tentativas</string>
+  <string name="fp_ten_attempts">10 tentativas</string>
+  <string name="fp_fifteen_attempts">15 tentativas</string>
   <!-- Lockscreen battery info indicator  -->
   <!-- Status bar - Battery saver color -->
   <!-- Reset battery stats -->
+  <string name="ok">OK</string>
+  <string name="menu_stats_reset">Repor estatísticas</string>
 </resources>

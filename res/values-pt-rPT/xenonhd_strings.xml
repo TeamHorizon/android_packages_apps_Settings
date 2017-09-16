@@ -22,6 +22,7 @@
   <!-- Notification sound timeout -->
   <!-- Randomize MAC addresses -->
   <!-- Volume Steps -->
+  <string name="volume_steps_music_title">Música</string>
   <!-- DayNight Theme -->
   <!-- Screenshot sound -->
   <!-- Manage applications: show substratum overlays -->
@@ -34,6 +35,8 @@
   <!-- Three-fingers-swipe to screenshot -->
   <!-- Long press back to kill configurable timeout -->
   <!-- Doze pulse options -->
+  <string name="summary_doze_enabled">Activado</string>
+  <string name="summary_doze_disabled">Desactivado</string>
   <!-- Recents panel settings -->
   <!-- Dashboard options -->
   <!-- Hide Lockscreen clock, date, & alarm -->
@@ -44,11 +47,45 @@
   <!-- Force authorize substratum packages -->
   <!-- QS tile labels visibility -->
   <!-- Color Picker -->
+  <string name="dialog_color_picker">Paleta de cores</string>
+  <string name="press_color_to_apply">Prima numa cor para aplicar</string>
+  <string name="hex">Hex:</string>
+  <string name="set">Definir</string>
+  <string name="color_default">Predefinida</string>
   <!-- Carrier label -->
+  <string name="show_carrier_disabled">Desactivado</string>
+  <string name="status_bar_font_style_title">Tipo de letra</string>
+  <string name="status_bar_font_normal">Normal</string>
+  <string name="status_bar_font_italic">Itálico</string>
+  <string name="status_bar_font_bold">Negrito</string>
+  <string name="status_bar_font_bold_italic">Negrito e itálico</string>
+  <string name="status_bar_font_light">Claro</string>
+  <string name="status_bar_font_light_italic">Itálico claro</string>
+  <string name="status_bar_font_thin">Fino</string>
+  <string name="status_bar_font_thin_italic">Itálico fino</string>
+  <string name="status_bar_font_condensed">Condensado</string>
+  <string name="status_bar_font_condensed_italic">Itálico condensado</string>
+  <string name="status_bar_font_medium">Média</string>
   <!-- Lock Clock Fonts -->
+  <string name="lock_date_font_title">Data</string>
+  <string name="lock_clock_font_bold">Negrito</string>
+  <string name="lock_clock_font_italic">Itálico</string>
+  <string name="lock_clock_font_bold_italic">Negrito e itálico</string>
+  <string name="lock_clock_font_light_italic">Itálico claro</string>
+  <string name="lock_clock_font_thin_italic">Itálico fino</string>
+  <string name="lock_clock_font_thin">Fino</string>
+  <string name="lock_clock_font_condensed_normal">Condensado</string>
+  <string name="lock_clock_font_condensed_italic">Itálico condensado</string>
+  <string name="lock_clock_font_medium_normal">Média</string>
   <!-- Screen state service -->
   <!-- Fingerprint max failed attempts -->
+  <string name="fp_three_attempts">3 tentativas</string>
+  <string name="fp_five_attempts">5 tentativas</string>
+  <string name="fp_ten_attempts">10 tentativas</string>
+  <string name="fp_fifteen_attempts">15 tentativas</string>
   <!-- Lockscreen battery info indicator  -->
   <!-- Status bar - Battery saver color -->
   <!-- Reset battery stats -->
+  <string name="ok">OK</string>
+  <string name="menu_stats_reset">Repor estatísticas</string>
 </resources>
