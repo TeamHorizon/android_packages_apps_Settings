@@ -86,13 +86,11 @@
 
         <!-- XenonHD Version -->
         <Preference android:key="xenonhd_version"
-                android:title="@string/xenonhd_version"
-                android:summary="@string/xenonhd_version_default" />
+                android:title="@string/xenonhd_version" />
 
         <!-- XenonHD Maintainer -->
         <Preference android:key="xenonhd_maintainer"
-                android:title="@string/xenonhd_maintainer"
-                android:summary="@string/xenonhd_maintainer_default"/>
+                android:title="@string/xenonhd_maintainer" />
 
         <!-- Device FCC equipment id -->
         <Preference
