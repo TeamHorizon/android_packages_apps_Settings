@@ -22,6 +22,7 @@ import android.os.Build;
 import android.os.SystemClock;
 import android.os.UserHandle;
 import android.os.UserManager;
+import android.os.SystemProperties;
 import android.support.v7.preference.Preference;
 import android.support.v7.preference.PreferenceScreen;
 import android.text.TextUtils;
@@ -61,8 +62,11 @@ public class XenonHDMaintainerPreferenceController extends PreferenceController
     @Override
     public void displayPreference(PreferenceScreen screen) {
         super.displayPreference(screen);
+        String buildtype = SystemProperties.get("ro.xenonhd.type","Unofficial");
         final Preference pref = screen.findPreference(KEY_XENONHD_MAINTAINER);
-        if (pref != null) {
+        if (buildtype.equalsIgnoreCase("Unofficial")) {
+            removePreference(screen, KEY_XENONHD_MAINTAINER);
+        } else {
             pref.setSummary(Build.VERSION.XENONHD_MAINTAINER);
         }
     }
