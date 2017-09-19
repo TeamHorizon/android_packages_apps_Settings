@@ -48,4 +48,7 @@
     <!-- Screenshot sound -->
     <string name="screenshot_sound_title">Screenshot sound</string>
     <string name="screenshot_sound_summary">Plays sound effect when screenshot is taken</string>
+
+    <!-- Local (desktop) backup password menu title [CHAR LIMIT=25] -->
+    <string name="local_backup_password_title">Desktop backup password</string>
 </resources>
