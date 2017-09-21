@@ -239,6 +239,12 @@
             android:summary="@string/qs_easy_toggle_summary"
             android:defaultValue="false" />
 
+        <com.android.settings.preference.SystemSettingSwitchPreference
+         android:key="qs_tile_tap_to_add"
+         android:title="@string/qs_tile_single_tap_title"
+         android:summary="@string/qs_tile_single_tap_summary"
+         android:defaultValue="false"/>
+
     </PreferenceCategory>
 
     <PreferenceCategory
