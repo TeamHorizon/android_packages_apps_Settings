@@ -24,7 +24,6 @@ import com.android.settings.R;
 import com.android.settings.backup.BackupSettingsActivityPreferenceController;
 import com.android.settings.core.PreferenceController;
 import com.android.settings.dashboard.DashboardFragment;
-import com.android.settings.deviceinfo.SystemUpdatePreferenceController;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settings.search.Indexable;
 
@@ -60,7 +59,6 @@ public class SystemDashboardFragment extends DashboardFragment {
 
     private static List<PreferenceController> buildPreferenceControllers(Context context) {
         final List<PreferenceController> controllers = new ArrayList<>();
-        controllers.add(new SystemUpdatePreferenceController(context, UserManager.get(context)));
         controllers.add(new BackupSettingsActivityPreferenceController(context));
         return controllers;
     }
