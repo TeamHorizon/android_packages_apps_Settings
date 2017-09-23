@@ -43,6 +43,7 @@ import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settings.search.Indexable;
 import com.android.settings.xenonhd.deviceinfo.XenonHDMaintainerPreferenceController;
 import com.android.settings.xenonhd.deviceinfo.XenonHDVersionPreferenceController;
+import com.android.settings.xenonhd.deviceinfo.XenonOTAPreferenceController;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -131,6 +132,7 @@ public class DeviceInfoSettings extends DashboardFragment implements Indexable {
         controllers.add(new SafetyInfoPreferenceController(context));
         controllers.add(new XenonHDMaintainerPreferenceController(context, lifecycle));
         controllers.add(new XenonHDVersionPreferenceController(context, lifecycle));
+        controllers.add(new XenonOTAPreferenceController(context));
         return controllers;
     }
 
