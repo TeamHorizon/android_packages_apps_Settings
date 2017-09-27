@@ -513,7 +513,7 @@
                 <category android:name="android.intent.category.VOICE_LAUNCH" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
-            <intent-filter android:priority="240">
+            <intent-filter android:priority="5">
                 <action android:name="com.android.settings.action.SETTINGS" />
             </intent-filter>
             <meta-data android:name="com.android.settings.category"
@@ -554,7 +554,7 @@
                 <category android:name="android.intent.category.VOICE_LAUNCH" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
-            <intent-filter android:priority="260">
+            <intent-filter android:priority="6">
                 <action android:name="com.android.settings.action.SETTINGS"/>
             </intent-filter>
             <meta-data android:name="com.android.settings.category"

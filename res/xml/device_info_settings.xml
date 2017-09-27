@@ -21,21 +21,6 @@
                           android:enabled="false"
                           android:layout="@layout/xenonhd_logo_row" />
 
-        <!-- XenonOTA -->
-        <Preference android:key="xenonota"
-                android:title="@string/xenonota_title"
-                android:summary="@string/xenonota_summary">
-            <intent android:action="android.intent.action.MAIN"
-                    android:targetPackage="com.xenonota"
-                    android:targetClass="com.xenonota.MainActivity" />
-        </Preference>
-
-        <!-- XenonHD Changelog -->
-        <Preference android:key="changelog_xenonhd"
-                android:title="@string/changelog_xenonhd_title"
-                android:summary="@string/changelog_xenonhd_summary"
-                android:fragment="com.android.settings.xenonhd.Changelog" />
-
         <!-- Device status - launches activity -->
         <Preference android:key="status_info"
                 android:title="@string/device_status"
