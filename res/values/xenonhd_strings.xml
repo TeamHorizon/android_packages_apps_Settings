@@ -15,16 +15,16 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
     <!-- About phone screen, XenonHD version -->
-    <string name="xenonhd_version">XenonHD Version</string>
+    <string name="xenonhd_version">XenonHD version</string>
     <string name="xenonhd_maintainer">Maintainer</string>
 
     <!-- Changelog -->
     <string name="changelog_xenonhd_title">Changelog</string>
     <string name="changelog_xenonhd_error">Unable to load changelog</string>
-    <string name="changelog_xenonhd_summary">Check changes in current build</string>
+    <string name="changelog_xenonhd_summary">View changes in curent release</string>
 
     <!-- XenonOTA -->
-    <string name="xenonota_title">XenonHD Updates</string>
-    <string name="xenonota_summary">Check for ROM updates</string>
+    <string name="xenonota_title">XenonOTA</string>
+    <string name="xenonota_summary">Check for XenonHD updates</string>
 
 </resources>
