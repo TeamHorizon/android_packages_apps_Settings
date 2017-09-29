@@ -53,7 +53,7 @@
         android:key="reset_dashboard"
         android:title="@string/reset_dashboard_title"
         android:icon="@drawable/ic_restore"
-        android:order="0"
+        android:order="10"
         android:fragment="com.android.settings.system.ResetDashboardFragment" />
 
 </PreferenceScreen>
