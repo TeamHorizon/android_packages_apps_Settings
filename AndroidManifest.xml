@@ -1864,7 +1864,7 @@
                 <action android:name="com.android.settings.APPLICATION_DEVELOPMENT_SETTINGS" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
-            <intent-filter android:priority="50">
+            <intent-filter android:priority="0">
                 <action android:name="com.android.settings.action.SETTINGS" />
             </intent-filter>
             <meta-data android:name="com.android.settings.category"
