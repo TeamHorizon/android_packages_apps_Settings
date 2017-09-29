@@ -127,6 +127,8 @@ import com.android.settings.wifi.WifiInfo;
 import com.android.settings.wifi.WifiSettings;
 import com.android.settings.wifi.p2p.WifiP2pSettings;
 
+import com.xenonhd.settings.XenonSettings;
+
 public class SettingsGateway {
 
     /**
@@ -244,6 +246,7 @@ public class SettingsGateway {
             EnterprisePrivacySettings.class.getName(),
             WebViewAppPicker.class.getName(),
             LockscreenDashboardFragment.class.getName(),
+            XenonSettings.class.getName(),
     };
 
     public static final String[] SETTINGS_FOR_RESTRICTED = {
@@ -282,5 +285,6 @@ public class SettingsGateway {
             Settings.DateTimeSettingsActivity.class.getName(),
             Settings.DeviceInfoSettingsActivity.class.getName(),
             Settings.EnterprisePrivacySettingsActivity.class.getName(),
+            Settings.XenonHDSettingsActivity.class.getName(),
     };
 }

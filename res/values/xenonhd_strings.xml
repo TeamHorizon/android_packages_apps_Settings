@@ -30,4 +30,8 @@
     <!-- Development Settings -->
     <string name="show_dev_already_enabled">Development settings are enabled by default</string>
 
+    <!-- XenonHD Settings -->
+    <string name="xenonhd_settings_title">Personalization</string>
+    <string name="xenonhd_settings_summary">Additional settings</string>
+
 </resources>
