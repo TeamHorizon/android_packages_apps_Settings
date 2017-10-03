@@ -48,4 +48,7 @@
     <string name="xenonhd_version">XenonHD version</string>
     <string name="xenonhd_maintainer">Maintainer</string>
 
+    <!-- Density category -->
+    <string name="density_category">Density options</string>
+
 </resources>
