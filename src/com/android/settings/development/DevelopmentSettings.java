@@ -565,7 +565,8 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
 
         mColorModePreference = (ColorModePreference) findPreference(KEY_COLOR_MODE);
         mColorModePreference.updateCurrentAndSupported();
-        if (mColorModePreference.getColorModeCount() < 2) {
+        if (mColorModePreference.getColorModeCount() < 2
+            || !getResources().getBoolean(R.bool.config_color_mode_enabled)) {
             removePreference(KEY_COLOR_MODE);
             mColorModePreference = null;
         }
