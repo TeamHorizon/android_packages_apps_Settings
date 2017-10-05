@@ -64,6 +64,9 @@
     <!-- If the support features are enabled. -->
     <bool name="config_support_enabled">false</bool>
 
+    <!-- If the color mode is enabled. -->
+    <bool name="config_color_mode_enabled">true</bool>
+
     <!-- List containing the component names of pre-installed screen reader services. -->
     <string-array name="config_preinstalled_screen_reader_services" translatable="false">
         <!--
