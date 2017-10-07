@@ -93,9 +93,8 @@ public class PowerUsageSummary extends PowerUsageBase {
 
     private static final String KEY_SCREEN_USAGE = "screen_usage";
     private static final String KEY_TIME_SINCE_LAST_FULL_CHARGE = "last_full_charge";
-
-    private static final String KEY_AUTO_BRIGHTNESS = "auto_brightness_battery";
-    private static final String KEY_SCREEN_TIMEOUT = "screen_timeout_battery";
+    //private static final String KEY_AUTO_BRIGHTNESS = "auto_brightness_battery";
+    //private static final String KEY_SCREEN_TIMEOUT = "screen_timeout_battery";
     private static final String KEY_BATTERY_SAVER_SUMMARY = "battery_saver_summary";
 
     private static final int MENU_STATS_TYPE = Menu.FIRST;
@@ -217,8 +216,6 @@ public class PowerUsageSummary extends PowerUsageBase {
     @Override
     protected List<PreferenceController> getPreferenceControllers(Context context) {
         final List<PreferenceController> controllers = new ArrayList<>();
-        controllers.add(new AutoBrightnessPreferenceController(context, KEY_AUTO_BRIGHTNESS));
-        controllers.add(new TimeoutPreferenceController(context, KEY_SCREEN_TIMEOUT));
         controllers.add(new BatterySaverController(context, getLifecycle()));
         controllers.add(new BatteryPercentagePreferenceController(context));
         return controllers;
@@ -798,8 +795,8 @@ public class PowerUsageSummary extends PowerUsageBase {
                 public List<String> getNonIndexableKeys(Context context) {
                     List<String> niks = new ArrayList<>();
                     // Duplicates in display
-                    niks.add(KEY_AUTO_BRIGHTNESS);
-                    niks.add(KEY_SCREEN_TIMEOUT);
+                    //niks.add(KEY_AUTO_BRIGHTNESS);
+                    //niks.add(KEY_SCREEN_TIMEOUT);
                     niks.add(KEY_BATTERY_SAVER_SUMMARY);
                     return niks;
                 }
