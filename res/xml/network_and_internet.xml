@@ -69,6 +69,7 @@
     <com.android.settingslib.RestrictedPreference
         android:key="manage_mobile_plan"
         android:title="@string/manage_mobile_plan_title"
+        android:icon="@drawable/ic_mobile_plan"
         android:persistent="false"
         settings:userRestriction="no_config_mobile_networks"
         settings:useAdminDisabledSummary="true"/>
