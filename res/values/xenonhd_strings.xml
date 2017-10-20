@@ -60,4 +60,8 @@
     <string name="security_settings_fingerprint_sensor_location_front">front</string>
     <string name="security_settings_fingerprint_sensor_location_left">left side</string>
     <string name="security_settings_fingerprint_sensor_location_right">right side</string>
+
+    <!-- Encryption and credential -->
+    <string name="custom_encryption_and_credential_settings_summary_on">Device is encrypted</string>
+    <string name="custom_encryption_and_credential_settings_summary_off">Device is decrypted</string>
 </resources>
