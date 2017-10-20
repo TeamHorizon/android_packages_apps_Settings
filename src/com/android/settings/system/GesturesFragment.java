@@ -31,6 +31,9 @@ import com.android.settings.R;
 import com.android.settings.core.PreferenceController;
 import com.android.settings.core.lifecycle.Lifecycle;
 import com.android.settings.dashboard.DashboardFragment;
+import com.android.settings.display.CameraGesturePreferenceController;
+import com.android.settings.display.LiftToWakePreferenceController;
+import com.android.settings.display.TapToWakePreferenceController;
 import com.android.settings.gestures.AssistGesturePreferenceController;
 import com.android.settings.gestures.DoubleTapPowerPreferenceController;
 import com.android.settings.gestures.DoubleTapScreenPreferenceController;
@@ -53,6 +56,9 @@ public class GesturesFragment extends DashboardFragment {
     private static final String KEY_DOUBLE_TWIST = "gesture_double_twist_input_summary";
     private static final String KEY_DOUBLE_TAP_SCREEN = "gesture_double_tap_screen_input_summary";
     private static final String KEY_PICK_UP = "gesture_pick_up_input_summary";
+    private static final String KEY_CAMERA_GESTURE = "camera_gesture";
+    private static final String KEY_LIFT_TO_WAKE = "lift_to_wake";
+    private static final String KEY_TAP_TO_WAKE = "tap_to_wake";
 
     private AmbientDisplayConfiguration mAmbientDisplayConfig;
 
@@ -95,6 +101,9 @@ public class GesturesFragment extends DashboardFragment {
                 ambientDisplayConfiguration, UserHandle.myUserId(), KEY_PICK_UP));
         controllers.add(new DoubleTapScreenPreferenceController(context, lifecycle,
                 ambientDisplayConfiguration, UserHandle.myUserId(), KEY_DOUBLE_TAP_SCREEN));
+        controllers.add(new CameraGesturePreferenceController(context));
+        controllers.add(new LiftToWakePreferenceController(context));
+        controllers.add(new TapToWakePreferenceController(context));
         return controllers;
     }
 
@@ -132,6 +141,7 @@ public class GesturesFragment extends DashboardFragment {
                     keys.add(KEY_DOUBLE_TWIST);
                     keys.add(KEY_DOUBLE_TAP_SCREEN);
                     keys.add(KEY_PICK_UP);
+                    keys.add(KEY_TAP_TO_WAKE);
 
                     return keys;
                 }
