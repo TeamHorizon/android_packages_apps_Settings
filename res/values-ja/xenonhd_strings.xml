@@ -19,6 +19,8 @@
   <string name="changelog_xenonhd_title">更新履歴</string>
   <string name="changelog_xenonhd_error">更新履歴を読み込めませんでした</string>
   <!-- Development Settings -->
+  <!-- Phone info -->
+  <string name="device_info_title">携帯電話情報</string>
   <!-- Vendor version -->
   <string name="vendor_version_default">不明</string>
   <!-- XenonOTA -->

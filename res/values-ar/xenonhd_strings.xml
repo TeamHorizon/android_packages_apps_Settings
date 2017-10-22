@@ -19,6 +19,8 @@
   <string name="changelog_xenonhd_title">سجل التغيرات</string>
   <string name="changelog_xenonhd_error">غير قادر على تحميل سجل التغييرات</string>
   <!-- Development Settings -->
+  <!-- Phone info -->
+  <string name="device_info_title">معلومات الهاتف</string>
   <!-- Vendor version -->
   <string name="vendor_version_default">مجهول</string>
   <!-- XenonOTA -->

@@ -20,6 +20,8 @@
   <string name="changelog_xenonhd_error">Nem lehet betölteni a változások listáját</string>
   <string name="changelog_xenonhd_summary">A jelenlegi verzió váltásainak megtekintése</string>
   <!-- Development Settings -->
+  <!-- Phone info -->
+  <string name="device_info_title">Telefon adatai</string>
   <!-- Vendor version -->
   <string name="vendor_version_default">Ismeretlen</string>
   <!-- XenonOTA -->

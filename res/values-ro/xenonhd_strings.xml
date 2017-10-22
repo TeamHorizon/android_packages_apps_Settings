@@ -19,6 +19,7 @@
   <string name="changelog_xenonhd_title">Istoricul schimbărilor</string>
   <string name="changelog_xenonhd_error">Nu am putut încărca jurnalul cu schimbări</string>
   <!-- Development Settings -->
+  <!-- Phone info -->
   <!-- Vendor version -->
   <string name="vendor_version_default">Necunoscut</string>
   <!-- XenonOTA -->

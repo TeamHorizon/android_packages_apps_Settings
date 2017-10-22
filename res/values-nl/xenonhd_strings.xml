@@ -18,6 +18,8 @@
   <!-- Changelog -->
   <string name="changelog_xenonhd_error">Kan changelog niet laden</string>
   <!-- Development Settings -->
+  <!-- Phone info -->
+  <string name="device_info_title">Telefoon info</string>
   <!-- Vendor version -->
   <string name="vendor_version_default">Onbekend</string>
   <!-- XenonOTA -->

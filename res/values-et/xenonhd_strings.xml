@@ -19,6 +19,8 @@
   <string name="changelog_xenonhd_title">Muudatuste logi</string>
   <string name="changelog_xenonhd_error">Muudatuste logi ei saanud laadida</string>
   <!-- Development Settings -->
+  <!-- Phone info -->
+  <string name="device_info_title">Telefoni teave</string>
   <!-- Vendor version -->
   <string name="vendor_version_default">Tundmatu</string>
   <!-- XenonOTA -->

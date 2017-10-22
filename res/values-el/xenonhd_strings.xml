@@ -19,6 +19,8 @@
   <string name="changelog_xenonhd_title">Κατάλογος αλλαγών</string>
   <string name="changelog_xenonhd_error">Δεν είναι δυνατή η φόρτωση του καταλόγου αλλαγών</string>
   <!-- Development Settings -->
+  <!-- Phone info -->
+  <string name="device_info_title">Πληροφορίες τηλεφώνου</string>
   <!-- Vendor version -->
   <string name="vendor_version_default">Άγνωστο</string>
   <!-- XenonOTA -->

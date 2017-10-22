@@ -19,6 +19,8 @@
   <string name="changelog_xenonhd_title">Änderungsprotokoll</string>
   <string name="changelog_xenonhd_error">Änderungsprotokoll konnte nicht geladen werden</string>
   <!-- Development Settings -->
+  <!-- Phone info -->
+  <string name="device_info_title">Über das Telefon</string>
   <!-- Vendor version -->
   <string name="vendor_version_default">Unbekannt</string>
   <!-- XenonOTA -->

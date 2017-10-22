@@ -20,7 +20,11 @@
   <string name="changelog_xenonhd_error">無法讀取更新日誌</string>
   <string name="changelog_xenonhd_summary">檢視目前版本中的更改</string>
   <!-- Development Settings -->
+  <string name="show_dev_already_enabled">預設情況下啟用了開發人員選項設定</string>
+  <!-- Phone info -->
+  <string name="device_info_title">手機資訊</string>
   <!-- Vendor version -->
+  <string name="vendor_version">廠商版本</string>
   <string name="vendor_version_default">未知</string>
   <!-- XenonOTA -->
   <string name="xenonota_title">XenonOTA</string>
