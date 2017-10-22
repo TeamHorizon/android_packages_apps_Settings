@@ -19,6 +19,8 @@
   <string name="changelog_xenonhd_title">Lista promjena</string>
   <string name="changelog_xenonhd_error">Nije moguće učitati popis promjena</string>
   <!-- Development Settings -->
+  <!-- Phone info -->
+  <string name="device_info_title">Informacije o telefonu</string>
   <!-- Vendor version -->
   <string name="vendor_version_default">Nepoznato</string>
   <!-- XenonOTA -->

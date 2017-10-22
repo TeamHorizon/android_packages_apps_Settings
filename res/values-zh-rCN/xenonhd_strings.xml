@@ -19,6 +19,8 @@
   <string name="changelog_xenonhd_title">更新日志</string>
   <string name="changelog_xenonhd_error">无法加载更新日志</string>
   <!-- Development Settings -->
+  <!-- Phone info -->
+  <string name="device_info_title">手机信息</string>
   <!-- Vendor version -->
   <string name="vendor_version_default">未知</string>
   <!-- XenonOTA -->

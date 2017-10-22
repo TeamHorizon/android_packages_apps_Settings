@@ -21,6 +21,8 @@
   <string name="changelog_xenonhd_summary">Zobrazit změny v aktuální verzi</string>
   <!-- Development Settings -->
   <string name="show_dev_already_enabled">Možnosti vývojáře jsou ve výchozím nastavení povolena</string>
+  <!-- Phone info -->
+  <string name="device_info_title">Informace o telefonu</string>
   <!-- Vendor version -->
   <string name="vendor_version">Dodavatel verze</string>
   <string name="vendor_version_default">Neznámá</string>

@@ -18,11 +18,18 @@
   <!-- Changelog -->
   <string name="changelog_xenonhd_title">Список изменений</string>
   <string name="changelog_xenonhd_error">Невозможно загрузить список изменений</string>
+  <string name="changelog_xenonhd_summary">Посмотреть изменения в текущем релизе</string>
   <!-- Development Settings -->
+  <string name="show_dev_already_enabled">Настройки для разработчиков включены по умолчанию</string>
+  <!-- Phone info -->
+  <string name="device_info_title">Информация об устройстве</string>
   <!-- Vendor version -->
+  <string name="vendor_version">Версия ПО производителя</string>
   <string name="vendor_version_default">Неизвестно</string>
   <!-- XenonOTA -->
   <string name="xenonota_title">XenonOTA</string>
+  <string name="xenonota_summary">Проверить обновление XenonHD</string>
   <!-- XenonHD version -->
+  <string name="xenonhd_version">Версия XenonHD</string>
   <string name="xenonhd_maintainer">Сопровождающий</string>
 </resources>

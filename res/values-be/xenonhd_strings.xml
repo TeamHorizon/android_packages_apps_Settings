@@ -19,6 +19,8 @@
   <string name="changelog_xenonhd_title">Спіс змен</string>
   <string name="changelog_xenonhd_error">Немагчыма загрузіць спіс змен</string>
   <!-- Development Settings -->
+  <!-- Phone info -->
+  <string name="device_info_title">Звесткі аб тэлефоне</string>
   <!-- Vendor version -->
   <string name="vendor_version_default">Невядома</string>
   <!-- XenonOTA -->

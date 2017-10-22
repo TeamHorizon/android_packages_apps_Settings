@@ -17,6 +17,8 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- Changelog -->
   <!-- Development Settings -->
+  <!-- Phone info -->
+  <string name="device_info_title">Telefono informaciją</string>
   <!-- Vendor version -->
   <!-- XenonOTA -->
   <string name="xenonota_title">XenonOTA</string>

@@ -19,6 +19,8 @@
   <string name="changelog_xenonhd_title">Registro de Alterações</string>
   <string name="changelog_xenonhd_error">Não foi possível carregar o registro de alterações</string>
   <!-- Development Settings -->
+  <!-- Phone info -->
+  <string name="device_info_title">Informações do telefone</string>
   <!-- Vendor version -->
   <string name="vendor_version_default">Desconhecido</string>
   <!-- XenonOTA -->

@@ -20,7 +20,11 @@
   <string name="changelog_xenonhd_error">Nie je možné načítať zoznam zmien</string>
   <string name="changelog_xenonhd_summary">Zobrazenie zmien v aktuálnom vydaní</string>
   <!-- Development Settings -->
+  <string name="show_dev_already_enabled">Nastavenia pre vývojárov sú predvolene povolené</string>
+  <!-- Phone info -->
+  <string name="device_info_title">Informácie o telefóne</string>
   <!-- Vendor version -->
+  <string name="vendor_version">Dodávateľ verzie</string>
   <string name="vendor_version_default">Neznáma</string>
   <!-- XenonOTA -->
   <string name="xenonota_title">XenonOTA</string>

@@ -21,6 +21,8 @@
   <string name="changelog_xenonhd_summary">Sprawdź zmiany w bieżącej kompilacji</string>
   <!-- Development Settings -->
   <string name="show_dev_already_enabled">Opcje programistyczne są domyślnie włączone</string>
+  <!-- Phone info -->
+  <string name="device_info_title">Informacje o telefonie</string>
   <!-- Vendor version -->
   <string name="vendor_version">Wersja dostawcy</string>
   <string name="vendor_version_default">Nieznana</string>

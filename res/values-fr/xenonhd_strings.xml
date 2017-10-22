@@ -19,6 +19,8 @@
   <string name="changelog_xenonhd_title">Note de version</string>
   <string name="changelog_xenonhd_error">Impossible de charger le journal des changements</string>
   <!-- Development Settings -->
+  <!-- Phone info -->
+  <string name="device_info_title">Informations sur l\'appareil</string>
   <!-- Vendor version -->
   <string name="vendor_version_default">Inconnue</string>
   <!-- XenonOTA -->

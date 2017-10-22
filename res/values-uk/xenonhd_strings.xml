@@ -19,6 +19,8 @@
   <string name="changelog_xenonhd_title">Список змін</string>
   <string name="changelog_xenonhd_error">Помилка завантаження списку змін</string>
   <!-- Development Settings -->
+  <!-- Phone info -->
+  <string name="device_info_title">Інформація про пристрій</string>
   <!-- Vendor version -->
   <string name="vendor_version_default">Невідомо</string>
   <!-- XenonOTA -->
