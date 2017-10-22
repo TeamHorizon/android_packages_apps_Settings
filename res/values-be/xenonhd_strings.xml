@@ -296,4 +296,7 @@
   <!-- Status bar - Battery saver color -->
   <string name="status_bar_battery_saver_color_title">Каляровая паласа ў рэжыме эканоміі батарэі</string>
   <!-- Reset battery stats -->
+  <string name="ok">OK</string>
+  <string name="menu_stats_reset">Скід статыстыкі</string>
+  <string name="reset_stats_msg">Статыстыка выкарыстання батарэі будзе скінутая</string>
 </resources>

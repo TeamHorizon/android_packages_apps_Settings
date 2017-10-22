@@ -294,5 +294,10 @@
   <string name="lockscreen_battery_info_title">Информация о зарядке</string>
   <string name="lockscreen_battery_info_summary">Отображение тока, напряжения и температуры батареи на экране блокировки во время зарядки</string>
   <!-- Status bar - Battery saver color -->
+  <string name="status_bar_battery_saver_color_title">Цвет светового индикатора режима энергосбережения</string>
+  <string name="status_bar_battery_saver_color_summary">Примечание: Если включен режим энергосбережения батареи, то для активации нового цвета светового индикатора необходимо выключить и снова включить режим энергосбережения!</string>
   <!-- Reset battery stats -->
+  <string name="ok">Ок</string>
+  <string name="menu_stats_reset">Сбросить статистику</string>
+  <string name="reset_stats_msg">История статистики батареи будет сброшена</string>
 </resources>

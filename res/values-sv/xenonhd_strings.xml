@@ -93,7 +93,9 @@
   <!-- QS tile labels visibility -->
   <!-- Color Picker -->
   <string name="dialog_color_picker">Färgväljare</string>
+  <string name="press_color_to_apply">Tryck på en färg nedan för att tillämpa</string>
   <string name="hex">Hex:</string>
+  <string name="set">Ställ in</string>
   <string name="color_default">Förvalt</string>
   <!-- Carrier label -->
   <string name="show_carrier_disabled">Inaktiverad</string>

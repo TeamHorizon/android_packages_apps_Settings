@@ -89,6 +89,7 @@
   <string name="qs_rows_portrait_title">Linhas (retrato)</string>
   <string name="qs_rows_landscape_title">Linhas (paisagem)</string>
   <string name="qs_columns_title">Colunas</string>
+  <string name="qs_easy_toggle_summary">Habilita o clique único para habilitar/desabilitar Wi-Fi, Dados Móveis e Bluetooth. Pressione para ver as configurações avançadas</string>
   <!-- Quick unlock -->
   <string name="quick_unlock_warning">Precaução de desbloqueio rápida</string>
   <string name="quick_unlock_warning_summary">Esta característica ignora os mecanismos de segurança importante e quase certamente maltrata o suporte a múltiplos usuários. Use a seu próprio risco</string>
@@ -186,36 +187,55 @@
   <string name="set">Aplicar</string>
   <string name="color_default">Padrão</string>
   <!-- Carrier label -->
+  <string name="carrier_title">Nome da Operadora</string>
+  <string name="carrier_options_summary">Personalizar nome de operadora</string>
+  <string name="custom_carrier_label_title">Nome personalizado da operadora</string>
   <string name="custom_carrier_label_explain">Por favor, insira um novo texto ou deixe em branco para reverter ao original.</string>
+  <string name="show_carrier_title">Nome da operadora</string>
   <string name="show_carrier_disabled">Desativado</string>
   <string name="show_carrier_keyguard">Apenas na tela de bloqueio</string>
   <string name="show_carrier_statusbar">Apenas na barra de status</string>
   <string name="show_carrier_both">Tela de bloqueio e barra de status</string>
   <string name="show_carrier_enabled">Tela de bloqueio e barra de status</string>
-  <string name="status_bar_font_style_title">Tipo de letra</string>
+  <string name="status_bar_carrier_color">Cor do nome da operadora</string>
+  <string name="status_bar_carrier_size">Tamanho do texto do nome da operadora</string>
+  <string name="status_bar_carrier_font_style_title">Fonte do Nome da Operadora</string>
+  <string name="number_of_notifications_title">Número de notificações</string>
+  <string name="carrier_label_hide_label_title">Esconder Notificações</string>
+  <string name="carrier_label_number_of_notification_icons_title">Numero máximo de ícones antes de esconder</string>
+  <string name="status_bar_font_style_title">Fonte</string>
   <string name="status_bar_font_normal">Normal</string>
   <string name="status_bar_font_italic">Itálico</string>
   <string name="status_bar_font_bold">Negrito</string>
-  <string name="status_bar_font_bold_italic">Negrito e itálico</string>
+  <string name="status_bar_font_bold_italic">Negrito Itálico</string>
   <string name="status_bar_font_light">Claro</string>
   <string name="status_bar_font_light_italic">Itálico claro</string>
   <string name="status_bar_font_thin">Fino</string>
-  <string name="status_bar_font_thin_italic">Itálico fino</string>
+  <string name="status_bar_font_thin_italic">Itálico Fino</string>
   <string name="status_bar_font_condensed">Condensado</string>
   <string name="status_bar_font_condensed_italic">Itálico condensado</string>
-  <string name="status_bar_font_medium">Média</string>
+  <string name="status_bar_font_condensed_light">Condensado Leve</string>
+  <string name="status_bar_font_condensed_light_italic">Itálico Condensado Claro</string>
+  <string name="status_bar_font_condensed_bold">Negrito Condensado</string>
+  <string name="status_bar_font_medium">Médio</string>
+  <string name="status_bar_font_medium_italic">Itálico Médio</string>
+  <string name="status_bar_font_black">Preto</string>
+  <string name="status_bar_font_black_italic">Itálico Preto</string>
+  <string name="status_bar_font_comingsoon">Em breve</string>
   <!-- Lock Clock Fonts -->
   <string name="lock_date_font_title">Data</string>
   <string name="lock_clock_font_bold">Negrito</string>
   <string name="lock_clock_font_light">Claro</string>
   <string name="lock_clock_font_italic">Itálico</string>
-  <string name="lock_clock_font_bold_italic">Negrito e itálico</string>
+  <string name="lock_clock_font_bold_italic">Negrito Itálico</string>
   <string name="lock_clock_font_light_italic">Itálico claro</string>
-  <string name="lock_clock_font_thin_italic">Itálico fino</string>
+  <string name="lock_clock_font_thin_italic">Itálico Fino</string>
   <string name="lock_clock_font_thin">Fino</string>
   <string name="lock_clock_font_condensed_normal">Condensado</string>
   <string name="lock_clock_font_condensed_italic">Itálico condensado</string>
-  <string name="lock_clock_font_medium_normal">Média</string>
+  <string name="lock_clock_font_condensed_bold">Negrito Condensado</string>
+  <string name="lock_clock_font_medium_normal">Médio</string>
+  <string name="lock_clock_font_medium_italic">Itálico Médio</string>
   <!-- Screen state service -->
   <!-- Fingerprint max failed attempts -->
   <string name="fp_three_attempts">3 tentativas</string>
