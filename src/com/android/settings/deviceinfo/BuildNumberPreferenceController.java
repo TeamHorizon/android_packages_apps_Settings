@@ -165,7 +165,7 @@ public class BuildNumberPreferenceController extends PreferenceController
                 }
                 mDevHitToast = Toast.makeText(mContext,
                         mContext.getResources().getQuantityString(
-                                R.plurals.show_dev_countdown, mDevHitCountdown,
+                                R.plurals.show_dev_countdown_custom, mDevHitCountdown,
                                 mDevHitCountdown),
                         Toast.LENGTH_SHORT);
                 mDevHitToast.show();
@@ -178,7 +178,7 @@ public class BuildNumberPreferenceController extends PreferenceController
             if (mDevHitToast != null) {
                 mDevHitToast.cancel();
             }
-            mDevHitToast = Toast.makeText(mContext, R.string.show_dev_already_enabled,
+            mDevHitToast = Toast.makeText(mContext, R.string.show_dev_already_custom,
                     Toast.LENGTH_LONG);
             mDevHitToast.show();
             mMetricsFeatureProvider.action(
@@ -217,7 +217,7 @@ public class BuildNumberPreferenceController extends PreferenceController
         if (mDevHitToast != null) {
             mDevHitToast.cancel();
         }
-        mDevHitToast = Toast.makeText(mContext, R.string.show_dev_on,
+        mDevHitToast = Toast.makeText(mContext, R.string.show_dev_on_custom,
                 Toast.LENGTH_LONG);
         mDevHitToast.show();
         // This is good time to index the Developer Options
