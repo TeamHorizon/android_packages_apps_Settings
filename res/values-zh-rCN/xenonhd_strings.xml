@@ -19,6 +19,9 @@
   <string name="changelog_xenonhd_title">更新日志</string>
   <string name="changelog_xenonhd_error">无法加载更新日志</string>
   <!-- Development Settings -->
+  <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
+  <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
+  <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
   <!-- Phone info -->
   <string name="device_info_title">手机信息</string>
   <!-- Vendor version -->
@@ -27,4 +30,15 @@
   <string name="xenonota_title">Xenon更新</string>
   <!-- XenonHD version -->
   <string name="xenonhd_maintainer">维护者</string>
+  <!-- Density category -->
+  <string name="density_category">密度选项</string>
+  <!-- Volume Steps -->
+  <string name="volume_steps_title">音量级别</string>
+  <string name="volume_steps_alarm_title">闹钟</string>
+  <string name="volume_steps_music_title">音乐</string>
+  <string name="volume_steps_notification_title">通知</string>
+  <string name="volume_steps_ring_title">振铃</string>
+  <string name="volume_steps_system_title">系统</string>
+  <string name="volume_steps_voice_call_title">语音通话</string>
+  <string name="volume_steps_reset">重置</string>
 </resources>

@@ -18,9 +18,14 @@
   <!-- Changelog -->
   <string name="changelog_xenonhd_title">체인지 로그</string>
   <!-- Development Settings -->
+  <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
+  <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
+  <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
   <!-- Phone info -->
   <!-- Vendor version -->
   <string name="vendor_version_default">알 수 없는</string>
   <!-- XenonOTA -->
   <!-- XenonHD version -->
+  <!-- Density category -->
+  <!-- Volume Steps -->
 </resources>

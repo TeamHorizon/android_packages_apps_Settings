@@ -20,6 +20,9 @@
   <string name="changelog_xenonhd_error">Nem lehet betölteni a változások listáját</string>
   <string name="changelog_xenonhd_summary">A jelenlegi verzió váltásainak megtekintése</string>
   <!-- Development Settings -->
+  <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
+  <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
+  <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
   <!-- Phone info -->
   <string name="device_info_title">Telefon adatai</string>
   <!-- Vendor version -->
@@ -30,4 +33,15 @@
   <!-- XenonHD version -->
   <string name="xenonhd_version">XenonHD verzió</string>
   <string name="xenonhd_maintainer">Karbantartó</string>
+  <!-- Density category -->
+  <string name="density_category">Sűrűségi beállítások</string>
+  <!-- Volume Steps -->
+  <string name="volume_steps_title">Hangerő lépések</string>
+  <string name="volume_steps_alarm_title">Riasztások</string>
+  <string name="volume_steps_music_title">Zene</string>
+  <string name="volume_steps_notification_title">Értesítések</string>
+  <string name="volume_steps_ring_title">Csengetés</string>
+  <string name="volume_steps_system_title">Rendszer</string>
+  <string name="volume_steps_voice_call_title">Hanghívás</string>
+  <string name="volume_steps_reset">Visszaállitás</string>
 </resources>

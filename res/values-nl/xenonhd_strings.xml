@@ -18,6 +18,9 @@
   <!-- Changelog -->
   <string name="changelog_xenonhd_error">Kan changelog niet laden</string>
   <!-- Development Settings -->
+  <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
+  <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
+  <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
   <!-- Phone info -->
   <string name="device_info_title">Telefoon info</string>
   <!-- Vendor version -->
@@ -25,4 +28,9 @@
   <!-- XenonOTA -->
   <string name="xenonota_title">XenonOTA</string>
   <!-- XenonHD version -->
+  <!-- Density category -->
+  <string name="density_category">Dichtheid opties</string>
+  <!-- Volume Steps -->
+  <string name="volume_steps_title">Volume stappen</string>
+  <string name="volume_steps_music_title">Muziek</string>
 </resources>

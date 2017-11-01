@@ -18,12 +18,31 @@
   <!-- Changelog -->
   <string name="changelog_xenonhd_title">Κατάλογος αλλαγών</string>
   <string name="changelog_xenonhd_error">Δεν είναι δυνατή η φόρτωση του καταλόγου αλλαγών</string>
+  <string name="changelog_xenonhd_summary">Προβολή αλλαγών στην ήδη εγκατεστημένη κυκλοφορία</string>
   <!-- Development Settings -->
+  <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
+  <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
+  <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
   <!-- Phone info -->
   <string name="device_info_title">Πληροφορίες τηλεφώνου</string>
   <!-- Vendor version -->
+  <string name="vendor_version">Έκδοση vendor</string>
   <string name="vendor_version_default">Άγνωστο</string>
   <!-- XenonOTA -->
+  <string name="xenonota_title">XenonOTA</string>
+  <string name="xenonota_summary">Έλεγχος για ενημερώσεις λειτουργικού XenonHD</string>
   <!-- XenonHD version -->
+  <string name="xenonhd_version">Έκδοση λειτουργικού XenonHD</string>
   <string name="xenonhd_maintainer">Συντηρητής</string>
+  <!-- Density category -->
+  <string name="density_category">Επιλογές πυκνότητος</string>
+  <!-- Volume Steps -->
+  <string name="volume_steps_title">Βήματα έντασης ήχου</string>
+  <string name="volume_steps_alarm_title">Ξυπνητήρι</string>
+  <string name="volume_steps_music_title">Μουσική</string>
+  <string name="volume_steps_notification_title">Ειδοποίηση</string>
+  <string name="volume_steps_ring_title">Ήχος κλησης</string>
+  <string name="volume_steps_system_title">Σύστημα</string>
+  <string name="volume_steps_voice_call_title">Φωνητική κλήση</string>
+  <string name="volume_steps_reset">Επαναφορά</string>
 </resources>

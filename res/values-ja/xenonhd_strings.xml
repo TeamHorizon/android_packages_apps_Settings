@@ -19,6 +19,9 @@
   <string name="changelog_xenonhd_title">更新履歴</string>
   <string name="changelog_xenonhd_error">更新履歴を読み込めませんでした</string>
   <!-- Development Settings -->
+  <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
+  <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
+  <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
   <!-- Phone info -->
   <string name="device_info_title">携帯電話情報</string>
   <!-- Vendor version -->
@@ -27,4 +30,8 @@
   <string name="xenonota_title">XenonOTA</string>
   <!-- XenonHD version -->
   <string name="xenonhd_maintainer">メンテナ</string>
+  <!-- Density category -->
+  <!-- Volume Steps -->
+  <string name="volume_steps_music_title">音楽</string>
+  <string name="volume_steps_reset">リセット</string>
 </resources>

@@ -19,8 +19,13 @@
   <string name="changelog_xenonhd_title">چینج لاگ</string>
   <string name="changelog_xenonhd_error">چینج لاگ لوڈ کرنے سے قاصر</string>
   <!-- Development Settings -->
+  <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
+  <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
+  <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
   <!-- Phone info -->
   <!-- Vendor version -->
   <!-- XenonOTA -->
   <!-- XenonHD version -->
+  <!-- Density category -->
+  <!-- Volume Steps -->
 </resources>

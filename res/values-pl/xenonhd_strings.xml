@@ -20,9 +20,20 @@
   <string name="changelog_xenonhd_error">Nie można wczytać listy zmian</string>
   <string name="changelog_xenonhd_summary">Sprawdź zmiany w bieżącej kompilacji</string>
   <!-- Development Settings -->
-  <string name="show_dev_already_enabled">Opcje programistyczne są domyślnie włączone</string>
+  <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
+  <plurals name="show_dev_countdown_custom">
+    <item quantity="one">Jesteś teraz <xliff:g id="step_count">%1$d</xliff:g> krok od włączenia opcji programistycznych</item>
+    <item quantity="few">Jesteś teraz <xliff:g id="step_count">%1$d</xliff:g> kroki od włączenia opcji programistycznych</item>
+    <item quantity="other">Jesteś teraz <xliff:g id="step_count">%1$d</xliff:g> kroków od włączenia opcji programistycznych</item>
+  </plurals>
+  <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
+  <string name="show_dev_on_custom">Włączono opcje programistyczne! Ostrożnie!</string>
+  <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
+  <string name="show_dev_already_custom">Opcje programistyczne są już włączone!</string>
   <!-- Phone info -->
   <string name="device_info_title">Informacje o telefonie</string>
+  <string name="custom_encryption_and_credential_settings_summary_on">Urządzenie jest szyfrowane</string>
+  <string name="custom_encryption_and_credential_settings_summary_off">Urządzenie jest odszyfrowane</string>
   <!-- Vendor version -->
   <string name="vendor_version">Wersja dostawcy</string>
   <string name="vendor_version_default">Nieznana</string>
@@ -32,4 +43,16 @@
   <!-- XenonHD version -->
   <string name="xenonhd_version">Wersja XenonHD</string>
   <string name="xenonhd_maintainer">Opiekun</string>
+  <!-- Density category -->
+  <string name="density_category">Ustawienia gęstości</string>
+  <!-- Volume Steps -->
+  <string name="volume_steps_title">Poziomy głośności</string>
+  <string name="volume_steps_alarm_title">Budzik</string>
+  <string name="volume_steps_dtmf_title">DTMF</string>
+  <string name="volume_steps_music_title">Muzyka</string>
+  <string name="volume_steps_notification_title">Powiadomienia</string>
+  <string name="volume_steps_ring_title">Dzwonek</string>
+  <string name="volume_steps_system_title">System</string>
+  <string name="volume_steps_voice_call_title">Połączenia głosowe</string>
+  <string name="volume_steps_reset">Resetuj</string>
 </resources>

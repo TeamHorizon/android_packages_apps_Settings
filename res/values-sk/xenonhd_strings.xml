@@ -20,7 +20,9 @@
   <string name="changelog_xenonhd_error">Nie je možné načítať zoznam zmien</string>
   <string name="changelog_xenonhd_summary">Zobrazenie zmien v aktuálnom vydaní</string>
   <!-- Development Settings -->
-  <string name="show_dev_already_enabled">Nastavenia pre vývojárov sú predvolene povolené</string>
+  <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
+  <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
+  <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
   <!-- Phone info -->
   <string name="device_info_title">Informácie o telefóne</string>
   <!-- Vendor version -->
@@ -32,4 +34,15 @@
   <!-- XenonHD version -->
   <string name="xenonhd_version">Verzia XenonHD</string>
   <string name="xenonhd_maintainer">Správca</string>
+  <!-- Density category -->
+  <string name="density_category">Možnosti hustoty zobrazenia</string>
+  <!-- Volume Steps -->
+  <string name="volume_steps_title">Stupne hlasitosti</string>
+  <string name="volume_steps_alarm_title">Budík</string>
+  <string name="volume_steps_music_title">Hudba</string>
+  <string name="volume_steps_notification_title">Upozornenie</string>
+  <string name="volume_steps_ring_title">Zvonenie</string>
+  <string name="volume_steps_system_title">Systém</string>
+  <string name="volume_steps_voice_call_title">Hlasový hovor</string>
+  <string name="volume_steps_reset">Resetovať</string>
 </resources>
