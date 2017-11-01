@@ -19,6 +19,9 @@
   <string name="changelog_xenonhd_title">Список змін</string>
   <string name="changelog_xenonhd_error">Помилка завантаження списку змін</string>
   <!-- Development Settings -->
+  <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
+  <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
+  <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
   <!-- Phone info -->
   <string name="device_info_title">Інформація про пристрій</string>
   <!-- Vendor version -->
@@ -27,4 +30,15 @@
   <string name="xenonota_title">XenonOTA</string>
   <!-- XenonHD version -->
   <string name="xenonhd_maintainer">Підтримка моделі</string>
+  <!-- Density category -->
+  <string name="density_category">Параметри щільності</string>
+  <!-- Volume Steps -->
+  <string name="volume_steps_title">Рівні гучності</string>
+  <string name="volume_steps_alarm_title">Будильник</string>
+  <string name="volume_steps_music_title">Музика</string>
+  <string name="volume_steps_notification_title">Повідомлення</string>
+  <string name="volume_steps_ring_title">Дзвінок</string>
+  <string name="volume_steps_system_title">Система</string>
+  <string name="volume_steps_voice_call_title">Голосовий виклик</string>
+  <string name="volume_steps_reset">Скидання</string>
 </resources>

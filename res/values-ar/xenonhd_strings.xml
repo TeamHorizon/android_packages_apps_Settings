@@ -19,6 +19,9 @@
   <string name="changelog_xenonhd_title">سجل التغيرات</string>
   <string name="changelog_xenonhd_error">غير قادر على تحميل سجل التغييرات</string>
   <!-- Development Settings -->
+  <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
+  <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
+  <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
   <!-- Phone info -->
   <string name="device_info_title">معلومات الهاتف</string>
   <!-- Vendor version -->
@@ -27,4 +30,15 @@
   <string name="xenonota_title">تحديث الزينون على الهواء</string>
   <!-- XenonHD version -->
   <string name="xenonhd_maintainer">المشرفون</string>
+  <!-- Density category -->
+  <string name="density_category">خيارات الكثافة</string>
+  <!-- Volume Steps -->
+  <string name="volume_steps_title">درجات الصوت</string>
+  <string name="volume_steps_alarm_title">المنبه</string>
+  <string name="volume_steps_music_title">الموسيقى</string>
+  <string name="volume_steps_notification_title">إخطار</string>
+  <string name="volume_steps_ring_title">جرس</string>
+  <string name="volume_steps_system_title">النظام</string>
+  <string name="volume_steps_voice_call_title">مكالمة صوتية</string>
+  <string name="volume_steps_reset">إعادة ضبط</string>
 </resources>

@@ -19,6 +19,9 @@
   <string name="changelog_xenonhd_title">Muudatuste logi</string>
   <string name="changelog_xenonhd_error">Muudatuste logi ei saanud laadida</string>
   <!-- Development Settings -->
+  <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
+  <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
+  <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
   <!-- Phone info -->
   <string name="device_info_title">Telefoni teave</string>
   <!-- Vendor version -->
@@ -27,4 +30,15 @@
   <string name="xenonota_title">XenonOTA</string>
   <!-- XenonHD version -->
   <string name="xenonhd_maintainer">Hooldaja</string>
+  <!-- Density category -->
+  <string name="density_category">Ekraanitiheduse valikud</string>
+  <!-- Volume Steps -->
+  <string name="volume_steps_title">Heli astmed</string>
+  <string name="volume_steps_alarm_title">Äratus</string>
+  <string name="volume_steps_music_title">Muusika</string>
+  <string name="volume_steps_notification_title">Teavitus</string>
+  <string name="volume_steps_ring_title">Kõlisti</string>
+  <string name="volume_steps_system_title">Süsteem</string>
+  <string name="volume_steps_voice_call_title">Helikõne</string>
+  <string name="volume_steps_reset">Lähtesta</string>
 </resources>

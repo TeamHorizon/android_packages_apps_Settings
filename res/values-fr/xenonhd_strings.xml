@@ -19,6 +19,9 @@
   <string name="changelog_xenonhd_title">Note de version</string>
   <string name="changelog_xenonhd_error">Impossible de charger le journal des changements</string>
   <!-- Development Settings -->
+  <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
+  <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
+  <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
   <!-- Phone info -->
   <string name="device_info_title">Informations sur l\'appareil</string>
   <!-- Vendor version -->
@@ -27,4 +30,15 @@
   <string name="xenonota_title">XenonOTA</string>
   <!-- XenonHD version -->
   <string name="xenonhd_maintainer">Mainteneur</string>
+  <!-- Density category -->
+  <string name="density_category">Options de densité</string>
+  <!-- Volume Steps -->
+  <string name="volume_steps_title">Niveaux du volume</string>
+  <string name="volume_steps_alarm_title">Alarme</string>
+  <string name="volume_steps_music_title">Musique</string>
+  <string name="volume_steps_notification_title">Notification</string>
+  <string name="volume_steps_ring_title">Sonnerie</string>
+  <string name="volume_steps_system_title">Système</string>
+  <string name="volume_steps_voice_call_title">Appel vocal</string>
+  <string name="volume_steps_reset">Remise à zéro</string>
 </resources>

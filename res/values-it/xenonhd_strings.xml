@@ -18,13 +18,31 @@
   <!-- Changelog -->
   <string name="changelog_xenonhd_title">Modifiche</string>
   <string name="changelog_xenonhd_error">Impossibile caricare le modifiche</string>
+  <string name="changelog_xenonhd_summary">Visualizza le modifiche della versione corrente</string>
   <!-- Development Settings -->
+  <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
+  <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
+  <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
   <!-- Phone info -->
   <string name="device_info_title">Info dispositivo</string>
   <!-- Vendor version -->
+  <string name="vendor_version">Versione produttore</string>
   <string name="vendor_version_default">Sconosciuto</string>
   <!-- XenonOTA -->
   <string name="xenonota_title">XenonOTA</string>
+  <string name="xenonota_summary">Controlla gli aggiornamenti di XenonHD</string>
   <!-- XenonHD version -->
+  <string name="xenonhd_version">Versione XenonHD</string>
   <string name="xenonhd_maintainer">Manutentore</string>
+  <!-- Density category -->
+  <string name="density_category">Opzioni densità</string>
+  <!-- Volume Steps -->
+  <string name="volume_steps_title">Livelli volume</string>
+  <string name="volume_steps_alarm_title">Sveglia</string>
+  <string name="volume_steps_music_title">Musica</string>
+  <string name="volume_steps_notification_title">Notifiche</string>
+  <string name="volume_steps_ring_title">Suoneria</string>
+  <string name="volume_steps_system_title">Sistema</string>
+  <string name="volume_steps_voice_call_title">Chiamata vocale</string>
+  <string name="volume_steps_reset">Ripristina</string>
 </resources>
