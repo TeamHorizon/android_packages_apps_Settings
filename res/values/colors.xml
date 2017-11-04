@@ -136,5 +136,8 @@
     <color name="battery_maybe_color_dark">#fdd835</color> <!-- Material Yellow 600 -->
     <color name="battery_bad_color_dark">#f44336</color> <!-- Material Red 500 -->
 
+    <color name="accent_device_default_light">@*android:color/accent_device_default_light</color>
+    <color name="secondary_device_default_settings">@*android:color/secondary_device_default_settings</color>
+
 </resources>
 
