@@ -18,8 +18,13 @@
   <!-- Changelog -->
   <string name="changelog_xenonhd_title">Lista de cambios</string>
   <string name="changelog_xenonhd_error">No es posible mostrar la lista de cambios</string>
+  <string name="changelog_xenonhd_summary">Ver cambios de la versión actual</string>
   <!-- Development Settings -->
   <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
+  <plurals name="show_dev_countdown_custom">
+    <item quantity="one">Estás a <xliff:g id="step_count">%1$d</xliff:g> paso de habilitar los ajustes de desarrollo</item>
+    <item quantity="other">Estás a <xliff:g id="step_count">%1$d</xliff:g> paso de habilitar los ajustes de desarrollo</item>
+  </plurals>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
   <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
   <!-- Phone info -->

@@ -54,5 +54,7 @@
   <string name="volume_steps_ring_title">Dzwonek</string>
   <string name="volume_steps_system_title">System</string>
   <string name="volume_steps_voice_call_title">Połączenia głosowe</string>
+  <string name="volume_steps_bluetooth_sco_title">Rozmowa przez Bluetooth</string>
   <string name="volume_steps_reset">Resetuj</string>
+  <string name="link_volume_option_title">Połącz dźwięk połączeń i powiadomień</string>
 </resources>

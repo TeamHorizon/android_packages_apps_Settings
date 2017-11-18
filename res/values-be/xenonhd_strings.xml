@@ -18,27 +18,43 @@
   <!-- Changelog -->
   <string name="changelog_xenonhd_title">Спіс змен</string>
   <string name="changelog_xenonhd_error">Немагчыма загрузіць спіс змен</string>
+  <string name="changelog_xenonhd_summary">Паглядзець змены ў бягучым рэлізе</string>
   <!-- Development Settings -->
   <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
+  <plurals name="show_dev_countdown_custom">
+    <item quantity="one">Вы ў <xliff:g id="step_count">%1$d</xliff:g> кроку ад уключэння налад для распрацоўшчыка</item>
+    <item quantity="few">Вы ў <xliff:g id="step_count">%1$d</xliff:g> кроках ад уключэння налад для распрацоўшчыка</item>
+    <item quantity="other">Вы ў <xliff:g id="step_count">%1$d</xliff:g> кроках ад уключэння налад для распрацоўшчыка</item>
+  </plurals>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
+  <string name="show_dev_on_custom">Параметры для распрацоўшчыкаў уключаны! Будзьце асцярожныя!</string>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
+  <string name="show_dev_already_custom">Параметры для распрацоўнікаў ужо ўключаны!</string>
   <!-- Phone info -->
   <string name="device_info_title">Звесткі аб тэлефоне</string>
+  <string name="custom_encryption_and_credential_settings_summary_on">Прылада зашыфравана</string>
+  <string name="custom_encryption_and_credential_settings_summary_off">Прылада не зашыфравана</string>
   <!-- Vendor version -->
+  <string name="vendor_version">Версія ПЗ вытворцы</string>
   <string name="vendor_version_default">Невядома</string>
   <!-- XenonOTA -->
   <string name="xenonota_title">XenonOTA</string>
+  <string name="xenonota_summary">Праверыць абнаўленні XenonHD</string>
   <!-- XenonHD version -->
+  <string name="xenonhd_version">Версія XenonHD</string>
   <string name="xenonhd_maintainer">Падтрымка мадэлі</string>
   <!-- Density category -->
   <string name="density_category">Параметры шчыльнасці</string>
   <!-- Volume Steps -->
   <string name="volume_steps_title">Узроўні гучнасці</string>
   <string name="volume_steps_alarm_title">Будзільнік</string>
+  <string name="volume_steps_dtmf_title">DTMF</string>
   <string name="volume_steps_music_title">Музыка</string>
   <string name="volume_steps_notification_title">Апавяшчэнні</string>
   <string name="volume_steps_ring_title">Званок</string>
   <string name="volume_steps_system_title">Сістэма</string>
   <string name="volume_steps_voice_call_title">Галасавы выклік</string>
+  <string name="volume_steps_bluetooth_sco_title">Bluetooth выклік</string>
   <string name="volume_steps_reset">Скінуць</string>
+  <string name="link_volume_option_title">Звязаць гучнасць рынгтону і апавяшчэнняў</string>
 </resources>

@@ -21,10 +21,18 @@
   <string name="changelog_xenonhd_summary">Visualizza le modifiche della versione corrente</string>
   <!-- Development Settings -->
   <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
+  <plurals name="show_dev_countdown_custom">
+    <item quantity="one">Ora sei a <xliff:g id="step_count">%1$d</xliff:g> passo dall\'attivare le impostazioni sviluppatore</item>
+    <item quantity="other">Ora sei a <xliff:g id="step_count">%1$d</xliff:g> passi dall\'attivare le impostazioni sviluppatore</item>
+  </plurals>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
+  <string name="show_dev_on_custom">Opzioni per sviluppatori abilitati! Stai attento!</string>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
+  <string name="show_dev_already_custom">Opzioni per sviluppatori già abilitati!</string>
   <!-- Phone info -->
   <string name="device_info_title">Info dispositivo</string>
+  <string name="custom_encryption_and_credential_settings_summary_on">Il dispositivo viene criptato</string>
+  <string name="custom_encryption_and_credential_settings_summary_off">Il dispositivo viene decriptato</string>
   <!-- Vendor version -->
   <string name="vendor_version">Versione produttore</string>
   <string name="vendor_version_default">Sconosciuto</string>
@@ -39,10 +47,13 @@
   <!-- Volume Steps -->
   <string name="volume_steps_title">Livelli volume</string>
   <string name="volume_steps_alarm_title">Sveglia</string>
+  <string name="volume_steps_dtmf_title">DTMF</string>
   <string name="volume_steps_music_title">Musica</string>
   <string name="volume_steps_notification_title">Notifiche</string>
   <string name="volume_steps_ring_title">Suoneria</string>
   <string name="volume_steps_system_title">Sistema</string>
   <string name="volume_steps_voice_call_title">Chiamata vocale</string>
+  <string name="volume_steps_bluetooth_sco_title">Chiamata Bluetooth</string>
   <string name="volume_steps_reset">Ripristina</string>
+  <string name="link_volume_option_title">Collega volume suoneria e notifica</string>
 </resources>

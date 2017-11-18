@@ -21,10 +21,19 @@
   <string name="changelog_xenonhd_summary">Посмотреть изменения в текущем релизе</string>
   <!-- Development Settings -->
   <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
+  <plurals name="show_dev_countdown_custom">
+    <item quantity="one">Остался <xliff:g id="step_count">%1$d</xliff:g> клик для включения настроек для разработчиков.</item>
+    <item quantity="few">Остался <xliff:g id="step_count">%1$d</xliff:g> клика для включения настроек для разработчиков.%1$d%1$d</item>
+    <item quantity="other">Осталось <xliff:g id="step_count">%1$d</xliff:g> кликов для включения настроек для разработчиков.</item>
+  </plurals>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
+  <string name="show_dev_on_custom">Настройки для разработчиков включены! Будьте осторожны!</string>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
+  <string name="show_dev_already_custom">Настройки для разработчиков уже включены!</string>
   <!-- Phone info -->
   <string name="device_info_title">Информация об устройстве</string>
+  <string name="custom_encryption_and_credential_settings_summary_on">Устройство зашифровано</string>
+  <string name="custom_encryption_and_credential_settings_summary_off">Устройство не зашифровано</string>
   <!-- Vendor version -->
   <string name="vendor_version">Версия ПО производителя</string>
   <string name="vendor_version_default">Неизвестно</string>
@@ -39,10 +48,13 @@
   <!-- Volume Steps -->
   <string name="volume_steps_title">Уровни громкости</string>
   <string name="volume_steps_alarm_title">Будильник</string>
+  <string name="volume_steps_dtmf_title">DTMF</string>
   <string name="volume_steps_music_title">Музыка</string>
   <string name="volume_steps_notification_title">Уведомления</string>
   <string name="volume_steps_ring_title">Звонок</string>
   <string name="volume_steps_system_title">Система</string>
   <string name="volume_steps_voice_call_title">Голосовой вызов</string>
+  <string name="volume_steps_bluetooth_sco_title">Bluetooth звонок</string>
   <string name="volume_steps_reset">Сброс</string>
+  <string name="link_volume_option_title">Объединить громкость звонка и уведомлений</string>
 </resources>

@@ -21,10 +21,19 @@
   <string name="changelog_xenonhd_summary">Zobrazit změny v aktuální verzi</string>
   <!-- Development Settings -->
   <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
+  <plurals name="show_dev_countdown_custom">
+    <item quantity="one">Jste <xliff:g id="step_count">%1$d</xliff:g> krok od povolení vývojářských nástrojů</item>
+    <item quantity="few">Jste <xliff:g id="step_count">%1$d</xliff:g> kroky od povolení vývojářských nástrojů</item>
+    <item quantity="other">Jste <xliff:g id="step_count">%1$d</xliff:g> kroků od povolení vývojářských nástrojů</item>
+  </plurals>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
+  <string name="show_dev_on_custom">Možnosti pro vývojáře jsou povoleny! Dávejte si pozor!</string>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
+  <string name="show_dev_already_custom">Možnosti pro vývojáře jsou již povoleny!</string>
   <!-- Phone info -->
   <string name="device_info_title">Informace o telefonu</string>
+  <string name="custom_encryption_and_credential_settings_summary_on">Zařízení je šifrováno</string>
+  <string name="custom_encryption_and_credential_settings_summary_off">Zařízení je dešifrováno</string>
   <!-- Vendor version -->
   <string name="vendor_version">Dodavatel verze</string>
   <string name="vendor_version_default">Neznámá</string>
@@ -39,10 +48,13 @@
   <!-- Volume Steps -->
   <string name="volume_steps_title">Kroky hlasitosti</string>
   <string name="volume_steps_alarm_title">Budík</string>
+  <string name="volume_steps_dtmf_title">DTMF</string>
   <string name="volume_steps_music_title">Hudba</string>
   <string name="volume_steps_notification_title">Upozornění</string>
   <string name="volume_steps_ring_title">Vyzvánení</string>
   <string name="volume_steps_system_title">Systém</string>
   <string name="volume_steps_voice_call_title">Hlasový hovor</string>
+  <string name="volume_steps_bluetooth_sco_title">Bluetooth volání</string>
   <string name="volume_steps_reset">Resetovat</string>
+  <string name="link_volume_option_title">Spojit hlasitost vyzvánění a oznámení</string>
 </resources>
