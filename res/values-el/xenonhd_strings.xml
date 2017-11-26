@@ -21,10 +21,18 @@
   <string name="changelog_xenonhd_summary">Προβολή αλλαγών στην ήδη εγκατεστημένη κυκλοφορία</string>
   <!-- Development Settings -->
   <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
+  <plurals name="show_dev_countdown_custom">
+    <item quantity="one">Απομένει <xliff:g id="step_count">%1$d</xliff:g> βήμα για να ενεργοποιήσετε τις επιλογές για προγραμματιστές</item>
+    <item quantity="other">Απομένει <xliff:g id="step_count">%1$d</xliff:g> βήμα για να ενεργοποιήσετε τις επιλογές για προγραμματιστές</item>
+  </plurals>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
+  <string name="show_dev_on_custom">Ενεργοποιημένες επιλογές για προγραμματιστές! Πρόσεχε!</string>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
+  <string name="show_dev_already_custom">Ήδη ενεργοποιημένες επιλογές για προγραμματιστές!</string>
   <!-- Phone info -->
   <string name="device_info_title">Πληροφορίες τηλεφώνου</string>
+  <string name="custom_encryption_and_credential_settings_summary_on">Η συσκευή είναι κρυπτογραφημένη</string>
+  <string name="custom_encryption_and_credential_settings_summary_off">Η συσκευή είναι αποκρυπτογραφημένη</string>
   <!-- Vendor version -->
   <string name="vendor_version">Έκδοση vendor</string>
   <string name="vendor_version_default">Άγνωστο</string>
@@ -39,10 +47,13 @@
   <!-- Volume Steps -->
   <string name="volume_steps_title">Βήματα έντασης ήχου</string>
   <string name="volume_steps_alarm_title">Ξυπνητήρι</string>
+  <string name="volume_steps_dtmf_title">DTMF</string>
   <string name="volume_steps_music_title">Μουσική</string>
   <string name="volume_steps_notification_title">Ειδοποίηση</string>
   <string name="volume_steps_ring_title">Ήχος κλησης</string>
   <string name="volume_steps_system_title">Σύστημα</string>
   <string name="volume_steps_voice_call_title">Φωνητική κλήση</string>
+  <string name="volume_steps_bluetooth_sco_title">Bluetooth κλήση</string>
   <string name="volume_steps_reset">Επαναφορά</string>
+  <string name="link_volume_option_title">Σύνδεση έντασης κουδουνίσματος και ειδοποίησης</string>
 </resources>
