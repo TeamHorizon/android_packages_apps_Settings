@@ -57,10 +57,6 @@
                 android:title="@string/firmware_version"
                 android:summary="@string/device_info_default"/>
 
-        <!-- LineageOS API version -->
-        <org.lineageos.internal.preference.deviceinfo.LineageAPIVersionPreference
-                android:key="lineage_api_level" />
-
         <!-- Security patch level -->
         <Preference android:key="security_patch"
                 android:title="@string/security_patch"
@@ -76,6 +72,10 @@
         <!-- XenonHD Maintainer -->
         <Preference android:key="xenonhd_maintainer"
                 android:title="@string/xenonhd_maintainer" />
+
+        <!-- LineageOS API version -->
+        <org.lineageos.internal.preference.deviceinfo.LineageAPIVersionPreference
+                android:key="lineage_api_level" />
 
         <!-- Device FCC equipment id -->
         <Preference
