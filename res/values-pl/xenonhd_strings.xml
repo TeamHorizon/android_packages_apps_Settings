@@ -57,4 +57,5 @@
   <string name="volume_steps_bluetooth_sco_title">Rozmowa przez Bluetooth</string>
   <string name="volume_steps_reset">Resetuj</string>
   <string name="link_volume_option_title">Połącz dźwięk połączeń i powiadomień</string>
+  <string name="select_sim_for_sms">Wybierz kartę SIM do SMS</string>
 </resources>

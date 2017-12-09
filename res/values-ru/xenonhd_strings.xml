@@ -23,7 +23,7 @@
   <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
   <plurals name="show_dev_countdown_custom">
     <item quantity="one">Остался <xliff:g id="step_count">%1$d</xliff:g> клик для включения настроек для разработчиков.</item>
-    <item quantity="few">Остался <xliff:g id="step_count">%1$d</xliff:g> клика для включения настроек для разработчиков.%1$d%1$d</item>
+    <item quantity="few">Остался <xliff:g id="step_count">%1$d</xliff:g> клика для включения настроек для разработчиков.</item>
     <item quantity="other">Осталось <xliff:g id="step_count">%1$d</xliff:g> кликов для включения настроек для разработчиков.</item>
   </plurals>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
