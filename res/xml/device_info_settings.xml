@@ -71,14 +71,6 @@
                 android:title="@string/firmware_version"
                 android:summary="@string/summary_placeholder"/>
 
-        <!-- LineageOS version -->
-        <org.lineageos.internal.preference.deviceinfo.LineageVersionPreference
-                android:key="lineage_version" />
-
-        <!-- LineageOS API version -->
-        <org.lineageos.internal.preference.deviceinfo.LineageAPIVersionPreference
-                android:key="lineage_api_level" />
-
         <!-- Security patch level -->
         <Preference android:key="security_patch"
                 android:title="@string/security_patch"
@@ -86,6 +78,10 @@
                 <intent android:action="android.intent.action.VIEW"
                         android:data="https://source.android.com/security/bulletin/" />
         </Preference>
+
+        <!-- LineageOS API version -->
+        <org.lineageos.internal.preference.deviceinfo.LineageAPIVersionPreference
+                android:key="lineage_api_level" />
 
         <!-- Device FCC equipment id -->
         <Preference
