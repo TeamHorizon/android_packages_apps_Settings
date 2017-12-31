@@ -29,6 +29,7 @@ import android.text.TextUtils;
 import android.util.Log;
 
 import com.android.settings.R;
+import com.android.settings.core.PreferenceControllerMixin;
 import com.android.settingslib.core.AbstractPreferenceController;
 import com.android.settingslib.core.lifecycle.Lifecycle;
 import com.android.settingslib.core.lifecycle.LifecycleObserver;
@@ -37,7 +38,7 @@ import com.android.settingslib.RestrictedLockUtils;
 
 
 public class XenonHDMaintainerPreferenceController extends AbstractPreferenceController
-        implements LifecycleObserver, OnResume {
+        implements PreferenceControllerMixin, LifecycleObserver, OnResume {
 
     private static final String TAG = "XenonHDMaintainerPref";
     private static final String KEY_XENONHD_MAINTAINER = "xenonhd_maintainer";
