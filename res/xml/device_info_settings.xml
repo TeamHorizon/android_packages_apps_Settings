@@ -79,6 +79,16 @@
         settings:keywords="@string/keywords_android_version"
         android:summary="@string/summary_placeholder"/>
 
+    <!-- XenonHD Version -->
+    <Preference android:key="xenonhd_version"
+        android:title="@string/xenonhd_version"
+        android:summary="@string/xenonhd_version_default" />
+
+    <!-- XenonHD Maintainer -->
+    <Preference android:key="xenonhd_maintainer"
+        android:title="@string/xenonhd_maintainer"
+        android:summary="@string/xenonhd_maintainer_default" />
+
     <!--IP address -->
     <Preference
         android:key="wifi_ip_address"

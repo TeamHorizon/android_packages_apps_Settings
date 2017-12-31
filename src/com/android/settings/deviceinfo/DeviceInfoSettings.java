@@ -33,6 +33,8 @@ import com.android.settings.deviceinfo.imei.ImeiInfoPreferenceController;
 import com.android.settings.deviceinfo.simstatus.SimStatusPreferenceController;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settings.search.Indexable;
+import com.android.settings.xenonhd.deviceinfo.XenonHDMaintainerPreferenceController;
+import com.android.settings.xenonhd.deviceinfo.XenonHDVersionPreferenceController;
 import com.android.settingslib.core.AbstractPreferenceController;
 import com.android.settingslib.core.lifecycle.Lifecycle;
 
@@ -139,6 +141,8 @@ public class DeviceInfoSettings extends DashboardFragment implements Indexable {
         controllers.add(new FccEquipmentIdPreferenceController(context));
         controllers.add(
                 new BuildNumberPreferenceController(context, activity, fragment, lifecycle));
+        controllers.add(new XenonHDMaintainerPreferenceController(context, lifecycle));
+        controllers.add(new XenonHDVersionPreferenceController(context, lifecycle));
         return controllers;
     }
 
