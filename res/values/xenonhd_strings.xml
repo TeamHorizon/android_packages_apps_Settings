@@ -17,6 +17,7 @@
     <!-- About phone screen -->
     <string name="xenonhd_version">XenonHD version</string>
     <string name="xenonhd_maintainer">Maintainer</string>
+    <string name="device_info_title">Phone info</string>
 
     <!-- XenonHD Settings -->
     <string name="xenonhd_settings_title">XenonHD Hub</string>
