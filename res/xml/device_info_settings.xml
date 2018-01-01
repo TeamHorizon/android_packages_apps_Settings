@@ -101,6 +101,12 @@
                 android:title="@string/kernel_version"
                 android:summary="@string/summary_placeholder"/>
 
+        <!-- Vendor Version -->
+        <Preference
+                android:key="vendor_version"
+                android:title="@string/vendor_version"
+                android:summary="@string/vendor_version_default"/>
+
         <!-- Build date -->
         <org.lineageos.internal.preference.deviceinfo.LineageBuildDatePreference
                 android:key="build_date" />
