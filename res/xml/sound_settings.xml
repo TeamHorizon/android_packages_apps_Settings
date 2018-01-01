@@ -53,12 +53,6 @@
                 android:key="vibrate_when_ringing"
                 android:title="@string/vibrate_when_ringing_title" />
 
-        <!-- Volume Steps -->
-        <Preference
-                android:key="volume_steps"
-                android:title="@string/volume_steps_title"
-                android:fragment="com.android.settings.xenonhd.VolumeSteps" />
-
         <!-- Interruptions -->
         <com.android.settingslib.RestrictedPreference
                 android:key="zen_mode"
@@ -67,6 +61,12 @@
                 settings:keywords="@string/keywords_sounds_and_notifications_interruptions"
                 android:fragment="com.android.settings.notification.ZenModeSettings"
                 settings:allowDividerAbove="true" />
+
+        <!-- Volume Steps -->
+        <Preference
+                android:key="volume_steps"
+                android:title="@string/volume_steps_title"
+                android:fragment="com.android.settings.xenonhd.VolumeSteps" />
 
         <!-- Phone ringtone -->
         <com.android.settings.DefaultRingtonePreference
