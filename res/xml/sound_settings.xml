@@ -118,6 +118,13 @@
           android:key="charging_sounds"
           android:title="@string/charging_sounds_title" />
 
+        <!-- Screenshot tone -->
+        <com.android.settings.preferences.SystemSettingSwitchPreference
+          android:key="screenshot_sound"
+          android:title="@string/screenshot_sound_title"
+          android:summary="@string/screenshot_sound_summary"
+          android:defaultValue="true" />
+
         <!-- Custom charging sounds -->
         <org.lineageos.internal.lineageparts.LineagePartsPreference
           android:key="charging_sounds_settings"
