@@ -54,4 +54,7 @@
      <string name="filter_substratum_apps">Substratum overlays</string>
      <string name="menu_show_substratum">Show overlays</string>
      <string name="menu_hide_substratum">Hide overlays</string>
+
+     <!-- Volume link notification -->
+     <string name="volume_link_notification_title">Link ring and notification volumes</string>
 </resources>
