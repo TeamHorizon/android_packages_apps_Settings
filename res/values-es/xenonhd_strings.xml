@@ -93,6 +93,8 @@
   <string name="qs_columns_title">Columnas</string>
   <string name="qs_easy_toggle_title">Modo avanzado QS Easy Toggle</string>
   <string name="qs_easy_toggle_summary">Activar una pulsación para activar/desactivar Wi-Fi, datos móviles y bluetooth. Pulsación larga para ver ajustes avanzados</string>
+  <string name="qs_tile_single_tap_title">Spansh</string>
+  <string name="qs_tile_single_tap_summary">Español</string>
   <!-- Quick unlock -->
   <string name="quick_unlock_warning">Precaución de desbloqueo rápido</string>
   <string name="quick_unlock_warning_summary">Esta característica se salta importantes mecanismos de seguridad y seguramente provoca un mal funcionamiento de la función multiusuario. Usar bajo tu propia responsabilidad</string>
@@ -286,7 +288,18 @@
   <string name="screen_state_on_delay_summary">Número de segundos a esperar antes de realizar acciones después de apagar la pantalla</string>
   <!-- Fingerprint max failed attempts -->
   <string name="fp_max_failed_attempts">Número máximo de intentos de la huella digital</string>
+  <string name="fp_three_attempts">Español</string>
+  <string name="fp_five_attempts">Español</string>
+  <string name="fp_ten_attempts">Español</string>
+  <string name="fp_fifteen_attempts">Spanish</string>
   <!-- Lockscreen battery info indicator  -->
+  <string name="lockscreen_battery_info_title">Spanish</string>
+  <string name="lockscreen_battery_info_summary">Spanish</string>
   <!-- Status bar - Battery saver color -->
+  <string name="status_bar_battery_saver_color_title">Color del ahorrador de batería</string>
+  <string name="status_bar_battery_saver_color_summary">Nota: Si el ahorrador de batería ya está habilitado, para que el nuevo color haga efecto, ¡vuelve a activar el ahorrador de batería!</string>
   <!-- Reset battery stats -->
+  <string name="ok">Aceptar</string>
+  <string name="menu_stats_reset">Reiniciar estadísticas</string>
+  <string name="reset_stats_msg">Las estadísticas de la batería van a restablecerse</string>
 </resources>

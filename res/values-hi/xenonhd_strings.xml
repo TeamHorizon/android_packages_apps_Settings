@@ -22,6 +22,7 @@
   <!-- Notification sound timeout -->
   <!-- Randomize MAC addresses -->
   <!-- Volume Steps -->
+  <string name="volume_steps_music_title">संगीत</string>
   <!-- DayNight Theme -->
   <!-- Screenshot sound -->
   <!-- Manage applications: show substratum overlays -->

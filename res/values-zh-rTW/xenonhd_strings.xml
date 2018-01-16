@@ -93,6 +93,8 @@
   <string name="qs_columns_title">列</string>
   <string name="qs_easy_toggle_title">進階快速設定簡易切換</string>
   <string name="qs_easy_toggle_summary">啟用輕觸動作可啟用/停用 Wi-Fi、行動數據和藍牙。 長按可查看進階設定</string>
+  <string name="qs_tile_single_tap_title">輕觸一下圖塊</string>
+  <string name="qs_tile_single_tap_summary">透過輕觸一下自訂工具中的圖塊新增/刪除快速設定的圖塊</string>
   <!-- Quick unlock -->
   <string name="quick_unlock_warning">快速解鎖警告</string>
   <string name="quick_unlock_warning_summary">此功能繞過重要的安全機制，幾乎肯定會誤操作多使用者支援。使用時自擔風險</string>

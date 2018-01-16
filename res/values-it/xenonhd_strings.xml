@@ -93,6 +93,8 @@
   <string name="qs_columns_title">Colonne</string>
   <string name="qs_easy_toggle_title">Attivazione Avanzata Impostazioni Rapide</string>
   <string name="qs_easy_toggle_summary">Attiva o disattiva il Wi-Fi, dati mobili e bluetooth con un tocco. Pressione prolungata per visualizzare le impostazioni avanzate</string>
+  <string name="qs_tile_single_tap_title">Tile a singolo tocco</string>
+  <string name="qs_tile_single_tap_summary">Aggiungi/rimuovi i tile delle impostazioni rapide con un singolo tocco</string>
   <!-- Quick unlock -->
   <string name="quick_unlock_warning">Attenzione di sblocco rapido</string>
   <string name="quick_unlock_warning_summary">Questa funzionalità consente di ignorare i meccanismi di sicurezza importanti e quasi certamente pregiudica il supporto per utenti multipli. Utilizzare a proprio rischio</string>

@@ -93,6 +93,8 @@
   <string name="qs_columns_title">Слупкі</string>
   <string name="qs_easy_toggle_title">Пашыраны спрошчаны перамыкач хуткіх налад</string>
   <string name="qs_easy_toggle_summary">Уключыце дзеянне па адзінкаваму націску для ўключэння / выключэння Wi-Fi, мабільных дадзеных і Bluetooth. Доўгі націск для прагляду дадатковых налад</string>
+  <string name="qs_tile_single_tap_title">Адным націскам пліткі</string>
+  <string name="qs_tile_single_tap_summary">Даданне/выдаленне пліткі хуткіх налад адзінкавым націскам на плітку ў наладчыку</string>
   <!-- Quick unlock -->
   <string name="quick_unlock_warning">Папярэджанне</string>
   <string name="quick_unlock_warning_summary">Дадзеная магчымасць абыходзіць важны ахоўны механізм і дрэнна ўплывае на падтрымку некалькіх карыстальнікаў на прыладзе. Выкарыстоўвайце на сваю рызыку</string>
@@ -295,6 +297,7 @@
   <string name="lockscreen_battery_info_summary">Адлюстраванне току, напружання і тэмпературы батарэі на экране блакавання падчас зарадкі</string>
   <!-- Status bar - Battery saver color -->
   <string name="status_bar_battery_saver_color_title">Каляровая паласа ў рэжыме эканоміі батарэі</string>
+  <string name="status_bar_battery_saver_color_summary">Заўвага: Калі ўключаны рэжым энергазберажэння батарэі, тады для актывацыі новага колеру светлавога індыкатара неабходна выключыць і зноў ўключыць рэжым энергазберажэння!</string>
   <!-- Reset battery stats -->
   <string name="ok">OK</string>
   <string name="menu_stats_reset">Скід статыстыкі</string>

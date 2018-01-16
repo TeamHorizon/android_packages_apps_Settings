@@ -93,6 +93,8 @@
   <string name="qs_columns_title">Stĺpce</string>
   <string name="qs_easy_toggle_title">Jendnoduché prepnutie dlaždíc rýchlych nastavení</string>
   <string name="qs_easy_toggle_summary">Povoľte akciu jedným kliknutím na možnosť povoliť/zakázať mobilné dáta, Wi-Fi a Bluetooth. Dlhým kliknutím zobrazíte upresňujúce nastavenia</string>
+  <string name="qs_tile_single_tap_title">Jeden klik na dlaždicu</string>
+  <string name="qs_tile_single_tap_summary">Pridať/odstrániť dlaždice rýchlych nastavení jediným kliknutím na dlaždice v nástroji na prispôsobenie</string>
   <!-- Quick unlock -->
   <string name="quick_unlock_warning">Upozornenie na rychle odomknutie</string>
   <string name="quick_unlock_warning_summary">Táto funkcia obchádza dôležité bezpečnostné mechanizmy a nepodporuje režim viacerých používateľov. Použite na vlastné riziko</string>

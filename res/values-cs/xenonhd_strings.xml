@@ -93,6 +93,8 @@
   <string name="qs_columns_title">Sloupce</string>
   <string name="qs_easy_toggle_title">Snadné přepnutí QS dlaždic</string>
   <string name="qs_easy_toggle_summary">Povolte akci jedním klepnutím na možnost povolit/zakázat mobilní data, Wi-Fi a Bluetooth. Dlouhým stisknutím zobrazíte upřesňující nastavení</string>
+  <string name="qs_tile_single_tap_title">Jedno klepnutí na dlaždici</string>
+  <string name="qs_tile_single_tap_summary">Přidat/odebrat dlaždice QS jedním klepnutím na dlaždice v nástroji pro přizpůsobení</string>
   <!-- Quick unlock -->
   <string name="quick_unlock_warning">Upozornění rychlého odemknutí</string>
   <string name="quick_unlock_warning_summary">Tato funkce obchází důležité bezpečnostní mechanismy a nepodporuje režim více uživatelů. Používáte na vlastní nebezpečí</string>

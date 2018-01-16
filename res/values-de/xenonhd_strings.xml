@@ -93,6 +93,8 @@
   <string name="qs_columns_title">Spalten</string>
   <string name="qs_easy_toggle_title">Erweiterter QS Easy Toggle</string>
   <string name="qs_easy_toggle_summary">Ermöglicht das Aktivieren und Deaktivieren von Wi-Fi, Mobilen Daten und Bluetooth mit einem Tap. Lange drücken, um erweiterte Einstellungen zu sehen</string>
+  <string name="qs_tile_single_tap_title">Einmaliges Antippen der Kacheln</string>
+  <string name="qs_tile_single_tap_summary">Kacheln im Bearbeitungsmodus durch einmaliges Antippen hinzufügen/entfernen</string>
   <!-- Quick unlock -->
   <string name="quick_unlock_warning">Schnellfreischaltungs-Warnung</string>
   <string name="quick_unlock_warning_summary">Diese Funktion umgeht wichtige Sicherheitsmechanismen und wird mit hoher Wahrscheinlichkeit im Multi-User-Modus unerwartete Wirkungen zeigen</string>

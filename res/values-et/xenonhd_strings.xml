@@ -93,6 +93,8 @@
   <string name="qs_columns_title">Veerud</string>
   <string name="qs_easy_toggle_title">Täiustatud Kiirseadete lihtne vahetamine</string>
   <string name="qs_easy_toggle_summary">Võimalda ühe vajutusega lubada/keelata Wi-Fi, Mobiilne andmeside ja Bluetooth. Pikk vajutus näitab täpsemaid seadeid</string>
+  <string name="qs_tile_single_tap_title">Plaat ühe vajutusega</string>
+  <string name="qs_tile_single_tap_summary">Lisa/eemalda kiirseadete plaat ühekordselt, puudutades plaati kohandajas</string>
   <!-- Quick unlock -->
   <string name="quick_unlock_warning">Kiiravamise hoiatus</string>
   <string name="quick_unlock_warning_summary">See funktsioon eirab olulisi kaitsemehhanisme ja peaaegu kindlasti häirib mitmik-kasutaja tuge. Kasutage omal vastutusel</string>
@@ -174,15 +176,28 @@
   <string name="hide_lockscreen_date_summary_on">Näita kuupäeva kella vidina all</string>
   <string name="hide_lockscreen_date_summary_off">Ära näita kuupäeva kella vidina all </string>
   <string name="hide_lockscreen_alarm_title">Alarmi tekst</string>
+  <string name="hide_lockscreen_alarm_summary_on">Alarmi tekst kellavidina all on nähtav</string>
+  <string name="hide_lockscreen_alarm_summary_off">Alarmi tekst kellavidina all on peidetud</string>
   <!-- Emergency button -->
   <string name="emergency_button_title">Hädaabi nupp</string>
   <string name="emergency_button_summary_on">Hädaabi nuppu näidatakse lukustuse ekraanil</string>
   <string name="emergency_button_summary_off">Hädaabi nuppu ei näidata lukustuse ekraanil</string>
   <!-- Fingerprint authentication vibration -->
+  <string name="fprint_sucess_vib_title">Vibratsioon sõrmejälje autentimisel</string>
+  <string name="fprint_sucess_vib_summary">Vibreeri edukal sõrmejälje autentimisel</string>
   <!-- Fingerprint unlock keystore -->
+  <string name="fp_unlock_keystore_title">Sõrmejäljega avamine peale taaskäivitamist</string>
+  <string name="fp_unlock_keystore_summary">Luba seadet alati avada sõrmejäljega, isegi peale taaskäivitust</string>
   <!-- Hide Statusbar on Lockscreen -->
+  <string name="lockscreen_hide_status_bar_title">Peita olekuriba</string>
+  <string name="lockscreen_hide_status_bar_summary">Puuduta olekuriba, et lülitada nähtavust sisse või välja</string>
   <!-- Force authorize substratum packages -->
+  <string name="force_authorize_substratum_packages_title">Teema rakendusi jõuga autoriseerima</string>
+  <string name="force_authorize_substratum_packages_summary">Luba teemarakendusi tundmatutelt allikatelt</string>
   <!-- QS tile labels visibility -->
+  <string name="qs_menu_item_titles">Kiirseade plaatide sildid</string>
+  <string name="qs_menu_item_titles_summaryOn">Sildid kuvatakse</string>
+  <string name="qs_menu_item_titles_summaryOff">Sildid on peidetud</string>
   <!-- Color Picker -->
   <string name="dialog_color_picker">Värvi valija</string>
   <string name="press_color_to_apply">Värvi rakendamiseks vajutage värvi peale</string>
@@ -190,12 +205,56 @@
   <string name="set">Määra</string>
   <string name="color_default">Vaikimisi</string>
   <!-- Carrier label -->
+  <string name="carrier_title">Kärjeteate kuvamine</string>
+  <string name="carrier_options_summary">Kärjeteate kohandamine</string>
+  <string name="custom_carrier_label_title">Kohandatud kärjeteade</string>
+  <string name="custom_carrier_label_explain">Palun sisestage uus silt. Jätke tühjaks, kui tahate silti tagasi originaali.</string>
+  <string name="custom_carrier_label_notset">Kohandatud silt pole seatud</string>
+  <string name="show_carrier_title">Kärjeteate silt</string>
   <string name="show_carrier_disabled">Keelatud</string>
+  <string name="show_carrier_keyguard">Ainult lukustuskuva</string>
+  <string name="show_carrier_statusbar">Ainult olekuriba</string>
+  <string name="show_carrier_both">Lukustuskuva ja olekuriba</string>
+  <string name="show_carrier_enabled">Lukustuskuva ja olekuriba</string>
+  <string name="status_bar_carrier_color">Kärjeteate sildi värvus</string>
+  <string name="status_bar_carrier_size">Kärjeteate sildi teksti suurus</string>
+  <string name="status_bar_carrier_font_style_title">Kärjeteate sildi font</string>
+  <string name="number_of_notifications_title">Teatiste arv</string>
+  <string name="carrier_label_hide_label_title">Peida teatised</string>
+  <string name="carrier_label_number_of_notification_icons_title">Maksimaalne arv ikoone enne peitmist</string>
+  <string name="status_bar_font_style_title">Font</string>
   <string name="status_bar_font_normal">Tavaline</string>
+  <string name="status_bar_font_italic">Kursiiv</string>
+  <string name="status_bar_font_bold">Rasvane</string>
+  <string name="status_bar_font_bold_italic">Paks kursiiv</string>
   <string name="status_bar_font_light">Valgus</string>
+  <string name="status_bar_font_light_italic">Kerge kursiiv</string>
+  <string name="status_bar_font_thin">Õhuke</string>
+  <string name="status_bar_font_thin_italic">Õhuke kursiiv</string>
+  <string name="status_bar_font_condensed">Lühendatud</string>
+  <string name="status_bar_font_condensed_italic">Lühendatud kursiiv</string>
+  <string name="status_bar_font_condensed_light">Kondenseeritud valgus</string>
+  <string name="status_bar_font_condensed_light_italic">Lühendatud kerge kursiiv</string>
+  <string name="status_bar_font_condensed_bold">Lühendatud rasvane</string>
+  <string name="status_bar_font_condensed_bold_italic">Lühendatud rasvane kursiiv</string>
+  <string name="status_bar_font_medium">Keskmine</string>
+  <string name="status_bar_font_medium_italic">Keskmine kursiiv</string>
+  <string name="status_bar_font_black">Must</string>
+  <string name="status_bar_font_black_italic">Must kursiiv</string>
   <!-- Lock Clock Fonts -->
   <string name="lock_date_font_title">Kuupäev</string>
+  <string name="lock_clock_font_bold">Rasvane</string>
   <string name="lock_clock_font_light">Valgus</string>
+  <string name="lock_clock_font_italic">Kursiiv</string>
+  <string name="lock_clock_font_bold_italic">Paks kursiiv</string>
+  <string name="lock_clock_font_light_italic">Kerge kursiiv</string>
+  <string name="lock_clock_font_thin_italic">Õhuke kursiiv</string>
+  <string name="lock_clock_font_thin">Õhuke</string>
+  <string name="lock_clock_font_condensed_normal">Lühendatud</string>
+  <string name="lock_clock_font_condensed_italic">Lühendatud kursiiv</string>
+  <string name="lock_clock_font_condensed_bold">Lühendatud rasvane</string>
+  <string name="lock_clock_font_medium_normal">Keskmine</string>
+  <string name="lock_clock_font_medium_italic">Keskmine kursiiv</string>
   <!-- Screen state service -->
   <!-- Fingerprint max failed attempts -->
   <!-- Lockscreen battery info indicator  -->

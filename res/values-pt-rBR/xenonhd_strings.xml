@@ -63,6 +63,7 @@
   <string name="screenshot_sound_title">Som de captura de tela</string>
   <string name="screenshot_sound_summary">Tocar efeito de som ao capturar tela</string>
   <!-- Manage applications: show substratum overlays -->
+  <string name="filter_substratum_apps">Sobreposições do substratum</string>
   <string name="menu_show_substratum">Mostrar overlays</string>
   <string name="menu_hide_substratum">Esconder os overlays</string>
   <!-- Manage applications: show substratum icon overlays -->
@@ -76,6 +77,7 @@
   <string name="xenonhd_ui_title">Interface</string>
   <!-- Selinux Switch -->
   <string name="selinux_switch_title">Cuidado do SELinux Switch</string>
+  <string name="selinux_switch_summary">SELinux é um conjunto de modificações do kernel e ferramentas de espaço de usuário. Alterando modos pode causar efeitos indesejados. Permissivo recomendado. Use a seu próprio risco</string>
   <string name="selinux_title">Modo do SElinux</string>
   <string name="selinux_permissive_title">Permissivo</string>
   <string name="selinux_enforcing_title">Impondo</string>
@@ -89,7 +91,10 @@
   <string name="qs_rows_portrait_title">Linhas (retrato)</string>
   <string name="qs_rows_landscape_title">Linhas (paisagem)</string>
   <string name="qs_columns_title">Colunas</string>
+  <string name="qs_easy_toggle_title">Alternador avançado e fácil das Quick Settings</string>
   <string name="qs_easy_toggle_summary">Habilita o clique único para habilitar/desabilitar Wi-Fi, Dados Móveis e Bluetooth. Pressione para ver as configurações avançadas</string>
+  <string name="qs_tile_single_tap_title">Toque único nas tiles Qs</string>
+  <string name="qs_tile_single_tap_summary">Adicionar/remover Qs Tile com um único toque</string>
   <!-- Quick unlock -->
   <string name="quick_unlock_warning">Precaução de desbloqueio rápida</string>
   <string name="quick_unlock_warning_summary">Esta característica ignora os mecanismos de segurança importante e quase certamente maltrata o suporte a múltiplos usuários. Use a seu próprio risco</string>
@@ -157,14 +162,22 @@
   <string name="remove_tile_summaries_summary_enabled">Placas de painéis estão habilitadas</string>
   <string name="remove_tile_summaries_summary_disabled">Placas de painéis estão desabilitadas</string>
   <string name="dashboard_conditions_title">Condições</string>
+  <string name="summary_dashboard_conditions_enabled">Condições do painel de controle estão habilitadas</string>
+  <string name="summary_dashboard_conditions_disabled">Condições do painel de controle estão desabilitadas</string>
   <string name="dashboard_columns_title">Colunas do painel de controle</string>
   <string name="dashboard_columns_summary">Altera o número de colunas exibidas no painel de controle</string>
   <string name="dashboard_columns_portrait_title">Colunas (retrato)</string>
   <string name="dashboard_columns_landscape_title">Colunas (paisagem)</string>
   <!-- Hide Lockscreen clock, date, & alarm -->
   <string name="hide_lockscreen_clock_title">Widget de relógio</string>
+  <string name="hide_lockscreen_clock_summary_on">Widget de relógio mostrado no lockscreen</string>
+  <string name="hide_lockscreen_clock_summary_off">Widget de relógio escondido no lockscreen</string>
   <string name="hide_lockscreen_date_title">Widget de data</string>
+  <string name="hide_lockscreen_date_summary_on">Data debaixo do widget de relógio mostrado</string>
+  <string name="hide_lockscreen_date_summary_off">Data debaixo do widget de relógio escondido </string>
   <string name="hide_lockscreen_alarm_title">Texto de alarme</string>
+  <string name="hide_lockscreen_alarm_summary_on">Texto de alarme sob o widget de relógio mostrado</string>
+  <string name="hide_lockscreen_alarm_summary_off">Texto de alarme sob o widget de relógio escondido</string>
   <!-- Emergency button -->
   <string name="emergency_button_title">Botão de emergência</string>
   <string name="emergency_button_summary_on">Exibir botão de emergência na tela de bloqueio</string>
@@ -179,7 +192,10 @@
   <string name="lockscreen_hide_status_bar_title">Ocultar a barra de status</string>
   <string name="lockscreen_hide_status_bar_summary">Toque a barra de status para alternar a visibilidade</string>
   <!-- Force authorize substratum packages -->
+  <string name="force_authorize_substratum_packages_title">Força autorizar cada app de temas</string>
+  <string name="force_authorize_substratum_packages_summary">Permitir temas de fontes desconhecidas</string>
   <!-- QS tile labels visibility -->
+  <string name="qs_menu_item_titles">Nomes visíveis das Tiles Qs</string>
   <!-- Color Picker -->
   <string name="dialog_color_picker">Selecionador de cores</string>
   <string name="press_color_to_apply">Pressione a cor abaixo para aplicar</string>

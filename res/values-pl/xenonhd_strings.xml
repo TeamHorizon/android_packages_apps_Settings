@@ -93,6 +93,8 @@
   <string name="qs_columns_title">Kolumny</string>
   <string name="qs_easy_toggle_title">Łatwe przełączanie</string>
   <string name="qs_easy_toggle_summary">Pojedyncze dotknięcie przełącza Wi-Fi, Dane Komórkowe, oraz Bluetooth. Przytrzymaj, aby rozwinąć zaawansowane ustawienia</string>
+  <string name="qs_tile_single_tap_title">Pojedyncze dotknięcie</string>
+  <string name="qs_tile_single_tap_summary">Dodawanie/usuwanie kafelków QS pojedynczym dotknięciem</string>
   <!-- Quick unlock -->
   <string name="quick_unlock_warning">Uwagi do szybkiego odblokowywania</string>
   <string name="quick_unlock_warning_summary">Ta funkcja omija ważne mechanizmy zabezpieczeń i prawie na pewno psuje obsługę wielu użytkowników. Używasz tylko na własne ryzyko</string>
@@ -206,7 +208,7 @@
   <string name="carrier_title">Etykieta operatora</string>
   <string name="carrier_options_summary">Własna etykieta</string>
   <string name="custom_carrier_label_title">Własna etykieta operatora</string>
-  <string name="custom_carrier_label_explain">Wprowadź własny tekst. Pozostaw puste, aby powrócić do domyślnego.</string>
+  <string name="custom_carrier_label_explain">Wprowadź własny tekst. Pozostaw puste, aby użyć domyślnego</string>
   <string name="custom_carrier_label_notset">Własny tekst nie został ustawiony</string>
   <string name="show_carrier_title">Etykieta operatora</string>
   <string name="show_carrier_disabled">Wyłączone</string>

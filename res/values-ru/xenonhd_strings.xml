@@ -93,6 +93,8 @@
   <string name="qs_columns_title">Количество столбцов</string>
   <string name="qs_easy_toggle_title">Расширенный упрощенный переключатель быстрых настроек</string>
   <string name="qs_easy_toggle_summary">Включите действие по одиночному нажатию для включения/выключения Wi-Fi, мобильных данных и Bluetooth. Длительное нажатие для просмотра дополнительных настроек</string>
+  <string name="qs_tile_single_tap_title">Одним нажатием плитки</string>
+  <string name="qs_tile_single_tap_summary">Добавление/удаление плитки быстрых настроек единичным нажатием на плитку в настройщике</string>
   <!-- Quick unlock -->
   <string name="quick_unlock_warning">Предупреждение</string>
   <string name="quick_unlock_warning_summary">Данная возможность обходит важный защитный механизм и плохо влияет на поддержку нескольких пользователей на устройстве. Используйте на свой риск</string>
