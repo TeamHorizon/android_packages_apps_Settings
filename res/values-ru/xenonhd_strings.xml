@@ -57,4 +57,5 @@
   <string name="volume_steps_bluetooth_sco_title">Bluetooth звонок</string>
   <string name="volume_steps_reset">Сброс</string>
   <string name="link_volume_option_title">Объединить громкость звонка и уведомлений</string>
+  <string name="select_sim_for_sms">Выбор SIM-карты для SMS</string>
 </resources>

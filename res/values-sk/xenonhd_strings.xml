@@ -57,4 +57,5 @@
   <string name="volume_steps_bluetooth_sco_title">Bluetooth volanie</string>
   <string name="volume_steps_reset">Resetovať</string>
   <string name="link_volume_option_title">Prepojiť hlasitosť zvonenia a upozornení</string>
+  <string name="select_sim_for_sms">Výber SIM karty pre SMS</string>
 </resources>

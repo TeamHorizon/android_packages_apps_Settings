@@ -56,4 +56,5 @@
   <string name="volume_steps_bluetooth_sco_title">Bluetooth κλήση</string>
   <string name="volume_steps_reset">Επαναφορά</string>
   <string name="link_volume_option_title">Σύνδεση έντασης κουδουνίσματος και ειδοποίησης</string>
+  <string name="select_sim_for_sms">Επιλέξτε μια κάρτα SIM για SMS</string>
 </resources>

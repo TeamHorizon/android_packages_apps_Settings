@@ -25,6 +25,7 @@
   <!-- Vendor version -->
   <string name="vendor_version_default">알 수 없는</string>
   <!-- XenonOTA -->
+  <string name="xenonota_title">XenonOTA</string>
   <!-- XenonHD version -->
   <!-- Density category -->
   <!-- Volume Steps -->
