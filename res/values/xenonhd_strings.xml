@@ -42,4 +42,7 @@
      <string name="selinux_status_disabled">Disabled</string>
      <string name="selinux_status_permissive">Permissive</string>
      <string name="selinux_status_enforcing">Enforcing</string>
+
+     <!-- Notification log -->
+     <string name="notification_log_summary">Show notifications history log</string>
 </resources>
