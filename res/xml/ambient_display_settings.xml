@@ -37,14 +37,15 @@
             android:title="@string/ambient_display_pickup_title"
             android:fragment="com.android.settings.gestures.PickupGestureSettings" />
 
-    </PreferenceCategory>
-
-    <PreferenceCategory>
-
         <SwitchPreference
             android:key="ambient_display_notification"
             android:title="@string/doze_title"
             android:summary="@string/doze_summary" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+            android:title="@string/ambient_display_media_cat">
 
         <ListPreference
             android:key="force_ambient_for_media"

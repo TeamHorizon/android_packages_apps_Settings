@@ -66,6 +66,7 @@
     <string name="custom_encryption_and_credential_settings_summary_off">Device is decrypted</string>
 
     <!-- AmbientDisplay music ticker -->
+    <string name="ambient_display_media_cat">Now playing</string>
     <string name="force_ambient_for_media_pref_title">Ambient Music Ticker</string>
     <string name="force_ambient_for_media_off">Disabled</string>
     <string name="force_ambient_for_media_on">Enabled</string>
