@@ -85,12 +85,12 @@ public class Changelog extends SettingsPreferenceFragment {
         }
         m = commit.matcher(data);
         while (m.find()){
-            sb.setSpan(new ForegroundColorSpan(ResourcesCompat.getColor(getResources(), R.color.secondary_device_default_settings, getActivity().getTheme())), m.start(1), m.end(1), Spannable.SPAN_INCLUSIVE_INCLUSIVE);
+            sb.setSpan(new ForegroundColorSpan(ResourcesCompat.getColor(getResources(), R.color.accent_device_default_light, getActivity().getTheme())), m.start(1), m.end(1), Spannable.SPAN_INCLUSIVE_INCLUSIVE);
             sb.setSpan(new StyleSpan(Typeface.BOLD), m.start(1), m.end(1), Spannable.SPAN_INCLUSIVE_INCLUSIVE);
         }
         m = committer.matcher(data);
         while (m.find()){
-            sb.setSpan(new ForegroundColorSpan(ResourcesCompat.getColor(getResources(), R.color.secondary_device_default_settings, getActivity().getTheme())), m.start(1), m.end(1), Spannable.SPAN_INCLUSIVE_INCLUSIVE);
+            sb.setSpan(new ForegroundColorSpan(ResourcesCompat.getColor(getResources(), R.color.accent_device_default_light, getActivity().getTheme())), m.start(1), m.end(1), Spannable.SPAN_INCLUSIVE_INCLUSIVE);
             sb.setSpan(new StyleSpan(Typeface.ITALIC), m.start(1), m.end(1), Spannable.SPAN_INCLUSIVE_INCLUSIVE);
         }
         m = title.matcher(data);
