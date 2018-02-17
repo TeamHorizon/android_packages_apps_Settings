@@ -2821,7 +2821,7 @@
     <string name="sound_dashboard_summary" msgid="3402435125958012986">"音量、バイブレーション、マナーモード"</string>
     <string name="sound_settings_summary_vibrate" msgid="1869282574422220096">"バイブレーション着信に設定"</string>
     <string name="sound_settings_summary_silent" msgid="5074529767435584948">"マナーモード着信に設定"</string>
-    <string name="sound_settings_example_summary" msgid="2404914514266523165">"着信音の音量: 80%%"</string>
+    <string name="sound_settings_example_summary" msgid="2404914514266523165">"着信音の音量: 80%"</string>
     <string name="media_volume_option_title" msgid="2811531786073003825">"メディアの音量"</string>
     <string name="alarm_volume_option_title" msgid="8219324421222242421">"アラームの音量"</string>
     <string name="ring_volume_option_title" msgid="6767101703671248309">"着信音の音量"</string>
