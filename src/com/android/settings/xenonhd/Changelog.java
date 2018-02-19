@@ -27,6 +27,8 @@ import android.text.style.StyleSpan;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
+import android.widget.LinearLayout.LayoutParams;
 import android.widget.ScrollView;
 import android.widget.TextView;
 
@@ -100,6 +102,9 @@ public class Changelog extends SettingsPreferenceFragment {
         }
 
         final TextView textView = new TextView(getActivity());
+        LinearLayout.LayoutParams llp = new LinearLayout.LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT);
+        llp.setMargins(20, 0, 0, 0); // llp.setMargins(left, top, right, bottom);
+        textView.setLayoutParams(llp);
         textView.setText(sb);
 
         final ScrollView scrollView = new ScrollView(getActivity());
