@@ -20,6 +20,8 @@
   <string name="xenonhd_maintainer">Падтрымка мадэлі</string>
   <string name="device_info_title">Звесткі аб тэлефоне</string>
   <!-- XenonHD Settings -->
+  <string name="xenonhd_settings_title">XenonHD Hub</string>
+  <string name="xenonhd_settings_summary">Дадатковыя налады</string>
   <!-- Volume Steps -->
   <string name="volume_steps_title">Узроўні гучнасці</string>
   <string name="volume_steps_alarm_title">Будзільнік</string>
@@ -40,11 +42,23 @@
   <!-- Local (desktop) backup password menu title [CHAR LIMIT=25] -->
   <string name="local_backup_password_title">Пазначце пароль рэзервовага капіявання</string>
   <!-- Format string for fingerprint location message -->
+  <string name="security_settings_fingerprint_enroll_find_sensor_message_custom">Сканар адбіткаў пальцаў размешчаны на <xliff:g id="sensor_location">%1$s </xliff:g> вашага тэлефона</string>
   <!-- Fingerprint sensor locations -->
+  <string name="security_settings_fingerprint_sensor_location_back">задняй панэлі</string>
+  <string name="security_settings_fingerprint_sensor_location_front">пярэдняй панэлі</string>
+  <string name="security_settings_fingerprint_sensor_location_left">левай грані</string>
+  <string name="security_settings_fingerprint_sensor_location_right">правай грані</string>
   <!-- Encryption and credential -->
   <string name="custom_encryption_and_credential_settings_summary_on">Прылада зашыфравана</string>
   <string name="custom_encryption_and_credential_settings_summary_off">Прылада не зашыфравана</string>
   <!-- AmbientDisplay music ticker -->
   <string name="force_ambient_for_media_off">Адключана</string>
   <string name="force_ambient_for_media_on">Уключана</string>
+  <!-- Force authorize substratum packages -->
+  <string name="force_authorize_substratum_packages_title">Прымусова аўтарызаўваць усе тэмы праграм</string>
+  <string name="force_authorize_substratum_packages_summary">Дазволіць усталёўку тэм праграм з невядомых крыніц</string>
+  <!-- Manage applications: show substratum overlays -->
+  <string name="filter_substratum_apps">Пласты Substratum</string>
+  <string name="menu_show_substratum">Паказваць пласты</string>
+  <string name="menu_hide_substratum">Схаваць пласты</string>
 </resources>

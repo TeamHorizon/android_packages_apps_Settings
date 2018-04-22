@@ -16,7 +16,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- About phone screen -->
-  <string name="xenonhd_version">Versione XenonHD</string>
+  <string name="xenonhd_version">Versione di XenonHD</string>
   <string name="xenonhd_maintainer">Manutentore</string>
   <string name="device_info_title">Info dispositivo</string>
   <!-- XenonHD Settings -->
@@ -49,9 +49,21 @@
   <string name="security_settings_fingerprint_sensor_location_left">lato sinistro</string>
   <string name="security_settings_fingerprint_sensor_location_right">lato destro</string>
   <!-- Encryption and credential -->
-  <string name="custom_encryption_and_credential_settings_summary_on">Il dispositivo viene criptato</string>
-  <string name="custom_encryption_and_credential_settings_summary_off">Il dispositivo viene decriptato</string>
+  <string name="custom_encryption_and_credential_settings_summary_on">Il dispositivo è criptato</string>
+  <string name="custom_encryption_and_credential_settings_summary_off">Il dispositivo è decriptato</string>
   <!-- AmbientDisplay music ticker -->
+  <string name="ambient_display_media_cat">In riproduzione</string>
+  <string name="force_ambient_for_media_pref_title">Ticker musica Ambient</string>
   <string name="force_ambient_for_media_off">Disabilitato</string>
-  <string name="force_ambient_for_media_on">Attivo</string>
+  <string name="force_ambient_for_media_on">Abilitato</string>
+  <string name="force_ambient_for_media_on_forced">Forzato</string>
+  <string name="force_ambient_for_media_on_forced_clean">Abilitato con stile minimale</string>
+  <string name="ambient_ticker_footer">Il Ticker Musica Ambient permette di mostrare il nome del brano riprodotto sulla schermata di blocco con o senza aver abilitato il display Ambient.\nPuoi selezionare fino a due layout: normale e minimale. Seppur questa funzione utilizza il Display Ambient, questa funzione è indipendente da esso.</string>
+  <!-- Force authorize substratum packages -->
+  <string name="force_authorize_substratum_packages_title">Forza l\'autorizzazione ad ogni applicazione del tema</string>
+  <string name="force_authorize_substratum_packages_summary">Consenti l\'installazione di applicazioni da fonti sconosciute</string>
+  <!-- Manage applications: show substratum overlays -->
+  <string name="filter_substratum_apps">Overlay di Substratum</string>
+  <string name="menu_show_substratum">Mostra overlay</string>
+  <string name="menu_hide_substratum">Nascondi overlay</string>
 </resources>

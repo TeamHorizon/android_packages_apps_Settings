@@ -39,4 +39,9 @@
   <!-- Fingerprint sensor locations -->
   <!-- Encryption and credential -->
   <!-- AmbientDisplay music ticker -->
+  <!-- Force authorize substratum packages -->
+  <!-- Manage applications: show substratum overlays -->
+  <string name="filter_substratum_apps">Substratum slojevi</string>
+  <string name="menu_show_substratum">Prikaži slojeve</string>
+  <string name="menu_hide_substratum">Sakrij slojeve</string>
 </resources>

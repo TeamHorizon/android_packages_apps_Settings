@@ -53,4 +53,11 @@
   <!-- AmbientDisplay music ticker -->
   <string name="force_ambient_for_media_off">Deaktiviert</string>
   <string name="force_ambient_for_media_on">Aktiviert</string>
+  <!-- Force authorize substratum packages -->
+  <string name="force_authorize_substratum_packages_title">Erzwinge Autorisierung jeder Themen App</string>
+  <string name="force_authorize_substratum_packages_summary">Erlaube Theme Apps von unbekannten Quellen</string>
+  <!-- Manage applications: show substratum overlays -->
+  <string name="filter_substratum_apps">Substratum Overlays</string>
+  <string name="menu_show_substratum">Overlays anzeigen</string>
+  <string name="menu_hide_substratum">Overlays verstecken</string>
 </resources>

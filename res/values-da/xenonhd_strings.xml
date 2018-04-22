@@ -27,4 +27,6 @@
   <!-- AmbientDisplay music ticker -->
   <string name="force_ambient_for_media_off">Deaktiveret</string>
   <string name="force_ambient_for_media_on">Aktiveret</string>
+  <!-- Force authorize substratum packages -->
+  <!-- Manage applications: show substratum overlays -->
 </resources>

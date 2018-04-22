@@ -34,4 +34,6 @@
   <!-- AmbientDisplay music ticker -->
   <string name="force_ambient_for_media_off">Išjungta</string>
   <string name="force_ambient_for_media_on">Įjungta</string>
+  <!-- Force authorize substratum packages -->
+  <!-- Manage applications: show substratum overlays -->
 </resources>

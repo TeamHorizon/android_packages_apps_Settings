@@ -52,6 +52,18 @@
   <string name="custom_encryption_and_credential_settings_summary_on">O dispositivo está criptografado</string>
   <string name="custom_encryption_and_credential_settings_summary_off">O dispositivo não está criptografado</string>
   <!-- AmbientDisplay music ticker -->
+  <string name="ambient_display_media_cat">Reproduzindo agora</string>
+  <string name="force_ambient_for_media_pref_title">Ícone de música ambiente</string>
   <string name="force_ambient_for_media_off">Desativado</string>
   <string name="force_ambient_for_media_on">Ativado</string>
+  <string name="force_ambient_for_media_on_forced">Ativado e forçado</string>
+  <string name="force_ambient_for_media_on_forced_clean">Ativado e levemente forçado</string>
+  <string name="ambient_ticker_footer">Ícone de música ambiente permite que a capacidade de visualizar a informação da música atual no tela de bloqueio com ou sem exposição ambiente ativado.\nVocê pode escolher entre duas interfaces, normais e mínimas. Enquanto esse recurso aproveita-se da tela ambiente, ele não depende disso.</string>
+  <!-- Force authorize substratum packages -->
+  <string name="force_authorize_substratum_packages_title">Força autorizar cada app de temas</string>
+  <string name="force_authorize_substratum_packages_summary">Permitir temas de fontes desconhecidas</string>
+  <!-- Manage applications: show substratum overlays -->
+  <string name="filter_substratum_apps">Sobreposições do substratum</string>
+  <string name="menu_show_substratum">Mostrar overlays</string>
+  <string name="menu_hide_substratum">Esconder os overlays</string>
 </resources>

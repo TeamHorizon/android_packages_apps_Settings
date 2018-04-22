@@ -41,4 +41,11 @@
   <!-- AmbientDisplay music ticker -->
   <string name="force_ambient_for_media_off">غير مفعل</string>
   <string name="force_ambient_for_media_on">مفعل</string>
+  <!-- Force authorize substratum packages -->
+  <string name="force_authorize_substratum_packages_title">أجبار تصريح كل تطبيق ثيمات</string>
+  <string name="force_authorize_substratum_packages_summary">السماح لتطبيقات من المصادر غير المعروفة</string>
+  <!-- Manage applications: show substratum overlays -->
+  <string name="filter_substratum_apps">طبقات Substratum</string>
+  <string name="menu_show_substratum">أظهر الطبقات</string>
+  <string name="menu_hide_substratum">إخفاء الطبقات</string>
 </resources>

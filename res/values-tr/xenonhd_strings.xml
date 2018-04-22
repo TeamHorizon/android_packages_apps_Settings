@@ -16,7 +16,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- About phone screen -->
-  <string name="xenonhd_version">XenonHD Sürümü</string>
+  <string name="xenonhd_version">XenonHD sürümü</string>
   <string name="xenonhd_maintainer">Sorumlu</string>
   <string name="device_info_title">Telefon bilgileri</string>
   <!-- XenonHD Settings -->
@@ -34,15 +34,15 @@
   <string name="volume_steps_bluetooth_sco_title">Bluetooth çağrısı</string>
   <string name="volume_steps_reset">Sıfırla</string>
   <!-- Vendor version -->
-  <string name="vendor_version">Üretici sürümü</string>
-  <string name="vendor_version_default">Bilinmeyen</string>
+  <string name="vendor_version">Vendor sürümü</string>
+  <string name="vendor_version_default">Bilinmiyor</string>
   <!-- Screenshot sound -->
-  <string name="screenshot_sound_title">Ekran görüntü sesi</string>
+  <string name="screenshot_sound_title">Ekran görüntüsü sesi</string>
   <string name="screenshot_sound_summary">Ekran görüntüsü alındığında ses efekti çıkar</string>
   <!-- Local (desktop) backup password menu title [CHAR LIMIT=25] -->
-  <string name="local_backup_password_title">Masaüstü şifresini yedekle</string>
+  <string name="local_backup_password_title">Masaüstü yedekleme şifresi</string>
   <!-- Format string for fingerprint location message -->
-  <string name="security_settings_fingerprint_enroll_find_sensor_message_custom">Telefonunuzun <xliff:g id="sensor_location">%1$s</xliff:g> parmak izi sensörünü bulun</string>
+  <string name="security_settings_fingerprint_enroll_find_sensor_message_custom">Telefonunuzun üzerinde bulunan <xliff:g id="sensor_location">%1$s</xliff:g> parmak izi sensörünü bulun</string>
   <!-- Fingerprint sensor locations -->
   <string name="security_settings_fingerprint_sensor_location_back">geri</string>
   <string name="security_settings_fingerprint_sensor_location_front">ileri</string>
@@ -52,6 +52,18 @@
   <string name="custom_encryption_and_credential_settings_summary_on">Cihaz şifrelenmiş</string>
   <string name="custom_encryption_and_credential_settings_summary_off">Cihaz şifresi çözülmüş</string>
   <!-- AmbientDisplay music ticker -->
-  <string name="force_ambient_for_media_off">Devre Dışı</string>
+  <string name="ambient_display_media_cat">Şimdi oynatılıyor</string>
+  <string name="force_ambient_for_media_pref_title">Ortam Müzik Bilgisi</string>
+  <string name="force_ambient_for_media_off">Devre dışı</string>
   <string name="force_ambient_for_media_on">Etkin</string>
+  <string name="force_ambient_for_media_on_forced">Etkin ve zorla</string>
+  <string name="force_ambient_for_media_on_forced_clean">Etkin ve en az zorla</string>
+  <string name="ambient_ticker_footer">Ortam ekranı ekrandaki geçerli müzik parçası bilgilerini gösterebilme olanağı sunar.\nNormal ve minimum iki düzen arasından seçim yapabilirsiniz. Bu özellik ortam görüntüsünü kullanırken, buna bağlı değildir.</string>
+  <!-- Force authorize substratum packages -->
+  <string name="force_authorize_substratum_packages_title">Her tema uygulamasını zorla yetkilendir</string>
+  <string name="force_authorize_substratum_packages_summary">Bilinmeyen kaynaklardan tema uygulamalarına izin ver</string>
+  <!-- Manage applications: show substratum overlays -->
+  <string name="filter_substratum_apps">Substratum temaları</string>
+  <string name="menu_show_substratum">Temaları göster</string>
+  <string name="menu_hide_substratum">Temaları gizle</string>
 </resources>

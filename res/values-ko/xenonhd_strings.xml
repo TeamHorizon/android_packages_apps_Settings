@@ -26,4 +26,6 @@
   <!-- Fingerprint sensor locations -->
   <!-- Encryption and credential -->
   <!-- AmbientDisplay music ticker -->
+  <!-- Force authorize substratum packages -->
+  <!-- Manage applications: show substratum overlays -->
 </resources>

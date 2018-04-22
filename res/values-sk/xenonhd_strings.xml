@@ -52,6 +52,18 @@
   <string name="custom_encryption_and_credential_settings_summary_on">Zariadenie je zašifrované</string>
   <string name="custom_encryption_and_credential_settings_summary_off">Zariadenie je dešifrované</string>
   <!-- AmbientDisplay music ticker -->
+  <string name="ambient_display_media_cat">Prehráva sa</string>
+  <string name="force_ambient_for_media_pref_title">Hudobný ukazovateľ na Ambientnom displeji</string>
   <string name="force_ambient_for_media_off">Vypnuté</string>
   <string name="force_ambient_for_media_on">Zapnuté</string>
+  <string name="force_ambient_for_media_on_forced">Zapnuté a vynútené</string>
+  <string name="force_ambient_for_media_on_forced_clean">Zapnuté a minimálne vynútené</string>
+  <string name="ambient_ticker_footer">Text oznámenia hudby umožňuje zobraziť aktuálne informácie o hudobných skladbách na uzamknutej obrazovke pri povolenom ambientnom zobrazení alebo bez neho.\nMôžete si vybrať z dvoch rozvrhnutí, normálneho a minimálneho. Nezáleží na tom, že táto funkcia využíva ambientne zobrazenie.</string>
+  <!-- Force authorize substratum packages -->
+  <string name="force_authorize_substratum_packages_title">Vyžadovať povolenie pre každú tému</string>
+  <string name="force_authorize_substratum_packages_summary">Povoliť inštaláciu tém z neznámych zdrojov</string>
+  <!-- Manage applications: show substratum overlays -->
+  <string name="filter_substratum_apps">Substratum prekrytia</string>
+  <string name="menu_show_substratum">Zobraziť prekrytia</string>
+  <string name="menu_hide_substratum">Skryť prekrytia</string>
 </resources>

@@ -52,6 +52,18 @@
   <string name="custom_encryption_and_credential_settings_summary_on">Seade on krüptitud</string>
   <string name="custom_encryption_and_credential_settings_summary_off">Seade ei ole krüpteeritud</string>
   <!-- AmbientDisplay music ticker -->
+  <string name="ambient_display_media_cat">Praegu esitamisel</string>
+  <string name="force_ambient_for_media_pref_title">Ambientne Muusika Vajutaja</string>
   <string name="force_ambient_for_media_off">Keelatud</string>
   <string name="force_ambient_for_media_on">Lubatud</string>
+  <string name="force_ambient_for_media_on_forced">Lubatud ja sunnitud</string>
+  <string name="force_ambient_for_media_on_forced_clean">Lubatud ja sunnitud minimaalselt</string>
+  <string name="ambient_ticker_footer">Ambientne Muusika Vajutaja lubab võimaldada näidata hetkel mängiva pala informatsiooni lukustuskuval koos või ilma ambientse ekraani kasutamisega.\nTe saate valita kahe paigutuse vahel, normaalne ja minimaalne. Kuigi funktsioon kasutab ambientse ekraani eeliseid, ei sõltu funktsioon sellest.</string>
+  <!-- Force authorize substratum packages -->
+  <string name="force_authorize_substratum_packages_title">Teema rakendusi jõuga autoriseerima</string>
+  <string name="force_authorize_substratum_packages_summary">Luba teemarakendusi tundmatutelt allikatelt</string>
+  <!-- Manage applications: show substratum overlays -->
+  <string name="filter_substratum_apps">Substratumi ülekatted</string>
+  <string name="menu_show_substratum">Näita ülekatteid</string>
+  <string name="menu_hide_substratum">Peida ülekatted</string>
 </resources>

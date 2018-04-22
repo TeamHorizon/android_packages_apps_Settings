@@ -52,6 +52,18 @@
   <string name="custom_encryption_and_credential_settings_summary_on">裝置已加密</string>
   <string name="custom_encryption_and_credential_settings_summary_off">裝置已解密</string>
   <!-- AmbientDisplay music ticker -->
+  <string name="ambient_display_media_cat">現正播放</string>
+  <string name="force_ambient_for_media_pref_title">環境音樂通知</string>
   <string name="force_ambient_for_media_off">已停用</string>
   <string name="force_ambient_for_media_on">已啟用</string>
+  <string name="force_ambient_for_media_on_forced">啟用並強制</string>
+  <string name="force_ambient_for_media_on_forced_clean">啟用並強制最小化</string>
+  <string name="ambient_ticker_footer">環境音樂通知允許在啟用或不啟用環境顯示的情況下在鎖定畫面上顯示目前音樂曲目資訊。\n您可以從兩種佈局中選擇，普通和最小化。 雖然此功能利用了環境顯示，但不依賴於它。</string>
+  <!-- Force authorize substratum packages -->
+  <string name="force_authorize_substratum_packages_title">強制授權每個主題應用程式</string>
+  <string name="force_authorize_substratum_packages_summary">允許來源不明的主題應用程式</string>
+  <!-- Manage applications: show substratum overlays -->
+  <string name="filter_substratum_apps">底層覆蓋</string>
+  <string name="menu_show_substratum">顯示覆蓋</string>
+  <string name="menu_hide_substratum">隱藏覆蓋</string>
 </resources>

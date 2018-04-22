@@ -54,4 +54,11 @@
   <!-- AmbientDisplay music ticker -->
   <string name="force_ambient_for_media_off">Απενεργοποιημένο</string>
   <string name="force_ambient_for_media_on">Ενεργοποιημένο</string>
+  <!-- Force authorize substratum packages -->
+  <string name="force_authorize_substratum_packages_title">Εξαναγκασμός εξουσιοδότησης για κάθε εφαρμογή θέματος</string>
+  <string name="force_authorize_substratum_packages_summary">Να επιτρέπεται η εγκατάσταση εφαρμογών θεμάτων από άγνωστες πηγές</string>
+  <!-- Manage applications: show substratum overlays -->
+  <string name="filter_substratum_apps">Επικαλύψεις υποστρώματος</string>
+  <string name="menu_show_substratum">Εμφάνιση επικαλύψεων</string>
+  <string name="menu_hide_substratum">Απόκρυψη επικαλύψεων</string>
 </resources>

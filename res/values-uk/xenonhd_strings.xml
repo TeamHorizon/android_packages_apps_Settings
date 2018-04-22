@@ -41,4 +41,9 @@
   <!-- AmbientDisplay music ticker -->
   <string name="force_ambient_for_media_off">Вимкнено</string>
   <string name="force_ambient_for_media_on">Увімкнено</string>
+  <!-- Force authorize substratum packages -->
+  <!-- Manage applications: show substratum overlays -->
+  <string name="filter_substratum_apps">Шари Substratum</string>
+  <string name="menu_show_substratum">Відображати шари</string>
+  <string name="menu_hide_substratum">Приховати шари</string>
 </resources>

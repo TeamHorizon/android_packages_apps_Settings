@@ -35,4 +35,6 @@
   <!-- AmbientDisplay music ticker -->
   <string name="force_ambient_for_media_off">無効</string>
   <string name="force_ambient_for_media_on">有効</string>
+  <!-- Force authorize substratum packages -->
+  <!-- Manage applications: show substratum overlays -->
 </resources>

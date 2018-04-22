@@ -41,4 +41,11 @@
   <!-- AmbientDisplay music ticker -->
   <string name="force_ambient_for_media_off">Désactivé</string>
   <string name="force_ambient_for_media_on">Activé</string>
+  <!-- Force authorize substratum packages -->
+  <string name="force_authorize_substratum_packages_title">Forcer l’autorisation de chaque thème d\'application</string>
+  <string name="force_authorize_substratum_packages_summary">Autorise les applications de thème à partir de sources inconnues</string>
+  <!-- Manage applications: show substratum overlays -->
+  <string name="filter_substratum_apps">Surcouches Substratum</string>
+  <string name="menu_show_substratum">Afficher les surcouches</string>
+  <string name="menu_hide_substratum">Masquer les surcouches</string>
 </resources>
