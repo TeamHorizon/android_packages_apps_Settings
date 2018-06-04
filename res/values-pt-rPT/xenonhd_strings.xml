@@ -53,9 +53,12 @@
   <string name="custom_encryption_and_credential_settings_summary_off">O dispositivo está decifrado</string>
   <!-- AmbientDisplay music ticker -->
   <string name="ambient_display_media_cat">Em reprodução</string>
+  <string name="force_ambient_for_media_pref_title">Ícone de música ambiente</string>
   <string name="force_ambient_for_media_off">Desactivado</string>
   <string name="force_ambient_for_media_on">Activado</string>
   <!-- Force authorize substratum packages -->
+  <string name="force_authorize_substratum_packages_title">Forçar a autorização de todas as apps de temas</string>
+  <string name="force_authorize_substratum_packages_summary">Permitir apps de temas de fontes desconhecidas</string>
   <!-- Manage applications: show substratum overlays -->
   <string name="filter_substratum_apps">Camadas do Substratum</string>
   <string name="menu_show_substratum">Mostrar camadas</string>

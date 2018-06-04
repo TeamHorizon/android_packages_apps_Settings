@@ -18,6 +18,7 @@
   <!-- About phone screen -->
   <!-- XenonHD Settings -->
   <!-- Volume Steps -->
+  <string name="volume_steps_music_title">음악</string>
   <!-- Vendor version -->
   <string name="vendor_version_default">알 수 없는</string>
   <!-- Screenshot sound -->

@@ -52,8 +52,14 @@
   <string name="custom_encryption_and_credential_settings_summary_on">Прылада зашыфравана</string>
   <string name="custom_encryption_and_credential_settings_summary_off">Прылада не зашыфравана</string>
   <!-- AmbientDisplay music ticker -->
+  <string name="ambient_display_media_cat">Зараз прайграваецца</string>
+  <string name="force_ambient_for_media_pref_title">Ambient Music Ticker</string>
   <string name="force_ambient_for_media_off">Адключана</string>
   <string name="force_ambient_for_media_on">Уключана</string>
+  <string name="force_ambient_for_media_on_forced">Уключаны прымусова</string>
+  <string name="force_ambient_for_media_on_forced_clean">Прымусовая мінімізацыя ўключана</string>
+  <string name="ambient_ticker_footer">Ambient Music Ticker дазваляе адлюстроўваць бягучую інфармацыю музычнай дарожкі на экране блакавання з уключаным або ўключаным дысплеем Ambient.
+Вы можаце выбраць адзін з двух макетаў, нармальны і мінімальны. Хоць гэтая функцыя выкарыстоўвае знешні дысплей, ён не залежыць ад яго.</string>
   <!-- Force authorize substratum packages -->
   <string name="force_authorize_substratum_packages_title">Прымусова аўтарызаўваць усе тэмы праграм</string>
   <string name="force_authorize_substratum_packages_summary">Дазволіць усталёўку тэм праграм з невядомых крыніц</string>

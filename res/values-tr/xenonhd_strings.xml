@@ -24,7 +24,7 @@
   <string name="xenonhd_settings_summary">Ek ayarlar</string>
   <!-- Volume Steps -->
   <string name="volume_steps_title">Ses seviyeleri</string>
-  <string name="volume_steps_alarm_title">Çalar saat</string>
+  <string name="volume_steps_alarm_title">Alarm</string>
   <string name="volume_steps_dtmf_title">DTMF</string>
   <string name="volume_steps_music_title">Müzik</string>
   <string name="volume_steps_notification_title">Bildirimler</string>
@@ -37,8 +37,8 @@
   <string name="vendor_version">Vendor sürümü</string>
   <string name="vendor_version_default">Bilinmiyor</string>
   <!-- Screenshot sound -->
-  <string name="screenshot_sound_title">Ekran görüntüsü sesi</string>
-  <string name="screenshot_sound_summary">Ekran görüntüsü alındığında ses efekti çıkar</string>
+  <string name="screenshot_sound_title">Ekran görüntü sesi</string>
+  <string name="screenshot_sound_summary">Ekran görüntüsü alınırken ses çıkar</string>
   <!-- Local (desktop) backup password menu title [CHAR LIMIT=25] -->
   <string name="local_backup_password_title">Masaüstü yedekleme şifresi</string>
   <!-- Format string for fingerprint location message -->
@@ -49,16 +49,16 @@
   <string name="security_settings_fingerprint_sensor_location_left">sol taraf</string>
   <string name="security_settings_fingerprint_sensor_location_right">sağ taraf</string>
   <!-- Encryption and credential -->
-  <string name="custom_encryption_and_credential_settings_summary_on">Cihaz şifrelenmiş</string>
-  <string name="custom_encryption_and_credential_settings_summary_off">Cihaz şifresi çözülmüş</string>
+  <string name="custom_encryption_and_credential_settings_summary_on">Telefon şifreli</string>
+  <string name="custom_encryption_and_credential_settings_summary_off">Telefon şifreli değil</string>
   <!-- AmbientDisplay music ticker -->
   <string name="ambient_display_media_cat">Şimdi oynatılıyor</string>
-  <string name="force_ambient_for_media_pref_title">Ortam Müzik Bilgisi</string>
+  <string name="force_ambient_for_media_pref_title">Ortam müzik bilgisi</string>
   <string name="force_ambient_for_media_off">Devre dışı</string>
   <string name="force_ambient_for_media_on">Etkin</string>
-  <string name="force_ambient_for_media_on_forced">Etkin ve zorla</string>
-  <string name="force_ambient_for_media_on_forced_clean">Etkin ve en az zorla</string>
-  <string name="ambient_ticker_footer">Ortam ekranı ekrandaki geçerli müzik parçası bilgilerini gösterebilme olanağı sunar.\nNormal ve minimum iki düzen arasından seçim yapabilirsiniz. Bu özellik ortam görüntüsünü kullanırken, buna bağlı değildir.</string>
+  <string name="force_ambient_for_media_on_forced">Standart (Zorla)</string>
+  <string name="force_ambient_for_media_on_forced_clean">Minimum (Zorla)</string>
+  <string name="ambient_ticker_footer">Ortam ekranı ekrandaki geçerli müzik parçası bilgilerini gösterebilme olanağı sunar.\nNormal ve minimum iki düzen arasından seçim yapabilirsiniz. Bu özellik ortam ekranını kullanırken, buna bağlı değildir.</string>
   <!-- Force authorize substratum packages -->
   <string name="force_authorize_substratum_packages_title">Her tema uygulamasını zorla yetkilendir</string>
   <string name="force_authorize_substratum_packages_summary">Bilinmeyen kaynaklardan tema uygulamalarına izin ver</string>

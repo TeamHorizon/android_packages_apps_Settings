@@ -52,8 +52,13 @@
   <string name="custom_encryption_and_credential_settings_summary_on">Η συσκευή είναι κρυπτογραφημένη</string>
   <string name="custom_encryption_and_credential_settings_summary_off">Η συσκευή είναι αποκρυπτογραφημένη</string>
   <!-- AmbientDisplay music ticker -->
+  <string name="ambient_display_media_cat">Παίζεται τώρα</string>
+  <string name="force_ambient_for_media_pref_title">Στήλη αναπαραγόμενης μουσικής</string>
   <string name="force_ambient_for_media_off">Απενεργοποιημένο</string>
   <string name="force_ambient_for_media_on">Ενεργοποιημένο</string>
+  <string name="force_ambient_for_media_on_forced">Ενεργοποιημένο και εξαναγκασμένο</string>
+  <string name="force_ambient_for_media_on_forced_clean">Ενεργοποιημένο και εξαναγκασμένο ελάχιστο</string>
+  <string name="ambient_ticker_footer">Η στήλη αναπαραγόμενης μουσικής επιτρέπει τη δυνατότητα εμφάνισης του τρέχοντος μουσικού κομματιού στην οθόνη κλειδώματος με η χωρίς το Ambient display ενεργοποιημένο. \nμπορείτε να επιλέξετε μια απ τις δυο προβολές, κανονική και ελάχιστη. Ενώ αυτή η δυνατότητα χρησιμοποιεί τα οφέλη του Ambient display, δεν εξαρτάται από αυτό.</string>
   <!-- Force authorize substratum packages -->
   <string name="force_authorize_substratum_packages_title">Εξαναγκασμός εξουσιοδότησης για κάθε εφαρμογή θέματος</string>
   <string name="force_authorize_substratum_packages_summary">Να επιτρέπεται η εγκατάσταση εφαρμογών θεμάτων από άγνωστες πηγές</string>
