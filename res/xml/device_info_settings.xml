@@ -83,6 +83,10 @@
         <org.lineageos.internal.preference.deviceinfo.LineageAPIVersionPreference
                 android:key="lineage_api_level" />
 
+        <!-- Vendor security patch level -->
+        <org.lineageos.internal.preference.deviceinfo.LineageVendorSecurityPatchPreference
+                android:key="lineage_vendor_security_patch"/>
+
         <!-- Device FCC equipment id -->
         <Preference
                 android:key="fcc_equipment_id"
