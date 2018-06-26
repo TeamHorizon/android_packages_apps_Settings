@@ -31,13 +31,13 @@
   <string name="volume_steps_ring_title">Zil sesi</string>
   <string name="volume_steps_system_title">Sistem</string>
   <string name="volume_steps_voice_call_title">Sesli arama</string>
-  <string name="volume_steps_bluetooth_sco_title">Bluetooth çağrısı</string>
+  <string name="volume_steps_bluetooth_sco_title">Bluetooth araması</string>
   <string name="volume_steps_reset">Sıfırla</string>
   <!-- Vendor version -->
   <string name="vendor_version">Vendor sürümü</string>
   <string name="vendor_version_default">Bilinmiyor</string>
   <!-- Screenshot sound -->
-  <string name="screenshot_sound_title">Ekran görüntü sesi</string>
+  <string name="screenshot_sound_title">Ekran görüntüsü sesi</string>
   <string name="screenshot_sound_summary">Ekran görüntüsü alınırken ses çıkar</string>
   <!-- Local (desktop) backup password menu title [CHAR LIMIT=25] -->
   <string name="local_backup_password_title">Masaüstü yedekleme şifresi</string>
@@ -45,9 +45,9 @@
   <string name="security_settings_fingerprint_enroll_find_sensor_message_custom">Telefonunuzun üzerinde bulunan <xliff:g id="sensor_location">%1$s</xliff:g> parmak izi sensörünü bulun</string>
   <!-- Fingerprint sensor locations -->
   <string name="security_settings_fingerprint_sensor_location_back">geri</string>
-  <string name="security_settings_fingerprint_sensor_location_front">ileri</string>
-  <string name="security_settings_fingerprint_sensor_location_left">sol taraf</string>
-  <string name="security_settings_fingerprint_sensor_location_right">sağ taraf</string>
+  <string name="security_settings_fingerprint_sensor_location_front">ön</string>
+  <string name="security_settings_fingerprint_sensor_location_left">sol</string>
+  <string name="security_settings_fingerprint_sensor_location_right">sağ</string>
   <!-- Encryption and credential -->
   <string name="custom_encryption_and_credential_settings_summary_on">Telefon şifreli</string>
   <string name="custom_encryption_and_credential_settings_summary_off">Telefon şifreli değil</string>
@@ -56,9 +56,9 @@
   <string name="force_ambient_for_media_pref_title">Ortam müzik bilgisi</string>
   <string name="force_ambient_for_media_off">Devre dışı</string>
   <string name="force_ambient_for_media_on">Etkin</string>
-  <string name="force_ambient_for_media_on_forced">Standart (Zorla)</string>
-  <string name="force_ambient_for_media_on_forced_clean">Minimum (Zorla)</string>
-  <string name="ambient_ticker_footer">Ortam ekranı ekrandaki geçerli müzik parçası bilgilerini gösterebilme olanağı sunar.\nNormal ve minimum iki düzen arasından seçim yapabilirsiniz. Bu özellik ortam ekranını kullanırken, buna bağlı değildir.</string>
+  <string name="force_ambient_for_media_on_forced">Standart (zorla)</string>
+  <string name="force_ambient_for_media_on_forced_clean">Minimum (zorla)</string>
+  <string name="ambient_ticker_footer">Ortam ekranı, ekrandaki geçerli müzik parça bilgilerini gösterebilme olanağı sunar.\nStandart ve minimum iki düzen arasından seçim yapabilirsiniz. Bu özellik ortam ekranını kullanırken buna bağlı değildir.</string>
   <!-- Force authorize substratum packages -->
   <string name="force_authorize_substratum_packages_title">Her tema uygulamasını zorla yetkilendir</string>
   <string name="force_authorize_substratum_packages_summary">Bilinmeyen kaynaklardan tema uygulamalarına izin ver</string>

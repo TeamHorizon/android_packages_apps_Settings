@@ -16,19 +16,25 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- About phone screen -->
+  <string name="xenonhd_version">إصدار XenonHD</string>
   <string name="xenonhd_maintainer">المشرفون</string>
   <string name="device_info_title">معلومات الهاتف</string>
   <!-- XenonHD Settings -->
+  <string name="xenonhd_settings_title">مركز XenonHD</string>
+  <string name="xenonhd_settings_summary">الإعدادات الإضافية</string>
   <!-- Volume Steps -->
   <string name="volume_steps_title">درجات الصوت</string>
   <string name="volume_steps_alarm_title">المنبه</string>
+  <string name="volume_steps_dtmf_title">نغمة ثنائية متعددة التردد</string>
   <string name="volume_steps_music_title">الموسيقى</string>
   <string name="volume_steps_notification_title">إخطار</string>
   <string name="volume_steps_ring_title">جرس</string>
   <string name="volume_steps_system_title">النظام</string>
   <string name="volume_steps_voice_call_title">مكالمة صوتية</string>
+  <string name="volume_steps_bluetooth_sco_title">مكالمة بلوتوث</string>
   <string name="volume_steps_reset">إعادة ضبط</string>
   <!-- Vendor version -->
+  <string name="vendor_version">إصدار المورد</string>
   <string name="vendor_version_default">مجهول</string>
   <!-- Screenshot sound -->
   <string name="screenshot_sound_title">صوت التقاط صورة للشاشة</string>
@@ -36,11 +42,23 @@
   <!-- Local (desktop) backup password menu title [CHAR LIMIT=25] -->
   <string name="local_backup_password_title">كلمة مرور النسخ الاحتياطي سطح المكتب</string>
   <!-- Format string for fingerprint location message -->
+  <string name="security_settings_fingerprint_enroll_find_sensor_message_custom">حدد موقع حساس بصمة الأصبع <xliff:g id="sensor_location">%1$s </xliff:g> من هاتفك</string>
   <!-- Fingerprint sensor locations -->
+  <string name="security_settings_fingerprint_sensor_location_back">إلى الخلف</string>
+  <string name="security_settings_fingerprint_sensor_location_front">في الأمام</string>
+  <string name="security_settings_fingerprint_sensor_location_left">على الجانب الأيسر</string>
+  <string name="security_settings_fingerprint_sensor_location_right">على الجانب الأيمن</string>
   <!-- Encryption and credential -->
+  <string name="custom_encryption_and_credential_settings_summary_on">الجهاز مشفّر</string>
+  <string name="custom_encryption_and_credential_settings_summary_off">تم فك تشفير الجهاز</string>
   <!-- AmbientDisplay music ticker -->
+  <string name="ambient_display_media_cat">التشغيل الآن</string>
+  <string name="force_ambient_for_media_pref_title">شريط الموسيقى المحيطة</string>
   <string name="force_ambient_for_media_off">غير مفعل</string>
   <string name="force_ambient_for_media_on">مفعل</string>
+  <string name="force_ambient_for_media_on_forced">تمكين وأجبار</string>
+  <string name="force_ambient_for_media_on_forced_clean">تمكين وإجبار الحد الأدنى</string>
+  <string name="ambient_ticker_footer">يسمح تطبيق Ambient Music Ticker بإمكانية عرض معلومات مسار الموسيقى الحالية على شاشة القفل مع أو بدون تمكين عرض Ambient.\n يمكنك الاختيار من بين تخطيطين ، عاديين وبسيطين. بينما تستفيد هذه الميزة من العرض المحيط ، إلا أنها لا تعتمد عليها.</string>
   <!-- Force authorize substratum packages -->
   <string name="force_authorize_substratum_packages_title">أجبار تصريح كل تطبيق ثيمات</string>
   <string name="force_authorize_substratum_packages_summary">السماح لتطبيقات من المصادر غير المعروفة</string>
