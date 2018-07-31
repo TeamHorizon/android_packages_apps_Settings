@@ -20,6 +20,11 @@
   <string name="device_info_title">Thông tin điện thoại</string>
   <!-- XenonHD Settings -->
   <!-- Volume Steps -->
+  <string name="volume_steps_music_title">Nhạc</string>
+  <string name="volume_steps_notification_title">Thông báo</string>
+  <string name="volume_steps_system_title">Hệ thống</string>
+  <string name="volume_steps_voice_call_title">Cuộc gọi thoại</string>
+  <string name="volume_steps_reset">Reset</string>
   <!-- Vendor version -->
   <string name="vendor_version_default">Không rõ</string>
   <!-- Screenshot sound -->
@@ -28,6 +33,8 @@
   <!-- Fingerprint sensor locations -->
   <!-- Encryption and credential -->
   <!-- AmbientDisplay music ticker -->
+  <string name="force_ambient_for_media_off">Vô hiệu hóa</string>
+  <string name="force_ambient_for_media_on">Kích hoạt</string>
   <!-- Force authorize substratum packages -->
   <!-- Manage applications: show substratum overlays -->
 </resources>

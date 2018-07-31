@@ -58,7 +58,10 @@
   <string name="force_ambient_for_media_on">已启用</string>
   <string name="force_ambient_for_media_on_forced">强制并启用</string>
   <string name="force_ambient_for_media_on_forced_clean">强制并启用最小化</string>
+  <string name="ambient_ticker_footer">环境音乐通知允许在启用或不启用环境显示的情况下在锁定画面上显示目前音乐曲目资讯。 \n您可以从两种布局中选择，普通和最小化。虽然此功能利用了环境显示，但不依赖于它。</string>
   <!-- Force authorize substratum packages -->
+  <string name="force_authorize_substratum_packages_title">强制授权所有主题应用</string>
+  <string name="force_authorize_substratum_packages_summary">允许安装来自未知来源的主题应用</string>
   <!-- Manage applications: show substratum overlays -->
   <string name="filter_substratum_apps">Substratum 叠加层</string>
   <string name="menu_show_substratum">显示叠加层</string>

@@ -16,13 +16,25 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- About phone screen -->
+  <string name="xenonhd_version">XenonHD バージョン</string>
   <string name="xenonhd_maintainer">メンテナ</string>
   <string name="device_info_title">携帯電話情報</string>
   <!-- XenonHD Settings -->
+  <string name="xenonhd_settings_title">XenonHDハブ</string>
+  <string name="xenonhd_settings_summary">その他の設定</string>
   <!-- Volume Steps -->
+  <string name="volume_steps_title">ボリュームステップ</string>
+  <string name="volume_steps_alarm_title">アラーム</string>
+  <string name="volume_steps_dtmf_title">DTMF</string>
   <string name="volume_steps_music_title">音楽</string>
+  <string name="volume_steps_notification_title">通知</string>
+  <string name="volume_steps_ring_title">着信音</string>
+  <string name="volume_steps_system_title">システム</string>
+  <string name="volume_steps_voice_call_title">音声通話</string>
+  <string name="volume_steps_bluetooth_sco_title">Bluetooth通話</string>
   <string name="volume_steps_reset">リセット</string>
   <!-- Vendor version -->
+  <string name="vendor_version">ベンダーバージョン</string>
   <string name="vendor_version_default">不明</string>
   <!-- Screenshot sound -->
   <string name="screenshot_sound_title">スクリーンショットの音</string>
@@ -30,11 +42,28 @@
   <!-- Local (desktop) backup password menu title [CHAR LIMIT=25] -->
   <string name="local_backup_password_title">PCバックアップパスワード</string>
   <!-- Format string for fingerprint location message -->
+  <string name="security_settings_fingerprint_enroll_find_sensor_message_custom">端末の<xliff:g id="sensor_location">%1$s</xliff:g>にある指紋認証センサーを探します</string>
   <!-- Fingerprint sensor locations -->
+  <string name="security_settings_fingerprint_sensor_location_back">戻る</string>
+  <string name="security_settings_fingerprint_sensor_location_front">前面</string>
+  <string name="security_settings_fingerprint_sensor_location_left">左側面</string>
+  <string name="security_settings_fingerprint_sensor_location_right">右側面</string>
   <!-- Encryption and credential -->
+  <string name="custom_encryption_and_credential_settings_summary_on">デバイスは暗号化されています</string>
+  <string name="custom_encryption_and_credential_settings_summary_off">デバイスは暗号化されていません</string>
   <!-- AmbientDisplay music ticker -->
+  <string name="ambient_display_media_cat">再生中</string>
+  <string name="force_ambient_for_media_pref_title">アンビエントミュージックティッカー</string>
   <string name="force_ambient_for_media_off">無効</string>
   <string name="force_ambient_for_media_on">有効</string>
+  <string name="force_ambient_for_media_on_forced">強制的に有効</string>
+  <string name="force_ambient_for_media_on_forced_clean">強制的に最小化して有効にする</string>
+  <string name="ambient_ticker_footer">アンビエントミュージックティッカーを使用すると、アンビエント表示を有効または無効にしたロック画面上の現在の音楽トラック情報を表示することができます。\n通常と最小の2つのレイアウトから選択できます。この機能はアンビエント表示を利用しますが、この機能はその設定に依存しません。</string>
   <!-- Force authorize substratum packages -->
+  <string name="force_authorize_substratum_packages_title">すべてのテーマアプリを強制的に承認する</string>
+  <string name="force_authorize_substratum_packages_summary">提供元不明のテーマアプリのインストールを許可する</string>
   <!-- Manage applications: show substratum overlays -->
+  <string name="filter_substratum_apps">Substratumオーバーレイ</string>
+  <string name="menu_show_substratum">オーバーレイを表示</string>
+  <string name="menu_hide_substratum">オーバーレイを非表示</string>
 </resources>

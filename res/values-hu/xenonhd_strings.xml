@@ -60,7 +60,7 @@
   <string name="force_ambient_for_media_on_forced_clean">Engedélyezve és kényszerítve minimálisan</string>
   <string name="ambient_ticker_footer">A \"Zeneszám a környezeti kijelzőn\" funkció lehetővé teszi, hogy a zeneszám adatai megjelenjenek a zárképernyőn akár a környezeti kijelző bekapcsolása nélkül.\nKét elrendezést is választhat, normálisat és minimálisat. Ugyan ez a funkció felhasználja a környezeti kijelzőt, nem függ tőle.</string>
   <!-- Force authorize substratum packages -->
-  <string name="force_authorize_substratum_packages_title">Minden téma alkalmazás engedélyezésének kényszerítése</string>
+  <string name="force_authorize_substratum_packages_title">Minden témaalkalmazás engedélyezésének kényszerítése</string>
   <string name="force_authorize_substratum_packages_summary">Az ismeretlen forrásból származó témák telepítésének engedélyezése</string>
   <!-- Manage applications: show substratum overlays -->
   <string name="filter_substratum_apps">Substratum fedvények</string>
