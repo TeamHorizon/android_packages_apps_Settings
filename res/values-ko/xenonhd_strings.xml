@@ -16,17 +16,54 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- About phone screen -->
+  <string name="xenonhd_version">XenonHD 버전</string>
+  <string name="xenonhd_maintainer">관리자</string>
+  <string name="device_info_title">휴대전화 정보</string>
   <!-- XenonHD Settings -->
+  <string name="xenonhd_settings_title">XenonHD 허브</string>
+  <string name="xenonhd_settings_summary">추가 설정</string>
   <!-- Volume Steps -->
+  <string name="volume_steps_title">불륨 단계</string>
+  <string name="volume_steps_alarm_title">알람</string>
+  <string name="volume_steps_dtmf_title">DTMF</string>
   <string name="volume_steps_music_title">음악</string>
+  <string name="volume_steps_notification_title">알림</string>
+  <string name="volume_steps_ring_title">소리</string>
+  <string name="volume_steps_system_title">시스템</string>
+  <string name="volume_steps_voice_call_title">음성 통화</string>
+  <string name="volume_steps_bluetooth_sco_title">블루투스 전화</string>
+  <string name="volume_steps_reset">초기화</string>
   <!-- Vendor version -->
+  <string name="vendor_version">Vendor 버전</string>
   <string name="vendor_version_default">알 수 없는</string>
   <!-- Screenshot sound -->
+  <string name="screenshot_sound_title">스크린샷 소리</string>
+  <string name="screenshot_sound_summary">스크린샷 촬영시 사운드 재생</string>
   <!-- Local (desktop) backup password menu title [CHAR LIMIT=25] -->
+  <string name="local_backup_password_title">데스크톱 백업 비밀번호</string>
   <!-- Format string for fingerprint location message -->
+  <string name="security_settings_fingerprint_enroll_find_sensor_message_custom">휴대폰의 <xliff:g id="sensor_location">%1$s</xliff:g>에서 지문 인식 센서를 찾으세요.</string>
   <!-- Fingerprint sensor locations -->
+  <string name="security_settings_fingerprint_sensor_location_back">뒤로 가기</string>
+  <string name="security_settings_fingerprint_sensor_location_front">앞으로 가기</string>
+  <string name="security_settings_fingerprint_sensor_location_left">왼쪽 측면</string>
+  <string name="security_settings_fingerprint_sensor_location_right">오른쪽 측면</string>
   <!-- Encryption and credential -->
+  <string name="custom_encryption_and_credential_settings_summary_on">장치가 암호화 되어 있습니다</string>
+  <string name="custom_encryption_and_credential_settings_summary_off">장치가 암호화 되어 있지 않습니다</string>
   <!-- AmbientDisplay music ticker -->
+  <string name="ambient_display_media_cat">재생중</string>
+  <string name="force_ambient_for_media_pref_title">음악 알림</string>
+  <string name="force_ambient_for_media_off">사용 안함</string>
+  <string name="force_ambient_for_media_on">사용함</string>
+  <string name="force_ambient_for_media_on_forced">강제로 사용</string>
+  <string name="force_ambient_for_media_on_forced_clean">최소한으로 강제 설정</string>
+  <string name="ambient_ticker_footer">Ambient Music Ticker를 사용하면 대기 화면을 사용하거나 사용하지 않고 잠금 화면에서 현재 음악 트랙 정보를 표시 할 수 있습니다. \n 기본 및 최소의 두 가지 레이아웃 중에서 선택할 수 있습니다. 이 기능은 앰비언트 디스플레이를 사용하지만, 주변 디스플레이를 사용하지 않습니다.</string>
   <!-- Force authorize substratum packages -->
+  <string name="force_authorize_substratum_packages_title">알 수 없는 출처의 테마 앱 허용</string>
+  <string name="force_authorize_substratum_packages_summary">테마가 적용된 모든 앱에 강제로 권한을 부여합니다</string>
   <!-- Manage applications: show substratum overlays -->
+  <string name="filter_substratum_apps">Substratum 오버레이</string>
+  <string name="menu_show_substratum">오버레이 보이기</string>
+  <string name="menu_hide_substratum">오버레이 숨기기</string>
 </resources>
