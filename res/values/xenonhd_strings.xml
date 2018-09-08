@@ -17,5 +17,6 @@
 
     <!-- About Firmware dialog -->
     <string name="xenonhd_version">XenonHD version</string>
+    <string name="xenonhd_maintainer">Maintainer</string>
 
 </resources>

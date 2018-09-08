@@ -51,6 +51,16 @@
             style="@style/device_info_dialog_label"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:text="@string/xenonhd_maintainer"/>
+        <org.lineageos.internal.preference.deviceinfo.XenonHDMaintainerTextView
+            style="@style/device_info_dialog_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            style="@style/device_info_dialog_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:text="@*lineageos.platform:string/lineage_api_level"/>
         <org.lineageos.internal.preference.deviceinfo.LineageAPIVersionTextView
             style="@style/device_info_dialog_value"
