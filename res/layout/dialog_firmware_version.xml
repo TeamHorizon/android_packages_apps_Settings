@@ -41,8 +41,8 @@
             style="@style/device_info_dialog_label"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@*lineageos.platform:string/lineage_version"/>
-        <org.lineageos.internal.preference.deviceinfo.LineageVersionTextView
+            android:text="@string/xenonhd_version"/>
+        <org.lineageos.internal.preference.deviceinfo.XenonHDVersionTextView
             style="@style/device_info_dialog_value"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
