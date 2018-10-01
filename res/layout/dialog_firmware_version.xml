@@ -26,7 +26,6 @@
         android:padding="@dimen/sim_content_padding">
 
         <LinearLayout
-            android:gravity="right"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:selectable="false">
@@ -34,27 +33,37 @@
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:gravity="center_vertical"
                 android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/firmware_version_label"
                     style="@style/device_info_dialog_label"
+                    android:id="@+id/firmware_version_label"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/firmware_version" />
+                    android:text="@string/firmware_version"/>
                 <TextView
-                    android:id="@+id/firmware_version_value"
                     style="@style/device_info_dialog_value"
+                    android:id="@+id/firmware_version_value"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"/>
+
             </LinearLayout>
 
-            <ImageView
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:src="@drawable/ic_xenonhd_logo"
-                android:scaleType="fitEnd" />
+                android:orientation="horizontal"
+                android:gravity="right">
+
+                <ImageView
+                    android:layout_marginStart="5dp"
+                    android:layout_width="45dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_xenonhd_logo"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerInside"/>
+
+            </LinearLayout>
         </LinearLayout>
 
         <TextView
@@ -79,16 +88,6 @@
 
         <TextView
             style="@style/device_info_dialog_label"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@*lineageos.platform:string/lineage_api_level"/>
-        <org.lineageos.internal.preference.deviceinfo.LineageAPIVersionTextView
-            style="@style/device_info_dialog_value"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
-
-        <TextView
-            style="@style/device_info_dialog_label"
             android:id="@+id/security_patch_level_label"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -107,6 +106,16 @@
             android:layout_height="wrap_content"
             android:text="@*lineageos.platform:string/lineage_vendor_security_patch"/>
         <org.lineageos.internal.preference.deviceinfo.LineageVendorSecurityPatchTextView
+            style="@style/device_info_dialog_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            style="@style/device_info_dialog_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@*lineageos.platform:string/lineage_api_level"/>
+        <org.lineageos.internal.preference.deviceinfo.LineageAPIVersionTextView
             style="@style/device_info_dialog_value"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
