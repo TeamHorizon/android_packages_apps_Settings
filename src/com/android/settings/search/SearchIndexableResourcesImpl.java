@@ -98,6 +98,19 @@ import com.android.settings.wfd.WifiDisplaySettings;
 import com.android.settings.wifi.ConfigureWifiSettings;
 import com.android.settings.wifi.WifiSettings;
 
+import com.xenonhd.settings.fragments.ButtonsSettings;
+import com.xenonhd.settings.fragments.GesturesSettings;
+import com.xenonhd.settings.fragments.LockscreenSettings;
+import com.xenonhd.settings.fragments.MiscSettings;
+import com.xenonhd.settings.fragments.NavigationSettings;
+import com.xenonhd.settings.fragments.NotificationsSettings;
+import com.xenonhd.settings.fragments.OmniGestureSettings;
+import com.xenonhd.settings.fragments.PowerSettings;
+import com.xenonhd.settings.fragments.QSSettings;
+import com.xenonhd.settings.fragments.RecentsSettings;
+import com.xenonhd.settings.fragments.SmartPixels;
+import com.xenonhd.settings.fragments.StatusbarSettings;
+
 import java.util.Collection;
 import java.util.HashSet;
 import java.util.Set;
@@ -191,6 +204,18 @@ public class SearchIndexableResourcesImpl implements SearchIndexableResources {
         addIndex(RecentLocationRequestSeeAllFragment.class);
         addIndex(PreviouslyConnectedDeviceDashboardFragment.class);
         addIndex(BluetoothDashboardFragment.class);
+        addIndex(ButtonsSettings.class);
+        addIndex(GesturesSettings.class);
+        addIndex(LockscreenSettings.class);
+        addIndex(MiscSettings.class);
+        addIndex(NavigationSettings.class);
+        addIndex(NotificationsSettings.class);
+        addIndex(OmniGestureSettings.class);
+        addIndex(PowerSettings.class);
+        addIndex(QSSettings.class);
+        addIndex(RecentsSettings.class);
+        addIndex(SmartPixels.class);
+        addIndex(StatusbarSettings.class);
     }
 
     @Override

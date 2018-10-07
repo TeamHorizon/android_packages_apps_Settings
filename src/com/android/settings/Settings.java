@@ -164,6 +164,17 @@ public class Settings extends SettingsActivity {
     public static class StorageDashboardActivity extends SettingsActivity {}
     public static class AccountDashboardActivity extends SettingsActivity {}
     public static class SystemDashboardActivity extends SettingsActivity {}
+    public static class ButtonsSettingsActivity extends SettingsActivity { /* empty */ }
+    public static class GesturesSettingsActivity extends SettingsActivity { /* empty */ }
+    public static class LockscreenSettingsActivity extends SettingsActivity { /* empty */ }
+    public static class MiscSettingsActivity extends SettingsActivity { /* empty */ }
+    public static class NavigationSettingsActivity extends SettingsActivity { /* empty */ }
+    public static class NotificationsSettingsActivity extends SettingsActivity { /* empty */ }
+    public static class OmniGestureSettingsActivity extends SettingsActivity { /* empty */ }
+    public static class PowerSettingsActivity extends SettingsActivity { /* empty */ }
+    public static class QSSettingsActivity extends SettingsActivity { /* empty */ }
+    public static class RecentsSettingsActivity extends SettingsActivity { /* empty */ }
+    public static class SmartPixelsActivity extends SettingsActivity { /* empty */ }
+    public static class StatusbarSettingsActivity extends SettingsActivity { /* empty */ }
     public static class XenonSettingsActivity extends SettingsActivity {}
-
 }

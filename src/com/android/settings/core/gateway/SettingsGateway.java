@@ -137,6 +137,19 @@ import com.android.settings.wifi.WifiSettings;
 import com.android.settings.wifi.calling.WifiCallingSettings;
 import com.android.settings.wifi.p2p.WifiP2pSettings;
 
+import com.xenonhd.settings.fragments.ButtonsSettings;
+import com.xenonhd.settings.fragments.GesturesSettings;
+import com.xenonhd.settings.fragments.LockscreenSettings;
+import com.xenonhd.settings.fragments.MiscSettings;
+import com.xenonhd.settings.fragments.NavigationSettings;
+import com.xenonhd.settings.fragments.NotificationsSettings;
+import com.xenonhd.settings.fragments.OmniGestureSettings;
+import com.xenonhd.settings.fragments.PowerSettings;
+import com.xenonhd.settings.fragments.QSSettings;
+import com.xenonhd.settings.fragments.RecentsSettings;
+import com.xenonhd.settings.fragments.SmartPixels;
+import com.xenonhd.settings.fragments.StatusbarSettings;
+
 import com.xenonhd.settings.XenonSettings;
 
 public class SettingsGateway {
@@ -263,7 +276,19 @@ public class SettingsGateway {
             DirectoryAccessDetails.class.getName(),
             ToggleBackupSettingFragment.class.getName(),
             PreviouslyConnectedDeviceDashboardFragment.class.getName(),
-            XenonSettings.class.getName()
+            ButtonsSettings.class.getName(),
+            GesturesSettings.class.getName(),
+            LockscreenSettings.class.getName(),
+            MiscSettings.class.getName(),
+            NavigationSettings.class.getName(),
+            NotificationsSettings.class.getName(),
+            OmniGestureSettings.class.getName(),
+            PowerSettings.class.getName(),
+            QSSettings.class.getName(),
+            RecentsSettings.class.getName(),
+            SmartPixels.class.getName(),
+            StatusbarSettings.class.getName(),
+            XenonSettings.class.getName(),
     };
 
     public static final String[] SETTINGS_FOR_RESTRICTED = {
