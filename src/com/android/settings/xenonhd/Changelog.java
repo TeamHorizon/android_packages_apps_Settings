@@ -50,6 +50,8 @@ public class Changelog extends SettingsPreferenceFragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                 Bundle savedInstanceState) {
 
+        getActivity().setTitle(R.string.changelog_xenonhd_title);
+
         InputStreamReader inputReader = null;
         String text = null;
         StringBuilder data = new StringBuilder();
