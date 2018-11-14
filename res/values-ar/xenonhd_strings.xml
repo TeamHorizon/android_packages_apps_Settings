@@ -15,10 +15,10 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <!-- About Firmware dialog -->
-  <string name="xenonhd_version">إصدار XenonHD</string>
-  <string name="xenonhd_maintainer">المشرفون</string>
-  <!-- XenonHD Hub -->
-  <string name="xenonhd_settings_title">مركز XenonHD</string>
-  <string name="xenonhd_settings_summary">الإعدادات الإضافية</string>
+    <!-- About Firmware dialog -->
+    <string name="xenonhd_version">إصدار XenonHD</string>
+    <string name="xenonhd_maintainer">المشرفون</string>
+    <!-- XenonHD Hub -->
+    <string name="xenonhd_settings_title">مركز XenonHD</string>
+    <string name="xenonhd_settings_summary">الإعدادات الإضافية</string>
 </resources>
