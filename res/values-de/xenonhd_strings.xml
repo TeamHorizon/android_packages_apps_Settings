@@ -21,4 +21,10 @@
     <!-- XenonHD Hub -->
     <string name="xenonhd_settings_title">XenonHD Hub</string>
     <string name="xenonhd_settings_summary">Weitere Einstellungen</string>
+    <!-- Ambient Play -->
+    <string name="ambient_play_notifications_title">Benachrichtigungen</string>
+    <!-- Battery stats reset -->
+    <string name="battery_stats_reset">Statistiken zurücksetzen</string>
+    <string name="battery_stats_message">Akkustatistiken werden zurückgesetzt</string>
+    <string name="ok_string">OK</string>
 </resources>

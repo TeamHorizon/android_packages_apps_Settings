@@ -18,4 +18,8 @@
     <!-- About Firmware dialog -->
     <string name="xenonhd_maintainer">Mainteneur</string>
     <!-- XenonHD Hub -->
+    <!-- Ambient Play -->
+    <!-- Battery stats reset -->
+    <string name="battery_stats_reset">Réinitialiser les statistiques</string>
+    <string name="battery_stats_message">Les statistiques de l\'historique de la batterie vont être réinitialisées</string>
 </resources>

@@ -21,4 +21,10 @@
     <!-- XenonHD Hub -->
     <string name="xenonhd_settings_title">XenonHD keskus</string>
     <string name="xenonhd_settings_summary">Täiendavad sätted</string>
+    <!-- Ambient Play -->
+    <string name="ambient_play_notifications_title">Teavitused</string>
+    <!-- Battery stats reset -->
+    <string name="battery_stats_reset">Nulli näidud</string>
+    <string name="battery_stats_message">Akukasutamise ajalugu nullitakse</string>
+    <string name="ok_string">OK</string>
 </resources>

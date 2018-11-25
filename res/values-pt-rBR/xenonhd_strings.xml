@@ -21,4 +21,15 @@
     <!-- XenonHD Hub -->
     <string name="xenonhd_settings_title">XenonHD Cubo</string>
     <string name="xenonhd_settings_summary">Configurações adicionais</string>
+    <!-- Ambient Play -->
+    <string name="ambient_play_summary">Mostrar músicas próximas</string>
+    <string name="ambient_play_lockscreen_title">Mostrar músicas na tela de bloqueio</string>
+    <string name="ambient_play_notifications_title">Notificações</string>
+    <string name="ambient_play_switch_bar_on">Ativado</string>
+    <string name="ambient_play_switch_bar_off">Desativado</string>
+    <string name="ambient_play_help_text">Quando alguma música estiver tocando nas proximidades, você poderá ver o nome e o artista. O uso de bateria e de dados podem ser afetados se isso estiver ativado.</string>
+    <!-- Battery stats reset -->
+    <string name="battery_stats_reset">Repor estatísticas</string>
+    <string name="battery_stats_message">As estatísticas do histórico da bateria serão reiniciados</string>
+    <string name="ok_string">OK</string>
 </resources>

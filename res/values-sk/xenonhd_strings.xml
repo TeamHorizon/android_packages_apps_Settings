@@ -21,4 +21,10 @@
     <!-- XenonHD Hub -->
     <string name="xenonhd_settings_title">XenonHD Hub</string>
     <string name="xenonhd_settings_summary">Ďalšie nastavenia</string>
+    <!-- Ambient Play -->
+    <string name="ambient_play_notifications_title">Upozornenia</string>
+    <!-- Battery stats reset -->
+    <string name="battery_stats_reset">Resetovať štatistiky</string>
+    <string name="battery_stats_message">Chystáte sa vymazať históriu štatistiky batérie</string>
+    <string name="ok_string">OK</string>
 </resources>

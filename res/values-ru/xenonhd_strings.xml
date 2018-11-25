@@ -21,4 +21,14 @@
     <!-- XenonHD Hub -->
     <string name="xenonhd_settings_title">XenonHD Hub</string>
     <string name="xenonhd_settings_summary">Дополнительные параметры</string>
+    <!-- Ambient Play -->
+    <string name="ambient_play_lockscreen_title">Показывать песни на экране блокировки</string>
+    <string name="ambient_play_notifications_title">Уведомления</string>
+    <string name="ambient_play_switch_bar_on">Вкл</string>
+    <string name="ambient_play_switch_bar_off">Выкл</string>
+    <string name="ambient_play_help_text">Когда рядом играет музыка, вы можете увидеть название песни и исполнителя. Может расходовать заряд батареи и повлиять на расход трафика.</string>
+    <!-- Battery stats reset -->
+    <string name="battery_stats_reset">Сбросить статистику</string>
+    <string name="battery_stats_message">История статистики батареи будет сброшена</string>
+    <string name="ok_string">ОК</string>
 </resources>

@@ -21,4 +21,10 @@
     <!-- XenonHD Hub -->
     <string name="xenonhd_settings_title">XenonHD központ</string>
     <string name="xenonhd_settings_summary">További beállítások</string>
+    <!-- Ambient Play -->
+    <string name="ambient_play_notifications_title">Értesítések</string>
+    <!-- Battery stats reset -->
+    <string name="battery_stats_reset">Statisztika törlése</string>
+    <string name="battery_stats_message">Akkumulátorhasználati statisztika törlésre kerül</string>
+    <string name="ok_string">OK</string>
 </resources>

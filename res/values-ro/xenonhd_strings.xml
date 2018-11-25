@@ -18,4 +18,6 @@
     <!-- About Firmware dialog -->
     <string name="xenonhd_maintainer">Sustinator</string>
     <!-- XenonHD Hub -->
+    <!-- Ambient Play -->
+    <!-- Battery stats reset -->
 </resources>

@@ -21,4 +21,15 @@
     <!-- XenonHD Hub -->
     <string name="xenonhd_settings_title">XenonHD Hub</string>
     <string name="xenonhd_settings_summary">Další nastavení</string>
+    <!-- Ambient Play -->
+    <string name="ambient_play_summary">Zobrazit skladby v okolí</string>
+    <string name="ambient_play_lockscreen_title">Zobrazit skladby na zamykací obrazovce</string>
+    <string name="ambient_play_notifications_title">Oznámení</string>
+    <string name="ambient_play_switch_bar_on">Zap.</string>
+    <string name="ambient_play_switch_bar_off">Vyp.</string>
+    <string name="ambient_play_help_text">Když v okolí bude hrát hudba, zobrazí se vám název skladby a interpret. Životnost baterie a využití dat mohou být ovlivněny, pokud je tato funkce povolena.</string>
+    <!-- Battery stats reset -->
+    <string name="battery_stats_reset">Vynulovat statistiky</string>
+    <string name="battery_stats_message">Chystáte se obnovit historii statistiky baterie</string>
+    <string name="ok_string">OK</string>
 </resources>

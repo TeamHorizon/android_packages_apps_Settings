@@ -18,4 +18,8 @@
     <!-- About Firmware dialog -->
     <string name="xenonhd_maintainer">Підтримка моделі</string>
     <!-- XenonHD Hub -->
+    <!-- Ambient Play -->
+    <!-- Battery stats reset -->
+    <string name="battery_stats_reset">Скинути статистику</string>
+    <string name="battery_stats_message">Історія використання батареї буде скинута</string>
 </resources>

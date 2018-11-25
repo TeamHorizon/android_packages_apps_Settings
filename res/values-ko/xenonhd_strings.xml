@@ -20,4 +20,8 @@
     <!-- XenonHD Hub -->
     <string name="xenonhd_settings_title">XenonHD 허브</string>
     <string name="xenonhd_settings_summary">추가 설정</string>
+    <!-- Ambient Play -->
+    <string name="ambient_play_notifications_title">알림</string>
+    <!-- Battery stats reset -->
+    <string name="ok_string">확인</string>
 </resources>

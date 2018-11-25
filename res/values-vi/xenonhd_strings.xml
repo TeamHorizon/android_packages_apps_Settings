@@ -18,4 +18,8 @@
     <!-- About Firmware dialog -->
     <string name="xenonhd_maintainer">Người duy trì</string>
     <!-- XenonHD Hub -->
+    <!-- Ambient Play -->
+    <string name="ambient_play_notifications_title">Thông báo</string>
+    <!-- Battery stats reset -->
+    <string name="ok_string">Đồng ý</string>
 </resources>

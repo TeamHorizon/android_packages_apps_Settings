@@ -21,4 +21,15 @@
     <!-- XenonHD Hub -->
     <string name="xenonhd_settings_title">XenonHD Hub</string>
     <string name="xenonhd_settings_summary">Ek ayarlar</string>
+    <!-- Ambient Play -->
+    <string name="ambient_play_summary">Yakındaki şarkıları göster</string>
+    <string name="ambient_play_lockscreen_title">Kilit ekranında şarkıları göster</string>
+    <string name="ambient_play_notifications_title">Bildirimler</string>
+    <string name="ambient_play_switch_bar_on">Açık</string>
+    <string name="ambient_play_switch_bar_off">Kapalı</string>
+    <string name="ambient_play_help_text">Müzik yakınınızda çaldığında, şarkı adını ve sanatçıyı görebilirsiniz. Bu özellik etkinleştirildiğinde pil ömrü ve veri kullanımı etkilenebilir.</string>
+    <!-- Battery stats reset -->
+    <string name="battery_stats_reset">İstatistikleri sıfırla</string>
+    <string name="battery_stats_message">Pil geçmişi istatistikleri sıfırlanacak</string>
+    <string name="ok_string">Tamam</string>
 </resources>

@@ -21,4 +21,15 @@
     <!-- XenonHD Hub -->
     <string name="xenonhd_settings_title">Centrum XenonHD</string>
     <string name="xenonhd_settings_summary">Dodatkowe ustawienia</string>
+    <!-- Ambient Play -->
+    <string name="ambient_play_summary">Pokaż pobliskie utwory</string>
+    <string name="ambient_play_lockscreen_title">Pokaż tytuł piosenki na ekranie blokady</string>
+    <string name="ambient_play_notifications_title">Powiadomienia</string>
+    <string name="ambient_play_switch_bar_on">Włączone</string>
+    <string name="ambient_play_switch_bar_off">Wyłączone</string>
+    <string name="ambient_play_help_text">Podczas odtwarzania muzyki w pobliżu, możesz zobaczyć nazwę utworu i wykonawcę. Funkcja Ambient Play wymaga połączenia sieciowego i wysyła tylko tymczasowo zarejestrowane dane do bazy danych.</string>
+    <!-- Battery stats reset -->
+    <string name="battery_stats_reset">Zresetuj statystyki</string>
+    <string name="battery_stats_message">Statystyki użycia baterii zostaną zresetowane</string>
+    <string name="ok_string">OK</string>
 </resources>

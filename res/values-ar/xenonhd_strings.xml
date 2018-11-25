@@ -21,4 +21,15 @@
     <!-- XenonHD Hub -->
     <string name="xenonhd_settings_title">مركز XenonHD</string>
     <string name="xenonhd_settings_summary">الإعدادات الإضافية</string>
+    <!-- Ambient Play -->
+    <string name="ambient_play_summary">عرض الأغاني القريبة</string>
+    <string name="ambient_play_lockscreen_title">عرض الأغاني على شاشة القفل</string>
+    <string name="ambient_play_notifications_title">الإشعارات</string>
+    <string name="ambient_play_switch_bar_on">تشغيل</string>
+    <string name="ambient_play_switch_bar_off">إيقاف</string>
+    <string name="ambient_play_help_text">عندما يتم تشغيل الموسيقى في مكان قريب ، يمكنك رؤية اسم الأغنية والفنان. قد يتأثر عمر البطارية واستخدام البيانات إذا تم تمكين ذلك.</string>
+    <!-- Battery stats reset -->
+    <string name="battery_stats_reset">إعادة تعيين</string>
+    <string name="battery_stats_message">سيتم إعادة تعيين إحصاءات البطارية</string>
+    <string name="ok_string">حسناً</string>
 </resources>
