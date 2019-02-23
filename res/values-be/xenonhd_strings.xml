@@ -27,4 +27,18 @@
     <string name="battery_stats_reset">Скід статыстыкі</string>
     <string name="battery_stats_message">Статыстыка выкарыстання батарэі будзе скінутая</string>
     <string name="ok_string">ОК</string>
+    <!-- SElinux status in About -->
+    <string name="selinux_status_disabled">Адключана</string>
+    <string name="selinux_status_permissive">Дазвол</string>
+    <string name="selinux_status_enforcing">Забеспячэнне</string>
+    <!-- Notification log -->
+    <!-- Force authorize substratum packages -->
+    <string name="force_authorize_substratum_packages_title">Прымусова аўтарызаўваць усе тэмы праграм</string>
+    <string name="force_authorize_substratum_packages_summary">Дазволіць усталёўку тэм праграм з невядомых крыніц</string>
+    <!-- Manage applications: show substratum overlays -->
+    <string name="filter_substratum_apps">Пласты Substratum</string>
+    <string name="menu_show_substratum">Паказваць пласты</string>
+    <string name="menu_hide_substratum">Схаваць пласты</string>
+    <!-- Volume link notification -->
+    <!-- App details: open play store link if app is user installed -->
 </resources>

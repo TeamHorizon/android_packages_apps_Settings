@@ -32,4 +32,18 @@
     <string name="battery_stats_reset">Vynulovat statistiky</string>
     <string name="battery_stats_message">Chystáte se obnovit historii statistiky baterie</string>
     <string name="ok_string">OK</string>
+    <!-- SElinux status in About -->
+    <string name="selinux_status_disabled">Vypnuto</string>
+    <string name="selinux_status_permissive">Mírné</string>
+    <string name="selinux_status_enforcing">Vynucené</string>
+    <!-- Notification log -->
+    <!-- Force authorize substratum packages -->
+    <string name="force_authorize_substratum_packages_title">Vyžadovat povolení pro každý motiv</string>
+    <string name="force_authorize_substratum_packages_summary">Povolit instalaci motivů z neznámých zdrojů</string>
+    <!-- Manage applications: show substratum overlays -->
+    <string name="filter_substratum_apps">Substratum překrytí</string>
+    <string name="menu_show_substratum">Zobrazit překrytí</string>
+    <string name="menu_hide_substratum">Skrýt překrytí</string>
+    <!-- Volume link notification -->
+    <!-- App details: open play store link if app is user installed -->
 </resources>

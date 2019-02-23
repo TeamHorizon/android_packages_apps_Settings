@@ -27,4 +27,18 @@
     <string name="battery_stats_reset">Statistiken zurücksetzen</string>
     <string name="battery_stats_message">Akkustatistiken werden zurückgesetzt</string>
     <string name="ok_string">OK</string>
+    <!-- SElinux status in About -->
+    <string name="selinux_status_disabled">Deaktiviert</string>
+    <string name="selinux_status_permissive">Moderat</string>
+    <string name="selinux_status_enforcing">Strikt</string>
+    <!-- Notification log -->
+    <!-- Force authorize substratum packages -->
+    <string name="force_authorize_substratum_packages_title">Erzwinge Autorisierung jeder Themen App</string>
+    <string name="force_authorize_substratum_packages_summary">Erlaube Theme Apps von unbekannten Quellen</string>
+    <!-- Manage applications: show substratum overlays -->
+    <string name="filter_substratum_apps">Substratum Overlays</string>
+    <string name="menu_show_substratum">Overlays anzeigen</string>
+    <string name="menu_hide_substratum">Overlays verstecken</string>
+    <!-- Volume link notification -->
+    <!-- App details: open play store link if app is user installed -->
 </resources>

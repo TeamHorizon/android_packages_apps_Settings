@@ -24,4 +24,11 @@
     <string name="ambient_play_notifications_title">알림</string>
     <!-- Battery stats reset -->
     <string name="ok_string">확인</string>
+    <!-- SElinux status in About -->
+    <string name="selinux_status_disabled">사용 안함</string>
+    <!-- Notification log -->
+    <!-- Force authorize substratum packages -->
+    <!-- Manage applications: show substratum overlays -->
+    <!-- Volume link notification -->
+    <!-- App details: open play store link if app is user installed -->
 </resources>

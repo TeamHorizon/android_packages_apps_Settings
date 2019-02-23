@@ -20,4 +20,13 @@
     <!-- XenonHD Hub -->
     <!-- Ambient Play -->
     <!-- Battery stats reset -->
+    <!-- SElinux status in About -->
+    <!-- Notification log -->
+    <!-- Force authorize substratum packages -->
+    <!-- Manage applications: show substratum overlays -->
+    <string name="filter_substratum_apps">Substratum slojevi</string>
+    <string name="menu_show_substratum">Prikaži slojeve</string>
+    <string name="menu_hide_substratum">Sakrij slojeve</string>
+    <!-- Volume link notification -->
+    <!-- App details: open play store link if app is user installed -->
 </resources>

@@ -16,10 +16,32 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- About Firmware dialog -->
+    <string name="xenonhd_version">إصدار XenonHD</string>
     <string name="xenonhd_maintainer">Підтримка моделі</string>
     <!-- XenonHD Hub -->
+    <string name="xenonhd_settings_title">مركز XenonHD</string>
+    <string name="xenonhd_settings_summary">الإعدادات الإضافية</string>
     <!-- Ambient Play -->
+    <string name="ambient_play_summary">عرض الأغاني القريبة</string>
+    <string name="ambient_play_lockscreen_title">عرض الأغاني على شاشة القفل</string>
+    <string name="ambient_play_notifications_title">الإشعارات</string>
+    <string name="ambient_play_switch_bar_on">تشغيل</string>
+    <string name="ambient_play_switch_bar_off">إيقاف</string>
+    <string name="ambient_play_help_text">عندما يتم تشغيل الموسيقى في مكان قريب ، يمكنك رؤية اسم الأغنية والفنان. قد يتأثر عمر البطارية واستخدام البيانات إذا تم تمكين ذلك.</string>
     <!-- Battery stats reset -->
     <string name="battery_stats_reset">Скинути статистику</string>
     <string name="battery_stats_message">Історія використання батареї буде скинута</string>
+    <string name="ok_string">حسناً</string>
+    <!-- SElinux status in About -->
+    <string name="selinux_status_disabled">Вимкнено</string>
+    <string name="selinux_status_permissive">Дозволено</string>
+    <string name="selinux_status_enforcing">Забезпечення</string>
+    <!-- Notification log -->
+    <!-- Force authorize substratum packages -->
+    <!-- Manage applications: show substratum overlays -->
+    <string name="filter_substratum_apps">Шари Substratum</string>
+    <string name="menu_show_substratum">Відображати шари</string>
+    <string name="menu_hide_substratum">Приховати шари</string>
+    <!-- Volume link notification -->
+    <!-- App details: open play store link if app is user installed -->
 </resources>

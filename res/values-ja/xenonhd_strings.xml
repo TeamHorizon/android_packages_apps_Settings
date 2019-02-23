@@ -22,9 +22,30 @@
     <string name="xenonhd_settings_title">XenonHDハブ</string>
     <string name="xenonhd_settings_summary">その他の設定</string>
     <!-- Ambient Play -->
+    <string name="ambient_play_summary">近隣の曲を表示</string>
+    <string name="ambient_play_lockscreen_title">ロック画面に曲を表示する</string>
     <string name="ambient_play_notifications_title">通知</string>
+    <string name="ambient_play_switch_bar_on">ON</string>
+    <string name="ambient_play_switch_bar_off">OFF</string>
+    <string name="ambient_play_help_text">近隣で音楽が再生中の時に曲名とアーティスト名を表示できます。この機能を有効にするとバッテリー消費とデータ通信が増加することがあります。</string>
     <!-- Battery stats reset -->
     <string name="battery_stats_reset">統計をリセット</string>
     <string name="battery_stats_message">バッテリの使用履歴はリセットされます</string>
     <string name="ok_string">OK</string>
+    <!-- SElinux status in About -->
+    <string name="selinux_status">SELinux のステータス</string>
+    <string name="selinux_status_disabled">無効</string>
+    <string name="selinux_status_permissive">Permissive</string>
+    <string name="selinux_status_enforcing">Enforcing</string>
+    <!-- Notification log -->
+    <string name="notification_log_summary">通知履歴ログを表示</string>
+    <!-- Force authorize substratum packages -->
+    <string name="force_authorize_substratum_packages_title">全てのテーマアプリを強制的に承認する</string>
+    <string name="force_authorize_substratum_packages_summary">提供元不明のテーマアプリのインストールを許可する</string>
+    <!-- Manage applications: show substratum overlays -->
+    <string name="filter_substratum_apps">Substratum オーバーレイ</string>
+    <string name="menu_show_substratum">オーバーレイを表示</string>
+    <string name="menu_hide_substratum">オーバーレイを非表示</string>
+    <!-- Volume link notification -->
+    <!-- App details: open play store link if app is user installed -->
 </resources>

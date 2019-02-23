@@ -22,9 +22,32 @@
     <string name="xenonhd_settings_title">XenonHD 中心</string>
     <string name="xenonhd_settings_summary">附加设置</string>
     <!-- Ambient Play -->
+    <string name="ambient_play_summary">显示附近歌曲</string>
+    <string name="ambient_play_lockscreen_title">在锁屏界面显示歌曲</string>
     <string name="ambient_play_notifications_title">通知</string>
+    <string name="ambient_play_switch_bar_on">开启</string>
+    <string name="ambient_play_switch_bar_off">关闭</string>
+    <string name="ambient_play_help_text">自动识别附近播放的歌曲，你可以看到歌曲名称及作者。启用时，电池及数据的使用可能会受到影响。</string>
     <!-- Battery stats reset -->
     <string name="battery_stats_reset">重置统计数据</string>
     <string name="battery_stats_message">电池的历史统计数据将被重置</string>
     <string name="ok_string">确定</string>
+    <!-- SElinux status in About -->
+    <string name="selinux_status">SELinux 状态</string>
+    <string name="selinux_status_disabled">已禁用</string>
+    <string name="selinux_status_permissive">权限</string>
+    <string name="selinux_status_enforcing">执行</string>
+    <!-- Notification log -->
+    <string name="notification_log_summary">显示通知历史记录</string>
+    <!-- Force authorize substratum packages -->
+    <string name="force_authorize_substratum_packages_title">强制授权所有主题应用</string>
+    <string name="force_authorize_substratum_packages_summary">允许安装来自未知来源的主题应用</string>
+    <!-- Manage applications: show substratum overlays -->
+    <string name="filter_substratum_apps">Substratum 叠加层</string>
+    <string name="menu_show_substratum">显示叠加层</string>
+    <string name="menu_hide_substratum">隐藏叠加层</string>
+    <!-- Volume link notification -->
+    <string name="volume_link_notification_title">链接铃声和通知音量</string>
+    <!-- App details: open play store link if app is user installed -->
+    <string name="app_play_store">Google Play</string>
 </resources>

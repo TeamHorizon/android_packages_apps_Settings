@@ -27,4 +27,18 @@
     <string name="battery_stats_reset">Nulli näidud</string>
     <string name="battery_stats_message">Akukasutamise ajalugu nullitakse</string>
     <string name="ok_string">OK</string>
+    <!-- SElinux status in About -->
+    <string name="selinux_status_disabled">Keelatud</string>
+    <string name="selinux_status_permissive">Lubav</string>
+    <string name="selinux_status_enforcing">Sundiv</string>
+    <!-- Notification log -->
+    <!-- Force authorize substratum packages -->
+    <string name="force_authorize_substratum_packages_title">Teema rakendusi jõuga autoriseerima</string>
+    <string name="force_authorize_substratum_packages_summary">Luba teemarakendusi tundmatutelt allikatelt</string>
+    <!-- Manage applications: show substratum overlays -->
+    <string name="filter_substratum_apps">Substratumi ülekatted</string>
+    <string name="menu_show_substratum">Näita ülekatteid</string>
+    <string name="menu_hide_substratum">Peida ülekatted</string>
+    <!-- Volume link notification -->
+    <!-- App details: open play store link if app is user installed -->
 </resources>

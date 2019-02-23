@@ -16,15 +16,29 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- About Firmware dialog -->
-    <string name="xenonhd_version">Verzia XenonHD</string>
-    <string name="xenonhd_maintainer">Správca</string>
+    <string name="xenonhd_version">Spanish</string>
+    <string name="xenonhd_maintainer">Desarrollador</string>
     <!-- XenonHD Hub -->
-    <string name="xenonhd_settings_title">XenonHD Hub</string>
-    <string name="xenonhd_settings_summary">Ďalšie nastavenia</string>
+    <string name="xenonhd_settings_title">Interfaz XenonHD</string>
+    <string name="xenonhd_settings_summary">Ajustes adicionales</string>
     <!-- Ambient Play -->
-    <string name="ambient_play_notifications_title">Upozornenia</string>
+    <string name="ambient_play_notifications_title">Notificaciones</string>
     <!-- Battery stats reset -->
-    <string name="battery_stats_reset">Resetovať štatistiky</string>
-    <string name="battery_stats_message">Chystáte sa vymazať históriu štatistiky batérie</string>
-    <string name="ok_string">OK</string>
+    <string name="battery_stats_reset">Reiniciar estadísticas</string>
+    <string name="battery_stats_message">Las estadísticas de la batería van a restablecerse</string>
+    <string name="ok_string">Aceptar</string>
+    <!-- SElinux status in About -->
+    <string name="selinux_status_disabled">Vypnuté</string>
+    <string name="selinux_status_permissive">Mierne</string>
+    <string name="selinux_status_enforcing">Výnútené</string>
+    <!-- Notification log -->
+    <!-- Force authorize substratum packages -->
+    <string name="force_authorize_substratum_packages_title">Vyžadovať povolenie pre každú tému</string>
+    <string name="force_authorize_substratum_packages_summary">Povoliť inštaláciu tém z neznámych zdrojov</string>
+    <!-- Manage applications: show substratum overlays -->
+    <string name="filter_substratum_apps">Substratum prekrytia</string>
+    <string name="menu_show_substratum">Zobraziť prekrytia</string>
+    <string name="menu_hide_substratum">Skryť prekrytia</string>
+    <!-- Volume link notification -->
+    <!-- App details: open play store link if app is user installed -->
 </resources>

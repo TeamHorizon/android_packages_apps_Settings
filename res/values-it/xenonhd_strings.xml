@@ -22,9 +22,28 @@
     <string name="xenonhd_settings_title">XenonHD Hub</string>
     <string name="xenonhd_settings_summary">Impostazioni aggiuntive</string>
     <!-- Ambient Play -->
+    <string name="ambient_play_summary">Visualizza i brani nelle vicinanze</string>
+    <string name="ambient_play_lockscreen_title">Mostra i brani nella schermata di blocco</string>
     <string name="ambient_play_notifications_title">Notifiche</string>
+    <string name="ambient_play_switch_bar_on">Acceso</string>
+    <string name="ambient_play_switch_bar_off">Spento</string>
+    <string name="ambient_play_help_text">Quando della musica è in riproduzione nelle vicinanze, puoi vedere il nome del brano e l\'artista. La durata della batteria e l\'utilizzo dei dati potrebbero essere compromessi se abilitato.</string>
     <!-- Battery stats reset -->
     <string name="battery_stats_reset">Resetta statistiche</string>
     <string name="battery_stats_message">Le statistiche della batteria stanno per essere resettate</string>
     <string name="ok_string">OK</string>
+    <!-- SElinux status in About -->
+    <string name="selinux_status_disabled">Disabilitato</string>
+    <string name="selinux_status_permissive">Permissivo</string>
+    <string name="selinux_status_enforcing">Applicazione</string>
+    <!-- Notification log -->
+    <!-- Force authorize substratum packages -->
+    <string name="force_authorize_substratum_packages_title">Forza l\'autorizzazione ad ogni applicazione del tema</string>
+    <string name="force_authorize_substratum_packages_summary">Consenti l\'installazione di applicazioni da fonti sconosciute</string>
+    <!-- Manage applications: show substratum overlays -->
+    <string name="filter_substratum_apps">Overlay di Substratum</string>
+    <string name="menu_show_substratum">Mostra overlay</string>
+    <string name="menu_hide_substratum">Nascondi overlay</string>
+    <!-- Volume link notification -->
+    <!-- App details: open play store link if app is user installed -->
 </resources>

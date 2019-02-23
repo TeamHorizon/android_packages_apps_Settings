@@ -27,4 +27,18 @@
     <string name="battery_stats_reset">Repor estatísticas</string>
     <string name="battery_stats_message">O histórico de estatísticas da bateria vai ser reposto</string>
     <string name="ok_string">OK</string>
+    <!-- SElinux status in About -->
+    <string name="selinux_status_disabled">Desactivado</string>
+    <string name="selinux_status_permissive">Permissive</string>
+    <string name="selinux_status_enforcing">Enforcing</string>
+    <!-- Notification log -->
+    <!-- Force authorize substratum packages -->
+    <string name="force_authorize_substratum_packages_title">Forçar a autorização de todas as apps de temas</string>
+    <string name="force_authorize_substratum_packages_summary">Permitir apps de temas de fontes desconhecidas</string>
+    <!-- Manage applications: show substratum overlays -->
+    <string name="filter_substratum_apps">Camadas do Substratum</string>
+    <string name="menu_show_substratum">Mostrar camadas</string>
+    <string name="menu_hide_substratum">Ocultar camadas</string>
+    <!-- Volume link notification -->
+    <!-- App details: open play store link if app is user installed -->
 </resources>

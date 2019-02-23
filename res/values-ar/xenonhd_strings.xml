@@ -32,4 +32,20 @@
     <string name="battery_stats_reset">إعادة تعيين</string>
     <string name="battery_stats_message">سيتم إعادة تعيين إحصاءات البطارية</string>
     <string name="ok_string">حسناً</string>
+    <!-- SElinux status in About -->
+    <string name="selinux_status">‏حالة SELinux</string>
+    <string name="selinux_status_disabled">غير مفعل</string>
+    <string name="selinux_status_permissive">متساهلة</string>
+    <string name="selinux_status_enforcing">فارِضة</string>
+    <!-- Notification log -->
+    <string name="notification_log_summary">إظهار سجل تاريخ الإشعارات</string>
+    <!-- Force authorize substratum packages -->
+    <string name="force_authorize_substratum_packages_title">أجبار تصريح كل تطبيق ثيمات</string>
+    <string name="force_authorize_substratum_packages_summary">السماح لتطبيقات من المصادر غير المعروفة</string>
+    <!-- Manage applications: show substratum overlays -->
+    <string name="filter_substratum_apps">طبقات Substratum</string>
+    <string name="menu_show_substratum">أظهر الطبقات</string>
+    <string name="menu_hide_substratum">إخفاء الطبقات</string>
+    <!-- Volume link notification -->
+    <!-- App details: open play store link if app is user installed -->
 </resources>

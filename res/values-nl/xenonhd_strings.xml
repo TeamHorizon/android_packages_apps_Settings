@@ -19,4 +19,11 @@
     <!-- XenonHD Hub -->
     <!-- Ambient Play -->
     <!-- Battery stats reset -->
+    <!-- SElinux status in About -->
+    <string name="selinux_status_disabled">Uitgeschakeld</string>
+    <!-- Notification log -->
+    <!-- Force authorize substratum packages -->
+    <!-- Manage applications: show substratum overlays -->
+    <!-- Volume link notification -->
+    <!-- App details: open play store link if app is user installed -->
 </resources>

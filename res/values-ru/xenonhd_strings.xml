@@ -22,6 +22,7 @@
     <string name="xenonhd_settings_title">XenonHD Hub</string>
     <string name="xenonhd_settings_summary">Дополнительные параметры</string>
     <!-- Ambient Play -->
+    <string name="ambient_play_summary">Показать песни звучащие рядом</string>
     <string name="ambient_play_lockscreen_title">Показывать песни на экране блокировки</string>
     <string name="ambient_play_notifications_title">Уведомления</string>
     <string name="ambient_play_switch_bar_on">Вкл</string>
@@ -31,4 +32,20 @@
     <string name="battery_stats_reset">Сбросить статистику</string>
     <string name="battery_stats_message">История статистики батареи будет сброшена</string>
     <string name="ok_string">ОК</string>
+    <!-- SElinux status in About -->
+    <string name="selinux_status">Режим SELinux</string>
+    <string name="selinux_status_disabled">Отключено</string>
+    <string name="selinux_status_permissive">Только предупреждение</string>
+    <string name="selinux_status_enforcing">Блокировка</string>
+    <!-- Notification log -->
+    <string name="notification_log_summary">Показать журнал истории уведомлений</string>
+    <!-- Force authorize substratum packages -->
+    <string name="force_authorize_substratum_packages_title">Принудительно запрашивать разрешения для каждой темы</string>
+    <string name="force_authorize_substratum_packages_summary">Разрешить установку тем из неизвестных источников</string>
+    <!-- Manage applications: show substratum overlays -->
+    <string name="filter_substratum_apps">Слои Substratum</string>
+    <string name="menu_show_substratum">Показывать слои</string>
+    <string name="menu_hide_substratum">Скрыть слои</string>
+    <!-- Volume link notification -->
+    <!-- App details: open play store link if app is user installed -->
 </resources>

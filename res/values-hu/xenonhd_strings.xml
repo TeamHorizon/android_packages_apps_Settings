@@ -27,4 +27,18 @@
     <string name="battery_stats_reset">Statisztika törlése</string>
     <string name="battery_stats_message">Akkumulátorhasználati statisztika törlésre kerül</string>
     <string name="ok_string">OK</string>
+    <!-- SElinux status in About -->
+    <string name="selinux_status_disabled">Kikapcsolva</string>
+    <string name="selinux_status_permissive">Engedélyező</string>
+    <string name="selinux_status_enforcing">Kényszerítés</string>
+    <!-- Notification log -->
+    <!-- Force authorize substratum packages -->
+    <string name="force_authorize_substratum_packages_title">Minden témaalkalmazás engedélyezésének kényszerítése</string>
+    <string name="force_authorize_substratum_packages_summary">Az ismeretlen forrásból származó témák telepítésének engedélyezése</string>
+    <!-- Manage applications: show substratum overlays -->
+    <string name="filter_substratum_apps">Substratum fedvények</string>
+    <string name="menu_show_substratum">Fedvények megjelenítése</string>
+    <string name="menu_hide_substratum">Fedvények elrejtése</string>
+    <!-- Volume link notification -->
+    <!-- App details: open play store link if app is user installed -->
 </resources>

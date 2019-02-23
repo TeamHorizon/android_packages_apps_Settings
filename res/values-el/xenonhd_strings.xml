@@ -27,4 +27,18 @@
     <string name="battery_stats_reset">Επαναφορά στατιστικών</string>
     <string name="battery_stats_message">Το ιστορικό στατιστικών μπαταρίας θα μηδενιστεί</string>
     <string name="ok_string">ΟΚ</string>
+    <!-- SElinux status in About -->
+    <string name="selinux_status_disabled">Απενεργοποιημένο</string>
+    <string name="selinux_status_permissive">Ανεκτικό</string>
+    <string name="selinux_status_enforcing">Επιβάλλον</string>
+    <!-- Notification log -->
+    <!-- Force authorize substratum packages -->
+    <string name="force_authorize_substratum_packages_title">Εξαναγκασμός εξουσιοδότησης για κάθε εφαρμογή θέματος</string>
+    <string name="force_authorize_substratum_packages_summary">Να επιτρέπεται η εγκατάσταση εφαρμογών θεμάτων από άγνωστες πηγές</string>
+    <!-- Manage applications: show substratum overlays -->
+    <string name="filter_substratum_apps">Επικαλύψεις υποστρώματος</string>
+    <string name="menu_show_substratum">Εμφάνιση επικαλύψεων</string>
+    <string name="menu_hide_substratum">Απόκρυψη επικαλύψεων</string>
+    <!-- Volume link notification -->
+    <!-- App details: open play store link if app is user installed -->
 </resources>

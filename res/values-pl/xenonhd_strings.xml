@@ -32,4 +32,22 @@
     <string name="battery_stats_reset">Zresetuj statystyki</string>
     <string name="battery_stats_message">Statystyki użycia baterii zostaną zresetowane</string>
     <string name="ok_string">OK</string>
+    <!-- SElinux status in About -->
+    <string name="selinux_status">Stan SELinux</string>
+    <string name="selinux_status_disabled">Wyłączony</string>
+    <string name="selinux_status_permissive">Pobłażliwy</string>
+    <string name="selinux_status_enforcing">Restrykcyjny</string>
+    <!-- Notification log -->
+    <string name="notification_log_summary">Pokaż historię powiadomień</string>
+    <!-- Force authorize substratum packages -->
+    <string name="force_authorize_substratum_packages_title">Wymuś autoryzację każdego motywu</string>
+    <string name="force_authorize_substratum_packages_summary">Zezwalaj na instalowanie motywów z nieznanych źródeł</string>
+    <!-- Manage applications: show substratum overlays -->
+    <string name="filter_substratum_apps">Nakładki substratum</string>
+    <string name="menu_show_substratum">Pokaż nakładki</string>
+    <string name="menu_hide_substratum">Ukryj nakładki</string>
+    <!-- Volume link notification -->
+    <string name="volume_link_notification_title">Połącz głośność dzwonka i powiadomień</string>
+    <!-- App details: open play store link if app is user installed -->
+    <string name="app_play_store">Google Play</string>
 </resources>
