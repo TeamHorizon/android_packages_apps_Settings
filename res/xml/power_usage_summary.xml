@@ -50,11 +50,16 @@
         android:key="perf_profile_settings"
         lineage:replacesKey="battery_saver_summary" />
 
+    <Preference
+        android:fragment="com.android.settings.fuelgauge.AggressiveBatterySettings"
+        android:key="aggressive_battery"
+        android:title="@string/aggressive_battery_title"
+        android:summary="@string/aggressive_battery_summary" />
+
     <SwitchPreference
         android:key="battery_percentage"
         android:title="@string/battery_percentage"
         android:summary="@string/battery_percentage_description" />
-
 
     <com.android.settings.fuelgauge.PowerGaugePreference
         android:key="last_full_charge"
@@ -66,5 +71,4 @@
         android:key="screen_usage"
         android:title="@string/device_screen_usage"
         android:selectable="false" />
-
 </PreferenceScreen>
