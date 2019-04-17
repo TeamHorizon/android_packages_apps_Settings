@@ -47,5 +47,7 @@
     <string name="menu_show_substratum">顯示覆蓋</string>
     <string name="menu_hide_substratum">隱藏覆蓋</string>
     <!-- Volume link notification -->
+    <string name="volume_link_notification_title">連結鈴聲與通知音量</string>
     <!-- App details: open play store link if app is user installed -->
+    <string name="app_play_store">Google Play</string>
 </resources>

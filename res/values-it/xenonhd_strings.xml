@@ -33,10 +33,12 @@
     <string name="battery_stats_message">Le statistiche della batteria stanno per essere resettate</string>
     <string name="ok_string">OK</string>
     <!-- SElinux status in About -->
+    <string name="selinux_status">Stato SELinux</string>
     <string name="selinux_status_disabled">Disabilitato</string>
     <string name="selinux_status_permissive">Permissivo</string>
     <string name="selinux_status_enforcing">Applicazione</string>
     <!-- Notification log -->
+    <string name="notification_log_summary">Visualizza il registro delle notifiche</string>
     <!-- Force authorize substratum packages -->
     <string name="force_authorize_substratum_packages_title">Forza l\'autorizzazione ad ogni applicazione del tema</string>
     <string name="force_authorize_substratum_packages_summary">Consenti l\'installazione di applicazioni da fonti sconosciute</string>
@@ -45,5 +47,7 @@
     <string name="menu_show_substratum">Mostra overlay</string>
     <string name="menu_hide_substratum">Nascondi overlay</string>
     <!-- Volume link notification -->
+    <string name="volume_link_notification_title">Collega volume suoneria e notifica</string>
     <!-- App details: open play store link if app is user installed -->
+    <string name="app_play_store">Google Play</string>
 </resources>

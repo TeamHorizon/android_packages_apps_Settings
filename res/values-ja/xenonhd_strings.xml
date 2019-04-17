@@ -47,5 +47,7 @@
     <string name="menu_show_substratum">オーバーレイを表示</string>
     <string name="menu_hide_substratum">オーバーレイを非表示</string>
     <!-- Volume link notification -->
+    <string name="volume_link_notification_title">着信と通知の音量をリンク</string>
     <!-- App details: open play store link if app is user installed -->
+    <string name="app_play_store">Google Play</string>
 </resources>

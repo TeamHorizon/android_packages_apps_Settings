@@ -47,5 +47,7 @@
     <string name="menu_show_substratum">أظهر الطبقات</string>
     <string name="menu_hide_substratum">إخفاء الطبقات</string>
     <!-- Volume link notification -->
+    <string name="volume_link_notification_title">ربط مستوى نغمة الرنين مع الاشعارات</string>
     <!-- App details: open play store link if app is user installed -->
+    <string name="app_play_store">متجر Play</string>
 </resources>
