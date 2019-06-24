@@ -16,10 +16,12 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- About Firmware dialog -->
+    <string name="xenonhd_maintainer">Maintainer</string>
     <!-- XenonHD Hub -->
     <!-- Ambient Play -->
     <!-- Battery stats reset -->
     <!-- SElinux status in About -->
+    <string name="selinux_status_disabled">Dimatikan</string>
     <!-- Notification log -->
     <!-- Force authorize substratum packages -->
     <!-- Manage applications: show substratum overlays -->

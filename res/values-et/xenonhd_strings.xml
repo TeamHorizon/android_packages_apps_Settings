@@ -22,16 +22,23 @@
     <string name="xenonhd_settings_title">XenonHD keskus</string>
     <string name="xenonhd_settings_summary">Täiendavad sätted</string>
     <!-- Ambient Play -->
+    <string name="ambient_play_summary">Näita lähedal asuvaid lugusid</string>
+    <string name="ambient_play_lockscreen_title">Näita lugusid lukustusekraanil</string>
     <string name="ambient_play_notifications_title">Teavitused</string>
+    <string name="ambient_play_switch_bar_on">Sees</string>
+    <string name="ambient_play_switch_bar_off">Väljas</string>
+    <string name="ambient_play_help_text">Kui muusika on lähedal mängimas, saad näha loo nime ja autorit. Aku kestus ja andme kasutus võib olla mõjutatud kui see on sisse lülitatud.</string>
     <!-- Battery stats reset -->
     <string name="battery_stats_reset">Nulli näidud</string>
     <string name="battery_stats_message">Akukasutamise ajalugu nullitakse</string>
     <string name="ok_string">OK</string>
     <!-- SElinux status in About -->
+    <string name="selinux_status">SELinux\'i olek</string>
     <string name="selinux_status_disabled">Keelatud</string>
     <string name="selinux_status_permissive">Lubav</string>
     <string name="selinux_status_enforcing">Sundiv</string>
     <!-- Notification log -->
+    <string name="notification_log_summary">Kuva teate ajaloo logi</string>
     <!-- Force authorize substratum packages -->
     <string name="force_authorize_substratum_packages_title">Teema rakendusi jõuga autoriseerima</string>
     <string name="force_authorize_substratum_packages_summary">Luba teemarakendusi tundmatutelt allikatelt</string>
@@ -40,5 +47,7 @@
     <string name="menu_show_substratum">Näita ülekatteid</string>
     <string name="menu_hide_substratum">Peida ülekatted</string>
     <!-- Volume link notification -->
+    <string name="volume_link_notification_title">Ühenda helina ja teadete helitugevus</string>
     <!-- App details: open play store link if app is user installed -->
+    <string name="app_play_store">Google Play</string>
 </resources>
