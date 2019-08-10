@@ -33,15 +33,21 @@
     <string name="battery_stats_message">Історія використання батареї буде скинута</string>
     <string name="ok_string">حسناً</string>
     <!-- SElinux status in About -->
+    <string name="selinux_status">Режим SELinux</string>
     <string name="selinux_status_disabled">Вимкнено</string>
     <string name="selinux_status_permissive">Дозволено</string>
     <string name="selinux_status_enforcing">Забезпечення</string>
     <!-- Notification log -->
+    <string name="notification_log_summary">Показати історію сповіщень</string>
     <!-- Force authorize substratum packages -->
+    <string name="force_authorize_substratum_packages_title">Дозволити теми із невідомих джерел</string>
+    <string name="force_authorize_substratum_packages_summary">Дозволити встановлення тем із невідомих джерел</string>
     <!-- Manage applications: show substratum overlays -->
     <string name="filter_substratum_apps">Шари Substratum</string>
     <string name="menu_show_substratum">Відображати шари</string>
     <string name="menu_hide_substratum">Приховати шари</string>
     <!-- Volume link notification -->
+    <string name="volume_link_notification_title">Пов’язати гучність дзвінка і сповіщень</string>
     <!-- App details: open play store link if app is user installed -->
+    <string name="app_play_store">Google Play</string>
 </resources>

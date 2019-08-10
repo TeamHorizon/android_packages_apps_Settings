@@ -16,15 +16,38 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- About Firmware dialog -->
-    <string name="xenonhd_maintainer">Maintainer</string>
+    <string name="xenonhd_version">Versi XenonHD</string>
+    <string name="xenonhd_maintainer">Pemelihara</string>
     <!-- XenonHD Hub -->
+    <string name="xenonhd_settings_title">Hub XenonHD</string>
+    <string name="xenonhd_settings_summary">Pengaturan tambahan</string>
     <!-- Ambient Play -->
+    <string name="ambient_play_summary">Tampilkan lagu terdekat</string>
+    <string name="ambient_play_lockscreen_title">Tampilkan lagu di layar kunci</string>
+    <string name="ambient_play_notifications_title">Notifikasi</string>
+    <string name="ambient_play_switch_bar_on">Di</string>
+    <string name="ambient_play_switch_bar_off">Mati</string>
+    <string name="ambient_play_help_text">Saat musik diputar di dekatnya, Anda dapat melihat nama lagu dan artis. Usia baterai dan penggunaan data dapat terpengaruh jika ini diaktifkan.</string>
     <!-- Battery stats reset -->
+    <string name="battery_stats_reset">Setel ulang statistik</string>
+    <string name="battery_stats_message">Statistik riwayat baterai akan diatur ulang</string>
+    <string name="ok_string">baik</string>
     <!-- SElinux status in About -->
-    <string name="selinux_status_disabled">Dimatikan</string>
+    <string name="selinux_status">Status SELinux</string>
+    <string name="selinux_status_disabled">Dengan disabilitas</string>
+    <string name="selinux_status_permissive">Permisif</string>
+    <string name="selinux_status_enforcing">Menegakkan</string>
     <!-- Notification log -->
+    <string name="notification_log_summary">Tampilkan log riwayat pemberitahuan</string>
     <!-- Force authorize substratum packages -->
+    <string name="force_authorize_substratum_packages_title">Paksakan otorisasi setiap aplikasi tema</string>
+    <string name="force_authorize_substratum_packages_summary">Izinkan aplikasi tema dari sumber yang tidak dikenal</string>
     <!-- Manage applications: show substratum overlays -->
+    <string name="filter_substratum_apps">Hamparan lapisan bawah</string>
+    <string name="menu_show_substratum">Tampilkan hamparan</string>
+    <string name="menu_hide_substratum">Sembunyikan hamparan</string>
     <!-- Volume link notification -->
+    <string name="volume_link_notification_title">Tautkan dering dan volume notifikasi</string>
     <!-- App details: open play store link if app is user installed -->
+    <string name="app_play_store">Google Play</string>
 </resources>
