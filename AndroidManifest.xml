@@ -2100,6 +2100,7 @@
 
         <activity android:name=".bluetooth.BluetoothPairingDialog"
                   android:label="@string/bluetooth_pairing_request"
+                  android:permission="android.permission.BLUETOOTH_PRIVILEGED"
                   android:excludeFromRecents="true"
                   android:windowSoftInputMode="stateVisible|adjustResize"
                   android:theme="@style/Theme.SettingsAlertDialog">
